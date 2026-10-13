@@ -513,6 +513,15 @@
       "url_or_doi": "https://arxiv.org/abs/2606.11108",
       "access_grade": "METADATA_ONLY",
       "notes": "Web-index arXiv title/authors/date and abstract snippet only; full arXiv page inaccessible, no 2026 theorem reliance."
+    },
+    {
+      "id": "SRC-0058",
+      "title": "Frustration index of a signed planar graph and the feedback vertex set",
+      "author": "Sirui Chen; Jiaao Li; Zhouningxin Wang",
+      "date": "2026-07-20",
+      "url_or_doi": "https://arxiv.org/abs/2607.17983",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Native arXiv HTML opened 2026-10-13; Theorem 1.5 and planar dual/T-join discussion inspected. Z2 signed graph only, not Z3 single-defect solution."
     }
   ]
 }

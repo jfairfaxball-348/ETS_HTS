@@ -23,7 +23,7 @@ class ScaffoldTest(unittest.TestCase):
     def save(self, p, x):
         (self.root / p).write_text(json.dumps(x, indent=2) + "\n", encoding="utf-8")
 
-    def test_clean_s008(self):
+    def test_clean_s009(self):
         self.assertEqual([], validate(self.root))
 
     def test_state_count_mismatch(self):
@@ -39,8 +39,8 @@ class ScaffoldTest(unittest.TestCase):
 
     def test_wrong_next_prompt(self):
         (self.root / "authoritative/NEXT_SESSION_PROMPT.md").write_text(
-            "# S010\nFUTURE UNEXECUTED\nnew explicit owner invocation", encoding="utf-8")
-        self.assertTrue(any("FUTURE UNEXECUTED S009" in x for x in validate(self.root)))
+            "# S011\nFUTURE UNEXECUTED\nnew explicit owner invocation", encoding="utf-8")
+        self.assertTrue(any("FUTURE UNEXECUTED S010" in x for x in validate(self.root)))
 
     def test_dangling_source_and_bad_status(self):
         p = "catalogue/CANDIDATES.json"

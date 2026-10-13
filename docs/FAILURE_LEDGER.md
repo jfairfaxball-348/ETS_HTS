@@ -140,3 +140,9 @@ Final cumulative 84/84 KILLED, 0 TRIAGED, 0 SURVIVING, 0 HARD.
 - CND-0107 directed triangle never synchronizes under synchronous one-ahead chase; CND-0108 finite periodic scheduler gives only trivial eventual periodicity; CND-0110 row threshold is elementary Riemann sum.
 - CND-0109 one-flipped checkerboard remains GENERATED, no two failed rigorous attacks, no independent hardness support, native deep novelty incomplete; not a solved/open/hard assertion.
 - Actual checkout git remote failed DNS 'Could not resolve host: github.com'; Python local checker/unittest NOT_RUN; hosted governance CI only. No CAM-0003, no retroactive experiment.
+
+## S009 — 2026-10-13
+- F-S009-1: Interior original-majority defective face on odd m is **unresolved** above the lower bound (m²+3)/2. Naive opposite-signed dominoes fail at defect. Local 3-cell zero-charge block leaves unmatched bipartite count +2; attaching to an artificial subgrid exterior is invalid when the subgrid is embedded. Need a global construction or counterexample.
+- F-S009-2: CAM-0003 actual runtime interrupted at 37/54 status0 finite MILPs, 17 planned instances NOT run; planned final JSON never written (source has an additional potential NumPy JSON serialisation defect). Preserve raw transcription of stdout only, no retry.
+- F-S009-3: `git ls-remote` / full actual checkout blocked: `Could not resolve host: github.com`; local checker/unittests on actual repository checkout NOT_RUN. Later hosted governance checks assess FORMAT not mathematical claims.
+- F-S009-4: Native deep two-pass OEIS / arXiv full corpus / MO-MSE / books / AMM-MM / OPG-Erdos searches incomplete/UNKNOWN, not false zero results. Z2 signed planar results not equivalent to Z3.

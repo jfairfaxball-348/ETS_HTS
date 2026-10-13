@@ -51,3 +51,9 @@ DEC-0032: Exact checkerboard edge-repair D=ceil(m²/2) follows simple face count
 DEC-0033: Prove both directions of arbitrary Z3 edge-repair=MAX-2-LIN, exterior dual zero-charge connected partitions, and boundary min-/multiway-cut; decline to transfer general NP-hardness to fixed-grid subclasses.
 DEC-0034: Defeat the chase oscillator universal synchronization by directed 3-cycle and period bound by finite-state pigeonhole; retain one precise single-flip face-grid GENERATED lead without hard certification.
 DEC-0035: No mathematical CAM or external posting; native novelty UNKNOWN where unavailable; local git checkout DNS blocker. S009 owner-gated only.
+
+## S009 — 2026-10-13
+- Do NOT kill CND-0109 globally: complete even-grid and odd-minority/majority-boundary exact results do not cover odd original-majority interior. Proven interior lower bound +1 only; m3 centre exact 6.
+- Do NOT TRIAGE: no two genuinely failed independent mathematical approaches and no outside difficulty signal; native two-pass literature coverage incomplete.
+- Preserve CAM-0003 preregistration and 37 completed solver outputs as FAILED/PARTIAL; no backdating or relabelling m5 remaining cases as run.
+- Handover S010 to pursue explicit odd-interior construction/counterexample; no owner selection or publication.

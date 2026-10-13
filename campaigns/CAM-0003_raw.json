@@ -1,0 +1,342 @@
+{
+  "campaign_id": "CAM-0003",
+  "status": "INTERRUPTED_BY_RUNTIME_TIMEOUT",
+  "requested_instances": 54,
+  "completed_instances": 37,
+  "warning": "No further attempt authorised by preregistration; raw contains only logged completed MILP outputs. The upstream process was interrupted and did not write its end-of-run summary.",
+  "records": [
+    {
+      "m": 2,
+      "i": 1,
+      "j": 1,
+      "status": 0,
+      "optimum": 3,
+      "violations": 3,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 2,
+      "i": 1,
+      "j": 2,
+      "status": 0,
+      "optimum": 3,
+      "violations": 3,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 2,
+      "i": 2,
+      "j": 1,
+      "status": 0,
+      "optimum": 3,
+      "violations": 3,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 2,
+      "i": 2,
+      "j": 2,
+      "status": 0,
+      "optimum": 3,
+      "violations": 3,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 3,
+      "i": 1,
+      "j": 1,
+      "status": 0,
+      "optimum": 5,
+      "violations": 5,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 3,
+      "i": 1,
+      "j": 2,
+      "status": 0,
+      "optimum": 5,
+      "violations": 5,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 3,
+      "i": 1,
+      "j": 3,
+      "status": 0,
+      "optimum": 5,
+      "violations": 5,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 3,
+      "i": 2,
+      "j": 1,
+      "status": 0,
+      "optimum": 5,
+      "violations": 5,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 3,
+      "i": 2,
+      "j": 2,
+      "status": 0,
+      "optimum": 6,
+      "violations": 6,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 3,
+      "i": 2,
+      "j": 3,
+      "status": 0,
+      "optimum": 5,
+      "violations": 5,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 3,
+      "i": 3,
+      "j": 1,
+      "status": 0,
+      "optimum": 5,
+      "violations": 5,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 3,
+      "i": 3,
+      "j": 2,
+      "status": 0,
+      "optimum": 5,
+      "violations": 5,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 3,
+      "i": 3,
+      "j": 3,
+      "status": 0,
+      "optimum": 5,
+      "violations": 5,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 1,
+      "j": 1,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 1,
+      "j": 2,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 1,
+      "j": 3,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 1,
+      "j": 4,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 2,
+      "j": 1,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 2,
+      "j": 2,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 2,
+      "j": 3,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 2,
+      "j": 4,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 3,
+      "j": 1,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 3,
+      "j": 2,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 3,
+      "j": 3,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 3,
+      "j": 4,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 4,
+      "j": 1,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 4,
+      "j": 2,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 4,
+      "j": 3,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 4,
+      "i": 4,
+      "j": 4,
+      "status": 0,
+      "optimum": 9,
+      "violations": 9,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 5,
+      "i": 1,
+      "j": 1,
+      "status": 0,
+      "optimum": 13,
+      "violations": 13,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 5,
+      "i": 1,
+      "j": 2,
+      "status": 0,
+      "optimum": 13,
+      "violations": 13,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 5,
+      "i": 1,
+      "j": 3,
+      "status": 0,
+      "optimum": 13,
+      "violations": 13,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 5,
+      "i": 1,
+      "j": 4,
+      "status": 0,
+      "optimum": 13,
+      "violations": 13,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 5,
+      "i": 1,
+      "j": 5,
+      "status": 0,
+      "optimum": 13,
+      "violations": 13,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 5,
+      "i": 2,
+      "j": 1,
+      "status": 0,
+      "optimum": 13,
+      "violations": 13,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 5,
+      "i": 2,
+      "j": 2,
+      "status": 0,
+      "optimum": 14,
+      "violations": 14,
+      "solver": "HiGHS optimal"
+    },
+    {
+      "m": 5,
+      "i": 2,
+      "j": 3,
+      "status": 0,
+      "optimum": 13,
+      "violations": 13,
+      "solver": "HiGHS optimal"
+    }
+  ]
+}
