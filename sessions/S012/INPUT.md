@@ -1,0 +1,16 @@
+# S012 immutable owner input — 2026-10-13
+
+> Run session https://github.com/jfairfaxball-348/ETS_HTS/blob/main/authoritative%2FNEXT_SESSION_PROMPT.md
+
+## Authoritative S012 prompt fetched at entry from pinned main 3c2e7214ed37872c2847cd560b6fb2f3f0ae6cf2
+
+# S012 — FUTURE / UNEXECUTED: regenerate genuinely resistant and novel questions
+
+**FUTURE — UNEXECUTED. Requires a new explicit owner invocation.** S011 authorises no automatic S012, selection, proof programme, outreach, OEIS contribution, arXiv, Lean or Palomar.
+
+Pin live main SHA, Git tree, branch/PR/check/workflow/ruleset/protection evidence. Independently verify S011 isolated authored sole-parent commit, non-draft ordinary PR and non-force two-parent merge; 403 protection remains UNKNOWN. Reconcile STATE, registries and all ledgers; expected 115 candidates all KILLED, 62 sources, 76 claims, 3 campaigns, no survivors. CAM-0003 stays FAILED/PARTIAL 37/54; CAM-0004 not yet registered.
+
+Generate 3–5 structurally different high-school-readable problems, using time, mathematical infinity, nonuniform dynamics, alternative metrics, oscillators without empirical neuroscience assertions, or convergence/integer rows. Avoid CND-0001..0115 cosmetic restatements: clock CRT, infinite averaging 3^j, circle/square equal perimeter and area, finite disk rectangle boundary, F(n)=n+floor(sqrt(n)) square recurrence (OEIS A171746), checkerboard/Z3 repairs, naive zero division, simple periodicity and known cuts/necklaces. Exact quantifiers, edge cases and genuine difficulty evidence. Assign sequential CND numbers even for immediately killed questions. Two *actually failed* dissimilar proof attacks and independent difficulty evidence plus source-native two-pass priority required for any TRIAGED/SURVIVING; no-hit is not novelty. Explicitly query or report UNKNOWN for native OEIS terms+keywords, arXiv full-text, MO/MSE, Erdős/OPG, Wikipedia, Guy/CFG/BMP/Kourovka, AMM/MM, 2025–26 original literature, Zenodo/GitHub. Before mathematical computation preregister CAM-0004 (code hash, bounds, environment, stop and raw path); preserve CAM-0003 exactly.
+
+At close update all paired JSON/MD, maths, novelty, session and phase ledgers and STATE. Test real checkout or record exact blocker; hosted CI is format-only. One isolated branch, atomic authored commit, ordinary PR and non-force two-parent merge if possible, then independent main/tree checks. Draft S013 FUTURE/UNEXECUTED, do not execute. No publications or proof research without owner approval.
+

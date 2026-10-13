@@ -29,3 +29,6 @@
 
 ## S011 — 2026-10-13
 Owner-authorised exactly S011 at main 91b62866bf3c20b47b198f1993c49c1f702fca39; five CND-0111..0115 all KILLED, SRC-0059..0062 directly opened, CLM-0072..0076 documented. CAM3 unchanged, no CAM-0004. Governance checker and tests updated for S012 future gate; actual checkout DNS blocks local testing, hosted CI format-only. S011 single authored commit/PR/merge to be verified remotely after creation.
+
+## S012 — 2026-10-13
+Explicit owner invocation for S012 on live main 3c2e7214ed37872c2847cd560b6fb2f3f0ae6cf2; confirmed S011 PR #12 merged ordinary two-parent, sole-parent head and same tree, hosted format CI success. Four original *questions* generated, all killed, CND 119 KILLED 119 SRC64 CLM80 CAM3 (CAM-0003 still FAILED/PARTIAL 37/54), triaged0 surviving0. No numeric CAM, no proof escalation. Checkout git DNS blocked; local checker/unittest NOT_RUN. One atomic authored commit and PR/merge to reconstruct from live remote at next entry. S013 NOT AUTHORISED.

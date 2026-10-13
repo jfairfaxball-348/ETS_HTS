@@ -81,3 +81,7 @@
 - SRC-0060 [OEIS A171746](https://oeis.org/A171746) (STATEMENT_INSPECTED; Neven Juric and OEIS contributors, 2010-10-07 initial entry): Native OEIS exact square-jump iteration entry, older 1985-1986 school problem only referenced, not inspected.
 - SRC-0061 [Integer plus its square root](https://www.ocf.berkeley.edu/~bslin/view.php?name=./posts/0+inbox/Interger+plus+its+square+root.md) (STATEMENT_INSPECTED; B. S. Lin (page attribution not independently verified), 2022-09-20): Opened mathematical note posing exact eventual-square question.
 - SRC-0062 [Squaring the Circle/Fallacious Proof/Edward J. Goodwin](https://proofwiki.org/wiki/Squaring_the_Circle/Fallacious_Proof/Edward_J._Goodwin) (STATEMENT_INSPECTED; ProofWiki contributors, undated; accessed 2026-10-13): Opened π=4 contradiction for simultaneous perimeter-area equality, not novel/hard literature.
+
+## S012 opened original records
+- **SRC-0063** [OEIS A001110](https://oeis.org/A001110), N. J. A. Sloane/OEIS contributors (accessed 2026-10-13) — **STATEMENT_INSPECTED**. Square-triangular numbers 1,36,1225,... exact older question; historical primary prints NOT INSPECTED.
+- **SRC-0064** [Goles and Olivos, 1980, *Periodic behaviour of generalized threshold functions*](https://pure.uai.cl/en/publications/periodic-behaviour-of-generalized-threshold-functions/), [DOI](https://doi.org/10.1016/0012-365X(80)90121-1) — **ABSTRACT_INSPECTED** from author's institutional publication record. Fixed points/2-cycles for symmetric threshold systems; no full proof access.

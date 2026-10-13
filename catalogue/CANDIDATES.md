@@ -158,3 +158,12 @@ CND-0109 permanently KILLED_EASY by CLM-0071 (S010 MATHEMATICS). Cumulative 110/
 | CND-0115 | If you repeatedly add the whole-number part of a square root, will you eventually land on a square? | KILLED_KNOWN | OEIS A171746 (2010) encodes the exact first positive square-hitting iteration; a 2022 mathematical note poses the same question. An elementary square-offset descent gives a proof. |
 
 Total 115/115 killed, none surviving or triaged. No CAM-0004.
+
+## S012 — distinct schools of questions, all elementary or already known
+| ID | Question | Status | Permanent kill |
+|---|---|---|---|
+| CND-0116 | One clock rings at square-numbered minutes, and the other at triangular-numbered minutes. Will they ring together infinitely often? | KILLED_KNOWN | Exact square-triangular numbers OEIS A001110. Pell recurrence supplies infinitely many times; classical, not a novel oscillator question. |
+| CND-0117 | Can a circle of whole-number radius pass through exactly eight grid points? | KILLED_EASY | Exactly four axis points; every other integer point has a symmetry orbit of size eight, hence the number is 4 modulo 8 and never eight. |
+| CND-0118 | If everyone follows the majority of their neighbours at each beat, can the whole group ever settle into a loop longer than two beats? | KILLED_KNOWN | The symmetric-threshold theorem of Goles–Olivos (1980) states fixed points or 2-cycles; the tie-hold update embeds using symmetric neighbour weight 2 and diagonal self-weight 1. No original result established. |
+| CND-0119 | If the gaps between chosen whole numbers grow without bound, must the sum of their reciprocals have a finite total? | KILLED_FALSE/DEGENERATE | Take a_n=∑_(k=1)^n ⌈log₂(k+1)⌉; gaps grow to infinity, but dyadic blocks show ∑1/a_n diverges. |
+119/119 KILLED, zero TRIAGED/SURVIVING; CAM-0004 not registered, CAM-0003 unchanged.
