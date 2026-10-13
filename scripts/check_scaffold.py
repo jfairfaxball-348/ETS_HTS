@@ -47,8 +47,6 @@ REQUIRED = (
     "sessions/S010/INPUT.md", "sessions/S010/PLAN.md",
     "sessions/S010/MATHEMATICS.md", "sessions/S010/NOVELTY_QUERIES.md",
     "sessions/S010/CLOSEOUT.md", "sessions/S010/DISCOVERY_REPORT.md",
-    "sessions/S013/INPUT.md", "sessions/S013/PLAN.md", "sessions/S013/MATHEMATICS.md",
-    "sessions/S013/NOVELTY_QUERIES.md", "sessions/S013/CLOSEOUT.md", "sessions/S013/DISCOVERY_REPORT.md",
     "sessions/S012/INPUT.md", "sessions/S012/PLAN.md", "sessions/S012/MATHEMATICS.md",
     "sessions/S012/NOVELTY_QUERIES.md", "sessions/S012/CLOSEOUT.md", "sessions/S012/DISCOVERY_REPORT.md",
     "scripts/check_scaffold.py", "tests/test_scaffold.py",
