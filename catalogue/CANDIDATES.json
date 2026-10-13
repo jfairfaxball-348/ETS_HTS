@@ -7385,6 +7385,290 @@
       },
       "screened_as_top_ten": false,
       "uncertainty": "Resolved/known; no two genuinely failed attacks nor independent hardness evidence"
+    },
+    {
+      "id": "CND-0116",
+      "exact_statement": "Let one ideal clock ring at minutes n^2 (n=1,2,...) and another at minutes m(m+1)/2 (m=1,2,...). Are there infinitely many positive integer minutes at which both ring?",
+      "plain_language_statement": "One clock rings at square-numbered minutes, and the other at triangular-numbered minutes. Will they ring together infinitely often?",
+      "domain": "mathematical time / Diophantine clocks",
+      "origin_mechanism": "S012 MEC-02 intersect two elementary increasing schedules; historical Pell, not mere CRT",
+      "attribution": "Owner mathematical themes; historical sources attributed where applicable; no novelty claim",
+      "quantifiers": "Let one ideal clock ring at minutes n^2 (n=1,2,...) and another at minutes m(m+1)/2 (m=1,2,...). Are there infinitely many positive integer minutes at which both ring?",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM-0004 registered; no finite mathematical search run; proof/source kill made numeric search unnecessary."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "Put X=2m+1 and Y=n. The equality n²=m(m+1)/2 is equivalent to X²−8Y²=1 with X odd. Starting (X,Y)=(3,1), map (X,Y)↦(3X+8Y,X+3Y); this preserves X²−8Y², positive integrality and odd X, and strictly increases both coordinates. Hence infinitely many positive common minutes; 1,36,1225,... are already OEIS A001110."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "Put X=2m+1 and Y=n. The equality n²=m(m+1)/2 is equivalent to X²−8Y²=1 with X odd. Starting (X,Y)=(3,1), map (X,Y)↦(3X+8Y,X+3Y); this preserves X²−8Y², positive integrality and odd X, and strictly increases both coordinates. Hence infinitely many positive common minutes; 1,36,1225,... are already OEIS A001110."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "Put X=2m+1 and Y=n. The equality n²=m(m+1)/2 is equivalent to X²−8Y²=1 with X odd. Starting (X,Y)=(3,1), map (X,Y)↦(3X+8Y,X+3Y); this preserves X²−8Y², positive integrality and odd X, and strictly increases both coordinates. Hence infinitely many positive common minutes; 1,36,1225,... are already OEIS A001110."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "Put X=2m+1 and Y=n. The equality n²=m(m+1)/2 is equivalent to X²−8Y²=1 with X odd. Starting (X,Y)=(3,1), map (X,Y)↦(3X+8Y,X+3Y); this preserves X²−8Y², positive integrality and odd X, and strictly increases both coordinates. Hence infinitely many positive common minutes; 1,36,1225,... are already OEIS A001110."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_RESOLVED",
+          "detail": "Native matched source inspected at stated access grade; wider native audit UNKNOWN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S012",
+        "reason": "Exact square-triangular numbers OEIS A001110. Pell recurrence supplies infinitely many times; classical, not a novel oscillator question.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Self-contained elementary human check, not independent review",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0063"
+      ],
+      "claim_ids": [
+        "CLM-0077"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 12,
+        "naturalness": 10,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 2,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 53
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Killed; no two failed dissimilar attacks and no independent novelty/difficulty clearance."
+    },
+    {
+      "id": "CND-0117",
+      "exact_statement": "Is there a positive integer R such that the Euclidean circle x²+y²=R² passes through exactly eight points (x,y) with integer coordinates?",
+      "plain_language_statement": "Can a circle of whole-number radius pass through exactly eight grid points?",
+      "domain": "integer lattice geometry",
+      "origin_mechanism": "S012 MEC-08 metric-to-integer-incidence symmetry, not circle-square area/perimeter",
+      "attribution": "Owner mathematical themes; historical sources attributed where applicable; no novelty claim",
+      "quantifiers": "Is there a positive integer R such that the Euclidean circle x²+y²=R² passes through exactly eight points (x,y) with integer coordinates?",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM-0004 registered; no finite mathematical search run; proof/source kill made numeric search unnecessary."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "For R≥1, the four axis points (±R,0),(0,±R) are distinct. At any other integer solution x,y are both nonzero; |x|=|y| would imply R²=2x², impossible for positive integer R (irrationality of √2). The eight distinct sign-and-coordinate-swap images of (x,y) form one orbit. Thus the number of lattice points equals 4+8k (finite because |x|,|y|≤R), never 8. R=1 illustrates four."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "For R≥1, the four axis points (±R,0),(0,±R) are distinct. At any other integer solution x,y are both nonzero; |x|=|y| would imply R²=2x², impossible for positive integer R (irrationality of √2). The eight distinct sign-and-coordinate-swap images of (x,y) form one orbit. Thus the number of lattice points equals 4+8k (finite because |x|,|y|≤R), never 8. R=1 illustrates four."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "For R≥1, the four axis points (±R,0),(0,±R) are distinct. At any other integer solution x,y are both nonzero; |x|=|y| would imply R²=2x², impossible for positive integer R (irrationality of √2). The eight distinct sign-and-coordinate-swap images of (x,y) form one orbit. Thus the number of lattice points equals 4+8k (finite because |x|,|y|≤R), never 8. R=1 illustrates four."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "For R≥1, the four axis points (±R,0),(0,±R) are distinct. At any other integer solution x,y are both nonzero; |x|=|y| would imply R²=2x², impossible for positive integer R (irrationality of √2). The eight distinct sign-and-coordinate-swap images of (x,y) form one orbit. Thus the number of lattice points equals 4+8k (finite because |x|,|y|≤R), never 8. R=1 illustrates four."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_LIMITED",
+          "detail": "No global novelty clearance sought after elementary kill; relevant native audit incomplete/UNKNOWN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S012",
+        "reason": "Exactly four axis points; every other integer point has a symmetry orbit of size eight, hence the number is 4 modulo 8 and never eight.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Self-contained elementary human check, not independent review",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0078"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 12,
+        "naturalness": 10,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 51
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Killed; no two failed dissimilar attacks and no independent novelty/difficulty clearance."
+    },
+    {
+      "id": "CND-0118",
+      "exact_statement": "On any finite undirected simple graph, colour each vertex 0 or 1. Simultaneously each tick, a vertex changes to the strict majority colour among its neighbours, retaining its current colour on a tie. Must the sequence of entire graph colourings eventually repeat with period at most two?",
+      "plain_language_statement": "If everyone follows the majority of their neighbours at each beat, can the whole group ever settle into a loop longer than two beats?",
+      "domain": "discrete mathematical oscillators",
+      "origin_mechanism": "S012 MEC-02 synchronous local thresholds on symmetric graph, rather than fixed-period pulse trains or directed chase",
+      "attribution": "Owner mathematical themes; historical sources attributed where applicable; no novelty claim",
+      "quantifiers": "On any finite undirected simple graph, colour each vertex 0 or 1. Simultaneously each tick, a vertex changes to the strict majority colour among its neighbours, retaining its current colour on a tie. Must the sequence of entire graph colourings eventually repeat with period at most two?",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_VARIANT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM-0004 registered; no finite mathematical search run; proof/source kill made numeric search unnecessary."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "Writing colours x_i∈{0,1} and degree d_i, the update is x_i'=1 iff 2·∑_{j~i}x_j+x_i≥d_i+1. This formula handles odd degrees, even-degree ties, and isolated vertices. It is a binary threshold rule with symmetric coefficients A_ij=2 for adjacent distinct vertices and A_ii=1; Goles–Olivos 1980 abstract expressly states that iterations of symmetric threshold functions end at a fixed point or a period-two cycle. The paper's full proof was not read; the programme does not claim an independent proof."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "Writing colours x_i∈{0,1} and degree d_i, the update is x_i'=1 iff 2·∑_{j~i}x_j+x_i≥d_i+1. This formula handles odd degrees, even-degree ties, and isolated vertices. It is a binary threshold rule with symmetric coefficients A_ij=2 for adjacent distinct vertices and A_ii=1; Goles–Olivos 1980 abstract expressly states that iterations of symmetric threshold functions end at a fixed point or a period-two cycle. The paper's full proof was not read; the programme does not claim an independent proof."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "Writing colours x_i∈{0,1} and degree d_i, the update is x_i'=1 iff 2·∑_{j~i}x_j+x_i≥d_i+1. This formula handles odd degrees, even-degree ties, and isolated vertices. It is a binary threshold rule with symmetric coefficients A_ij=2 for adjacent distinct vertices and A_ii=1; Goles–Olivos 1980 abstract expressly states that iterations of symmetric threshold functions end at a fixed point or a period-two cycle. The paper's full proof was not read; the programme does not claim an independent proof."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "Writing colours x_i∈{0,1} and degree d_i, the update is x_i'=1 iff 2·∑_{j~i}x_j+x_i≥d_i+1. This formula handles odd degrees, even-degree ties, and isolated vertices. It is a binary threshold rule with symmetric coefficients A_ij=2 for adjacent distinct vertices and A_ii=1; Goles–Olivos 1980 abstract expressly states that iterations of symmetric threshold functions end at a fixed point or a period-two cycle. The paper's full proof was not read; the programme does not claim an independent proof."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_RESOLVED",
+          "detail": "Native matched source inspected at stated access grade; wider native audit UNKNOWN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S012",
+        "reason": "The symmetric-threshold theorem of Goles–Olivos (1980) states fixed points or 2-cycles; the tie-hold update embeds using symmetric neighbour weight 2 and diagonal self-weight 1. No original result established.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Opened source abstract plus exact threshold encoding, NOT a programme proof",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0064"
+      ],
+      "claim_ids": [
+        "CLM-0079"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 12,
+        "naturalness": 10,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 2,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 53
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Killed; no two failed dissimilar attacks and no independent novelty/difficulty clearance."
+    },
+    {
+      "id": "CND-0119",
+      "exact_statement": "For every strictly increasing sequence of positive integers a_1,a_2,... with a_(n+1)−a_n→∞, must the infinite series ∑_(n=1)^∞ 1/a_n converge?",
+      "plain_language_statement": "If the gaps between chosen whole numbers grow without bound, must the sum of their reciprocals have a finite total?",
+      "domain": "infinite sequences / convergence",
+      "origin_mechanism": "S012 MEC-08 change local gap divergence into global reciprocal-sum constraint, not iterated-row Riemann sum",
+      "attribution": "Owner mathematical themes; historical sources attributed where applicable; no novelty claim",
+      "quantifiers": "For every strictly increasing sequence of positive integers a_1,a_2,... with a_(n+1)−a_n→∞, must the infinite series ∑_(n=1)^∞ 1/a_n converge?",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM-0004 registered; no finite mathematical search run; proof/source kill made numeric search unnecessary."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "Let a_n=∑_{k=1}^n⌈log₂(k+1)⌉. Then a_(n+1)−a_n=⌈log₂(n+2)⌉→∞, while for 2^j≤n<2^(j+1), each summand in a_n is at most j+2; hence a_n≤n(j+2)<2^(j+1)(j+2). There are 2^j such n, so their reciprocal sum exceeds 1/[2(j+2)]. Summing over j≥1 diverges by comparison with the harmonic series. All a_n are positive strictly increasing integers."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "Let a_n=∑_{k=1}^n⌈log₂(k+1)⌉. Then a_(n+1)−a_n=⌈log₂(n+2)⌉→∞, while for 2^j≤n<2^(j+1), each summand in a_n is at most j+2; hence a_n≤n(j+2)<2^(j+1)(j+2). There are 2^j such n, so their reciprocal sum exceeds 1/[2(j+2)]. Summing over j≥1 diverges by comparison with the harmonic series. All a_n are positive strictly increasing integers."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "Let a_n=∑_{k=1}^n⌈log₂(k+1)⌉. Then a_(n+1)−a_n=⌈log₂(n+2)⌉→∞, while for 2^j≤n<2^(j+1), each summand in a_n is at most j+2; hence a_n≤n(j+2)<2^(j+1)(j+2). There are 2^j such n, so their reciprocal sum exceeds 1/[2(j+2)]. Summing over j≥1 diverges by comparison with the harmonic series. All a_n are positive strictly increasing integers."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED_OR_INAPPLICABLE",
+          "detail": "Let a_n=∑_{k=1}^n⌈log₂(k+1)⌉. Then a_(n+1)−a_n=⌈log₂(n+2)⌉→∞, while for 2^j≤n<2^(j+1), each summand in a_n is at most j+2; hence a_n≤n(j+2)<2^(j+1)(j+2). There are 2^j such n, so their reciprocal sum exceeds 1/[2(j+2)]. Summing over j≥1 diverges by comparison with the harmonic series. All a_n are positive strictly increasing integers."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_LIMITED",
+          "detail": "No global novelty clearance sought after elementary kill; relevant native audit incomplete/UNKNOWN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S012",
+        "reason": "Take a_n=∑_(k=1)^n ⌈log₂(k+1)⌉; gaps grow to infinity, but dyadic blocks show ∑1/a_n diverges.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Self-contained elementary human check, not independent review",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0080"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 12,
+        "naturalness": 10,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 51
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Killed; no two failed dissimilar attacks and no independent novelty/difficulty clearance."
     }
   ]
 }

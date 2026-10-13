@@ -1,0 +1,6 @@
+# S012 plan, created on owner-authorised entry
+1. Pin base main 3c2e7214ed37872c2847cd560b6fb2f3f0ae6cf2, tree 9ae72c2106bada1b292e0db04c4e3a1a117eabe1; reconstruct S011 PR #12, single-parent authored commit 6d4776cf8fe7cf1971cdde0ea56c1a2da446608f, ordered two-parent merge and hosted governance status.
+2. Run four dissimilar school-readable symbolic screeners: square/triangular time coincidences, integer-radius circle lattice points, symmetric binary majority oscillator, unbounded integer gaps/reciprocal series.
+3. Directly inspect source statements as available; record exact indexed searches and native service limits, do not turn no-hit into priority claim.
+4. No mathematical numeric computation, hence no CAM-0004; preserve all CAM-0003 files verbatim. Update paired catalogues and all ledgers. Git DNS blocks full checkout, so actual-checkout checker/unittests NOT_RUN.
+5. One session branch session/S012-four-mechanisms-priority-screen, one authored commit, ordinary PR/merge and verify. S013 future/unexecuted.

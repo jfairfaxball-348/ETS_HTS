@@ -3,13 +3,13 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S011: five dissimilar problems killed with evidence",
-  "last_completed_session": "S011",
-  "next_session": "S012",
+  "phase_name": "S012: four structurally distinct questions killed (two known, two elementary)",
+  "last_completed_session": "S012",
+  "next_session": "S013",
   "next_session_authorised": false,
-  "candidate_count": 115,
-  "source_count": 62,
-  "claim_count": 76,
+  "candidate_count": 119,
+  "source_count": 64,
+  "claim_count": 80,
   "campaign_count": 3,
   "gate_status": {
     "0": "CLOSED_ADMINISTRATIVE",
@@ -22,7 +22,7 @@
   },
   "surviving_count": 0,
   "triaged_count": 0,
-  "kill_count": 115,
-  "remote_sha_policy": "S012 independently verify S011 sole-parent authored commit, PR and two-parent merge",
-  "note": "CND115 all KILLED SRC62 CLM76 CAM3, zero survivors. CAM-0003 still FAILED/PARTIAL 37/54 untouched; no CAM-0004. OEIS A171746 prior exact square-jump problem. Local git DNS blocked; branch protection 403 UNKNOWN; hosted CI only record format."
+  "kill_count": 119,
+  "remote_sha_policy": "S013 independently verify S012 one authored sole-parent commit, ordinary PR and two-parent merge",
+  "note": "CND119 all killed SRC64 CLM80 CAM3, zero survivors; CAM-0003 remains FAILED/PARTIAL 37/54, CAM-0004 absent (no numerical experiment). OEIS A001110 and Goles–Olivos 1980 known; lattice symmetry and divergent-gap counterexample elementary. Git DNS blocked, branch protection 403 UNKNOWN. Hosted CI format only."
 }

@@ -558,6 +558,24 @@
       "url_or_doi": "https://proofwiki.org/wiki/Squaring_the_Circle/Fallacious_Proof/Edward_J._Goodwin",
       "access_grade": "STATEMENT_INSPECTED",
       "notes": "Opened π=4 contradiction for simultaneous perimeter-area equality, not novel/hard literature."
+    },
+    {
+      "id": "SRC-0063",
+      "title": "OEIS A001110 — square triangular numbers",
+      "author": "N. J. A. Sloane and OEIS contributors",
+      "date": "historical sequence; native entry accessed 2026-10-13",
+      "url_or_doi": "https://oeis.org/A001110",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Native OEIS sequence/definition opened, entries 0,1,36,1225,... and references. Exact statement of CND-0116 known for centuries; historical originals not inspected. Native OEIS bulk keyword/term endpoints UNKNOWN."
+    },
+    {
+      "id": "SRC-0064",
+      "title": "Periodic behaviour of generalized threshold functions",
+      "author": "E. Goles and J. Olivos",
+      "date": "1980",
+      "url_or_doi": "https://doi.org/10.1016/0012-365X(80)90121-1",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "1980 Discrete Mathematics 30(2), 187–189; opened university institutional repository author/abstract page https://pure.uai.cl/en/publications/periodic-behaviour-of-generalized-threshold-functions/ ; result claims cycles of length 1 or 2 for symmetric threshold functions. Publisher direct full text not accessible. S012 gives exact tie-hold encoding; proof not inspected."
     }
   ]
 }

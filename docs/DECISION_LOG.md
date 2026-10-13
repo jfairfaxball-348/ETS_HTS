@@ -74,3 +74,10 @@ DEC-0035: No mathematical CAM or external posting; native novelty UNKNOWN where 
 - DEC-0045: Native novelty/priority gaps UNKNOWN; two failed attacks and independent difficulty absent; zero survivors.
 - DEC-0046: Preserve CAM-0003 FAILED/PARTIAL 37/54, no CAM-0004; S012 future owner-gated.
 - DEC-0047: Git checkout DNS fails, branch protection 403 UNKNOWN; CI governance only.
+
+## S012 decisions — 2026-10-13
+- DEC-0048: Four independent ideas CND-0116..0119 screened with exact quantifiers. All four killed: two prior-art matches and two elementary symbolic resolutions.
+- DEC-0049: Classify 1980 Goles–Olivos as ABSTRACT_INSPECTED, not proof-inspected. Explicit algebraic encoding covers isolated vertices and ties, but no claim of our own theorem.
+- DEC-0050: Keep all native full-corpus gap counts UNKNOWN, not zero; zero TRIAGED/SURVIVING/HARD and no external priority.
+- DEC-0051: CAM-0003 FAIL/PARTIAL unchanged, no CAM-0004 because no numeric experiment; maintain stage 1 regeneration only.
+- DEC-0052: Local actual git checkout DNS-blocked, format-only hosted CI does not certify mathematical correctness. S013 requires fresh owner invocation.

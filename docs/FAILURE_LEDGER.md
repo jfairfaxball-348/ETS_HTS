@@ -162,3 +162,10 @@ Final cumulative 84/84 KILLED, 0 TRIAGED, 0 SURVIVING, 0 HARD.
 - CND-0114 KILLED_EASY: A full straight rectangle side would have to be covered by finitely many circle boundaries, each meeting its supporting line in at most two points; impossible. CLM-0075.
 - CND-0115 KILLED_KNOWN: OEIS A171746 (2010) encodes the exact first positive square-hitting iteration; a 2022 mathematical note poses the same question. An elementary square-offset descent gives a proof. CLM-0076.
 Total 115/115 killed.
+
+## S012 permanent four-way kills
+- CND-0116 KILLED_KNOWN: square-triangular minutes = Pell solutions = exact OEIS A001110; CLM-0077.
+- CND-0117 KILLED_EASY: integer-radius circle has 4+8k lattice points, never eight; CLM-0078.
+- CND-0118 KILLED_KNOWN: undirected synchronous tie-hold majority embeds symmetric binary thresholds with diagonal weight1 and offdiagonal2; Goles–Olivos 1980 abstract says eventual period <=2; CLM-0079 (source abstract, not proof).
+- CND-0119 KILLED_FALSE/DEGENERATE: a_n=sum_{k≤n}ceil(log2(k+1)) has gaps →∞ but reciprocal series diverges via dyadic block harmonic lower bound; CLM-0080.
+- Access: native OEIS term/keyword full queries and other required original literature searches UNKNOWN; local true checkout blocked DNS. No mathematical CAM-0004; CAM-0003 remains FAILED/PARTIAL 37/54.

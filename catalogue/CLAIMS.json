@@ -1038,6 +1038,58 @@
       "cam_ids": [],
       "justification": "Let x=k²+r, k≥1, 1≤r≤2k. If r≤k, then two steps under F reach (k+1)²+(r-1); if r≥k+1 then one step reaches (k+1)²+(r-k-1). Both are within the next square gap and strictly lower nonnegative offsets than r. Iterated threshold crossings must end at r=0. If starting at square k², first move to k²+k (nonsquare) and apply the same descent. Exact prior statement already in OEIS A171746 (whose 1985–86 print reference was NOT inspected) and 2022 note.",
       "limitations": "Known/false/elementary human proof only; no novel theorem or independent review."
+    },
+    {
+      "id": "CLM-0077",
+      "statement": "Exact square-triangular numbers OEIS A001110. Pell recurrence supplies infinitely many times; classical, not a novel oscillator question.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0063"
+      ],
+      "candidate_ids": [
+        "CND-0116"
+      ],
+      "cam_ids": [],
+      "justification": "Put X=2m+1 and Y=n. The equality n²=m(m+1)/2 is equivalent to X²−8Y²=1 with X odd. Starting (X,Y)=(3,1), map (X,Y)↦(3X+8Y,X+3Y); this preserves X²−8Y², positive integrality and odd X, and strictly increases both coordinates. Hence infinitely many positive common minutes; 1,36,1225,... are already OEIS A001110.",
+      "limitations": "Historical or elementary self-audited proof; not new; no independent referee or machine formalisation."
+    },
+    {
+      "id": "CLM-0078",
+      "statement": "Exactly four axis points; every other integer point has a symmetry orbit of size eight, hence the number is 4 modulo 8 and never eight.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0117"
+      ],
+      "cam_ids": [],
+      "justification": "For R≥1, the four axis points (±R,0),(0,±R) are distinct. At any other integer solution x,y are both nonzero; |x|=|y| would imply R²=2x², impossible for positive integer R (irrationality of √2). The eight distinct sign-and-coordinate-swap images of (x,y) form one orbit. Thus the number of lattice points equals 4+8k (finite because |x|,|y|≤R), never 8. R=1 illustrates four.",
+      "limitations": "Historical or elementary self-audited proof; not new; no independent referee or machine formalisation."
+    },
+    {
+      "id": "CLM-0079",
+      "statement": "The symmetric-threshold theorem of Goles–Olivos (1980) states fixed points or 2-cycles; the tie-hold update embeds using symmetric neighbour weight 2 and diagonal self-weight 1. No original result established.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0064"
+      ],
+      "candidate_ids": [
+        "CND-0118"
+      ],
+      "cam_ids": [],
+      "justification": "Writing colours x_i∈{0,1} and degree d_i, the update is x_i'=1 iff 2·∑_{j~i}x_j+x_i≥d_i+1. This formula handles odd degrees, even-degree ties, and isolated vertices. It is a binary threshold rule with symmetric coefficients A_ij=2 for adjacent distinct vertices and A_ii=1; Goles–Olivos 1980 abstract expressly states that iterations of symmetric threshold functions end at a fixed point or a period-two cycle. The paper's full proof was not read; the programme does not claim an independent proof.",
+      "limitations": "Full historical paper PROOF NOT INSPECTED; direct theorem reduction shown algebraically; mathematical applicability needs independent referee."
+    },
+    {
+      "id": "CLM-0080",
+      "statement": "Take a_n=∑_(k=1)^n ⌈log₂(k+1)⌉; gaps grow to infinity, but dyadic blocks show ∑1/a_n diverges.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0119"
+      ],
+      "cam_ids": [],
+      "justification": "Let a_n=∑_{k=1}^n⌈log₂(k+1)⌉. Then a_(n+1)−a_n=⌈log₂(n+2)⌉→∞, while for 2^j≤n<2^(j+1), each summand in a_n is at most j+2; hence a_n≤n(j+2)<2^(j+1)(j+2). There are 2^j such n, so their reciprocal sum exceeds 1/[2(j+2)]. Summing over j≥1 diverges by comparison with the harmonic series. All a_n are positive strictly increasing integers.",
+      "limitations": "Historical or elementary self-audited proof; not new; no independent referee or machine formalisation."
     }
   ]
 }
