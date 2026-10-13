@@ -26,3 +26,6 @@ Phase 1 **OPEN_REGENERATION_ZERO_SURVIVORS**, cumulative CND 101 all killed; TRI
 ## S008 — 2026-10-13
 
 Phase 1 remains **OPEN_REGENERATION_ZERO_SURVIVORS**; 110 CND, 109 killed, one GENERATED (CND-0109), zero TRIAGED/SURVIVING/HARD/selected. Phase 2 NOT_OPEN_NO_SURVIVORS; full native source search is incomplete. Phase 3 NOT_OPEN (no independent difficulty evidence). Gates 4–6 OWNER_GATED. No new mathematical CAM, no selection or publication. Governance-only CI cannot certify mathematical truth, originality or hardness.
+
+## S009 — 2026-10-13
+Phase 1 **OPEN_REGENERATION_ZERO_SURVIVORS**: 110 CND, 109 killed, 1 GENERATED (CND-0109), zero TRIAGED/SURVIVING/HARD/selected. Phase 2 NOT_OPEN_NO_SURVIVORS, native novelty resources UNKNOWN/incomplete. Phase 3 NOT_OPEN without two independent failed attacks and external difficulty evidence. Gates 4–6 OWNER_GATED. CAM-0003 FAILED/PARTIAL, 37/54 finite optimal outputs. No mathematical confidence is supplied by record-format CI.

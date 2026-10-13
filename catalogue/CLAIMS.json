@@ -921,6 +921,44 @@
       "cam_ids": [],
       "justification": "Complete human mathematical argument in sessions/S008/MATHEMATICS.md; matching source, if any, is context only.",
       "limitations": "Self-audited, not machine formalised or refereed. No novelty, hardness or publication claim; use known theorem labels only where source directly states them."
+    },
+    {
+      "id": "CLM-0068",
+      "statement": "For every even m>=2 and any defective face, D(m,i,j)=m²/2+1, by sharp face-block lower bound and explicit boundary-defect domino absorption or interior horizontal triple+boundary monomer tiling.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0109"
+      ],
+      "cam_ids": [],
+      "justification": "Full lower/upper proof with parity cases in sessions/S009/MATHEMATICS.md.",
+      "limitations": "Human proof not externally reviewed or machine formalised; no originality claim."
+    },
+    {
+      "id": "CLM-0069",
+      "statement": "For odd m>=3: D=(m²+1)/2 if the defect is original minority checkerboard or original majority boundary; for original majority strictly interior, D>=(m²+3)/2.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0109"
+      ],
+      "cam_ids": [],
+      "justification": "Direct domino/triple constructions and tight-configuration exclusion in sessions/S009/MATHEMATICS.md.",
+      "limitations": "Matching odd-majority interior upper bound unproved; no global exact answer or hardness/novelty certification."
+    },
+    {
+      "id": "CLM-0070",
+      "statement": "CAM-0003 solved all 29 defect positions for 2<=m<=4: m2 D=3 at 4 positions, m3 D=5 at eight positions and centre D=6, m4 D=9 at all 16. Eight m5 positions solved: (1,j) j1..5 D13; (2,1) D13; (2,2) D14; (2,3) D13. Remaining 17 m5 positions were NOT executed due runtime interruption.",
+      "status": "COMPUTED_EXACT",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0109"
+      ],
+      "cam_ids": [
+        "CAM-0003"
+      ],
+      "justification": "Preregistered scipy MILP/HiGHS solver outputs with status=0 retained by stdout log and transcribed in CAM-0003_raw.json; source and prereg hashes retained.",
+      "limitations": "37 finite runs only; interrupted campaign, not an independently checked MILP certificate or general proof; no claim about remaining m5 cells."
     }
   ]
 }

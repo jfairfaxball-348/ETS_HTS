@@ -6928,29 +6928,46 @@
       "novelty_grade": "SHALLOW_SEARCH_NO_HIT",
       "difficulty_evidence": [
         {
-          "test": "cheap_symbolic_kill",
-          "status": "INCOMPLETE",
-          "detail": "Exact model and representative independence follow from S007 cycle integration; unlike full checkerboard, simple domino matching can strand charge near defect. Lower bound and upper constructions not closed. No independent hardness evidence, no deep novelty clearance; remains GENERATED only. Do not infer that difficulty is proven, or that exact formula is new."
+          "test": "universal_even_exact_formula",
+          "status": "RESOLVED",
+          "detail": "CLM-0068 proves D=m²/2+1 for every even m and defect position, via sharp dual counting and horizontal triple+boundary monomer tiling."
         },
         {
-          "test": "independent_obstruction_or_known_translation",
+          "test": "odd_grid_two_classes",
+          "status": "RESOLVED_PARTIALLY",
+          "detail": "CLM-0069 proves exact odd m for minority positions and majority boundary positions, and +1 lower bound for majority interior. Upper matching construction for interior majority remains unresolved."
+        },
+        {
+          "test": "finite_preregistered_solver",
+          "status": "PARTIAL",
+          "detail": "CAM-0003 froze code/hash before run, produced 37 solver-optimal instance outputs including full m2/3/4 grids and eight m5 positions before timeout; 17 m5 runs NOT done, no general inference."
+        },
+        {
+          "test": "independent_hardness_and_deep_novelty",
           "status": "NOT_CLEARED",
-          "detail": "Matching and boundary absorption give competing heuristics, but no two distinct failed rigorous attacks or independent evidence of difficulty exist."
+          "detail": "Neither two genuinely distinct FAILED proof attacks nor independent hardness evidence nor exhaustive source-native two-pass novelty review. Remain GENERATED, zero difficulty certification."
         }
       ],
       "kill_record": null,
       "source_ids": [
         "SRC-0044",
-        "SRC-0051"
+        "SRC-0051",
+        "SRC-0058"
       ],
-      "claim_ids": [],
-      "cam_ids": [],
+      "claim_ids": [
+        "CLM-0068",
+        "CLM-0069",
+        "CLM-0070"
+      ],
+      "cam_ids": [
+        "CAM-0003"
+      ],
       "scoring": {
         "novelty_audit": 0,
         "difficulty_evidence": 0,
         "total": 0
       },
-      "uncertainty": "GENERATED only; shallow web-index searches not a novel/open/hard certificate."
+      "uncertainty": "S009 partial universal theorems prove tractability on broad subfamilies; odd original-majority interior exact upper formula still open WITHIN PROGRAMME ONLY. No literature-open, novel or research-difficult claim. CAM-0003 interrupted; source-native gaps UNKNOWN."
     },
     {
       "id": "CND-0110",

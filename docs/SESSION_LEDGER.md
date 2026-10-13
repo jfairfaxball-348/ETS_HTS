@@ -20,3 +20,5 @@
 
 | S008 | Explicit owner URL invocation 2026-10-13 | Session authored: 9 CND, 8 killed, 1 GENERATED, 0 TRIAGED/SURVIVING; SRC57, CLM67, CAM2 | Entry verified main 6891a26, S007 PR #8 merge two parents; outgoing authored commit/PR/merge reconstruct S009 entry |
 | S009 | NONE | FUTURE / UNEXECUTED | fresh explicit owner instruction required |
+| S009 | Explicit owner URL invocation 2026-10-13 | Even-m grid solved, odd-m subfamilies solved; CND-0109 GENERATED, no hardness/novelty; SRC58 CLM70 CAM3 (failed/partial) | Entry main d893d3fd8ecd2a3f6a333fbc2c643a3ddbde1eb9 verified S008 PR #9 normal two-parent merge; outgoing integration reconstruct S010 entry. |
+| S010 | NONE | FUTURE / UNEXECUTED | new explicit owner invocation required |
