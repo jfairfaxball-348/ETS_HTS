@@ -5856,6 +5856,756 @@
       },
       "screened_as_top_ten": false,
       "uncertainty": "Defeated at cheap gate, not hard or surviving."
+    },
+    {
+      "id": "CND-0085",
+      "exact_statement": "On any directed triangle, with offsets in Z/12, must there exist x_v with x_v-x_u=d_uv on each edge?",
+      "plain_language_statement": "Do all pairwise time offsets on a triangle of 12-hour clocks admit simultaneous settings?",
+      "domain": "T",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "Offsets 3,4,6 sum to 13≡1(mod12), but vertex differences telescope to 0."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "Offsets 3,4,6 sum to 13≡1(mod12), but vertex differences telescope to 0.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0043"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0086",
+      "exact_statement": "For every finite connected graph with Z/12 antisymmetric edge offsets, does a phase assignment exist iff all signed cycle sums are zero?",
+      "plain_language_statement": "When do local clock comparisons around a graph agree globally?",
+      "domain": "T",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "Necessity telescopes; sufficiency integrates along root-to-vertex spanning-tree paths; cycle condition gives path independence, standard gain-graph balance."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_KNOWN",
+        "reason": "Necessity telescopes; sufficiency integrates along root-to-vertex spanning-tree paths; cycle condition gives path independence, standard gain-graph balance.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0044"
+      ],
+      "claim_ids": [
+        "CLM-0044"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0087",
+      "exact_statement": "Does every prefix-closed binary-string tree with strings of every finite length have an infinite branch?",
+      "plain_language_statement": "Do arbitrarily long finite choices from two options force one endless valid choice sequence?",
+      "domain": "I",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "One child at each node must have arbitrarily long descendants; recursively choose it (König lemma)."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_KNOWN",
+        "reason": "One child at each node must have arbitrarily long descendants; recursively choose it (König lemma).",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0048",
+        "SRC-0052"
+      ],
+      "claim_ids": [
+        "CLM-0045"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0088",
+      "exact_statement": "For each k≥1 and c:N→{1,...,k}, must some colour class be infinite?",
+      "plain_language_statement": "Must a colour be used infinitely often when infinitely many numbers receive one of finitely many colours?",
+      "domain": "I",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "If every colour class were finite, their finite union would be finite, contradiction."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_EASY",
+        "reason": "If every colour class were finite, their finite union would be finite, contradiction.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0052"
+      ],
+      "claim_ids": [
+        "CLM-0046"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0089",
+      "exact_statement": "For every norm on R², must the norm perimeter of its unit circle divided by two equal Euclidean π?",
+      "plain_language_statement": "Must the circumference-to-diameter ratio be π when distance is changed?",
+      "domain": "P",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "Taxicab diamond has four sides of norm-length 2, norm circumference 8, diameter 2, ratio 4."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "Taxicab diamond has four sides of norm-length 2, norm circumference 8, diameter 2, ratio 4.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0045",
+        "SRC-0053"
+      ],
+      "claim_ids": [
+        "CLM-0047"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0090",
+      "exact_statement": "For every norm on R² is 6≤norm_length(boundary of norm unit ball)≤8?",
+      "plain_language_statement": "Must every norm-circle have circumference between six and eight times its unit radius?",
+      "domain": "P",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "This is Gołąb's theorem, with hexagonal/parallelogram extremals; source secondary restatement inspected."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_KNOWN",
+        "reason": "This is Gołąb's theorem, with hexagonal/parallelogram extremals; source secondary restatement inspected.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0045"
+      ],
+      "claim_ids": [
+        "CLM-0048"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0091",
+      "exact_statement": "For each directed C_n, n≥3, can phases x_i∈Z/3 satisfy x_(i+1)=x_i+1 on all n edges?",
+      "plain_language_statement": "Can each person in a clapping circle be one beat later than the previous person on a three-beat cycle?",
+      "domain": "B",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "Summation forces n≡0 mod3. C4 is false; if 3 divides n, set x_i=i mod3."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "Summation forces n≡0 mod3. C4 is false; if 3 divides n, set x_i=i mod3.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0047"
+      ],
+      "claim_ids": [
+        "CLM-0049"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0092",
+      "exact_statement": "For p,q≥1 integer and pulse sets pN₀ and qN₀, is smallest positive common time lcm(p,q)?",
+      "plain_language_statement": "When do two regular pulse trains coincide again?",
+      "domain": "B",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "Common pulses are exactly positive multiples of both p and q."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_EASY",
+        "reason": "Common pulses are exactly positive multiples of both p and q.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0047"
+      ],
+      "claim_ids": [
+        "CLM-0050"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0093",
+      "exact_statement": "Does any real x satisfy 0x=1 with usual real multiplication?",
+      "plain_language_statement": "Could one over zero be an ordinary real number?",
+      "domain": "Z",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "0x=0 for every real x, contradiction."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "0x=0 for every real x, contradiction.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0046"
+      ],
+      "claim_ids": [
+        "CLM-0051"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0094",
+      "exact_statement": "With b^{-1}=1/b for b≠0 and 0^{-1}=0, does a/b=a·b^{-1} extend usual real division to a total operation?",
+      "plain_language_statement": "Can division be given an output at zero without changing nonzero divisions?",
+      "domain": "Z",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "Yes, known zero-totalised field/meadow; loses b(a/b)=a when b=0,a≠0."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_KNOWN",
+        "reason": "Yes, known zero-totalised field/meadow; loses b(a/b)=a when b=0,a≠0.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0046"
+      ],
+      "claim_ids": [
+        "CLM-0052"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0095",
+      "exact_statement": "For every a_n≥0 with a_n→0, does ∑ a_n converge?",
+      "plain_language_statement": "If terms shrink to zero, must their sum converge?",
+      "domain": "C",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "Harmonic 1/n tends to zero but dyadic grouping gives infinitely many blocks each of total at least 1/2."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "Harmonic 1/n tends to zero but dyadic grouping gives infinitely many blocks each of total at least 1/2.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0049"
+      ],
+      "claim_ids": [
+        "CLM-0053"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0096",
+      "exact_statement": "For a_mn=m/(m+n) with m,n≥1, must lim_m lim_n a_mn = lim_n lim_m a_mn?",
+      "plain_language_statement": "Do row-first and column-first limits always agree?",
+      "domain": "C",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "Taking n→∞ first yields 0; taking m→∞ first yields 1; matching known literature example."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "Taking n→∞ first yields 0; taking m→∞ first yields 1; matching known literature example.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0050"
+      ],
+      "claim_ids": [
+        "CLM-0054"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0097",
+      "exact_statement": "Let T be all finite strictly decreasing lists of nonnegative integers. Does arbitrary finite depth imply an infinite branch?",
+      "plain_language_statement": "Do arbitrarily long finite decreasing countdowns force an infinite countdown?",
+      "domain": "I+C",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "Start arbitrarily high for finite length; an infinite decreasing sequence of nonnegative integers is impossible. Root has infinite branching."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "Start arbitrarily high for finite length; an infinite decreasing sequence of nonnegative integers is impossible. Root has infinite branching.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0048"
+      ],
+      "claim_ids": [
+        "CLM-0055"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0098",
+      "exact_statement": "For finite graph and Z/k delays, do there exist pulse phases x_v meeting x_v-x_u=d_uv iff all signed cycle sums vanish?",
+      "plain_language_statement": "Are cyclic phase instructions on a graph a new condition beyond clock offsets?",
+      "domain": "T+B",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_EQUIVALENT",
+      "novelty_grade": "KNOWN_EQUIVALENT",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "Bidirectional bijection to CND-0086 clock variables/edge equations; same cycle telescoping and root integration for any k."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_EQUIVALENT",
+        "reason": "Bidirectional bijection to CND-0086 clock variables/edge equations; same cycle telescoping and root integration for any k.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0044",
+        "SRC-0047"
+      ],
+      "claim_ids": [
+        "CLM-0056"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0099",
+      "exact_statement": "Do N-step east/north staircases of step 1/N from (0,0) to (1,1), uniformly tending to the diagonal under x+y parametrisation, have lengths→√2?",
+      "plain_language_statement": "Do paths approaching a straight diagonal always approach its length?",
+      "domain": "P+C",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "All staircase lengths are 2 though distance to diagonal is ≤1/(√2 N), so lengths do not approach √2."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "All staircase lengths are 2 though distance to diagonal is ≤1/(√2 N), so lengths do not approach √2.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0045"
+      ],
+      "claim_ids": [
+        "CLM-0057"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0100",
+      "exact_statement": "Is there c∈R that makes both x/x and x²/x continuous at 0 if both expressions are assigned c at 0?",
+      "plain_language_statement": "Could one chosen 0/0 value make every vanishing fraction continuous?",
+      "domain": "Z+C",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "The limits are 1 and 0 respectively: no common c."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "The limits are 1 and 0 respectively: no common c.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0046"
+      ],
+      "claim_ids": [
+        "CLM-0058"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0101",
+      "exact_statement": "For n≥2, assign antisymmetric offsets in Z/3 to edges of an n×n vertex grid so every oriented unit square sums +1. Is the minimum number of edges to delete for a consistent vertex-phase solution exactly ceil(2(n−1)²/3)?",
+      "plain_language_statement": "How many mismatched clock comparisons must be erased from a grid whose every small square is one tick off?",
+      "domain": "T+B",
+      "origin_mechanism": "S007 owner six-lane mathematical phenomena",
+      "attribution": "Generated from owner's steer; no claim of original novelty.",
+      "quantifiers": "Exact statement contains parameters and endpoint conventions; no physical-neural claim.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "direct_proof_or_witness",
+          "status": "RESOLVED",
+          "detail": "Let F=(n−1)². Each retained bounded face must enclose area 0 mod3, hence there are ≤floor(F/3) bounded faces; each deletion reduces their number by ≤1, giving ≥ceil(2F/3). Partition square cells into trominoes plus at most one boundary corner for F mod3=1; delete two internal edges per triple and the corner outer edge if needed. This meets the bound. Full cases and proof in S007 MATHEMATICS."
+        },
+        {
+          "test": "independent_check",
+          "status": "ATTEMPTED",
+          "detail": "Alternative invariant, boundary case or identified source in sessions/S007/MATHEMATICS.md; no failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S007",
+        "kind": "KILLED_EASY",
+        "reason": "Let F=(n−1)². Each retained bounded face must enclose area 0 mod3, hence there are ≤floor(F/3) bounded faces; each deletion reduces their number by ≤1, giving ≥ceil(2F/3). Partition square cells into trominoes plus at most one boundary corner for F mod3=1; delete two internal edges per triple and the corner outer edge if needed. This meets the bound. Full cases and proof in S007 MATHEMATICS.",
+        "verified_scope": "Human symbolic argument and specifically source-graded pages, not independent peer review.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0044",
+        "SRC-0051"
+      ],
+      "claim_ids": [
+        "CLM-0059"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Rejected at cheap gate; no novel/hard certification."
     }
   ]
 }

@@ -387,6 +387,105 @@
       "url_or_doi": "https://epubs.siam.org/doi/10.1137/S0895480195295471",
       "access_grade": "METADATA_ONLY",
       "notes": "Publisher abstract surfaced in search provider; used as subject background, not proof."
+    },
+    {
+      "id": "SRC-0044",
+      "title": "Balanced group-labeled graphs",
+      "author": "Manas Joglekar; Nisarg Shah; Ajit A. Diwan",
+      "date": "2012-05-06",
+      "url_or_doi": "https://www.sciencedirect.com/science/article/pii/S0012365X11004353",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Opened mathematical balance/switching statement, clock-graph context; no S007 novelty certification."
+    },
+    {
+      "id": "SRC-0045",
+      "title": "Golab's theorem",
+      "author": "PlanetMath contributors, based on S. Gołąb 1932",
+      "date": "2013-03-22",
+      "url_or_doi": "https://planetmath.org/golabstheorem",
+      "access_grade": "SECONDARY_ONLY",
+      "notes": "Opened restatement of self-perimeter bound 6 to 8 in normed planes."
+    },
+    {
+      "id": "SRC-0046",
+      "title": "Division Safe Calculation in Totalised Fields",
+      "author": "J. A. Bergstra; J. V. Tucker",
+      "date": "2008",
+      "url_or_doi": "https://link.springer.com/article/10.1007/s00224-007-9035-4",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Opened journal abstract on assigning zero inverse zero."
+    },
+    {
+      "id": "SRC-0047",
+      "title": "Mathematical Frameworks for Oscillatory Network Dynamics in Neuroscience",
+      "author": "Peter Ashwin; Stephen Coombes; Rachel Nicks",
+      "date": "2016-01-06",
+      "url_or_doi": "https://link.springer.com/article/10.1186/s13408-015-0033-6",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Opened journal abstract; phase-oscillator model context, not an EEG claim."
+    },
+    {
+      "id": "SRC-0048",
+      "title": "König's lemma",
+      "author": "PlanetMath contributors",
+      "date": "2013-03-22",
+      "url_or_doi": "https://planetmath.org/konigslemma",
+      "access_grade": "PROOF_INSPECTED",
+      "notes": "Opened finite-branching infinity lemma with argument."
+    },
+    {
+      "id": "SRC-0049",
+      "title": "Riemann Rearrangement Theorem",
+      "author": "University of Pennsylvania course (page author not confirmed)",
+      "date": "date unverified",
+      "url_or_doi": "https://www2.math.upenn.edu/~gressman/analysis/02-riemann.html",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Opened theorem; conditional sums can change under rearrangement."
+    },
+    {
+      "id": "SRC-0050",
+      "title": "Conceptual understanding of bringing limit inside the sum",
+      "author": "Andrew D. Hwang, Mathematics Stack Exchange",
+      "date": "2017-04-23",
+      "url_or_doi": "https://math.stackexchange.com/questions/2247354/conceptual-understanding-of-bringing-limit-inside-the-sum",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Opened double-sequence counterexample giving unequal iterated limits."
+    },
+    {
+      "id": "SRC-0051",
+      "title": "Totally frustrated states in the chromatic theory of gain graphs",
+      "author": "author not independently verified",
+      "date": "2009",
+      "url_or_doi": "https://doi.org/10.1016/j.ejc.2008.02.004",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Opened indexed publisher article/abstract; contextual gain-graph frustrated states."
+    },
+    {
+      "id": "SRC-0052",
+      "title": "Reverse Mathematics",
+      "author": "Stanford Encyclopedia of Philosophy contributors",
+      "date": "2024 archived",
+      "url_or_doi": "https://plato.stanford.edu/archives/fall2024/entries/reverse-mathematics/",
+      "access_grade": "SECONDARY_ONLY",
+      "notes": "Opened weak König lemma distinction; not physical infinity."
+    },
+    {
+      "id": "SRC-0053",
+      "title": "Introduction to Taxicab Geometry and its Extension in Euclidean Geometry",
+      "author": "author not independently verified",
+      "date": "2023 per web index",
+      "url_or_doi": "https://doi.org/10.13140/RG.2.2.24707.41768",
+      "access_grade": "SECONDARY_ONLY",
+      "notes": "Indexed taxicab circle geometry text; inspect priority separately."
+    },
+    {
+      "id": "SRC-0054",
+      "title": "Critically 3-frustrated signed graphs",
+      "author": "author not independently verified",
+      "date": "2025 per publisher",
+      "url_or_doi": "https://www.sciencedirect.com/science/article/pii/S0012365X24003893",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Publisher result refers to NP-hard general signed frustration; no transfer to restricted grid."
     }
   ]
 }

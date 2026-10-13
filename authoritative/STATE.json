@@ -3,13 +3,13 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S006 resolved both provisional cases; three source-led replacements also killed; zero survivors",
-  "last_completed_session": "S006",
-  "next_session": "S007",
+  "phase_name": "S007 owner-directed six-lane exploration: 17 symbolic/known kills, zero survivors",
+  "last_completed_session": "S007",
+  "next_session": "S008",
   "next_session_authorised": false,
-  "candidate_count": 84,
-  "source_count": 43,
-  "claim_count": 42,
+  "candidate_count": 101,
+  "source_count": 54,
+  "claim_count": 59,
   "campaign_count": 2,
   "gate_status": {
     "0": "CLOSED_ADMINISTRATIVE",
@@ -22,7 +22,7 @@
   },
   "surviving_count": 0,
   "triaged_count": 0,
-  "kill_count": 84,
-  "remote_sha_policy": "S007 independently reconstruct S006 from LIVE main, authored parent/tree, PR and two-parent merge.",
-  "note": "CND-0068 expectation argument KILLED_EASY; CND-0080 six-vertex concave-chain fan KILLED_FALSE; three replacements 0082..0084 eliminated; CAM-0001 misleading optima field retained and corrected CAM-0002. Native novelty UNKNOWN where blocked. 0 HARD or SURVIVING."
+  "kill_count": 101,
+  "remote_sha_policy": "S008 independently pin live main and reconstruct S007 authored PR two-parent merge from GitHub.",
+  "note": "CND-0085..0101 all KILLED; no open/new-hard candidates. CND-0101 grid flux deletion exact closed by face/tromino proof; CAM-0001 early-return defect preserved; CAM-0002 corrected. Native deep novelty incomplete; no mathematical CAM S007."
 }

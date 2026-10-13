@@ -14,3 +14,6 @@
 
 | S006 | Explicit owner invocation 2026-10-13 | Completed mathematics: CND-0068 proved, CND-0080 falsified, three independent replacement mechanisms 0082..0084 killed; 84/84 KILLED; 43 SRC, 42 CLM, 2 CAM | Entry main 6da5590b1b1d130a7b2e34f5dea697e30a2fcc72; S005 PR #5 two-parent merge verified. Exit authored/PR/merge to reconstruct at next entry. |
 | S007 | NONE | FUTURE / UNEXECUTED | requires a NEW explicit owner invocation |
+
+| S007 | Explicit owner URL invocation 2026-10-13 | Six-lane research completed; CND-0085..0101 killed; cumulative 101/101 kills, zero survivors; no new CAM | Entry main 99f9b287, PR #6 and admin #7 merge verified; exit authored PR/merge to reconstruct next entry. |
+| S008 | NONE | FUTURE / UNEXECUTED | New explicit owner invocation required. |

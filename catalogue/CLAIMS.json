@@ -570,6 +570,246 @@
       "cam_ids": [],
       "justification": "Strictly increasing sorted sum chain a1+a1,...,a1+an,a2+an,...,an+an gives 2n−1 terms, as in 2026 journal editorial.",
       "limitations": "Direct editorial text inspected, not full research-paper proof; known elementary bound."
+    },
+    {
+      "id": "CLM-0043",
+      "statement": "CND-0085 resolution: Offsets 3,4,6 sum to 13≡1(mod12), but vertex differences telescope to 0.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0085"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. Offsets 3,4,6 sum to 13≡1(mod12), but vertex differences telescope to 0.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0044",
+      "statement": "CND-0086 resolution: Necessity telescopes; sufficiency integrates along root-to-vertex spanning-tree paths; cycle condition gives path independence, standard gain-graph balance.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0044"
+      ],
+      "candidate_ids": [
+        "CND-0086"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. Necessity telescopes; sufficiency integrates along root-to-vertex spanning-tree paths; cycle condition gives path independence, standard gain-graph balance.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0045",
+      "statement": "CND-0087 resolution: One child at each node must have arbitrarily long descendants; recursively choose it (König lemma).",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0048",
+        "SRC-0052"
+      ],
+      "candidate_ids": [
+        "CND-0087"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. One child at each node must have arbitrarily long descendants; recursively choose it (König lemma).",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0046",
+      "statement": "CND-0088 resolution: If every colour class were finite, their finite union would be finite, contradiction.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0052"
+      ],
+      "candidate_ids": [
+        "CND-0088"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. If every colour class were finite, their finite union would be finite, contradiction.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0047",
+      "statement": "CND-0089 resolution: Taxicab diamond has four sides of norm-length 2, norm circumference 8, diameter 2, ratio 4.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0045",
+        "SRC-0053"
+      ],
+      "candidate_ids": [
+        "CND-0089"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. Taxicab diamond has four sides of norm-length 2, norm circumference 8, diameter 2, ratio 4.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0048",
+      "statement": "CND-0090 resolution: This is Gołąb's theorem, with hexagonal/parallelogram extremals; source secondary restatement inspected.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0045"
+      ],
+      "candidate_ids": [
+        "CND-0090"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. This is Gołąb's theorem, with hexagonal/parallelogram extremals; source secondary restatement inspected.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0049",
+      "statement": "CND-0091 resolution: Summation forces n≡0 mod3. C4 is false; if 3 divides n, set x_i=i mod3.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0047"
+      ],
+      "candidate_ids": [
+        "CND-0091"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. Summation forces n≡0 mod3. C4 is false; if 3 divides n, set x_i=i mod3.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0050",
+      "statement": "CND-0092 resolution: Common pulses are exactly positive multiples of both p and q.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0047"
+      ],
+      "candidate_ids": [
+        "CND-0092"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. Common pulses are exactly positive multiples of both p and q.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0051",
+      "statement": "CND-0093 resolution: 0x=0 for every real x, contradiction.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0046"
+      ],
+      "candidate_ids": [
+        "CND-0093"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. 0x=0 for every real x, contradiction.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0052",
+      "statement": "CND-0094 resolution: Yes, known zero-totalised field/meadow; loses b(a/b)=a when b=0,a≠0.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0046"
+      ],
+      "candidate_ids": [
+        "CND-0094"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. Yes, known zero-totalised field/meadow; loses b(a/b)=a when b=0,a≠0.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0053",
+      "statement": "CND-0095 resolution: Harmonic 1/n tends to zero but dyadic grouping gives infinitely many blocks each of total at least 1/2.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0049"
+      ],
+      "candidate_ids": [
+        "CND-0095"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. Harmonic 1/n tends to zero but dyadic grouping gives infinitely many blocks each of total at least 1/2.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0054",
+      "statement": "CND-0096 resolution: Taking n→∞ first yields 0; taking m→∞ first yields 1; matching known literature example.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0050"
+      ],
+      "candidate_ids": [
+        "CND-0096"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. Taking n→∞ first yields 0; taking m→∞ first yields 1; matching known literature example.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0055",
+      "statement": "CND-0097 resolution: Start arbitrarily high for finite length; an infinite decreasing sequence of nonnegative integers is impossible. Root has infinite branching.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0048"
+      ],
+      "candidate_ids": [
+        "CND-0097"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. Start arbitrarily high for finite length; an infinite decreasing sequence of nonnegative integers is impossible. Root has infinite branching.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0056",
+      "statement": "CND-0098 resolution: Bidirectional bijection to CND-0086 clock variables/edge equations; same cycle telescoping and root integration for any k.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0044",
+        "SRC-0047"
+      ],
+      "candidate_ids": [
+        "CND-0098"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. Bidirectional bijection to CND-0086 clock variables/edge equations; same cycle telescoping and root integration for any k.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0057",
+      "statement": "CND-0099 resolution: All staircase lengths are 2 though distance to diagonal is ≤1/(√2 N), so lengths do not approach √2.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0045"
+      ],
+      "candidate_ids": [
+        "CND-0099"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. All staircase lengths are 2 though distance to diagonal is ≤1/(√2 N), so lengths do not approach √2.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0058",
+      "statement": "CND-0100 resolution: The limits are 1 and 0 respectively: no common c.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0046"
+      ],
+      "candidate_ids": [
+        "CND-0100"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. The limits are 1 and 0 respectively: no common c.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
+    },
+    {
+      "id": "CLM-0059",
+      "statement": "CND-0101 resolution: Let F=(n−1)². Each retained bounded face must enclose area 0 mod3, hence there are ≤floor(F/3) bounded faces; each deletion reduces their number by ≤1, giving ≥ceil(2F/3). Partition square cells into trominoes plus at most one boundary corner for F mod3=1; delete two internal edges per triple and the corner outer edge if needed. This meets the bound. Full cases and proof in S007 MATHEMATICS.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0044",
+        "SRC-0051"
+      ],
+      "candidate_ids": [
+        "CND-0101"
+      ],
+      "cam_ids": [],
+      "justification": "See sessions/S007/MATHEMATICS.md. Let F=(n−1)². Each retained bounded face must enclose area 0 mod3, hence there are ≤floor(F/3) bounded faces; each deletion reduces their number by ≤1, giving ≥ceil(2F/3). Partition square cells into trominoes plus at most one boundary corner for F mod3=1; delete two internal edges per triple and the corner outer edge if needed. This meets the bound. Full cases and proof in S007 MATHEMATICS.",
+      "limitations": "Self-audited symbolic reasoning; prior-art and formal proof not independently complete; not an originality claim."
     }
   ]
 }

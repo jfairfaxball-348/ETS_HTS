@@ -104,3 +104,27 @@ All mathematical reasons/known-source cautions are in S004/MATHEMATICS.md and th
 | CND-0082 | KILLED_FALSE/DEGENERATE | Can every road network become a tree while making journeys at most one road longer? | C5: every spanning tree deletes one edge and becomes a 5-vertex path; endpoints of that edge have distance 1 in C5 but 4 in the tree. |
 | CND-0083 | KILLED_KNOWN | Can appointments always use as many rooms as the largest simultaneous overlap? | Classical interval-graph colouring: in nondecreasing start order, a new interval intersects only previously coloured intervals containing its start; at most k-1 colours unavailable. |
 | CND-0084 | KILLED_KNOWN | Do sums made from n distinct integers always give at least 2n−1 different totals? | For a1<...<an the chain a1+a1<...<a1+an<a2+an<...<an+an gives exactly 2n-1 distinct sums; already explicit in a 2026 published journal editorial. |
+
+## S007: seventeen definitive kill-gate outcomes
+
+| ID | Lane | Status | Question | Reason |
+|---|---|---|---|---|
+| CND-0085 | T | KILLED_FALSE/DEGENERATE | Do all pairwise time offsets on a triangle of 12-hour clocks admit simultaneous settings? | Offsets 3,4,6 sum to 13≡1(mod12), but vertex differences telescope to 0. |
+| CND-0086 | T | KILLED_KNOWN | When do local clock comparisons around a graph agree globally? | Necessity telescopes; sufficiency integrates along root-to-vertex spanning-tree paths; cycle condition gives path independence, standard gain-graph balance. |
+| CND-0087 | I | KILLED_KNOWN | Do arbitrarily long finite choices from two options force one endless valid choice sequence? | One child at each node must have arbitrarily long descendants; recursively choose it (König lemma). |
+| CND-0088 | I | KILLED_EASY | Must a colour be used infinitely often when infinitely many numbers receive one of finitely many colours? | If every colour class were finite, their finite union would be finite, contradiction. |
+| CND-0089 | P | KILLED_FALSE/DEGENERATE | Must the circumference-to-diameter ratio be π when distance is changed? | Taxicab diamond has four sides of norm-length 2, norm circumference 8, diameter 2, ratio 4. |
+| CND-0090 | P | KILLED_KNOWN | Must every norm-circle have circumference between six and eight times its unit radius? | This is Gołąb's theorem, with hexagonal/parallelogram extremals; source secondary restatement inspected. |
+| CND-0091 | B | KILLED_FALSE/DEGENERATE | Can each person in a clapping circle be one beat later than the previous person on a three-beat cycle? | Summation forces n≡0 mod3. C4 is false; if 3 divides n, set x_i=i mod3. |
+| CND-0092 | B | KILLED_EASY | When do two regular pulse trains coincide again? | Common pulses are exactly positive multiples of both p and q. |
+| CND-0093 | Z | KILLED_FALSE/DEGENERATE | Could one over zero be an ordinary real number? | 0x=0 for every real x, contradiction. |
+| CND-0094 | Z | KILLED_KNOWN | Can division be given an output at zero without changing nonzero divisions? | Yes, known zero-totalised field/meadow; loses b(a/b)=a when b=0,a≠0. |
+| CND-0095 | C | KILLED_FALSE/DEGENERATE | If terms shrink to zero, must their sum converge? | Harmonic 1/n tends to zero but dyadic grouping gives infinitely many blocks each of total at least 1/2. |
+| CND-0096 | C | KILLED_FALSE/DEGENERATE | Do row-first and column-first limits always agree? | Taking n→∞ first yields 0; taking m→∞ first yields 1; matching known literature example. |
+| CND-0097 | I+C | KILLED_FALSE/DEGENERATE | Do arbitrarily long finite decreasing countdowns force an infinite countdown? | Start arbitrarily high for finite length; an infinite decreasing sequence of nonnegative integers is impossible. Root has infinite branching. |
+| CND-0098 | T+B | KILLED_EQUIVALENT | Are cyclic phase instructions on a graph a new condition beyond clock offsets? | Bidirectional bijection to CND-0086 clock variables/edge equations; same cycle telescoping and root integration for any k. |
+| CND-0099 | P+C | KILLED_FALSE/DEGENERATE | Do paths approaching a straight diagonal always approach its length? | All staircase lengths are 2 though distance to diagonal is ≤1/(√2 N), so lengths do not approach √2. |
+| CND-0100 | Z+C | KILLED_FALSE/DEGENERATE | Could one chosen 0/0 value make every vanishing fraction continuous? | The limits are 1 and 0 respectively: no common c. |
+| CND-0101 | T+B | KILLED_EASY | How many mismatched clock comparisons must be erased from a grid whose every small square is one tick off? | Let F=(n−1)². Each retained bounded face must enclose area 0 mod3, hence there are ≤floor(F/3) bounded faces; each deletion reduces their number by ≤1, giving ≥ceil(2F/3). Partition square cells into trominoes plus at most one boundary corner for F mod3=1; delete two internal edges per triple and the corner outer edge if needed. This meets the bound. Full cases and proof in S007 MATHEMATICS. |
+
+S007 17/17 killed, 101/101 cumulative; 0 TRIAGED or SURVIVING.

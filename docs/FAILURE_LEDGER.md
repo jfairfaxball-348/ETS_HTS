@@ -109,3 +109,25 @@ Two other S005 cases (CND-0068, CND-0080) remain TRIAGED, not killed or hard.
 - **CND-0083 KILLED_KNOWN**: interval graph greedy colouring in number of colours equal maximum point overlap; exact familiar theorem, SRC-0038 CLM-0041.
 - **CND-0084 KILLED_KNOWN**: 2n−1 strictly increasing sumset chain of sorted integers; 2026 journal editorial confirms exact result, SRC-0039 CLM-0042.
 Final cumulative 84/84 KILLED, 0 TRIAGED, 0 SURVIVING, 0 HARD.
+
+## S007 permanent elimination records (2026-10-13)
+
+- **CND-0085**: inconsistent 3+4+6 mod12 clock triangle; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0086**: standard cycle-sum/potential equivalence; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0087**: classical finitely branching König lemma; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0088**: finite-union infinite pigeonhole; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0089**: L1 diamond circumference/diameter=4; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0090**: Gołąb normed plane circumference bound already known; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0091**: C4 phase ring mod3 impossibility; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0092**: ordinary least common multiple; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0093**: 0x=0 forbids 0x=1; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0094**: known zero-totalised meadow arithmetic; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0095**: divergent harmonic series; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0096**: unequal iterated limits 0 and1; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0097**: infinitely branching finite countdown tree; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0098**: strict equation-by-equation equivalence to clock model; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0099**: staircase length2 vs diagonal sqrt2; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0100**: x/x vs x²/x limits incompatible; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+- **CND-0101**: exact closed grid minimum ceil(2(n−1)²/3), face count/trominoes; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
+
+**Final: 101/101 KILLED; 0 TRIAGED/SURVIVING/HARD.**

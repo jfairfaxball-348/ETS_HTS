@@ -35,3 +35,11 @@ DEC-0022: Preregister CAM-0001 and CAM-0002 before their respective runs; record
 DEC-0023: Source-led independent regeneration CND-0082..0084 spans graph metric, scheduling, additive number theory; all killed immediately. Do not promote as HARD or SURVIVING.
 DEC-0024: Native OEIS/arXiv/MO/MSE/Erdős/Open Problem Garden/Zenodo/GitHub exact-search endpoints inaccessible, counts UNKNOWN, not zero; full books NOT_RUN. Two-pass documentation does NOT complete deep novelty clearance.
 DEC-0025: Actual checkout blocked by git DNS; local validator/unittests NOT_RUN on actual checkout, record hosted CI separately if observed. S007 requires new owner authorisation.
+
+## S007 decisions — 2026-10-13
+
+DEC-0026: Translate time, infinity, pi, brainwaves, division by zero and convergence motivations into explicit finite/mathematical structures without empirical physics/neuroscience claims.
+DEC-0027: Freeze permanent sequential CND-0085..0101; 17/17 direct proofs, classical identities, counterexamples or exact equivalence kills; 101/101 cumulative killed, zero difficulty/novelty survivors.
+DEC-0028: Close the uniform phase-grid repair model exactly by planar face counting plus triple-cell tilings (CLM-0059), not as a fresh open problem or certified original theorem.
+DEC-0029: Preserve source access grades and native novelty gaps; general web total hits UNKNOWN, no phantom zero or deep clearance, and no mathematical CAM preregistered/executed in S007.
+DEC-0030: Actual repo checkout blocked by git DNS resolution; local validator/unittest NOT_RUN. Stage updated validator and tests for GitHub Actions, which checks governance format only. Future S008 owner gated.

@@ -54,3 +54,22 @@
 - **CLM-0040** [PROGRAMME_PROVED]: The cycle C5 lacks an additive-one tree spanner. Justification: Every spanning tree of C5 is a path created by deleting one cycle edge. Its two original endpoints are distance 4 in the tree versus 1 in the graph. Limits: Simple human counterexample; no novel general result. References: SRC-0043; CND-0082; no CAM.
 - **CLM-0041** [SOURCE_STATED]: A finite family of closed intervals can be optimally coloured with as many colours as their maximum common overlap. Justification: Greedy ascending left endpoints; earlier conflicting intervals all contain current left endpoint. If k earlier colours blocked, k+1 intervals meet at that point; impossible under max overlap k. Limits: Known interval-graph perfectness; direct secondary account inspected, not claimed original. References: SRC-0038; CND-0083; no CAM.
 - **CLM-0042** [SOURCE_STATED]: Any n-element integer set satisfies |A+A|>=2n−1. Justification: Strictly increasing sorted sum chain a1+a1,...,a1+an,a2+an,...,an+an gives 2n−1 terms, as in 2026 journal editorial. Limits: Direct editorial text inspected, not full research-paper proof; known elementary bound. References: SRC-0039; CND-0084; no CAM.
+
+## S007 claims
+- **CLM-0043** (CND-0085, KILLED_FALSE/DEGENERATE): Offsets 3,4,6 sum to 13≡1(mod12), but vertex differences telescope to 0. .
+- **CLM-0044** (CND-0086, KILLED_KNOWN): Necessity telescopes; sufficiency integrates along root-to-vertex spanning-tree paths; cycle condition gives path independence, standard gain-graph balance. SRC-0044.
+- **CLM-0045** (CND-0087, KILLED_KNOWN): One child at each node must have arbitrarily long descendants; recursively choose it (König lemma). SRC-0048, SRC-0052.
+- **CLM-0046** (CND-0088, KILLED_EASY): If every colour class were finite, their finite union would be finite, contradiction. SRC-0052.
+- **CLM-0047** (CND-0089, KILLED_FALSE/DEGENERATE): Taxicab diamond has four sides of norm-length 2, norm circumference 8, diameter 2, ratio 4. SRC-0045, SRC-0053.
+- **CLM-0048** (CND-0090, KILLED_KNOWN): This is Gołąb's theorem, with hexagonal/parallelogram extremals; source secondary restatement inspected. SRC-0045.
+- **CLM-0049** (CND-0091, KILLED_FALSE/DEGENERATE): Summation forces n≡0 mod3. C4 is false; if 3 divides n, set x_i=i mod3. SRC-0047.
+- **CLM-0050** (CND-0092, KILLED_EASY): Common pulses are exactly positive multiples of both p and q. SRC-0047.
+- **CLM-0051** (CND-0093, KILLED_FALSE/DEGENERATE): 0x=0 for every real x, contradiction. SRC-0046.
+- **CLM-0052** (CND-0094, KILLED_KNOWN): Yes, known zero-totalised field/meadow; loses b(a/b)=a when b=0,a≠0. SRC-0046.
+- **CLM-0053** (CND-0095, KILLED_FALSE/DEGENERATE): Harmonic 1/n tends to zero but dyadic grouping gives infinitely many blocks each of total at least 1/2. SRC-0049.
+- **CLM-0054** (CND-0096, KILLED_FALSE/DEGENERATE): Taking n→∞ first yields 0; taking m→∞ first yields 1; matching known literature example. SRC-0050.
+- **CLM-0055** (CND-0097, KILLED_FALSE/DEGENERATE): Start arbitrarily high for finite length; an infinite decreasing sequence of nonnegative integers is impossible. Root has infinite branching. SRC-0048.
+- **CLM-0056** (CND-0098, KILLED_EQUIVALENT): Bidirectional bijection to CND-0086 clock variables/edge equations; same cycle telescoping and root integration for any k. SRC-0044, SRC-0047.
+- **CLM-0057** (CND-0099, KILLED_FALSE/DEGENERATE): All staircase lengths are 2 though distance to diagonal is ≤1/(√2 N), so lengths do not approach √2. SRC-0045.
+- **CLM-0058** (CND-0100, KILLED_FALSE/DEGENERATE): The limits are 1 and 0 respectively: no common c. SRC-0046.
+- **CLM-0059** (CND-0101, KILLED_EASY): Let F=(n−1)². Each retained bounded face must enclose area 0 mod3, hence there are ≤floor(F/3) bounded faces; each deletion reduces their number by ≤1, giving ≥ceil(2F/3). Partition square cells into trominoes plus at most one boundary corner for F mod3=1; delete two internal edges per triple and the corner outer edge if needed. This meets the bound. Full cases and proof in S007 MATHEMATICS. SRC-0044, SRC-0051.
