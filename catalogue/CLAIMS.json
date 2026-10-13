@@ -306,6 +306,197 @@
       "cam_ids": [],
       "justification": "The five-vertex star K1,4 refutes it: any centre label c in {1,2,3,4,5} forces four prime sums with other labels, but c=1,2,3,4,5 respectively gives composite sums 4,6,4,6,6. A single composite edge for each of five possible central labels suffices; no computation run. Full reasoning in sessions/S004/MATHEMATICS.md.",
       "limitations": "Elementary argument/witness internal, not separately peer-refereed or formally verified; not novel."
+    },
+    {
+      "id": "CLM-0024",
+      "statement": "q=3, AABBCC: only a cut after position 3 gives two blocks of length 3; AAB and BCC are not rainbow.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0023"
+      ],
+      "candidate_ids": [
+        "CND-0066"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: Equal allocation requires both blocks of length q. The only possible cut at q fails on AABBCC.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0025",
+      "statement": "Classical Goldberg–West two-person necklace-splitting theorem directly stated in Simonyi 2008.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0023",
+        "SRC-0024"
+      ],
+      "candidate_ids": [
+        "CND-0067"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: Doubled monochromatic blocks show q cuts can be sharp. Publisher inspected statement settles full quantified claim.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0026",
+      "statement": "Sjöstrand's 2005 cover pebbling theorem provides this exact stacking maximum.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0026"
+      ],
+      "candidate_ids": [
+        "CND-0069"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: A single pile at r needs sum of powers-of-two distance costs. Inspected publisher theorem's converse handles arbitrary configurations.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0027",
+      "statement": "(5,0,0) cannot cover path P3: from the left endpoint, costs 1+2+4=7.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0026"
+      ],
+      "candidate_ids": [
+        "CND-0070"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: Rooted path transportation doubles pebble cost at each step. The three target pebbles cost respectively 1,2,4 from initial endpoint.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0028",
+      "statement": "2x3 rectangle contains a 2x2 subblock: four panel corners share an interior planar vertex, but only three distinct cube faces meet at any cube vertex.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0027"
+      ],
+      "candidate_ids": [
+        "CND-0071"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: Rigid hinged squares preserve common incidence at 2x2 interior vertex. Face-bijective cube net has at most three square faces incident at one cube vertex.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0029",
+      "statement": "Esther Klein's five-point convex quadrilateral theorem, the Erdős–Szekeres base case.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0028"
+      ],
+      "candidate_ids": [
+        "CND-0072"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: Convex hull >=4 immediately supplies a subset. Triangular hull with two interior points is the classical remaining case, covered by inspected secondary source.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0030",
+      "statement": "Classical art gallery theorem; Fisk's 3-colouring of triangulations gives floor(n/3) guards.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0029"
+      ],
+      "candidate_ids": [
+        "CND-0073"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: Triangulate and 3-colour the polygon's triangulation vertices. A smallest colour class hits every triangle and guards its entire interior.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0031",
+      "statement": "A vertex of maximum outdegree is a 2-king.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0074"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: Select vertex v with maximum number of outgoing edges. If u beats v and all v's outneighbours, then u has strictly larger outdegree, a contradiction.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0032",
+      "statement": "de Bruijn sequence; Euler circuit of (k-1)-block overlap digraph constructs it.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0032"
+      ],
+      "candidate_ids": [
+        "CND-0075"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: Vertices are (k-1)-bit words, edges k-bit words from prefix to suffix. Every vertex has indegree and outdegree 2 and graph is strongly connected, so Euler circuit spells desired word.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0033",
+      "statement": "Exactly Dilworth's theorem, directly recorded in MathWorld.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0030"
+      ],
+      "candidate_ids": [
+        "CND-0076"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: An antichain of size w requires at least w disjoint chains. Dilworth's theorem proves w chains suffice.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0034",
+      "statement": "Classical order-independent abelian sandpile stabilization, directly stated in Sage tutorial.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0031"
+      ],
+      "candidate_ids": [
+        "CND-0077"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: Two simultaneously legal firings commute as integer-vector updates. Accessible sink guarantees termination; standard abelian result yields unique stable state.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0035",
+      "statement": "Factor n=l(2a+l-1)/2; any representation forces odd factor >1. Conversely an odd divisor >1 yields a positive-length interval of >=2 summands.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0078"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: If n is a power of two, odd-length l>=3 impossible and even l forces odd factor 2a+l-1>1. For odd divisor d>1 with n=dm: use d terms centered at m if m>=(d+1)/2; otherwise use 2m terms centered at d/2, both positive.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0036",
+      "statement": "Bipartite parity forbids odd mn; for an even side reserve a border column and snake through other columns, returning on the border.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0079"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: Any cycle alternates chessboard colours, hence covers equally many colours. When m even (transpose if needed), horizontal serpentine rows with reserved first column close a single spanning loop.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0037",
+      "statement": "Exactly Robbins's strong-orientation theorem; related publisher source states theorem.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0033"
+      ],
+      "candidate_ids": [
+        "CND-0081"
+      ],
+      "cam_ids": [],
+      "justification": "S005 record: A bridge makes reverse travel across its cut impossible. Ear-decomposition proof gives strong orientation of bridgeless graph; known prior result.",
+      "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
     }
   ]
 }

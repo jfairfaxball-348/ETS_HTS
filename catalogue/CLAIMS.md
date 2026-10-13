@@ -29,3 +29,21 @@
 | CLM-0021 | CND-0063 | SOURCE_STATED | Known geometric matching theorem (Kano 2002 presentation). Independent short proof: choose a red-blue perfect matching minimizing  |
 | CLM-0022 | CND-0064 | PROGRAMME_PROVED | Bertrand induction picks p in (2n,4n) and pairs a=p-2n with 2n, a+1 with 2n-1, etc. These chords are nested and do not cross; indu |
 | CLM-0023 | CND-0065 | PROGRAMME_PROVED | The five-vertex star K1,4 refutes it: any centre label c in {1,2,3,4,5} forces four prime sums with other labels, but c=1,2,3,4,5  |
+
+
+## S005 claims
+
+- **CLM-0024** [PROGRAMME_PROVED] q=3, AABBCC: only a cut after position 3 gives two blocks of length 3; AAB and BCC are not rainbow. Candidate CND-0066; sources SRC-0023.
+- **CLM-0025** [SOURCE_STATED] Classical Goldberg–West two-person necklace-splitting theorem directly stated in Simonyi 2008. Candidate CND-0067; sources SRC-0023, SRC-0024.
+- **CLM-0026** [SOURCE_STATED] Sjöstrand's 2005 cover pebbling theorem provides this exact stacking maximum. Candidate CND-0069; sources SRC-0026.
+- **CLM-0027** [PROGRAMME_PROVED] (5,0,0) cannot cover path P3: from the left endpoint, costs 1+2+4=7. Candidate CND-0070; sources SRC-0026.
+- **CLM-0028** [PROGRAMME_PROVED] 2x3 rectangle contains a 2x2 subblock: four panel corners share an interior planar vertex, but only three distinct cube faces meet at any cube vertex. Candidate CND-0071; sources SRC-0027.
+- **CLM-0029** [SOURCE_STATED] Esther Klein's five-point convex quadrilateral theorem, the Erdős–Szekeres base case. Candidate CND-0072; sources SRC-0028.
+- **CLM-0030** [SOURCE_STATED] Classical art gallery theorem; Fisk's 3-colouring of triangulations gives floor(n/3) guards. Candidate CND-0073; sources SRC-0029.
+- **CLM-0031** [PROGRAMME_PROVED] A vertex of maximum outdegree is a 2-king. Candidate CND-0074; sources .
+- **CLM-0032** [SOURCE_STATED] de Bruijn sequence; Euler circuit of (k-1)-block overlap digraph constructs it. Candidate CND-0075; sources SRC-0032.
+- **CLM-0033** [SOURCE_STATED] Exactly Dilworth's theorem, directly recorded in MathWorld. Candidate CND-0076; sources SRC-0030.
+- **CLM-0034** [SOURCE_STATED] Classical order-independent abelian sandpile stabilization, directly stated in Sage tutorial. Candidate CND-0077; sources SRC-0031.
+- **CLM-0035** [PROGRAMME_PROVED] Factor n=l(2a+l-1)/2; any representation forces odd factor >1. Conversely an odd divisor >1 yields a positive-length interval of >=2 summands. Candidate CND-0078; sources .
+- **CLM-0036** [PROGRAMME_PROVED] Bipartite parity forbids odd mn; for an even side reserve a border column and snake through other columns, returning on the border. Candidate CND-0079; sources .
+- **CLM-0037** [SOURCE_STATED] Exactly Robbins's strong-orientation theorem; related publisher source states theorem. Candidate CND-0081; sources SRC-0033.

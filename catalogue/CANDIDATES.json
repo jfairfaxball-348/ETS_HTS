@@ -4535,6 +4535,1139 @@
       },
       "screened_as_top_ten": false,
       "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0066",
+      "exact_statement": "For all q>=1 and all linear words on q symbols each appearing exactly twice, does one internal cut leave one occurrence of each symbol on either side?",
+      "plain_language_statement": "One cut can share each of q doubled bead colours fairly",
+      "domain": "fair division",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Equal allocation requires both blocks of length q."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "The only possible cut at q fails on AABBCC."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "q=3, AABBCC: only a cut after position 3 gives two blocks of length 3; AAB and BCC are not rainbow."
+        },
+        {
+          "test": "literature",
+          "status": "LIMITED_SOURCE_INSPECTION",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "q=3, AABBCC: only a cut after position 3 gives two blocks of length 3; AAB and BCC are not rainbow.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0023"
+      ],
+      "claim_ids": [
+        "CLM-0024"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0067",
+      "exact_statement": "For every linear word using exactly q>=1 colours each an even positive number of times, can at most q internal cuts create consecutive segments allocatable between two people so both receive half of each colour?",
+      "plain_language_statement": "At most q cuts always fairly share a two-person even-colour necklace",
+      "domain": "topological fair division",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Doubled monochromatic blocks show q cuts can be sharp."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Publisher inspected statement settles full quantified claim."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Classical Goldberg–West two-person necklace-splitting theorem directly stated in Simonyi 2008."
+        },
+        {
+          "test": "literature",
+          "status": "LIMITED_SOURCE_INSPECTION",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "Classical Goldberg–West two-person necklace-splitting theorem directly stated in Simonyi 2008.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0023",
+        "SRC-0024"
+      ],
+      "claim_ids": [
+        "CLM-0025"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0068",
+      "exact_statement": "For every q>=2 and every linear word length 2q with precisely two occurrences of each of q symbols and unequal adjacent symbols, can at most q-1 cuts divide contiguous intervals, assigned alternately to two people, with exactly one of each symbol per person?",
+      "plain_language_statement": "No identical neighbours: are q-1 cuts enough for double beads?",
+      "domain": "forbidden patterns/fair division",
+      "origin_mechanism": "MEC-02",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "TRIAGED",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "All-equal-adjacent sharp obstruction AABBCC is forbidden, removing the standard q-cut lower-bound example."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "INCONCLUSIVE",
+          "detail": "Encode each colour's two occurrences by opposite ± signs; demand <=q-1 adjacent sign transitions. Parity alone does not bound this objective."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "INCONCLUSIVE",
+          "detail": "No proof or counterexample certified; this q-1-cut restriction is not cleared as novel or hard."
+        },
+        {
+          "test": "literature",
+          "status": "LIMITED_SOURCE_INSPECTION",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": null,
+      "source_ids": [
+        "SRC-0023",
+        "SRC-0024",
+        "SRC-0025",
+        "SRC-0034",
+        "SRC-0035"
+      ],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 5,
+        "total": 57
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "Two attacks not decisive; requires falsification, full novelty and independent difficulty evidence. NOT HARD."
+    },
+    {
+      "id": "CND-0069",
+      "exact_statement": "For each finite connected graph G, do pebbling moves that replace two pebbles on a vertex by one on a neighbour require a universal covering threshold equal to max over roots r of sum over vertices v of 2^(distance(r,v))?",
+      "plain_language_statement": "Worst pile placement for covering any connected graph is stacked",
+      "domain": "pebbling/resource transfer",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "A single pile at r needs sum of powers-of-two distance costs."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Inspected publisher theorem's converse handles arbitrary configurations."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Sjöstrand's 2005 cover pebbling theorem provides this exact stacking maximum."
+        },
+        {
+          "test": "literature",
+          "status": "LIMITED_SOURCE_INSPECTION",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "Sjöstrand's 2005 cover pebbling theorem provides this exact stacking maximum.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0026"
+      ],
+      "claim_ids": [
+        "CLM-0026"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0070",
+      "exact_statement": "For every nonnegative distribution of five pebbles over a three-vertex path, can moves taking two pebbles at one vertex and depositing one on a neighbour end with >=1 pebble everywhere?",
+      "plain_language_statement": "Five pebbles always cover three vertices in a row",
+      "domain": "resource-transfer obstructions",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Rooted path transportation doubles pebble cost at each step."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "The three target pebbles cost respectively 1,2,4 from initial endpoint."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "(5,0,0) cannot cover path P3: from the left endpoint, costs 1+2+4=7."
+        },
+        {
+          "test": "literature",
+          "status": "LIMITED_SOURCE_INSPECTION",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "(5,0,0) cannot cover path P3: from the left endpoint, costs 1+2+4=7.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0026"
+      ],
+      "claim_ids": [
+        "CLM-0027"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0071",
+      "exact_statement": "For every edge-connected union of six unit lattice squares, can rigid 90-degree folds along square edges place the interiors of the squares bijectively onto six different unit-cube faces without overlap?",
+      "plain_language_statement": "Every six-square polyomino folds to a cube without overlap",
+      "domain": "polyomino folding",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Rigid hinged squares preserve common incidence at 2x2 interior vertex."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Face-bijective cube net has at most three square faces incident at one cube vertex."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "2x3 rectangle contains a 2x2 subblock: four panel corners share an interior planar vertex, but only three distinct cube faces meet at any cube vertex."
+        },
+        {
+          "test": "literature",
+          "status": "LIMITED_SOURCE_INSPECTION",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "2x3 rectangle contains a 2x2 subblock: four panel corners share an interior planar vertex, but only three distinct cube faces meet at any cube vertex.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0027"
+      ],
+      "claim_ids": [
+        "CLM-0028"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0072",
+      "exact_statement": "For every set of five planar points with no three collinear, do four form the vertices of a convex quadrilateral?",
+      "plain_language_statement": "Five points always include four in convex position",
+      "domain": "convex geometry",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Convex hull >=4 immediately supplies a subset."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Triangular hull with two interior points is the classical remaining case, covered by inspected secondary source."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Esther Klein's five-point convex quadrilateral theorem, the Erdős–Szekeres base case."
+        },
+        {
+          "test": "literature",
+          "status": "LIMITED_SOURCE_INSPECTION",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "Esther Klein's five-point convex quadrilateral theorem, the Erdős–Szekeres base case.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0028"
+      ],
+      "claim_ids": [
+        "CLM-0029"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0073",
+      "exact_statement": "For every simple polygon with n>=3 vertices, is there a set of at most floor(n/3) existing vertices such that each point inside has an unobstructed straight segment to some chosen vertex?",
+      "plain_language_statement": "A third of a polygon's corners can guard its interior",
+      "domain": "visibility/geometry",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Triangulate and 3-colour the polygon's triangulation vertices."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "A smallest colour class hits every triangle and guards its entire interior."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Classical art gallery theorem; Fisk's 3-colouring of triangulations gives floor(n/3) guards."
+        },
+        {
+          "test": "literature",
+          "status": "LIMITED_SOURCE_INSPECTION",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "Classical art gallery theorem; Fisk's 3-colouring of triangulations gives floor(n/3) guards.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0029"
+      ],
+      "claim_ids": [
+        "CLM-0030"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0074",
+      "exact_statement": "For every finite tournament (direction chosen for each complete-graph edge), does some vertex reach every other through at most two directed edges?",
+      "plain_language_statement": "Every round-robin tournament has a winner reachable within two wins",
+      "domain": "tournaments/strategy",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Select vertex v with maximum number of outgoing edges."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "If u beats v and all v's outneighbours, then u has strictly larger outdegree, a contradiction."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "A vertex of maximum outdegree is a 2-king."
+        },
+        {
+          "test": "literature",
+          "status": "NOT_SEARCHED",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "A vertex of maximum outdegree is a 2-king.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0031"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0075",
+      "exact_statement": "For every k>=1, does a cyclic binary word of length 2^k contain every possible binary word of length k exactly once cyclically?",
+      "plain_language_statement": "Circular binary string displaying every k-block once",
+      "domain": "symbolic dynamics",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Vertices are (k-1)-bit words, edges k-bit words from prefix to suffix."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Every vertex has indegree and outdegree 2 and graph is strongly connected, so Euler circuit spells desired word."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "de Bruijn sequence; Euler circuit of (k-1)-block overlap digraph constructs it."
+        },
+        {
+          "test": "literature",
+          "status": "LIMITED_SOURCE_INSPECTION",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "de Bruijn sequence; Euler circuit of (k-1)-block overlap digraph constructs it.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0032"
+      ],
+      "claim_ids": [
+        "CLM-0032"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0076",
+      "exact_statement": "For every finite partially ordered set, is the minimum number of disjoint totally ordered subsets covering all elements equal to the largest number of pairwise incomparable elements?",
+      "plain_language_statement": "Fewest chains partitioning a partially ordered set equal its width",
+      "domain": "orders/decompositions",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "An antichain of size w requires at least w disjoint chains."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Dilworth's theorem proves w chains suffice."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Exactly Dilworth's theorem, directly recorded in MathWorld."
+        },
+        {
+          "test": "literature",
+          "status": "LIMITED_SOURCE_INSPECTION",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "Exactly Dilworth's theorem, directly recorded in MathWorld.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0030"
+      ],
+      "claim_ids": [
+        "CLM-0033"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0077",
+      "exact_statement": "On every finite connected undirected graph with a chosen sink, with finitely many initial grains, whenever a nonsink vertex has at least its degree grains it may send one along every incident edge (grains at sink disappear). Is the final stable configuration independent of which legal firings occur first?",
+      "plain_language_statement": "Sandpile stabilization unaffected by order of topplings",
+      "domain": "abelian networks",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Two simultaneously legal firings commute as integer-vector updates."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Accessible sink guarantees termination; standard abelian result yields unique stable state."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Classical order-independent abelian sandpile stabilization, directly stated in Sage tutorial."
+        },
+        {
+          "test": "literature",
+          "status": "LIMITED_SOURCE_INSPECTION",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "Classical order-independent abelian sandpile stabilization, directly stated in Sage tutorial.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0031"
+      ],
+      "claim_ids": [
+        "CLM-0034"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0078",
+      "exact_statement": "For every n>=1, is n representable as a sum of at least two consecutive positive integers exactly when n is not a power of two?",
+      "plain_language_statement": "Positive sums of consecutive integers characterize nonpowers of two",
+      "domain": "elementary number theory",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "If n is a power of two, odd-length l>=3 impossible and even l forces odd factor 2a+l-1>1."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "For odd divisor d>1 with n=dm: use d terms centered at m if m>=(d+1)/2; otherwise use 2m terms centered at d/2, both positive."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Factor n=l(2a+l-1)/2; any representation forces odd factor >1. Conversely an odd divisor >1 yields a positive-length interval of >=2 summands."
+        },
+        {
+          "test": "literature",
+          "status": "NOT_SEARCHED",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "Factor n=l(2a+l-1)/2; any representation forces odd factor >1. Conversely an odd divisor >1 yields a positive-length interval of >=2 summands.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0035"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0079",
+      "exact_statement": "For all m,n>=2, does the graph of m*n grid points joined along horizontal and vertical unit distances contain a simple cycle visiting every point exactly once if and only if mn is even?",
+      "plain_language_statement": "Rectangular grid has Hamiltonian cycle exactly when its area is even",
+      "domain": "lattice routes",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Any cycle alternates chessboard colours, hence covers equally many colours."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "When m even (transpose if needed), horizontal serpentine rows with reserved first column close a single spanning loop."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Bipartite parity forbids odd mn; for an even side reserve a border column and snake through other columns, returning on the border."
+        },
+        {
+          "test": "literature",
+          "status": "NOT_SEARCHED",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "Bipartite parity forbids odd mn; for an even side reserve a border column and snake through other columns, returning on the border.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0036"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0080",
+      "exact_statement": "For each simple polygon with n>=4 vertices and no three collinear, is there a noncrossing triangulation using only diagonals between existing vertices where each original vertex is incident to no more than ceil(n/2) of the n-2 triangular regions?",
+      "plain_language_statement": "Can every polygon triangulation keep all vertex triangle loads at most half n?",
+      "domain": "recursive geometry/extremal load",
+      "origin_mechanism": "MEC-02",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "TRIAGED",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Sum of triangle incidence over vertices is 3(n-2), which bounds averages below but cannot cap maximum load."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "INCONCLUSIVE",
+          "detail": "Convex ear-reduction zig-zag constructions do not preserve available diagonals in reflex polygons; no nonconvex global proof or witness established."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "INCONCLUSIVE",
+          "detail": "Not proved, falsified, or cleared for novelty. Convex triangulations allow zig-zag low load, but nonconvex visibility obstructions remain."
+        },
+        {
+          "test": "literature",
+          "status": "LIMITED_SOURCE_INSPECTION",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": null,
+      "source_ids": [
+        "SRC-0029"
+      ],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 5,
+        "total": 57
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "Two attacks not decisive; requires falsification, full novelty and independent difficulty evidence. NOT HARD."
+    },
+    {
+      "id": "CND-0081",
+      "exact_statement": "For every finite connected undirected simple graph containing no bridge, can each edge receive a direction so every vertex is reachable by a directed path from every other vertex?",
+      "plain_language_statement": "Can streets without bridges be directed for two-way reachability?",
+      "domain": "strong graph orientations",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
+      "quantifiers": "All quantified families and limits stated in exact_statement.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered. No mathematical code or search enumeration run."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "A bridge makes reverse travel across its cut impossible."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Ear-decomposition proof gives strong orientation of bridgeless graph; known prior result."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No independent evidence of difficulty or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Exactly Robbins's strong-orientation theorem; related publisher source states theorem."
+        },
+        {
+          "test": "literature",
+          "status": "LIMITED_SOURCE_INSPECTION",
+          "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S005",
+        "reason": "Exactly Robbins's strong-orientation theorem; related publisher source states theorem.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Self-contained symbolic witness/proof or inspected source statement, not independent formal certification.",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0033"
+      ],
+      "claim_ids": [
+        "CLM-0037"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 10,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no originality claimed."
     }
   ]
 }

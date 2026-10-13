@@ -18,3 +18,11 @@
 ## 2026-10-13 S004 — proof-first kills outrank novelty excitement
 
 Fifteen natural questions sampled from at least five subjects were all resolved or found already known. In particular n=7 destroys the rainbow prime-sum proposal (SRC-0019), and Bertrand nesting produces an easy noncrossing prime-pairing construction previously foreshadowed by SRC-0020. Maintain zero SURVIVING, no HARD assertions; choose source-led structurally different mechanisms at S005 rather than resurrect any defeated versions. Hosted validation is only metadata/governance verification.
+
+
+## S005 decisions
+
+DEC-0016: 16 precise, source-led questions across >=5 structural domains; 14 immediate kills, 2 evidence-limited TRIAGED.
+DEC-0017: no HARD/SURVIVING despite personal proof failures; full native novelty, independent difficulty, computational evidence not present.
+DEC-0018: symbolic-only, no registered mathematical CAM; local git checkout blocked DNS; hosted governance validation does not prove mathematics.
+DEC-0019: S006 should attempt to kill both TRIAGED cases before regenerating further.

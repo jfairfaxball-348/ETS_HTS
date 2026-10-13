@@ -7,3 +7,6 @@
 | S003 | Explicit owner invocation 2026-10-13 (live NEXT_SESSION_PROMPT URL) | Five elementary/equivalence kills; 50 killed total, zero survivors; 0 CAM | Entry main 4577844a178442da972ac539bb5e248322403cd9; PR #3 merged into main 821f4b06 with normal two-parent commit (verified S004 entry) |
 | S004 | Explicit owner invocation 2026-10-13 | 15 new precise questions; 15 killed, cumulative 65 killed, 0 survivors; no CAM | Entry main 821f4b06af48f7c5cadd1a7e733c3f7446f42bb0, PR #3 verified; outgoing atomic commit/PR/merge reconstruct next entry |
 | S005 | NONE | FUTURE / UNEXECUTED | requires new explicit owner invocation |
+
+| S005 | Owner explicit invocation 2026-10-13 | COMPLETE research, 16 candidates/14 kills/2 TRIAGED/0 survivors, 13 SRC, 14 CLM, 0 CAM | Entry 7794b213505aefe7b268c7d976085b9082bb282a; S004 authored and PR #4 merge verified; outgoing git evidence to reconstruct next entry |
+| S006 | NONE | FUTURE / UNEXECUTED | fresh owner invocation needed |

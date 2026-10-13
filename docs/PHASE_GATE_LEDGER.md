@@ -11,3 +11,6 @@
 | 6 publication | OWNER_GATED | Not authorised |
 
 No green governance CI means new research novelty or hardness.
+
+
+S005: phase 1 OPEN_TRIAGED_NO_SURVIVORS; 81 candidates, 79 killed, 2 TRIAGED (0068/0080), no hard/selected. Phase 2 NOT_OPEN_NO_SURVIVORS, difficulty NOT_OPEN, gates 4–6 OWNER_GATED. No change to authorisation.
