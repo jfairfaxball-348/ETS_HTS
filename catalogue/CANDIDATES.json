@@ -6606,6 +6606,393 @@
         "total": 0
       },
       "uncertainty": "Rejected at cheap gate; no novel/hard certification."
+    },
+    {
+      "id": "CND-0102",
+      "exact_statement": "For every m>=1, put +1 and -1 alternately (mod 3) on the m by m elementary squares of an (m+1) by (m+1) vertex grid. Is the minimum number of comparison edges to erase so that all retained differences arise from vertex phases equal to ceil(m^2/2)?",
+      "plain_language_statement": "If neighbouring squares are wrong by opposite ticks, how many clock-comparison lines must you erase?",
+      "domain": "nonuniform grid",
+      "origin_mechanism": "S008 MEC-02/MEC-03 (nonuniform flux and boundary rules), MEC-04 (phase updates), MEC-06 (row recurrence)",
+      "attribution": "Owner S007/S008 steer and classical group-labelled graph/finite-state frameworks; no originality or priority assertion.",
+      "quantifiers": "All parameters, update schedule, boundary and stopping rules explicit in exact statement and S008/MATHEMATICS.md.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "cheap_symbolic_kill",
+          "status": "RESOLVED",
+          "detail": "Let F=m^2. Every retained bounded face must contain >=2 cells because every cell has flux +1 or -1. Thus at most floor(F/2) bounded faces remain, and at least ceil(F/2) edges must be deleted. Checkerboard adjacent dominoes have cancelling flux. For even m tile all m rows by horizontal dominoes; for odd m remove a corner cell into the exterior, tile its top row minus corner and left column minus corner and remaining even square by dominoes. Delete one internal edge per domino and one outer edge for the odd corner. Exactly ceil(F/2) deletions. Including m=1."
+        },
+        {
+          "test": "independent_obstruction_or_known_translation",
+          "status": "ATTEMPTED",
+          "detail": "See independent bounds, constructions or both-direction translation in S008/MATHEMATICS.md; successful resolution is not failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S008",
+        "kind": "KILLED_EASY",
+        "reason": "Let F=m^2. Every retained bounded face must contain >=2 cells because every cell has flux +1 or -1. Thus at most floor(F/2) bounded faces remain, and at least ceil(F/2) edges must be deleted. Checkerboard adjacent dominoes have cancelling flux. For even m tile all m rows by horizontal dominoes; for odd m remove a corner cell into the exterior, tile its top row minus corner and left column minus corner and remaining even square by dominoes. Delete one internal edge per domino and one outer edge for the odd corner. Exactly ceil(F/2) deletions. Including m=1.",
+        "verified_scope": "Human proof/check and graded source inspection as logged; no formal or independent referee.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0044",
+        "SRC-0051"
+      ],
+      "claim_ids": [
+        "CLM-0060"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Permanently excluded as an open target; no novel result or hard claim."
+    },
+    {
+      "id": "CND-0103",
+      "exact_statement": "For any finite graph with oriented edge offsets in Z/3 (including an n-by-n grid with arbitrary square fluxes), is the minimum edge-deletion count making a global vertex phase possible equal to the minimum number of edge equations violated by a phase assignment?",
+      "plain_language_statement": "Is erasing the fewest contradictory comparisons the same as satisfying as many comparisons as possible?",
+      "domain": "nonuniform grid",
+      "origin_mechanism": "S008 MEC-02/MEC-03 (nonuniform flux and boundary rules), MEC-04 (phase updates), MEC-06 (row recurrence)",
+      "attribution": "Owner S007/S008 steer and classical group-labelled graph/finite-state frameworks; no originality or priority assertion.",
+      "quantifiers": "All parameters, update schedule, boundary and stopping rules explicit in exact statement and S008/MATHEMATICS.md.",
+      "status": "KILLED_EQUIVALENT",
+      "novelty_grade": "KNOWN_EQUIVALENT",
+      "difficulty_evidence": [
+        {
+          "test": "cheap_symbolic_kill",
+          "status": "RESOLVED",
+          "detail": "Given phases, erase exactly their violated edges, leaving a consistent graph, so deletion optimum <= minimum violation count. Given a consistent retained subgraph, use its vertex phases (one independent free origin per component, arbitrary values for isolated vertices); violated equations can occur only on deleted edges, so minimum violations <= deletion optimum. Equality even on disconnected graphs. This is MAX-2-LIN over Z/3 in minimization form, not a new dynamical problem. It says nothing by itself about hardness of a restricted grid-flux family."
+        },
+        {
+          "test": "independent_obstruction_or_known_translation",
+          "status": "ATTEMPTED",
+          "detail": "See independent bounds, constructions or both-direction translation in S008/MATHEMATICS.md; successful resolution is not failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S008",
+        "kind": "KILLED_EQUIVALENT",
+        "reason": "Given phases, erase exactly their violated edges, leaving a consistent graph, so deletion optimum <= minimum violation count. Given a consistent retained subgraph, use its vertex phases (one independent free origin per component, arbitrary values for isolated vertices); violated equations can occur only on deleted edges, so minimum violations <= deletion optimum. Equality even on disconnected graphs. This is MAX-2-LIN over Z/3 in minimization form, not a new dynamical problem. It says nothing by itself about hardness of a restricted grid-flux family.",
+        "verified_scope": "Human proof/check and graded source inspection as logged; no formal or independent referee.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0044",
+        "SRC-0051",
+        "SRC-0057"
+      ],
+      "claim_ids": [
+        "CLM-0061"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Permanently excluded as an open target; no novel result or hard claim."
+    },
+    {
+      "id": "CND-0104",
+      "exact_statement": "On a finite graph with offsets d_uv(t)=a_uv+t*b_uv modulo 3 on every oriented edge, for all integer t>=0, does there exist a vertex phase x_v(t) satisfying every comparison at every t iff the signed sum of a around every cycle and the signed sum of b around every cycle both vanish?",
+      "plain_language_statement": "Can a network keep two different clock speeds consistent forever if its initial offsets and speed differences each agree around loops?",
+      "domain": "clock dynamics",
+      "origin_mechanism": "S008 MEC-02/MEC-03 (nonuniform flux and boundary rules), MEC-04 (phase updates), MEC-06 (row recurrence)",
+      "attribution": "Owner S007/S008 steer and classical group-labelled graph/finite-state frameworks; no originality or priority assertion.",
+      "quantifiers": "All parameters, update schedule, boundary and stopping rules explicit in exact statement and S008/MATHEMATICS.md.",
+      "status": "KILLED_EQUIVALENT",
+      "novelty_grade": "KNOWN_EQUIVALENT",
+      "difficulty_evidence": [
+        {
+          "test": "cheap_symbolic_kill",
+          "status": "RESOLVED",
+          "detail": "At t=0 the cycle equation gives sum(a)=0. At t=1 minus t=0 gives sum(b)=0. Conversely integrate a and b independently along a spanning forest into vertex potentials u_v,w_v and set x_v(t)=u_v+t*w_v. Each component carries independent additive origins, isolated vertices arbitrary. A static cycle-balance problem duplicated twice; not a genuinely asynchronous dynamics."
+        },
+        {
+          "test": "independent_obstruction_or_known_translation",
+          "status": "ATTEMPTED",
+          "detail": "See independent bounds, constructions or both-direction translation in S008/MATHEMATICS.md; successful resolution is not failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S008",
+        "kind": "KILLED_EQUIVALENT",
+        "reason": "At t=0 the cycle equation gives sum(a)=0. At t=1 minus t=0 gives sum(b)=0. Conversely integrate a and b independently along a spanning forest into vertex potentials u_v,w_v and set x_v(t)=u_v+t*w_v. Each component carries independent additive origins, isolated vertices arbitrary. A static cycle-balance problem duplicated twice; not a genuinely asynchronous dynamics.",
+        "verified_scope": "Human proof/check and graded source inspection as logged; no formal or independent referee.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0044"
+      ],
+      "claim_ids": [
+        "CLM-0062"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Permanently excluded as an open target; no novel result or hard claim."
+    },
+    {
+      "id": "CND-0105",
+      "exact_statement": "In a finite undirected graph with every edge demanding equality of vertex phases modulo 3 and two marked vertices s and t forced respectively to phase 0 and 1, is the minimum number of edges to erase equal to the size of a smallest s-t edge cut?",
+      "plain_language_statement": "What is the fewest lines to sever so two clocks can insist on different readings?",
+      "domain": "boundary clocks",
+      "origin_mechanism": "S008 MEC-02/MEC-03 (nonuniform flux and boundary rules), MEC-04 (phase updates), MEC-06 (row recurrence)",
+      "attribution": "Owner S007/S008 steer and classical group-labelled graph/finite-state frameworks; no originality or priority assertion.",
+      "quantifiers": "All parameters, update schedule, boundary and stopping rules explicit in exact statement and S008/MATHEMATICS.md.",
+      "status": "KILLED_EQUIVALENT",
+      "novelty_grade": "KNOWN_EQUIVALENT",
+      "difficulty_evidence": [
+        {
+          "test": "cheap_symbolic_kill",
+          "status": "RESOLVED",
+          "detail": "Any retained s-t path forces equality of the two fixed phases, impossible. Hence every feasible deletion separates s and t, so at least a min s-t cut. Conversely remove a min s-t cut, put constant 0 on the component of s and constant 1 on the component of t, and arbitrary constants on all other components including isolated vertices. Equality holds on every remaining edge. If already disconnected, optimum 0."
+        },
+        {
+          "test": "independent_obstruction_or_known_translation",
+          "status": "ATTEMPTED",
+          "detail": "See independent bounds, constructions or both-direction translation in S008/MATHEMATICS.md; successful resolution is not failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S008",
+        "kind": "KILLED_EQUIVALENT",
+        "reason": "Any retained s-t path forces equality of the two fixed phases, impossible. Hence every feasible deletion separates s and t, so at least a min s-t cut. Conversely remove a min s-t cut, put constant 0 on the component of s and constant 1 on the component of t, and arbitrary constants on all other components including isolated vertices. Equality holds on every remaining edge. If already disconnected, optimum 0.",
+        "verified_scope": "Human proof/check and graded source inspection as logged; no formal or independent referee.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0055"
+      ],
+      "claim_ids": [
+        "CLM-0063"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Permanently excluded as an open target; no novel result or hard claim."
+    },
+    {
+      "id": "CND-0106",
+      "exact_statement": "In a finite undirected graph with every edge demanding equal phases mod 3 and three distinct marked vertices forced to phases 0,1,2, does minimum deletion to satisfy retained edges exactly equal the minimum three-terminal multiway edge cut?",
+      "plain_language_statement": "If three distant clocks insist on different readings, what is the fewest connections to remove?",
+      "domain": "boundary clocks",
+      "origin_mechanism": "S008 MEC-02/MEC-03 (nonuniform flux and boundary rules), MEC-04 (phase updates), MEC-06 (row recurrence)",
+      "attribution": "Owner S007/S008 steer and classical group-labelled graph/finite-state frameworks; no originality or priority assertion.",
+      "quantifiers": "All parameters, update schedule, boundary and stopping rules explicit in exact statement and S008/MATHEMATICS.md.",
+      "status": "KILLED_EQUIVALENT",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "cheap_symbolic_kill",
+          "status": "RESOLVED",
+          "detail": "Any pair of distinct terminals remaining connected forces identical phases, impossible, so every feasible deletion is a multiway cut. Conversely each component after a multiway cut has at most one terminal: label its vertices by that terminal's prescribed phase, or arbitrarily if no terminal (including singleton components). Every retained equation holds. This is EXACT three-terminal multiway cut. General-graph NP-hardness is known from SRC-0055; for planar fixed terminals same source says polynomial time: never transfer the general hardness to a rectangular-grid variant."
+        },
+        {
+          "test": "independent_obstruction_or_known_translation",
+          "status": "ATTEMPTED",
+          "detail": "See independent bounds, constructions or both-direction translation in S008/MATHEMATICS.md; successful resolution is not failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S008",
+        "kind": "KILLED_EQUIVALENT",
+        "reason": "Any pair of distinct terminals remaining connected forces identical phases, impossible, so every feasible deletion is a multiway cut. Conversely each component after a multiway cut has at most one terminal: label its vertices by that terminal's prescribed phase, or arbitrarily if no terminal (including singleton components). Every retained equation holds. This is EXACT three-terminal multiway cut. General-graph NP-hardness is known from SRC-0055; for planar fixed terminals same source says polynomial time: never transfer the general hardness to a rectangular-grid variant.",
+        "verified_scope": "Human proof/check and graded source inspection as logged; no formal or independent referee.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0055"
+      ],
+      "claim_ids": [
+        "CLM-0064"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Permanently excluded as an open target; no novel result or hard claim."
+    },
+    {
+      "id": "CND-0107",
+      "exact_statement": "Take a directed graph whose vertices have states 0,1,2. Simultaneously, at each integer step, a vertex advances by 1 mod 3 iff some outgoing neighbour currently has its state +1 mod 3, otherwise it stays. Must every finite connected directed graph eventually have all its states equal?",
+      "plain_language_statement": "If a pulse clock chases a neighbour that is one tick ahead, do all connected groups eventually synchronize?",
+      "domain": "pulse dynamics",
+      "origin_mechanism": "S008 MEC-02/MEC-03 (nonuniform flux and boundary rules), MEC-04 (phase updates), MEC-06 (row recurrence)",
+      "attribution": "Owner S007/S008 steer and classical group-labelled graph/finite-state frameworks; no originality or priority assertion.",
+      "quantifiers": "All parameters, update schedule, boundary and stopping rules explicit in exact statement and S008/MATHEMATICS.md.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "cheap_symbolic_kill",
+          "status": "RESOLVED",
+          "detail": "For the directed cycle v0->v1->v2->v0 start states (0,1,2). Every vertex sees the next value equal to its own+1 mod3. Therefore every vertex advances at every step and all three pairwise differences stay 1; after each step the pattern rotates modulo3 forever and never synchronizes. States, simultaneous schedule, stopping criterion (all equal) and three-vertex witness explicit. This refutes only the universal statement, not every tree-specific subclass."
+        },
+        {
+          "test": "independent_obstruction_or_known_translation",
+          "status": "ATTEMPTED",
+          "detail": "See independent bounds, constructions or both-direction translation in S008/MATHEMATICS.md; successful resolution is not failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S008",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "For the directed cycle v0->v1->v2->v0 start states (0,1,2). Every vertex sees the next value equal to its own+1 mod3. Therefore every vertex advances at every step and all three pairwise differences stay 1; after each step the pattern rotates modulo3 forever and never synchronizes. States, simultaneous schedule, stopping criterion (all equal) and three-vertex witness explicit. This refutes only the universal statement, not every tree-specific subclass.",
+        "verified_scope": "Human proof/check and graded source inspection as logged; no formal or independent referee.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0056"
+      ],
+      "claim_ids": [
+        "CLM-0065"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Permanently excluded as an open target; no novel result or hard claim."
+    },
+    {
+      "id": "CND-0108",
+      "exact_statement": "On v finite vertices with state in {0,1,2}, suppose at time t the whole configuration is deterministically updated by a function f_(t mod P) for a fixed P>=1, with isolated vertices allowed. Must the combined state and scheduler phase eventually repeat within at most P*3^v+1 observations?",
+      "plain_language_statement": "Can a finite collection of clocks following a repeating update schedule avoid ever entering a loop?",
+      "domain": "pulse dynamics",
+      "origin_mechanism": "S008 MEC-02/MEC-03 (nonuniform flux and boundary rules), MEC-04 (phase updates), MEC-06 (row recurrence)",
+      "attribution": "Owner S007/S008 steer and classical group-labelled graph/finite-state frameworks; no originality or priority assertion.",
+      "quantifiers": "All parameters, update schedule, boundary and stopping rules explicit in exact statement and S008/MATHEMATICS.md.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "cheap_symbolic_kill",
+          "status": "RESOLVED",
+          "detail": "Augment the system state with t mod P. This has P*3^v distinct states, and the next augmented state is a deterministic function of the present one. Among the first P*3^v+1 observed states two coincide; deterministic continuation then repeats with cycle length <=P*3^v. This gives eventual periodicity, not synchronization; isolated vertices and P=1 are included."
+        },
+        {
+          "test": "independent_obstruction_or_known_translation",
+          "status": "ATTEMPTED",
+          "detail": "See independent bounds, constructions or both-direction translation in S008/MATHEMATICS.md; successful resolution is not failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S008",
+        "kind": "KILLED_EASY",
+        "reason": "Augment the system state with t mod P. This has P*3^v distinct states, and the next augmented state is a deterministic function of the present one. Among the first P*3^v+1 observed states two coincide; deterministic continuation then repeats with cycle length <=P*3^v. This gives eventual periodicity, not synchronization; isolated vertices and P=1 are included.",
+        "verified_scope": "Human proof/check and graded source inspection as logged; no formal or independent referee.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0066"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Permanently excluded as an open target; no novel result or hard claim."
+    },
+    {
+      "id": "CND-0109",
+      "exact_statement": "For integers m>=2 and 1<=i,j<=m, prescribe flux (-1)^(r+c) modulo 3 on cell (r,c) of an m-by-m square grid, except reverse the sign at exactly (i,j). Determine explicitly as a function of m,i,j the minimum D(m,i,j) of primal grid edges whose removal allows every retained edge offset to equal a vertex-phase difference modulo 3, for any representative edge-offset assignment realizing those face fluxes.",
+      "plain_language_statement": "In an alternating grid of faulty clock squares, what changes if exactly one square has the wrong sign?",
+      "domain": "single-defect grid",
+      "origin_mechanism": "S008 MEC-02/MEC-03 (nonuniform flux and boundary rules), MEC-04 (phase updates), MEC-06 (row recurrence)",
+      "attribution": "Owner S007/S008 steer and classical group-labelled graph/finite-state frameworks; no originality or priority assertion.",
+      "quantifiers": "All parameters, update schedule, boundary and stopping rules explicit in exact statement and S008/MATHEMATICS.md.",
+      "status": "GENERATED",
+      "novelty_grade": "SHALLOW_SEARCH_NO_HIT",
+      "difficulty_evidence": [
+        {
+          "test": "cheap_symbolic_kill",
+          "status": "INCOMPLETE",
+          "detail": "Exact model and representative independence follow from S007 cycle integration; unlike full checkerboard, simple domino matching can strand charge near defect. Lower bound and upper constructions not closed. No independent hardness evidence, no deep novelty clearance; remains GENERATED only. Do not infer that difficulty is proven, or that exact formula is new."
+        },
+        {
+          "test": "independent_obstruction_or_known_translation",
+          "status": "NOT_CLEARED",
+          "detail": "Matching and boundary absorption give competing heuristics, but no two distinct failed rigorous attacks or independent evidence of difficulty exist."
+        }
+      ],
+      "kill_record": null,
+      "source_ids": [
+        "SRC-0044",
+        "SRC-0051"
+      ],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "GENERATED only; shallow web-index searches not a novel/open/hard certificate."
+    },
+    {
+      "id": "CND-0110",
+      "exact_statement": "For a real p and each positive n let A_n(p)=sum_(k=1)^n (n+k)^(-p). Is it true A_n(p)->0 for p>1, A_n(1)->log 2, and A_n(p)->+infinity for p<1?",
+      "plain_language_statement": "As rows of positive fractions get longer but smaller, when do their totals vanish, stay finite, or blow up?",
+      "domain": "triangular convergence",
+      "origin_mechanism": "S008 MEC-02/MEC-03 (nonuniform flux and boundary rules), MEC-04 (phase updates), MEC-06 (row recurrence)",
+      "attribution": "Owner S007/S008 steer and classical group-labelled graph/finite-state frameworks; no originality or priority assertion.",
+      "quantifiers": "All parameters, update schedule, boundary and stopping rules explicit in exact statement and S008/MATHEMATICS.md.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "cheap_symbolic_kill",
+          "status": "RESOLVED",
+          "detail": "Rewrite A_n(p)=n^(1-p)*(1/n)*sum_(k=1)^n (1+k/n)^(-p). The parenthesized term is a Riemann sum converging to positive finite integral from 0 to1 of (1+x)^(-p) dx for every real p. Hence the row sum tends to 0 if p>1, diverges to +infinity if p<1, and tends to integral=log2 if p=1. The proposed threshold is elementary and closed."
+        },
+        {
+          "test": "independent_obstruction_or_known_translation",
+          "status": "ATTEMPTED",
+          "detail": "See independent bounds, constructions or both-direction translation in S008/MATHEMATICS.md; successful resolution is not failed-hard-attack evidence."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S008",
+        "kind": "KILLED_EASY",
+        "reason": "Rewrite A_n(p)=n^(1-p)*(1/n)*sum_(k=1)^n (1+k/n)^(-p). The parenthesized term is a Riemann sum converging to positive finite integral from 0 to1 of (1+x)^(-p) dx for every real p. Hence the row sum tends to 0 if p>1, diverges to +infinity if p<1, and tends to integral=log2 if p=1. The proposed threshold is elementary and closed.",
+        "verified_scope": "Human proof/check and graded source inspection as logged; no formal or independent referee.",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0067"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "novelty_audit": 0,
+        "difficulty_evidence": 0,
+        "total": 0
+      },
+      "uncertainty": "Permanently excluded as an open target; no novel result or hard claim."
     }
   ]
 }
