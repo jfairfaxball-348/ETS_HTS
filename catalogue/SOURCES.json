@@ -117,6 +117,87 @@
       "url_or_doi": "https://arxiv.org/abs/2602.23282",
       "access_grade": "ABSTRACT_INSPECTED",
       "notes": "2026 related work confirms weak-Sidon/Sidon distinction; not a solution to the entire interval extremum."
+    },
+    {
+      "id": "SRC-0014",
+      "title": "On Nonrepetitive Sequences",
+      "author": "R. C. Entringer; D. E. Jackson; J. A. Schatz",
+      "date": "1974",
+      "url_or_doi": "https://paperzz.com/doc/7326931/be-a-finite-or-infinite-sequence",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Public reproduction of J. Combinatorial Theory A 16, 159-164; abstract explicitly states arbitrarily long adjacent permutation blocks in every infinite binary word."
+    },
+    {
+      "id": "SRC-0015",
+      "title": "Avoidability of long k-abelian repetitions",
+      "author": "Michaël Rao; Matthieu Rosenfeld",
+      "date": "2015-07-09",
+      "url_or_doi": "https://arxiv.org/abs/1507.02581",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Abstract explicitly says no infinite binary word avoids abelian cubes with abelian period >=2; does not establish arbitrarily large abelian-cube periods."
+    },
+    {
+      "id": "SRC-0016",
+      "title": "Abelian combinatorics on words: a survey",
+      "author": "Gabriele Fici; Svetlana Puzynina",
+      "date": "2023-02-01",
+      "url_or_doi": "https://arxiv.org/abs/2207.09937",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Broad survey metadata and abstract; no claim of full-text proof inspection."
+    },
+    {
+      "id": "SRC-0017",
+      "title": "OEIS A000341: number of prime-sum pairings of 1..2n",
+      "author": "OEIS contributors",
+      "date": "2026-10-13 (inspected)",
+      "url_or_doi": "https://oeis.org/A000341",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Defines exact count of pairings of [1,2n] with each sum prime; includes Greenfield/Greenfield 1998 reference."
+    },
+    {
+      "id": "SRC-0018",
+      "title": "Prime Sums in Pairs (secondary exposition of Greenfield-Greenfield)",
+      "author": "Alexander Bogomolny; credits Lawrence E. Greenfield and Stephen J. Greenfield",
+      "date": "2018 (webpage copyright; original 1998)",
+      "url_or_doi": "https://www.cut-the-knot.org/arithmetic/algebra/PrimeSumsInPairs.shtml",
+      "access_grade": "PROOF_INSPECTED",
+      "notes": "Secondary exposition giving Bertrand induction. This is NOT direct inspection of the 1998 original, despite proof being read."
+    },
+    {
+      "id": "SRC-0019",
+      "title": "Pair up {1..2n} so sums of each pair are different primes",
+      "author": "TOM (question); Ross Millikan (answer)",
+      "date": "2018-12-08",
+      "url_or_doi": "https://math.stackexchange.com/questions/3031150/pair-up-1-2n-that-the-sums-of-each-pair-are-different-primes",
+      "access_grade": "PROOF_INSPECTED",
+      "notes": "Exact question and n=7 total-of-primes obstruction read. Source independently kills purported universal existence."
+    },
+    {
+      "id": "SRC-0020",
+      "title": "Asymptotics on number of prime-sum pairings of {1,...,2n}",
+      "author": "MT_ (question); Gerhard Paseman (answer/comments)",
+      "date": "2016-07-19",
+      "url_or_doi": "https://mathoverflow.net/questions/244662/asymptotics-on-the-number-of-ways-to-pair-off-1-2-dots-2n-into-primes",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Known Bertrand-based existence, OEIS pointer and 'intervallic' suffix pairing recursion. Supports known lineage, not a full novelty clearance for all noncrossing enumerations."
+    },
+    {
+      "id": "SRC-0021",
+      "title": "Non-crossing geometric path covering red and blue points in the plane",
+      "author": "Mikio Kano",
+      "date": "2002-10",
+      "url_or_doi": "https://studylib.net/doc/15300108/non-crossing-geometric-path-covering-and-points-in",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Public HTML transcript of author presentation explicitly states red-blue perfect noncrossing matching theorem; original full academic paper not inspected."
+    },
+    {
+      "id": "SRC-0022",
+      "title": "Unsolved Problems in Number Theory (3rd edition)",
+      "author": "Richard K. Guy",
+      "date": "2004",
+      "url_or_doi": "https://link.springer.com/book/10.1007/978-0-387-26677-0",
+      "access_grade": "METADATA_ONLY",
+      "notes": "Book contents/paywalled: only table of contents and bibliographic metadata available, no problem-index examination."
     }
   ]
 }

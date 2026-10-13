@@ -26,6 +26,9 @@ REQUIRED = (
     "sessions/S002/NOVELTY_QUERIES.md", "sessions/S003/INPUT.md",
     "sessions/S003/PLAN.md", "sessions/S003/CLOSEOUT.md",
     "sessions/S003/MATHEMATICS.md", "sessions/S003/NOVELTY_QUERIES.md",
+    "sessions/S004/INPUT.md", "sessions/S004/PLAN.md",
+    "sessions/S004/CLOSEOUT.md", "sessions/S004/MATHEMATICS.md",
+    "sessions/S004/NOVELTY_QUERIES.md",
     "scripts/check_scaffold.py", "tests/test_scaffold.py",
     ".github/workflows/governance.yml",
 )
@@ -141,12 +144,12 @@ def validate(root: Path) -> list[str]:
     if state_file.is_file():
         try:
             s = json.loads(state_file.read_text(encoding="utf-8"))
-            if s.get("next_session") != "S004" or s.get("next_session_authorised") is not False:
-                errors.append("STATE: S004 must be next and explicitly unauthorised")
-            if s.get("last_completed_session") != "S003":
-                errors.append("STATE: S003 must be last completed")
+            if s.get("next_session") != "S005" or s.get("next_session_authorised") is not False:
+                errors.append("STATE: S005 must be next and explicitly unauthorised")
+            if s.get("last_completed_session") != "S004":
+                errors.append("STATE: S004 must be last completed")
             if s.get("phase") != 1:
-                errors.append("STATE: S003 must remain in generation/triage phase one")
+                errors.append("STATE: S004 must remain in generation/triage phase one")
             for kind, state_key in (("candidates", "candidate_count"),
                                     ("sources", "source_count"),
                                     ("claims", "claim_count"),
@@ -158,8 +161,8 @@ def validate(root: Path) -> list[str]:
     prompt = root / "authoritative/NEXT_SESSION_PROMPT.md"
     if prompt.is_file():
         body = prompt.read_text(encoding="utf-8")
-        if not body.startswith("# S004") or "FUTURE" not in body or "UNEXECUTED" not in body:
-            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED S004")
+        if not body.startswith("# S005") or "FUTURE" not in body or "UNEXECUTED" not in body:
+            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED S005")
         if "new explicit owner invocation" not in body:
             errors.append("NEXT_SESSION_PROMPT lacks fresh owner gate")
     return errors

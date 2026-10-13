@@ -110,6 +110,202 @@
       "cam_ids": [],
       "justification": "Pair sums collide only for disjoint pairs when the two unordered pairs differ; hence no four distinct equal-sum elements is precisely weak Sidon. OEIS A039836 directly names the same maximum over [1,N].",
       "limitations": "No claim that general terms/closed-form maximum are known; related 2026 arXiv result concerns a different weak-Sidon question."
+    },
+    {
+      "id": "CLM-0009",
+      "statement": "For every finite connected simple triangle-free graph G with minimum degree at least 2, are there two cycles sharing no edge? — DISPOSITION: The 5-cycle C5 is triangle-free, connected and 2-regular, yet has only one cycle.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0051"
+      ],
+      "cam_ids": [],
+      "justification": "The 5-cycle C5 is triangle-free, connected and 2-regular, yet has only one cycle. Minimum degree cannot force two cycles: C5 has only five edges; a graph-theoretic cyclomatic-number check is 1. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Elementary argument/witness internal, not separately peer-refereed or formally verified; not novel."
+    },
+    {
+      "id": "CLM-0010",
+      "statement": "In every finite connected undirected graph all of whose vertices have even degree, does each edge lie on a simple cycle? — DISPOSITION: A bridge would create a component with odd total degree (its one exiting edge); hence no bridge exists. Any nonbridge edge lies on a cycle.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0052"
+      ],
+      "cam_ids": [],
+      "justification": "A bridge would create a component with odd total degree (its one exiting edge); hence no bridge exists. Any nonbridge edge lies on a cycle. Bridge parity is sufficient: remove edge uv, find a remaining u-v path, reattach edge to form a cycle. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Elementary argument/witness internal, not separately peer-refereed or formally verified; not novel."
+    },
+    {
+      "id": "CLM-0011",
+      "statement": "Does every finite connected graph having precisely two vertices of odd degree admit a trail traversing every edge exactly once? — DISPOSITION: Add an edge between the two odd-degree vertices to get all-even degrees; Euler circuit exists and removing added edge gives the required trail.",
+      "status": "SOURCE_STATED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0053"
+      ],
+      "cam_ids": [],
+      "justification": "Add an edge between the two odd-degree vertices to get all-even degrees; Euler circuit exists and removing added edge gives the required trail. Euler's trail theorem directly settles all quantifiers; nontree multigraph insertion is allowed in the proof auxiliary graph. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Source grade given in SOURCES; only statement inspected as recorded, independent full theorem proof not claimed."
+    },
+    {
+      "id": "CLM-0012",
+      "statement": "In normal play on a pile of n positive stones with moves remove 1 or 2 stones, does the first player win exactly when 3 does not divide n? — DISPOSITION: Positions divisible by 3 are losing: any move leaves remainder 1 or 2, and the opponent can restore a multiple of 3; all other positions move to such a multiple.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0054"
+      ],
+      "cam_ids": [],
+      "justification": "Positions divisible by 3 are losing: any move leaves remainder 1 or 2, and the opponent can restore a multiple of 3; all other positions move to such a multiple. Induction on n, with terminal zero losing for the player to move. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Elementary argument/witness internal, not separately peer-refereed or formally verified; not novel."
+    },
+    {
+      "id": "CLM-0013",
+      "statement": "For every finite multiset of positive integers of even total sum, can repeated replacement of any two numbers a,b by |a-b| finish at 0? — DISPOSITION: For {1,2,5}, the possible first differences give final values 4 (merge 1,2), 2 (merge 1,5), or 2 (merge 2,5), never 0.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0055"
+      ],
+      "cam_ids": [],
+      "justification": "For {1,2,5}, the possible first differences give final values 4 (merge 1,2), 2 (merge 1,5), or 2 (merge 2,5), never 0. Parity is invariant but insufficient; this explicit three-number exhaustive symbolic split disproves sufficiency. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Elementary argument/witness internal, not separately peer-refereed or formally verified; not novel."
+    },
+    {
+      "id": "CLM-0014",
+      "statement": "For every finite binary word, is the irreducible word obtained by repeatedly deleting 00 or 11 independent of the chosen sequence of deletions? — DISPOSITION: Termination is by decreasing length by 2. Two redexes either are disjoint and commute or overlap in 000/111 and both choices leave the same letter; induction on remaining length gives unique irreducible normal form.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0056"
+      ],
+      "cam_ids": [],
+      "justification": "Termination is by decreasing length by 2. Two redexes either are disjoint and commute or overlap in 000/111 and both choices leave the same letter; induction on remaining length gives unique irreducible normal form. Local diamond plus length induction, not brute-force enumeration or an unsupported confluence citation. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Elementary argument/witness internal, not separately peer-refereed or formally verified; not novel."
+    },
+    {
+      "id": "CLM-0015",
+      "statement": "In every infinite binary word, for every k>=1 do two adjacent blocks of the same length at least k occur with equal counts of 1? — DISPOSITION: Exactly the classical arbitrarily long abelian-square theorem of Entringer, Jackson and Schatz (1974); direct authors' paper statement inspected in a public text reproduction.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0014",
+        "SRC-0016"
+      ],
+      "candidate_ids": [
+        "CND-0057"
+      ],
+      "cam_ids": [],
+      "justification": "Exactly the classical arbitrarily long abelian-square theorem of Entringer, Jackson and Schatz (1974); direct authors' paper statement inspected in a public text reproduction. For binary words two equal-length blocks have the same ones count iff they have equal multisets of letters; identity is bidirectional. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Source grade given in SOURCES; only statement inspected as recorded, independent full theorem proof not claimed."
+    },
+    {
+      "id": "CLM-0016",
+      "statement": "Does every infinite binary word contain three consecutive blocks of some common length at least 2 with equal numbers of 1? — DISPOSITION: Rao and Rosenfeld (2015) state that no infinite binary word avoids abelian cubes of period >=2; binary Parikh equality equals equality of ones counts.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0015"
+      ],
+      "candidate_ids": [
+        "CND-0058"
+      ],
+      "cam_ids": [],
+      "justification": "Rao and Rosenfeld (2015) state that no infinite binary word avoids abelian cubes of period >=2; binary Parikh equality equals equality of ones counts. Do not mistake 'period >=2' for 'arbitrarily large period': these are different quantifier statements. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Source grade given in SOURCES; only statement inspected as recorded, independent full theorem proof not claimed."
+    },
+    {
+      "id": "CLM-0017",
+      "statement": "For all m,n>=2 and all binary m-by-n boards, can flipping all four bits of chosen adjacent 2-by-2 subboards reach all zeroes iff every initial row sum and column sum is even? — DISPOSITION: Each move preserves each row and column parity. Conversely clear positions (i,j), i<m,j<n, lexicographically using a flip based at (i,j) iff its bit is 1; the last row and column vanish by the parity constraints.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0059"
+      ],
+      "cam_ids": [],
+      "justification": "Each move preserves each row and column parity. Conversely clear positions (i,j), i<m,j<n, lexicographically using a flip based at (i,j) iff its bit is 1; the last row and column vanish by the parity constraints. Constructive elimination works for arbitrary m,n >=2; earlier cleared cells never change. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Elementary argument/witness internal, not separately peer-refereed or formally verified; not novel."
+    },
+    {
+      "id": "CLM-0018",
+      "statement": "For every m,n>=2, is a binary m-by-n grid with even total bit sum necessarily transformable to zero by adjacent 2-by-2 flips? — DISPOSITION: The 2-by-2 board with top row 11 and bottom row 00 has even total 2 but each column has odd parity, preserved by every allowed flip.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0060"
+      ],
+      "cam_ids": [],
+      "justification": "The 2-by-2 board with top row 11 and bottom row 00 has even total 2 but each column has odd parity, preserved by every allowed flip. Checks row/column invariants from CND-0059 rather than number of black cells alone. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Elementary argument/witness internal, not separately peer-refereed or formally verified; not novel."
+    },
+    {
+      "id": "CLM-0019",
+      "statement": "For every n>=1 does {1,...,2n} have a partition into n unordered pairs {a,b} with a+b prime? — DISPOSITION: Greenfield and Greenfield (1998) established this; standard Bertrand-postulate induction explicitly inspected in secondary exposition; OEIS A000341 enumerates such pairings.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0017",
+        "SRC-0018"
+      ],
+      "candidate_ids": [
+        "CND-0061"
+      ],
+      "cam_ids": [],
+      "justification": "Greenfield and Greenfield (1998) established this; standard Bertrand-postulate induction explicitly inspected in secondary exposition; OEIS A000341 enumerates such pairings. For n>=2 choose prime p with 2n<p<4n and pair the consecutive upper suffix [p-2n,2n] by equal-sum nested pairs, then induct on remaining prefix. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Source grade given in SOURCES; only statement inspected as recorded, independent full theorem proof not claimed."
+    },
+    {
+      "id": "CLM-0020",
+      "statement": "For every n>=1 can {1,...,2n} be partitioned into n pairs whose sums are n pairwise distinct primes? — DISPOSITION: Already directly posed and answered on Math.SE in 2018; n=7 impossible because sum 1+...+14=105, whereas the seven largest distinct eligible odd primes <=27 total only 95.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0019",
+        "SRC-0020"
+      ],
+      "candidate_ids": [
+        "CND-0062"
+      ],
+      "cam_ids": [],
+      "justification": "Already directly posed and answered on Math.SE in 2018; n=7 impossible because sum 1+...+14=105, whereas the seven largest distinct eligible odd primes <=27 total only 95. Each pair uses two distinct positive integers and prime sum is odd <=4n-1; a rainbow matching would need distinct prime labels, contradicted by total-sum ceiling. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Elementary argument/witness internal, not separately peer-refereed or formally verified; not novel."
+    },
+    {
+      "id": "CLM-0021",
+      "statement": "For all n>=1, given n red and n blue distinct planar points with no three collinear, does a noncrossing perfect matching using straight red-blue segments exist? — DISPOSITION: Known geometric matching theorem (Kano 2002 presentation). Independent short proof: choose a red-blue perfect matching minimizing total Euclidean length; any crossing edges can be uncrossed by swapping blue endpoints to strictly reduce length.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0021"
+      ],
+      "candidate_ids": [
+        "CND-0063"
+      ],
+      "cam_ids": [],
+      "justification": "Known geometric matching theorem (Kano 2002 presentation). Independent short proof: choose a red-blue perfect matching minimizing total Euclidean length; any crossing edges can be uncrossed by swapping blue endpoints to strictly reduce length. Uncrossing uses the triangle inequality with strictness from general position; minimizer therefore has no crossing. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Source grade given in SOURCES; only statement inspected as recorded, independent full theorem proof not claimed."
+    },
+    {
+      "id": "CLM-0022",
+      "statement": "For every n>=1, place 1,...,2n clockwise around a convex circle. Does a perfect noncrossing straight-chord matching exist in which endpoints of every chord sum to a prime? — DISPOSITION: Bertrand induction picks p in (2n,4n) and pairs a=p-2n with 2n, a+1 with 2n-1, etc. These chords are nested and do not cross; induct on the disjoint smaller prefix [1,a-1].",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0018",
+        "SRC-0020"
+      ],
+      "candidate_ids": [
+        "CND-0064"
+      ],
+      "cam_ids": [],
+      "justification": "Bertrand induction picks p in (2n,4n) and pairs a=p-2n with 2n, a+1 with 2n-1, etc. These chords are nested and do not cross; induct on the disjoint smaller prefix [1,a-1]. This is already implicit in known 'intervallic' prime pairings discussed on MathOverflow in 2016, not a novel open problem. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Elementary argument/witness internal, not separately peer-refereed or formally verified; not novel."
+    },
+    {
+      "id": "CLM-0023",
+      "statement": "For every finite tree T on n>=2 vertices, is there a bijection f:V(T)->{1,...,n} for which f(u)+f(v) is prime on every edge uv? — DISPOSITION: The five-vertex star K1,4 refutes it: any centre label c in {1,2,3,4,5} forces four prime sums with other labels, but c=1,2,3,4,5 respectively gives composite sums 4,6,4,6,6.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0065"
+      ],
+      "cam_ids": [],
+      "justification": "The five-vertex star K1,4 refutes it: any centre label c in {1,2,3,4,5} forces four prime sums with other labels, but c=1,2,3,4,5 respectively gives composite sums 4,6,4,6,6. A single composite edge for each of five possible central labels suffices; no computation run. Full reasoning in sessions/S004/MATHEMATICS.md.",
+      "limitations": "Elementary argument/witness internal, not separately peer-refereed or formally verified; not novel."
     }
   ]
 }

@@ -1,0 +1,7 @@
+# S004 plan — authorised 2026-10-13
+
+- Live entry main 821f4b06af48f7c5cadd1a7e733c3f7446f42bb0, tree 5ce39624a537b1ba52df6c574a59a0d00edfc2e7. S003 authored dc7d2756d62fe9473e2cd5b867cf771c9f0e49bf, sole parent 4577844a178442da972ac539bb5e248322403cd9; authored tree 5ce39624a537b1ba52df6c574a59a0d00edfc2e7. PR #3 ordinary merge 821f4b06af48f7c5cadd1a7e733c3f7446f42bb0 parents [4577844a178442da972ac539bb5e248322403cd9, dc7d2756d62fe9473e2cd5b867cf771c9f0e49bf]; main tree equals authored tree. Prior branches S001,S002,S003; S004 absent at entry. No open competing PR and S004 unused.
+- Hosted last main governance run 38395338967 and job 115288995633 success on checkout; one main check-run record-validation SUCCESS, raw statuses []; rulesets [], protection endpoint 403 UNKNOWN. These are *record format checks*, not mathematical validation.
+- Generated fresh CND-0051..0065 using MEC-02,03,04,05,07,08 across graphs, games, binary words, grids, geometry and number theory, with no reused S002 candidate. Hostile elementary proof-first attacks, targeted literature/source inspections, dated search log.
+- No mathematical code/finite experimental run: no CAM required or run. No SURVIVING without complete dual pass novelty plus hard evidence. Keep full history and paired registries.
+- Plan one isolated branch with one atomic authored commit, PR and merge method merge only; verify on remote. Local git clone command failed DNS resolution, so local checkout tests NOT_RUN; hosted governance workflow to be separately inspected. Draft S005 FUTURE only.

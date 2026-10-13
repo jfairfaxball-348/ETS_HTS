@@ -57,3 +57,25 @@ Machine-readable detail, historical six-test battery plus S003 proof-first audit
 
 ## S003 status audit
 All 50 candidates are now killed (four elementary proofs/counterexamples and one exact prior-art reformulation in S003); 0 TRIAGED and 0 SURVIVING. This does not certify exhaustion of the space of possible new problems. See sessions/S003/MATHEMATICS.md and NOVELTY_QUERIES.md.
+
+## S004 fresh generation, proof-first screening (15; none survived)
+
+| ID | Mechanism/domain | Question | Outcome |
+|---|---|---|---|
+| CND-0051 | MEC-03, graphs/cycles | Does every connected triangle-free graph with minimum degree two have two edge-disjoint cycles? | KILLED_FALSE/DEGENERATE |
+| CND-0052 | MEC-08, graphs/cycles | In a connected graph where every dot has an even number of neighbours, does every edge belong to a loop? | KILLED_EASY |
+| CND-0053 | MEC-07, graphs/routes | If a connected graph has exactly two odd-degree dots, can we trace every edge exactly once? | KILLED_KNOWN |
+| CND-0054 | MEC-05, games/subtraction | Taking one or two stones each turn, when can the first player force the last move? | KILLED_EASY |
+| CND-0055 | MEC-04, games/number-reduction | Replace two numbers by their absolute difference until one remains. Does even starting total guarantee zero? | KILLED_FALSE/DEGENERATE |
+| CND-0056 | MEC-04, sequences/rewrite-game | Delete adjacent equal binary digits until none remain. Is the final string independent of deletion order? | KILLED_EASY |
+| CND-0057 | MEC-07, sequences/binary-words | Must an infinite row of 0s and 1s contain arbitrarily long neighbouring blocks with equal numbers of 1s? | KILLED_KNOWN |
+| CND-0058 | MEC-07, sequences/binary-words | Must an infinite row of 0s and 1s have three neighbouring equal-length blocks of length at least two with equal numbers of 1s? | KILLED_KNOWN |
+| CND-0059 | MEC-08, grids/toggles | If every row and column of a black-white grid has even black squares, can 2-by-2 flips clear it? | KILLED_EASY |
+| CND-0060 | MEC-02, grids/toggles | Is even total number of black squares enough to clear a board by flipping 2-by-2 squares? | KILLED_FALSE/DEGENERATE |
+| CND-0061 | MEC-07, integers/prime-matching | Can the integers from 1 through 2n always be paired so each pair has a prime sum? | KILLED_KNOWN |
+| CND-0062 | MEC-02, integers/prime-matching | Can those pairs always have different prime sums? | KILLED_FALSE/DEGENERATE |
+| CND-0063 | MEC-03, geometry/planar-matching | Can any equal number of red and blue points be paired by uncrossed straight red-blue lines? | KILLED_KNOWN |
+| CND-0064 | MEC-08, integers/geometric-matching | Put 1 through 2n around a circle. Can noncrossing pairs always have prime sums? | KILLED_EASY |
+| CND-0065 | MEC-02, graphs/prime-labels | Can every tree be numbered 1 through its size so that every linked pair adds to a prime? | KILLED_FALSE/DEGENERATE |
+
+All mathematical reasons/known-source cautions are in S004/MATHEMATICS.md and the JSON kill records. No candidate was promoted to SURVIVING or HARD.

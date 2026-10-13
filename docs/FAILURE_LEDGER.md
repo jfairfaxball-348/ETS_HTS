@@ -61,3 +61,23 @@ Full permanent kill reasons are synchronized in CANDIDATES.json and CANDIDATES.m
 | CND-0050 | KILLED_EQUIVALENT | Writing w(N) for the maximum subset of [1,N] with no equal sums from two distinct unordered pairs, s(n)=w(2n)+1. Shared endpoints in equal pair sums force identical pairs, so this is exactly weak Sidon extremality. OEIS A039836 defines w(N) with identical quantifiers; no new question was isolated, and no closed-form for w(N) is asserted. |
 
 Final counts: 50 KILLED, 0 TRIAGED, 0 SURVIVING. Proof and source limits in sessions/S003.
+
+## S004 permanent new kills (detailed proofs in sessions/S004/MATHEMATICS.md)
+
+| ID | Status | Decisive reason |
+|---|---|---|
+| CND-0051 | KILLED_FALSE/DEGENERATE | The 5-cycle C5 is triangle-free, connected and 2-regular, yet has only one cycle. |
+| CND-0052 | KILLED_EASY | A bridge would create a component with odd total degree (its one exiting edge); hence no bridge exists. Any nonbridge edge lies on a cycle. |
+| CND-0053 | KILLED_KNOWN | Add an edge between the two odd-degree vertices to get all-even degrees; Euler circuit exists and removing added edge gives the required trail. |
+| CND-0054 | KILLED_EASY | Positions divisible by 3 are losing: any move leaves remainder 1 or 2, and the opponent can restore a multiple of 3; all other positions move to such a multiple. |
+| CND-0055 | KILLED_FALSE/DEGENERATE | For {1,2,5}, the possible first differences give final values 4 (merge 1,2), 2 (merge 1,5), or 2 (merge 2,5), never 0. |
+| CND-0056 | KILLED_EASY | Termination is by decreasing length by 2. Two redexes either are disjoint and commute or overlap in 000/111 and both choices leave the same letter; induction on remaining length gives unique irreducible normal form. |
+| CND-0057 | KILLED_KNOWN | Exactly the classical arbitrarily long abelian-square theorem of Entringer, Jackson and Schatz (1974); direct authors' paper statement inspected in a public text reproduction. |
+| CND-0058 | KILLED_KNOWN | Rao and Rosenfeld (2015) state that no infinite binary word avoids abelian cubes of period >=2; binary Parikh equality equals equality of ones counts. |
+| CND-0059 | KILLED_EASY | Each move preserves each row and column parity. Conversely clear positions (i,j), i<m,j<n, lexicographically using a flip based at (i,j) iff its bit is 1; the last row and column vanish by the parity constraints. |
+| CND-0060 | KILLED_FALSE/DEGENERATE | The 2-by-2 board with top row 11 and bottom row 00 has even total 2 but each column has odd parity, preserved by every allowed flip. |
+| CND-0061 | KILLED_KNOWN | Greenfield and Greenfield (1998) established this; standard Bertrand-postulate induction explicitly inspected in secondary exposition; OEIS A000341 enumerates such pairings. |
+| CND-0062 | KILLED_FALSE/DEGENERATE | Already directly posed and answered on Math.SE in 2018; n=7 impossible because sum 1+...+14=105, whereas the seven largest distinct eligible odd primes <=27 total only 95. |
+| CND-0063 | KILLED_KNOWN | Known geometric matching theorem (Kano 2002 presentation). Independent short proof: choose a red-blue perfect matching minimizing total Euclidean length; any crossing edges can be uncrossed by swapping blue endpoints to strictly reduce length. |
+| CND-0064 | KILLED_EASY | Bertrand induction picks p in (2n,4n) and pairs a=p-2n with 2n, a+1 with 2n-1, etc. These chords are nested and do not cross; induct on the disjoint smaller prefix [1,a-1]. |
+| CND-0065 | KILLED_FALSE/DEGENERATE | The five-vertex star K1,4 refutes it: any centre label c in {1,2,3,4,5} forces four prime sums with other labels, but c=1,2,3,4,5 respectively gives composite sums 4,6,4,6,6. |
