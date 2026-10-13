@@ -522,6 +522,42 @@
       "url_or_doi": "https://arxiv.org/abs/2607.17983",
       "access_grade": "STATEMENT_INSPECTED",
       "notes": "Native arXiv HTML opened 2026-10-13; Theorem 1.5 and planar dual/T-join discussion inspected. Z2 signed graph only, not Z3 single-defect solution."
+    },
+    {
+      "id": "SRC-0059",
+      "title": "Chinese Remainder Theorem",
+      "author": "UNC Greensboro MAT253 textbook contributors",
+      "date": "not established; accessed 2026-10-13",
+      "url_or_doi": "https://mathstats-materials.uncg.edu/mat253/web/section-chinese-remainder.html",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Opened university textbook CRT statement, not a native full priority search."
+    },
+    {
+      "id": "SRC-0060",
+      "title": "OEIS A171746",
+      "author": "Neven Juric and OEIS contributors",
+      "date": "2010-10-07 initial entry",
+      "url_or_doi": "https://oeis.org/A171746",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Native OEIS exact square-jump iteration entry, older 1985-1986 school problem only referenced, not inspected."
+    },
+    {
+      "id": "SRC-0061",
+      "title": "Integer plus its square root",
+      "author": "B. S. Lin (page attribution not independently verified)",
+      "date": "2022-09-20",
+      "url_or_doi": "https://www.ocf.berkeley.edu/~bslin/view.php?name=./posts/0+inbox/Interger+plus+its+square+root.md",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Opened mathematical note posing exact eventual-square question."
+    },
+    {
+      "id": "SRC-0062",
+      "title": "Squaring the Circle/Fallacious Proof/Edward J. Goodwin",
+      "author": "ProofWiki contributors",
+      "date": "undated; accessed 2026-10-13",
+      "url_or_doi": "https://proofwiki.org/wiki/Squaring_the_Circle/Fallacious_Proof/Edward_J._Goodwin",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Opened π=4 contradiction for simultaneous perimeter-area equality, not novel/hard literature."
     }
   ]
 }

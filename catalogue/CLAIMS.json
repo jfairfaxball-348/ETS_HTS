@@ -971,6 +971,73 @@
       "cam_ids": [],
       "justification": "S009's previously established bounds and constructions, independently corrected in S010, plus a universal explicit upper-bound tiling for odd interior majority: when i,j odd remove horizontal triple (i,j-1),(i,j),(i,j+1) and send (i,1),(i,m) outside; when i,j even remove same triple and send (i-1,1),(i+1,1) outside. All remaining cells are tiled by opposite-sign dominoes as detailed in sessions/S010/MATHEMATICS.md; full dual ↔ phases equivalence and tight lower bound given there.",
       "limitations": "Self-audited elementary theorem; no external peer review or novelty claim. Not dependent on CAM-0003 finite MILP. S009 even lower-bound 'exterior singleton' wording corrected to exterior empty."
+    },
+    {
+      "id": "CLM-0072",
+      "statement": "CND-0111: The two flashes are simultaneous precisely when t≡a mod m and t≡b mod n for a in A, b in B. The Chinese remainder theorem gives a solution, and the reverse implication is automatic.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0059"
+      ],
+      "candidate_ids": [
+        "CND-0111"
+      ],
+      "cam_ids": [],
+      "justification": "Choose lit residues a in A and b in B. A common flash means exactly the paired congruences t=a (mod m), t=b (mod n). CRT ensures nonnegative t when gcd=1. Generally this is possible iff some a-b divisible by gcd(m,n); necessity follows by subtraction and sufficiency by Bezout. Noncoprime example: m=n=2, A={0}, B={1} never flash. This is a two-way reduction, not a fresh clock phenomenon.",
+      "limitations": "Known/false/elementary human proof only; no novel theorem or independent review."
+    },
+    {
+      "id": "CLM-0073",
+      "statement": "CND-0112: For a_j=3^j, every time-t row has entries 2^t*3^j, integers, although the original row is not constant.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0112"
+      ],
+      "cam_ids": [],
+      "justification": "Induct: a_j(0)=3^j, and [2^t3^j+2^t3^(j+1)]/2=2^(t+1)3^j. Every entry for every j,t is integral but initial row is nonconstant. This is an infinite row, not a finite row losing its last entry.",
+      "limitations": "Known/false/elementary human proof only; no novel theorem or independent review."
+    },
+    {
+      "id": "CLM-0074",
+      "statement": "CND-0113: Equal perimeter gives s=πr/2; equal area gives πr²=π²r²/4, forcing π=4, impossible.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0062"
+      ],
+      "candidate_ids": [
+        "CND-0113"
+      ],
+      "cam_ids": [],
+      "justification": "Equal perimeters 2πr=4s imply s=πr/2; equal areas πr²=s² then imply π=4 after cancellation by πr²>0. Standard Euclidean π is strictly less than 4. Fixed-perimeter area ratio circle:square is 4/π. No assertion about alternative metrics.",
+      "limitations": "Known/false/elementary human proof only; no novel theorem or independent review."
+    },
+    {
+      "id": "CLM-0075",
+      "statement": "CND-0114: A full straight rectangle side would have to be covered by finitely many circle boundaries, each meeting its supporting line in at most two points; impossible.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0114"
+      ],
+      "cam_ids": [],
+      "justification": "Suppose R is a rectangle equal to disks D_1∪...∪D_N. Since every disk lies in R, a rectangle side point cannot lie in any disk interior (otherwise its open ball protrudes outside R); so it must lie on a disk circumference. Each disk circumference intersects the side's supporting line in at most 2 points, hence a finite set cannot contain the entire positive-length side. Even allowing overlapping disks cannot fix this.",
+      "limitations": "Known/false/elementary human proof only; no novel theorem or independent review."
+    },
+    {
+      "id": "CLM-0076",
+      "statement": "CND-0115: OEIS A171746 (2010) encodes the exact first positive square-hitting iteration; a 2022 mathematical note poses the same question. An elementary square-offset descent gives a proof.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0060",
+        "SRC-0061"
+      ],
+      "candidate_ids": [
+        "CND-0115"
+      ],
+      "cam_ids": [],
+      "justification": "Let x=k²+r, k≥1, 1≤r≤2k. If r≤k, then two steps under F reach (k+1)²+(r-1); if r≥k+1 then one step reaches (k+1)²+(r-k-1). Both are within the next square gap and strictly lower nonnegative offsets than r. Iterated threshold crossings must end at r=0. If starting at square k², first move to k²+k (nonsquare) and apply the same descent. Exact prior statement already in OEIS A171746 (whose 1985–86 print reference was NOT inspected) and 2022 note.",
+      "limitations": "Known/false/elementary human proof only; no novel theorem or independent review."
     }
   ]
 }

@@ -146,3 +146,15 @@ S007 17/17 killed, 101/101 cumulative; 0 TRIAGED or SURVIVING.
 ## S010 final disposition
 
 CND-0109 permanently KILLED_EASY by CLM-0071 (S010 MATHEMATICS). Cumulative 110/110 KILLED; zero GENERATED, TRIAGED, SURVIVING or selected. No new CND, SRC, CAM or externally claimed priority. S009 partial solver transcript immutable.
+
+
+## S011 — regenerated distinct questions, all killed
+| ID | question | disposition | proof/killer |
+|---|---|---|---|
+| CND-0111 | If two clocks have coprime periods and each flashes at least once per cycle, must they flash together? | KILLED_EQUIVALENT | The two flashes are simultaneous precisely when t≡a mod m and t≡b mod n for a in A, b in B. The Chinese remainder theorem gives a solution, and the reverse implication is automatic. |
+| CND-0112 | If endless averaging never produces fractions, was the infinite row constant at the start? | KILLED_FALSE/DEGENERATE | For a_j=3^j, every time-t row has entries 2^t*3^j, integers, although the original row is not constant. |
+| CND-0113 | Can a circle and square use the same boundary length and enclose the same area? | KILLED_EASY | Equal perimeter gives s=πr/2; equal area gives πr²=π²r²/4, forcing π=4, impossible. |
+| CND-0114 | Can finitely many round coins perfectly fill a rectangle, even along its sides? | KILLED_EASY | A full straight rectangle side would have to be covered by finitely many circle boundaries, each meeting its supporting line in at most two points; impossible. |
+| CND-0115 | If you repeatedly add the whole-number part of a square root, will you eventually land on a square? | KILLED_KNOWN | OEIS A171746 (2010) encodes the exact first positive square-hitting iteration; a 2022 mathematical note poses the same question. An elementary square-offset descent gives a proof. |
+
+Total 115/115 killed, none surviving or triaged. No CAM-0004.

@@ -26,3 +26,6 @@
 
 | S010 | Explicit owner URL invocation 2026-10-13 | COMPLETE authored proof: CND-0109 fully solved/KILLED_EASY; cumulative 110/110 killed, SRC58 CLM71 CAM3 (CAM-0003 partial), 0 survivors | Entry main 8b860678c1931c8130617a1703b64fe0a2c2c9aa and S009 PR #10 two-parent merge verified; separate CI-only S009 fix acknowledged; S010 outgoing GitHub PR/merge must be independently verified, not pre-written. |
 | S011 | NONE | FUTURE / UNEXECUTED | Fresh explicit owner invocation required; no selected target. |
+
+## S011 — 2026-10-13
+Owner-authorised exactly S011 at main 91b62866bf3c20b47b198f1993c49c1f702fca39; five CND-0111..0115 all KILLED, SRC-0059..0062 directly opened, CLM-0072..0076 documented. CAM3 unchanged, no CAM-0004. Governance checker and tests updated for S012 future gate; actual checkout DNS blocks local testing, hosted CI format-only. S011 single authored commit/PR/merge to be verified remotely after creation.

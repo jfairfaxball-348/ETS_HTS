@@ -154,3 +154,11 @@ Final cumulative 84/84 KILLED, 0 TRIAGED, 0 SURVIVING, 0 HARD.
 - F-S010-3 / **UNRESOLVED PRIORITY**: exact historical novelty and complete source-native literature coverage not established; indexing gap UNKNOWN. This has no effect on the easy-kill decision.
 - F-S010-4 / **NO NEW CAM**: CAM-0003 stays FAILED/PARTIAL at 37 of 54, original script's possible NumPy serialisation issue retained; nothing silently rerun.
 - F-S010-5 / **RUNTIME BLOCKER**: true checkout inaccessible due to DNS failure for github.com, so local checker and unittest NOT_RUN. Hosted format CI (if it runs) must not be labelled mathematical verification.
+
+## S011 permanent kills — 2026-10-13
+- CND-0111 KILLED_EQUIVALENT: The two flashes are simultaneous precisely when t≡a mod m and t≡b mod n for a in A, b in B. The Chinese remainder theorem gives a solution, and the reverse implication is automatic. CLM-0072.
+- CND-0112 KILLED_FALSE/DEGENERATE: For a_j=3^j, every time-t row has entries 2^t*3^j, integers, although the original row is not constant. CLM-0073.
+- CND-0113 KILLED_EASY: Equal perimeter gives s=πr/2; equal area gives πr²=π²r²/4, forcing π=4, impossible. CLM-0074.
+- CND-0114 KILLED_EASY: A full straight rectangle side would have to be covered by finitely many circle boundaries, each meeting its supporting line in at most two points; impossible. CLM-0075.
+- CND-0115 KILLED_KNOWN: OEIS A171746 (2010) encodes the exact first positive square-hitting iteration; a 2022 mathematical note poses the same question. An elementary square-offset descent gives a proof. CLM-0076.
+Total 115/115 killed.

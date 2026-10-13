@@ -66,3 +66,11 @@ DEC-0035: No mathematical CAM or external posting; native novelty UNKNOWN where 
 - DEC-0039: Freeze CAM-0003 FAILED/PARTIAL and all raw/preregistration. No CAM-0004, no new CND or SRC; global totals CND110 killed110, CLM71, SRC58, CAM3, survivors0.
 - DEC-0040: Keep phase1 regeneration and stages2–6 closed/gated; S011 seeks a mathematically distinct school-readable mechanism. No selection, outreach or publication.
 - DEC-0041: Previous S009 PR #10 had the documented CI-only test fix as an additional branch commit; its ordinary two-parent merge is real. S010 targets one atomic authored commit. Local checkout/testing still DNS-blocked; CI is format-only.
+
+## S011 decisions — 2026-10-13
+- DEC-0042: Generate CND-0111..0115 in 5 distinct foundational lanes rather than checkerboard flux variants.
+- DEC-0043: All five permanently killed: CRT equivalence, averaging counterexample, π perimeter/area contradiction, global straight-boundary disk obstruction, prior exact square-jump theorem. CLM-0072..0076.
+- DEC-0044: OEIS A171746 exact CND-0115, 1985–86 reference NOT directly inspected.
+- DEC-0045: Native novelty/priority gaps UNKNOWN; two failed attacks and independent difficulty absent; zero survivors.
+- DEC-0046: Preserve CAM-0003 FAILED/PARTIAL 37/54, no CAM-0004; S012 future owner-gated.
+- DEC-0047: Git checkout DNS fails, branch protection 403 UNKNOWN; CI governance only.

@@ -1,0 +1,2 @@
+# S011 result
+CND-0111=CRT clock synchronisation (equivalent); CND-0112=counterexample 3^j to infinite averaging rigidity; CND-0113=π=4 contradiction; CND-0114=straight boundary cannot be covered by finitely many disk circumferences; CND-0115=perfect-square jump already in OEIS A171746 and a 2022 note, with elementary offset descent. All five distinct, all killed, 115/115 total, 0 TRIAGED/SURVIVING/HARD, SRC62, CLM76, CAM3. No new CAM-0004. Native source priority gaps UNKNOWN; no new novel open question, no escalation. S012 FUTURE/UNEXECUTED.
