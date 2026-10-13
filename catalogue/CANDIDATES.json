@@ -6924,7 +6924,7 @@
       "origin_mechanism": "S008 MEC-02/MEC-03 (nonuniform flux and boundary rules), MEC-04 (phase updates), MEC-06 (row recurrence)",
       "attribution": "Owner S007/S008 steer and classical group-labelled graph/finite-state frameworks; no originality or priority assertion.",
       "quantifiers": "All parameters, update schedule, boundary and stopping rules explicit in exact statement and S008/MATHEMATICS.md.",
-      "status": "GENERATED",
+      "status": "KILLED_EASY",
       "novelty_grade": "SHALLOW_SEARCH_NO_HIT",
       "difficulty_evidence": [
         {
@@ -6946,9 +6946,26 @@
           "test": "independent_hardness_and_deep_novelty",
           "status": "NOT_CLEARED",
           "detail": "Neither two genuinely distinct FAILED proof attacks nor independent hardness evidence nor exhaustive source-native two-pass novelty review. Remain GENERATED, zero difficulty certification."
+        },
+        {
+          "test": "S010_full_odd_interior_construction",
+          "status": "RESOLVED",
+          "detail": "CLM-0071 gives one T-triple, two exterior majority boundary cells and a full explicit domino tiling for both i,j odd and i,j even. Counting proves sharp D=(m²+3)/2, all odd-majority interior defects."
+        },
+        {
+          "test": "S010_independent_bound_audit",
+          "status": "RESOLVED",
+          "detail": "Component-count argument refines S009 even-case wording: even m at putative lower bound forces exterior EMPTY (not singleton), and all blocks are opposite-charge dominoes. The contradiction remains correct."
         }
       ],
-      "kill_record": null,
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S010",
+        "kind": "KILLED_EASY",
+        "reason": "Exact explicit parity-split tilings attain (m²+3)/2 for every odd m and original-majority interior defect: horizontal zero-charge triple around defect, two boundary majority singletons sent to exterior, all other cells domino tiled. Combined with S009's corrected lower bound and its even/other odd class constructions, this closes all m and positions. See sessions/S010/MATHEMATICS.md and CLM-0071.",
+        "verified_scope": "Complete human self-audited argument; no formal proof/referee and no claim to priority.",
+        "reviewer": "self-audit"
+      },
       "source_ids": [
         "SRC-0044",
         "SRC-0051",
@@ -6957,7 +6974,8 @@
       "claim_ids": [
         "CLM-0068",
         "CLM-0069",
-        "CLM-0070"
+        "CLM-0070",
+        "CLM-0071"
       ],
       "cam_ids": [
         "CAM-0003"
@@ -6967,7 +6985,7 @@
         "difficulty_evidence": 0,
         "total": 0
       },
-      "uncertainty": "S009 partial universal theorems prove tractability on broad subfamilies; odd original-majority interior exact upper formula still open WITHIN PROGRAMME ONLY. No literature-open, novel or research-difficult claim. CAM-0003 interrupted; source-native gaps UNKNOWN."
+      "uncertainty": "Fully solved within programme by explicit construction; not an eligible novel hard open question. Deep literature searches incomplete/UNKNOWN, not a claim of original publication-worthy theorem. CAM-0003 partial 37/54 unchanged."
     },
     {
       "id": "CND-0110",

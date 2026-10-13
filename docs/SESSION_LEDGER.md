@@ -22,3 +22,7 @@
 | S009 | NONE | FUTURE / UNEXECUTED | fresh explicit owner instruction required |
 | S009 | Explicit owner URL invocation 2026-10-13 | Even-m grid solved, odd-m subfamilies solved; CND-0109 GENERATED, no hardness/novelty; SRC58 CLM70 CAM3 (failed/partial) | Entry main d893d3fd8ecd2a3f6a333fbc2c643a3ddbde1eb9 verified S008 PR #9 normal two-parent merge; outgoing integration reconstruct S010 entry. |
 | S010 | NONE | FUTURE / UNEXECUTED | new explicit owner invocation required |
+
+
+| S010 | Explicit owner URL invocation 2026-10-13 | COMPLETE authored proof: CND-0109 fully solved/KILLED_EASY; cumulative 110/110 killed, SRC58 CLM71 CAM3 (CAM-0003 partial), 0 survivors | Entry main 8b860678c1931c8130617a1703b64fe0a2c2c9aa and S009 PR #10 two-parent merge verified; separate CI-only S009 fix acknowledged; S010 outgoing GitHub PR/merge must be independently verified, not pre-written. |
+| S011 | NONE | FUTURE / UNEXECUTED | Fresh explicit owner invocation required; no selected target. |

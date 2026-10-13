@@ -959,6 +959,18 @@
       ],
       "justification": "Preregistered scipy MILP/HiGHS solver outputs with status=0 retained by stdout log and transcribed in CAM-0003_raw.json; source and prereg hashes retained.",
       "limitations": "37 finite runs only; interrupted campaign, not an independently checked MILP certificate or general proof; no claim about remaining m5 cells."
+    },
+    {
+      "id": "CLM-0071",
+      "statement": "For m>=2, the single-reversed-checkerboard mod-3 edge repair optimum is D(m,i,j)=m²/2+1 for even m; for odd m it equals (m²+3)/2 precisely when the originally majority-colour defective cell is strictly interior, and (m²+1)/2 otherwise.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0109"
+      ],
+      "cam_ids": [],
+      "justification": "S009's previously established bounds and constructions, independently corrected in S010, plus a universal explicit upper-bound tiling for odd interior majority: when i,j odd remove horizontal triple (i,j-1),(i,j),(i,j+1) and send (i,1),(i,m) outside; when i,j even remove same triple and send (i-1,1),(i+1,1) outside. All remaining cells are tiled by opposite-sign dominoes as detailed in sessions/S010/MATHEMATICS.md; full dual ↔ phases equivalence and tight lower bound given there.",
+      "limitations": "Self-audited elementary theorem; no external peer review or novelty claim. Not dependent on CAM-0003 finite MILP. S009 even lower-bound 'exterior singleton' wording corrected to exterior empty."
     }
   ]
 }

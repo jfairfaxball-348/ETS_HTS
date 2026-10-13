@@ -86,3 +86,5 @@
 - **CLM-0068** [PROGRAMME_PROVED] All even m: D=m²/2+1 at every defect. Proof: sessions/S009/MATHEMATICS.md. CND-0109. Human self-audit.
 - **CLM-0069** [PROGRAMME_PROVED] Odd m: minority positions and majority boundary attain (m²+1)/2; interior majority >=(m²+3)/2. Proof: sessions/S009/MATHEMATICS.md. CND-0109. Interior upper bound unresolved.
 - **CLM-0070** [COMPUTED_EXACT] 37 MILP-optimal finite grid positions m=2..5 as specified in CAM-0003_raw.json (17 m5 positions NOT run). CND-0109; CAM-0003; no global inference.
+
+- **CLM-0071** [PROGRAMME_PROVED] CND-0109 fully resolved for ALL m>=2 and defect positions: even m gives m²/2+1; odd original-majority strictly interior gives (m²+3)/2; other odd gives (m²+1)/2. S010 explicit T-triple + two boundary exterior monomers + row/column domino constructions and matching component-count lower bounds; fixes an S009 wording error (even exact lower case exterior EMPTY, not singleton). Complete proof: sessions/S010/MATHEMATICS.md. No CAM dependence, no independent referee, no priority claim.
