@@ -22,3 +22,7 @@ Phase 1 remains **OPEN_REGENERATION_ZERO_SURVIVORS**. Total CND 84, KILLED 84, T
 ## S007 — 2026-10-13
 
 Phase 1 **OPEN_REGENERATION_ZERO_SURVIVORS**, cumulative CND 101 all killed; TRIAGED0, SURVIVING0, HARD0, selected0. Phase 2 NOT_OPEN_NO_SURVIVORS (native deep search gaps; log totals UNKNOWN), Phase 3 NOT_OPEN (no independent failed-attack/hardness evidence), gates 4–6 OWNER_GATED. S007's restricted uniform clock-grid formula was *proved and eliminated* as an open target, not advanced. CAM remains 2, no new experiment. Hosted record checks are metadata only.
+
+## S008 — 2026-10-13
+
+Phase 1 remains **OPEN_REGENERATION_ZERO_SURVIVORS**; 110 CND, 109 killed, one GENERATED (CND-0109), zero TRIAGED/SURVIVING/HARD/selected. Phase 2 NOT_OPEN_NO_SURVIVORS; full native source search is incomplete. Phase 3 NOT_OPEN (no independent difficulty evidence). Gates 4–6 OWNER_GATED. No new mathematical CAM, no selection or publication. Governance-only CI cannot certify mathematical truth, originality or hardness.

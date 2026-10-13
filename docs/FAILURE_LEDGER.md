@@ -131,3 +131,12 @@ Final cumulative 84/84 KILLED, 0 TRIAGED, 0 SURVIVING, 0 HARD.
 - **CND-0101**: exact closed grid minimum ceil(2(n−1)²/3), face count/trominoes; permanent KILLED; corresponding CLM/proof in S007 MATHEMATICS.md.
 
 **Final: 101/101 KILLED; 0 TRIAGED/SURVIVING/HARD.**
+
+## S008 negative results and unfinished gates — 2026-10-13
+
+- CND-0102 checkerboard-looking complexity evaporates: exact ceil(m²/2), lower face count and explicit domino upper; KILLED_EASY.
+- CND-0103 arbitrary flux repair is precisely MAX-2-LIN in both directions; dual connected partition not a separate new problem. CND-0104 affine drift just two static cycle constraints.
+- CND-0105 two forced terminal phases exactly min-cut; CND-0106 three phases exactly multiway cut and general NP-hardness DOES NOT license planar/grid hardness (SRC-0055).
+- CND-0107 directed triangle never synchronizes under synchronous one-ahead chase; CND-0108 finite periodic scheduler gives only trivial eventual periodicity; CND-0110 row threshold is elementary Riemann sum.
+- CND-0109 one-flipped checkerboard remains GENERATED, no two failed rigorous attacks, no independent hardness support, native deep novelty incomplete; not a solved/open/hard assertion.
+- Actual checkout git remote failed DNS 'Could not resolve host: github.com'; Python local checker/unittest NOT_RUN; hosted governance CI only. No CAM-0003, no retroactive experiment.

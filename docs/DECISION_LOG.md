@@ -43,3 +43,11 @@ DEC-0027: Freeze permanent sequential CND-0085..0101; 17/17 direct proofs, class
 DEC-0028: Close the uniform phase-grid repair model exactly by planar face counting plus triple-cell tilings (CLM-0059), not as a fresh open problem or certified original theorem.
 DEC-0029: Preserve source access grades and native novelty gaps; general web total hits UNKNOWN, no phantom zero or deep clearance, and no mathematical CAM preregistered/executed in S007.
 DEC-0030: Actual repo checkout blocked by git DNS resolution; local validator/unittest NOT_RUN. Stage updated validator and tests for GitHub Actions, which checks governance format only. Future S008 owner gated.
+
+## S008 decisions — 2026-10-13
+
+DEC-0031: Freeze CND-0102..0110, eight kills and one GENERATED. No TRIAGED/SURVIVING and no selected problem.
+DEC-0032: Exact checkerboard edge-repair D=ceil(m²/2) follows simple face counting plus domino construction (CLM-0060); not presented as novel/open.
+DEC-0033: Prove both directions of arbitrary Z3 edge-repair=MAX-2-LIN, exterior dual zero-charge connected partitions, and boundary min-/multiway-cut; decline to transfer general NP-hardness to fixed-grid subclasses.
+DEC-0034: Defeat the chase oscillator universal synchronization by directed 3-cycle and period bound by finite-state pigeonhole; retain one precise single-flip face-grid GENERATED lead without hard certification.
+DEC-0035: No mathematical CAM or external posting; native novelty UNKNOWN where unavailable; local git checkout DNS blocker. S009 owner-gated only.

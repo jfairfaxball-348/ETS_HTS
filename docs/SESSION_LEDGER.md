@@ -17,3 +17,6 @@
 
 | S007 | Explicit owner URL invocation 2026-10-13 | Six-lane research completed; CND-0085..0101 killed; cumulative 101/101 kills, zero survivors; no new CAM | Entry main 99f9b287, PR #6 and admin #7 merge verified; exit authored PR/merge to reconstruct next entry. |
 | S008 | NONE | FUTURE / UNEXECUTED | New explicit owner invocation required. |
+
+| S008 | Explicit owner URL invocation 2026-10-13 | Session authored: 9 CND, 8 killed, 1 GENERATED, 0 TRIAGED/SURVIVING; SRC57, CLM67, CAM2 | Entry verified main 6891a26, S007 PR #8 merge two parents; outgoing authored commit/PR/merge reconstruct S009 entry |
+| S009 | NONE | FUTURE / UNEXECUTED | fresh explicit owner instruction required |

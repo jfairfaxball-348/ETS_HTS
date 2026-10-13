@@ -3,13 +3,13 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S007 owner-directed six-lane exploration: 17 symbolic/known kills, zero survivors",
-  "last_completed_session": "S007",
-  "next_session": "S008",
+  "phase_name": "S008: nonuniform phase-grid exact checkerboard repair, classical reductions, one GENERATED single-defect lead; zero survivors",
+  "last_completed_session": "S008",
+  "next_session": "S009",
   "next_session_authorised": false,
-  "candidate_count": 101,
-  "source_count": 54,
-  "claim_count": 59,
+  "candidate_count": 110,
+  "source_count": 57,
+  "claim_count": 67,
   "campaign_count": 2,
   "gate_status": {
     "0": "CLOSED_ADMINISTRATIVE",
@@ -22,7 +22,7 @@
   },
   "surviving_count": 0,
   "triaged_count": 0,
-  "kill_count": 101,
-  "remote_sha_policy": "S008 independently pin live main and reconstruct S007 authored PR two-parent merge from GitHub.",
-  "note": "CND-0085..0101 all KILLED; no open/new-hard candidates. CND-0101 grid flux deletion exact closed by face/tromino proof; CAM-0001 early-return defect preserved; CAM-0002 corrected. Native deep novelty incomplete; no mathematical CAM S007."
+  "kill_count": 109,
+  "remote_sha_policy": "S009 independently pin live main, reconstruct S008 sole-parent branch/ordinary PR/two-parent merge from GitHub; no prospective SHA embedded.",
+  "note": "S008 CND-0102..0110: eight cheap/known/equivalence kills, one GENERATED single-defect grid CND-0109 (NOT TRIAGED, no difficulty/novelty certification); CAM unchanged 2 incl defect-preserved CAM-0001/2. Actual checkout blocked DNS; GitHub governance CI only."
 }

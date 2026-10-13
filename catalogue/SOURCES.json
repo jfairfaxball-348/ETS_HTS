@@ -486,6 +486,33 @@
       "url_or_doi": "https://www.sciencedirect.com/science/article/pii/S0012365X24003893",
       "access_grade": "ABSTRACT_INSPECTED",
       "notes": "Publisher result refers to NP-hard general signed frustration; no transfer to restricted grid."
+    },
+    {
+      "id": "SRC-0055",
+      "title": "The Complexity of Multiterminal Cuts",
+      "author": "E. Dahlhaus; D. S. Johnson; C. H. Papadimitriou; P. D. Seymour; M. Yannakakis",
+      "date": "1994-08",
+      "url_or_doi": "https://doi.org/10.1137/S0097539792225297",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Publisher abstract directly inspected: k=2 min cut, k=3 NP-hard for general graph, fixed-k planar polynomial; not evidence of grid hardness."
+    },
+    {
+      "id": "SRC-0056",
+      "title": "Sorting via Chip-Firing",
+      "author": "Sam Hopkins; Thomas McConville; James Propp",
+      "date": "2017-07-28",
+      "url_or_doi": "https://doi.org/10.37236/6823",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "EJC publisher abstract inspected, asynchronous chip firing and confluence; different from S008 toy phase-update mechanism."
+    },
+    {
+      "id": "SRC-0057",
+      "title": "On the maximum and negative frustration indices of graphs",
+      "author": "Maximilien Gadouleau; Huiying Zeng",
+      "date": "2026-06-09",
+      "url_or_doi": "https://arxiv.org/abs/2606.11108",
+      "access_grade": "METADATA_ONLY",
+      "notes": "Web-index arXiv title/authors/date and abstract snippet only; full arXiv page inaccessible, no 2026 theorem reliance."
     }
   ]
 }
