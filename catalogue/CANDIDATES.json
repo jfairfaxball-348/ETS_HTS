@@ -1105,7 +1105,7 @@
       "origin_mechanism": "MEC-04",
       "attribution": "Inspired by standard arithmetic/digits themes; not claimed invented de novo",
       "quantifiers": "As in exact_statement; n integer with stated bounds",
-      "status": "TRIAGED",
+      "status": "KILLED_EASY",
       "novelty_grade": "NOT_SEARCHED",
       "difficulty_evidence": [
         {
@@ -1137,11 +1137,25 @@
           "test": "literature",
           "status": "PARTIAL_OR_NOT_SEARCHED",
           "detail": "No exact prior-art confirmation claimed."
+        },
+        {
+          "test": "S003_proof_first",
+          "status": "RESOLVED",
+          "detail": "For k>=0, the palindrome P_k=11...121...11 with k flanking ones equals ((10^(k+1)-1)(10^k+1))/9. Since gcd(10,9n)=1, take k+1=ord_(9n)(10): 9n divides 10^(k+1)-1, so n divides P_k. All n>=1 coprime to 10 covered, including n=1 (k=0)."
         }
       ],
-      "kill_record": null,
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S003",
+        "kind": "KILLED_EASY",
+        "reason": "For k>=0, the palindrome P_k=11...121...11 with k flanking ones equals ((10^(k+1)-1)(10^k+1))/9. Since gcd(10,9n)=1, take k+1=ord_(9n)(10): 9n divides 10^(k+1)-1, so n divides P_k. All n>=1 coprime to 10 covered, including n=1 (k=0).",
+        "verified_scope": "Symbolic proof or explicit finite witness; no unregistered CAM or proof assistant; exact external source where stated",
+        "reviewer": "session internal hostile proof-first audit"
+      },
       "source_ids": [],
-      "claim_ids": [],
+      "claim_ids": [
+        "CLM-0004"
+      ],
       "cam_ids": [],
       "scoring": {
         "statement_length": 11,
@@ -1156,7 +1170,7 @@
         "total": 58
       },
       "screened_as_top_ten": true,
-      "uncertainty": "No adequate finite campaign or deep two-pass multisite novelty clearance; NOT SURVIVING."
+      "uncertainty": "S003 elementary symbolic proof/witness; not a novel hard/open problem."
     },
     {
       "id": "CND-0018",
@@ -1442,7 +1456,7 @@
       "origin_mechanism": "MEC-05",
       "attribution": "Inspired by standard grids/tilings themes; not claimed invented de novo",
       "quantifiers": "As in exact_statement; n integer with stated bounds",
-      "status": "TRIAGED",
+      "status": "KILLED_FALSE/DEGENERATE",
       "novelty_grade": "NOT_SEARCHED",
       "difficulty_evidence": [
         {
@@ -1474,13 +1488,27 @@
           "test": "literature",
           "status": "SOURCE_INSPECTED",
           "detail": "Inspected source ids below; relevance may be only a variant."
+        },
+        {
+          "test": "S003_proof_first",
+          "status": "RESOLVED",
+          "detail": "Eight cells: (-1,0),(0,0),(1,0),(2,0),(3,0),(4,0),(0,1),(3,-1). Connected, simply connected (no hole), 4 black/4 white. Cells (-1,0),(0,1) each have sole neighbour (0,0), so both cannot be matched by dominoes. Explicit counterexample."
         }
       ],
-      "kill_record": null,
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S003",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "Eight cells: (-1,0),(0,0),(1,0),(2,0),(3,0),(4,0),(0,1),(3,-1). Connected, simply connected (no hole), 4 black/4 white. Cells (-1,0),(0,1) each have sole neighbour (0,0), so both cannot be matched by dominoes. Explicit counterexample.",
+        "verified_scope": "Symbolic proof or explicit finite witness; no unregistered CAM or proof assistant; exact external source where stated",
+        "reviewer": "session internal hostile proof-first audit"
+      },
       "source_ids": [
         "SRC-0007"
       ],
-      "claim_ids": [],
+      "claim_ids": [
+        "CLM-0005"
+      ],
       "cam_ids": [],
       "scoring": {
         "statement_length": 11,
@@ -1495,7 +1523,7 @@
         "total": 58
       },
       "screened_as_top_ten": true,
-      "uncertainty": "No adequate finite campaign or deep two-pass multisite novelty clearance; NOT SURVIVING."
+      "uncertainty": "S003 elementary symbolic proof/witness; not a novel hard/open problem."
     },
     {
       "id": "CND-0023",
@@ -2539,7 +2567,7 @@
       "origin_mechanism": "MEC-03",
       "attribution": "Inspired by standard permutations/games themes; not claimed invented de novo",
       "quantifiers": "As in exact_statement; n integer with stated bounds",
-      "status": "TRIAGED",
+      "status": "KILLED_EASY",
       "novelty_grade": "NOT_SEARCHED",
       "difficulty_evidence": [
         {
@@ -2571,13 +2599,27 @@
           "test": "literature",
           "status": "SOURCE_INSPECTED",
           "detail": "Inspected source ids below; relevance may be only a variant."
+        },
+        {
+          "test": "S003_proof_first",
+          "status": "RESOLVED",
+          "detail": "Union of three Hamiltonian paths is 5-degenerate, hence six-colourable. For sharpness K6 has three edge-disjoint paths 0-5-1-4-2-3, 1-0-2-5-3-4 and 2-1-3-0-4-5. Concatenate path orders in size<=6 blocks; restricting a K6 path to fewer vertices retains all covered adjacencies. Therefore f3(n)=ceil(n/6) for all n."
         }
       ],
-      "kill_record": null,
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S003",
+        "kind": "KILLED_EASY",
+        "reason": "Union of three Hamiltonian paths is 5-degenerate, hence six-colourable. For sharpness K6 has three edge-disjoint paths 0-5-1-4-2-3, 1-0-2-5-3-4 and 2-1-3-0-4-5. Concatenate path orders in size<=6 blocks; restricting a K6 path to fewer vertices retains all covered adjacencies. Therefore f3(n)=ceil(n/6) for all n.",
+        "verified_scope": "Symbolic proof or explicit finite witness; no unregistered CAM or proof assistant; exact external source where stated",
+        "reviewer": "session internal hostile proof-first audit"
+      },
       "source_ids": [
         "SRC-0006"
       ],
-      "claim_ids": [],
+      "claim_ids": [
+        "CLM-0006"
+      ],
       "cam_ids": [],
       "scoring": {
         "statement_length": 11,
@@ -2592,7 +2634,7 @@
         "total": 59
       },
       "screened_as_top_ten": true,
-      "uncertainty": "No adequate finite campaign or deep two-pass multisite novelty clearance; NOT SURVIVING."
+      "uncertainty": "S003 elementary symbolic proof/witness; not a novel hard/open problem."
     },
     {
       "id": "CND-0039",
@@ -2670,7 +2712,7 @@
       "origin_mechanism": "MEC-02",
       "attribution": "Inspired by standard permutations/games themes; not claimed invented de novo",
       "quantifiers": "As in exact_statement; n integer with stated bounds",
-      "status": "TRIAGED",
+      "status": "KILLED_FALSE/DEGENERATE",
       "novelty_grade": "NOT_SEARCHED",
       "difficulty_evidence": [
         {
@@ -2702,11 +2744,25 @@
           "test": "literature",
           "status": "PARTIAL_OR_NOT_SEARCHED",
           "detail": "No exact prior-art confirmation claimed."
+        },
+        {
+          "test": "S003_proof_first",
+          "status": "RESOLVED",
+          "detail": "For n=5 prescribe v and take orders a-v-b-c-d and c-v-d-a-b. Then v is adjacent in one order or the other to every other label, so any permitted set containing v has size 1 whereas ceil(5/4)=2."
         }
       ],
-      "kill_record": null,
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S003",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "For n=5 prescribe v and take orders a-v-b-c-d and c-v-d-a-b. Then v is adjacent in one order or the other to every other label, so any permitted set containing v has size 1 whereas ceil(5/4)=2.",
+        "verified_scope": "Symbolic proof or explicit finite witness; no unregistered CAM or proof assistant; exact external source where stated",
+        "reviewer": "session internal hostile proof-first audit"
+      },
       "source_ids": [],
-      "claim_ids": [],
+      "claim_ids": [
+        "CLM-0007"
+      ],
       "cam_ids": [],
       "scoring": {
         "statement_length": 11,
@@ -2721,7 +2777,7 @@
         "total": 58
       },
       "screened_as_top_ten": true,
-      "uncertainty": "No adequate finite campaign or deep two-pass multisite novelty clearance; NOT SURVIVING."
+      "uncertainty": "S003 elementary symbolic proof/witness; not a novel hard/open problem."
     },
     {
       "id": "CND-0041",
@@ -3343,8 +3399,8 @@
       "origin_mechanism": "MEC-03",
       "attribution": "Inspired by standard additive combinatorics themes; not claimed invented de novo",
       "quantifiers": "As in exact_statement; n integer with stated bounds",
-      "status": "TRIAGED",
-      "novelty_grade": "NOT_SEARCHED",
+      "status": "KILLED_EQUIVALENT",
+      "novelty_grade": "KNOWN_EQUIVALENT",
       "difficulty_evidence": [
         {
           "test": "finite_bruteforce",
@@ -3375,11 +3431,29 @@
           "test": "literature",
           "status": "PARTIAL_OR_NOT_SEARCHED",
           "detail": "No exact prior-art confirmation claimed."
+        },
+        {
+          "test": "S003_proof_first",
+          "status": "RESOLVED",
+          "detail": "Writing w(N) for the maximum subset of [1,N] with no equal sums from two distinct unordered pairs, s(n)=w(2n)+1. Shared endpoints in equal pair sums force identical pairs, so this is exactly weak Sidon extremality. OEIS A039836 defines w(N) with identical quantifiers; no new question was isolated, and no closed-form for w(N) is asserted."
         }
       ],
-      "kill_record": null,
-      "source_ids": [],
-      "claim_ids": [],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S003",
+        "kind": "KILLED_EQUIVALENT",
+        "reason": "Writing w(N) for the maximum subset of [1,N] with no equal sums from two distinct unordered pairs, s(n)=w(2n)+1. Shared endpoints in equal pair sums force identical pairs, so this is exactly weak Sidon extremality. OEIS A039836 defines w(N) with identical quantifiers; no new question was isolated, and no closed-form for w(N) is asserted.",
+        "verified_scope": "Symbolic proof or explicit finite witness; no unregistered CAM or proof assistant; exact external source where stated",
+        "reviewer": "session internal hostile proof-first audit"
+      },
+      "source_ids": [
+        "SRC-0010",
+        "SRC-0011",
+        "SRC-0012"
+      ],
+      "claim_ids": [
+        "CLM-0008"
+      ],
       "cam_ids": [],
       "scoring": {
         "statement_length": 11,
@@ -3394,7 +3468,7 @@
         "total": 59
       },
       "screened_as_top_ten": true,
-      "uncertainty": "No adequate finite campaign or deep two-pass multisite novelty clearance; NOT SURVIVING."
+      "uncertainty": "Known exact extremal weak-Sidon formulation, not a solution of the general extremal sequence; novelty in this formulation is absent."
     }
   ]
 }

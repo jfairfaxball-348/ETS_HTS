@@ -81,6 +81,42 @@
       "url_or_doi": "https://en.wikipedia.org/wiki/Mutilated_chessboard_problem",
       "access_grade": "SECONDARY_ONLY",
       "notes": "Names Gomory theorem opposite-colour deletion; secondary attribution."
+    },
+    {
+      "id": "SRC-0010",
+      "title": "OEIS A039836 — maximal number of integers with all sums of distinct pairs different",
+      "author": "John W. Layman; OEIS contributors",
+      "date": "OEIS entry inspected 2026-10-13; sequence updated through 2026",
+      "url_or_doi": "https://oeis.org/A039836",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Exact extremal quantity w(N), matching CND-0050 by s(n)=w(2n)+1. OEIS entry contains finite terms, not a general exact closed form."
+    },
+    {
+      "id": "SRC-0011",
+      "title": "OEIS A345731 — shortest weak Sidon sets",
+      "author": "Bernd Mulansky; OEIS contributors",
+      "date": "2021-06-25 (entry); inspected 2026-10-13",
+      "url_or_doi": "https://oeis.org/A345731",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Defines weak Sidon sets with distinct sums of distinct elements; its inverse/spread parametrisation is related, not termwise identical to A039836."
+    },
+    {
+      "id": "SRC-0012",
+      "title": "Well-spread (weak Sidon) sets",
+      "author": "BerndM and MathOverflow participants",
+      "date": "2020-03-11",
+      "url_or_doi": "https://mathoverflow.net/questions/354687/well-spread-weak-sidon-sets",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Direct statement defining exactly the four-distinct-elements equal-sum exclusion. Spread minimisation is an inverse but not identical indexing of CND-0050."
+    },
+    {
+      "id": "SRC-0013",
+      "title": "Largest Sidon subsets in weak Sidon sets",
+      "author": "Jie Ma; Quanyu Tang",
+      "date": "2026-02-26",
+      "url_or_doi": "https://arxiv.org/abs/2602.23282",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "2026 related work confirms weak-Sidon/Sidon distinction; not a solution to the entire interval extremum."
     }
   ]
 }

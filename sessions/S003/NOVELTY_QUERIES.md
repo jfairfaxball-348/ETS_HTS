@@ -1,0 +1,38 @@
+# S003 source and novelty audit — 2026-10-13 Europe/London
+**Recording precision:** web queries issued during this session on 2026-10-13, Europe/London; per-query minute/second were not independently captured. Search engine results and search previews do **NOT** constitute native scoped queries or inspected full-text originals. Provider hit totals are **UNKNOWN** (not zero). SOURCE IDs below denote direct page inspections, not merely search excerpts. Five candidates were eliminated by proofs/witnesses/exact equivalence, so **no DEEP_SEARCH_NO_HIT grade** or surviving novelty gate is claimed.
+
+## Distinct formulations and maps
+- **CND-0017** decimal palindrome k ones, central 2, k ones <-> arithmetic P_k=(10^(2k+1)-1)/9+10^k <-> multiplicative-order divisibility of ((10^(k+1)-1)(10^k+1))/9. Bidirectional: these are identities for integer k>=0, so no loss; n coprime10 required for order modulo 9n. No hidden converse about n divisible by 2 or 5.
+- **CND-0022** hole-free balanced polyomino <-> bipartite black/white square-adjacency graph with equal part size and required perfect matching <-> Hall's condition |N(X)|>=|X| for each black subset. Bidirectional matching/domino placement exactly for finite cells; balanced plus topological hole-free does not imply Hall. Witness two black leaves with one white neighbour.
+- **CND-0038** three permutations <-> edge union of three Hamilton paths <-> independent-set guarantee across the union <-> proper 6-colouring lower bound and K6 Hamilton-path decomposition sharpness. Equivalences exact for arbitrary permutations; colouring implication is one-way, not inverse, and hard instance optimisation does not imply hardness of universal f3.
+- **CND-0040** compulsory name in two lists <-> independent set including distinguished vertex in two-path union <-> independent set in G - N[v] augmented by v. Identity alpha_v(G)=1+alpha(G-N[v]) exact, with empty remainder allowed; an arbitrary large colour class need not contain v.
+- **CND-0050** collision of sums of disjoint pairs <-> weak Sidon set with distinct a+b for a<b <-> distinct differences only when all four endpoints are distinct <-> maximum w(N)=A039836(N) and s(n)=w(2n)+1. First three are exact with four-distinct restriction. This is not equivalent to strong Sidon/Golomb conditions forbidding 3-term arithmetic progressions; converses fail (e.g. {1,2,3} is weak Sidon but not strong).
+
+## Actual search-provider queries and direct source reads
+| Scope / site | Literal query/search, or direct page | Candidate(s) | Result totals | Inspected SRC, access | Honesty / limits |
+|---|---|---|---|---|---|
+| OEIS keyword | `site:oeis.org weak Sidon maximum subsets 1 n 4 distinct pair sums` | 0050 | UNKNOWN | SRC-0010 STATEMENT_INSPECTED, direct https://oeis.org/A039836 | Exact match via native OEIS entry; search-provider query not native OEIS query |
+| OEIS terms/alternate | `"weak Sidon" distinct pair sums four distinct elements maximum subset interval 1 N` | 0050 | UNKNOWN | SRC-0011 STATEMENT_INSPECTED, direct https://oeis.org/A345731 | Shortest-span inverse indexing; no native numerical-terms lookup performed |
+| OEIS central palindrome | `palindrome repunit central digit 2 multiple integer 1 2 1` | 0017 | UNKNOWN | NONE | Search provider only; no no-hit/novelty conclusion |
+| arXiv recent | `site:arxiv.org "weak Sidon" set interval 2025 2026` | 0050 | UNKNOWN | SRC-0013 ABSTRACT_INSPECTED, https://arxiv.org/abs/2602.23282 | ArXiv full-text corpus search NOT VERIFIED; 2026 abstract inspected |
+| arXiv graph / full HTML | `site:arxiv.org/html/1404.5566 braid graphs NP-complete vertex cover unions two Hamiltonian paths` | 0037/0038/0040 | UNKNOWN | SRC-0006 STATEMENT_INSPECTED in S002 | Direct prior original HTML read in S002, not full-text search across arXiv |
+| arXiv geometry recent | `site:arxiv.org "domino tiling" "simply connected" "balanced" 2026` | 0022 | UNKNOWN | SRC-0008 ABSTRACT_INSPECTED in S002 | No exact theorem asserted |
+| MathOverflow | `site:mathoverflow.net weak Sidon extremal subset interval` | 0050 | UNKNOWN | SRC-0012 STATEMENT_INSPECTED, direct https://mathoverflow.net/questions/354687/well-spread-weak-sidon-sets | Exact weak Sidon four-distinct definition, spread vs interval maximum differs |
+| MathOverflow number | `site:mathoverflow.net "palindrome" "central digit" repunit` | 0017 | UNKNOWN | NONE | Provider only |
+| Math StackExchange tiling | `site:math.stackexchange.com balanced simply connected polyomino not tileable domino` | 0022 | UNKNOWN | SRC-0005 was inspected S002 on a distinct odd-board claim | Not an exact new source inspected |
+| Math StackExchange paths | `site:math.stackexchange.com "three Hamiltonian paths" "K6"` | 0038 | UNKNOWN | NONE | Explicit elementary path construction in S003 is self-contained |
+| Erdős Problems | `site:erdosproblems.com Sidon B2 star weak Sidon`; direct https://www.erdosproblems.com/757 | 0050 | UNKNOWN | NONE (related problem page inspected, not entered as exact SRC) | #757 is a different weak-Sidon-related subproblem; not exact CND |
+| Open Problem Garden | `site:openproblemgarden.org Sidon additive distinct pair sums`; `site:openproblemgarden.org domino tiling polyomino checkerboard equal black white` | 0050/0022 | UNKNOWN | NONE | No verified native index query |
+| Wikipedia unsolved lists | `site:en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics Sidon` | 0050 | UNKNOWN | NONE | Wikipedia list found; secondary context only |
+| Guy number theory | `Richard K Guy Unsolved Problems Number Theory Sidon sets book` | 0050/0017 | UNKNOWN | NONE | Springer book bibliographic listing and preview only; page-specific question not verified |
+| Croft–Falconer–Guy geometry | `Croft Falconer Guy Unsolved Problems in Geometry tiling polyominoes book` | 0022 | UNKNOWN | NONE | Springer metadata/TOC only, chapter text not inspected |
+| Brass–Moser–Pach | `Brass Moser Pach Research Problems in Discrete Geometry domino tilings book` | 0022/0038 | UNKNOWN | NONE | Springer metadata only, book text inaccessible |
+| Kourovka | `site:mathstat.dal.ca kourovka notebook weak Sidon` | 0050 | UNKNOWN | NONE | Provider-mediated only, no group-theory manuscript inspection |
+| AMM / Mathematics Magazine | `site:maa.org american mathematical monthly problems weak Sidon sets distinct sums` | 0050 | UNKNOWN | NONE | No verified journal problem/solution section access |
+| Zenodo | `site:zenodo.org "weak Sidon" exact` | 0050 | UNKNOWN | NONE | Search-provider coverage only |
+| GitHub repos | `site:github.com "weak Sidon" 2025 2026` | 0050 | UNKNOWN | NONE | Provider showed relevant research repos, NOT native GitHub code/repo exhaustive search |
+| 2025–2026 graph research | `Hamiltonian path decomposition complete graph K_2n Walecki theorem 3 paths K6` | 0038 | UNKNOWN | NONE | Self-contained explicit path listing supersedes source need |
+| 2025–2026 related papers | direct https://arxiv.org/abs/2602.23282 | 0050 | UNKNOWN | SRC-0013 ABSTRACT_INSPECTED | 2026 paper has different main question |
+
+## Assessment
+OEIS A039836 and MathOverflow document identical weak-Sidon predicate for CND-0050, so KILLED_EQUIVALENT; **do not** conflate sequence identification with solving its general extremal value. The other four are killed by exact mathematics regardless of any missing database. Source-site audit is useful triage evidence only: arXiv full-text broad search, per-book interior texts, AMM/Mathematics Magazine solution archives, native OEIS integer-term searches, Open Problem Garden indexed search, Kourovka native source and Zenodo/GitHub code search are **UNKNOWN / NOT VERIFIED**. No CAM experiment has been run, and no negative search result is treated as proof of novelty.

@@ -1,6 +1,6 @@
-# CANDIDATES registry — S002
+# CANDIDATES registry — S003
 
-Machine-readable detail, six-test battery, and exact scores are in CANDIDATES.json. **Scores never certify mathematical hardness or novelty**.
+Machine-readable detail, historical six-test battery plus S003 proof-first audit, and exact scores are in CANDIDATES.json. **Scores never certify mathematical hardness or novelty**.
 
 | ID | status | score/100 | novice-facing problem | outcome |
 |---|---|---:|---|---|
@@ -20,12 +20,12 @@ Machine-readable detail, six-test battery, and exact scores are in CANDIDATES.js
 | CND-0014 | KILLED_EASY | 49 | Can we make a multiple with exactly as many 0 digits as 1 digits? | Choose an all-ones multiple of the coprime-to-10 factor with length k≥max(v2(n),v5(n)); append exactly k zeros. |
 | CND-0015 | KILLED_FALSE/DEGENERATE | 49 | Can every number have a multiple written using no digits other than 1 and 2? | Take n=5: a multiple of 5 cannot end in 1 or 2. |
 | CND-0016 | KILLED_EASY | 49 | Does every number not divisible by 2 or 5 divide a number reading the same backwards? | An all-ones repunit multiple from CND-0011 is palindromic. |
-| CND-0017 | TRIAGED | 58 | Can every number not ending in an even digit or 5 divide a palindrome of ones with a single middle 2? | Not resolved; lacks complete deep novelty or difficulty evidence. |
+| CND-0017 | KILLED_EASY | 58 | Can every number not ending in an even digit or 5 divide a palindrome of ones with a single middle 2? | For k>=0, the palindrome P_k=11...121...11 with k flanking ones equals ((10^(k+1)-1)(10^k+1))/9. Since gcd(10,9n)=1, take k+1=ord_(9n)(10): 9n divides 10^(k+1)-1, so n divides P_k. All n>=1 coprime to 10 covered, including n=1 (k=0). |
 | CND-0018 | KILLED_FALSE/DEGENERATE | 49 | Can every odd number divide an alternating 101...101 number? | n=5, since all such numbers end in 1. |
 | CND-0019 | KILLED_KNOWN | 51 | Does every number not divisible by 2 or 5 divide some 101...101 number? | OEIS A343447 records smallest such alternating multiples for integers coprime with 10, with multiplicative-order formula. |
 | CND-0020 | KILLED_EASY | 49 | Can every number not divisible by 2 or 5 divide a palindrome of ones with a single middle 0? | For 10^k≡1 mod 9n, (10^(2k+1)−1)/9−10^k is 0 mod n; this is k ones, one 0, then k ones. |
 | CND-0021 | KILLED_FALSE/DEGENERATE | 49 | Can every connected shape of even many grid squares be covered by dominoes? | The four-square T tetromino has one central square adjacent to three isolated tips: at most one tip can be paired to centre. |
-| CND-0022 | TRIAGED | 58 | Is equal black-white balance enough to tile a hole-free grid shape? | Not resolved; lacks complete deep novelty or difficulty evidence. |
+| CND-0022 | KILLED_FALSE/DEGENERATE | 58 | Is equal black-white balance enough to tile a hole-free grid shape? | Eight cells: (-1,0),(0,0),(1,0),(2,0),(3,0),(4,0),(0,1),(3,-1). Connected, simply connected (no hole), 4 black/4 white. Cells (-1,0),(0,1) each have sole neighbour (0,0), so both cannot be matched by dominoes. Explicit counterexample. |
 | CND-0023 | KILLED_FALSE/DEGENERATE | 49 | If we remove opposite corners of an even-sided rectangle, can dominoes fill the rest? | The two diagonally opposite cells have equal checkerboard colour, so the remaining colours are unbalanced. |
 | CND-0024 | KILLED_KNOWN | 51 | If we remove a domino-shaped pair of squares from an even rectangle, can we always tile the rest? | Special case of Gomory's opposite-colour deletion theorem, which is already proved. |
 | CND-0025 | KILLED_EASY | 49 | Can an odd square board be tiled after removing the middle square? | Remove an outer width-one ring (perimeter 4(n−1) even and tileable around the cycle), reduce n to n−2; base n=1. |
@@ -41,9 +41,9 @@ Machine-readable detail, six-test battery, and exact scores are in CANDIDATES.js
 | CND-0035 | KILLED_FALSE/DEGENERATE | 49 | Can we sort cards if each swap jumps over exactly one card? | Even and odd positions never exchange occupants; swapping positions 1 and 2 initially is not reversible by allowed moves. |
 | CND-0036 | KILLED_EASY | 49 | Can we sort cards by flipping at most three neighbouring cards at a time? | Reversing two cards swaps an adjacent pair, and adjacent swaps sort any permutation. |
 | CND-0037 | KILLED_EASY | 59 | In two lists of the same names, can we always choose a quarter (rounded up) with no chosen neighbours, and is this sharp? | Proof in sessions/S002/MATHEMATICS.md: union of two paths is 3-degenerate, hence four-colourable; matching K4-block constructions attain ceil(n/4). Not claimed novel. |
-| CND-0038 | TRIAGED | 59 | If three lists have the same names, is one sixth (rounded up) always the best guaranteed choice with no neighbours in any list? | Not resolved; lacks complete deep novelty or difficulty evidence. |
+| CND-0038 | KILLED_EASY | 59 | If three lists have the same names, is one sixth (rounded up) always the best guaranteed choice with no neighbours in any list? | Union of three Hamiltonian paths is 5-degenerate, hence six-colourable. For sharpness K6 has three edge-disjoint paths 0-5-1-4-2-3, 1-0-2-5-3-4 and 2-1-3-0-4-5. Concatenate path orders in size<=6 blocks; restricting a K6 path to fewer vertices retains all covered adjacencies. Therefore f3(n)=ceil(n/6) for all n. |
 | CND-0039 | KILLED_FALSE/DEGENERATE | 49 | Can we always pick a third of the names with no neighbours in either order? | n=4 K4 union of two paths permits only one selected name, but ceil(4/3)=2. |
-| CND-0040 | TRIAGED | 58 | If one name is compulsory, can we still pick the same quarter-sized set? | Not resolved; lacks complete deep novelty or difficulty evidence. |
+| CND-0040 | KILLED_FALSE/DEGENERATE | 58 | If one name is compulsory, can we still pick the same quarter-sized set? | For n=5 prescribe v and take orders a-v-b-c-d and c-v-d-a-b. Then v is adjacent in one order or the other to every other label, so any permitted set containing v has size 1 whereas ceil(5/4)=2. |
 | CND-0041 | KILLED_EASY | 49 | Among n whole numbers, must some nonempty choice have a total divisible by n? | Prefix sums modulo n: zero prefix or two equal prefix residues give a nonempty consecutive block. |
 | CND-0042 | KILLED_EASY | 49 | Choose more than half of 1 to 2n; must one chosen number divide another? | Partition by odd part: n chains indexed by odd numbers ≤2n; pigeonhole gives a pair in one chain. |
 | CND-0043 | KILLED_EASY | 49 | Must more than half the numbers from 1 to 2n include two adding to 2n+1? | The n complementary pairs {i,2n+1−i} are disjoint; pigeonhole. |
@@ -53,4 +53,7 @@ Machine-readable detail, six-test battery, and exact scores are in CANDIDATES.js
 | CND-0047 | KILLED_EASY | 49 | Can you find three equally spaced numbers in any run of at least three integers? | The first three consecutive numbers already form a progression. |
 | CND-0048 | KILLED_FALSE/DEGENERATE | 49 | Among n positive numbers, must two non-overlapping groups have the same total? | Powers {1,2,4,...,2^(n−1)} have distinct subset sums by binary representation. |
 | CND-0049 | KILLED_FALSE/DEGENERATE | 49 | Does choosing half the numbers force two non-overlapping pairs with the same total? | At n=5 the set {1,2,3,5,8} has all ten unordered distinct pair sums different. |
-| CND-0050 | TRIAGED | 59 | How many numbers must we choose from 1 to 2n before two disjoint pairs are forced to have equal sums? | Not resolved; lacks complete deep novelty or difficulty evidence. |
+| CND-0050 | KILLED_EQUIVALENT | 59 | How many numbers must we choose from 1 to 2n before two disjoint pairs are forced to have equal sums? | Writing w(N) for the maximum subset of [1,N] with no equal sums from two distinct unordered pairs, s(n)=w(2n)+1. Shared endpoints in equal pair sums force identical pairs, so this is exactly weak Sidon extremality. OEIS A039836 defines w(N) with identical quantifiers; no new question was isolated, and no closed-form for w(N) is asserted. |
+
+## S003 status audit
+All 50 candidates are now killed (four elementary proofs/counterexamples and one exact prior-art reformulation in S003); 0 TRIAGED and 0 SURVIVING. This does not certify exhaustion of the space of possible new problems. See sessions/S003/MATHEMATICS.md and NOVELTY_QUERIES.md.

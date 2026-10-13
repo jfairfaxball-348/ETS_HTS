@@ -1,4 +1,4 @@
-# SOURCES registry — S002
+# SOURCES registry — S003
 
 - **SRC-0001** Combinatorial Press / Ars Combinatoria authors (metadata not independently resolved), *The Chromatic Number of the Union of Two Forests* (1996-04-30). https://combinatorialpress.com/ars-articles/volume-042-ars-articles/the-chromatic-number-of-the-union-of-two-forests/ — **ABSTRACT_INSPECTED**. The union of two forests may require four colours. Reviewed abstract.
 - **SRC-0002** Freddie Illingworth; Emil Powierski; Alex Scott; Youri Tamitegama, *Balancing Connected Colourings of Graphs* (2023-03-24). https://www.combinatorics.org/ojs/index.php/eljc/article/view/v30i1p54 — **ABSTRACT_INSPECTED**. Degree discrepancy at most four for connected 2-edge-colouring under two edge-disjoint spanning trees; adjacent but not exact.
@@ -9,3 +9,8 @@
 - **SRC-0007** Wikipedia contributors, *Domino tiling (background)* (2026 (accessed)). https://en.wikipedia.org/wiki/Domino_tiling — **SECONDARY_ONLY**. Summarises Thurston's necessary and sufficient height condition, not primary source inspection.
 - **SRC-0008** Matthew Nicoletti, *Temperleyan Domino Tilings with Holes* (2025-03-15). https://arxiv.org/abs/2503.12082 — **ABSTRACT_INSPECTED**. Recent 2025 preprint; probabilistic height functions, not exact CND-0022.
 - **SRC-0009** Wikipedia contributors, *Mutilated chessboard problem* (2026 (accessed)). https://en.wikipedia.org/wiki/Mutilated_chessboard_problem — **SECONDARY_ONLY**. Names Gomory theorem opposite-colour deletion; secondary attribution.
+
+- **SRC-0010** John W. Layman / OEIS contributors, *A039836* (entry inspected 2026-10-13). https://oeis.org/A039836 — **STATEMENT_INSPECTED**. Exact max-size sequence for CND-0050.
+- **SRC-0011** Bernd Mulansky / OEIS contributors, *A345731* (2021-06-25; inspected 2026-10-13). https://oeis.org/A345731 — **STATEMENT_INSPECTED**. Weak Sidon minimum spread (inverse parametrisation).
+- **SRC-0012** BerndM / MathOverflow participants, *Well-spread (weak Sidon) sets* (2020-03-11). https://mathoverflow.net/questions/354687/well-spread-weak-sidon-sets — **STATEMENT_INSPECTED**. Four-distinct-element definition and length/spread formulations.
+- **SRC-0013** Jie Ma and Quanyu Tang, *Largest Sidon subsets in weak Sidon sets* (2026-02-26). https://arxiv.org/abs/2602.23282 — **ABSTRACT_INSPECTED**. Related 2026 research, not an exact interval maximum formula.

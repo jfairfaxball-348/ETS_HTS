@@ -43,6 +43,73 @@
       "cam_ids": [],
       "justification": "Inspected opposite-colour removal proof and named theorem secondary entry; Hamiltonian cycle gives even paths.",
       "limitations": "Source primary attribution to Gomory not independently checked."
+    },
+    {
+      "id": "CLM-0004",
+      "statement": "Every n>=1 with gcd(n,10)=1 divides a decimal palindrome with one central 2 and all other digits 1.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0017"
+      ],
+      "cam_ids": [],
+      "justification": "Use P_k=((10^(k+1)-1)(10^k+1))/9, k=ord_(9n)(10)-1, so the first factor is a multiple of 9n.",
+      "limitations": "Elementary human modular-order proof; no machine formalisation and no novel research result asserted."
+    },
+    {
+      "id": "CLM-0005",
+      "statement": "A hole-free checkerboard-balanced polyomino need not admit a domino tiling.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0022"
+      ],
+      "cam_ids": [],
+      "justification": "Explicit eight-cell comb-like polyomino has equal colours and two leaves with one common neighbour, giving Hall violation.",
+      "limitations": "Concrete symbolic counterexample, not computational enumeration."
+    },
+    {
+      "id": "CLM-0006",
+      "statement": "For any three permutations of [n], sharp largest-set worst-case nonconsecutivity equals ceil(n/6).",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0006"
+      ],
+      "candidate_ids": [
+        "CND-0038"
+      ],
+      "cam_ids": [],
+      "justification": "5-degenerate union of three paths yields 6-colouring; three explicit edge-disjoint Hamilton paths decompose K6, and concatenated small clique blocks attain the upper bound.",
+      "limitations": "Symbolic elementary proof only; SRC-0006 addresses a related two-path graph class, not this exact statement or originality."
+    },
+    {
+      "id": "CLM-0007",
+      "statement": "The fixed-label strengthening of ceil(n/4) for two permutations fails at n=5.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0040"
+      ],
+      "cam_ids": [],
+      "justification": "Orders a,v,b,c,d and c,v,d,a,b make v adjacent to all other four labels.",
+      "limitations": "Exact five-vertex explicit counterexample; no general strengthening investigated."
+    },
+    {
+      "id": "CLM-0008",
+      "statement": "CND-0050 has the exact identity s(n)=A039836(2n)+1 and is a restatement of known weak Sidon set extremality.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0010",
+        "SRC-0011",
+        "SRC-0012",
+        "SRC-0013"
+      ],
+      "candidate_ids": [
+        "CND-0050"
+      ],
+      "cam_ids": [],
+      "justification": "Pair sums collide only for disjoint pairs when the two unordered pairs differ; hence no four distinct equal-sum elements is precisely weak Sidon. OEIS A039836 directly names the same maximum over [1,N].",
+      "limitations": "No claim that general terms/closed-form maximum are known; related 2026 arXiv result concerns a different weak-Sidon question."
     }
   ]
 }

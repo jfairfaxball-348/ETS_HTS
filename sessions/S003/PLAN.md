@@ -1,0 +1,8 @@
+# S003 plan and exclusion gate
+ENTRY main: 4577844a178442da972ac539bb5e248322403cd9, tree 5ee1503a9bbdb304678614d681ccdcc8344031eb. S002 authored 32339c4811cf01fdee1649e4a41892c86efdeb3c (one parent f33f87289bb5901367d5291e3b9140e8fc5a5df2), PR #2 and main two-parent merge 4577844a178442da972ac539bb5e248322403cd9 (parents f33f8728... and 32339c48...). S002 authored and merge share tree 5ee1503a9bbdb304678614d681ccdcc8344031eb. Branches at entry: main, session/S001-bootstrap, session/S002-multimechanism-triage. PR #1 and #2 merged; no open PR at entry. Entry main governance run 38389971163 completed success, record-validation check completed success; combined commit *statuses* empty/pending (not failed CI). Rulesets [] through accessible API; protection endpoint HTTP 403 UNKNOWN; branch basic metadata is not branch-protection permission.
+1. Repair hardcoded S002/S003 validator/tests to be consistent with S003 closeout/S004 handoff.
+2. Proof-first kill all five CND carryovers; preserve exact witnesses and clean weak Sidon distinction.
+3. Audit named source sites, record provider-mediated vs native, inspected SRC grades and UNKNOWN counts. No false deep-search clearance.
+4. No CAM (no finite experiments), no source or claim invention, no outreach; update paired candidate/source/claim registries, permanent failure/gate ledgers.
+5. Verify actual hosted checkout checker + unittest through workflow if observed; local shell with an actual cloned checkout is unavailable in this environment, so local tests remain NOT_RUN. Commit one atomic session tree and ordinary merge if possible.
+No S004 execution, no selected research problem or publication.
