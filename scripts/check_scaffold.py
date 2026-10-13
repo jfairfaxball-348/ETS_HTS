@@ -21,7 +21,11 @@ REQUIRED = (
     "campaigns/COMPUTATION_LEDGER.md",
     "research/GENERATION_MECHANISMS.md", "research/TASTE_CRITERIA.md",
     "research/PRIOR_ART_LANDSCAPE.md", "sessions/S001/INPUT.md",
-    "sessions/S001/PLAN.md", "sessions/S001/CLOSEOUT.md",
+    "sessions/S001/PLAN.md", "sessions/S001/CLOSEOUT.md", "sessions/S002/INPUT.md", "sessions/S002/PLAN.md",
+    "sessions/S002/CLOSEOUT.md", "sessions/S002/MATHEMATICS.md",
+    "sessions/S002/NOVELTY_QUERIES.md", "sessions/S003/INPUT.md",
+    "sessions/S003/PLAN.md", "sessions/S003/CLOSEOUT.md",
+    "sessions/S003/MATHEMATICS.md", "sessions/S003/NOVELTY_QUERIES.md",
     "scripts/check_scaffold.py", "tests/test_scaffold.py",
     ".github/workflows/governance.yml",
 )
@@ -137,12 +141,12 @@ def validate(root: Path) -> list[str]:
     if state_file.is_file():
         try:
             s = json.loads(state_file.read_text(encoding="utf-8"))
-            if s.get("next_session") != "S003" or s.get("next_session_authorised") is not False:
-                errors.append("STATE: S003 must be next and explicitly unauthorised")
-            if s.get("last_completed_session") != "S002":
-                errors.append("STATE: S002 must be last completed")
+            if s.get("next_session") != "S004" or s.get("next_session_authorised") is not False:
+                errors.append("STATE: S004 must be next and explicitly unauthorised")
+            if s.get("last_completed_session") != "S003":
+                errors.append("STATE: S003 must be last completed")
             if s.get("phase") != 1:
-                errors.append("STATE: S002 must remain in generation/triage phase one")
+                errors.append("STATE: S003 must remain in generation/triage phase one")
             for kind, state_key in (("candidates", "candidate_count"),
                                     ("sources", "source_count"),
                                     ("claims", "claim_count"),
@@ -154,8 +158,8 @@ def validate(root: Path) -> list[str]:
     prompt = root / "authoritative/NEXT_SESSION_PROMPT.md"
     if prompt.is_file():
         body = prompt.read_text(encoding="utf-8")
-        if not body.startswith("# S003") or "FUTURE" not in body or "UNEXECUTED" not in body:
-            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED S003")
+        if not body.startswith("# S004") or "FUTURE" not in body or "UNEXECUTED" not in body:
+            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED S004")
         if "new explicit owner invocation" not in body:
             errors.append("NEXT_SESSION_PROMPT lacks fresh owner gate")
     return errors

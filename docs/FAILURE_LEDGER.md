@@ -49,3 +49,15 @@ Full permanent kill reasons are synchronized in CANDIDATES.json and CANDIDATES.m
 | CND-0047 | KILLED_EASY | The first three consecutive numbers already form a progression. |
 | CND-0048 | KILLED_FALSE/DEGENERATE | Powers {1,2,4,...,2^(n−1)} have distinct subset sums by binary representation. |
 | CND-0049 | KILLED_FALSE/DEGENERATE | At n=5 the set {1,2,3,5,8} has all ten unordered distinct pair sums different. |
+
+## S003 permanent kill additions (2026-10-13)
+
+| Candidate | Kill status | Concrete evidence |
+|---|---|---|
+| CND-0017 | KILLED_EASY | For k>=0, the palindrome P_k=11...121...11 with k flanking ones equals ((10^(k+1)-1)(10^k+1))/9. Since gcd(10,9n)=1, take k+1=ord_(9n)(10): 9n divides 10^(k+1)-1, so n divides P_k. All n>=1 coprime to 10 covered, including n=1 (k=0). |
+| CND-0022 | KILLED_FALSE/DEGENERATE | Eight cells: (-1,0),(0,0),(1,0),(2,0),(3,0),(4,0),(0,1),(3,-1). Connected, simply connected (no hole), 4 black/4 white. Cells (-1,0),(0,1) each have sole neighbour (0,0), so both cannot be matched by dominoes. Explicit counterexample. |
+| CND-0038 | KILLED_EASY | Union of three Hamiltonian paths is 5-degenerate, hence six-colourable. For sharpness K6 has three edge-disjoint paths 0-5-1-4-2-3, 1-0-2-5-3-4 and 2-1-3-0-4-5. Concatenate path orders in size<=6 blocks; restricting a K6 path to fewer vertices retains all covered adjacencies. Therefore f3(n)=ceil(n/6) for all n. |
+| CND-0040 | KILLED_FALSE/DEGENERATE | For n=5 prescribe v and take orders a-v-b-c-d and c-v-d-a-b. Then v is adjacent in one order or the other to every other label, so any permitted set containing v has size 1 whereas ceil(5/4)=2. |
+| CND-0050 | KILLED_EQUIVALENT | Writing w(N) for the maximum subset of [1,N] with no equal sums from two distinct unordered pairs, s(n)=w(2n)+1. Shared endpoints in equal pair sums force identical pairs, so this is exactly weak Sidon extremality. OEIS A039836 defines w(N) with identical quantifiers; no new question was isolated, and no closed-form for w(N) is asserted. |
+
+Final counts: 50 KILLED, 0 TRIAGED, 0 SURVIVING. Proof and source limits in sessions/S003.
