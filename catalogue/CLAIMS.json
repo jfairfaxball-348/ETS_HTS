@@ -1,4 +1,48 @@
 {
   "schema_version": 1,
-  "records": []
+  "records": [
+    {
+      "id": "CLM-0001",
+      "statement": "For any two orders of n labels, the sharp universal guaranteed nonadjacent-in-both-orders subset size is ceil(n/4).",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0006"
+      ],
+      "candidate_ids": [
+        "CND-0037"
+      ],
+      "cam_ids": [],
+      "justification": "Self-contained lower and sharp upper bound argument archived in sessions/S002/MATHEMATICS.md; academic source establishes overlapping braid-graph subject, not the exact formula.",
+      "limitations": "Human proof only; no Lean formalisation, independent referee or novel status; classical argument."
+    },
+    {
+      "id": "CLM-0002",
+      "statement": "OEIS A343447 concerns alternating 101...101 multiples for every positive integer coprime to 10.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0003"
+      ],
+      "candidate_ids": [
+        "CND-0019"
+      ],
+      "cam_ids": [],
+      "justification": "Inspected OEIS entry directly.",
+      "limitations": "The statement is known, not an S002 discovery."
+    },
+    {
+      "id": "CLM-0003",
+      "statement": "After any two opposite-colour cells are deleted from an even-by-even rectangular board, the rest is domino-tileable.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0004",
+        "SRC-0009"
+      ],
+      "candidate_ids": [
+        "CND-0027"
+      ],
+      "cam_ids": [],
+      "justification": "Inspected opposite-colour removal proof and named theorem secondary entry; Hamiltonian cycle gives even paths.",
+      "limitations": "Source primary attribution to Gomory not independently checked."
+    }
+  ]
 }

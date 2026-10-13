@@ -1,4 +1,86 @@
 {
   "schema_version": 1,
-  "records": []
+  "records": [
+    {
+      "id": "SRC-0001",
+      "title": "The Chromatic Number of the Union of Two Forests",
+      "author": "Combinatorial Press / Ars Combinatoria authors (metadata not independently resolved)",
+      "date": "1996-04-30",
+      "url_or_doi": "https://combinatorialpress.com/ars-articles/volume-042-ars-articles/the-chromatic-number-of-the-union-of-two-forests/",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "The union of two forests may require four colours. Reviewed abstract."
+    },
+    {
+      "id": "SRC-0002",
+      "title": "Balancing Connected Colourings of Graphs",
+      "author": "Freddie Illingworth; Emil Powierski; Alex Scott; Youri Tamitegama",
+      "date": "2023-03-24",
+      "url_or_doi": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v30i1p54",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Degree discrepancy at most four for connected 2-edge-colouring under two edge-disjoint spanning trees; adjacent but not exact."
+    },
+    {
+      "id": "SRC-0003",
+      "title": "OEIS A343447",
+      "author": "OEIS contributors (Robert Israel comment 2026-08-24)",
+      "date": "2026-08-24",
+      "url_or_doi": "https://oeis.org/A343447",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Alternating 101...101 multiples of integers coprime to ten; direct match CND-0019."
+    },
+    {
+      "id": "SRC-0004",
+      "title": "Tiling a Chessboard with Dominoes (Opposite Colors Removed)",
+      "author": "Jeremy Kun",
+      "date": "2011-11-18",
+      "url_or_doi": "https://www.jeremykun.com/2011/11/18/tiling-a-chessboard-2/",
+      "access_grade": "PROOF_INSPECTED",
+      "notes": "Cycle-based proof for two deleted opposite-colour cells on even chessboard."
+    },
+    {
+      "id": "SRC-0005",
+      "title": "Tiling for m×n chessboard problem both odd",
+      "author": "Mike Earnest (Math Stack Exchange)",
+      "date": "2018-11-30",
+      "url_or_doi": "https://math.stackexchange.com/questions/3020362/tiling-for-m-times-n-chessboard-problem-for-both-m-n-are-odd",
+      "access_grade": "PROOF_INSPECTED",
+      "notes": "Odd by odd rectangle, delete any majority-colour square, constructive cases."
+    },
+    {
+      "id": "SRC-0006",
+      "title": "Vertex Cover Gets Faster and Harder on Low Degree Graphs",
+      "author": "Akanksha Agrawal; Sathish Govindarajan; Neeldhara Misra",
+      "date": "2014-04-23",
+      "url_or_doi": "https://arxiv.org/html/1404.5566v2",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Defines braid graphs as unions of two Hamiltonian paths; vertex cover NP-complete on class. Related but not same as universal extremal f(n)."
+    },
+    {
+      "id": "SRC-0007",
+      "title": "Domino tiling (background)",
+      "author": "Wikipedia contributors",
+      "date": "2026 (accessed)",
+      "url_or_doi": "https://en.wikipedia.org/wiki/Domino_tiling",
+      "access_grade": "SECONDARY_ONLY",
+      "notes": "Summarises Thurston's necessary and sufficient height condition, not primary source inspection."
+    },
+    {
+      "id": "SRC-0008",
+      "title": "Temperleyan Domino Tilings with Holes",
+      "author": "Matthew Nicoletti",
+      "date": "2025-03-15",
+      "url_or_doi": "https://arxiv.org/abs/2503.12082",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Recent 2025 preprint; probabilistic height functions, not exact CND-0022."
+    },
+    {
+      "id": "SRC-0009",
+      "title": "Mutilated chessboard problem",
+      "author": "Wikipedia contributors",
+      "date": "2026 (accessed)",
+      "url_or_doi": "https://en.wikipedia.org/wiki/Mutilated_chessboard_problem",
+      "access_grade": "SECONDARY_ONLY",
+      "notes": "Names Gomory theorem opposite-colour deletion; secondary attribution."
+    }
+  ]
 }

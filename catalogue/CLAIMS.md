@@ -1,5 +1,5 @@
-# CLAIMS registry
+# CLAIMS registry — S002
 
-Claims must have id, statement, status, source_ids, candidate_ids, cam_ids, justification, limitations.
-
-**S001:** no CLM numbered records exist. JSON is the canonical machine-readable index; every future ID must also occur here with an explanatory Markdown row. Missing references are fatal to the validator.
+- **CLM-0001** [PROGRAMME_PROVED]: For any two orders of n labels, the sharp universal guaranteed nonadjacent-in-both-orders subset size is ceil(n/4). Justification: Self-contained lower and sharp upper bound argument archived in sessions/S002/MATHEMATICS.md; academic source establishes overlapping braid-graph subject, not the exact formula. Limits: Human proof only; no Lean formalisation, independent referee or novel status; classical argument. References: SRC-0006; CND-0037.
+- **CLM-0002** [SOURCE_STATED]: OEIS A343447 concerns alternating 101...101 multiples for every positive integer coprime to 10. Justification: Inspected OEIS entry directly. Limits: The statement is known, not an S002 discovery. References: SRC-0003; CND-0019.
+- **CLM-0003** [SOURCE_STATED]: After any two opposite-colour cells are deleted from an even-by-even rectangular board, the rest is domino-tileable. Justification: Inspected opposite-colour removal proof and named theorem secondary entry; Hamiltonian cycle gives even paths. Limits: Source primary attribution to Gomory not independently checked. References: SRC-0004, SRC-0009; CND-0027.

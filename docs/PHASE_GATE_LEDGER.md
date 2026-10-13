@@ -1,15 +1,13 @@
-# Phase and gate ledger
+# Phase and gate ledger — updated S002
 
-Evidence-driven gates are **never automatic**; phases may overlap diagnostically but a gate must be recorded before advancement.
+| Phase | State | Reason |
+|---|---|---|
+| 0 bootstrap | CLOSED_ADMINISTRATIVE | S001 seeded, authored, merged in PR #1 |
+| 1 generation/triage | OPEN_INCOMPLETE_BATTERY | 50 generated, scored; many symbolic kills, all computation NOT_RUN, some battery weak |
+| 2 deep novelty | NOT_CLOSED_SEARCH_GAPS | 12 selected probes but mandatory per-site multi-language deep audit incomplete |
+| 3 difficulty | NOT_OPEN | No CAM or verified failed attacks qualifying for SURVIVING |
+| 4 owner selection | OWNER_GATED | No selected question |
+| 5 proof programme | OWNER_GATED | Not authorised |
+| 6 publication | OWNER_GATED | Not authorised |
 
-| Phase | Objective | Minimum exit evidence | S001 gate |
-|---|---|---|---|
-| 0 Bootstrap (S001) | Authority, ledgers, registries, protocols, CI/tests | Required scaffold + validator/tests + archived exact input + future prompt | CLOSED_ADMINISTRATIVE subject to independent remote reconciliation |
-| 1 Generation + triage | Diversified candidate pool, scoring and cheap kills | All generated ideas numbered and killed/retained transparently | NOT_OPEN; S002 needs fresh invocation |
-| 2 Deep novelty shortlist audit | Locate exact/variant/equivalent antecedents | Named sources and query counts, access grades, 2–3 translations, audit limitations | NOT_OPEN |
-| 3 Difficulty probes + finite computation | Meaningful resistance evidence | Failed named attacks, CAM preregistration, bounded checks and heuristic caveats | NOT_OPEN |
-| 4 Owner selection | Choose one or more defensible research questions | Owner explicit selection, approved scope and risk acknowledgement | OWNER_GATED |
-| 5 Optional research programme | Try to solve an owner-selected problem | Separate explicit proof-research mandate | OWNER_GATED |
-| 6 Optional publication of statement | Publish carefully attributed question | Separate explicit authorisation for each release or contact | OWNER_GATED |
-
-A candidate may reach SURVIVING or SHORTLISTED without being owner SELECTED_FOR_RESEARCH. All gates require recorded evidence; no pass because a file exists or CI is green.
+Never interpret CI schema success as mathematics/novelty clearance.
