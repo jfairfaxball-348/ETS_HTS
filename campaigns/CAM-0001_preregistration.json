@@ -1,0 +1,15 @@
+{
+  "id": "CAM-0001",
+  "candidate_ids": ["CND-0068"],
+  "claim_ids": [],
+  "purpose": "Find a finite counterexample or certify tested canonical double-occurrence neighbour-distinct words have a two-person fair alternating allocation with at most q-1 cuts.",
+  "bounds": "q from 2 through 7 inclusive, canonical first-appearance labels 0..q-1, exactly twice each, adjacent unequal; at most 2000000 completed words per q; stop globally immediately on first counterexample; no inference beyond fully tested cases.",
+  "code_version": "S006 pre-run frozen source campaigns/necklace_exhaustive.py",
+  "code_hash": "sha256:2e32d7e3547f28f4b8e9444c491f3d2e71741bf3faa62a91455f7dfe99ff21df",
+  "input_hash": "sha256:2e32d7e3547f28f4b8e9444c491f3d2e71741bf3faa62a91455f7dfe99ff21df (self-contained source parameters; no external input)",
+  "environment": "CPython 3.13.5 Linux container, stdlib only; local /mnt/data/ets_s006 cwd",
+  "stopping_rule": "First fair-cut counterexample then stop, or q=7 completion, or per-q 2000000 completed words cap; exact complete=false when capped.",
+  "output_paths": ["campaigns/CAM-0001_raw.json", "campaigns/CAM-0001_preregistration.json", "campaigns/necklace_exhaustive.py"],
+  "status": "REGISTERED",
+  "preregistration_recorded_before_execution": true
+}

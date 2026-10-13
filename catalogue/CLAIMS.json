@@ -497,6 +497,79 @@
       "cam_ids": [],
       "justification": "S005 record: A bridge makes reverse travel across its cut impossible. Ear-decomposition proof gives strong orientation of bridgeless graph; known prior result.",
       "limitations": "Human argument/source inspection only; not formally verified; no novelty assertion."
+    },
+    {
+      "id": "CLM-0038",
+      "statement": "Any length-2q doubled-colour word with unequal neighbours has a fair two-person splitting with at most q−1 cuts.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0036"
+      ],
+      "candidate_ids": [
+        "CND-0068"
+      ],
+      "cam_ids": [
+        "CAM-0001",
+        "CAM-0002"
+      ],
+      "justification": "Choose independent fair orientation per colour: first occurrence goes to owner X_a, second to the other. Every adjacent pair uses distinct colours so its ownership transition is a fair Bernoulli variable. E(cuts)=(2q−1)/2=q−1/2, implying an integer outcome <=q−1. Cut at changes.",
+      "limitations": "Full universal human proof in S006/MATHEMATICS.md, not independent review; computational cases supplementary, no originality claim."
+    },
+    {
+      "id": "CLM-0039",
+      "statement": "The CND-0080 claimed maximum incidence fails on an explicit simple six-gon.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0037"
+      ],
+      "candidate_ids": [
+        "CND-0080"
+      ],
+      "cam_ids": [],
+      "justification": "Vertices cyclically (0,10),(-2,0),(-1,3),(0,4),(1,3),(2,0). The lower chain has slopes 3,1,-1,-3. All nonconsecutive lower-chain chords lie outside; the sole triangulation is apex fan and loads top vertex with 4 triangles, above ceil(6/2)=3.",
+      "limitations": "Independent coordinate argument; no computational certification or referee. A counterexample, not a new open theorem."
+    },
+    {
+      "id": "CLM-0040",
+      "statement": "The cycle C5 lacks an additive-one tree spanner.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0043"
+      ],
+      "candidate_ids": [
+        "CND-0082"
+      ],
+      "cam_ids": [],
+      "justification": "Every spanning tree of C5 is a path created by deleting one cycle edge. Its two original endpoints are distance 4 in the tree versus 1 in the graph.",
+      "limitations": "Simple human counterexample; no novel general result."
+    },
+    {
+      "id": "CLM-0041",
+      "statement": "A finite family of closed intervals can be optimally coloured with as many colours as their maximum common overlap.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0038"
+      ],
+      "candidate_ids": [
+        "CND-0083"
+      ],
+      "cam_ids": [],
+      "justification": "Greedy ascending left endpoints; earlier conflicting intervals all contain current left endpoint. If k earlier colours blocked, k+1 intervals meet at that point; impossible under max overlap k.",
+      "limitations": "Known interval-graph perfectness; direct secondary account inspected, not claimed original."
+    },
+    {
+      "id": "CLM-0042",
+      "statement": "Any n-element integer set satisfies |A+A|>=2n−1.",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0039"
+      ],
+      "candidate_ids": [
+        "CND-0084"
+      ],
+      "cam_ids": [],
+      "justification": "Strictly increasing sorted sum chain a1+a1,...,a1+an,a2+an,...,an+an gives 2n−1 terms, as in 2026 journal editorial.",
+      "limitations": "Direct editorial text inspected, not full research-paper proof; known elementary bound."
     }
   ]
 }

@@ -15,3 +15,10 @@ Every run records mechanism ID, parent inspiration (attributed), parameter choic
 
 ## Standard execution worksheet (future only)
 (1) Pick 5+ distinct mechanisms and 3+ domains. (2) Write a 1-line seed inspiration and attribution. (3) Specify an unambiguous family and quantifiers before running code. (4) Produce candidate plus negation, tiny edge case and equivalent formulation. (5) Apply easy theorem/degeneracy precheck and record every kill. (6) Give full schema fields and score. (7) De-duplicate by object-level equivalence, not string similarity. (8) Preregister CAM before finite enumeration and store reproducible artefacts. (9) Route only honest survivors to expensive novelty. S001 deliberately executes no mechanism.
+
+
+## S006 source-led regeneration, all cheap-killed
+- Graph metric distortion and additive tree spanners (SRC-0043) → CND-0082; C5 immediately refutes.
+- Real interval scheduling / interval graph colouring (SRC-0038) → CND-0083; classical greedy argument proves exactly.
+- Additive integer sumset cardinality (SRC-0039) → CND-0084; classic 2n−1 lower bound printed in 2026 publication.
+No new candidate passes even preliminary hardness or novelty. S007 should seek more deeply coupled mechanisms, not renamings of the 84 dead entries.

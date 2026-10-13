@@ -1,0 +1,15 @@
+{
+  "id": "CAM-0002",
+  "candidate_ids": ["CND-0068"],
+  "claim_ids": [],
+  "purpose": "Compute true optimum minimum fair alternating ownership transitions over all orientations, correcting premature-return metric defect in CAM-0001. Independently re-evaluate CND-0068 up to q=7.",
+  "bounds": "q from 2 to 7 inclusive; canonical first-occurrence labelled words of 2q symbols exactly twice each, unequal adjacent; 2000000 completed word cap per q; early global exit only on a proven counterexample, NOT on feasible orientation.",
+  "code_version": "S006 frozen campaigns/necklace_exact_optima.py",
+  "code_hash": "sha256:7743b0d1db8293abf2eee2908ec82a0171b028475c92c573617f88b4c6c13636",
+  "input_hash": "sha256:7743b0d1db8293abf2eee2908ec82a0171b028475c92c573617f88b4c6c13636 (no external input)",
+  "environment": "CPython 3.13.5 Linux container, stdlib only; local /mnt/data/ets_s006 cwd",
+  "stopping_rule": "Finish q=7 or first violating word or per-q cap. Record completeness flags and raw rows.",
+  "output_paths": ["campaigns/CAM-0002_raw.json", "campaigns/CAM-0002_preregistration.json", "campaigns/necklace_exact_optima.py"],
+  "status": "REGISTERED",
+  "preregistration_recorded_before_execution": true
+}

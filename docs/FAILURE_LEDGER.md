@@ -100,3 +100,12 @@ Final counts: 50 KILLED, 0 TRIAGED, 0 SURVIVING. Proof and source limits in sess
 - CND-0079 [KILLED_EASY]: Bipartite parity forbids odd mn; for an even side reserve a border column and snake through other columns, returning on the border.
 - CND-0081 [KILLED_KNOWN]: Exactly Robbins's strong-orientation theorem; related publisher source states theorem.
 Two other S005 cases (CND-0068, CND-0080) remain TRIAGED, not killed or hard.
+
+
+## S006 permanent kill additions — 2026-10-13
+- **CND-0068 KILLED_EASY**: independent fair orientations for two occurrences per symbol; distinct adjacent symbols => each ownership boundary flips with probability 1/2; expectation q−1/2, so some integer assignment <=q−1 cuts. CLM-0038.
+- **CND-0080 KILLED_FALSE/DEGENERATE**: n=6 polygon (0,10),(-2,0),(-1,3),(0,4),(1,3),(2,0), all nonconsecutive lower-chain chords exterior, unique apex fan loads apex with 4 triangles >ceil(6/2)=3. CLM-0039.
+- **CND-0082 KILLED_FALSE/DEGENERATE**: C5 spanning tree path, missing-edge endpoints have distance 4 versus graph distance 1, fails additive one. CLM-0040.
+- **CND-0083 KILLED_KNOWN**: interval graph greedy colouring in number of colours equal maximum point overlap; exact familiar theorem, SRC-0038 CLM-0041.
+- **CND-0084 KILLED_KNOWN**: 2n−1 strictly increasing sumset chain of sorted integers; 2026 journal editorial confirms exact result, SRC-0039 CLM-0042.
+Final cumulative 84/84 KILLED, 0 TRIAGED, 0 SURVIVING, 0 HARD.

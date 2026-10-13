@@ -315,6 +315,78 @@
       "url_or_doi": "https://link.springer.com/article/10.1007/s00453-025-01346-4",
       "access_grade": "STATEMENT_INSPECTED",
       "notes": "Opened Springer article and definitions; not an inspected proof of the adjacency-restricted q-1 statement."
+    },
+    {
+      "id": "SRC-0036",
+      "title": "Splitting necklaces",
+      "author": "Noga Alon",
+      "date": "1987",
+      "url_or_doi": "https://www.sciencedirect.com/science/article/pii/0001870887900557",
+      "access_grade": "METADATA_ONLY",
+      "notes": "Publisher abstract appeared in search provider; direct page open HTTP403. Classical q cuts, not the exact q-1 restriction."
+    },
+    {
+      "id": "SRC-0037",
+      "title": "Fan triangulation",
+      "author": "Wikipedia contributors",
+      "date": "accessed 2026-10-13",
+      "url_or_doi": "https://en.wikipedia.org/wiki/Fan_triangulation",
+      "access_grade": "SECONDARY_ONLY",
+      "notes": "Opened direct page describing fan and n-2 triangles; unique six-vertex S006 witness proved independently."
+    },
+    {
+      "id": "SRC-0038",
+      "title": "Vertex coloring: limits of approximation (interval graph section)",
+      "author": "Fabio Furini",
+      "date": "accessed 2026-10-13",
+      "url_or_doi": "https://fabiofurini.github.io/combinatorial-optimization/approximation-algorithms/coloring-inapproximability/",
+      "access_grade": "SECONDARY_ONLY",
+      "notes": "Direct educational page inspected: sorted-left-endpoint greedy interval coloring optimal."
+    },
+    {
+      "id": "SRC-0039",
+      "title": "Possible Sizes of Sumsets",
+      "author": "Isaac Rajagopal; journal editorial",
+      "date": "2026-07-16",
+      "url_or_doi": "https://discreteanalysisjournal.com/article/165102-possible-sizes-of-sumsets",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Direct journal editorial explicitly gives a1+a1,...,a1+an,a2+an,...,an+an => 2n-1 distinct sums."
+    },
+    {
+      "id": "SRC-0040",
+      "title": "Research Problems in Discrete Geometry",
+      "author": "Peter Brass; William O. J. Moser; János Pach",
+      "date": "2005",
+      "url_or_doi": "https://link.springer.com/book/10.1007/0-387-29929-7",
+      "access_grade": "METADATA_ONLY",
+      "notes": "Opened publisher book catalogue only, not whole book; cannot infer negative prior-art coverage."
+    },
+    {
+      "id": "SRC-0041",
+      "title": "Unsolved Problems in Geometry",
+      "author": "H. T. Croft; Kenneth J. Falconer; Richard K. Guy",
+      "date": "1991",
+      "url_or_doi": "https://link.springer.com/book/10.1007/978-1-4612-0963-8",
+      "access_grade": "METADATA_ONLY",
+      "notes": "Opened publisher catalogue and TOC, geometry chapter text not read."
+    },
+    {
+      "id": "SRC-0042",
+      "title": "Dynamic Necklace Splitting",
+      "author": "Rishi Advani; Abolfazl Asudeh; Mohsen Dehghankar; Stavros Sintos",
+      "date": "2025-09-30",
+      "url_or_doi": "https://arxiv.org/abs/2510.00162",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "ArXiv abstract opened; related dynamic setting, not the exact CND-0068 property."
+    },
+    {
+      "id": "SRC-0043",
+      "title": "Additive Tree Spanners",
+      "author": "Dieter Kratsch; Hoàng-Oanh Le; Haiko Müller; Erich Prisner; Dorothea Wagner",
+      "date": "publication date unverified",
+      "url_or_doi": "https://epubs.siam.org/doi/10.1137/S0895480195295471",
+      "access_grade": "METADATA_ONLY",
+      "notes": "Publisher abstract surfaced in search provider; used as subject background, not proof."
     }
   ]
 }

@@ -26,14 +26,21 @@ class ScaffoldTest(unittest.TestCase):
     def test_clean_s005(self):
         self.assertEqual([], validate(self.root))
 
+    def test_state_count_mismatch(self):
+        p = "authoritative/STATE.json"
+        j = self.load(p)
+        j["kill_count"] -= 1
+        self.save(p, j)
+        self.assertTrue(any("kill_count mismatch" in x for x in validate(self.root)))
+
     def test_missing_file(self):
         (self.root / "AGENTS.md").unlink()
         self.assertTrue(any("missing required" in x for x in validate(self.root)))
 
     def test_wrong_next_prompt(self):
         (self.root / "authoritative/NEXT_SESSION_PROMPT.md").write_text(
-            "# S007\nFUTURE UNEXECUTED\nnew explicit owner invocation", encoding="utf-8")
-        self.assertTrue(any("FUTURE UNEXECUTED S006" in x for x in validate(self.root)))
+            "# S008\nFUTURE UNEXECUTED\nnew explicit owner invocation", encoding="utf-8")
+        self.assertTrue(any("FUTURE UNEXECUTED S007" in x for x in validate(self.root)))
 
     def test_dangling_source_and_bad_status(self):
         p = "catalogue/CANDIDATES.json"

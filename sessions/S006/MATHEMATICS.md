@@ -1,0 +1,34 @@
+# S006 mathematics — decisive resolutions (2026-10-13)
+Live main 6da5590b1b1d130a7b2e34f5dea697e30a2fcc72, tree 089413e92f7bc1eaa277495af63159f4a893a686. S005 authored 3bd51e4f3d17c49b7c82900d2b83804bae3b8342 has sole parent 7794b213505aefe7b268c7d976085b9082bb282a, tree 089413e92f7bc1eaa277495af63159f4a893a686; normal PR #5 merge 6da5590b1b1d130a7b2e34f5dea697e30a2fcc72 has two parents [7794b213...,3bd51e4...] and same tree. At entry S006 branch search returned none; S005 CI record-validation and workflow success, no commit statuses. Branch-protection endpoint HTTP 403=UNKNOWN, rulesets [] (API main branch metadata said protected:false but permission blocked detailed protection).
+
+## CLM-0038 / CND-0068 — KILLED_EASY by linearity of expectation
+
+Let w have length 2q, q symbols twice each, no equal neighbouring symbols. For each symbol a independently choose one of two fair ownership orientations, encoded by an unbiased bit X_a: its first occurrence goes to owner X_a, its second to owner 1−X_a. This guarantees one bead of each colour to each person, for every assignment X. At a position boundary i the adjacent symbols are DISTINCT a,b. The assigned owners there are either X_a or 1−X_a and independently either X_b or 1−X_b, so the probability of unequal ownership is exactly 1/2. With 2q−1 boundaries, C the number of ownership changes has expectation E[C]=(2q−1)/2=q−1/2. Since C is integer, it cannot be >=q for every orientation, or expectation would be at least q. Hence some fair orientation has <=q−1 transitions. Place cuts at changes only. Each maximal consecutive ownership-run is allocated to its unique owner, and neighbouring runs alternate. Exactly the claimed split is achieved **for all q**, with no numerical assumption.
+
+**Translation 1, two directions:** Fair splitting ↔ per-symbol complementary bits. Any fair splitting forces opposite owners for the two occurrences; read its bit X_a from the first occurrence. Conversely any bit vector gives a fair split. Merging adjacent intervals belonging to the same owner yields exactly the transition cuts. Thus min fair cuts equals min over 2^q orientations of the transitions of their induced owner word.
+
+**Translation 2, two directions:** At every adjacent pair of distinct symbols, equality of the owners is a signed XOR constraint X_a XOR X_b=constant depending on which occurrences meet. An orientation satisfying k of 2q−1 constraints has 2q−1−k cuts; conversely every fair split determines the X vector and the satisfied constraints. Therefore fair q−1 splitting is equivalent to satisfying at least q of the 2q−1 parity constraints. Random orientations satisfy half each in expectation, so some satisfy at least q.
+
+Two attacks: S005 found the sharp q-cut obstruction AABBCC disallowed by neighbour restriction but had no proof; S006's independent probabilistic method gives complete proof. Literature Alon 1987 classical q-cut theorem (SRC-0036) is context, and OEIS A328150 (SRC-0034) counts neighbour-distinct necklaces, not minimum cuts; no exact-priority claim.
+
+**Finite CAM evidence (not the proof):** CAM-0001 enumerated every canonical legal word q=2..7 (1,5,36,329,3655,47844); did not find violations of <=q−1. Original code returned at first feasible orientation, so the raw field claiming exact 'maximum_minimum_cuts_seen' is a measurement defect. Pre-registered corrected CAM-0002 enumerated *all* orientations of each same word, giving true maximum-over-words minimum cuts [1,2,3,3,4,5] for q2..7. Both code SHA256, pre-run registration timestamps and raw JSON are archived; CAM-0001 field is NOT to be used for exact extrema.
+
+## CLM-0039 / CND-0080 — KILLED_FALSE by a six-vertex forced fan
+
+Take simple polygon in cyclic boundary order:
+P=(0,10), A=(-2,0), B=(-1,3), C=(0,4), D=(1,3), E=(2,0), then P.
+The lower chain A,B,C,D,E is the piecewise-linear interpolation of y=4−x² at x=-2,-1,0,1,2, with successive slopes 3,1,-1,-3 (strictly decreasing). Polygon interior lies on the *upper* side of this lower chain toward high apex P. For any two non-consecutive chain vertices, their connecting segment lies below the strictly concave chain over at least one intervening vertex, so this chord is NOT inside the polygon and cannot be a triangulation diagonal. Every legal internal diagonal must therefore touch apex P. A six-gon requires 3 diagonals, so they must be PB, PC, PD, and are indeed inside the polygon. They form four ordinary triangles PAB, PBC, PCD, PDE. Apex P lies in **4** triangles, but claimed bound ceil(6/2)=**3**, contradiction.
+
+**Translation 1, two directions:** At a polygon boundary vertex v with t incident triangles in any (ordinary) triangulation, the triangulation graph has exactly t+1 incident edges (two boundary edges and t−1 diagonals); conversely d incident edges divide the wedge at v into exactly d−1 triangles. Thus max triangle incidence <=ceil(n/2) iff max triangulation-graph degree <=ceil(n/2)+1. This correspondence is exact.
+
+**Translation 2, two directions:** Excluding all diagonals joining non-consecutive lower-chain vertices forces every triangulation diagonal to be from apex P; since there must be n−3 diagonals this uniquely forces the fan. Conversely if the apex sees every chain vertex, those noncrossing apex diagonals produce consecutive fan triangles and n−2 apex incidences. Both implications hold for this explicit polygon. Pseudotriangulations are different objects and do not evade the counterexample.
+
+Independent attacks: global incidence sum 3(n−2) fails to control maximum; S006 visibility/concave-chain proof constructs a direct polygon witness. Not a claim about convex polygons, nor a computational approximation.
+
+## Source-led independent regeneration after both kills
+
+- **CND-0082, graph metric tree additive-one:** Literature on additive tree spanners SRC-0043 inspired exact formulation. The 5-cycle C5 has any spanning tree a path of length 4, deleting precisely one edge. Its deleted-edge endpoints are distance 1 in C5 and 4 in the tree, violating <=1+1. KILLED_FALSE CLM-0040.
+- **CND-0083, finite interval-colouring/scheduling:** Intervals ordered by left endpoint. Previously coloured intervals conflicting with the next interval all contain its left endpoint (closed endpoints). At most k−1 can do so when max point-overlap is k; a free colour exists. This is exactly known interval-graph perfectness (SRC-0038). KILLED_KNOWN CLM-0041.
+- **CND-0084, integer additive sumsets:** For a1<...<an, the chain a1+a1 < a1+a2 < ... < a1+an < a2+an < ... < an+an has exactly 2n−1 distinct sums. Already explicitly stated in July 2026 journal editorial SRC-0039. KILLED_KNOWN CLM-0042.
+
+Three genuinely different subjects screened, none promoted. Total 84/84 permanently killed; 0 TRIAGED, 0 SURVIVING, 0 HARD, 0 selected. Mathematical arguments here are human self-audits, not independent peer-reviewed or formally checked results.
