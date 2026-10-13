@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "programme": "ETS_HTS",
+  "authority": "live_remote_main",
+  "phase": 0,
+  "phase_name": "Bootstrap",
+  "last_completed_session": "S001",
+  "next_session": "S002",
+  "next_session_authorised": false,
+  "s001_scope": "governance_only",
+  "s001_deliverables": "authored",
+  "candidate_count": 0,
+  "source_count": 0,
+  "claim_count": 0,
+  "campaign_count": 0,
+  "gate_status": {
+    "0": "CLOSED_ADMINISTRATIVE",
+    "1": "NOT_OPEN",
+    "2": "NOT_OPEN",
+    "3": "NOT_OPEN",
+    "4": "OWNER_GATED",
+    "5": "OWNER_GATED",
+    "6": "OWNER_GATED"
+  },
+  "remote_sha_policy": "Never pre-record outgoing SHAs; independently reconstruct at next entry",
+  "note": "Bootstrap authors content only; remote merge and checks require separate observed evidence. S002 remains FUTURE/UNEXECUTED."
+}

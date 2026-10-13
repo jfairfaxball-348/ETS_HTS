@@ -1,0 +1,17 @@
+# Reproducible candidate-generation mechanisms
+
+Every run records mechanism ID, parent inspiration (attributed), parameter choices, exact normalisation, obvious theorem screen, candidate ID and negative result. Mechanisms are recipes, **not** candidate ideas in S001.
+
+| ID | Mechanism and reproducible recipe | Example operation (not a proposed candidate) | Typical failure mode / first kill |
+|---|---|---|---|
+| MEC-01 | **Mutate a canonical problem.** Select a famous statement; modify *one* of operation/base/dimension/surface/layers; generate a systematic small parameter grid; normalise symmetries. | 3n+1-style map with a symbolic operation changed | All natural mutations studied, trivial invariant or ugly ad hoc thresholds |
+| MEC-02 | **Intersect two independent constraints.** Start from two elementary rules on the same finite objects; impose both; test whether conflict actually occurs. | Earth–Moon as coupling of two distinct map adjacency structures | Two rules secretly equivalent or intersection vacuous |
+| MEC-03 | **Exact extremal value.** For small graph, string, grid or set families, define minimum/maximum forbidden-pattern threshold, vary size and boundary rules. | Maximum compatible colouring/packing parameter | Known Ramsey/extremal theorem immediately gives it |
+| MEC-04 | **Integer and digit dynamics.** Specify deterministic update on integers/digits/permutations; guarantee the update is total; ask about cycles, escape or order. | Iterate a small digit operation in a fixed base | Finite automaton makes it trivial, or computation seduces |
+| MEC-05 | **Games and tilings.** Enumerate board size, pieces, players, legal move and terminal condition; ask for winner/existence threshold with small board tests. | Grid placement game with a forbidden local pattern | Strategy stealing, parity or standard invariant solves it |
+| MEC-06 | **OEIS gap / unexplained sequence.** Generate exact low-n values only under CAM; search OEIS both terms and description; ask whether a simple regularity has a sharp proof or exception. | Counts of admissible finite configurations | Sequence previously catalogued; small-n coincidence; overfit |
+| MEC-07 | **One step from an open-problem list.** Inspect an actual statement; alter its *independently motivated* structure, not a superficial constant; test reduction back. | Restrict an established graph problem to a natural class | Exact variant already cited in papers, cosmetic rewording |
+| MEC-08 | **Translate then invert.** Express arithmetic as graphs/games, geometry as incidences, and conversely; ask about a naturally dual parameter. | Map a reachability problem to a finite directed graph | Translation is a bijection of the original question, hence KILLED_EQUIVALENT |
+
+## Standard execution worksheet (future only)
+(1) Pick 5+ distinct mechanisms and 3+ domains. (2) Write a 1-line seed inspiration and attribution. (3) Specify an unambiguous family and quantifiers before running code. (4) Produce candidate plus negation, tiny edge case and equivalent formulation. (5) Apply easy theorem/degeneracy precheck and record every kill. (6) Give full schema fields and score. (7) De-duplicate by object-level equivalence, not string similarity. (8) Preregister CAM before finite enumeration and store reproducible artefacts. (9) Route only honest survivors to expensive novelty. S001 deliberately executes no mechanism.
