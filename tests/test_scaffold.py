@@ -39,7 +39,7 @@ class ScaffoldTest(unittest.TestCase):
 
     def test_wrong_next_prompt(self):
         (self.root / "authoritative/NEXT_SESSION_PROMPT.md").write_text(
-            "# S010\nFUTURE UNEXECUTED\nnew explicit owner invocation", encoding="utf-8")
+            "# S011\nFUTURE UNEXECUTED\nnew explicit owner invocation", encoding="utf-8")
         self.assertTrue(any("FUTURE UNEXECUTED S010" in x for x in validate(self.root)))
 
     def test_dangling_source_and_bad_status(self):
