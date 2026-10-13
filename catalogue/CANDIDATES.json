@@ -1,4 +1,3400 @@
 {
   "schema_version": 1,
-  "records": []
+  "records": [
+    {
+      "id": "CND-0001",
+      "exact_statement": "For every n≥4 and every two trees with vertex set {1,...,n}, can their combined edges be vertex-coloured properly with three colours?",
+      "plain_language_statement": "Can two trees on the same dots always be coloured together using only three colours?",
+      "domain": "graphs/colouring",
+      "origin_mechanism": "MEC-02",
+      "attribution": "Inspired by standard graphs/colouring themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "K4 is the union of paths 1-2-3-4 and 3-1-4-2; it needs four colours."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "K4 is the union of paths 1-2-3-4 and 3-1-4-2; it needs four colours."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "K4 is the union of paths 1-2-3-4 and 3-1-4-2; it needs four colours."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_INSPECTED",
+          "detail": "Inspected source ids below; relevance may be only a variant."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "K4 is the union of paths 1-2-3-4 and 3-1-4-2; it needs four colours.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0002",
+      "exact_statement": "For every n≥1 and any two trees on the same n vertices, does their edge union admit a proper vertex colouring in four colours?",
+      "plain_language_statement": "Can we always colour two superimposed trees with four colours?",
+      "domain": "graphs/colouring",
+      "origin_mechanism": "MEC-02",
+      "attribution": "Inspired by standard graphs/colouring themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Take a 2-colouring of each tree; the ordered pair of colours is a proper 4-colouring."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Take a 2-colouring of each tree; the ordered pair of colours is a proper 4-colouring."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Take a 2-colouring of each tree; the ordered pair of colours is a proper 4-colouring."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_INSPECTED",
+          "detail": "Inspected source ids below; relevance may be only a variant."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Take a 2-colouring of each tree; the ordered pair of colours is a proper 4-colouring.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0003",
+      "exact_statement": "For every n≥4 and any two lists containing the same n distinct names, can the names be coloured with three colours so adjacent names in either list have different colours?",
+      "plain_language_statement": "Do two lists always share a valid three-colour labelling?",
+      "domain": "graphs/colouring",
+      "origin_mechanism": "MEC-02",
+      "attribution": "Inspired by standard graphs/colouring themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "The two K4 paths given for CND-0001 prevent three colours."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "The two K4 paths given for CND-0001 prevent three colours."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "The two K4 paths given for CND-0001 prevent three colours."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "The two K4 paths given for CND-0001 prevent three colours.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0004",
+      "exact_statement": "For every n≥4 and any two trees on the same n vertices, must some vertex be a leaf in both?",
+      "plain_language_statement": "Do two trees always have a common end vertex?",
+      "domain": "graphs/colouring",
+      "origin_mechanism": "MEC-02",
+      "attribution": "Inspired by standard graphs/colouring themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Paths 1-2-3-4 and 2-1-4-3 have leaf sets {1,4} and {2,3}."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Paths 1-2-3-4 and 2-1-4-3 have leaf sets {1,4} and {2,3}."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Paths 1-2-3-4 and 2-1-4-3 have leaf sets {1,4} and {2,3}."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Paths 1-2-3-4 and 2-1-4-3 have leaf sets {1,4} and {2,3}.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0005",
+      "exact_statement": "For every n≥4 and two trees on the same vertices, must two vertices be nonadjacent in both trees?",
+      "plain_language_statement": "Can you always choose two dots with no edge between them in either tree?",
+      "domain": "graphs/colouring",
+      "origin_mechanism": "MEC-02",
+      "attribution": "Inspired by standard graphs/colouring themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "The two paths covering K4 from CND-0001 make every pair adjacent somewhere."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "The two paths covering K4 from CND-0001 make every pair adjacent somewhere."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "The two paths covering K4 from CND-0001 make every pair adjacent somewhere."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "The two paths covering K4 from CND-0001 make every pair adjacent somewhere.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0006",
+      "exact_statement": "For all n≥1 and any two trees on n vertices, is there a vertex subset of size at least ceil(n/4) with no edge of either tree joining two chosen vertices?",
+      "plain_language_statement": "How many dots can we pick so none are joined in either tree?",
+      "domain": "graphs/colouring",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard graphs/colouring themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Four-colour the union by pairs of tree bipartitions; the largest colour class has at least ceil(n/4). K4 demonstrates sharpness at n=4."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Four-colour the union by pairs of tree bipartitions; the largest colour class has at least ceil(n/4). K4 demonstrates sharpness at n=4."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Four-colour the union by pairs of tree bipartitions; the largest colour class has at least ceil(n/4). K4 demonstrates sharpness at n=4."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_INSPECTED",
+          "detail": "Inspected source ids below; relevance may be only a variant."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Four-colour the union by pairs of tree bipartitions; the largest colour class has at least ceil(n/4). K4 demonstrates sharpness at n=4.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 51
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0007",
+      "exact_statement": "For every n divisible by four, do any two trees on n vertices have a proper four-colouring in which all four colour classes have exactly n/4 vertices?",
+      "plain_language_statement": "Can combined trees always be coloured with four equally large colour groups?",
+      "domain": "graphs/colouring",
+      "origin_mechanism": "MEC-02",
+      "attribution": "Inspired by standard graphs/colouring themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Two identical stars on n=8: the universal centre must have a singleton colour class, inconsistent with four groups of size 2."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Two identical stars on n=8: the universal centre must have a singleton colour class, inconsistent with four groups of size 2."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Two identical stars on n=8: the universal centre must have a singleton colour class, inconsistent with four groups of size 2."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Two identical stars on n=8: the universal centre must have a singleton colour class, inconsistent with four groups of size 2.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0008",
+      "exact_statement": "For every n≥4, do two paths on the same n vertices whose edges are disjoint have a union that is three-colourable?",
+      "plain_language_statement": "If two lists never place the same pair together, do three colours suffice?",
+      "domain": "graphs/colouring",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Inspired by standard graphs/colouring themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "K4 decomposes into the two edge-disjoint Hamiltonian paths in CND-0001."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "K4 decomposes into the two edge-disjoint Hamiltonian paths in CND-0001."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "K4 decomposes into the two edge-disjoint Hamiltonian paths in CND-0001."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_INSPECTED",
+          "detail": "Inspected source ids below; relevance may be only a variant."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "K4 decomposes into the two edge-disjoint Hamiltonian paths in CND-0001.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 51
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0009",
+      "exact_statement": "For even n≥2 and any two paths on n common vertices, does their union contain n/2 disjoint edges?",
+      "plain_language_statement": "Can we pair everyone using neighbouring names from either of two lists?",
+      "domain": "graphs/colouring",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard graphs/colouring themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Use consecutive disjoint pairs along the first path: (1,2),(3,4),... ."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Use consecutive disjoint pairs along the first path: (1,2),(3,4),... ."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Use consecutive disjoint pairs along the first path: (1,2),(3,4),... ."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Use consecutive disjoint pairs along the first path: (1,2),(3,4),... .",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0010",
+      "exact_statement": "For every n≥2, must the union of any two paths visiting every vertex be connected?",
+      "plain_language_statement": "Overlay two lists of the same names; is their neighbour graph connected?",
+      "domain": "graphs/colouring",
+      "origin_mechanism": "MEC-02",
+      "attribution": "Inspired by standard graphs/colouring themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "The first Hamiltonian path already connects every vertex."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "The first Hamiltonian path already connects every vertex."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "The first Hamiltonian path already connects every vertex."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "The first Hamiltonian path already connects every vertex.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0011",
+      "exact_statement": "For each n≥1 relatively prime to ten, is there a positive multiple of n whose decimal digits are all 1?",
+      "plain_language_statement": "Can every number not divisible by 2 or 5 divide some all-ones number?",
+      "domain": "arithmetic/digits",
+      "origin_mechanism": "MEC-04",
+      "attribution": "Inspired by standard arithmetic/digits themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Pigeonhole n repunit remainders: a zero remainder or a difference with digits 1 then 0; because 10 is invertible, zero occurs."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Pigeonhole n repunit remainders: a zero remainder or a difference with digits 1 then 0; because 10 is invertible, zero occurs."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Pigeonhole n repunit remainders: a zero remainder or a difference with digits 1 then 0; because 10 is invertible, zero occurs."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Pigeonhole n repunit remainders: a zero remainder or a difference with digits 1 then 0; because 10 is invertible, zero occurs.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0012",
+      "exact_statement": "For each positive n relatively prime to ten, is there a positive multiple of n with alternating decimal digits 1,2,1,2,... ending in 2?",
+      "plain_language_statement": "Can we make a multiple from repeated 12 blocks?",
+      "domain": "arithmetic/digits",
+      "origin_mechanism": "MEC-04",
+      "attribution": "Inspired by standard arithmetic/digits themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "The number 12(100^k−1)/99 is divisible by n if 100^k≡1 (mod 99n), which occurs for n coprime to 10."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "The number 12(100^k−1)/99 is divisible by n if 100^k≡1 (mod 99n), which occurs for n coprime to 10."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "The number 12(100^k−1)/99 is divisible by n if 100^k≡1 (mod 99n), which occurs for n coprime to 10."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "The number 12(100^k−1)/99 is divisible by n if 100^k≡1 (mod 99n), which occurs for n coprime to 10.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0013",
+      "exact_statement": "For every n≥1 is there a positive multiple whose decimal digits belong to {0,1}?",
+      "plain_language_statement": "Can every number have a multiple written using only zeros and ones?",
+      "domain": "arithmetic/digits",
+      "origin_mechanism": "MEC-04",
+      "attribution": "Inspired by standard arithmetic/digits themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Write n=2^a5^b m with gcd(m,10)=1; choose an all-ones multiple of m, then append at least max(a,b) zeros."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Write n=2^a5^b m with gcd(m,10)=1; choose an all-ones multiple of m, then append at least max(a,b) zeros."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Write n=2^a5^b m with gcd(m,10)=1; choose an all-ones multiple of m, then append at least max(a,b) zeros."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Write n=2^a5^b m with gcd(m,10)=1; choose an all-ones multiple of m, then append at least max(a,b) zeros.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0014",
+      "exact_statement": "For every n≥1 is there a positive multiple written with only zeros and ones containing equally many zeros and ones?",
+      "plain_language_statement": "Can we make a multiple with exactly as many 0 digits as 1 digits?",
+      "domain": "arithmetic/digits",
+      "origin_mechanism": "MEC-04",
+      "attribution": "Inspired by standard arithmetic/digits themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Choose an all-ones multiple of the coprime-to-10 factor with length k≥max(v2(n),v5(n)); append exactly k zeros."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Choose an all-ones multiple of the coprime-to-10 factor with length k≥max(v2(n),v5(n)); append exactly k zeros."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Choose an all-ones multiple of the coprime-to-10 factor with length k≥max(v2(n),v5(n)); append exactly k zeros."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Choose an all-ones multiple of the coprime-to-10 factor with length k≥max(v2(n),v5(n)); append exactly k zeros.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0015",
+      "exact_statement": "For every n≥1 is there a positive multiple using only digits 1 and 2?",
+      "plain_language_statement": "Can every number have a multiple written using no digits other than 1 and 2?",
+      "domain": "arithmetic/digits",
+      "origin_mechanism": "MEC-04",
+      "attribution": "Inspired by standard arithmetic/digits themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Take n=5: a multiple of 5 cannot end in 1 or 2."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Take n=5: a multiple of 5 cannot end in 1 or 2."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Take n=5: a multiple of 5 cannot end in 1 or 2."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Take n=5: a multiple of 5 cannot end in 1 or 2.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0016",
+      "exact_statement": "For every n relatively prime to ten, is there a positive multiple whose decimal digits form a palindrome?",
+      "plain_language_statement": "Does every number not divisible by 2 or 5 divide a number reading the same backwards?",
+      "domain": "arithmetic/digits",
+      "origin_mechanism": "MEC-04",
+      "attribution": "Inspired by standard arithmetic/digits themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "An all-ones repunit multiple from CND-0011 is palindromic."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "An all-ones repunit multiple from CND-0011 is palindromic."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "An all-ones repunit multiple from CND-0011 is palindromic."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "An all-ones repunit multiple from CND-0011 is palindromic.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0017",
+      "exact_statement": "For every n≥1 with gcd(n,10)=1, does n divide some decimal palindrome whose digits are all 1 except for exactly one digit 2 in its centre?",
+      "plain_language_statement": "Can every number not ending in an even digit or 5 divide a palindrome of ones with a single middle 2?",
+      "domain": "arithmetic/digits",
+      "origin_mechanism": "MEC-04",
+      "attribution": "Inspired by standard arithmetic/digits themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "TRIAGED",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Tried parity/degree/colour or modular order as suitable; did not yield a complete proof of the proposed full statement."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "ATTEMPTED",
+          "detail": "Checked obvious pigeonhole, bipartite-colouring, matching, finite-automaton and classical extremal reductions as applicable; no verified immediate full answer."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "ATTEMPTED_LIMITED",
+          "detail": "A brief elementary proof/counterexample attempt; time-box not rigorously clocked, so limited evidence only."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": null,
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 9,
+        "difficulty_evidence": 3,
+        "novelty_audit": 1,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 2,
+        "total": 58
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "No adequate finite campaign or deep two-pass multisite novelty clearance; NOT SURVIVING."
+    },
+    {
+      "id": "CND-0018",
+      "exact_statement": "For every odd n≥1, is there a positive multiple of n consisting of alternating zeros and ones and ending in 1?",
+      "plain_language_statement": "Can every odd number divide an alternating 101...101 number?",
+      "domain": "arithmetic/digits",
+      "origin_mechanism": "MEC-04",
+      "attribution": "Inspired by standard arithmetic/digits themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "n=5, since all such numbers end in 1."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "n=5, since all such numbers end in 1."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "n=5, since all such numbers end in 1."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "n=5, since all such numbers end in 1.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0019",
+      "exact_statement": "For every n≥1 coprime to ten, is there a multiple whose decimal digits alternate 1 and 0, starting and ending in 1?",
+      "plain_language_statement": "Does every number not divisible by 2 or 5 divide some 101...101 number?",
+      "domain": "arithmetic/digits",
+      "origin_mechanism": "MEC-06",
+      "attribution": "Inspired by standard arithmetic/digits themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "OEIS A343447 records smallest such alternating multiples for integers coprime with 10, with multiplicative-order formula."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "OEIS A343447 records smallest such alternating multiples for integers coprime with 10, with multiplicative-order formula."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "OEIS A343447 records smallest such alternating multiples for integers coprime with 10, with multiplicative-order formula."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_INSPECTED",
+          "detail": "Inspected source ids below; relevance may be only a variant."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "OEIS A343447 records smallest such alternating multiples for integers coprime with 10, with multiplicative-order formula.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0003"
+      ],
+      "claim_ids": [
+        "CLM-0002"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 51
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0020",
+      "exact_statement": "For every n≥1 coprime to ten, is there a palindromic multiple written with ones except exactly one middle zero?",
+      "plain_language_statement": "Can every number not divisible by 2 or 5 divide a palindrome of ones with a single middle 0?",
+      "domain": "arithmetic/digits",
+      "origin_mechanism": "MEC-04",
+      "attribution": "Inspired by standard arithmetic/digits themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "For 10^k≡1 mod 9n, (10^(2k+1)−1)/9−10^k is 0 mod n; this is k ones, one 0, then k ones."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "For 10^k≡1 mod 9n, (10^(2k+1)−1)/9−10^k is 0 mod n; this is k ones, one 0, then k ones."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "For 10^k≡1 mod 9n, (10^(2k+1)−1)/9−10^k is 0 mod n; this is k ones, one 0, then k ones."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "For 10^k≡1 mod 9n, (10^(2k+1)−1)/9−10^k is 0 mod n; this is k ones, one 0, then k ones.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0021",
+      "exact_statement": "Is every finite edge-connected collection of an even number of unit squares tileable by 1×2 dominoes?",
+      "plain_language_statement": "Can every connected shape of even many grid squares be covered by dominoes?",
+      "domain": "grids/tilings",
+      "origin_mechanism": "MEC-05",
+      "attribution": "Inspired by standard grids/tilings themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "The four-square T tetromino has one central square adjacent to three isolated tips: at most one tip can be paired to centre."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "The four-square T tetromino has one central square adjacent to three isolated tips: at most one tip can be paired to centre."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "The four-square T tetromino has one central square adjacent to three isolated tips: at most one tip can be paired to centre."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "The four-square T tetromino has one central square adjacent to three isolated tips: at most one tip can be paired to centre.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0022",
+      "exact_statement": "Is every finite hole-free edge-connected polyomino with equal numbers of black and white checkerboard squares domino-tileable?",
+      "plain_language_statement": "Is equal black-white balance enough to tile a hole-free grid shape?",
+      "domain": "grids/tilings",
+      "origin_mechanism": "MEC-05",
+      "attribution": "Inspired by standard grids/tilings themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "TRIAGED",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Tried parity/degree/colour or modular order as suitable; did not yield a complete proof of the proposed full statement."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "ATTEMPTED",
+          "detail": "Checked obvious pigeonhole, bipartite-colouring, matching, finite-automaton and classical extremal reductions as applicable; no verified immediate full answer."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "ATTEMPTED_LIMITED",
+          "detail": "A brief elementary proof/counterexample attempt; time-box not rigorously clocked, so limited evidence only."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_INSPECTED",
+          "detail": "Inspected source ids below; relevance may be only a variant."
+        }
+      ],
+      "kill_record": null,
+      "source_ids": [
+        "SRC-0007"
+      ],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 9,
+        "difficulty_evidence": 3,
+        "novelty_audit": 1,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 2,
+        "total": 58
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "No adequate finite campaign or deep two-pass multisite novelty clearance; NOT SURVIVING."
+    },
+    {
+      "id": "CND-0023",
+      "exact_statement": "For every m,n≥1 does an even 2m×2n rectangle remain domino-tileable after deleting its two opposite corner cells?",
+      "plain_language_statement": "If we remove opposite corners of an even-sided rectangle, can dominoes fill the rest?",
+      "domain": "grids/tilings",
+      "origin_mechanism": "MEC-05",
+      "attribution": "Inspired by standard grids/tilings themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "The two diagonally opposite cells have equal checkerboard colour, so the remaining colours are unbalanced."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "The two diagonally opposite cells have equal checkerboard colour, so the remaining colours are unbalanced."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "The two diagonally opposite cells have equal checkerboard colour, so the remaining colours are unbalanced."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "The two diagonally opposite cells have equal checkerboard colour, so the remaining colours are unbalanced.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0024",
+      "exact_statement": "For every m,n≥1, does deleting any two edge-adjacent cells from a 2m×2n rectangle leave a domino-tileable board?",
+      "plain_language_statement": "If we remove a domino-shaped pair of squares from an even rectangle, can we always tile the rest?",
+      "domain": "grids/tilings",
+      "origin_mechanism": "MEC-05",
+      "attribution": "Inspired by standard grids/tilings themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Special case of Gomory's opposite-colour deletion theorem, which is already proved."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Special case of Gomory's opposite-colour deletion theorem, which is already proved."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Special case of Gomory's opposite-colour deletion theorem, which is already proved."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_INSPECTED",
+          "detail": "Inspected source ids below; relevance may be only a variant."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Special case of Gomory's opposite-colour deletion theorem, which is already proved.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0004",
+        "SRC-0009"
+      ],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 51
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0025",
+      "exact_statement": "For every odd n≥1, can the n×n square with its central unit cell removed be tiled by dominoes?",
+      "plain_language_statement": "Can an odd square board be tiled after removing the middle square?",
+      "domain": "grids/tilings",
+      "origin_mechanism": "MEC-05",
+      "attribution": "Inspired by standard grids/tilings themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Remove an outer width-one ring (perimeter 4(n−1) even and tileable around the cycle), reduce n to n−2; base n=1."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Remove an outer width-one ring (perimeter 4(n−1) even and tileable around the cycle), reduce n to n−2; base n=1."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Remove an outer width-one ring (perimeter 4(n−1) even and tileable around the cycle), reduce n to n−2; base n=1."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Remove an outer width-one ring (perimeter 4(n−1) even and tileable around the cycle), reduce n to n−2; base n=1.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0026",
+      "exact_statement": "For every odd n≥1 and every majority-colour checkerboard cell, can the n×n board with that cell removed be tiled by dominoes?",
+      "plain_language_statement": "On an odd chessboard, does deleting any square of the more common colour allow a domino tiling?",
+      "domain": "grids/tilings",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Inspired by standard grids/tilings themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Constructive proof in Math Stack Exchange for odd-by-odd rectangles; exact n×n subcase."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Constructive proof in Math Stack Exchange for odd-by-odd rectangles; exact n×n subcase."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Constructive proof in Math Stack Exchange for odd-by-odd rectangles; exact n×n subcase."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_INSPECTED",
+          "detail": "Inspected source ids below; relevance may be only a variant."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Constructive proof in Math Stack Exchange for odd-by-odd rectangles; exact n×n subcase.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0005"
+      ],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 51
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0027",
+      "exact_statement": "For all n≥1, can a 2n×2n square be domino-tiled after deleting any chosen two cells of opposite checkerboard colours?",
+      "plain_language_statement": "On an even chessboard, can any differently coloured pair of holes be accommodated?",
+      "domain": "grids/tilings",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Inspired by standard grids/tilings themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Gomory's theorem; a Hamiltonian cycle on the grid leaves even-length paths when oppositely coloured cells are removed."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Gomory's theorem; a Hamiltonian cycle on the grid leaves even-length paths when oppositely coloured cells are removed."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Gomory's theorem; a Hamiltonian cycle on the grid leaves even-length paths when oppositely coloured cells are removed."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_INSPECTED",
+          "detail": "Inspected source ids below; relevance may be only a variant."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Gomory's theorem; a Hamiltonian cycle on the grid leaves even-length paths when oppositely coloured cells are removed.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0004",
+        "SRC-0009"
+      ],
+      "claim_ids": [
+        "CLM-0003"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 51
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0028",
+      "exact_statement": "For every n≥1, can a 2n×2n board be tiled after deleting any arbitrary two distinct squares?",
+      "plain_language_statement": "If two cells are removed, can dominoes always cover the rest of an even board?",
+      "domain": "grids/tilings",
+      "origin_mechanism": "MEC-05",
+      "attribution": "Inspired by standard grids/tilings themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Choose two cells of the same checkerboard colour."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Choose two cells of the same checkerboard colour."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Choose two cells of the same checkerboard colour."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Choose two cells of the same checkerboard colour.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0029",
+      "exact_statement": "For every odd n≥3, can an n×n board be tiled with dominoes after deleting every cell of its main diagonal?",
+      "plain_language_statement": "Can we tile an odd board with the long diagonal cut out?",
+      "domain": "grids/tilings",
+      "origin_mechanism": "MEC-05",
+      "attribution": "Inspired by standard grids/tilings themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "For n=3, remaining six cells split into two components of three cells, so neither has a domino tiling."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "For n=3, remaining six cells split into two components of three cells, so neither has a domino tiling."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "For n=3, remaining six cells split into two components of three cells, so neither has a domino tiling."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "For n=3, remaining six cells split into two components of three cells, so neither has a domino tiling.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0030",
+      "exact_statement": "For n≥1, is an n×n board tileable by 1×3 straight bars if and only if 3 divides n?",
+      "plain_language_statement": "When do three-square straight blocks tile a square board?",
+      "domain": "grids/tilings",
+      "origin_mechanism": "MEC-05",
+      "attribution": "Inspired by standard grids/tilings themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "If a tiling exists then 3 divides n² and hence n; if 3 divides n, tile each row in triples."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "If a tiling exists then 3 divides n² and hence n; if 3 divides n, tile each row in triples."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "If a tiling exists then 3 divides n² and hence n; if 3 divides n, tile each row in triples."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "If a tiling exists then 3 divides n² and hence n; if 3 divides n, tile each row in triples.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0031",
+      "exact_statement": "For every n≥4 and any two different permutations of n labels, must they share some unordered pair of consecutive labels?",
+      "plain_language_statement": "Must two orders of four or more names have at least one neighbouring pair in common?",
+      "domain": "permutations/games",
+      "origin_mechanism": "MEC-08",
+      "attribution": "Inspired by standard permutations/games themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "The two edge-disjoint Hamiltonian paths covering K4 share no adjacent pair."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "The two edge-disjoint Hamiltonian paths covering K4 share no adjacent pair."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "The two edge-disjoint Hamiltonian paths covering K4 share no adjacent pair."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "The two edge-disjoint Hamiltonian paths covering K4 share no adjacent pair.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0032",
+      "exact_statement": "For every n≥2 and two permutations of [n], must there be an ordered common subsequence of length at least ceil(sqrt(n))?",
+      "plain_language_statement": "Must two lists have a long group of names in exactly the same order?",
+      "domain": "permutations/games",
+      "origin_mechanism": "MEC-08",
+      "attribution": "Inspired by standard permutations/games themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "The identity and its reverse have longest common subsequence length one."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "The identity and its reverse have longest common subsequence length one."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "The identity and its reverse have longest common subsequence length one."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "The identity and its reverse have longest common subsequence length one.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0033",
+      "exact_statement": "For every n≥4, must two permutations of [n] share a contiguous unordered pair of labels?",
+      "plain_language_statement": "Must two lists share at least one pair of neighbours, regardless of direction?",
+      "domain": "permutations/games",
+      "origin_mechanism": "MEC-08",
+      "attribution": "Inspired by standard permutations/games themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EQUIVALENT",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "This is exactly CND-0031 after replacing 'adjacent' by 'contiguous pair'."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "This is exactly CND-0031 after replacing 'adjacent' by 'contiguous pair'."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "This is exactly CND-0031 after replacing 'adjacent' by 'contiguous pair'."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "This is exactly CND-0031 after replacing 'adjacent' by 'contiguous pair'.",
+        "kind": "KILLED_EQUIVALENT",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0034",
+      "exact_statement": "For each n≥1, can every permutation of [n] be sorted by at most n−1 swaps of arbitrary two positions?",
+      "plain_language_statement": "Can you sort n different cards in at most n−1 swaps?",
+      "domain": "permutations/games",
+      "origin_mechanism": "MEC-05",
+      "attribution": "Inspired by standard permutations/games themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Resolve one cycle of length l by l−1 swaps; the sum over cycles is n−number_of_cycles≤n−1."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Resolve one cycle of length l by l−1 swaps; the sum over cycles is n−number_of_cycles≤n−1."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Resolve one cycle of length l by l−1 swaps; the sum over cycles is n−number_of_cycles≤n−1."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Resolve one cycle of length l by l−1 swaps; the sum over cycles is n−number_of_cycles≤n−1.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0035",
+      "exact_statement": "For every n≥3, can any permutation be sorted using only swaps between positions exactly two apart?",
+      "plain_language_statement": "Can we sort cards if each swap jumps over exactly one card?",
+      "domain": "permutations/games",
+      "origin_mechanism": "MEC-05",
+      "attribution": "Inspired by standard permutations/games themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Even and odd positions never exchange occupants; swapping positions 1 and 2 initially is not reversible by allowed moves."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Even and odd positions never exchange occupants; swapping positions 1 and 2 initially is not reversible by allowed moves."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Even and odd positions never exchange occupants; swapping positions 1 and 2 initially is not reversible by allowed moves."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Even and odd positions never exchange occupants; swapping positions 1 and 2 initially is not reversible by allowed moves.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0036",
+      "exact_statement": "For every n≥1, can every permutation of [n] be sorted by reversing contiguous blocks of length at most three?",
+      "plain_language_statement": "Can we sort cards by flipping at most three neighbouring cards at a time?",
+      "domain": "permutations/games",
+      "origin_mechanism": "MEC-05",
+      "attribution": "Inspired by standard permutations/games themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Reversing two cards swaps an adjacent pair, and adjacent swaps sort any permutation."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Reversing two cards swaps an adjacent pair, and adjacent swaps sort any permutation."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Reversing two cards swaps an adjacent pair, and adjacent swaps sort any permutation."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Reversing two cards swaps an adjacent pair, and adjacent swaps sort any permutation.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0037",
+      "exact_statement": "Let f(n) be the largest integer such that for every pair of permutations of [n], there exist f(n) labels no two of which are neighbours in either permutation. Is f(n)=ceil(n/4) for all n≥1?",
+      "plain_language_statement": "In two lists of the same names, can we always choose a quarter (rounded up) with no chosen neighbours, and is this sharp?",
+      "domain": "permutations/games",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard permutations/games themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Proof in sessions/S002/MATHEMATICS.md: union of two paths is 3-degenerate, hence four-colourable; matching K4-block constructions attain ceil(n/4). Not claimed novel."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Proof in sessions/S002/MATHEMATICS.md: union of two paths is 3-degenerate, hence four-colourable; matching K4-block constructions attain ceil(n/4). Not claimed novel."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Proof in sessions/S002/MATHEMATICS.md: union of two paths is 3-degenerate, hence four-colourable; matching K4-block constructions attain ceil(n/4). Not claimed novel."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_INSPECTED",
+          "detail": "Inspected source ids below; relevance may be only a variant."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Proof in sessions/S002/MATHEMATICS.md: union of two paths is 3-degenerate, hence four-colourable; matching K4-block constructions attain ceil(n/4). Not claimed novel.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0006"
+      ],
+      "claim_ids": [
+        "CLM-0001"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 10,
+        "difficulty_evidence": 9,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 59
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0038",
+      "exact_statement": "Define f3(n) as the minimum, over triples of permutations of [n], of the largest set with no two elements consecutive in any permutation. Is f3(n)=ceil(n/6) for all n≥1?",
+      "plain_language_statement": "If three lists have the same names, is one sixth (rounded up) always the best guaranteed choice with no neighbours in any list?",
+      "domain": "permutations/games",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard permutations/games themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "TRIAGED",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Tried parity/degree/colour or modular order as suitable; did not yield a complete proof of the proposed full statement."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "ATTEMPTED",
+          "detail": "Checked obvious pigeonhole, bipartite-colouring, matching, finite-automaton and classical extremal reductions as applicable; no verified immediate full answer."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "ATTEMPTED_LIMITED",
+          "detail": "A brief elementary proof/counterexample attempt; time-box not rigorously clocked, so limited evidence only."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_INSPECTED",
+          "detail": "Inspected source ids below; relevance may be only a variant."
+        }
+      ],
+      "kill_record": null,
+      "source_ids": [
+        "SRC-0006"
+      ],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 3,
+        "novelty_audit": 1,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 2,
+        "total": 59
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "No adequate finite campaign or deep two-pass multisite novelty clearance; NOT SURVIVING."
+    },
+    {
+      "id": "CND-0039",
+      "exact_statement": "For all n≥4 and any two permutations of [n], can one choose at least ceil(n/3) labels that never appear adjacent in either permutation?",
+      "plain_language_statement": "Can we always pick a third of the names with no neighbours in either order?",
+      "domain": "permutations/games",
+      "origin_mechanism": "MEC-08",
+      "attribution": "Inspired by standard permutations/games themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "n=4 K4 union of two paths permits only one selected name, but ceil(4/3)=2."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "n=4 K4 union of two paths permits only one selected name, but ceil(4/3)=2."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "n=4 K4 union of two paths permits only one selected name, but ceil(4/3)=2."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "n=4 K4 union of two paths permits only one selected name, but ceil(4/3)=2.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0040",
+      "exact_statement": "For every n≥1, every pair of permutations of [n] and every prescribed label v, is there a non-neighbouring-in-both-lists set of size ceil(n/4) containing v?",
+      "plain_language_statement": "If one name is compulsory, can we still pick the same quarter-sized set?",
+      "domain": "permutations/games",
+      "origin_mechanism": "MEC-02",
+      "attribution": "Inspired by standard permutations/games themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "TRIAGED",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Tried parity/degree/colour or modular order as suitable; did not yield a complete proof of the proposed full statement."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "ATTEMPTED",
+          "detail": "Checked obvious pigeonhole, bipartite-colouring, matching, finite-automaton and classical extremal reductions as applicable; no verified immediate full answer."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "ATTEMPTED_LIMITED",
+          "detail": "A brief elementary proof/counterexample attempt; time-box not rigorously clocked, so limited evidence only."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": null,
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 9,
+        "difficulty_evidence": 3,
+        "novelty_audit": 1,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 2,
+        "total": 58
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "No adequate finite campaign or deep two-pass multisite novelty clearance; NOT SURVIVING."
+    },
+    {
+      "id": "CND-0041",
+      "exact_statement": "For all integers n≥1 and every list of n integers, is there a nonempty sublist whose sum is divisible by n?",
+      "plain_language_statement": "Among n whole numbers, must some nonempty choice have a total divisible by n?",
+      "domain": "additive combinatorics",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard additive combinatorics themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Prefix sums modulo n: zero prefix or two equal prefix residues give a nonempty consecutive block."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Prefix sums modulo n: zero prefix or two equal prefix residues give a nonempty consecutive block."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Prefix sums modulo n: zero prefix or two equal prefix residues give a nonempty consecutive block."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Prefix sums modulo n: zero prefix or two equal prefix residues give a nonempty consecutive block.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0042",
+      "exact_statement": "For all n≥1, does every (n+1)-subset of {1,...,2n} contain distinct a,b with a dividing b?",
+      "plain_language_statement": "Choose more than half of 1 to 2n; must one chosen number divide another?",
+      "domain": "additive combinatorics",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard additive combinatorics themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Partition by odd part: n chains indexed by odd numbers ≤2n; pigeonhole gives a pair in one chain."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Partition by odd part: n chains indexed by odd numbers ≤2n; pigeonhole gives a pair in one chain."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Partition by odd part: n chains indexed by odd numbers ≤2n; pigeonhole gives a pair in one chain."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Partition by odd part: n chains indexed by odd numbers ≤2n; pigeonhole gives a pair in one chain.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0043",
+      "exact_statement": "For all n≥1, does every (n+1)-subset of {1,...,2n} contain distinct a,b with a+b=2n+1?",
+      "plain_language_statement": "Must more than half the numbers from 1 to 2n include two adding to 2n+1?",
+      "domain": "additive combinatorics",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard additive combinatorics themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "The n complementary pairs {i,2n+1−i} are disjoint; pigeonhole."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "The n complementary pairs {i,2n+1−i} are disjoint; pigeonhole."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "The n complementary pairs {i,2n+1−i} are disjoint; pigeonhole."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "The n complementary pairs {i,2n+1−i} are disjoint; pigeonhole.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0044",
+      "exact_statement": "For all n≥2, does every n-element subset A of {1,...,2n} contain distinct x,y,z with x+y=z?",
+      "plain_language_statement": "Choose n numbers from 1 to 2n; must one be the sum of two other chosen numbers?",
+      "domain": "additive combinatorics",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard additive combinatorics themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Choose A={n+1,...,2n}; two chosen numbers add to more than 2n."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Choose A={n+1,...,2n}; two chosen numbers add to more than 2n."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Choose A={n+1,...,2n}; two chosen numbers add to more than 2n."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Choose A={n+1,...,2n}; two chosen numbers add to more than 2n.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0045",
+      "exact_statement": "For all n≥2, does every n-element subset of {1,...,2n} have two different subsets with equal sum?",
+      "plain_language_statement": "If you choose half the numbers up to 2n, must two choices have the same total?",
+      "domain": "additive combinatorics",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard additive combinatorics themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "For n=2, A={1,2} has distinct subset sums 0,1,2,3."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "For n=2, A={1,2} has distinct subset sums 0,1,2,3."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "For n=2, A={1,2} has distinct subset sums 0,1,2,3."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "For n=2, A={1,2} has distinct subset sums 0,1,2,3.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0046",
+      "exact_statement": "For all n≥3, does every n-element subset of {1,...,2n} contain a three-term arithmetic progression?",
+      "plain_language_statement": "Does choosing half the numbers always give three equally spaced numbers?",
+      "domain": "additive combinatorics",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard additive combinatorics themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "At n=3 the set {1,2,4}⊂{1,...,6} has no three-term progression."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "At n=3 the set {1,2,4}⊂{1,...,6} has no three-term progression."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "At n=3 the set {1,2,4}⊂{1,...,6} has no three-term progression."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "At n=3 the set {1,2,4}⊂{1,...,6} has no three-term progression.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0047",
+      "exact_statement": "For every n≥3, do n consecutive integers contain a three-term arithmetic progression?",
+      "plain_language_statement": "Can you find three equally spaced numbers in any run of at least three integers?",
+      "domain": "additive combinatorics",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard additive combinatorics themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "The first three consecutive numbers already form a progression."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "The first three consecutive numbers already form a progression."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "The first three consecutive numbers already form a progression."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "The first three consecutive numbers already form a progression.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0048",
+      "exact_statement": "For every n≥2 and every set of n positive integers, are there two disjoint nonempty subsets with equal sum?",
+      "plain_language_statement": "Among n positive numbers, must two non-overlapping groups have the same total?",
+      "domain": "additive combinatorics",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard additive combinatorics themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Powers {1,2,4,...,2^(n−1)} have distinct subset sums by binary representation."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Powers {1,2,4,...,2^(n−1)} have distinct subset sums by binary representation."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Powers {1,2,4,...,2^(n−1)} have distinct subset sums by binary representation."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "Powers {1,2,4,...,2^(n−1)} have distinct subset sums by binary representation.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0049",
+      "exact_statement": "For all n≥5, does every n-element subset of {1,...,2n} contain four distinct a,b,c,d with a+b=c+d?",
+      "plain_language_statement": "Does choosing half the numbers force two non-overlapping pairs with the same total?",
+      "domain": "additive combinatorics",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard additive combinatorics themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "At n=5 the set {1,2,3,5,8} has all ten unordered distinct pair sums different."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "At n=5 the set {1,2,3,5,8} has all ten unordered distinct pair sums different."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "At n=5 the set {1,2,3,5,8} has all ten unordered distinct pair sums different."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S002",
+        "reason": "At n=5 the set {1,2,3,5,8} has all ten unordered distinct pair sums different.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Symbolic elementary reasoning or source statement as specified; not a formal/computational certificate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 9,
+        "difficulty_evidence": 2,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 49
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "No originality asserted."
+    },
+    {
+      "id": "CND-0050",
+      "exact_statement": "For each n≥1, define s(n) as the least k (between 1 and 2n+1) for which every k-subset of {1,...,2n} contains four distinct a,b,c,d with a+b=c+d (with vacuous k=2n+1 allowed). Determine s(n) exactly.",
+      "plain_language_statement": "How many numbers must we choose from 1 to 2n before two disjoint pairs are forced to have equal sums?",
+      "domain": "additive combinatorics",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Inspired by standard additive combinatorics themes; not claimed invented de novo",
+      "quantifiers": "As in exact_statement; n integer with stated bounds",
+      "status": "TRIAGED",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM preregistered or mathematical code executed in S002. Hand-checked examples are not exhaustive computation."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "ATTEMPTED",
+          "detail": "Tried parity/degree/colour or modular order as suitable; did not yield a complete proof of the proposed full statement."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "ATTEMPTED",
+          "detail": "Checked obvious pigeonhole, bipartite-colouring, matching, finite-automaton and classical extremal reductions as applicable; no verified immediate full answer."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "UNKNOWN",
+          "detail": "No calibrated model or independent trials; no difficulty points awarded from random intuition."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "ATTEMPTED_LIMITED",
+          "detail": "A brief elementary proof/counterexample attempt; time-box not rigorously clocked, so limited evidence only."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "No exact prior-art confirmation claimed."
+        }
+      ],
+      "kill_record": null,
+      "source_ids": [],
+      "claim_ids": [],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 3,
+        "novelty_audit": 1,
+        "connections": 7,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 2,
+        "total": 59
+      },
+      "screened_as_top_ten": true,
+      "uncertainty": "No adequate finite campaign or deep two-pass multisite novelty clearance; NOT SURVIVING."
+    }
+  ]
 }

@@ -1,8 +1,7 @@
-# Session ledger
+# Session ledger — S002
 
-| Session | Type | Authorization | Scope | Status at authored closeout | Remote reconciliation |
-|---|---|---|---|---|---|
-| S001 | Governance bootstrap | Explicit owner invocation 2026-10-13 | Empty-repo seed, scaffolding, protocols, tests, S002 handoff | Authored; no mathematical candidates | Seed SHA recorded in PLAN; independently verify PR/merge from remote |
-| S002 | First synthesis | NOT AUTHORISED by S001 | Generate/kill/audit statements | FUTURE UNEXECUTED | Reconcile live S001 before entry |
-
-Do not prewrite the S001 outgoing commit or PR number: next entry must reconstruct from live GitHub.
+| Session | Authorisation | Actual state | Remote note |
+|---|---|---|---|
+| S001 | Explicit 2026-10-13 | COMPLETE/INTEGRATED | seed 60d631c5; authored 38769fcc; PR #1; merge f33f8728 (verified on entry) |
+| S002 | Explicit owner invocation 2026-10-13 with live NEXT_SESSION_PROMPT URL | Authored synthesis; 50 CND, 9 SRC, 3 CLM, zero CAM; 0 survivors | Outgoing commit/PR/merge independently reconstruct after writing |
+| S003 | NONE | FUTURE / UNEXECUTED | new explicit owner invocation required |

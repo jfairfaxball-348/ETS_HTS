@@ -23,7 +23,7 @@ class ScaffoldTest(unittest.TestCase):
     def save(self, p, x):
         (self.root / p).write_text(json.dumps(x, indent=2) + "\n", encoding="utf-8")
 
-    def test_clean_s001(self):
+    def test_clean_s002(self):
         self.assertEqual([], validate(self.root))
 
     def test_missing_file(self):
@@ -32,8 +32,8 @@ class ScaffoldTest(unittest.TestCase):
 
     def test_wrong_next_prompt(self):
         (self.root / "authoritative/NEXT_SESSION_PROMPT.md").write_text(
-            "# S003\nFUTURE UNEXECUTED\nnew explicit owner invocation", encoding="utf-8")
-        self.assertTrue(any("FUTURE UNEXECUTED S002" in x for x in validate(self.root)))
+            "# S004\nFUTURE UNEXECUTED\nnew explicit owner invocation", encoding="utf-8")
+        self.assertTrue(any("FUTURE UNEXECUTED S003" in x for x in validate(self.root)))
 
     def test_dangling_source_and_bad_status(self):
         p = "catalogue/CANDIDATES.json"

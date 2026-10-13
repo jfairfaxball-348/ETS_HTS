@@ -137,12 +137,12 @@ def validate(root: Path) -> list[str]:
     if state_file.is_file():
         try:
             s = json.loads(state_file.read_text(encoding="utf-8"))
-            if s.get("next_session") != "S002" or s.get("next_session_authorised") is not False:
-                errors.append("STATE: S002 must be next and explicitly unauthorised")
-            if s.get("last_completed_session") != "S001":
-                errors.append("STATE: S001 must be last completed")
-            if s.get("phase") != 0:
-                errors.append("STATE: S001 must remain bootstrap phase zero")
+            if s.get("next_session") != "S003" or s.get("next_session_authorised") is not False:
+                errors.append("STATE: S003 must be next and explicitly unauthorised")
+            if s.get("last_completed_session") != "S002":
+                errors.append("STATE: S002 must be last completed")
+            if s.get("phase") != 1:
+                errors.append("STATE: S002 must remain in generation/triage phase one")
             for kind, state_key in (("candidates", "candidate_count"),
                                     ("sources", "source_count"),
                                     ("claims", "claim_count"),
@@ -154,8 +154,8 @@ def validate(root: Path) -> list[str]:
     prompt = root / "authoritative/NEXT_SESSION_PROMPT.md"
     if prompt.is_file():
         body = prompt.read_text(encoding="utf-8")
-        if not body.startswith("# S002") or "FUTURE" not in body or "UNEXECUTED" not in body:
-            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED S002")
+        if not body.startswith("# S003") or "FUTURE" not in body or "UNEXECUTED" not in body:
+            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED S003")
         if "new explicit owner invocation" not in body:
             errors.append("NEXT_SESSION_PROMPT lacks fresh owner gate")
     return errors
