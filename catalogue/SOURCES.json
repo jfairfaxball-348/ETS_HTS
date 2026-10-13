@@ -198,6 +198,123 @@
       "url_or_doi": "https://link.springer.com/book/10.1007/978-0-387-26677-0",
       "access_grade": "METADATA_ONLY",
       "notes": "Book contents/paywalled: only table of contents and bibliographic metadata available, no problem-index examination."
+    },
+    {
+      "id": "SRC-0023",
+      "title": "Necklace Bisection with One Cut Less than Needed",
+      "author": "Gábor Simonyi",
+      "date": "2008-05-31",
+      "url_or_doi": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v15i1n16",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Publisher states standard q-cut guarantee and weaker q-1-cut theorem, not our local restriction."
+    },
+    {
+      "id": "SRC-0024",
+      "title": "Splitting Necklaces, with Constraints",
+      "author": "Duško Jojić; Gaiane Panina; Rade Živaljević",
+      "date": "2021",
+      "url_or_doi": "https://epubs.siam.org/doi/10.1137/20M1331949",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Publisher abstract only, additional splitting constraints; no exact adjacency restriction verified."
+    },
+    {
+      "id": "SRC-0025",
+      "title": "Random Necklaces Require Fewer Cuts",
+      "author": "Noga Alon; Dor Elboim; János Pach; Gábor Tardos",
+      "date": "2024",
+      "url_or_doi": "https://epubs.siam.org/doi/10.1137/22M1506699",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Abstract surfaced in search; no original full-text read, no exact worst-case restricted match."
+    },
+    {
+      "id": "SRC-0026",
+      "title": "The Cover Pebbling Theorem",
+      "author": "Jonas Sjöstrand",
+      "date": "2005-11-15",
+      "url_or_doi": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v12i1n22",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Publisher abstract inspected; worst initial stack gives universal cover pebbling number."
+    },
+    {
+      "id": "SRC-0027",
+      "title": "Folding polyominoes into cubes",
+      "author": "Oswin Aichholzer; Florian Lehner; Christian Lindorfer",
+      "date": "2024-02-22; 2025 published",
+      "url_or_doi": "https://arxiv.org/abs/2402.14965",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "University publication page inspected; their allowed multi-coverage folding differs from face-bijective cube nets."
+    },
+    {
+      "id": "SRC-0028",
+      "title": "Happy ending / five convex points exposition",
+      "author": "Matpic editorial authorship not established",
+      "date": "2026 (accessed 2026-10-13)",
+      "url_or_doi": "https://www.matpic.com/essays/the-sequence-that-cannot-avoid-a-staircase/",
+      "access_grade": "SECONDARY_ONLY",
+      "notes": "Opened secondary exposition of Esther Klein five-point theorem."
+    },
+    {
+      "id": "SRC-0029",
+      "title": "Art Gallery Theorem and Fisk triangulation proof",
+      "author": "Unseel editorial authorship not established",
+      "date": "2026 (accessed 2026-10-13)",
+      "url_or_doi": "https://unseel.com/mathematics/art-gallery-theorem",
+      "access_grade": "SECONDARY_ONLY",
+      "notes": "Opened secondary proof using 3-coloured triangulation."
+    },
+    {
+      "id": "SRC-0030",
+      "title": "Dilworth's Lemma",
+      "author": "Eric W. Weisstein",
+      "date": "2026-10-02 site update",
+      "url_or_doi": "https://mathworld.wolfram.com/DilworthsLemma.html",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "MathWorld directly states width equals minimum number of chains, cites Dilworth 1950."
+    },
+    {
+      "id": "SRC-0031",
+      "title": "Abelian Sandpile Model",
+      "author": "David Perkinson / Sage thematic tutorial",
+      "date": "2026 (accessed 2026-10-13)",
+      "url_or_doi": "https://sporadic.stanford.edu/thematic_tutorials/sandpile.html",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Opened Sage tutorial specifies sink, legal moves and independence of stabilization order."
+    },
+    {
+      "id": "SRC-0032",
+      "title": "De Bruijn sequence",
+      "author": "Wikipedia contributors",
+      "date": "2026 (accessed 2026-10-13)",
+      "url_or_doi": "https://en.wikipedia.org/wiki/De_Bruijn_sequence",
+      "access_grade": "SECONDARY_ONLY",
+      "notes": "Classical de Bruijn cycle statement; independent Euler-tour derivation also in mathematics record."
+    },
+    {
+      "id": "SRC-0033",
+      "title": "Robbins' theorem as quoted in orientation literature",
+      "author": "Publisher article authors not independently extracted",
+      "date": "2005",
+      "url_or_doi": "https://www.sciencedirect.com/science/article/pii/S0012365X05002542",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Search provider publisher preview names Robbins' strong orientation theorem; full text not examined."
+    },
+    {
+      "id": "SRC-0034",
+      "title": "OEIS A328150",
+      "author": "Andrew Howroyd / OEIS contributors",
+      "date": "2019-10-05; opened 2026-10-13",
+      "url_or_doi": "https://oeis.org/A328150",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Opened OEIS entry counts necklaces with no identical neighbours, NOT minimum fair-division cuts."
+    },
+    {
+      "id": "SRC-0035",
+      "title": "An FPT Algorithm for Splitting a Necklace Among Two Thieves",
+      "author": "Authors not verified from open page",
+      "date": "2025",
+      "url_or_doi": "https://link.springer.com/article/10.1007/s00453-025-01346-4",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Opened Springer article and definitions; not an inspected proof of the adjacency-restricted q-1 statement."
     }
   ]
 }

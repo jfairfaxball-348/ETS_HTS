@@ -1,0 +1,7 @@
+# S005 closeout (authored before publishing commit/PR)
+
+ENTRY: main 7794b213505aefe7b268c7d976085b9082bb282a, tree 08d4a47e5098145a5eb9c3a0fde2caa88091ec58. Authored S004 172a82b53449800d1486d3d1cef9d87d99dff7a6 has one parent 821f4b06af48f7c5cadd1a7e733c3f7446f42bb0, tree 08d4a47e5098145a5eb9c3a0fde2caa88091ec58. PR #4 merged by ordinary two-parent main 7794b213505aefe7b268c7d976085b9082bb282a, parents [821f4b06..., 172a82b5...], same tree. No other S005 session branch or PR at entry. Branch protection 403 UNKNOWN; rulesets []; combined statuses pending/0 status entries but check-run record-validation success and workflow run 38401541689 successful. They establish format, not correctness.
+
+RESEARCH: 16 new CND-0066..0081 across distinct mechanisms, 14 KILLED, two TRIAGED CND-0068 and CND-0080 with alternative bidirectional translations, zero SURVIVING or HARD. Cumulative CND81 killed79 triaged2; SRC35 CLM37 CAM0. All searches provider hit totals UNKNOWN; native archives/books unresolved, no original open result certified.
+
+LOCAL CHECK: attempted shell git ls-remote public repo returned 'Could not resolve host: github.com'. Actual local checkout checker/unittest NOT_RUN; hosted CI must be independently observed and cannot certify maths. Zero mathematical computations or CAM. OUTGOING: one atomic authored commit, ordinary nondraft PR, non-force two-parent merge if available; verify GitHub SHA/parents/tree after; future S006 unexecuted. No external contact/publication.

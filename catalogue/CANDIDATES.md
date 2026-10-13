@@ -79,3 +79,25 @@ All 50 candidates are now killed (four elementary proofs/counterexamples and one
 | CND-0065 | MEC-02, graphs/prime-labels | Can every tree be numbered 1 through its size so that every linked pair adds to a prime? | KILLED_FALSE/DEGENERATE |
 
 All mathematical reasons/known-source cautions are in S004/MATHEMATICS.md and the JSON kill records. No candidate was promoted to SURVIVING or HARD.
+
+
+## S005: 16 source-led structural questions (two unresolved TRIAGED)
+
+| CND | Status | Question | Decisive screen |
+|---|---|---|---|
+| CND-0066 | KILLED_FALSE/DEGENERATE | One cut can share each of q doubled bead colours fairly | q=3, AABBCC: only a cut after position 3 gives two blocks of length 3; AAB and BCC are not rainbow. |
+| CND-0067 | KILLED_KNOWN | At most q cuts always fairly share a two-person even-colour necklace | Classical Goldberg–West two-person necklace-splitting theorem directly stated in Simonyi 2008. |
+| CND-0068 | TRIAGED | No identical neighbours: are q-1 cuts enough for double beads? | No proof or counterexample certified; this q-1-cut restriction is not cleared as novel or hard. |
+| CND-0069 | KILLED_KNOWN | Worst pile placement for covering any connected graph is stacked | Sjöstrand's 2005 cover pebbling theorem provides this exact stacking maximum. |
+| CND-0070 | KILLED_FALSE/DEGENERATE | Five pebbles always cover three vertices in a row | (5,0,0) cannot cover path P3: from the left endpoint, costs 1+2+4=7. |
+| CND-0071 | KILLED_FALSE/DEGENERATE | Every six-square polyomino folds to a cube without overlap | 2x3 rectangle contains a 2x2 subblock: four panel corners share an interior planar vertex, but only three distinct cube faces meet at any cube vertex. |
+| CND-0072 | KILLED_KNOWN | Five points always include four in convex position | Esther Klein's five-point convex quadrilateral theorem, the Erdős–Szekeres base case. |
+| CND-0073 | KILLED_KNOWN | A third of a polygon's corners can guard its interior | Classical art gallery theorem; Fisk's 3-colouring of triangulations gives floor(n/3) guards. |
+| CND-0074 | KILLED_EASY | Every round-robin tournament has a winner reachable within two wins | A vertex of maximum outdegree is a 2-king. |
+| CND-0075 | KILLED_KNOWN | Circular binary string displaying every k-block once | de Bruijn sequence; Euler circuit of (k-1)-block overlap digraph constructs it. |
+| CND-0076 | KILLED_KNOWN | Fewest chains partitioning a partially ordered set equal its width | Exactly Dilworth's theorem, directly recorded in MathWorld. |
+| CND-0077 | KILLED_KNOWN | Sandpile stabilization unaffected by order of topplings | Classical order-independent abelian sandpile stabilization, directly stated in Sage tutorial. |
+| CND-0078 | KILLED_EASY | Positive sums of consecutive integers characterize nonpowers of two | Factor n=l(2a+l-1)/2; any representation forces odd factor >1. Conversely an odd divisor >1 yields a positive-length interval of >=2 summands. |
+| CND-0079 | KILLED_EASY | Rectangular grid has Hamiltonian cycle exactly when its area is even | Bipartite parity forbids odd mn; for an even side reserve a border column and snake through other columns, returning on the border. |
+| CND-0080 | TRIAGED | Can every polygon triangulation keep all vertex triangle loads at most half n? | Not proved, falsified, or cleared for novelty. Convex triangulations allow zig-zag low load, but nonconvex visibility obstructions remain. |
+| CND-0081 | KILLED_KNOWN | Can streets without bridges be directed for two-way reachability? | Exactly Robbins's strong-orientation theorem; related publisher source states theorem. |

@@ -81,3 +81,22 @@ Final counts: 50 KILLED, 0 TRIAGED, 0 SURVIVING. Proof and source limits in sess
 | CND-0063 | KILLED_KNOWN | Known geometric matching theorem (Kano 2002 presentation). Independent short proof: choose a red-blue perfect matching minimizing total Euclidean length; any crossing edges can be uncrossed by swapping blue endpoints to strictly reduce length. |
 | CND-0064 | KILLED_EASY | Bertrand induction picks p in (2n,4n) and pairs a=p-2n with 2n, a+1 with 2n-1, etc. These chords are nested and do not cross; induct on the disjoint smaller prefix [1,a-1]. |
 | CND-0065 | KILLED_FALSE/DEGENERATE | The five-vertex star K1,4 refutes it: any centre label c in {1,2,3,4,5} forces four prime sums with other labels, but c=1,2,3,4,5 respectively gives composite sums 4,6,4,6,6. |
+
+
+## S005 permanent eliminations
+
+- CND-0066 [KILLED_FALSE/DEGENERATE]: q=3, AABBCC: only a cut after position 3 gives two blocks of length 3; AAB and BCC are not rainbow.
+- CND-0067 [KILLED_KNOWN]: Classical Goldberg–West two-person necklace-splitting theorem directly stated in Simonyi 2008.
+- CND-0069 [KILLED_KNOWN]: Sjöstrand's 2005 cover pebbling theorem provides this exact stacking maximum.
+- CND-0070 [KILLED_FALSE/DEGENERATE]: (5,0,0) cannot cover path P3: from the left endpoint, costs 1+2+4=7.
+- CND-0071 [KILLED_FALSE/DEGENERATE]: 2x3 rectangle contains a 2x2 subblock: four panel corners share an interior planar vertex, but only three distinct cube faces meet at any cube vertex.
+- CND-0072 [KILLED_KNOWN]: Esther Klein's five-point convex quadrilateral theorem, the Erdős–Szekeres base case.
+- CND-0073 [KILLED_KNOWN]: Classical art gallery theorem; Fisk's 3-colouring of triangulations gives floor(n/3) guards.
+- CND-0074 [KILLED_EASY]: A vertex of maximum outdegree is a 2-king.
+- CND-0075 [KILLED_KNOWN]: de Bruijn sequence; Euler circuit of (k-1)-block overlap digraph constructs it.
+- CND-0076 [KILLED_KNOWN]: Exactly Dilworth's theorem, directly recorded in MathWorld.
+- CND-0077 [KILLED_KNOWN]: Classical order-independent abelian sandpile stabilization, directly stated in Sage tutorial.
+- CND-0078 [KILLED_EASY]: Factor n=l(2a+l-1)/2; any representation forces odd factor >1. Conversely an odd divisor >1 yields a positive-length interval of >=2 summands.
+- CND-0079 [KILLED_EASY]: Bipartite parity forbids odd mn; for an even side reserve a border column and snake through other columns, returning on the border.
+- CND-0081 [KILLED_KNOWN]: Exactly Robbins's strong-orientation theorem; related publisher source states theorem.
+Two other S005 cases (CND-0068, CND-0080) remain TRIAGED, not killed or hard.
