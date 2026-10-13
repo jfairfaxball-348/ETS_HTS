@@ -87,7 +87,7 @@ All mathematical reasons/known-source cautions are in S004/MATHEMATICS.md and th
 |---|---|---|---|
 | CND-0066 | KILLED_FALSE/DEGENERATE | One cut can share each of q doubled bead colours fairly | q=3, AABBCC: only a cut after position 3 gives two blocks of length 3; AAB and BCC are not rainbow. |
 | CND-0067 | KILLED_KNOWN | At most q cuts always fairly share a two-person even-colour necklace | Classical Goldberg–West two-person necklace-splitting theorem directly stated in Simonyi 2008. |
-| CND-0068 | TRIAGED | No identical neighbours: are q-1 cuts enough for double beads? | No proof or counterexample certified; this q-1-cut restriction is not cleared as novel or hard. |
+| CND-0068 | KILLED_EASY | No identical neighbours: are q-1 cuts enough for double beads? | Expected cut count q−1/2 over fair independent choices, hence some <=q−1 (CLM-0038). |
 | CND-0069 | KILLED_KNOWN | Worst pile placement for covering any connected graph is stacked | Sjöstrand's 2005 cover pebbling theorem provides this exact stacking maximum. |
 | CND-0070 | KILLED_FALSE/DEGENERATE | Five pebbles always cover three vertices in a row | (5,0,0) cannot cover path P3: from the left endpoint, costs 1+2+4=7. |
 | CND-0071 | KILLED_FALSE/DEGENERATE | Every six-square polyomino folds to a cube without overlap | 2x3 rectangle contains a 2x2 subblock: four panel corners share an interior planar vertex, but only three distinct cube faces meet at any cube vertex. |
@@ -99,5 +99,8 @@ All mathematical reasons/known-source cautions are in S004/MATHEMATICS.md and th
 | CND-0077 | KILLED_KNOWN | Sandpile stabilization unaffected by order of topplings | Classical order-independent abelian sandpile stabilization, directly stated in Sage tutorial. |
 | CND-0078 | KILLED_EASY | Positive sums of consecutive integers characterize nonpowers of two | Factor n=l(2a+l-1)/2; any representation forces odd factor >1. Conversely an odd divisor >1 yields a positive-length interval of >=2 summands. |
 | CND-0079 | KILLED_EASY | Rectangular grid has Hamiltonian cycle exactly when its area is even | Bipartite parity forbids odd mn; for an even side reserve a border column and snake through other columns, returning on the border. |
-| CND-0080 | TRIAGED | Can every polygon triangulation keep all vertex triangle loads at most half n? | Not proved, falsified, or cleared for novelty. Convex triangulations allow zig-zag low load, but nonconvex visibility obstructions remain. |
+| CND-0080 | KILLED_FALSE/DEGENERATE | Can every polygon triangulation keep all vertex triangle loads at most half n? | Six-vertex concave-chain polygon has forced apex fan with 4 triangles, versus cap 3 (CLM-0039). |
 | CND-0081 | KILLED_KNOWN | Can streets without bridges be directed for two-way reachability? | Exactly Robbins's strong-orientation theorem; related publisher source states theorem. |
+| CND-0082 | KILLED_FALSE/DEGENERATE | Can every road network become a tree while making journeys at most one road longer? | C5: every spanning tree deletes one edge and becomes a 5-vertex path; endpoints of that edge have distance 1 in C5 but 4 in the tree. |
+| CND-0083 | KILLED_KNOWN | Can appointments always use as many rooms as the largest simultaneous overlap? | Classical interval-graph colouring: in nondecreasing start order, a new interval intersects only previously coloured intervals containing its start; at most k-1 colours unavailable. |
+| CND-0084 | KILLED_KNOWN | Do sums made from n distinct integers always give at least 2n−1 different totals? | For a1<...<an the chain a1+a1<...<a1+an<a2+an<...<an+an gives exactly 2n-1 distinct sums; already explicit in a 2026 published journal editorial. |

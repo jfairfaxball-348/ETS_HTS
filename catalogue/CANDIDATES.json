@@ -4689,7 +4689,7 @@
       "origin_mechanism": "MEC-02",
       "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
       "quantifiers": "All quantified families and limits stated in exact_statement.",
-      "status": "TRIAGED",
+      "status": "KILLED_EASY",
       "novelty_grade": "NOT_SEARCHED",
       "difficulty_evidence": [
         {
@@ -4721,9 +4721,21 @@
           "test": "literature",
           "status": "LIMITED_SOURCE_INSPECTION",
           "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        },
+        {
+          "test": "S006_direct_proof",
+          "status": "RESOLVED",
+          "detail": "Independently choose which occurrence of each symbol goes to A (the other goes to B). Distinct adjacent symbols have independent unbiased ownership bits, so expected adjacent ownership changes = (2q-1)/2 < q; some integer number of changes <=q-1. Cut precisely where owner changes."
         }
       ],
-      "kill_record": null,
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S006",
+        "reason": "Independently choose which occurrence of each symbol goes to A (the other goes to B). Distinct adjacent symbols have independent unbiased ownership bits, so expected adjacent ownership changes = (2q-1)/2 < q; some integer number of changes <=q-1. Cut precisely where owner changes.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Complete human mathematical proof/witness recorded in sessions/S006/MATHEMATICS.md; not formally verified or externally reviewed",
+        "reviewer": "session self-audit"
+      },
       "source_ids": [
         "SRC-0023",
         "SRC-0024",
@@ -4731,22 +4743,27 @@
         "SRC-0034",
         "SRC-0035"
       ],
-      "claim_ids": [],
-      "cam_ids": [],
+      "claim_ids": [
+        "CLM-0038"
+      ],
+      "cam_ids": [
+        "CAM-0001",
+        "CAM-0002"
+      ],
       "scoring": {
         "statement_length": 11,
         "prerequisites": 11,
         "naturalness": 10,
         "sharpness": 9,
-        "difficulty_evidence": 2,
+        "difficulty_evidence": 0,
         "novelty_audit": 0,
         "connections": 7,
         "computational_testability": 2,
         "low_degeneracy_risk": 5,
-        "total": 57
+        "total": 55
       },
       "screened_as_top_ten": true,
-      "uncertainty": "Two attacks not decisive; requires falsification, full novelty and independent difficulty evidence. NOT HARD."
+      "uncertainty": "Resolved elementary or false; not hard, novel, surviving or selected."
     },
     {
       "id": "CND-0069",
@@ -5542,7 +5559,7 @@
       "origin_mechanism": "MEC-02",
       "attribution": "Source-led S005 adaptation of classical combinatorial mechanisms; no first-discovery claim.",
       "quantifiers": "All quantified families and limits stated in exact_statement.",
-      "status": "TRIAGED",
+      "status": "KILLED_FALSE/DEGENERATE",
       "novelty_grade": "NOT_SEARCHED",
       "difficulty_evidence": [
         {
@@ -5574,28 +5591,43 @@
           "test": "literature",
           "status": "LIMITED_SOURCE_INSPECTION",
           "detail": "Search-provider hits counts UNKNOWN; deep native collection/book searches NOT_RUN."
+        },
+        {
+          "test": "S006_direct_proof",
+          "status": "RESOLVED",
+          "detail": "For six-vertex polygon (0,10),(-2,0),(-1,3),(0,4),(1,3),(2,0), the concave lower chain prevents every diagonal joining nonconsecutive lower vertices. Unique fan from (0,10) has 4 incident triangles >ceil(6/2)=3."
         }
       ],
-      "kill_record": null,
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S006",
+        "reason": "For six-vertex polygon (0,10),(-2,0),(-1,3),(0,4),(1,3),(2,0), the concave lower chain prevents every diagonal joining nonconsecutive lower vertices. Unique fan from (0,10) has 4 incident triangles >ceil(6/2)=3.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Complete human mathematical proof/witness recorded in sessions/S006/MATHEMATICS.md; not formally verified or externally reviewed",
+        "reviewer": "session self-audit"
+      },
       "source_ids": [
-        "SRC-0029"
+        "SRC-0029",
+        "SRC-0037"
       ],
-      "claim_ids": [],
+      "claim_ids": [
+        "CLM-0039"
+      ],
       "cam_ids": [],
       "scoring": {
         "statement_length": 11,
         "prerequisites": 11,
         "naturalness": 10,
         "sharpness": 9,
-        "difficulty_evidence": 2,
+        "difficulty_evidence": 0,
         "novelty_audit": 0,
         "connections": 7,
         "computational_testability": 2,
         "low_degeneracy_risk": 5,
-        "total": 57
+        "total": 55
       },
       "screened_as_top_ten": true,
-      "uncertainty": "Two attacks not decisive; requires falsification, full novelty and independent difficulty evidence. NOT HARD."
+      "uncertainty": "Resolved elementary or false; not hard, novel, surviving or selected."
     },
     {
       "id": "CND-0081",
@@ -5668,6 +5700,162 @@
       },
       "screened_as_top_ten": false,
       "uncertainty": "Resolved/known; no originality claimed."
+    },
+    {
+      "id": "CND-0082",
+      "exact_statement": "For every finite connected simple graph G with n>=4 vertices, is there a spanning tree T such that for every pair u,v, distance_T(u,v) <= distance_G(u,v)+1?",
+      "plain_language_statement": "Can every road network become a tree while making journeys at most one road longer?",
+      "domain": "graph distances/spanners",
+      "origin_mechanism": "MEC-S006-DIVERSE-SOURCE-LED",
+      "attribution": "Generated in S006 from source-led topic SRC-0043, not claimed novel",
+      "quantifiers": "As in exact_statement",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "proof_first",
+          "status": "RESOLVED",
+          "detail": "C5: every spanning tree deletes one edge and becomes a 5-vertex path; endpoints of that edge have distance 1 in C5 but 4 in the tree."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_LED",
+          "detail": "See source access grade; no full novelty clearance"
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S006",
+        "reason": "C5: every spanning tree deletes one edge and becomes a 5-vertex path; endpoints of that edge have distance 1 in C5 but 4 in the tree.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Self-contained human attack; source metadata separate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0043"
+      ],
+      "claim_ids": [
+        "CLM-0040"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 8,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 1,
+        "total": 45
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Defeated at cheap gate, not hard or surviving."
+    },
+    {
+      "id": "CND-0083",
+      "exact_statement": "For every finite family of closed real intervals, if no point belongs to more than k intervals, can the intervals be coloured with k colours so overlapping intervals differ?",
+      "plain_language_statement": "Can appointments always use as many rooms as the largest simultaneous overlap?",
+      "domain": "scheduling/interval graphs",
+      "origin_mechanism": "MEC-S006-DIVERSE-SOURCE-LED",
+      "attribution": "Generated in S006 from source-led topic SRC-0038, not claimed novel",
+      "quantifiers": "As in exact_statement",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "proof_first",
+          "status": "RESOLVED",
+          "detail": "Classical interval-graph colouring: in nondecreasing start order, a new interval intersects only previously coloured intervals containing its start; at most k-1 colours unavailable."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_LED",
+          "detail": "See source access grade; no full novelty clearance"
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S006",
+        "reason": "Classical interval-graph colouring: in nondecreasing start order, a new interval intersects only previously coloured intervals containing its start; at most k-1 colours unavailable.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Self-contained human attack; source metadata separate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0038"
+      ],
+      "claim_ids": [
+        "CLM-0041"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 8,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 1,
+        "total": 45
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Defeated at cheap gate, not hard or surviving."
+    },
+    {
+      "id": "CND-0084",
+      "exact_statement": "For each set A of n>=1 distinct integers, does the set {a+b:a,b in A} contain at least 2n-1 distinct integers?",
+      "plain_language_statement": "Do sums made from n distinct integers always give at least 2n−1 different totals?",
+      "domain": "additive number theory",
+      "origin_mechanism": "MEC-S006-DIVERSE-SOURCE-LED",
+      "attribution": "Generated in S006 from source-led topic SRC-0039, not claimed novel",
+      "quantifiers": "As in exact_statement",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "proof_first",
+          "status": "RESOLVED",
+          "detail": "For a1<...<an the chain a1+a1<...<a1+an<a2+an<...<an+an gives exactly 2n-1 distinct sums; already explicit in a 2026 published journal editorial."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_LED",
+          "detail": "See source access grade; no full novelty clearance"
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S006",
+        "reason": "For a1<...<an the chain a1+a1<...<a1+an<a2+an<...<an+an gives exactly 2n-1 distinct sums; already explicit in a 2026 published journal editorial.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Self-contained human attack; source metadata separate",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0039"
+      ],
+      "claim_ids": [
+        "CLM-0042"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 8,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 5,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 1,
+        "total": 45
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Defeated at cheap gate, not hard or surviving."
     }
   ]
 }

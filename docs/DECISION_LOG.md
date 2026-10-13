@@ -26,3 +26,12 @@ DEC-0016: 16 precise, source-led questions across >=5 structural domains; 14 imm
 DEC-0017: no HARD/SURVIVING despite personal proof failures; full native novelty, independent difficulty, computational evidence not present.
 DEC-0018: symbolic-only, no registered mathematical CAM; local git checkout blocked DNS; hosted governance validation does not prove mathematics.
 DEC-0019: S006 should attempt to kill both TRIAGED cases before regenerating further.
+
+
+## S006 decisions — 2026-10-13
+DEC-0020: Prove and kill CND-0068 by independent fair ownership per colour; expected cuts q−1/2 proves <=q−1 universally. CAM is auxiliary, no priority/novelty claim.
+DEC-0021: Falsify and kill CND-0080 by six-vertex strict-concavity forced fan, 4 incident apex triangles > 3 permitted.
+DEC-0022: Preregister CAM-0001 and CAM-0002 before their respective runs; record that CAM-0001 early return invalidated its supposed maximum of minima, preserve raw and corrected CAM-0002 rather than rewrite history.
+DEC-0023: Source-led independent regeneration CND-0082..0084 spans graph metric, scheduling, additive number theory; all killed immediately. Do not promote as HARD or SURVIVING.
+DEC-0024: Native OEIS/arXiv/MO/MSE/Erdős/Open Problem Garden/Zenodo/GitHub exact-search endpoints inaccessible, counts UNKNOWN, not zero; full books NOT_RUN. Two-pass documentation does NOT complete deep novelty clearance.
+DEC-0025: Actual checkout blocked by git DNS; local validator/unittests NOT_RUN on actual checkout, record hosted CI separately if observed. S007 requires new owner authorisation.

@@ -1,4 +1,53 @@
 {
   "schema_version": 1,
-  "records": []
+  "records": [
+    {
+      "id": "CAM-0001",
+      "candidate_ids": [
+        "CND-0068"
+      ],
+      "claim_ids": [
+        "CLM-0038"
+      ],
+      "purpose": "Exhaust canonical non-neighbour-equal doubled words and test existence of q-1 cut fair assignment; raw-optima field flawed by early exit.",
+      "bounds": "q=2..7 inclusive; each symbol exactly twice, adjacent unequal, canonical first appearance labels; 2,000,000 words per q cap.",
+      "code_version": "campaigns/necklace_exhaustive.py, frozen before execution",
+      "code_hash": "sha256:2e32d7e3547f28f4b8e9444c491f3d2e71741bf3faa62a91455f7dfe99ff21df",
+      "input_hash": "sha256:2e32d7e3547f28f4b8e9444c491f3d2e71741bf3faa62a91455f7dfe99ff21df (self-contained parameters, no external input)",
+      "environment": "Linux CPython 3.13.5, stdlib only, /mnt/data/ets_s006",
+      "stopping_rule": "First counterexample then stop, or q=7 complete, or word cap reached.",
+      "output_paths": [
+        "campaigns/CAM-0001_preregistration.json",
+        "campaigns/CAM-0001_raw.json",
+        "campaigns/necklace_exhaustive.py"
+      ],
+      "status": "COMPLETED",
+      "preregistered_at_utc": "2026-10-13 16:19:16",
+      "defect": "The field maximum_minimum_cuts_seen is NOT the true exact max-min: min_cuts returns early after finding feasible <=q-1; existence results valid, optima invalid. Raw preserved and CAM-0002 rerun."
+    },
+    {
+      "id": "CAM-0002",
+      "candidate_ids": [
+        "CND-0068"
+      ],
+      "claim_ids": [
+        "CLM-0038"
+      ],
+      "purpose": "Recompute exact minimum fair alternating cut count without CAM-0001 early return, in same fully enumerated range.",
+      "bounds": "q=2..7 inclusive, canonical non-neighbour-equal double words, 2,000,000 completed words per q cap; all 2^(q-1) fair assignments checked per word.",
+      "code_version": "campaigns/necklace_exact_optima.py, frozen before execution",
+      "code_hash": "sha256:7743b0d1db8293abf2eee2908ec82a0171b028475c92c573617f88b4c6c13636",
+      "input_hash": "sha256:7743b0d1db8293abf2eee2908ec82a0171b028475c92c573617f88b4c6c13636 (self-contained parameters, no external input)",
+      "environment": "Linux CPython 3.13.5, stdlib only, /mnt/data/ets_s006",
+      "stopping_rule": "First counterexample then stop, or q=7 complete, or word cap reached; never early return on feasible assignment.",
+      "output_paths": [
+        "campaigns/CAM-0002_preregistration.json",
+        "campaigns/CAM-0002_raw.json",
+        "campaigns/necklace_exact_optima.py"
+      ],
+      "status": "COMPLETED",
+      "preregistered_at_utc": "2026-10-13 16:23:27",
+      "result": "Complete canonical word counts q2..7: 1,5,36,329,3655,47844. True maxima of minimum cuts: 1,2,3,3,4,5. No counterexample; finite testing does not prove the general statement."
+    }
+  ]
 }

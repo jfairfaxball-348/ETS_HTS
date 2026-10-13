@@ -10,3 +10,7 @@
 
 | S005 | Owner explicit invocation 2026-10-13 | COMPLETE research, 16 candidates/14 kills/2 TRIAGED/0 survivors, 13 SRC, 14 CLM, 0 CAM | Entry 7794b213505aefe7b268c7d976085b9082bb282a; S004 authored and PR #4 merge verified; outgoing git evidence to reconstruct next entry |
 | S006 | NONE | FUTURE / UNEXECUTED | fresh owner invocation needed |
+
+
+| S006 | Explicit owner invocation 2026-10-13 | Completed mathematics: CND-0068 proved, CND-0080 falsified, three independent replacement mechanisms 0082..0084 killed; 84/84 KILLED; 43 SRC, 42 CLM, 2 CAM | Entry main 6da5590b1b1d130a7b2e34f5dea697e30a2fcc72; S005 PR #5 two-parent merge verified. Exit authored/PR/merge to reconstruct at next entry. |
+| S007 | NONE | FUTURE / UNEXECUTED | requires a NEW explicit owner invocation |

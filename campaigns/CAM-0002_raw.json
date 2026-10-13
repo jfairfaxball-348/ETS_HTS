@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "rows": [
+    {
+      "q": 2,
+      "checked_canonical_words": 1,
+      "complete": true,
+      "first_counterexample": null,
+      "maximum_minimum_cuts_seen": 1,
+      "maximizer_sample": "ABAB",
+      "node_limit": 2000000
+    },
+    {
+      "q": 3,
+      "checked_canonical_words": 5,
+      "complete": true,
+      "first_counterexample": null,
+      "maximum_minimum_cuts_seen": 2,
+      "maximizer_sample": "ABACBC",
+      "node_limit": 2000000
+    },
+    {
+      "q": 4,
+      "checked_canonical_words": 36,
+      "complete": true,
+      "first_counterexample": null,
+      "maximum_minimum_cuts_seen": 3,
+      "maximizer_sample": "ABCBDCDA",
+      "node_limit": 2000000
+    },
+    {
+      "q": 5,
+      "checked_canonical_words": 329,
+      "complete": true,
+      "first_counterexample": null,
+      "maximum_minimum_cuts_seen": 3,
+      "maximizer_sample": "ABABCDCEDE",
+      "node_limit": 2000000
+    },
+    {
+      "q": 6,
+      "checked_canonical_words": 3655,
+      "complete": true,
+      "first_counterexample": null,
+      "maximum_minimum_cuts_seen": 4,
+      "maximizer_sample": "ABABCDEDFEFC",
+      "node_limit": 2000000
+    },
+    {
+      "q": 7,
+      "checked_canonical_words": 47844,
+      "complete": true,
+      "first_counterexample": null,
+      "maximum_minimum_cuts_seen": 5,
+      "maximizer_sample": "ABACBCDEFEGFGD",
+      "node_limit": 2000000
+    }
+  ]
+}
