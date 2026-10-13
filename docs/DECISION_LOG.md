@@ -14,3 +14,7 @@
 | DEC-0013 | S003 | Correct stale validator hardcoding and provide S004 owner-gated handover | No claim of local checkout tests prior to hosted CI |
 | DEC-0014 | S003 | Keep deep-search gaps UNKNOWN and run no unregistered computation | Native arXiv/book/OEIS terms/archives incomplete; no CAM |
 | DEC-0015 | S003 | Treat weak Sidon A039836 as direct equivalence, NOT a solved new general formula | SRC-0010..0013 |
+
+## 2026-10-13 S004 — proof-first kills outrank novelty excitement
+
+Fifteen natural questions sampled from at least five subjects were all resolved or found already known. In particular n=7 destroys the rainbow prime-sum proposal (SRC-0019), and Bertrand nesting produces an easy noncrossing prime-pairing construction previously foreshadowed by SRC-0020. Maintain zero SURVIVING, no HARD assertions; choose source-led structurally different mechanisms at S005 rather than resurrect any defeated versions. Hosted validation is only metadata/governance verification.

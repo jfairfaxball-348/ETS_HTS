@@ -3469,6 +3469,1072 @@
       },
       "screened_as_top_ten": true,
       "uncertainty": "Known exact extremal weak-Sidon formulation, not a solution of the general extremal sequence; novelty in this formulation is absent."
+    },
+    {
+      "id": "CND-0051",
+      "exact_statement": "For every finite connected simple triangle-free graph G with minimum degree at least 2, are there two cycles sharing no edge?",
+      "plain_language_statement": "Does every connected triangle-free graph with minimum degree two have two edge-disjoint cycles?",
+      "domain": "graphs/cycles",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "The 5-cycle C5 is triangle-free, connected and 2-regular, yet has only one cycle."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "A decisive symbolic proof or explicit counterexample is archived in S004/MATHEMATICS.md."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "The 5-cycle C5 is triangle-free, connected and 2-regular, yet has only one cycle. Minimum degree cannot force two cycles: C5 has only five edges; a graph-theoretic cyclomatic-number check is 1.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0009"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0052",
+      "exact_statement": "In every finite connected undirected graph all of whose vertices have even degree, does each edge lie on a simple cycle?",
+      "plain_language_statement": "In a connected graph where every dot has an even number of neighbours, does every edge belong to a loop?",
+      "domain": "graphs/cycles",
+      "origin_mechanism": "MEC-08",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "A bridge would create a component with odd total degree (its one exiting edge); hence no bridge exists. Any nonbridge edge lies on a cycle."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "A decisive symbolic proof or explicit counterexample is archived in S004/MATHEMATICS.md."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_EASY",
+        "reason": "A bridge would create a component with odd total degree (its one exiting edge); hence no bridge exists. Any nonbridge edge lies on a cycle. Bridge parity is sufficient: remove edge uv, find a remaining u-v path, reattach edge to form a cycle.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0010"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0053",
+      "exact_statement": "Does every finite connected graph having precisely two vertices of odd degree admit a trail traversing every edge exactly once?",
+      "plain_language_statement": "If a connected graph has exactly two odd-degree dots, can we trace every edge exactly once?",
+      "domain": "graphs/routes",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Add an edge between the two odd-degree vertices to get all-even degrees; Euler circuit exists and removing added edge gives the required trail."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "KNOWN_OR_DIRECT_SOURCE",
+          "detail": "Existing specific statement or theorem located; source references attached."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_MATCH_INSPECTED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_KNOWN",
+        "reason": "Add an edge between the two odd-degree vertices to get all-even degrees; Euler circuit exists and removing added edge gives the required trail. Euler's trail theorem directly settles all quantifiers; nontree multigraph insertion is allowed in the proof auxiliary graph.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0011"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 4,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 56
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0054",
+      "exact_statement": "In normal play on a pile of n positive stones with moves remove 1 or 2 stones, does the first player win exactly when 3 does not divide n?",
+      "plain_language_statement": "Taking one or two stones each turn, when can the first player force the last move?",
+      "domain": "games/subtraction",
+      "origin_mechanism": "MEC-05",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Positions divisible by 3 are losing: any move leaves remainder 1 or 2, and the opponent can restore a multiple of 3; all other positions move to such a multiple."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "A decisive symbolic proof or explicit counterexample is archived in S004/MATHEMATICS.md."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_EASY",
+        "reason": "Positions divisible by 3 are losing: any move leaves remainder 1 or 2, and the opponent can restore a multiple of 3; all other positions move to such a multiple. Induction on n, with terminal zero losing for the player to move.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0012"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0055",
+      "exact_statement": "For every finite multiset of positive integers of even total sum, can repeated replacement of any two numbers a,b by |a-b| finish at 0?",
+      "plain_language_statement": "Replace two numbers by their absolute difference until one remains. Does even starting total guarantee zero?",
+      "domain": "games/number-reduction",
+      "origin_mechanism": "MEC-04",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "For {1,2,5}, the possible first differences give final values 4 (merge 1,2), 2 (merge 1,5), or 2 (merge 2,5), never 0."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "A decisive symbolic proof or explicit counterexample is archived in S004/MATHEMATICS.md."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "For {1,2,5}, the possible first differences give final values 4 (merge 1,2), 2 (merge 1,5), or 2 (merge 2,5), never 0. Parity is invariant but insufficient; this explicit three-number exhaustive symbolic split disproves sufficiency.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0013"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0056",
+      "exact_statement": "For every finite binary word, is the irreducible word obtained by repeatedly deleting 00 or 11 independent of the chosen sequence of deletions?",
+      "plain_language_statement": "Delete adjacent equal binary digits until none remain. Is the final string independent of deletion order?",
+      "domain": "sequences/rewrite-game",
+      "origin_mechanism": "MEC-04",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Termination is by decreasing length by 2. Two redexes either are disjoint and commute or overlap in 000/111 and both choices leave the same letter; induction on remaining length gives unique irreducible normal form."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "A decisive symbolic proof or explicit counterexample is archived in S004/MATHEMATICS.md."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_EASY",
+        "reason": "Termination is by decreasing length by 2. Two redexes either are disjoint and commute or overlap in 000/111 and both choices leave the same letter; induction on remaining length gives unique irreducible normal form. Local diamond plus length induction, not brute-force enumeration or an unsupported confluence citation.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0014"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0057",
+      "exact_statement": "In every infinite binary word, for every k>=1 do two adjacent blocks of the same length at least k occur with equal counts of 1?",
+      "plain_language_statement": "Must an infinite row of 0s and 1s contain arbitrarily long neighbouring blocks with equal numbers of 1s?",
+      "domain": "sequences/binary-words",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Exactly the classical arbitrarily long abelian-square theorem of Entringer, Jackson and Schatz (1974); direct authors' paper statement inspected in a public text reproduction."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "KNOWN_OR_DIRECT_SOURCE",
+          "detail": "Existing specific statement or theorem located; source references attached."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_MATCH_INSPECTED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_KNOWN",
+        "reason": "Exactly the classical arbitrarily long abelian-square theorem of Entringer, Jackson and Schatz (1974); direct authors' paper statement inspected in a public text reproduction. For binary words two equal-length blocks have the same ones count iff they have equal multisets of letters; identity is bidirectional.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [
+        "SRC-0014",
+        "SRC-0016"
+      ],
+      "claim_ids": [
+        "CLM-0015"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 4,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 56
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0058",
+      "exact_statement": "Does every infinite binary word contain three consecutive blocks of some common length at least 2 with equal numbers of 1?",
+      "plain_language_statement": "Must an infinite row of 0s and 1s have three neighbouring equal-length blocks of length at least two with equal numbers of 1s?",
+      "domain": "sequences/binary-words",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Rao and Rosenfeld (2015) state that no infinite binary word avoids abelian cubes of period >=2; binary Parikh equality equals equality of ones counts."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "KNOWN_OR_DIRECT_SOURCE",
+          "detail": "Existing specific statement or theorem located; source references attached."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_MATCH_INSPECTED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_KNOWN",
+        "reason": "Rao and Rosenfeld (2015) state that no infinite binary word avoids abelian cubes of period >=2; binary Parikh equality equals equality of ones counts. Do not mistake 'period >=2' for 'arbitrarily large period': these are different quantifier statements.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [
+        "SRC-0015"
+      ],
+      "claim_ids": [
+        "CLM-0016"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 4,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 56
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0059",
+      "exact_statement": "For all m,n>=2 and all binary m-by-n boards, can flipping all four bits of chosen adjacent 2-by-2 subboards reach all zeroes iff every initial row sum and column sum is even?",
+      "plain_language_statement": "If every row and column of a black-white grid has even black squares, can 2-by-2 flips clear it?",
+      "domain": "grids/toggles",
+      "origin_mechanism": "MEC-08",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Each move preserves each row and column parity. Conversely clear positions (i,j), i<m,j<n, lexicographically using a flip based at (i,j) iff its bit is 1; the last row and column vanish by the parity constraints."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "A decisive symbolic proof or explicit counterexample is archived in S004/MATHEMATICS.md."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_EASY",
+        "reason": "Each move preserves each row and column parity. Conversely clear positions (i,j), i<m,j<n, lexicographically using a flip based at (i,j) iff its bit is 1; the last row and column vanish by the parity constraints. Constructive elimination works for arbitrary m,n >=2; earlier cleared cells never change.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0017"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0060",
+      "exact_statement": "For every m,n>=2, is a binary m-by-n grid with even total bit sum necessarily transformable to zero by adjacent 2-by-2 flips?",
+      "plain_language_statement": "Is even total number of black squares enough to clear a board by flipping 2-by-2 squares?",
+      "domain": "grids/toggles",
+      "origin_mechanism": "MEC-02",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "The 2-by-2 board with top row 11 and bottom row 00 has even total 2 but each column has odd parity, preserved by every allowed flip."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "A decisive symbolic proof or explicit counterexample is archived in S004/MATHEMATICS.md."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "The 2-by-2 board with top row 11 and bottom row 00 has even total 2 but each column has odd parity, preserved by every allowed flip. Checks row/column invariants from CND-0059 rather than number of black cells alone.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0018"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0061",
+      "exact_statement": "For every n>=1 does {1,...,2n} have a partition into n unordered pairs {a,b} with a+b prime?",
+      "plain_language_statement": "Can the integers from 1 through 2n always be paired so each pair has a prime sum?",
+      "domain": "integers/prime-matching",
+      "origin_mechanism": "MEC-07",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Greenfield and Greenfield (1998) established this; standard Bertrand-postulate induction explicitly inspected in secondary exposition; OEIS A000341 enumerates such pairings."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "KNOWN_OR_DIRECT_SOURCE",
+          "detail": "Existing specific statement or theorem located; source references attached."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_MATCH_INSPECTED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_KNOWN",
+        "reason": "Greenfield and Greenfield (1998) established this; standard Bertrand-postulate induction explicitly inspected in secondary exposition; OEIS A000341 enumerates such pairings. For n>=2 choose prime p with 2n<p<4n and pair the consecutive upper suffix [p-2n,2n] by equal-sum nested pairs, then induct on remaining prefix.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [
+        "SRC-0017",
+        "SRC-0018"
+      ],
+      "claim_ids": [
+        "CLM-0019"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 4,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 56
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0062",
+      "exact_statement": "For every n>=1 can {1,...,2n} be partitioned into n pairs whose sums are n pairwise distinct primes?",
+      "plain_language_statement": "Can those pairs always have different prime sums?",
+      "domain": "integers/prime-matching",
+      "origin_mechanism": "MEC-02",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Already directly posed and answered on Math.SE in 2018; n=7 impossible because sum 1+...+14=105, whereas the seven largest distinct eligible odd primes <=27 total only 95."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "A decisive symbolic proof or explicit counterexample is archived in S004/MATHEMATICS.md."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "Already directly posed and answered on Math.SE in 2018; n=7 impossible because sum 1+...+14=105, whereas the seven largest distinct eligible odd primes <=27 total only 95. Each pair uses two distinct positive integers and prime sum is odd <=4n-1; a rainbow matching would need distinct prime labels, contradicted by total-sum ceiling.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [
+        "SRC-0019",
+        "SRC-0020"
+      ],
+      "claim_ids": [
+        "CLM-0020"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0063",
+      "exact_statement": "For all n>=1, given n red and n blue distinct planar points with no three collinear, does a noncrossing perfect matching using straight red-blue segments exist?",
+      "plain_language_statement": "Can any equal number of red and blue points be paired by uncrossed straight red-blue lines?",
+      "domain": "geometry/planar-matching",
+      "origin_mechanism": "MEC-03",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Known geometric matching theorem (Kano 2002 presentation). Independent short proof: choose a red-blue perfect matching minimizing total Euclidean length; any crossing edges can be uncrossed by swapping blue endpoints to strictly reduce length."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "KNOWN_OR_DIRECT_SOURCE",
+          "detail": "Existing specific statement or theorem located; source references attached."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_MATCH_INSPECTED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_KNOWN",
+        "reason": "Known geometric matching theorem (Kano 2002 presentation). Independent short proof: choose a red-blue perfect matching minimizing total Euclidean length; any crossing edges can be uncrossed by swapping blue endpoints to strictly reduce length. Uncrossing uses the triangle inequality with strictness from general position; minimizer therefore has no crossing.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [
+        "SRC-0021"
+      ],
+      "claim_ids": [
+        "CLM-0021"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 4,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 56
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0064",
+      "exact_statement": "For every n>=1, place 1,...,2n clockwise around a convex circle. Does a perfect noncrossing straight-chord matching exist in which endpoints of every chord sum to a prime?",
+      "plain_language_statement": "Put 1 through 2n around a circle. Can noncrossing pairs always have prime sums?",
+      "domain": "integers/geometric-matching",
+      "origin_mechanism": "MEC-08",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "KNOWN_VARIANT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Bertrand induction picks p in (2n,4n) and pairs a=p-2n with 2n, a+1 with 2n-1, etc. These chords are nested and do not cross; induct on the disjoint smaller prefix [1,a-1]."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "A decisive symbolic proof or explicit counterexample is archived in S004/MATHEMATICS.md."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_EASY",
+        "reason": "Bertrand induction picks p in (2n,4n) and pairs a=p-2n with 2n, a+1 with 2n-1, etc. These chords are nested and do not cross; induct on the disjoint smaller prefix [1,a-1]. This is already implicit in known 'intervallic' prime pairings discussed on MathOverflow in 2016, not a novel open problem.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [
+        "SRC-0018",
+        "SRC-0020"
+      ],
+      "claim_ids": [
+        "CLM-0022"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
+    },
+    {
+      "id": "CND-0065",
+      "exact_statement": "For every finite tree T on n>=2 vertices, is there a bijection f:V(T)->{1,...,n} for which f(u)+f(v) is prime on every edge uv?",
+      "plain_language_statement": "Can every tree be numbered 1 through its size so that every linked pair adds to a prime?",
+      "domain": "graphs/prime-labels",
+      "origin_mechanism": "MEC-02",
+      "attribution": "Fresh S004 mechanism-based formulation; classic theme, not asserted original. Any specific sources listed separately.",
+      "quantifiers": "All finite/infinite quantifiers and edge cases are in exact_statement.",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No mathematical code run; no CAM registered. All small witnesses checked symbolically only; not an exhaustive computational search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "The five-vertex star K1,4 refutes it: any centre label c in {1,2,3,4,5} forces four prime sums with other labels, but c=1,2,3,4,5 respectively gives composite sums 4,6,4,6,6."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "A decisive symbolic proof or explicit counterexample is archived in S004/MATHEMATICS.md."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "Decisively killed; no inference of hardness or calibrated probabilistic model."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "PROOF_FIRST_RESOLVED",
+          "detail": "Elementary invariant, constructive proof, reduction or explicit witness, not a timed human contest."
+        },
+        {
+          "test": "literature",
+          "status": "PARTIAL_OR_NOT_SEARCHED",
+          "detail": "Dated source/search log in S004/NOVELTY_QUERIES.md; no full comprehensive novelty clearance claimed."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S004",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "The five-vertex star K1,4 refutes it: any centre label c in {1,2,3,4,5} forces four prime sums with other labels, but c=1,2,3,4,5 respectively gives composite sums 4,6,4,6,6. A single composite edge for each of five possible central labels suffices; no computation run.",
+        "verified_scope": "Symbolic proof or hand-exhausted finite witness; source inspected for known statements; no code experiment.",
+        "reviewer": "S004 internal hostile proof-first review"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0023"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 11,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 0,
+        "total": 52
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED: no open/noveI/HARD status. Source searches incomplete except located exact known claims. 'No novelty proof' is not a first-discovery claim."
     }
   ]
 }

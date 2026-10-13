@@ -14,3 +14,17 @@
 - **SRC-0011** Bernd Mulansky / OEIS contributors, *A345731* (2021-06-25; inspected 2026-10-13). https://oeis.org/A345731 — **STATEMENT_INSPECTED**. Weak Sidon minimum spread (inverse parametrisation).
 - **SRC-0012** BerndM / MathOverflow participants, *Well-spread (weak Sidon) sets* (2020-03-11). https://mathoverflow.net/questions/354687/well-spread-weak-sidon-sets — **STATEMENT_INSPECTED**. Four-distinct-element definition and length/spread formulations.
 - **SRC-0013** Jie Ma and Quanyu Tang, *Largest Sidon subsets in weak Sidon sets* (2026-02-26). https://arxiv.org/abs/2602.23282 — **ABSTRACT_INSPECTED**. Related 2026 research, not an exact interval maximum formula.
+
+## S004 inspected sources, source grades limited
+
+| ID | Title | URL | Access |
+|---|---|---|---|
+| SRC-0014 | On Nonrepetitive Sequences | https://paperzz.com/doc/7326931/be-a-finite-or-infinite-sequence | STATEMENT_INSPECTED |
+| SRC-0015 | Avoidability of long k-abelian repetitions | https://arxiv.org/abs/1507.02581 | ABSTRACT_INSPECTED |
+| SRC-0016 | Abelian combinatorics on words: a survey | https://arxiv.org/abs/2207.09937 | ABSTRACT_INSPECTED |
+| SRC-0017 | OEIS A000341: number of prime-sum pairings of 1..2n | https://oeis.org/A000341 | STATEMENT_INSPECTED |
+| SRC-0018 | Prime Sums in Pairs (secondary exposition of Greenfield-Greenfield) | https://www.cut-the-knot.org/arithmetic/algebra/PrimeSumsInPairs.shtml | PROOF_INSPECTED |
+| SRC-0019 | Pair up {1..2n} so sums of each pair are different primes | https://math.stackexchange.com/questions/3031150/pair-up-1-2n-that-the-sums-of-each-pair-are-different-primes | PROOF_INSPECTED |
+| SRC-0020 | Asymptotics on number of prime-sum pairings of {1,...,2n} | https://mathoverflow.net/questions/244662/asymptotics-on-the-number-of-ways-to-pair-off-1-2-dots-2n-into-primes | STATEMENT_INSPECTED |
+| SRC-0021 | Non-crossing geometric path covering red and blue points in the plane | https://studylib.net/doc/15300108/non-crossing-geometric-path-covering-and-points-in | STATEMENT_INSPECTED |
+| SRC-0022 | Unsolved Problems in Number Theory (3rd edition) | https://link.springer.com/book/10.1007/978-0-387-26677-0 | METADATA_ONLY |
