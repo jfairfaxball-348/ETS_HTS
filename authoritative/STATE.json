@@ -3,13 +3,13 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S010: complete exact grid formula proved; CND-0109 killed by elementary constructions",
-  "last_completed_session": "S010",
-  "next_session": "S011",
+  "phase_name": "S011: five dissimilar problems killed with evidence",
+  "last_completed_session": "S011",
+  "next_session": "S012",
   "next_session_authorised": false,
-  "candidate_count": 110,
-  "source_count": 58,
-  "claim_count": 71,
+  "candidate_count": 115,
+  "source_count": 62,
+  "claim_count": 76,
   "campaign_count": 3,
   "gate_status": {
     "0": "CLOSED_ADMINISTRATIVE",
@@ -22,7 +22,7 @@
   },
   "surviving_count": 0,
   "triaged_count": 0,
-  "kill_count": 110,
-  "remote_sha_policy": "S011 independently reconstruct S010 isolated one-parent authored commit, non-draft PR, ordinary non-force two-parent merge; do not embed future SHA.",
-  "note": "CND-0109 KILLED_EASY by universal explicit odd-interior two-monomer/triple/domino construction (CLM-0071). The S009 even-grid lower-bound prose incorrectly stated 'exterior singleton' in an equality case; correct is exterior empty; conclusion unchanged. CAM-0003 remains FAILED/PARTIAL 37/54; no CAM-0004 was run. S009 PR #10 authored research commit plus one CI fixture repair, two-parent merge; 403 protection UNKNOWN; local actual checkout git DNS fails and format tests rely on hosted workflow, never novel-proof validation."
+  "kill_count": 115,
+  "remote_sha_policy": "S012 independently verify S011 sole-parent authored commit, PR and two-parent merge",
+  "note": "CND115 all KILLED SRC62 CLM76 CAM3, zero survivors. CAM-0003 still FAILED/PARTIAL 37/54 untouched; no CAM-0004. OEIS A171746 prior exact square-jump problem. Local git DNS blocked; branch protection 403 UNKNOWN; hosted CI only record format."
 }

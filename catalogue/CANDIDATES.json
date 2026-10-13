@@ -7028,6 +7028,363 @@
         "total": 0
       },
       "uncertainty": "Permanently excluded as an open target; no novel result or hard claim."
+    },
+    {
+      "id": "CND-0111",
+      "exact_statement": "For positive integer m,n with gcd(m,n)=1 and nonempty sets A and B of lit positions on clocks modulo m and n, must there exist a nonnegative time at which both clocks are lit?",
+      "plain_language_statement": "If two clocks have coprime periods and each flashes at least once per cycle, must they flash together?",
+      "domain": "clock schedules",
+      "origin_mechanism": "S011 independent regeneration: clock schedules",
+      "attribution": "Owner six foundational themes; classical prior art explicitly sourced, no originality claimed",
+      "quantifiers": "For positive integer m,n with gcd(m,n)=1 and nonempty sets A and B of lit positions on clocks modulo m and n, must there exist a nonnegative time at which both clocks are lit?",
+      "status": "KILLED_EQUIVALENT",
+      "novelty_grade": "KNOWN_EQUIVALENT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM-0004 preregistered, no new computation"
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Choose lit residues a in A and b in B. A common flash means exactly the paired congruences t=a (mod m), t=b (mod n). CRT ensures nonnegative t when gcd=1. Generally this is possible iff some a-b divisible by gcd(m,n); necessity follows by subtraction and sufficiency by Bezout. Noncoprime example: m=n=2, A={0}, B={1} never flash. This is a two-way reduction, not a fresh clock phenomenon."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Choose lit residues a in A and b in B. A common flash means exactly the paired congruences t=a (mod m), t=b (mod n). CRT ensures nonnegative t when gcd=1. Generally this is possible iff some a-b divisible by gcd(m,n); necessity follows by subtraction and sufficiency by Bezout. Noncoprime example: m=n=2, A={0}, B={1} never flash. This is a two-way reduction, not a fresh clock phenomenon."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "RESOLVED",
+          "detail": "Choose lit residues a in A and b in B. A common flash means exactly the paired congruences t=a (mod m), t=b (mod n). CRT ensures nonnegative t when gcd=1. Generally this is possible iff some a-b divisible by gcd(m,n); necessity follows by subtraction and sufficiency by Bezout. Noncoprime example: m=n=2, A={0}, B={1} never flash. This is a two-way reduction, not a fresh clock phenomenon."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Choose lit residues a in A and b in B. A common flash means exactly the paired congruences t=a (mod m), t=b (mod n). CRT ensures nonnegative t when gcd=1. Generally this is possible iff some a-b divisible by gcd(m,n); necessity follows by subtraction and sufficiency by Bezout. Noncoprime example: m=n=2, A={0}, B={1} never flash. This is a two-way reduction, not a fresh clock phenomenon."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_LIMITED",
+          "detail": "Choose lit residues a in A and b in B. A common flash means exactly the paired congruences t=a (mod m), t=b (mod n). CRT ensures nonnegative t when gcd=1. Generally this is possible iff some a-b divisible by gcd(m,n); necessity follows by subtraction and sufficiency by Bezout. Noncoprime example: m=n=2, A={0}, B={1} never flash. This is a two-way reduction, not a fresh clock phenomenon."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S011",
+        "reason": "The two flashes are simultaneous precisely when t≡a mod m and t≡b mod n for a in A, b in B. The Chinese remainder theorem gives a solution, and the reverse implication is automatic.",
+        "kind": "KILLED_EQUIVALENT",
+        "verified_scope": "Human elementary reasoning and/or opened exact priority source, not referee or Lean proof",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0059"
+      ],
+      "claim_ids": [
+        "CLM-0072"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 5,
+        "difficulty_evidence": 0,
+        "novelty_audit": 2,
+        "connections": 5,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 46
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no two genuinely failed attacks nor independent hardness evidence"
+    },
+    {
+      "id": "CND-0112",
+      "exact_statement": "For an infinite row of nonnegative integers a_j (j>=0), repeatedly replace each entry by the average of itself and its right neighbour. If every row produced has only integers, must the original row be constant?",
+      "plain_language_statement": "If endless averaging never produces fractions, was the infinite row constant at the start?",
+      "domain": "integer rows",
+      "origin_mechanism": "S011 independent regeneration: integer rows",
+      "attribution": "Owner six foundational themes; classical prior art explicitly sourced, no originality claimed",
+      "quantifiers": "For an infinite row of nonnegative integers a_j (j>=0), repeatedly replace each entry by the average of itself and its right neighbour. If every row produced has only integers, must the original row be constant?",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM-0004 preregistered, no new computation"
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Induct: a_j(0)=3^j, and [2^t3^j+2^t3^(j+1)]/2=2^(t+1)3^j. Every entry for every j,t is integral but initial row is nonconstant. This is an infinite row, not a finite row losing its last entry."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Induct: a_j(0)=3^j, and [2^t3^j+2^t3^(j+1)]/2=2^(t+1)3^j. Every entry for every j,t is integral but initial row is nonconstant. This is an infinite row, not a finite row losing its last entry."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "RESOLVED",
+          "detail": "Induct: a_j(0)=3^j, and [2^t3^j+2^t3^(j+1)]/2=2^(t+1)3^j. Every entry for every j,t is integral but initial row is nonconstant. This is an infinite row, not a finite row losing its last entry."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Induct: a_j(0)=3^j, and [2^t3^j+2^t3^(j+1)]/2=2^(t+1)3^j. Every entry for every j,t is integral but initial row is nonconstant. This is an infinite row, not a finite row losing its last entry."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_LIMITED",
+          "detail": "Induct: a_j(0)=3^j, and [2^t3^j+2^t3^(j+1)]/2=2^(t+1)3^j. Every entry for every j,t is integral but initial row is nonconstant. This is an infinite row, not a finite row losing its last entry."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S011",
+        "reason": "For a_j=3^j, every time-t row has entries 2^t*3^j, integers, although the original row is not constant.",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "verified_scope": "Human elementary reasoning and/or opened exact priority source, not referee or Lean proof",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0073"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 5,
+        "difficulty_evidence": 0,
+        "novelty_audit": 2,
+        "connections": 5,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 46
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no two genuinely failed attacks nor independent hardness evidence"
+    },
+    {
+      "id": "CND-0113",
+      "exact_statement": "Can a positive-radius Euclidean circle and a positive-side square simultaneously have equal area and equal perimeter?",
+      "plain_language_statement": "Can a circle and square use the same boundary length and enclose the same area?",
+      "domain": "Euclidean pi geometry",
+      "origin_mechanism": "S011 independent regeneration: Euclidean pi geometry",
+      "attribution": "Owner six foundational themes; classical prior art explicitly sourced, no originality claimed",
+      "quantifiers": "Can a positive-radius Euclidean circle and a positive-side square simultaneously have equal area and equal perimeter?",
+      "status": "KILLED_EASY",
+      "novelty_grade": "KNOWN_VARIANT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM-0004 preregistered, no new computation"
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Equal perimeters 2πr=4s imply s=πr/2; equal areas πr²=s² then imply π=4 after cancellation by πr²>0. Standard Euclidean π is strictly less than 4. Fixed-perimeter area ratio circle:square is 4/π. No assertion about alternative metrics."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Equal perimeters 2πr=4s imply s=πr/2; equal areas πr²=s² then imply π=4 after cancellation by πr²>0. Standard Euclidean π is strictly less than 4. Fixed-perimeter area ratio circle:square is 4/π. No assertion about alternative metrics."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "RESOLVED",
+          "detail": "Equal perimeters 2πr=4s imply s=πr/2; equal areas πr²=s² then imply π=4 after cancellation by πr²>0. Standard Euclidean π is strictly less than 4. Fixed-perimeter area ratio circle:square is 4/π. No assertion about alternative metrics."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Equal perimeters 2πr=4s imply s=πr/2; equal areas πr²=s² then imply π=4 after cancellation by πr²>0. Standard Euclidean π is strictly less than 4. Fixed-perimeter area ratio circle:square is 4/π. No assertion about alternative metrics."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_LIMITED",
+          "detail": "Equal perimeters 2πr=4s imply s=πr/2; equal areas πr²=s² then imply π=4 after cancellation by πr²>0. Standard Euclidean π is strictly less than 4. Fixed-perimeter area ratio circle:square is 4/π. No assertion about alternative metrics."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S011",
+        "reason": "Equal perimeter gives s=πr/2; equal area gives πr²=π²r²/4, forcing π=4, impossible.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Human elementary reasoning and/or opened exact priority source, not referee or Lean proof",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0062"
+      ],
+      "claim_ids": [
+        "CLM-0074"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 5,
+        "difficulty_evidence": 0,
+        "novelty_audit": 2,
+        "connections": 5,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 46
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no two genuinely failed attacks nor independent hardness evidence"
+    },
+    {
+      "id": "CND-0114",
+      "exact_statement": "Can a positive-width positive-height closed rectangle equal a finite union of closed positive-radius Euclidean disks with pairwise disjoint interiors?",
+      "plain_language_statement": "Can finitely many round coins perfectly fill a rectangle, even along its sides?",
+      "domain": "planar boundary rigidity",
+      "origin_mechanism": "S011 independent regeneration: planar boundary rigidity",
+      "attribution": "Owner six foundational themes; classical prior art explicitly sourced, no originality claimed",
+      "quantifiers": "Can a positive-width positive-height closed rectangle equal a finite union of closed positive-radius Euclidean disks with pairwise disjoint interiors?",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM-0004 preregistered, no new computation"
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Suppose R is a rectangle equal to disks D_1∪...∪D_N. Since every disk lies in R, a rectangle side point cannot lie in any disk interior (otherwise its open ball protrudes outside R); so it must lie on a disk circumference. Each disk circumference intersects the side's supporting line in at most 2 points, hence a finite set cannot contain the entire positive-length side. Even allowing overlapping disks cannot fix this."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Suppose R is a rectangle equal to disks D_1∪...∪D_N. Since every disk lies in R, a rectangle side point cannot lie in any disk interior (otherwise its open ball protrudes outside R); so it must lie on a disk circumference. Each disk circumference intersects the side's supporting line in at most 2 points, hence a finite set cannot contain the entire positive-length side. Even allowing overlapping disks cannot fix this."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "RESOLVED",
+          "detail": "Suppose R is a rectangle equal to disks D_1∪...∪D_N. Since every disk lies in R, a rectangle side point cannot lie in any disk interior (otherwise its open ball protrudes outside R); so it must lie on a disk circumference. Each disk circumference intersects the side's supporting line in at most 2 points, hence a finite set cannot contain the entire positive-length side. Even allowing overlapping disks cannot fix this."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Suppose R is a rectangle equal to disks D_1∪...∪D_N. Since every disk lies in R, a rectangle side point cannot lie in any disk interior (otherwise its open ball protrudes outside R); so it must lie on a disk circumference. Each disk circumference intersects the side's supporting line in at most 2 points, hence a finite set cannot contain the entire positive-length side. Even allowing overlapping disks cannot fix this."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_LIMITED",
+          "detail": "Suppose R is a rectangle equal to disks D_1∪...∪D_N. Since every disk lies in R, a rectangle side point cannot lie in any disk interior (otherwise its open ball protrudes outside R); so it must lie on a disk circumference. Each disk circumference intersects the side's supporting line in at most 2 points, hence a finite set cannot contain the entire positive-length side. Even allowing overlapping disks cannot fix this."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S011",
+        "reason": "A full straight rectangle side would have to be covered by finitely many circle boundaries, each meeting its supporting line in at most two points; impossible.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Human elementary reasoning and/or opened exact priority source, not referee or Lean proof",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0075"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 5,
+        "difficulty_evidence": 0,
+        "novelty_audit": 2,
+        "connections": 5,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 46
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no two genuinely failed attacks nor independent hardness evidence"
+    },
+    {
+      "id": "CND-0115",
+      "exact_statement": "For any positive integer x, if we repeatedly replace x by x+floor(sqrt(x)), must a strictly later term be a perfect square?",
+      "plain_language_statement": "If you repeatedly add the whole-number part of a square root, will you eventually land on a square?",
+      "domain": "nonuniform integer dynamics",
+      "origin_mechanism": "S011 independent regeneration: nonuniform integer dynamics",
+      "attribution": "Owner six foundational themes; classical prior art explicitly sourced, no originality claimed",
+      "quantifiers": "For any positive integer x, if we repeatedly replace x by x+floor(sqrt(x)), must a strictly later term be a perfect square?",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_EXACT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "No CAM-0004 preregistered, no new computation"
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Let x=k²+r, k≥1, 1≤r≤2k. If r≤k, then two steps under F reach (k+1)²+(r-1); if r≥k+1 then one step reaches (k+1)²+(r-k-1). Both are within the next square gap and strictly lower nonnegative offsets than r. Iterated threshold crossings must end at r=0. If starting at square k², first move to k²+k (nonsquare) and apply the same descent. Exact prior statement already in OEIS A171746 (whose 1985–86 print reference was NOT inspected) and 2022 note."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Let x=k²+r, k≥1, 1≤r≤2k. If r≤k, then two steps under F reach (k+1)²+(r-1); if r≥k+1 then one step reaches (k+1)²+(r-k-1). Both are within the next square gap and strictly lower nonnegative offsets than r. Iterated threshold crossings must end at r=0. If starting at square k², first move to k²+k (nonsquare) and apply the same descent. Exact prior statement already in OEIS A171746 (whose 1985–86 print reference was NOT inspected) and 2022 note."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "RESOLVED",
+          "detail": "Let x=k²+r, k≥1, 1≤r≤2k. If r≤k, then two steps under F reach (k+1)²+(r-1); if r≥k+1 then one step reaches (k+1)²+(r-k-1). Both are within the next square gap and strictly lower nonnegative offsets than r. Iterated threshold crossings must end at r=0. If starting at square k², first move to k²+k (nonsquare) and apply the same descent. Exact prior statement already in OEIS A171746 (whose 1985–86 print reference was NOT inspected) and 2022 note."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Let x=k²+r, k≥1, 1≤r≤2k. If r≤k, then two steps under F reach (k+1)²+(r-1); if r≥k+1 then one step reaches (k+1)²+(r-k-1). Both are within the next square gap and strictly lower nonnegative offsets than r. Iterated threshold crossings must end at r=0. If starting at square k², first move to k²+k (nonsquare) and apply the same descent. Exact prior statement already in OEIS A171746 (whose 1985–86 print reference was NOT inspected) and 2022 note."
+        },
+        {
+          "test": "literature",
+          "status": "SOURCE_LIMITED",
+          "detail": "Let x=k²+r, k≥1, 1≤r≤2k. If r≤k, then two steps under F reach (k+1)²+(r-1); if r≥k+1 then one step reaches (k+1)²+(r-k-1). Both are within the next square gap and strictly lower nonnegative offsets than r. Iterated threshold crossings must end at r=0. If starting at square k², first move to k²+k (nonsquare) and apply the same descent. Exact prior statement already in OEIS A171746 (whose 1985–86 print reference was NOT inspected) and 2022 note."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-13",
+        "session": "S011",
+        "reason": "OEIS A171746 (2010) encodes the exact first positive square-hitting iteration; a 2022 mathematical note poses the same question. An elementary square-offset descent gives a proof.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Human elementary reasoning and/or opened exact priority source, not referee or Lean proof",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0060",
+        "SRC-0061"
+      ],
+      "claim_ids": [
+        "CLM-0076"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 9,
+        "sharpness": 5,
+        "difficulty_evidence": 0,
+        "novelty_audit": 2,
+        "connections": 5,
+        "computational_testability": 2,
+        "low_degeneracy_risk": 1,
+        "total": 46
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "Resolved/known; no two genuinely failed attacks nor independent hardness evidence"
     }
   ]
 }

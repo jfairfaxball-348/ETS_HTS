@@ -74,3 +74,10 @@
 - **SRC-0056** Sam Hopkins; Thomas McConville; James Propp, *Sorting via Chip-Firing* (2017-07-28). https://doi.org/10.37236/6823 — **ABSTRACT_INSPECTED**. EJC publisher abstract inspected, asynchronous chip firing and confluence; different from S008 toy phase-update mechanism.
 - **SRC-0057** Maximilien Gadouleau; Huiying Zeng, *On the maximum and negative frustration indices of graphs* (2026-06-09). https://arxiv.org/abs/2606.11108 — **METADATA_ONLY**. Web-index arXiv title/authors/date and abstract snippet only; full arXiv page inaccessible, no 2026 theorem reliance.
 - **SRC-0058** Sirui Chen; Jiaao Li; Zhouningxin Wang, *Frustration index of a signed planar graph and the feedback vertex set* (2026-07-20). https://arxiv.org/abs/2607.17983 — **STATEMENT_INSPECTED**. Native arXiv HTML theorem and planar dual/T-join context inspected; Z2 signed setting not transferable automatically to Z3.
+
+
+## S011 source-native inspection
+- SRC-0059 [Chinese Remainder Theorem](https://mathstats-materials.uncg.edu/mat253/web/section-chinese-remainder.html) (STATEMENT_INSPECTED; UNC Greensboro MAT253 textbook contributors, not established; accessed 2026-10-13): Opened university textbook CRT statement, not a native full priority search.
+- SRC-0060 [OEIS A171746](https://oeis.org/A171746) (STATEMENT_INSPECTED; Neven Juric and OEIS contributors, 2010-10-07 initial entry): Native OEIS exact square-jump iteration entry, older 1985-1986 school problem only referenced, not inspected.
+- SRC-0061 [Integer plus its square root](https://www.ocf.berkeley.edu/~bslin/view.php?name=./posts/0+inbox/Interger+plus+its+square+root.md) (STATEMENT_INSPECTED; B. S. Lin (page attribution not independently verified), 2022-09-20): Opened mathematical note posing exact eventual-square question.
+- SRC-0062 [Squaring the Circle/Fallacious Proof/Edward J. Goodwin](https://proofwiki.org/wiki/Squaring_the_Circle/Fallacious_Proof/Edward_J._Goodwin) (STATEMENT_INSPECTED; ProofWiki contributors, undated; accessed 2026-10-13): Opened π=4 contradiction for simultaneous perimeter-area equality, not novel/hard literature.
