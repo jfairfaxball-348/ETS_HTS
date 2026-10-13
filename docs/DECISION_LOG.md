@@ -57,3 +57,12 @@ DEC-0035: No mathematical CAM or external posting; native novelty UNKNOWN where 
 - Do NOT TRIAGE: no two genuinely failed independent mathematical approaches and no outside difficulty signal; native two-pass literature coverage incomplete.
 - Preserve CAM-0003 preregistration and 37 completed solver outputs as FAILED/PARTIAL; no backdating or relabelling m5 remaining cases as run.
 - Handover S010 to pursue explicit odd-interior construction/counterexample; no owner selection or publication.
+
+
+## S010 decisions — 2026-10-13
+- DEC-0036: Accept CLM-0071 as complete, human self-audited all-parameter proof and kill CND-0109 KILLED_EASY; the exact odd-majority interior construction explicitly uses global boundary cells (no false 3x3 patch exterior).
+- DEC-0037: Correct S009 even-lower-bound prose: exterior has zero original cells in the equality attempt, NOT singleton; the resulting strict inequality is unchanged. Preserve the original record with this append-only correction.
+- DEC-0038: Keep the Z3 dual ⇄ primal cycle/phase equivalence two-way and source translations as contextual mechanisms; neither Z2 signed planar theorems nor general NP-hardness independently certifies a novel difficult family.
+- DEC-0039: Freeze CAM-0003 FAILED/PARTIAL and all raw/preregistration. No CAM-0004, no new CND or SRC; global totals CND110 killed110, CLM71, SRC58, CAM3, survivors0.
+- DEC-0040: Keep phase1 regeneration and stages2–6 closed/gated; S011 seeks a mathematically distinct school-readable mechanism. No selection, outreach or publication.
+- DEC-0041: Previous S009 PR #10 had the documented CI-only test fix as an additional branch commit; its ordinary two-parent merge is real. S010 targets one atomic authored commit. Local checkout/testing still DNS-blocked; CI is format-only.

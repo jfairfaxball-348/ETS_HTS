@@ -146,3 +146,11 @@ Final cumulative 84/84 KILLED, 0 TRIAGED, 0 SURVIVING, 0 HARD.
 - F-S009-2: CAM-0003 actual runtime interrupted at 37/54 status0 finite MILPs, 17 planned instances NOT run; planned final JSON never written (source has an additional potential NumPy JSON serialisation defect). Preserve raw transcription of stdout only, no retry.
 - F-S009-3: `git ls-remote` / full actual checkout blocked: `Could not resolve host: github.com`; local checker/unittests on actual repository checkout NOT_RUN. Later hosted governance checks assess FORMAT not mathematical claims.
 - F-S009-4: Native deep two-pass OEIS / arXiv full corpus / MO-MSE / books / AMM-MM / OPG-Erdos searches incomplete/UNKNOWN, not false zero results. Z2 signed planar results not equivalent to Z3.
+
+
+## S010 — 2026-10-13
+- F-S010-1 / **PERMANENT CLOSE** of S009 F-S009-1: the odd-majority interior grid case is NOT unresolved. Explicit universal horizontal triple + two genuine exterior boundary monomers + dominoes reaches (m²+3)/2 for both i,j odd and i,j even (CLM-0071). It is KILLED_EASY, not a new difficult question. Retain historical S009 failure text unchanged for provenance.
+- F-S010-2 / **CORRECTION**: S009 even-case supposed sharp configuration said 'exterior singleton'; the correct sharp configuration has 0 original cells assigned to exterior; otherwise 2×(F/2) bounded cells would exceed F. No change to the even-grid exact optimum.
+- F-S010-3 / **UNRESOLVED PRIORITY**: exact historical novelty and complete source-native literature coverage not established; indexing gap UNKNOWN. This has no effect on the easy-kill decision.
+- F-S010-4 / **NO NEW CAM**: CAM-0003 stays FAILED/PARTIAL at 37 of 54, original script's possible NumPy serialisation issue retained; nothing silently rerun.
+- F-S010-5 / **RUNTIME BLOCKER**: true checkout inaccessible due to DNS failure for github.com, so local checker and unittest NOT_RUN. Hosted format CI (if it runs) must not be labelled mathematical verification.

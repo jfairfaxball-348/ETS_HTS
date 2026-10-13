@@ -29,3 +29,7 @@ Phase 1 remains **OPEN_REGENERATION_ZERO_SURVIVORS**; 110 CND, 109 killed, one G
 
 ## S009 — 2026-10-13
 Phase 1 **OPEN_REGENERATION_ZERO_SURVIVORS**: 110 CND, 109 killed, 1 GENERATED (CND-0109), zero TRIAGED/SURVIVING/HARD/selected. Phase 2 NOT_OPEN_NO_SURVIVORS, native novelty resources UNKNOWN/incomplete. Phase 3 NOT_OPEN without two independent failed attacks and external difficulty evidence. Gates 4–6 OWNER_GATED. CAM-0003 FAILED/PARTIAL, 37/54 finite optimal outputs. No mathematical confidence is supplied by record-format CI.
+
+
+## S010 — 2026-10-13
+Phase 1 **OPEN_REGENERATION_ZERO_SURVIVORS**. Complete sharp formula for CND-0109 (CLM-0071) kills the sole GENERATED candidate: total 110 CND, 110 KILLED, GENERATED0, TRIAGED0, SURVIVING0, HARD0, selected0. Phase2 NOT_OPEN_NO_SURVIVORS and full source-native novelty still UNKNOWN/incomplete; phase3 NOT_OPEN, no independent difficulty certificate; gates4–6 OWNER_GATED. CAM-0003 remains FAILED/PARTIAL 37/54; zero new mathematical campaigns. Hosted record CI cannot demonstrate proof correctness, novelty or priority.
