@@ -1,0 +1,24 @@
+# S024 — original owner invocation and live prompt
+
+Owner invocation, 2026-10-14 Europe/London:
+
+> run this session; [https://github.com/jfairfaxball-348/ETS_HTS/blob/main/authoritative/NEXT_SESSION_PROMPT.md](https://github.com/jfairfaxball-348/ETS_HTS/blob/main/authoritative/NEXT_SESSION_PROMPT.md)
+
+> Make this the last audit. If it survives, let's move to formalisation
+
+The second instruction supplies the owner's final-audit priority and a conditional formalisation handoff, NOT permission to execute S025 during S024.
+
+Live NEXT_SESSION_PROMPT.md at entry main 4f154b1a85748ac710e7c833248e54cccddd6e41, source blob 57a1db91389de4a01af1b7853e6c84b3d295ccd4:
+
+---
+
+# S024 — FUTURE / UNEXECUTED: remaining PRIOR-ART access and owner priority decision, Lean still blocked
+
+**FUTURE / UNEXECUTED.** Only a NEW explicit owner invocation in a NEW ETS_HTS conversation authorises exactly S024. S023 verdict INCONCLUSIVE_ACCESS_OR_COVERAGE did NOT clear priority. S024 is NOT a Lean session and no additional session is authorised.
+
+Target ONLY remaining gaps: (1) lawful full original journal paper Ábrego et al 2011 DOI 10.1016/j.comgeo.2010.11.003, Bose–Gudmundsson–Morin 2004 DOI 10.1016/j.comgeo.2004.01.003, Finlayson–Bhattacharya CCCG 1992 original pages, and their relevant original theorems/bibliography; (2) native arXiv corpus full-text, OEIS keyword and terms where meaningful, citation graphs Crossref/OpenAlex/Semantic Scholar/Scholar, zbMATH/MathSciNet if accessible; venue 2025–26 and classical references; (3) hostile formal two-way subsumption of CLM0099, CLM0102, CLM0107 and logical CLM0108, translating ellipse r bound into eccentricity e. Preserve access UNKNOWN where blocked, search logs literal, no phantom native counts. S023 already PROOF_INSPECTED full 1987 Levcopoulos–Lingas original; do not redo blindly.
+
+Produce ONE exact novelty verdict with historical source evidence; never infer first discovery from absent search hits. Only a genuinely substantiated CONDITIONAL_NOVELTY_SUPPORTED may stage a FUTURE S025 Lean blueprint and require fresh owner invocation. Otherwise keep Lean blocked and state specifically which original-source gates remain or seek an owner priority decision to pause/redirect. No S025 execution. Do not extend ellipse theorem or numerical R, create CND/CAM/CLM, write paper, start Lean/Palomar, publish or contact researchers.
+
+Reconstruct live main SHA/tree, S023 authored branch commit/PR/normal two-parent merge/checks; read STATE/AGENTS/START_HERE/protocols/ledgers and S022/S023 audit files plus S020/S021 original proof. Exactly one isolated branch, one authored commit, ordinary PR and GitHub two-parent merge if available, verify main. Local checker/tests only PASS on an actual checkout. Preserve CND131 all killed, CLM108, CAM10, zero survivors; SRC count after S023 expected 87; detached S016 CAM8/9 and prior failures unmodified.
+

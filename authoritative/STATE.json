@@ -3,9 +3,9 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S023 source-gap novelty review INCONCLUSIVE; S024 priority/source decision BEFORE Lean",
-  "last_completed_session": "S023",
-  "next_session": "S024",
+  "phase_name": "S024 FINAL bounded prior-art audit CONDITIONAL_NOVELTY_SUPPORTED; S025 Lean formalisation queued (not authorised)",
+  "last_completed_session": "S024",
+  "next_session": "S025",
   "next_session_authorised": false,
   "candidate_count": 131,
   "source_count": 87,
@@ -23,7 +23,10 @@
   "surviving_count": 0,
   "triaged_count": 0,
   "kill_count": 131,
-  "remote_sha_policy": "S024 must independently inspect live main, S023 authored sole-parent commit, ordinary PR and verified ordered two-parent merge/tree; all S023 exit SHAs historical.",
-  "note": "S023 2026-10-14 exactly INCONCLUSIVE_ACCESS_OR_COVERAGE: full 1987 Levcopoulos–Lingas original inspected and SRC0084 upgraded PROOF_INSPECTED; new original 2026 ICALP paper SRC0087 STATEMENT_INSPECTED, SRC87 total. Full original 2011 Ábrego, 2004 Bose-Gudmundsson-Morin, 1992 Finlayson-Bhattacharya remain inaccessible; native citation, OEIS, arXiv full-text and broader venue/old-book coverage UNKNOWN. No exact/equivalent/stronger prior theorem found among actually inspected pages, no historical novelty clearance. Lean/Palomar/manuscript/outreach remain BLOCKED; S024 FUTURE targeted source-priority decision, fresh invocation required. CND131 all killed, CLM108, CAM10, zero survivors; original CAM8/9 archival exception OFF GitHub, CAM3/5 failures CAM10 pseudo-witnesses untouched.",
-  "generated_count": 0
+  "remote_sha_policy": "S025 independently reconstruct S024 authored sole-parent commit, PR, ordered two-parent merge/main tree from live GitHub; S024 entry was main 4f154b1a85748ac710e7c833248e54cccddd6e41",
+  "note": "S024 final bounded novelty decision: 2011 Ábrego complete author manuscript inspected at relevant 2-NNG proof pages (SRC0086 upgraded to PROOF_INSPECTED for author's version), NO equivalent or stronger prior result located among inspected sources. 2004 ordered theta and 1992 proceedings full original proofs and native citation/keyword indexes remain UNKNOWN. Conditional only: NO historical first-discovery certificate, NO assertion R sharp or numerically novel. S021 internal proof audit pass retained. Owner explicitly ends repeated novelty sessions and queues FUTURE S025 Lean proof ONLY; separate invocation needed. No CND/CLM/CAM new: CND131 all killed, SRC87 CLM108 CAM10, zero surviving OPEN-PROBLEM candidates; S016 detached CAM8/9, failed CAM3/5 and float CAM10 preserved. No actual Lean/Palomar/manuscript/outreach.",
+  "generated_count": 0,
+  "novelty_verdict": "CONDITIONAL_NOVELTY_SUPPORTED",
+  "final_novelty_audit": "S024",
+  "formalisation_status": "FUTURE_S025_OWNER_GATED_NOT_STARTED"
 }
