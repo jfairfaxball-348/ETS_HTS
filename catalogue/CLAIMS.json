@@ -1404,6 +1404,34 @@
       "cam_ids": [],
       "justification": "If infinitely many cardinalities were <=N, one fixed n in {5,...,N} occurs along a subsequence; CLM-0103 supplies epsilon_n>0 excluding those bad sets once r_j-1<epsilon_n. Contradiction. n<=4 impossible by CLM-0096. This logical corollary is conditional on the existence of bad sets at those ratios; it does not claim all noncircles fail.",
       "limitations": "No quantitative growth lower bound for obstruction size and no claim that bad configurations actually exist for r arbitrarily near 1."
+    },
+    {
+      "id": "CLM-0105",
+      "statement": "For each fixed n>=3 the set B_n of squared ellipse aspect ratios t>=1 admitting a distinct n-site counterexample to crossing-free nearest-two-predecessor insertion is Q-semialgebraic. Its finite boundary points, including the infimum if B_n is nonempty, are real algebraic.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0079"
+      ],
+      "candidate_ids": [
+        "CND-0131"
+      ],
+      "cam_ids": [],
+      "justification": "Write physical ellipse sites as (sqrt(t)u_i,v_i), where u_i²+v_i²=1 and sites are distinct. Squared distances t(u_i-u_j)²+(v_i-v_j)² are rational polynomials, lex distance-tie rule compares (u_i,v_i), and signs of orientation determinants are unchanged by positive stretching. For each of n! arrival orders, finite pair-selection cases and no-edge-crossing conditions are Boolean polynomial tests. Quantify existentially over all sites satisfying the conjunction that every order crosses. Tarski-Seidenberg and effective real quantifier elimination imply a Q-semialgebraic subset of t-axis with algebraic finite endpoints. See S019/MATHEMATICS.md.",
+      "limitations": "No CAD computation, explicit endpoint polynomial, monotonicity, attained infimum, numerical safe interval, all-n classification or novel quantifier-elimination method."
+    },
+    {
+      "id": "CLM-0106",
+      "statement": "Assuming CLM-0103, for each supplied fixed n>=3 there exists a terminating exact algorithm returning a positive rational epsilon_n such that all n-site ellipse configurations are safe whenever 1<=a/b<=1+epsilon_n.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0079"
+      ],
+      "candidate_ids": [
+        "CND-0131"
+      ],
+      "cam_ids": [],
+      "justification": "For m=1,2,... apply exact real quantifier elimination to decide whether the CLM-0105 formula for B_n has a solution in t∈[1,(1+1/m)²]. At the first UNSAT result output epsilon_n=1/m. Every step is decidable over rationals. CLM-0103 grants an open n-specific safe aspect neighbourhood, so a sufficiently large m has its full closed interval inside the safe neighbourhood; thus the search halts. See S019/MATHEMATICS.md.",
+      "limitations": "The algorithm was NOT executed; no actual numerical epsilon_n, explicit function of n or runtime, no uniform bound across unbounded n and no nearcircle obstruction family."
     }
   ]
 }

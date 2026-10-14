@@ -3,13 +3,13 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S018: gap-free short-arc theorem and non-effective fixed-n near-circle stability; global ellipse classification unresolved",
-  "last_completed_session": "S018",
-  "next_session": "S019",
+  "phase_name": "S019 effective fixed-cardinality ellipse stability; all-cardinality classification unresolved",
+  "last_completed_session": "S019",
+  "next_session": "S020",
   "next_session_authorised": false,
   "candidate_count": 131,
-  "source_count": 78,
-  "claim_count": 104,
+  "source_count": 79,
+  "claim_count": 106,
   "campaign_count": 10,
   "gate_status": {
     "0": "CLOSED_ADMINISTRATIVE",
@@ -23,7 +23,7 @@
   "surviving_count": 0,
   "triaged_count": 0,
   "kill_count": 130,
-  "remote_sha_policy": "S019 must reconstruct S018 authored sole-parent commit, PR, hosted checks and ordered two-parent nonforce merge from LIVE remote; never backfill outgoing hashes.",
-  "note": "CND131:130 killed,1 GENERATED,0 TRIAGED/SURVIVING. CLM102 short-arc extension theorem; CLM103 for every fixed n there is an ellipse aspect neighbourhood of 1 with no bad n-site sets; CLM104 bounded counterexamples cannot persist as r→1. SRC78 CAM10 unchanged; no S018 numerical CAM. Classification, full native novelty and independent difficulty unresolved; S016 original CAM8/9 detached archive not hosted.",
+  "remote_sha_policy": "S020 independently reconstruct S019 authored commit, ordinary PR, observed hosted checks, ordered two-parent nonforce merge and tree from LIVE main.",
+  "note": "CND131: killed130 generated1 triaged0 surviving0; SRC79 CLM106 CAM10. Per fixed n: semialgebraic bad squared ratios and terminating CAD rational-epsilon algorithm, NOT executed; no numerical epsilon_n or n-uniform result. Native novelty/hardness incomplete; S016 CAM8/9 originals detached and old CAM10 pseudo-witness invalid.",
   "generated_count": 1
 }

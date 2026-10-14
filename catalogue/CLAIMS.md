@@ -142,3 +142,7 @@
 - **CLM-0103 PROGRAMME_PROVED**: for each fixed n there exists non-effective epsilon_n>0 such that all n-site configurations on ellipses of ratio <1+epsilon_n admit NG orders, even with near-coalescence. Compactness, cluster peeling, flanking-pair derivative, and S017 stability; full hypotheses/proof in sessions/S018/MATHEMATICS.md.
 - **CLM-0104 PROGRAMME_PROVED**: every putative counterexample sequence with r down to 1 has unbounded cardinality n, conditional on such sequences existing. Neither a uniform eccentricity interval nor circle-only classification follows.
 External review and originality are NOT established. SRC78 and CAM10 unchanged; CND-0131 remains GENERATED.
+
+## S019 (programme self-proofs)
+- **CLM-0105 PROGRAMME_PROVED**: fixed-n ellipse counterexample squared-ratio set B_n is Q-semialgebraic with algebraic finite endpoints by exact polynomial distance, tie, crossing and quantifier-elimination encoding (SRC-0079). B_n may be empty/nonmonotone, its infimum need not be attained.
+- **CLM-0106 PROGRAMME_PROVED**: provably terminating exact search using CAD over [1,(1+1/m)²] for m=1,2,... returns a rational safe epsilon_n=1/m, CONDITIONAL on S018 CLM-0103. Algorithm NOT executed, no numerical value or all-n bound, no new CAM.

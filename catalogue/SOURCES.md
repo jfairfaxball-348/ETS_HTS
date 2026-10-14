@@ -109,3 +109,6 @@
 
 - **SRC-0078** — Julián Aguirre and Mathematics Stack Exchange contributors (2011), [ellipse equal-spacing and nearest-neighbour discussion](https://math.stackexchange.com/questions/72555/generating-coordinates-for-n-points-on-the-circumference-of-an-ellipse-with-fi). STATEMENT_INSPECTED 2026-10-14. Related eccentric-ellipse nearest neighbours, **not** a statement of CND-0131. SRC-0075 already covers the original 2024 nearest-*one* predecessor literature; no misleading two-nearest equivalence.
 
+
+## S019
+- **SRC-0079** Adam Strzeboński (2016), *Cylindrical algebraic decomposition using local projections*, Journal of Symbolic Computation 76, 36–64, https://doi.org/10.1016/j.jsc.2015.11.018. **ABSTRACT_INSPECTED** publisher abstract/introduction 2026-10-14. CAD is existing mathematics, not claimed original; no proof of ellipse NG transcribed from this source.

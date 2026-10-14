@@ -8519,12 +8519,18 @@
           "test": "S018_global_classification",
           "status": "UNRESOLVED",
           "detail": "No global r>1 exact counterexample family, no explicit epsilon_n, no universal fixed interval of safe ellipses, no native two-pass novelty/independent hardness evidence."
+        },
+        {
+          "test": "S019_exact_effectivity",
+          "status": "PROVED_ALGORITHM_NOT_EXECUTED",
+          "detail": "CLM105 rational-semialgebraic fixed-n bad aspect locus; CLM106 provably terminating, exact rational epsilon_n extraction by CAD conditional on CLM103. No actual epsilon_n, no n-uniform theorem, global CND unresolved."
         }
       ],
       "kill_record": null,
       "source_ids": [
         "SRC-0075",
-        "SRC-0078"
+        "SRC-0078",
+        "SRC-0079"
       ],
       "claim_ids": [
         "CLM-0095",
@@ -8534,7 +8540,9 @@
         "CLM-0101",
         "CLM-0102",
         "CLM-0103",
-        "CLM-0104"
+        "CLM-0104",
+        "CLM-0105",
+        "CLM-0106"
       ],
       "cam_ids": [
         "CAM-0008",
@@ -8553,7 +8561,7 @@
         "low_degeneracy_risk": 3,
         "total": 60
       },
-      "uncertainty": "S018 proves gap-free short-arc NG sufficiency and non-effective safe eccentricity for each fixed cardinality n, but does NOT resolve all-cardinality circle-only classification. If obstructions persist as r approaches 1, their n must grow. No exact near-circle negative certificate, quantitative epsilon_n, external review, native deep novelty or independent research-hardness; S016 CAM8/9 originals still detached."
+      "uncertainty": "S019 CLM105/106 show conditional algorithmic effectivity for each fixed n, with no executed CAD or explicit n-dependent numerical bound. Inf_n epsilon_n may be zero; a noncircle bad family n(r)->infinity is not constructed. Native novelty/independent difficulty still incomplete; S016 original CAM8/9 archive still detached."
     }
   ]
 }
