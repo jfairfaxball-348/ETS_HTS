@@ -205,10 +205,6 @@ Plain: Can the nearest-two growing network always have only a fixed multiple of 
 
 Evidence: Strict-scale two-phase construction and generic perturbation gives m² crossings on 2m+4 sites; hence Θ(n²) worst case. Novelty grade: KNOWN_VARIANT. Claim: CLM-0090. Scope: KNOWN_VARIANT records nearby standard context, not an exact historical match. Decisive elementary kill suffices; no originality asserted.
 
-### CND-0128 — GENERATED
+### CND-0128 — KILLED_FALSE/DEGENERATE (S015)
 
-For every n>=3 and every set S of n distinct points in the Euclidean plane with no three collinear, does there exist a permutation such that starting with the triangle on the first three sites and joining every later site to its nearest two previous sites, retaining all old edges, yields no proper crossings? All sites remain fixed, and ties are broken by lexicographic coordinates.
-
-Plain: Can every collection of dots, with no three in a line, be added in some order so that joining each new dot to the nearest two earlier dots never crosses an old line?
-
-Evidence: Unresolved, GENERATED only; CAM-0004 covers selected finite inputs. Priority and hardness gates incomplete. Novelty grade: NOT_SEARCHED. Claim: CLM-0091. Scope: NOT_SEARCHED means exact source-native priority not cleared; broad searches and nearby source inspection are logged. GENERATED is neither TRIAGED/SURVIVING nor certified open/hard/novel.
+For every finite point set in general position, can some nearest-two-predecessor arrival order produce no crossing? **NO.** Convex six-integer-site certificate A=(-40,400), B=(-22,121), C=(-20,100), D=(-4,4), E=(24,144), F=(28,196). Every maximal plane graph on these convex sites must retain all six hull sides, forcing the last vertex's two nearest other sites to be precisely its two hull neighbours. None qualifies (CLM-0092/0093). Independently all 720 orders cross (CAM-0007, CLM-0094); CAM-0005's earlier false obstruction was discarded with immutable failure record, CAM-0006 correctly discovered a harder-coordinate example. KILLED_FALSE/DEGENERATE, NOT_SEARCHED for historical originality; one false instance is conclusive regardless of novelty search. **No new research problem selected.**

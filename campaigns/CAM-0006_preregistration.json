@@ -1,0 +1,21 @@
+{
+  "id": "CAM-0006",
+  "candidate_ids": [
+    "CND-0128"
+  ],
+  "claim_ids": [],
+  "purpose": "Correct CAM-0005 bug (candidate point erroneously included in its own nearest-neighbor list); reattempt necessary convex-ear obstruction and independently cross-check any candidate via exact chronological DFS.",
+  "bounds": "Seed 150128; n=4..12; max 500 constructed integer sets per n, three generator families; distinct/no-collinear/all vertices extreme; exact nearest-two excludes the candidate vertex. 75-second checked timeout; at most 300000 DFS nodes for each found no-ear set.",
+  "code_version": "campaigns/nearest_two_adversarial_fixed.py frozen before execution",
+  "code_hash": "sha256:7331053878d247d802cf12f0e64185cecfa437425762850a692dc1c93e7bb422",
+  "input_hash": "sha256:7331053878d247d802cf12f0e64185cecfa437425762850a692dc1c93e7bb422 (all parameters in source)",
+  "environment": "Linux x86_64 CPython 3.13.5, stdlib only",
+  "stopping_rule": "Stop at first convex candidate with no hull-neighbour nearest-two vertex, or all n=4..12 sets completed, or 75 elapsed seconds checked after each tested sample. Do not reinterpret a CAPPED DFS as infeasible.",
+  "output_paths": [
+    "campaigns/CAM-0006_preregistration.json",
+    "campaigns/CAM-0006_raw.json",
+    "campaigns/nearest_two_adversarial_fixed.py"
+  ],
+  "status": "REGISTERED",
+  "preregistered_at_utc": "2026-10-14T08:21:12Z"
+}

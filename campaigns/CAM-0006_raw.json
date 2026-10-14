@@ -1,0 +1,144 @@
+{
+  "seed": 150128,
+  "trials_per_size_cap": 500,
+  "n_range": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "generated": 1346,
+  "convex_general": 1263,
+  "convex_no_ear": 1,
+  "exact_solver_calls": 1,
+  "witness": {
+    "points": [
+      [
+        -388,
+        15055249
+      ],
+      [
+        -198,
+        3919638
+      ],
+      [
+        -195,
+        3802048
+      ],
+      [
+        -21,
+        43748
+      ],
+      [
+        235,
+        5522754
+      ],
+      [
+        291,
+        8468634
+      ]
+    ],
+    "ear_set": [],
+    "order": null,
+    "nodes": 53,
+    "n": 6,
+    "is_convex": true,
+    "checked": true
+  },
+  "illustrations": [
+    {
+      "n": 4,
+      "points": [
+        [
+          -120,
+          1440743
+        ],
+        [
+          -75,
+          563461
+        ],
+        [
+          -32,
+          102740
+        ],
+        [
+          194,
+          3763100
+        ]
+      ],
+      "ears": [
+        1
+      ]
+    },
+    {
+      "n": 5,
+      "points": [
+        [
+          -384,
+          14744917
+        ],
+        [
+          -242,
+          5856298
+        ],
+        [
+          -122,
+          1489295
+        ],
+        [
+          -54,
+          291103
+        ],
+        [
+          70,
+          490064
+        ]
+      ],
+      "ears": [
+        3
+      ]
+    },
+    {
+      "n": 6,
+      "points": [
+        [
+          -213,
+          1360571
+        ],
+        [
+          -151,
+          683038
+        ],
+        [
+          -142,
+          604891
+        ],
+        [
+          334,
+          3346959
+        ],
+        [
+          338,
+          3426908
+        ],
+        [
+          392,
+          4609702
+        ]
+      ],
+      "ears": [
+        1,
+        4
+      ]
+    }
+  ],
+  "elapsed_s": 0.028579315999991195,
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "note": "No-ear convex witness directly disproves all-arrival-order possibility if correct; solver is corroboration. Finite no-witness does not prove universal."
+}

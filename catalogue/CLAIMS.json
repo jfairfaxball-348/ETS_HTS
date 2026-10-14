@@ -1233,6 +1233,46 @@
       ],
       "justification": "Preregistered exact integer predicates and distance ties, DFS and whole-graph permutation validator. All 108 no-three-collinear subsets of 3x3 grid, sizes4..6, and 30 seeded samples each n4..8. Raw CAM-0004 file includes every input and witness; no statement about all plane point sets.",
       "limitations": "S014 screening only. Proofs self-audited, not independently refereed or formalised; finite evidence restricted to raw inputs. No novelty or research-hardness certificate."
+    },
+    {
+      "id": "CLM-0092",
+      "statement": "For a set of n>=3 strictly convex-position sites, a crossing-free retained nearest-two NG arrival order necessarily has a last vertex whose two nearest other sites are its two convex-hull neighbours.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0128"
+      ],
+      "cam_ids": [],
+      "justification": "NG has exactly 2n-3 distinct edges. A plane straight-line graph on n convex vertices has at most 2n-3 edges (triangulation of the convex polygon). Every hull-side edge must be present: otherwise adding its missing boundary segment creates no crossing and violates the bound. The final inserted vertex has exactly its two predecessor edges, so its two incident mandatory hull sides must be exactly those edges. Thus its top-two Euclidean neighbours within S\\{v} must be the adjacent hull vertices. See S015/MATHEMATICS.md.",
+      "limitations": "Self-contained elementary conditional lemma, human and exact-arithmetic checked; assumes every point is a strict hull vertex, noncollinearity, retained edges, no overlap. Necessary, NOT sufficient; no novelty claim."
+    },
+    {
+      "id": "CLM-0093",
+      "statement": "The convex integer points A=(-40,400), B=(-22,121), C=(-20,100), D=(-4,4), E=(24,144), F=(28,196) are a counterexample to CND-0128: all six sites are extreme and no arrival order yields a plane NG drawing.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0128"
+      ],
+      "cam_ids": [
+        "CAM-0007"
+      ],
+      "justification": "The sites are ordered along y=x^2/4 with increasing x, so lie in strict convex position with no collinear triples. Squared distance arithmetic yields nearest-two other sites A:(F,E), B:(C,E), C:(B,E), D:(C,B), E:(B,F), F:(E,B). None equals its hull neighbours: A:(F,B),B:(A,C),C:(B,D),D:(C,E),E:(D,F),F:(E,A). By CLM-0092 an all-plane order is impossible. Complete distances, orientations, and direct proof in sessions/S015/MATHEMATICS.md.",
+      "limitations": "Decisively false universal question only; no novelty, prior-art priority or minimum-obstruction-size claim. Arithmetic independently checked by CAM-0007."
+    },
+    {
+      "id": "CLM-0094",
+      "statement": "For the six explicit convex integer sites, all 720 arrival permutations produce at least one proper crossing under exact nearest-two retention.",
+      "status": "COMPUTED_EXACT",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0128"
+      ],
+      "cam_ids": [
+        "CAM-0007"
+      ],
+      "justification": "CAM-0007 independently enumerated all 6!=720 orders, rebuilt graph from the two nearest previous sites with exact integer squared distances, and tested disjoint edge pairs using exact orientation products. 720 had proper crossings; zero crossing-free. CAM-0006 separately found a six-site convex no-ear example in its frozen bounded search; CAM-0005 is invalid due self-neighbour inclusion.",
+      "limitations": "This computer enumeration is redundant confirmation of CLM-0093's mathematical proof; finite one-set scope only. Program checked by run, not formalised/peer reviewed."
     }
   ]
 }

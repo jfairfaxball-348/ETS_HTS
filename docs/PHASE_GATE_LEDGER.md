@@ -50,3 +50,7 @@ Phase 1 OPEN_REGENERATION_ZERO_SURVIVORS: 119 CND all KILLED, GENERATED0 TRIAGED
 ## S014 — 2026-10-14
 
 Phase1 generation/triage remains open.128candidates,127killed,1GENERATED,0TRIAGED/SURVIVING. Gate2 NOT_OPEN_NO_SURVIVORS;selection/publication/formalisation/outreach owner-gated. S014 executed by explicit URL invocation;S015 FUTURE/UNEXECUTED requires fresh invocation.
+
+## S015 — 2026-10-14
+
+Phase1 OPEN_REGENERATION_ZERO_SURVIVORS: 128 candidates all KILLED, no GENERATED/TRIAGED/SURVIVING/HARD/selected. CND-0128 false by elementary finite convex witness CLM-0092/0093. Phase2 NOT_OPEN_NO_SURVIVORS, source-native coverage incomplete; phase3 NOT_OPEN; phases4–6 OWNER_GATED. CAM7 includes preserved CAM-0005 defect, CAM-0006/7 certification, older CAM-0003 failed partial. Hosted format checks never certify mathematics.

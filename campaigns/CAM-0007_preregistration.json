@@ -1,0 +1,21 @@
+{
+  "id": "CAM-0007",
+  "candidate_ids": [
+    "CND-0128"
+  ],
+  "claim_ids": [],
+  "purpose": "Independently certify simplified six-integer-point convex counterexample: strict hull order, unique triples, nearest-two candidates, and all 720 possible arrival orders.",
+  "bounds": "One preselected six-site set A=(-40,400),B=(-22,121),C=(-20,100),D=(-4,4),E=(24,144),F=(28,196), all 6!=720 permutations; exact Python integers for distances/orientation; deterministic coordinate tie break.",
+  "code_version": "campaigns/nearest_two_certificate.py frozen before execution",
+  "code_hash": "sha256:dab713cea4a1c57abf9a6742b682ce7e323c0be1184b631324178921bf2262ec",
+  "input_hash": "sha256:dab713cea4a1c57abf9a6742b682ce7e323c0be1184b631324178921bf2262ec (all inputs hardcoded in frozen source)",
+  "environment": "Linux x86_64, CPython 3.13.5, stdlib only",
+  "stopping_rule": "Check all 720 permutations or abort on an asserted geometry/certification mismatch; no sample search, no retries or bounds expansion.",
+  "output_paths": [
+    "campaigns/CAM-0007_preregistration.json",
+    "campaigns/CAM-0007_raw.json",
+    "campaigns/nearest_two_certificate.py"
+  ],
+  "status": "REGISTERED",
+  "preregistered_at_utc": "2026-10-14T08:24:24Z"
+}

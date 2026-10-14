@@ -8255,7 +8255,7 @@
       "origin_mechanism": "S014 owner triangle insertion steer: optimised arrival order versus obligatory metric edges",
       "attribution": "John Fairfax-Ball, 2026-10-14 evolving triangle idea; standard proximity and hull literature attributed separately.",
       "quantifiers": "For every n>=3 and every set S of n distinct points in the Euclidean plane with no three collinear, does there exist a permutation such that starting with the triangle on the first three sites and joining every later site to its nearest two previous sites, retaining all old edges, yields no proper crossings? All sites remain fixed, and ties are broken by lexicographic coordinates.",
-      "status": "GENERATED",
+      "status": "KILLED_FALSE/DEGENERATE",
       "novelty_grade": "NOT_SEARCHED",
       "difficulty_evidence": [
         {
@@ -8287,35 +8287,50 @@
           "test": "literature",
           "status": "TWO_PASS_INCOMPLETE",
           "detail": "Nearby original sources inspected; source-native database/book gaps UNKNOWN; no exact priority clearance. See S014 NOVELTY_QUERIES.md."
+        },
+        {
+          "test": "decisive_counterexample",
+          "status": "FALSE_PROVED",
+          "detail": "Six-point strict convex configuration eliminates every potential last vertex by exact nearest-two hull-ear certificate; 720 permutations independently exhaustively verified."
         }
       ],
-      "kill_record": null,
+      "kill_record": "S015 counterexample proved: strict convex six-point set A=(-40,400),B=(-22,121),C=(-20,100),D=(-4,4),E=(24,144),F=(28,196), with no hull vertex whose two nearest other sites are its two hull neighbours. Any crossing-free NG on a convex n-gon must have all hull edges (2n-3 maximal outerplanar edges), and its last vertex must use both hull neighbours, contradiction. CLM-0092/0093; exact independent CAM-0007 verifies 720/720 orders cross. One false instance kills universal statement; no novelty assertion.",
       "source_ids": [
         "SRC-0071",
         "SRC-0072",
         "SRC-0073",
-        "SRC-0074"
+        "SRC-0074",
+        "SRC-0075",
+        "SRC-0076",
+        "SRC-0077"
       ],
       "claim_ids": [
-        "CLM-0091"
+        "CLM-0091",
+        "CLM-0092",
+        "CLM-0093",
+        "CLM-0094"
       ],
       "cam_ids": [
-        "CAM-0004"
+        "CAM-0004",
+        "CAM-0005",
+        "CAM-0006",
+        "CAM-0007"
       ],
       "scoring": {
         "statement_length": 10,
         "prerequisites": 10,
         "naturalness": 12,
         "sharpness": 10,
-        "difficulty_evidence": 1,
-        "novelty_audit": 1,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
         "connections": 8,
         "computational_testability": 7,
         "low_degeneracy_risk": 6,
-        "total": 65
+        "total": 63,
+        "veto": "FALSE_STATEMENT"
       },
       "screened_as_top_ten": false,
-      "uncertainty": "NOT_SEARCHED means exact source-native priority not cleared; broad searches and nearby source inspection are logged. GENERATED is neither TRIAGED/SURVIVING nor certified open/hard/novel."
+      "uncertainty": "Universal conjecture definitively FALSE by elementary finite certificate; literature originality and minimum size not determined, and no new open problem is claimed."
     }
   ]
 }

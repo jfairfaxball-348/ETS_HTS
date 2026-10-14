@@ -96,6 +96,72 @@
       "status": "COMPLETED",
       "preregistered_at_utc": "2026-10-14T07:50:52.223324+00:00",
       "result": "258/258 listed sets feasible;198 independently checked;124 lex-order failures; finite only"
+    },
+    {
+      "id": "CAM-0005",
+      "candidate_ids": [
+        "CND-0128"
+      ],
+      "claim_ids": [],
+      "purpose": "Preregistered search for convex sets lacking a necessary last-vertex ear; DEFECT: nearest-two included queried vertex itself.",
+      "bounds": "Seed 150128; 500 generated samples each n4..12; initial defect observed on first n4 sample.",
+      "code_version": "campaigns/nearest_two_adversarial.py, frozen before first run",
+      "code_hash": "sha256:6737ade5cb7bca7d481332a0ade39885ca679b52805b5c4ff31240e9fca11c4f",
+      "input_hash": "sha256:6737ade5cb7bca7d481332a0ade39885ca679b52805b5c4ff31240e9fca11c4f",
+      "environment": "Linux x86_64, CPython 3.13.5, stdlib",
+      "stopping_rule": "Stop first convex no-ear candidate or cap.",
+      "output_paths": [
+        "campaigns/CAM-0005_preregistration.json",
+        "campaigns/nearest_two_adversarial.py",
+        "campaigns/CAM-0005_raw.json"
+      ],
+      "status": "FAILED",
+      "result": "False no-ear because self was included in nearest-neighbour list. Independent DFS produced valid n=4 order [0,2,3,1]. Original frozen files preserved, never cite false result."
+    },
+    {
+      "id": "CAM-0006",
+      "candidate_ids": [
+        "CND-0128"
+      ],
+      "claim_ids": [],
+      "purpose": "Corrected independent nearest-two convex-ear obstruction search.",
+      "bounds": "Seed150128, 500 samples each n4..12, stop first no-ear convex sample.",
+      "code_version": "campaigns/nearest_two_adversarial_fixed.py, frozen before run",
+      "code_hash": "sha256:7331053878d247d802cf12f0e64185cecfa437425762850a692dc1c93e7bb422",
+      "input_hash": "sha256:7331053878d247d802cf12f0e64185cecfa437425762850a692dc1c93e7bb422",
+      "environment": "Linux x86_64, CPython 3.13.5 stdlib",
+      "stopping_rule": "First no-ear convex set, completion or 75sec after each set; DFS 300000 nodes maximum.",
+      "output_paths": [
+        "campaigns/CAM-0006_preregistration.json",
+        "campaigns/nearest_two_adversarial_fixed.py",
+        "campaigns/CAM-0006_raw.json"
+      ],
+      "status": "COMPLETED",
+      "result": "1346 generated,1263 strict-convex, first no-ear n6: (-388,15055249),(-198,3919638),(-195,3802048),(-21,43748),(235,5522754),(291,8468634). Independent DFS 53 nodes reports no order. Reduced exact example handled separately by CAM-0007."
+    },
+    {
+      "id": "CAM-0007",
+      "candidate_ids": [
+        "CND-0128"
+      ],
+      "claim_ids": [
+        "CLM-0093",
+        "CLM-0094"
+      ],
+      "purpose": "Independent exact integer six-point certificate and whole-graph order enumeration.",
+      "bounds": "Six fixed points A=(-40,400),B=(-22,121),C=(-20,100),D=(-4,4),E=(24,144),F=(28,196), all 720 orders.",
+      "code_version": "campaigns/nearest_two_certificate.py, frozen before run",
+      "code_hash": "sha256:dab713cea4a1c57abf9a6742b682ce7e323c0be1184b631324178921bf2262ec",
+      "input_hash": "sha256:dab713cea4a1c57abf9a6742b682ce7e323c0be1184b631324178921bf2262ec",
+      "environment": "Linux x86_64, CPython 3.13.5 stdlib",
+      "stopping_rule": "All 720 permutations or assertion failure, no search.",
+      "output_paths": [
+        "campaigns/CAM-0007_preregistration.json",
+        "campaigns/nearest_two_certificate.py",
+        "campaigns/CAM-0007_raw.json"
+      ],
+      "status": "COMPLETED",
+      "result": "Six strict convex vertices, no hull-neighbour nearest-two eligible last vertex. 720/720 permutations have proper crossings; zero feasible orders. Exact distance matrix and local orientation determinants in raw."
     }
   ]
 }

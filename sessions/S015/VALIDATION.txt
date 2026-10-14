@@ -1,0 +1,19 @@
+S015 validation ledger — initial precommit state 2026-10-14 UTC
+
+MATHEMATICAL CERTIFICATE (separate from governance):
+- CAM-0005 initial invalid nearest-self test: captured and preserved as FAILED; independent DFS gave n4 valid order.
+- CAM-0006 corrected prereg exact integer search executed in Linux CPython 3.13.5; 1346 generated, 1263 strict-convex, first n6 no-ear, 53-node DFS no order; raw archived.
+- CAM-0007 separately prereg integer certificate executed in Linux CPython 3.13.5; 6 strict convex, 6 nearest-two pairs checked, 720 permutations and 720 proper-crossing results; raw archived.
+- Proof of negative universal (S015/MATHEMATICS.md) is independently checkable via listed exact distance table. No outside refereeing or formalisation.
+
+GOVERNANCE ACTUAL-CHECKOUT COMMANDS:
+$ python scripts/check_scaffold.py
+Local repository checkout: NOT_RUN (container GitHub git access failed DNS for github.com).
+$ python -m unittest discover -s tests -v
+Local repository checkout: NOT_RUN (same DNS blocker).
+$ git diff --check
+Local repository checkout: NOT_RUN (same DNS blocker).
+
+GitHub PR Actions workflow uses actions/checkout and executes actual-checkout format validator and unittests. Runs, jobs and check results must be observed AFTER the atomic authored branch commit/PR. Do not backfill unobserved PASS into immutable precommit validation. CI validates RECORD FORMAT ONLY, never mathematical truth/hardness/novelty.
+
+Exact prereg sources and raw outputs immutable and included in session branch. S016 future/unexecuted.

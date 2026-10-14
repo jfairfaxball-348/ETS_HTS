@@ -98,3 +98,9 @@ DEC-0035: No mathematical CAM or external posting; native novelty UNKNOWN where 
 ## S014 — 2026-10-14
 
 DEC-0059:Preserve owner triangle insight,separate NG/SP/CH and straight-segment/ray cases. DEC-0060:Kill0125 nonadjacent nearest pair,0126 elementary affine arrangement,0127 quadratic retained crossings. DEC-0061:Keep0128 GENERATED only;258 easy finite inputs do not satisfy hardness or priority. DEC-0062:Preregister CAM-0004 before run,preserve CAM-0003. DEC-0063:Native source gaps UNKNOWN;actual checkout checker/tests and hosted CI format-only. S015 future owner-gated.
+
+## S015 — 2026-10-14
+
+DEC-0064: CND-0128 KILLED_FALSE/DEGENERATE by six-site strict convex exact counterexample; CLM-0092/0093 prove it without computation. Earlier CAM-0004 positive finite examples remain valid but not universal.
+DEC-0065: Retain preregistered CAM-0005 failure unchanged (self counted as neighbour). Correct CAM-0006 and independent CAM-0007 preserve original data and distinguish discovery from certification.
+DEC-0066: No newly generated candidate; false question does not satisfy programme survival, novelty or hardness gates. S016 FUTURE, owner-gated. No publication/Lean/Palomar/outreach.
