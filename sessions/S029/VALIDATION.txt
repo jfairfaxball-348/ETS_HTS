@@ -1,0 +1,19 @@
+S029 authored-time validation 2026-10-14
+entry main e617e52161e9084e43931755b1c20c0559886e17
+entry tree 77aecbb2365f1ba89e575b68592dae9bfb4ee26e
+S028 corrected authored 431a78866dde077ccb73773d2b734ec786543295
+S028 corrected parent 1112fe2ed0261fd3b3beea1d374ca0b0fc835bc7
+S028 original parent a164b4bb30de23d10ff231b63b399e3f054e1c2c
+S028 two-parent merge e617e52161e9084e43931755b1c20c0559886e17
+S028 authored tree / merge tree MATCH 77aecbb2365f1ba89e575b68592dae9bfb4ee26e
+S028 corrected Lean authored run 38610537245 job116012414378 SUCCESS
+S028 corrected governance run 38610537231 job116012413632 SUCCESS
+S029 local lake / lean NOT_INSTALLED
+S029 local git clone NOT_AVAILABLE (DNS fails)
+S029 lake build NOT_RUN locally
+S029 lake env lean ETSHTS.lean NOT_RUN locally
+S029 scripts/check_scaffold.py NOT_RUN locally
+S029 python unittest discover NOT_RUN locally
+S029 new source Lean proof terms AWAIT_HOSTED_CI
+S029 original five CLM Prop targets ALL_UNPROVED
+S029 other hosted jobs ABSENT_NOT_PASS until verified
