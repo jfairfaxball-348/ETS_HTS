@@ -7669,6 +7669,362 @@
       },
       "screened_as_top_ten": false,
       "uncertainty": "Killed; no two failed dissimilar attacks and no independent novelty/difficulty clearance."
+    },
+    {
+      "id": "CND-0120",
+      "exact_statement": "Does there exist a noncollinear triple A,B,C in Z^2 such that the three integers |A-B|^2, |B-C|^2, |C-A|^2 are n,n+1,n+2 in some order for a positive integer n?",
+      "plain_language_statement": "Can a triangle drawn between grid points have three squared side lengths that are consecutive whole numbers?",
+      "domain": "integer-grid geometry and arithmetic progression",
+      "origin_mechanism": "S013: couple Euclidean distance integrality with an arithmetic progression of squared lengths",
+      "attribution": "S013 owner direction for coupled mechanisms; classical sources attributed; no originality or open-status claim",
+      "quantifiers": "Does there exist a noncollinear triple A,B,C in Z^2 such that the three integers |A-B|^2, |B-C|^2, |C-A|^2 are n,n+1,n+2 in some order for a positive integer n?",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "Symbolic/source kill occurred before computation; no preregistered CAM-0004 and no numerical search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Translate A to 0 and let u=B-A,v=C-A, with squared lengths x=|u|^2,y=|v|^2,z=|u-v|^2. Then x+y-z=2u·v is even, so x+y+z is even. If {x,y,z}={n,n+1,n+2}, the sum is 3n+3: n must be odd. Every three consecutive integers starting with odd n contain an integer congruent to 3 mod 4, but an integer squared distance (p^2+q^2) can never be 3 mod 4. Contradiction. Independently Heron's identity gives 4 det(u,v)^2=3(n+1)^2-4, impossible modulo 3 (LHS square mod3, RHS 2 mod3)."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "ELEMENTARY_PROOF",
+          "detail": "Translate A to 0 and let u=B-A,v=C-A, with squared lengths x=|u|^2,y=|v|^2,z=|u-v|^2. Then x+y-z=2u·v is even, so x+y+z is even. If {x,y,z}={n,n+1,n+2}, the sum is 3n+3: n must be odd. Every three consecutive integers starting with odd n contain an integer congruent to 3 mod 4, but an integer squared distance (p^2+q^2) can never be 3 mod 4. Contradiction. Independently Heron's identity gives 4 det(u,v)^2=3(n+1)^2-4, impossible modulo 3 (LHS square mod3, RHS 2 mod3)."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "No probabilistic heuristic substitutes for the decisive proof or known formulation."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Direct identity, modular obstruction, or Pell construction resolves the question."
+        },
+        {
+          "test": "literature",
+          "status": "NOT_DEEP_SEARCHED",
+          "detail": "No complete native priority survey because mathematical proof already killed candidate."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-14",
+        "session": "S013",
+        "reason": "elementary parity and sums-of-two-squares obstruction: Translate A to 0 and let u=B-A,v=C-A, with squared lengths x=|u|^2,y=|v|^2,z=|u-v|^2. Then x+y-z=2u·v is even, so x+y+z is even. If {x,y,z}={n,n+1,n+2}, the sum is 3n+3: n must be odd. Every three consecutive integers starting with odd n contain an integer congruent to 3 mod 4, but an integer squared distance (p^2+q^2) can never be 3 mod 4. Contradiction. Independently Heron's identity gives 4 det(u,v)^2=3(n+1)^2-4, impossible modulo 3 (LHS square mod3, RHS 2 mod3).",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Self-contained symbolic argument; human self-audit only",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0081"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 10,
+        "naturalness": 11,
+        "sharpness": 11,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 8,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 50
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED; no two genuinely failed dissimilar elementary attacks, no independent evidence of an unresolved research problem. External theorem/answer not fully re-proved."
+    },
+    {
+      "id": "CND-0121",
+      "exact_statement": "Is there a strictly increasing infinite sequence of positive integers (a_n) such that sum_(n>=1) 1/a_n diverges but sum_(n>=1) 1/(a_(n+1)-a_n) converges?",
+      "plain_language_statement": "Could the reciprocals of chosen increasing whole numbers add up forever while the reciprocals of their step sizes have a finite total?",
+      "domain": "integer sequences / incompatible convergence requirements",
+      "origin_mechanism": "S013: couple a divergent reciprocal sum to a convergent reciprocal-gap sum on the SAME sequence",
+      "attribution": "S013 owner direction for coupled mechanisms; classical sources attributed; no originality or open-status claim",
+      "quantifiers": "Is there a strictly increasing infinite sequence of positive integers (a_n) such that sum_(n>=1) 1/a_n diverges but sum_(n>=1) 1/(a_(n+1)-a_n) converges?",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "Symbolic/source kill occurred before computation; no preregistered CAM-0004 and no numerical search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Write d_j=a_(j+1)-a_j>0 and S=sum_(j>=1) 1/d_j<infinity. Cauchy-Schwarz yields (n-1)^2 <= (sum_(j<n)d_j)(sum_(j<n)1/d_j) <= S(a_n-a_1) for n>=2. Hence a_n>=(n-1)^2/S, so sum_(n>=2)1/a_n<=S sum_(k>=1)1/k^2<infinity, a contradiction. The converse combination is possible (a_n=n^2 gives summable 1/a_n and divergent 1/d_n)."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "ELEMENTARY_PROOF",
+          "detail": "Write d_j=a_(j+1)-a_j>0 and S=sum_(j>=1) 1/d_j<infinity. Cauchy-Schwarz yields (n-1)^2 <= (sum_(j<n)d_j)(sum_(j<n)1/d_j) <= S(a_n-a_1) for n>=2. Hence a_n>=(n-1)^2/S, so sum_(n>=2)1/a_n<=S sum_(k>=1)1/k^2<infinity, a contradiction. The converse combination is possible (a_n=n^2 gives summable 1/a_n and divergent 1/d_n)."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "No probabilistic heuristic substitutes for the decisive proof or known formulation."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Direct identity, modular obstruction, or Pell construction resolves the question."
+        },
+        {
+          "test": "literature",
+          "status": "NOT_DEEP_SEARCHED",
+          "detail": "No complete native priority survey because mathematical proof already killed candidate."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-14",
+        "session": "S013",
+        "reason": "Cauchy-Schwarz forces convergence: Write d_j=a_(j+1)-a_j>0 and S=sum_(j>=1) 1/d_j<infinity. Cauchy-Schwarz yields (n-1)^2 <= (sum_(j<n)d_j)(sum_(j<n)1/d_j) <= S(a_n-a_1) for n>=2. Hence a_n>=(n-1)^2/S, so sum_(n>=2)1/a_n<=S sum_(k>=1)1/k^2<infinity, a contradiction. The converse combination is possible (a_n=n^2 gives summable 1/a_n and divergent 1/d_n).",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Self-contained symbolic argument; human self-audit only",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0082"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 10,
+        "naturalness": 11,
+        "sharpness": 11,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 8,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 50
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED; no two genuinely failed dissimilar elementary attacks, no independent evidence of an unresolved research problem. External theorem/answer not fully re-proved."
+    },
+    {
+      "id": "CND-0122",
+      "exact_statement": "Do four distinct points in the Euclidean plane, not all collinear, exist whose six unordered pairwise distances are precisely n,n+1,n+2,n+3,n+4,n+5 for some positive integer n?",
+      "plain_language_statement": "Can four non-collinear points in the plane have all six distances be consecutive whole numbers?",
+      "domain": "integral point configurations and metric arithmetic",
+      "origin_mechanism": "S013: couple complete four-point Euclidean distance constraints with a consecutive-integer six-term set",
+      "attribution": "S013 owner direction for coupled mechanisms; classical sources attributed; no originality or open-status claim",
+      "quantifiers": "Do four distinct points in the Euclidean plane, not all collinear, exist whose six unordered pairwise distances are precisely n,n+1,n+2,n+3,n+4,n+5 for some positive integer n?",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_VARIANT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "Symbolic/source kill occurred before computation; no preregistered CAM-0004 and no numerical search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "DIRECT_THEOREM_OR_SOURCE",
+          "detail": "Exact consecutive-six-distance formulation is posed in a MathOverflow question (Morteza, 2014-10-15) for four planar points; Robert Israel's inspected answer states only starting value n=1 is possible, realized by four collinear points (0,0),(1,0),(4,0),(6,0), and cites the Cayley-Menger determinant. The present added non-collinear exclusion rules out that sole reported configuration. The exhaustive elimination asserted in the answer was NOT independently re-proved or referee-certified here; priority kill is decisive even if the claimed classification were later corrected because the question itself is already published."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "SOURCE_MATCH_OR_THEOREM",
+          "detail": "Exact consecutive-six-distance formulation is posed in a MathOverflow question (Morteza, 2014-10-15) for four planar points; Robert Israel's inspected answer states only starting value n=1 is possible, realized by four collinear points (0,0),(1,0),(4,0),(6,0), and cites the Cayley-Menger determinant. The present added non-collinear exclusion rules out that sole reported configuration. The exhaustive elimination asserted in the answer was NOT independently re-proved or referee-certified here; priority kill is decisive even if the claimed classification were later corrected because the question itself is already published."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "No probabilistic heuristic substitutes for the decisive proof or known formulation."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "STOPPED_KNOWN",
+          "detail": "Direct identity, modular obstruction, or Pell construction resolves the question."
+        },
+        {
+          "test": "literature",
+          "status": "NATIVE_PARTIAL",
+          "detail": "Opened source at specified access grade; all other native collections UNKNOWN. No research-hardness assertion."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-14",
+        "session": "S013",
+        "reason": "exact historical MO question; reported collinear-only classification: Exact consecutive-six-distance formulation is posed in a MathOverflow question (Morteza, 2014-10-15) for four planar points; Robert Israel's inspected answer states only starting value n=1 is possible, realized by four collinear points (0,0),(1,0),(4,0),(6,0), and cites the Cayley-Menger determinant. The present added non-collinear exclusion rules out that sole reported configuration. The exhaustive elimination asserted in the answer was NOT independently re-proved or referee-certified here; priority kill is decisive even if the claimed classification were later corrected because the question itself is already published.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Inspected source theorem/statement and explicit translation, not independent full proof",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0065"
+      ],
+      "claim_ids": [
+        "CLM-0083"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 10,
+        "naturalness": 11,
+        "sharpness": 11,
+        "difficulty_evidence": 0,
+        "novelty_audit": 3,
+        "connections": 8,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 53
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED; no two genuinely failed dissimilar elementary attacks, no independent evidence of an unresolved research problem. External theorem/answer not fully re-proved."
+    },
+    {
+      "id": "CND-0123",
+      "exact_statement": "For a circle of positive integer radius R, do distinct points P,Q exist for which the minor arc length L(P,Q)>0 and the chord length |P-Q| are both positive integers?",
+      "plain_language_statement": "On a circle with a whole-number radius, can the shorter curved distance and the straight-line distance between two points both be whole numbers?",
+      "domain": "circle geometry / transcendence / pi",
+      "origin_mechanism": "S013: couple arc metric and Euclidean chord metric on SAME integer-radius circle",
+      "attribution": "S013 owner direction for coupled mechanisms; classical sources attributed; no originality or open-status claim",
+      "quantifiers": "For a circle of positive integer radius R, do distinct points P,Q exist for which the minor arc length L(P,Q)>0 and the chord length |P-Q| are both positive integers?",
+      "status": "KILLED_KNOWN",
+      "novelty_grade": "KNOWN_VARIANT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "Symbolic/source kill occurred before computation; no preregistered CAM-0004 and no numerical search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "DIRECT_THEOREM_OR_SOURCE",
+          "detail": "Let theta=L/R; theta is nonzero rational in (0,pi] and C=|P-Q| is a positive integer. The chord relation C^2=2R^2(1-cos theta) makes cos theta rational. Hence z=e^(i theta) is algebraic, being a root of z^2-2(cos theta)z+1=0. But i theta is nonzero algebraic, and the Hermite-Lindemann theorem says e^(i theta) is transcendental. Contradiction. This is a direct classical-theorem consequence, not a new result; the theorem itself was read at encyclopedia statement level, not re-proved."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "SOURCE_MATCH_OR_THEOREM",
+          "detail": "Let theta=L/R; theta is nonzero rational in (0,pi] and C=|P-Q| is a positive integer. The chord relation C^2=2R^2(1-cos theta) makes cos theta rational. Hence z=e^(i theta) is algebraic, being a root of z^2-2(cos theta)z+1=0. But i theta is nonzero algebraic, and the Hermite-Lindemann theorem says e^(i theta) is transcendental. Contradiction. This is a direct classical-theorem consequence, not a new result; the theorem itself was read at encyclopedia statement level, not re-proved."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "No probabilistic heuristic substitutes for the decisive proof or known formulation."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "STOPPED_KNOWN",
+          "detail": "Direct identity, modular obstruction, or Pell construction resolves the question."
+        },
+        {
+          "test": "literature",
+          "status": "NATIVE_PARTIAL",
+          "detail": "Opened source at specified access grade; all other native collections UNKNOWN. No research-hardness assertion."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-14",
+        "session": "S013",
+        "reason": "immediate classical transcendence reduction: Let theta=L/R; theta is nonzero rational in (0,pi] and C=|P-Q| is a positive integer. The chord relation C^2=2R^2(1-cos theta) makes cos theta rational. Hence z=e^(i theta) is algebraic, being a root of z^2-2(cos theta)z+1=0. But i theta is nonzero algebraic, and the Hermite-Lindemann theorem says e^(i theta) is transcendental. Contradiction. This is a direct classical-theorem consequence, not a new result; the theorem itself was read at encyclopedia statement level, not re-proved.",
+        "kind": "KILLED_KNOWN",
+        "verified_scope": "Inspected source theorem/statement and explicit translation, not independent full proof",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0066"
+      ],
+      "claim_ids": [
+        "CLM-0084"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 7,
+        "naturalness": 11,
+        "sharpness": 11,
+        "difficulty_evidence": 0,
+        "novelty_audit": 3,
+        "connections": 8,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 53
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED; no two genuinely failed dissimilar elementary attacks, no independent evidence of an unresolved research problem. External theorem/answer not fully re-proved."
+    },
+    {
+      "id": "CND-0124",
+      "exact_statement": "Are there infinitely many pairwise noncongruent nondegenerate Euclidean triangles with three consecutive positive-integer side lengths, integer-coordinate vertices, and integer-coordinate incenter?",
+      "plain_language_statement": "Are there infinitely many different triangles whose sides are three consecutive whole numbers and whose corners and incentre all lie on grid points?",
+      "domain": "Heronian geometry / Pell equations / lattice centres",
+      "origin_mechanism": "S013: couple consecutive integer sides, unit lattice vertices AND integer-coordinate incenter of SAME triangle",
+      "attribution": "S013 owner direction for coupled mechanisms; classical sources attributed; no originality or open-status claim",
+      "quantifiers": "Are there infinitely many pairwise noncongruent nondegenerate Euclidean triangles with three consecutive positive-integer side lengths, integer-coordinate vertices, and integer-coordinate incenter?",
+      "status": "KILLED_EASY",
+      "novelty_grade": "KNOWN_VARIANT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "Symbolic/source kill occurred before computation; no preregistered CAM-0004 and no numerical search."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "For every positive solution m^2-3k^2=1 (start (m,k)=(2,1), iterate (m,k)->(2m+3k,m+2k)), take A=(0,0), B=(2m,0), C=(m-2,3k). Direct expansion using 3k^2=m^2-1 gives |AB|=2m, |AC|=2m-1, |BC|=2m+1 and signed doubled area 6mk, so nondegenerate. The incenter weighted by opposite side lengths is ((2m-1)B+(2m)C)/(6m)=(m-1,k), an integer lattice point. Since m strictly increases, triangles are noncongruent. The established general Heronian-to-lattice theorem is related prior art but this stronger incenter construction is recorded as an elementary self-contained result, not a new theorem."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "ELEMENTARY_PROOF",
+          "detail": "For every positive solution m^2-3k^2=1 (start (m,k)=(2,1), iterate (m,k)->(2m+3k,m+2k)), take A=(0,0), B=(2m,0), C=(m-2,3k). Direct expansion using 3k^2=m^2-1 gives |AB|=2m, |AC|=2m-1, |BC|=2m+1 and signed doubled area 6mk, so nondegenerate. The incenter weighted by opposite side lengths is ((2m-1)B+(2m)C)/(6m)=(m-1,k), an integer lattice point. Since m strictly increases, triangles are noncongruent. The established general Heronian-to-lattice theorem is related prior art but this stronger incenter construction is recorded as an elementary self-contained result, not a new theorem."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_NEEDED",
+          "detail": "No probabilistic heuristic substitutes for the decisive proof or known formulation."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Direct identity, modular obstruction, or Pell construction resolves the question."
+        },
+        {
+          "test": "literature",
+          "status": "NATIVE_PARTIAL",
+          "detail": "Opened source at specified access grade; all other native collections UNKNOWN. No research-hardness assertion."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-14",
+        "session": "S013",
+        "reason": "explicit Pell family supplies infinitely many triangles: For every positive solution m^2-3k^2=1 (start (m,k)=(2,1), iterate (m,k)->(2m+3k,m+2k)), take A=(0,0), B=(2m,0), C=(m-2,3k). Direct expansion using 3k^2=m^2-1 gives |AB|=2m, |AC|=2m-1, |BC|=2m+1 and signed doubled area 6mk, so nondegenerate. The incenter weighted by opposite side lengths is ((2m-1)B+(2m)C)/(6m)=(m-1,k), an integer lattice point. Since m strictly increases, triangles are noncongruent. The established general Heronian-to-lattice theorem is related prior art but this stronger incenter construction is recorded as an elementary self-contained result, not a new theorem.",
+        "kind": "KILLED_EASY",
+        "verified_scope": "Self-contained symbolic argument; human self-audit only",
+        "reviewer": "self-audit"
+      },
+      "source_ids": [
+        "SRC-0067"
+      ],
+      "claim_ids": [
+        "CLM-0085"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 12,
+        "prerequisites": 10,
+        "naturalness": 11,
+        "sharpness": 11,
+        "difficulty_evidence": 0,
+        "novelty_audit": 3,
+        "connections": 8,
+        "computational_testability": 1,
+        "low_degeneracy_risk": 1,
+        "total": 53
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KILLED; no two genuinely failed dissimilar elementary attacks, no independent evidence of an unresolved research problem. External theorem/answer not fully re-proved."
     }
   ]
 }

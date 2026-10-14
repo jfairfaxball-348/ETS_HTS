@@ -39,3 +39,9 @@ Phase1 OPEN_REGENERATION_ZERO_SURVIVORS: CND115 all KILLED, GENERATED0 TRIAGED0 
 
 ## S012 — 2026-10-13
 Phase 1 OPEN_REGENERATION_ZERO_SURVIVORS: 119 CND all KILLED, GENERATED0 TRIAGED0 SURVIVING0 HARD0 SELECTED0. Phase2 NOT_OPEN_NO_SURVIVORS (native two-pass deep novelty coverage incomplete/UNKNOWN), phase3 NOT_OPEN (no independent difficulty evidence), phases4–6 OWNER_GATED. CAM-0003 FAILED/PARTIAL 37/54 unchanged, CAM-0004 absent. Hosted CI verifies governance format only.
+
+## S013 — 2026-10-14
+- Gate 0: administrative closure maintained; S012 historical two-commit PR (one research, one CI-only repair) reconciled.
+- Gate 1: OPEN_REGENERATION_ZERO_SURVIVORS; CND-0120..0124 all KILLED, cumulative 124/124. No independent external difficulty evidence for an unsolved coupled question.
+- Gate 2: NOT_OPEN_NO_SURVIVORS. Gate 3: NOT_OPEN. Gates 4–6: OWNER_GATED (no selection, formalisation or publication).
+- Source/claim/campaign counts: SRC67 CLM85 CAM3 (CAM-0003 FAILED/PARTIAL 37/54); future S014 unexecuted. Local checkout NOT_RUN due DNS.

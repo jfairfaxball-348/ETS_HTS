@@ -169,3 +169,11 @@ Total 115/115 killed.
 - CND-0118 KILLED_KNOWN: undirected synchronous tie-hold majority embeds symmetric binary thresholds with diagonal weight1 and offdiagonal2; Goles–Olivos 1980 abstract says eventual period <=2; CLM-0079 (source abstract, not proof).
 - CND-0119 KILLED_FALSE/DEGENERATE: a_n=sum_{k≤n}ceil(log2(k+1)) has gaps →∞ but reciprocal series diverges via dyadic block harmonic lower bound; CLM-0080.
 - Access: native OEIS term/keyword full queries and other required original literature searches UNKNOWN; local true checkout blocked DNS. No mathematical CAM-0004; CAM-0003 remains FAILED/PARTIAL 37/54.
+
+## S013 — source-first symbolic kills / persistent blockers (2026-10-14)
+- CND-0120: simultaneous consecutive squared lattice distances obstructed by parity and sum-of-two-squares mod4, independently determinant mod3.
+- CND-0121: summable reciprocals of gaps force a_n=Ω(n²), so divergent term reciprocals impossible (Cauchy-Schwarz).
+- CND-0122: 2014 MathOverflow already poses six consecutive distances among four points and gives collinear-only response; programme does not reproduce complete Cayley-Menger case elimination.
+- CND-0123: positive integer arc and chord on integer-radius circle forbidden by classical Lindemann theorem, though independent theorem proof not inspected.
+- CND-0124: explicit infinite Pell construction places consecutive-sided triangles AND incentres on integer lattice; prior source covers general Heronian lattice embedding, exact incenter novelty not cleared.
+- No candidate passes hardness/novelty gates. No numeric search; CAM-0004 absent. Checkout DNS unresolved; real local test commands NOT_RUN. Protection 403 UNKNOWN, status checks zero means ABSENT_NOT_PASS; Actions CI is record-format only.

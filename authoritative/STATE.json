@@ -3,13 +3,13 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S012: four structurally distinct questions killed (two known, two elementary)",
-  "last_completed_session": "S012",
-  "next_session": "S013",
+  "phase_name": "S013: five coupled-constraint questions killed by parity, Cauchy, known distances, transcendence and Pell construction",
+  "last_completed_session": "S013",
+  "next_session": "S014",
   "next_session_authorised": false,
-  "candidate_count": 119,
-  "source_count": 64,
-  "claim_count": 80,
+  "candidate_count": 124,
+  "source_count": 67,
+  "claim_count": 85,
   "campaign_count": 3,
   "gate_status": {
     "0": "CLOSED_ADMINISTRATIVE",
@@ -22,7 +22,7 @@
   },
   "surviving_count": 0,
   "triaged_count": 0,
-  "kill_count": 119,
-  "remote_sha_policy": "S013 independently verify S012 one authored sole-parent commit, ordinary PR and two-parent merge",
-  "note": "CND119 all killed SRC64 CLM80 CAM3, zero survivors; CAM-0003 remains FAILED/PARTIAL 37/54, CAM-0004 absent (no numerical experiment). OEIS A001110 and Goles–Olivos 1980 known; lattice symmetry and divergent-gap counterexample elementary. Git DNS blocked, branch protection 403 UNKNOWN. Hosted CI format only."
+  "kill_count": 124,
+  "remote_sha_policy": "S014 independently verify S013 one authored sole-parent commit, ordinary non-draft PR and ordered two-parent merge; reconstruct S012 authored and CI-only repair separately",
+  "note": "CND 124 all killed SRC67 CLM85 CAM3; zero survivors. CAM-0003 remains FAILED/PARTIAL 37/54; CAM-0004 NOT registered/run. Exact online precedent for four-point consecutive distances; remaining arguments known or elementary. Protection 403 UNKNOWN; original git checkout DNS blocked; hosted CI is format-only."
 }
