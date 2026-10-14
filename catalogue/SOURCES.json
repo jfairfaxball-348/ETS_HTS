@@ -754,8 +754,8 @@
       "author": "Christos Levcopoulos; Andrzej Lingas",
       "date": "1987",
       "url_or_doi": "https://www.math.ucdavis.edu/~deloera/MISC/LA-BIBLIO/trunk/Lingas/Lingas3.pdf",
-      "access_grade": "ABSTRACT_INSPECTED",
-      "notes": "University-hosted scanned original Algorithmica 2:175–193 first printed abstract was visually inspected 2026-10-14. Global greedy triangulation approximates minimum-weight triangulation, including semicircular discussion. Scanned remainder not fully inspected; does not visibly assert nearest-two predecessor ellipse theorem."
+      "access_grade": "PROOF_INSPECTED",
+      "notes": "S023 2026-10-14: FULL university-hosted original Algorithmica 2 (1987) 175–193 visually inspected across the complete scanned 10-image PDF, original printed pp.175–193. §2 definition 2.1 locally optimal triangulation, Lemmas 2.1–2.5 and Theorem 2.1; §3 q-open polygon Theorem 3.1; §4 Theorems 4.1–4.3 and semicircular property; original references pp.192–193 inspected. Greedy triangulation adds shortest compatible polygon diagonals, with crossing rejection and no chronological compulsory nearest-two predecessor connections. A semicircular polygon is a special configuration, not all ellipse boundary subsets; no all-n ellipse ratio theorem observed in this paper. This PROOF_INSPECTED upgrade is solely for this accessible 1987 original, not other historical works. Original S022 first-page ABSTRACT_INSPECTED observation remains in S022 archive."
     },
     {
       "id": "SRC-0085",
@@ -774,6 +774,15 @@
       "url_or_doi": "https://doi.org/10.1016/j.comgeo.2010.11.003",
       "access_grade": "ABSTRACT_INSPECTED",
       "notes": "Original publisher indexed abstract inspected 2026-10-14, Computational Geometry 44(4):216–233. Static k-nearest-neighbour and other proximity graph crossing bounds; full original theorem/proof unavailable; does not visibly imply existence of an insertion order under dynamic 2-nearest rule. Critical source access gap retained."
+    },
+    {
+      "id": "SRC-0087",
+      "title": "Incremental k-Lowest Planes and Planar k-Nearest Neighbor with Optimal Query Time",
+      "author": "John Iacono; Yakov Nekrich; Martin P. Seybold",
+      "date": "2026 (ICALP 2026 proceedings); accessed 2026-10-14",
+      "url_or_doi": "https://doi.org/10.4230/LIPIcs.ICALP.2026.113",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "S023 2026-10-14: inspected official open full-text Dagstuhl ICALP proceedings article introduction/problem statement and technical setup, not a line-by-line full proof. Maintains insertions/planar-domain k-nearest-neighbor queries and k-lowest planes; 'planar' refers to domain, not planarity of a mandatory retained geometric graph. No statement about choosing a site order so exactly two closest earlier sites can be joined without crossing for every near-circular ellipse configuration. This is a contemporary related distinct algorithmic model, not proof of priority."
     }
   ]
 }

@@ -3,12 +3,12 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S022 original-source novelty review INCONCLUSIVE; S023 source-gap closure BEFORE Lean",
-  "last_completed_session": "S022",
-  "next_session": "S023",
+  "phase_name": "S023 source-gap novelty review INCONCLUSIVE; S024 priority/source decision BEFORE Lean",
+  "last_completed_session": "S023",
+  "next_session": "S024",
   "next_session_authorised": false,
   "candidate_count": 131,
-  "source_count": 86,
+  "source_count": 87,
   "claim_count": 108,
   "campaign_count": 10,
   "gate_status": {
@@ -23,7 +23,7 @@
   "surviving_count": 0,
   "triaged_count": 0,
   "kill_count": 131,
-  "remote_sha_policy": "S023 must independently inspect LIVE main, authored S022 branch/PR/normal two-parent merge and tree equality before acting; all earlier SHAs are historical.",
-  "note": "S022 2026-10-14 EXACT novelty verdict INCONCLUSIVE_ACCESS_OR_COVERAGE. Substantial public index search and seven primary sources SRC0080–0086 inspected with graded access; no inspected exact/stronger theorem, but critical classic/2011 full texts and native citation indexes remain inadequately accessible. NOT novelty-certified; NO Lean. No new CLM/CND/CAM, preserve CND131 killed131, CLM108 CAM10, 0 survivors. S021 internal mathematical audit PASS unaffected, S016 CAM8/9 original archive still off GitHub; CAM3/5 failures, CAM10 float pseudo-witnesses and S019 CAD unexecuted. S023 FUTURE owner-gated focused source access audit.",
+  "remote_sha_policy": "S024 must independently inspect live main, S023 authored sole-parent commit, ordinary PR and verified ordered two-parent merge/tree; all S023 exit SHAs historical.",
+  "note": "S023 2026-10-14 exactly INCONCLUSIVE_ACCESS_OR_COVERAGE: full 1987 Levcopoulos–Lingas original inspected and SRC0084 upgraded PROOF_INSPECTED; new original 2026 ICALP paper SRC0087 STATEMENT_INSPECTED, SRC87 total. Full original 2011 Ábrego, 2004 Bose-Gudmundsson-Morin, 1992 Finlayson-Bhattacharya remain inaccessible; native citation, OEIS, arXiv full-text and broader venue/old-book coverage UNKNOWN. No exact/equivalent/stronger prior theorem found among actually inspected pages, no historical novelty clearance. Lean/Palomar/manuscript/outreach remain BLOCKED; S024 FUTURE targeted source-priority decision, fresh invocation required. CND131 all killed, CLM108, CAM10, zero survivors; original CAM8/9 archival exception OFF GitHub, CAM3/5 failures CAM10 pseudo-witnesses untouched.",
   "generated_count": 0
 }

@@ -80,3 +80,6 @@ S021 internal theorem audit is *not* a historical novelty certificate. Owner req
 
 ## S022 — 2026-10-14 prior-art novelty gate
 Exactly one verdict INCONCLUSIVE_ACCESS_OR_COVERAGE, not CONDITIONAL_NOVELTY_SUPPORTED. Deep original-source scrutiny improved (7 new graded SRCs), but native indexes and historical source inspection remain incomplete; therefore Lean/formalisation and publication authority CLOSED. Gate0 CLOSED_ADMINISTRATIVE; Gate1 OPEN_REGENERATION_ZERO_SURVIVORS; Gate2 NOT_OPEN_NO_SURVIVORS and **novelty subgate BLOCKED/INCONCLUSIVE**; Gate3 NOT_OPEN; gates4–6 OWNER_GATED. CND131/KILLED131, SRC86 CLM108 CAM10, TRIAGED0 SURVIVING0. S023 FUTURE targeted source access only.
+
+## S023 — 2026-10-14 prior-art source closure
+Gate0 CLOSED_ADMINISTRATIVE; phase1 OPEN_REGENERATION_ZERO_SURVIVORS (CND131 all KILLED, no generated/triaged/surviving); gate2 NOT_OPEN_NO_SURVIVORS and novelty subgate BLOCKED/INCONCLUSIVE_ACCESS_OR_COVERAGE after SRC0084 1987 complete proof inspection + SRC0087 current statement (SRC87). Original 2011/2004/1992 paper and native citation gaps remain. Gate3 NOT_OPEN; gates4–6 OWNER_GATED. No Lean or contacts; S024 FUTURE source decision only, CAM10 CLM108 unchanged.
