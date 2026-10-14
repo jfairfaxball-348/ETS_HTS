@@ -1,6 +1,6 @@
 # S022 — FUTURE / UNEXECUTED: Lean 4 formalisation of existing ellipse theorem
 
-**FUTURE — UNEXECUTED. Only a NEW explicit owner invocation in a NEW ETS_HTS conversation authorises exactly S022.** S021's audit PASS is internal mathematics, NOT a compiled Lean proof, independent reviewer assessment or historical novelty certificate.
+**FUTURE — UNEXECUTED. Only a new explicit owner invocation in a NEW ETS_HTS conversation authorises exactly S022.** S021's audit PASS is internal mathematics, NOT a compiled Lean proof, independent reviewer assessment or historical novelty certificate.
 
 ## Mandatory objective (NO theorem extension)
 
