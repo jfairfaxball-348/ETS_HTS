@@ -215,7 +215,7 @@ For every finite point set in general position, can some nearest-two-predecessor
 |---|---|---:|---|---|
 | CND-0129 | KILLED_EASY | 59 | Do circle-point sets always permit a crossing-free nearest-two arrival order? | YES: circular-gap ear deletion proof CLM-0095 |
 | CND-0130 | KILLED_EASY | 59 | Smallest point set with no possible plane order? | Exactly **5**, n<=4 theorem CLM-0096 plus rational-ellipse witness CLM-0097/0098 |
-| CND-0131 | GENERATED | 60 | Is the circle the only ellipse for which every finite site set admits a plane nearest-two order? | Circle YES; ellipse x²/25+y²=1 NO; all other nonround ellipses UNRESOLVED. Not TRIAGED/SURVIVING/HARD/OPEN-certified. |
+| CND-0131 | KILLED_FALSE/DEGENERATE | 60 | Is the circle the only ellipse for which every finite site set admits a plane nearest-two order? | NO. CLM-0107 gives all-n safe NONCIRCLES r<=R≈1.050202; CLM-0108 explicitly uses r=101/100. |
 
 CND-0129 and CND-0130 are killed as *questions seeking unsolved answers*, but their positive and sharp mathematical results are retained. CND-0131 is a genuinely qualitative shape classification, not an eccentricity threshold adjusted to preserve a failing conjecture. Historical originality and full native literature audit remain UNKNOWN. The computational raw/scripts are preserved in a **detached** downloadable archive; see CAM manifest for incompleteness.
 
@@ -228,3 +228,6 @@ Short-arc sufficiency (CLM-0102) and fixed-cardinality near-circle stability (CL
 
 ## S019 — CND-0131 still GENERATED
 CLM-0105/0106 convert S018 non-effective fixed-n stability into a theoretical exact quantifier-elimination algorithm. NO numerical epsilon_n, no quantitative n(r), no ALL-n uniform interval and no proof every noncircle fails. CND131 total: 130 killed, one GENERATED, zero TRIAGED/SURVIVING. SRC79 CLM106 CAM10; native novelty/hardness incomplete.
+
+## S020 — CND-0131 disproved, not unresolved-retired
+CLM-0107 proves a uniform all-n safe ellipse aspect interval, and CLM-0108 takes noncircle r=101/100. Circle-only answer NO; KILLED_FALSE/DEGENERATE. Total CND131 all killed, SRC79 CLM108 CAM10, zero survivors. Sharpness, full shape classification and historical priority remain UNKNOWN. Earlier S019 text is superseded as a historical session record.

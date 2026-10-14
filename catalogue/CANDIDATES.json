@@ -8462,7 +8462,7 @@
       "domain": "metric geometry / shape characterisation / chronological triangulation",
       "origin_mechanism": "MEC-08: classify geometry of universal insertion property after affirmative circular proof and five-point failure on a 5:1 ellipse; distinct intrinsic shape question, not a manufactured numeric threshold",
       "attribution": "Owner's 2026-10-14 growing triangle concept; S016 shape-classification formulation; historical priority NOT established.",
-      "status": "GENERATED",
+      "status": "KILLED_FALSE/DEGENERATE",
       "novelty_grade": "NOT_SEARCHED",
       "difficulty_evidence": [
         {
@@ -8524,9 +8524,21 @@
           "test": "S019_exact_effectivity",
           "status": "PROVED_ALGORITHM_NOT_EXECUTED",
           "detail": "CLM105 rational-semialgebraic fixed-n bad aspect locus; CLM106 provably terminating, exact rational epsilon_n extraction by CAD conditional on CLM103. No actual epsilon_n, no n-uniform theorem, global CND unresolved."
+        },
+        {
+          "test": "S020_all_n_uniform_theorem",
+          "status": "DEFINITIVE_NEGATIVE",
+          "detail": "CLM-0107 proves uniform all-n safe interval 1<=r<=sqrt(2/sin(2pi/5)-1)≈1.050202; CLM-0108 takes nonround r=101/100 to falsify uniqueness."
         }
       ],
-      "kill_record": null,
+      "kill_record": {
+        "date": "2026-10-14",
+        "session": "S020",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "CLM-0107 explicitly proves every finite set on every ellipse of r<=sqrt(2/sin(2pi/5)-1) admits a plane NG order; CLM-0108 nonround r=101/100 contradicts circle-only. Proof in sessions/S020/MATHEMATICS.md.",
+        "reviewer": "programme self-audit; no external review",
+        "verified_scope": "symbolic all-n proof, not computational extrapolation or novelty proof"
+      },
       "source_ids": [
         "SRC-0075",
         "SRC-0078",
@@ -8542,7 +8554,9 @@
         "CLM-0103",
         "CLM-0104",
         "CLM-0105",
-        "CLM-0106"
+        "CLM-0106",
+        "CLM-0107",
+        "CLM-0108"
       ],
       "cam_ids": [
         "CAM-0008",
@@ -8561,7 +8575,7 @@
         "low_degeneracy_risk": 3,
         "total": 60
       },
-      "uncertainty": "S019 CLM105/106 show conditional algorithmic effectivity for each fixed n, with no executed CAD or explicit n-dependent numerical bound. Inf_n epsilon_n may be zero; a noncircle bad family n(r)->infinity is not constructed. Native novelty/independent difficulty still incomplete; S016 original CAM8/9 archive still detached."
+      "uncertainty": "Full r>R classification and sharp threshold not known; external priority and independent review UNKNOWN. S016 CAM8/9 detached."
     }
   ]
 }

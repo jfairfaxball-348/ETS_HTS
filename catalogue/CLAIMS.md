@@ -146,3 +146,7 @@ External review and originality are NOT established. SRC78 and CAM10 unchanged; 
 ## S019 (programme self-proofs)
 - **CLM-0105 PROGRAMME_PROVED**: fixed-n ellipse counterexample squared-ratio set B_n is Q-semialgebraic with algebraic finite endpoints by exact polynomial distance, tie, crossing and quantifier-elimination encoding (SRC-0079). B_n may be empty/nonmonotone, its infimum need not be attained.
 - **CLM-0106 PROGRAMME_PROVED**: provably terminating exact search using CAD over [1,(1+1/m)²] for m=1,2,... returns a rational safe epsilon_n=1/m, CONDITIONAL on S018 CLM-0103. Algorithm NOT executed, no numerical value or all-n bound, no new CAM.
+
+## S020
+- **CLM-0107 PROGRAMME_PROVED**: every finite site set on any ellipse of r<=sqrt(2/sin(2pi/5)-1)≈1.050202 has plane nearest-two order; shortest eligible skip chord and uniform antipodal-band bound give a strict metric ear at each n>=5, then CLM0096 and CLM0099. Self-proof only, not independently reviewed.
+- **CLM-0108 PROGRAMME_PROVED**: a/b=101/100 noncircle satisfies universal property, disproving CND0131 circle-only uniqueness. No all-r classification or historical novelty claim.
