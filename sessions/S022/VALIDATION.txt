@@ -1,0 +1,17 @@
+S022 validation record — 2026-10-14 Europe/London
+Live main ref pinned: eace71330a8b07d199a9dd230dedfc31cd1d006c
+Live main tree: c8722ca461960169a460b941369bbaa2decbf678
+Live open PRs before S022: 0.
+Existing competing S022 session branch before create: none.
+Rulesets read: [] (API); branch protection GET: HTTP 403 UNKNOWN.
+Actual clone command attempted:
+  git clone --depth 1 https://github.com/jfairfaxball-348/ETS_HTS.git /tmp/ETS_HTS
+Observed failure:
+  Could not resolve host: github.com
+python scripts/check_scaffold.py: NOT_RUN on actual checkout (DNS failure).
+python -m unittest discover -s tests -v: NOT_RUN on actual checkout (DNS failure).
+Public scholarly-index native access: partial/blocked, counts UNKNOWN.
+Source grades: SRC0080 PROOF; 0081 STATEMENT; 0082 STATEMENT; 0083 PROOF; 0084 ABSTRACT; 0085 ABSTRACT; 0086 ABSTRACT.
+Evidence count: public-index query strings 73, 9 native endpoint probes; no false zero.
+GitHub hosted record validation: to be independently observed after authored commit/PR; NEVER mathematical or novelty verification.
+Expected authored Git protocol: ONE commit on isolated branch, sole parent pinned entry SHA; PR ordinary non-draft; non-force normal two-parent merge; post-merge main and equal tree verification; record these future events outside this pre-integration file.
