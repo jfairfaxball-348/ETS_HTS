@@ -1,6 +1,6 @@
 import ETSHTS.HalfAngle
 
-/- Kernel axiom exposure of all actual theorem declarations, not CLM specifications. -/
+/- Kernel dependency exposure of all actual theorem declarations, not CLM specifications. -/
 #print axioms ETSHTS.sqDist_self
 #print axioms ETSHTS.sqDist_nonneg
 #print axioms ETSHTS.sqDist_symm

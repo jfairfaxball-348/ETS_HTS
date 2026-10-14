@@ -25,7 +25,7 @@
   "kill_count": 131,
   "generated_count": 0,
   "remote_sha_policy": "At S030 entry independently inspect S029 authored commit/PR/merge, separate hosted Lean and governance checks and printed axioms; don't infer unobserved green jobs.",
-  "note": "S028 authored corrected Lean and governance CI SUCCESS, PR33 ordinary two-parent merge e617e52 tree matches corrected authored head. S029 sources 11 attempted proofs for exact derivative factorizations and conditional derivative positivity. Unconditional sin/cos cutoff and full endpoint-extension CLM0102 plus CLM0096/0099/0107/0108 still OPEN. Local compiler/checkout unavailable; S029 hosted CI must be independently inspected.",
+  "note": "S028 authored corrected Lean and governance CI SUCCESS, PR33 ordinary two-parent merge e617e52 tree matches corrected authored head. S029 sources 11 attempted proofs for exact derivative factorizations and conditional derivative positivity. Unconditional sin/cos cutoff and full endpoint-extension CLM0102 plus CLM0096/0099/0107/0108 still OPEN. Local compiler/checkout unavailable; S029 hosted CI must be independently inspected. First S029 Lean CI proved all 11 terms compile and printed standard dependencies but failed final source grep on an inadvertent forbidden token in a ROOT COMMENT; one transparent follow-up correction commit created (no proof changes), retest pending.",
   "novelty_verdict": "CONDITIONAL_NOVELTY_SUPPORTED",
   "final_novelty_audit": "S024",
   "formalisation_status": "S029_HALFANGLE_LEAN_AWAITING_HOSTED_CI__ALL_FIVE_CLM_UNPROVED",

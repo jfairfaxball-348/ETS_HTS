@@ -17,3 +17,10 @@ S029 python unittest discover NOT_RUN locally
 S029 new source Lean proof terms AWAIT_HOSTED_CI
 S029 original five CLM Prop targets ALL_UNPROVED
 S029 other hosted jobs ABSENT_NOT_PASS until verified
+S029 FIRST authored SHA 8744005db1335708377aa36914c1e4bfd5845ddf
+S029 FIRST Lean workflow 38621469407 job116049784242 FAIL (root comment grep only)
+S029 FIRST lake build SUCCESS (all 11 new declarations compiled)
+S029 FIRST lake env lean ETSHTS.lean SUCCESS (printed only standard axioms)
+S029 FIRST governance workflow 38621469409 SUCCESS
+S029 follow-up corrective commit: eliminate forbidden token in root comment; no theorem changed
+S029 repaired CI requires independent recheck; no implied pass

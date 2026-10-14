@@ -24,3 +24,16 @@ work. The separate governance test tests records only, not mathematics.
 Historical counts unchanged: CND131 killed131 SRC87 CLM108 CAM10, final novelty
 S024 conditional, detached S016/S024 historical provenance retained.
 FUTURE S030 is not authorised by this S029 invocation.
+
+## S029 CI repair exception (recorded without history rewriting)
+First authored SHA `8744005db1335708377aa36914c1e4bfd5845ddf` received
+Lean workflow `38621469407`, job `116049784242`: **FAILED** solely
+because its final static grep caught the token `axiom` in the ROOT FILE
+COMMENT on line 3. Earlier in the SAME job `lake build` and
+`lake env lean ETSHTS.lean` succeeded, all 11 new declarations were
+compiled and all printed Lean dependencies were standard
+`propext, Classical.choice, Quot.sound`. Governance workflow
+`38621469409` PASSED. This follow-up commits only a comment wording
+repair and updates provenance records. The one-authored-commit preference
+has an explicit two-commit exception, without force push. The repaired
+head requires independent fresh hosted Lean/governance PASS before merge.
