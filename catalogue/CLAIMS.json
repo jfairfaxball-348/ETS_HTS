@@ -1090,6 +1090,72 @@
       "cam_ids": [],
       "justification": "Let a_n=∑_{k=1}^n⌈log₂(k+1)⌉. Then a_(n+1)−a_n=⌈log₂(n+2)⌉→∞, while for 2^j≤n<2^(j+1), each summand in a_n is at most j+2; hence a_n≤n(j+2)<2^(j+1)(j+2). There are 2^j such n, so their reciprocal sum exceeds 1/[2(j+2)]. Summing over j≥1 diverges by comparison with the harmonic series. All a_n are positive strictly increasing integers.",
       "limitations": "Historical or elementary self-audited proof; not new; no independent referee or machine formalisation."
+    },
+    {
+      "id": "CLM-0081",
+      "statement": "CND-0120: elementary parity and sums-of-two-squares obstruction. Can a triangle drawn between grid points have three squared side lengths that are consecutive whole numbers?",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0120"
+      ],
+      "cam_ids": [],
+      "justification": "Translate A to 0 and let u=B-A,v=C-A, with squared lengths x=|u|^2,y=|v|^2,z=|u-v|^2. Then x+y-z=2u·v is even, so x+y+z is even. If {x,y,z}={n,n+1,n+2}, the sum is 3n+3: n must be odd. Every three consecutive integers starting with odd n contain an integer congruent to 3 mod 4, but an integer squared distance (p^2+q^2) can never be 3 mod 4. Contradiction. Independently Heron's identity gives 4 det(u,v)^2=3(n+1)^2-4, impossible modulo 3 (LHS square mod3, RHS 2 mod3).",
+      "limitations": "S013 source-inspection and/or human symbolic proof only; no independent referee, Lean, Palomar, novelty certification or complete native literature coverage."
+    },
+    {
+      "id": "CLM-0082",
+      "statement": "CND-0121: Cauchy-Schwarz forces convergence. Could the reciprocals of chosen increasing whole numbers add up forever while the reciprocals of their step sizes have a finite total?",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0121"
+      ],
+      "cam_ids": [],
+      "justification": "Write d_j=a_(j+1)-a_j>0 and S=sum_(j>=1) 1/d_j<infinity. Cauchy-Schwarz yields (n-1)^2 <= (sum_(j<n)d_j)(sum_(j<n)1/d_j) <= S(a_n-a_1) for n>=2. Hence a_n>=(n-1)^2/S, so sum_(n>=2)1/a_n<=S sum_(k>=1)1/k^2<infinity, a contradiction. The converse combination is possible (a_n=n^2 gives summable 1/a_n and divergent 1/d_n).",
+      "limitations": "S013 source-inspection and/or human symbolic proof only; no independent referee, Lean, Palomar, novelty certification or complete native literature coverage."
+    },
+    {
+      "id": "CLM-0083",
+      "statement": "CND-0122: exact historical MO question; reported collinear-only classification. Can four non-collinear points in the plane have all six distances be consecutive whole numbers?",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0065"
+      ],
+      "candidate_ids": [
+        "CND-0122"
+      ],
+      "cam_ids": [],
+      "justification": "Exact consecutive-six-distance formulation is posed in a MathOverflow question (Morteza, 2014-10-15) for four planar points; Robert Israel's inspected answer states only starting value n=1 is possible, realized by four collinear points (0,0),(1,0),(4,0),(6,0), and cites the Cayley-Menger determinant. The present added non-collinear exclusion rules out that sole reported configuration. The exhaustive elimination asserted in the answer was NOT independently re-proved or referee-certified here; priority kill is decisive even if the claimed classification were later corrected because the question itself is already published.",
+      "limitations": "S013 source-inspection and/or human symbolic proof only; no independent referee, Lean, Palomar, novelty certification or complete native literature coverage."
+    },
+    {
+      "id": "CLM-0084",
+      "statement": "CND-0123: immediate classical transcendence reduction. On a circle with a whole-number radius, can the shorter curved distance and the straight-line distance between two points both be whole numbers?",
+      "status": "SOURCE_STATED",
+      "source_ids": [
+        "SRC-0066"
+      ],
+      "candidate_ids": [
+        "CND-0123"
+      ],
+      "cam_ids": [],
+      "justification": "Let theta=L/R; theta is nonzero rational in (0,pi] and C=|P-Q| is a positive integer. The chord relation C^2=2R^2(1-cos theta) makes cos theta rational. Hence z=e^(i theta) is algebraic, being a root of z^2-2(cos theta)z+1=0. But i theta is nonzero algebraic, and the Hermite-Lindemann theorem says e^(i theta) is transcendental. Contradiction. This is a direct classical-theorem consequence, not a new result; the theorem itself was read at encyclopedia statement level, not re-proved.",
+      "limitations": "S013 source-inspection and/or human symbolic proof only; no independent referee, Lean, Palomar, novelty certification or complete native literature coverage."
+    },
+    {
+      "id": "CLM-0085",
+      "statement": "CND-0124: explicit Pell family supplies infinitely many triangles. Are there infinitely many different triangles whose sides are three consecutive whole numbers and whose corners and incentre all lie on grid points?",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0067"
+      ],
+      "candidate_ids": [
+        "CND-0124"
+      ],
+      "cam_ids": [],
+      "justification": "For every positive solution m^2-3k^2=1 (start (m,k)=(2,1), iterate (m,k)->(2m+3k,m+2k)), take A=(0,0), B=(2m,0), C=(m-2,3k). Direct expansion using 3k^2=m^2-1 gives |AB|=2m, |AC|=2m-1, |BC|=2m+1 and signed doubled area 6mk, so nondegenerate. The incenter weighted by opposite side lengths is ((2m-1)B+(2m)C)/(6m)=(m-1,k), an integer lattice point. Since m strictly increases, triangles are noncongruent. The established general Heronian-to-lattice theorem is related prior art but this stronger incenter construction is recorded as an elementary self-contained result, not a new theorem.",
+      "limitations": "S013 source-inspection and/or human symbolic proof only; no independent referee, Lean, Palomar, novelty certification or complete native literature coverage."
     }
   ]
 }

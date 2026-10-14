@@ -167,3 +167,14 @@ Total 115/115 killed, none surviving or triaged. No CAM-0004.
 | CND-0118 | If everyone follows the majority of their neighbours at each beat, can the whole group ever settle into a loop longer than two beats? | KILLED_KNOWN | The symmetric-threshold theorem of Goles–Olivos (1980) states fixed points or 2-cycles; the tie-hold update embeds using symmetric neighbour weight 2 and diagonal self-weight 1. No original result established. |
 | CND-0119 | If the gaps between chosen whole numbers grow without bound, must the sum of their reciprocals have a finite total? | KILLED_FALSE/DEGENERATE | Take a_n=∑_(k=1)^n ⌈log₂(k+1)⌉; gaps grow to infinity, but dyadic blocks show ∑1/a_n diverges. |
 119/119 KILLED, zero TRIAGED/SURVIVING; CAM-0004 not registered, CAM-0003 unchanged.
+
+## S013 — coupled constraints, five immediate symbolic/source kills
+| ID | Question | Status | Audit result |
+|---|---|---|---|
+| CND-0120 | Can a triangle drawn between grid points have three squared side lengths that are consecutive whole numbers? | KILLED_EASY | elementary parity and sums-of-two-squares obstruction. |
+| CND-0121 | Could the reciprocals of chosen increasing whole numbers add up forever while the reciprocals of their step sizes have a finite total? | KILLED_EASY | Cauchy-Schwarz forces convergence. |
+| CND-0122 | Can four non-collinear points in the plane have all six distances be consecutive whole numbers? | KILLED_KNOWN | exact historical MO question; reported collinear-only classification. |
+| CND-0123 | On a circle with a whole-number radius, can the shorter curved distance and the straight-line distance between two points both be whole numbers? | KILLED_KNOWN | immediate classical transcendence reduction. |
+| CND-0124 | Are there infinitely many different triangles whose sides are three consecutive whole numbers and whose corners and incentre all lie on grid points? | KILLED_EASY | explicit Pell family supplies infinitely many triangles. |
+
+124/124 KILLED; no TRIAGED/SURVIVING. CAM-0003 remains FAILED/PARTIAL 37/54; CAM-0004 never registered.

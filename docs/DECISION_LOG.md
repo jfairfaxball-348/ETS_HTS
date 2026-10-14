@@ -81,3 +81,9 @@ DEC-0035: No mathematical CAM or external posting; native novelty UNKNOWN where 
 - DEC-0050: Keep all native full-corpus gap counts UNKNOWN, not zero; zero TRIAGED/SURVIVING/HARD and no external priority.
 - DEC-0051: CAM-0003 FAIL/PARTIAL unchanged, no CAM-0004 because no numeric experiment; maintain stage 1 regeneration only.
 - DEC-0052: Local actual git checkout DNS-blocked, format-only hosted CI does not certify mathematical correctness. S013 requires fresh owner invocation.
+
+## S013 — 2026-10-14
+- Owner authorised exactly S013 on pinned main b94d69bd0782193fb0683866e2967206a1edfa65. No scope beyond generating and auditing questions.
+- Five interlocking same-object mechanisms: integer-grid squared side distances (CND-0120); reciprocal gaps vs reciprocal terms (0121); four integral distances all six consecutive (0122); integer circle chord+arc (0123); consecutive side lengths, lattice points and lattice incenter (0124).
+- Kill all five only after explicit parity / Cauchy-Schwarz / known MathOverflow / Lindemann / Pell reductions. No TRIAGED/SURVIVING; no independent research-hardness evidence and no native two-pass novelty audit.
+- Do not create CAM-0004; all symbolic/source kills precede any numerical experiment. Keep CAM-0003 frozen failed/partial. Next session S014 future and owner-gated.

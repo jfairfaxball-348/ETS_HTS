@@ -576,6 +576,33 @@
       "url_or_doi": "https://doi.org/10.1016/0012-365X(80)90121-1",
       "access_grade": "ABSTRACT_INSPECTED",
       "notes": "1980 Discrete Mathematics 30(2), 187–189; opened university institutional repository author/abstract page https://pure.uai.cl/en/publications/periodic-behaviour-of-generalized-threshold-functions/ ; result claims cycles of length 1 or 2 for symmetric threshold functions. Publisher direct full text not accessible. S012 gives exact tie-hold encoding; proof not inspected."
+    },
+    {
+      "id": "SRC-0065",
+      "title": "Points with pairwise integer distances in the plane",
+      "author": "Morteza (question); Robert Israel (answer), MathOverflow",
+      "date": "2014-10-15",
+      "url_or_doi": "https://mathoverflow.net/questions/184528/points-with-pairwise-integer-distances-in-the-plane",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Opened native MO question and answer on 2026-10-14; literal question asks whether four points can have six consecutive integer distances. Answer asserts only n=1 and four collinear points, with Cayley-Menger determinant. Full elimination proof is not given; not peer reviewed. CND-0122's noncollinear condition is excluded by the stated answer."
+    },
+    {
+      "id": "SRC-0066",
+      "title": "Lindemann–Weierstrass theorem",
+      "author": "Encyclopedia of Mathematics contributors (classical F. Lindemann / K. Weierstrass)",
+      "date": "historical 1882/1885 theorem; encyclopedia page inspected 2026-10-14",
+      "url_or_doi": "https://encyclopediaofmath.org/wiki/Lindemann%E2%80%93Weierstrass_theorem",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Native encyclopedia statement: e^z transcendental for nonzero algebraic z, implying CND-0123 impossibility via chord cosine. Full classical proof NOT INSPECTED; this is a known theorem, not independent programme proof."
+    },
+    {
+      "id": "SRC-0067",
+      "title": "On lattice points which become vertices of Heronian triangles II",
+      "author": "Koichi Arimoto and Yasuyuki Hirano",
+      "date": "2021-04-02",
+      "url_or_doi": "https://doi.org/10.17654/MS129020157",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Opened publisher native abstract: every Heronian triangle can be realized as a lattice triangle, citing Yiu (2001). Does not assert integer-incenter requirement of CND-0124; exact new incenter construction independently self-checked and kills existence question. Full publisher PDF NOT INSPECTED."
     }
   ]
 }

@@ -32,3 +32,9 @@ Owner-authorised exactly S011 at main 91b62866bf3c20b47b198f1993c49c1f702fca39; 
 
 ## S012 — 2026-10-13
 Explicit owner invocation for S012 on live main 3c2e7214ed37872c2847cd560b6fb2f3f0ae6cf2; confirmed S011 PR #12 merged ordinary two-parent, sole-parent head and same tree, hosted format CI success. Four original *questions* generated, all killed, CND 119 KILLED 119 SRC64 CLM80 CAM3 (CAM-0003 still FAILED/PARTIAL 37/54), triaged0 surviving0. No numeric CAM, no proof escalation. Checkout git DNS blocked; local checker/unittest NOT_RUN. One atomic authored commit and PR/merge to reconstruct from live remote at next entry. S013 NOT AUTHORISED.
+
+## S013 — 2026-10-14
+Owner explicitly invoked live S013 at main b94d69bd0782193fb0683866e2967206a1edfa65 (tree 9e94679d41596a9d634ac449918e8e15aa7ef5f0). S012 authored commit + one CI-only repair, PR #13, standard ordered two-parent merge independently confirmed; hosted main record-validation SUCCESS, source checks not mathematics. Five coupled mechanisms CND-0120..0124 all killed, 124/124 killed, 67 SRC, 85 CLM, 3 CAM unchanged, no survivors. Actual git checkout DNS blocked and local full test commands NOT_RUN. S013 outgoing atomic authored commit, ordinary PR and merge to be reconstructed next entry.
+
+## S014 — FUTURE / UNEXECUTED
+New explicit owner invocation required. No selection or external dissemination authorised.
