@@ -24,5 +24,5 @@
   "triaged_count": 0,
   "kill_count": 124,
   "remote_sha_policy": "S014 independently verify S013 one authored sole-parent commit, ordinary non-draft PR and ordered two-parent merge; reconstruct S012 authored and CI-only repair separately",
-  "note": "CND 124 all killed SRC67 CLM85 CAM3; zero survivors. CAM-0003 remains FAILED/PARTIAL 37/54; CAM-0004 NOT registered/run. Exact online precedent for four-point consecutive distances; remaining arguments known or elementary. Protection 403 UNKNOWN; original git checkout DNS blocked; hosted CI is format-only."
+  "note": "CND 124 all killed SRC67 CLM85 CAM3; zero survivors. CAM-0003 remains FAILED/PARTIAL 37/54; CAM-0004 NOT registered/run. Exact online precedent for four-point consecutive distances; remaining arguments known or elementary. Protection 403 UNKNOWN; original git checkout DNS blocked; hosted CI is format-only. Administrative 2026-10-14 owner steer retargeted FUTURE S014 toward triangle point-growth and nearest-two planarity/hull/collinearity; no S014 executed and no scientific registry totals changed."
 }
