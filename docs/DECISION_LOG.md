@@ -134,3 +134,8 @@ DEC-0070: Preregistered and executed CAM-0008/0009 on exact rational finite data
 - DEC-0079: Uniform CLM0107 all-n safe aspect r<=R≈1.050202 and CLM0108 noncircle r=101/100 disprove CND0131 circle-only statement. Move GENERATED to KILLED_FALSE/DEGENERATE with complete mathematical proof, NOT unresolved-retired narrative.
 - DEC-0080: No sharpness or full ratio classification asserted; priority, external review and native two-pass novelty UNKNOWN. Zero TRIAGED/SURVIVING; all 131 candidates killed; selection/Lean/publication/outreach NOT authorised.
 - DEC-0081: No new CAM or SRC. Detached S016 CAM8/9 originals, failed CAM3/5 and rejected CAM10 floats untouched. Stage S021 future hostile theorem audit; DNS blocks checkout.
+
+## Owner administrative steer — 2026-10-14 (NO S021 execution)
+- DEC-0083: Owner chooses S021 hostile mathematical theorem audit of S020 CLM-0107/0108, followed (only if audit survives) by Lean 4 formalisation of the existing result rather than attempting a stronger ellipse ratio or successor conjecture.
+- DEC-0084: Audit must reconstruct all dependencies, inequalities, endpoints, lex ties, convex-hull ear recursion and the symbolic nonround r=101/100 deduction. Fail-closed statuses: AUDIT_PASS_CONDITIONAL_FORMALISATION, REPAIR_REQUIRED, REFUTED or INCONCLUSIVE. PASS stages complete S022 FUTURE Lean handoff/blueprint; no Lean work in S021. Non-PASS stages proof repair/verification instead.
+- DEC-0085: This is a three-file administrative priority change only; S020 remains last completed and S021 next FUTURE, CND131 all killed, SRC79 CLM108 CAM10 unchanged. External novelty and independent peer review remain unverified. Owner gate for S022 fresh invocation remains intact.
