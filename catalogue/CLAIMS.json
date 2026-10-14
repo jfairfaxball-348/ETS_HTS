@@ -1273,6 +1273,63 @@
       ],
       "justification": "CAM-0007 independently enumerated all 6!=720 orders, rebuilt graph from the two nearest previous sites with exact integer squared distances, and tested disjoint edge pairs using exact orientation products. 720 had proper crossings; zero crossing-free. CAM-0006 separately found a six-site convex no-ear example in its frozen bounded search; CAM-0005 is invalid due self-neighbour inclusion.",
       "limitations": "This computer enumeration is redundant confirmation of CLM-0093's mathematical proof; finite one-set scope only. Program checked by run, not formalised/peer reviewed."
+    },
+    {
+      "id": "CLM-0095",
+      "statement": "Every finite collection of distinct points on a Euclidean circle admits some crossing-free nearest-two predecessor retained-graph arrival order.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0129",
+        "CND-0131"
+      ],
+      "cam_ids": [],
+      "justification": "For n>=4 choose circular vertex v minimizing sum of its two adjacent angular gaps a+b. Summing all n gap-pair sums gives 4π, so a+b<=4π/n<=π. Its immediately neighbouring gaps are a,b; the two adjacent next gaps c,d obey c>=a,d>=b by minimality. Every other vertex is separated from v in both circle directions by at least a+b, so its shorter central angle is >=a+b, giving Euclidean chord strictly longer than chords(a), chords(b). Hence the two hull neighbours are exactly its nearest two other sites, including with ties. Delete v and repeat, then reverse elimination: each v attaches on the exterior of the remaining polygon across a hull side, so no edges cross. n=3 is the seed triangle. Full proof S016/MATHEMATICS.",
+      "limitations": "Exact circle case only, retained NG not polygon edge replacement; no novelty clearance or external review."
+    },
+    {
+      "id": "CLM-0096",
+      "statement": "Every set of three or four distinct noncollinear sites admits a crossing-free retained nearest-two predecessor order.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0130"
+      ],
+      "cam_ids": [],
+      "justification": "For four sites with one interior site insert the interior last after the surrounding triangle. For a convex quadrilateral A,B,C,D, let O be diagonal intersection, choose vertex A with maximal distance to O, and its opposite vertex C last. Because AC=AO+OC and AO>=BO,DO, strict triangle inequalities give AC>BC and AC>CD. Thus C's two nearest among A,B,D are hull neighbours B,D; adding CB and CD outside triangle ABD cannot cross its edges. Three sites seed a triangle. S016/MATHEMATICS.",
+      "limitations": "General-position assumption; simple crossing-free drawing, not a statement about minimum lengths or global arbitrary order."
+    },
+    {
+      "id": "CLM-0097",
+      "statement": "Five rational sites on x²/25+y²=1 parameterised by m=(-194,3,25,217,257), coordinates (320m/(1024+m²),(1024-m²)/(1024+m²)), in cyclic order, have no crossing-free nearest-two predecessor order.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0130",
+        "CND-0131"
+      ],
+      "cam_ids": [
+        "CAM-0008",
+        "CAM-0009"
+      ],
+      "justification": "All lie on a strictly convex ellipse, no three collinear. Exact rational squared-distance comparison for each cyclic index 0..4 gives nearest-two index pairs respectively (3,4),(3,4),(3,4),(1,4),(1,3). The respective hull-neighbour pairs are (1,4),(0,2),(1,3),(2,4),(0,3). None match. S015 CLM-0092 maximal outerplanarity therefore forbids any final site. CAM-0009 independently enumerates all 120 orders. The distance comparisons are strict at rank 2 vs 3. Self-contained reproducible rational formula in S016/MATHEMATICS.",
+      "limitations": "Only this exact point set and the 5:1 ellipse; independent priority unknown. Full original CAM raw/code frozen externally in session archive manifest."
+    },
+    {
+      "id": "CLM-0098",
+      "statement": "An exact independent rational verifier finds a proper edge crossing in every one of 5!=120 nearest-two arrival orders for the five ellipse sites; 36,000 CAM-0008 sampled sets yield the registered finite zero-good-ear frequencies.",
+      "status": "COMPUTED_EXACT",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0130",
+        "CND-0131"
+      ],
+      "cam_ids": [
+        "CAM-0008",
+        "CAM-0009"
+      ],
+      "justification": "CAM-0009 exact fractions/orientation-sign enumeration of all 120 orderings, minimum proper crossing count 1. CAM-0008 preregistered fixed seed 20261014, 2,000 rational-ellipse samples per (aspect,n) cell; no-ear sets occur for a/b=5 and20 at n5/n6, none in sampled a/b=1,51/50,6/5,2 cells. Frozen SHA256 hashes and full raw in detached owner-downloadable archive, manifest in repo.",
+      "limitations": "Finite sampled sets, no extrapolation to all ellipses or n; full native corpus novelty not checked; detached archive not equivalent to full in-repo retention."
     }
   ]
 }

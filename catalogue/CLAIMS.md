@@ -124,3 +124,10 @@
 - **CLM-0092 PROGRAMME_PROVED:** Any plane retained-NG graph on n points in strict convex position has 2n−3 edges and hence all hull sides. Its last vertex must have its two hull neighbours as the two nearest other sites. This is necessary, not sufficient.
 - **CLM-0093 PROGRAMME_PROVED:** Explicit integer six-point set on y=x²/4 defeats this necessary condition at all six possible last vertices; therefore CND-0128 is false. Detailed distance proof in S015/MATHEMATICS.md.
 - **CLM-0094 COMPUTED_EXACT:** Independent CAM-0007 gives 720/720 crossing-bearing permutations for exactly that six-point set. CAM-0005 was invalid and is not evidence; CAM-0006 finds another six-site example. Finite certificate corroborates proof, not novelty.
+
+## S016 claims — exact sharp obstruction and circle exception
+- **CLM-0095 PROGRAMME_PROVED**: Every finite concyclic site set permits a plane NG ordering. Recursive minimum-two-adjacent-arc-gap ear removal; proof S016/MATHEMATICS.
+- **CLM-0096 PROGRAMME_PROVED**: Every <=4 general-position site set permits plane NG ordering. In convex quadrilateral, pick diagonal endpoint furthest from diagonal intersection and insert its opposite last.
+- **CLM-0097 PROGRAMME_PROVED**: Five rational points on ellipse x²/25+y²=1 with m=(-194,3,25,217,257) have no permissible last hull ear, hence no plane NG order. Strict exact pairs and formula in S016/MATHEMATICS.
+- **CLM-0098 COMPUTED_EXACT**: CAM-0009 independently checks all 120/120 orders have a proper crossing (minimum 1); CAM-0008 samples 36,000 finite inputs. Code/raw preserved as detached owner-downloadable archive, not individual in-repo paths.
+

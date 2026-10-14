@@ -54,3 +54,7 @@ Phase1 generation/triage remains open.128candidates,127killed,1GENERATED,0TRIAGE
 ## S015 — 2026-10-14
 
 Phase1 OPEN_REGENERATION_ZERO_SURVIVORS: 128 candidates all KILLED, no GENERATED/TRIAGED/SURVIVING/HARD/selected. CND-0128 false by elementary finite convex witness CLM-0092/0093. Phase2 NOT_OPEN_NO_SURVIVORS, source-native coverage incomplete; phase3 NOT_OPEN; phases4–6 OWNER_GATED. CAM7 includes preserved CAM-0005 defect, CAM-0006/7 certification, older CAM-0003 failed partial. Hosted format checks never certify mathematics.
+
+## S016 — 2026-10-14
+Gate0 administrative closed. Gate1 OPEN_REGENERATION_ONE_UNTRIAGED: CND-0129/0130 KILLED_EASY, CND-0131 GENERATED only; CND131 total, KILLED130 GENERATED1 TRIAGED0 SURVIVING0 HARD0 SELECTED0. Gate2 NOT_OPEN_NO_SURVIVORS and native literature audit incomplete/UNKNOWN; gate3 NOT_OPEN no independent difficulty certificate; gates4–6 OWNER_GATED. SRC78 CLM98 CAM9; detached CAM8/9 raw/code archival blocker explicitly OPEN. Hosted record CI never mathematical review.
+

@@ -1,0 +1,6 @@
+2026-10-14 S016 validation evidence
+
+- CPython 3.13.5 local stdlib CAM-0008 preregistered then executed on actual immutable local script: observed 36,000 rational ellipse inputs. CAM-0009 independently preregistered then executed: all120/120 ellipse orders cross, min 1; additional 100,000 sampled parabola quintuples no no-ear witness. Original script SHA256 and prereg SHA256 independently recorded in manifest.
+- Original scripts/raw/preregs preserved locally in an owner downloadable tar.gz, archive SHA256 f30f4fbed674e26c7be26f434a915fd5062ac08f6c6d18d1c98d5a460640cb35. Not yet individually in remote; deviation must be fixed later.
+- Actual checkout: git ls-remote https://github.com/jfairfaxball-348/ETS_HTS.git failed: 'Could not resolve host: github.com'. Accordingly required full-checkout commands `python scripts/check_scaffold.py` and `python -m unittest discover -s tests -v`: **NOT_RUN LOCALLY** in a true repository checkout. No PASS invented.
+- GitHub Actions hosted governance checker (if later observed on PR) validates records only, NOT mathematical correctness/novelty. Status and integration must be independently observed before a normal merge.
