@@ -45,7 +45,8 @@ theorem four_point_order_from_strict_separation
     apply hv
     simp [heq]
   have hn : ([p, q, r, v] : List Point).Nodup := by
-    simp [List.nodup_cons, hpq, hpr, hqr, hvp, hvq, hvr, eq_comm]
+    simp [List.nodup_cons, hpq, hpr, hqr, hvp, hvq, hvr,
+      hvp.symm, hvq.symm, hvr.symm]
   refine ⟨p, q, r, [v], triangleEdges p q r ∪ {edge v q, edge v r},
     hpq, hpr, hqr, ?_, ?_, ?_, hplane⟩
   · simpa using hn
