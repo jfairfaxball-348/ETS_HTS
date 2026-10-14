@@ -1,0 +1,13 @@
+S032 entry pinned main=3920bfd71d2b882068e417d2aef19d82b0a3dda0
+S032 entry actual commit tree=10d4de27bacbbd70c4329b412eb31974708c907c
+S031 PR #36 merged main via two-parent merge; parents de69530995b13be9a4f32b234cc10f9a00556cae and 0200e21cd5f8934b5265fe5cdfd9ac0746f1d8b5
+S031 merged-main Lean run=38638823699 job=116108811872 SUCCESS
+S031 merged-main governance run=38638823717 job=116108811613 SUCCESS
+S031 source compilation+theorem axiom audit=PASS standard [propext, Classical.choice, Quot.sound]
+S031 verified ellipse_ratio_101_le_R, clm0108_of_clm0107, four_point_order_from_strict_separation
+S032 local lean/lake NOT_INSTALLED
+S032 local git clone FAILED DNS
+S032 local verification and scaffold NOT_RUN
+S032 host CI status AWAIT_CHECK at authoring
+S032 exact universal CLM0096/0099/0107/0108 OPEN
+S032 all-five PASS gate NOT_MET

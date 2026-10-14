@@ -7,3 +7,7 @@ Canonical https://github.com/jfairfaxball-348/ellipse-theorem (renamed from ETS_
 **S031** proves a source-level four-site mandatory insertion interface and attempts an unconditional exact `101/100 ≤ R` certificate, alongside a mathematical convex/interior four-point argument. See [mathematics](../sessions/S031/MATHEMATICS.md) and [closeout](../sessions/S031/CLOSEOUT.md); source candidate requires S031 hosted CI for Lean certification. CLM0096 (universal four sites), CLM0099 (full iff), CLM0107 (all n), CLM0108 (all n nonround) remain OPEN. [S032 FUTURE prompt](NEXT_SESSION_PROMPT.md) requires new owner invocation.
 
 Historical CND131 all killed/SRC87/CLM108/CAM10 and S024 conditional novelty remain intact. No Palomar/paper/outreach authority.
+
+## S032 authenticated continuation
+
+Independently inspected S031 merged-main Lean [38638823699](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38638823699) and governance [38638823717](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38638823717): both SUCCESS. S031 ratio and strict-gap wrapper are thus kernel-verified with standard axioms. S032 [math](../sessions/S032/MATHEMATICS.md) adds source-level exact-tie predecessor selection and four-point insertion wrapper (new hosted checks required). CLM0096, 0099, 0107, 0108 remain OPEN. [S033 prompt](NEXT_SESSION_PROMPT.md) remains future/unexecuted.
