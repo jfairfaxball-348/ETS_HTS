@@ -21,3 +21,8 @@ S028 local scripts/check_scaffold.py: NOT_RUN
 S028 local unittest discover: NOT_RUN
 S028 five full target CLM propositions: ALL_UNPROVED
 S028 protected/ruleset metadata: UNKNOWN / not needed for unprotected branch
+S028 first authored SHA: 1112fe2ed0261fd3b3beea1d374ca0b0fc835bc7
+S028 first Lean job 116011372696: FAILURE (2 reversed equality terms at source lines 34,54)
+S028 first governance job 116011461577: SUCCESS (FORMAT)
+S028 repair: second authored commit follows first, no force push, reason documented
+S028 revised Lean compile: PENDING_REMOTE_CI

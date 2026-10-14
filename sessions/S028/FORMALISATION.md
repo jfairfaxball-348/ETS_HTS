@@ -29,3 +29,6 @@ S027 was independently confirmed: branch SHA `650b34e76828ad0ecccd8573ed1acfe457
 Entry S028 main `a164b4bb30de23d10ff231b63b399e3f054e1c2c`; its tree `de00aabdb64528463a5c1a7d49ca525f116eadbe`. Local checkout and lean/lake/elan unavailable, so local `lake build`, `lake env lean ETSHTS.lean`, and Python checkout checks are NOT_RUN. S028 authored proof terms require hosted CI *after* commit; no premature pass asserted here. Pin unchanged leanprover/lean4:v4.15.0 and mathlib `9837ca9d65d9de6fad1ef4381750ca688774e608`. No `sorry`, `admit`, custom `axiom`, mathematical `native_decide`.
 
 Archive unchanged: CND131 all killed, SRC87 CLM108 CAM10, S016 detached data, S024 final `CONDITIONAL_NOVELTY_SUPPORTED`. No new novelty review or publication stage.
+
+## First hosted Lean failure and minimal repair
+The first push produced concrete compiler errors at `Derivatives.lean` 34 and 54 because `sqDist_ellipsePoint_expand` was unnecessarily reversed by `.symm`; Lean expected the theorem's forward direction. The repair replaces both applications with direct use of `sqDist_ellipsePoint_expand`. This makes S028 a two-authored-commit CI repair exception, with full parent history retained and not force-pushed. Re-run both checks on the repaired head; the successful result cannot be assumed at authoring time.

@@ -25,7 +25,7 @@
   "kill_count": 131,
   "generated_count": 0,
   "remote_sha_policy": "At S029 entry independently verify S028 authored one-parent commit, ordinary PR/two-parent merge, matching trees and separate hosted Lean/governance checks, fresh main.",
-  "note": "Owner invoked S028 2026-10-14. Source candidates include two independently derived HasDerivAt identities, both exact derivative values and unit-circle cosine-squared chord identity. Strict positivity and full CLM0102/0096/0099/0107/0108 remain OPEN. Local compiler and checkout unavailable; S028 source pending hosted CI. S027 exact chord-bounds code independently verified successful on main.",
+  "note": "Owner invoked S028 2026-10-14. Source candidates include two independently derived HasDerivAt identities, both exact derivative values and unit-circle cosine-squared chord identity. Strict positivity and full CLM0102/0096/0099/0107/0108 remain OPEN. Local compiler and checkout unavailable; S028 source pending hosted CI. S027 exact chord-bounds code independently verified successful on main. First authored S028 Lean CI identified only two reversed equality proof term orientations in HasDerivAt conversions; a second correction commit was required and documented (no force push). Repaired CI pending.",
   "novelty_verdict": "CONDITIONAL_NOVELTY_SUPPORTED",
   "final_novelty_audit": "S024",
   "formalisation_status": "S028_DERIVATIVES_PENDING_HOSTED_LEAN__ALL_FIVE_CLM_UNPROVED",

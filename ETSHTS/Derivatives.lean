@@ -31,7 +31,7 @@ theorem hasDerivAt_sqDist_ellipse_right (a b θ φ : ℝ) :
     (HasDerivAt.const_mul (b ^ 2) (hs.pow 2))
   convert h using 1
   · funext t
-    exact (sqDist_ellipsePoint_expand a b θ t).symm
+    exact sqDist_ellipsePoint_expand a b θ t
   · ring
 
 /-- Independently differentiate the left endpoint, keeping the right fixed.
@@ -51,7 +51,7 @@ theorem hasDerivAt_sqDist_ellipse_left (a b θ φ : ℝ) :
     (HasDerivAt.const_mul (b ^ 2) (hs.pow 2))
   convert h using 1
   · funext t
-    exact (sqDist_ellipsePoint_expand a b t φ).symm
+    exact sqDist_ellipsePoint_expand a b t φ
   · ring
 
 /-- Exact right-endpoint derivative, with no angle or axis restrictions. -/
