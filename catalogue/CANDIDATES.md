@@ -225,3 +225,6 @@ CND-0129 and CND-0130 are killed as *questions seeking unsolved answers*, but th
 
 ## S018 — CND-0131 remains GENERATED
 Short-arc sufficiency (CLM-0102) and fixed-cardinality near-circle stability (CLM-0103/0104) are positive structural theorems, not a global ellipse characterisation. Every n has some safe ratio interval, but a **single interval for all n** is unproved and a noncircular family of counterexamples remains unconstructed. No TRIAGED/SURVIVING/SELECTED promotion; CND131 total, 130 killed, 1 GENERATED. No additional candidate or CAM and no source-priority clearance.
+
+## S019 — CND-0131 still GENERATED
+CLM-0105/0106 convert S018 non-effective fixed-n stability into a theoretical exact quantifier-elimination algorithm. NO numerical epsilon_n, no quantitative n(r), no ALL-n uniform interval and no proof every noncircle fails. CND131 total: 130 killed, one GENERATED, zero TRIAGED/SURVIVING. SRC79 CLM106 CAM10; native novelty/hardness incomplete.

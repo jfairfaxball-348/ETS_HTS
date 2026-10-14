@@ -702,6 +702,15 @@
       "url_or_doi": "https://math.stackexchange.com/questions/72555/generating-coordinates-for-n-points-on-the-circumference-of-an-ellipse-with-fi",
       "access_grade": "STATEMENT_INSPECTED",
       "notes": "2026-10-14 original Math.SE question/answer inspected; notes that on an eccentric ellipse points on the opposite narrow arc may be nearest. This is not about the present two-predecessor chronological plane graph; no claimed equivalence or originality."
+    },
+    {
+      "id": "SRC-0079",
+      "title": "Cylindrical algebraic decomposition using local projections",
+      "author": "Adam Strzeboński",
+      "date": "2016",
+      "url_or_doi": "https://doi.org/10.1016/j.jsc.2015.11.018",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Publisher article abstract/introduction inspected 2026-10-14. Standard quantifier elimination for polynomial formulas; author does not discuss ellipse NG. No proof inspection or originality credit."
     }
   ]
 }

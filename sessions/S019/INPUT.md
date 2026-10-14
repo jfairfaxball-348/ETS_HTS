@@ -1,0 +1,20 @@
+# S019 — owner invocation and immutable live prompt
+Owner 2026-10-14 BST: Run next session at https://github.com/jfairfaxball-348/ETS_HTS/blob/main/authoritative%2FNEXT_SESSION_PROMPT.md
+
+# S019 — FUTURE / UNEXECUTED: quantify fixed-n eccentricity or force unbounded obstruction construction
+**FUTURE — UNEXECUTED. Requires a new explicit owner invocation.** This S018 handoff authorises NO S019, S020, owner-gated selection, Lean, Palomar, paper, external contact or publication.
+
+## Entry and integrity
+Independently pin LIVE main SHA/tree; reconstruct S018 atomic authored one-parent branch commit, ordinary non-draft PR, recorded PR/main check-runs, ordered two-parent nonforce merge and exact identical tree. Inspect active branches/PRs/competing S019, all statuses and check-runs, rulesets and inaccessible branch protection (403 UNKNOWN). Read AGENTS, STATE, protocols, S018 seven session records, pair registries and ledgers. Expected if merged: CND131 (130 KILLED, one GENERATED CND-0131), SRC78 CLM104 CAM10, 0 TRIAGED/SURVIVING. S016 detached six-file CAM8/9 archive SHA256 f30f4fbed674e26c7be26f434a915fd5062ac08f6c6d18d1c98d5a460640cb35 **still not on GitHub**; preserve CAM3/5 failures and CAM10 floating near-duplicate pseudo-witness rejection.
+
+## Single mathematical focus
+CND-0131: Is the circle the only ellipse such that EVERY finite boundary set admits a crossing-free retained nearest-two-predecessor order? S018 CLM-0102: any set in parameter arc width <4 arctan(b/a) works, NO minimum gap needed. CLM-0103: **for each fixed n** exists non-effective epsilon_n>0 all n-site configurations are safe for ratios r<1+epsilon_n, including arbitrary coalescence. CLM-0104: every hypothetical family of bad sets with r->1 must have n->infinity. Do NOT replace `forall n exists epsilon_n` with `exists epsilon forall n`; classification is unresolved.
+
+Priority: seek explicit epsilon_n bound (even minuscule) via quantitative multiscale cluster pruning, controlling separation of at least three support groups and the doubled-cluster derivative sign; OR construct a rigorous family with n(r)->infinity for arbitrarily nearcircle noncircles. Probe whether a dimensionless chord monotonicity invariant, curvature/strict convexity or spiral-turn condition gives a **uniform n** bound and settles safe near-circle neighbourhood. Challenge every candidate proof with hierarchical coalescence / almost antipodal groups. If this cannot produce credible global progress, decide (narrative only) whether CND-0131 should be NOT_RESOLVED_RETIRED, while preserving allowed registry status GENERATED until a governed replacement is actually developed. Do not relabel KILLED without proof or external exact match. No cosmetic parameter tweaking.
+
+Only if a genuine finite computational experiment is indispensable, preregister CAM-0011 *before any execution* with exact rational squared distances, finite inputs/stopping rule, original code and prereg hash/version, immutable raw, and independently certify all-orders negative witnesses; do not accept float margins around 1e-31. Otherwise no CAM.
+
+## Novelty and governance
+CND-0131 is GENERATED with no certified open/novel/hard status. Source-native two-pass novelty and independent difficulty remain mandatory before TRIAGED/SURVIVING: OEIS term/keyword; arXiv FULL TEXT, MO/MSE, Erdős/OPG, Wikipedia open lists, Guy/CFG/BMP/Kourovka, AMM/MM, 2025–26 SoCG/CCCG/ISAAC, Zenodo/GitHub, literal dated queries, hit counts UNKNOWN if unavailable. Bidirectional translations; no unsupported negative-hit claim.
+
+Exactly ONE S019 if explicitly invoked. Update paired CND/SRC/CLM/CAM registries, STATE, ledgers, checker/tests (completed S019; next S020 FUTURE). True-checkout `python scripts/check_scaffold.py` and `python -m unittest discover -s tests -v`; record NOT_RUN if DNS. One isolated branch, one atomic authored commit, ordinary PR/observed CI/non-force two-parent merge, verify trees and refs. No S020 execution or owner-gated escalation.
