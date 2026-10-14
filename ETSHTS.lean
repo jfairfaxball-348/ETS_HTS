@@ -1,6 +1,6 @@
 import ETSHTS.Partial
 
-/- S026: axiom prints below concern genuine proof declarations only. -/
+/- S026: the dependency reports below concern genuine proof declarations only. -/
 #print axioms ETSHTS.sqDist_self
 #print axioms ETSHTS.sqDist_nonneg
 #print axioms ETSHTS.sqDist_symm
