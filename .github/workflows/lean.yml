@@ -1,7 +1,7 @@
 name: Lean formalisation (separate from governance)
 on:
   push:
-    branches: [main, "session/S025-lean-formalisation-foundations"]
+    branches: [main, 'session/**', 'admin/**']
   pull_request:
     branches: [main]
   workflow_dispatch:
