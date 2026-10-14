@@ -3,7 +3,7 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S021 hostile theorem audit passed internally; existing ellipse theorem staged for Lean formalisation",
+  "phase_name": "S021 theorem audit passed internally; S022 novelty and prior-art gate required BEFORE Lean",
   "last_completed_session": "S021",
   "next_session": "S022",
   "next_session_authorised": false,
@@ -23,7 +23,7 @@
   "surviving_count": 0,
   "triaged_count": 0,
   "kill_count": 131,
-  "remote_sha_policy": "S022 must reconstruct S021 authored sole-parent commit, PR/hosted checks, normal two-parent nonforce merge and identical tree from LIVE main; this S021 closeout is pre-integration.",
-  "note": "S021 outcome AUDIT_PASS_CONDITIONAL_FORMALISATION on CLM-0096/0099/0102/0107/0108, no fatal gap found after documented adversarial proof reconstruction. This is NOT Lean verification, outside peer review or originality. CND131 KILLED131, SRC79 CLM108 CAM10 unchanged, TRIAGED0 SURVIVING0. S022 FUTURE Lean formalisation ONLY of existing theorem, no mathematical strengthening. S016 CAM8/9 originals off GitHub, CAM3/5 failed, CAM10 floating pseudo-witnesses rejected; real checkout tests NOT_RUN due GitHub DNS.",
+  "remote_sha_policy": "S022 must pin LIVE main and reconstruct both the S021 PR #24 merge and this later novelty-first administrative handoff/CI before starting; prior commits are only historical.",
+  "note": "Owner administrative steer 2026-10-14: S022 FUTURE/UNEXECUTED is comprehensive hostile prior-art/novelty investigation of CLM0099/0102/0107/0108, NOT Lean. Supersedes old S022 Lean prompt. The S021 LEAN_BLUEPRINT is retained for conditional future S023 only if deep primary-source audit yields CONDITIONAL_NOVELTY_SUPPORTED; all other novelty verdicts block Lean. New owner invocation required; this amendment executes no S022. Candidate/source/claim/CAM counts and statuses unchanged: CND131 all killed, SRC79 CLM108 CAM10, 0 TRIAGED/SURVIVING; S016 detached archive CAM8/9 and failed/float CAM3/5/10 preserved. Proof audit PASS does not certify novelty.",
   "generated_count": 0
 }
