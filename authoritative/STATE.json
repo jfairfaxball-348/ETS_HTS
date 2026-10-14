@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "programme": "ETS_HTS",
+  "programme": "ellipse-theorem",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S025 Lean formalisation begun; full theorem UNPROVED, S026 continuation queued",
+  "phase_name": "S025 foundation Lean build PASSED; exact five CLM proofs UNPROVED; S026 FUTURE",
   "last_completed_session": "S025",
   "next_session": "S026",
   "next_session_authorised": false,
@@ -23,10 +23,13 @@
   "surviving_count": 0,
   "triaged_count": 0,
   "kill_count": 131,
-  "remote_sha_policy": "At S026 entry reconstruct S025 one-parent authored commit, PR normal two-parent merge/main tree and Lean CI from live GitHub; S025 entry main e784a449a64a9dd2c2e6dd8c7f9aad1b88b54de5",
-  "note": "S025 has explicit owner invocation. Full theorem targets CLM0096, CLM0099, CLM0102, CLM0107, CLM0108 preserved as UNPROVED Prop specifications, no weakened ratio/n/tie conditions. Partial Lean foundation written, compiler not available locally, GitHub-hosted Lean workflow added; outcome needs live inspection. No Lean PASS claimed. FINAL prior-art gate remains S024 conditional for proof engineering only, no priority claim. CND131 killed131 SRC87 CLM108 CAM10 zero surviving open-problem candidates; S016 detached and failed CAMs retained. No paper/Palomar/outreach. S026 FUTURE formalisation repair, fresh owner invocation required.",
+  "remote_sha_policy": "Canonical renamed repo jfairfaxball-348/ellipse-theorem (ID1416869836). At S026 entry independently refetch live main/tree, PR29 ordered two-parent merge 018b55df..., verified S025 head and post-merge Lean runs (38596176639,38596222605,38596618699), and any subsequent admin handover PR.",
+  "note": "Owner requested ADMINISTRATIVE handover/README/docs rewrite to renamed ellipse-theorem repository; NO S026 executed. S025 actual Lean build SUCCESS on main (Lean 4.15.0, mathlib pinned), five small foundation proofs with only standard axioms; CLM0096,0099,0102,0107,0108 remain unproved Prop specifications. Historical S024 final CONDITIONAL_NOVELTY_SUPPORTED limited to proof engineering, no priority certificate. Exact all-n ellipse theorem including R endpoint, Cartesian tie, retained edges unchanged. Counts CND131 killed131 SRC87 CLM108 CAM10, zero surviving open-problem candidates; detached S016 CAM8/9 preserved. No Palomar/paper/outreach.",
   "generated_count": 0,
   "novelty_verdict": "CONDITIONAL_NOVELTY_SUPPORTED",
   "final_novelty_audit": "S024",
-  "formalisation_status": "PARTIAL_SPECIFICATIONS_AND_FOUNDATION_UNCOMPILED"
+  "formalisation_status": "FOUNDATION_LEAN_BUILD_PASS__FULL_THEOREMS_UNPROVED",
+  "legacy_programme": "ETS_HTS",
+  "canonical_repository": "jfairfaxball-348/ellipse-theorem",
+  "github_repository_id": 1416869836
 }
