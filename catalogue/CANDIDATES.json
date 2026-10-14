@@ -8331,6 +8331,192 @@
       },
       "screened_as_top_ten": false,
       "uncertainty": "Universal conjecture definitively FALSE by elementary finite certificate; literature originality and minimum size not determined, and no new open problem is claimed."
+    },
+    {
+      "id": "CND-0129",
+      "exact_statement": "For every finite collection of at least three distinct points on a circle, is there an order such that, after an initial triangle, each newly added point is connected by straight segments to its two nearest earlier points, keeping all edges, and no segments cross properly?",
+      "plain_language_statement": "Can you connect dots around a circle two-nearest-at-a-time without crossing any lines if you choose their order?",
+      "domain": "metric geometry / chronological planar graphs",
+      "origin_mechanism": "MEC-02: circle chord distance and polygon ear deletion combined, motivated by CND-0128 six-point convex failure",
+      "attribution": "S014 evolving triangle idea attributed to John Fairfax-Ball; circle-gap proof devised during S016, originality NOT established.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "CAM_REGISTERED",
+          "detail": "Exact elementary proof, no numerical campaign required."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "S016 elementary hull-ear and convex circle-gap proof; no computer assumption for universal parts."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "SELF_CONTAINED",
+          "detail": "All claims limited to NG chronological retained-graph model; no static NN equivalence."
+        },
+        {
+          "test": "literature",
+          "status": "TWO_PASS_INCOMPLETE",
+          "detail": "Web-scoped original-source comparison only; native/database/book and priority coverage UNKNOWN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-14",
+        "session": "S016",
+        "kind": "KILLED_EASY",
+        "reason": "Choose the point minimizing the sum of its two adjacent circular gaps; it is an eligible nearest-two hull ear. Recursively delete ears and reverse to obtain a plane order (CLM-0095).",
+        "reviewer": "session self-audit",
+        "verified_scope": "Mathematical proof, not peer-reviewed or novelty-cleared"
+      },
+      "source_ids": [
+        "SRC-0075"
+      ],
+      "claim_ids": [
+        "CLM-0095"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 14,
+        "sharpness": 9,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 4,
+        "low_degeneracy_risk": 3,
+        "total": 59
+      },
+      "uncertainty": "Solved within programme; no priority claim."
+    },
+    {
+      "id": "CND-0130",
+      "exact_statement": "What is the smallest n>=3 for which some n distinct plane points with no three collinear admit no crossing-free arrival order under the retained two-nearest-predecessor rule with an initial triangle?",
+      "plain_language_statement": "How few dots suffice to make crossings unavoidable, however you order them?",
+      "domain": "extremal metric combinatorics / planar geometry",
+      "origin_mechanism": "MEC-03: sharp minimum counterexample size following CND-0128; four-point universal positive and explicit five-point negative",
+      "attribution": "S016 extension of John Fairfax-Ball's S014 triangle experiment; no historical priority claimed.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "CAM_REGISTERED",
+          "detail": "CAM-0008 discovers rational ellipse five-site no-ear example, CAM-0009 independently checks all 120 orders."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "S016 elementary hull-ear and convex circle-gap proof; no computer assumption for universal parts."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "SELF_CONTAINED",
+          "detail": "All claims limited to NG chronological retained-graph model; no static NN equivalence."
+        },
+        {
+          "test": "literature",
+          "status": "TWO_PASS_INCOMPLETE",
+          "detail": "Web-scoped original-source comparison only; native/database/book and priority coverage UNKNOWN."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-14",
+        "session": "S016",
+        "kind": "KILLED_EASY",
+        "reason": "Exactly n=5. All four-site sets have a plane order by the crossed-diagonals argument or interior-point case. Five exact rational sites on x²/25+y²=1 have no eligible last hull ear (CLM-0096/0097), independently 120/120 orders cross (CLM-0098).",
+        "reviewer": "session self-audit",
+        "verified_scope": "Elementary lower-bound proof plus exact rational finite certificate, no literature priority claim"
+      },
+      "source_ids": [],
+      "claim_ids": [
+        "CLM-0096",
+        "CLM-0097",
+        "CLM-0098"
+      ],
+      "cam_ids": [
+        "CAM-0008",
+        "CAM-0009"
+      ],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 14,
+        "sharpness": 9,
+        "difficulty_evidence": 0,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 4,
+        "low_degeneracy_risk": 3,
+        "total": 59
+      },
+      "uncertainty": "Originality and minimal Euclidean coordinate complexity not certified."
+    },
+    {
+      "id": "CND-0131",
+      "exact_statement": "Among ellipses in the Euclidean plane, is the circle the only ellipse for which every finite set of distinct points on its circumference admits a crossing-free retained two-nearest-predecessor insertion order, starting from a triangle?",
+      "plain_language_statement": "Is the circle the only kind of ellipse where every collection of dots can be joined to the nearest two older dots without any crossed lines, in some order?",
+      "domain": "metric geometry / shape characterisation / chronological triangulation",
+      "origin_mechanism": "MEC-08: classify geometry of universal insertion property after affirmative circular proof and five-point failure on a 5:1 ellipse; distinct intrinsic shape question, not a manufactured numeric threshold",
+      "attribution": "Owner's 2026-10-14 growing triangle concept; S016 shape-classification formulation; historical priority NOT established.",
+      "status": "GENERATED",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "FINITE_ONLY",
+          "detail": "CAM-0008: 36,000 exact rational sampled sets, 6 fixed ellipses and n=4,5,6, 2,000 per cell. Zero-good-ear examples found on 5:1 and 20:1 ellipses, none in sampled near-circle cases. This is not exhaustive."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "PARTIAL",
+          "detail": "Circular minimum adjacent angular-gap argument proves circle works; same metric inequality does not survive general affine stretching."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "PARTIAL",
+          "detail": "Hull ear obstruction gives explicit failures on non-round ellipses but cannot classify all non-round ellipses."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "UNRESOLVED",
+          "detail": "Continuity near the circle is not uniform over all finite configurations; no theorem for arbitrary eccentricity."
+        },
+        {
+          "test": "literature",
+          "status": "NATIVE_SEARCH_UNKNOWN",
+          "detail": "Web-scoped searches only; no two-pass native database or 2025–26 exhaustive audit; do not label surviving, hard, new, or open."
+        }
+      ],
+      "kill_record": null,
+      "source_ids": [
+        "SRC-0075",
+        "SRC-0078"
+      ],
+      "claim_ids": [
+        "CLM-0095",
+        "CLM-0097"
+      ],
+      "cam_ids": [
+        "CAM-0008",
+        "CAM-0009"
+      ],
+      "scoring": {
+        "statement_length": 11,
+        "prerequisites": 11,
+        "naturalness": 14,
+        "sharpness": 9,
+        "difficulty_evidence": 1,
+        "novelty_audit": 0,
+        "connections": 7,
+        "computational_testability": 4,
+        "low_degeneracy_risk": 3,
+        "total": 60
+      },
+      "uncertainty": "UNTRIAGED. Both the exact status in the literature and whether all non-circles fail are UNKNOWN; 5:1 is a counterexample to universal-ellipse property, not to the circle-only classification."
     }
   ]
 }

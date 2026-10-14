@@ -104,3 +104,10 @@ DEC-0059:Preserve owner triangle insight,separate NG/SP/CH and straight-segment/
 DEC-0064: CND-0128 KILLED_FALSE/DEGENERATE by six-site strict convex exact counterexample; CLM-0092/0093 prove it without computation. Earlier CAM-0004 positive finite examples remain valid but not universal.
 DEC-0065: Retain preregistered CAM-0005 failure unchanged (self counted as neighbour). Correct CAM-0006 and independent CAM-0007 preserve original data and distinguish discovery from certification.
 DEC-0066: No newly generated candidate; false question does not satisfy programme survival, novelty or hardness gates. S016 FUTURE, owner-gated. No publication/Lean/Palomar/outreach.
+
+## S016 — 2026-10-14
+DEC-0067: Regenerate three mechanisms after CND-0128 false: circular suffix ear deletion CND-0129, natural sharp obstruction size CND-0130, intrinsic ellipse classification CND-0131.
+DEC-0068: CND-0129 killed easy by universal circle constructive argument CLM-0095; CND-0130 killed easy after proving exact n_min=5 CLM-0096/0097. Do not call solved questions unsolved or claim novelty.
+DEC-0069: CND-0131 GENERATED only; ellipse 5:1 fails, circle works, noncircle classification unresolved and mandatory native novelty/hardness not certified.
+DEC-0070: Preregistered and executed CAM-0008/0009 on exact rational finite data; original frozen scripts/prereg/raw are presently detached in an owner-downloadable archive, **not integrated in GitHub**; explicit governance exception. Earlier CAMs unchanged; S017 future only.
+

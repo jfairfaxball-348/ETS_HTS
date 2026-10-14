@@ -162,6 +162,54 @@
       ],
       "status": "COMPLETED",
       "result": "Six strict convex vertices, no hull-neighbour nearest-two eligible last vertex. 720/720 permutations have proper crossings; zero feasible orders. Exact distance matrix and local orientation determinants in raw."
+    },
+    {
+      "id": "CAM-0008",
+      "candidate_ids": [
+        "CND-0130",
+        "CND-0131"
+      ],
+      "claim_ids": [
+        "CLM-0097",
+        "CLM-0098"
+      ],
+      "purpose": "Preregistered exact rational ellipse good-ear screen",
+      "bounds": "Six a/b=1,51/50,6/5,2,5,20; n=4,5,6; 2,000 sampled sets per cell; seed20261014, integer m∈[-300,300], t=m/32.",
+      "code_version": "Original frozen campaigns/ellipse_exact_screen.py, detached S016 archive (manifest in repo)",
+      "code_hash": "sha256:e66472b91802b66ed8333f13a53edf7d52bd561c42277207dced8bf974f209ef",
+      "input_hash": "sha256:0fad246c65634ef64a43995cbabb3286c359acc5586a86f6722d4683142f87e3",
+      "environment": "Linux CPython3.13.5 Python stdlib Fraction, fixed RNG",
+      "stopping_rule": "Exactly 2,000 samples per cell, no early termination",
+      "output_paths": [
+        "campaigns/S016_CAM_ARCHIVE_MANIFEST.md",
+        "sessions/S016/COMPUTATION_RESULTS.md"
+      ],
+      "status": "COMPLETED",
+      "result": "36,000 exact rational sets. No-good-ear at aspect5/1: n5=2,n6=1; aspect20/1: n5=1,n6=2; zero in other 14 cells including all circle tests. Original raw/code/prereg are in attached detached archive; not yet individually committed to repo."
+    },
+    {
+      "id": "CAM-0009",
+      "candidate_ids": [
+        "CND-0130",
+        "CND-0131"
+      ],
+      "claim_ids": [
+        "CLM-0097",
+        "CLM-0098"
+      ],
+      "purpose": "Independently verify five ellipse points in exact fractions, 120 full orders, and screen 100,000 parabola quintuple samples",
+      "bounds": "Ellipse x²/25+y²=1 parameters m=(-194,3,25,217,257), all 120 permutations; 100,000 x samples from [-60,60] on y=x², seed16009.",
+      "code_version": "Original frozen campaigns/verify_five_site.py, detached S016 archive (manifest in repo)",
+      "code_hash": "sha256:f2d4b00915943afd8cecf8c118fbc67205afb8cba490fa095b0282643168ceaf",
+      "input_hash": "sha256:bd07215305c1cf45878e53f282ff035871ed84ddbf5f26f6560fe4d11e953320",
+      "environment": "Linux CPython3.13.5 Python stdlib fractions, integer predicates",
+      "stopping_rule": "All 120 ellipse permutations; earliest parabola no-ear or 100,000 samples",
+      "output_paths": [
+        "campaigns/S016_CAM_ARCHIVE_MANIFEST.md",
+        "sessions/S016/COMPUTATION_RESULTS.md"
+      ],
+      "status": "COMPLETED",
+      "result": "All 120 ellipse orders have proper crossings, min1; strict rank2 vs rank3 distances, convex. No zero-ear parabola quintuple found in 100,000 deterministic samples (finite only). Full original run artifacts are detached and downloadable, not in remote main."
     }
   ]
 }

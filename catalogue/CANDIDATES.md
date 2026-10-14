@@ -208,3 +208,14 @@ Evidence: Strict-scale two-phase construction and generic perturbation gives m²
 ### CND-0128 — KILLED_FALSE/DEGENERATE (S015)
 
 For every finite point set in general position, can some nearest-two-predecessor arrival order produce no crossing? **NO.** Convex six-integer-site certificate A=(-40,400), B=(-22,121), C=(-20,100), D=(-4,4), E=(24,144), F=(28,196). Every maximal plane graph on these convex sites must retain all six hull sides, forcing the last vertex's two nearest other sites to be precisely its two hull neighbours. None qualifies (CLM-0092/0093). Independently all 720 orders cross (CAM-0007, CLM-0094); CAM-0005's earlier false obstruction was discarded with immutable failure record, CAM-0006 correctly discovered a harder-coordinate example. KILLED_FALSE/DEGENERATE, NOT_SEARCHED for historical originality; one false instance is conclusive regardless of novelty search. **No new research problem selected.**
+
+## S016 — three distinct mechanisms, one unresolved classification
+
+| ID | Status | Score | Question | Result |
+|---|---|---:|---|---|
+| CND-0129 | KILLED_EASY | 59 | Do circle-point sets always permit a crossing-free nearest-two arrival order? | YES: circular-gap ear deletion proof CLM-0095 |
+| CND-0130 | KILLED_EASY | 59 | Smallest point set with no possible plane order? | Exactly **5**, n<=4 theorem CLM-0096 plus rational-ellipse witness CLM-0097/0098 |
+| CND-0131 | GENERATED | 60 | Is the circle the only ellipse for which every finite site set admits a plane nearest-two order? | Circle YES; ellipse x²/25+y²=1 NO; all other nonround ellipses UNRESOLVED. Not TRIAGED/SURVIVING/HARD/OPEN-certified. |
+
+CND-0129 and CND-0130 are killed as *questions seeking unsolved answers*, but their positive and sharp mathematical results are retained. CND-0131 is a genuinely qualitative shape classification, not an eccentricity threshold adjusted to preserve a failing conjecture. Historical originality and full native literature audit remain UNKNOWN. The computational raw/scripts are preserved in a **detached** downloadable archive; see CAM manifest for incompleteness.
+

@@ -693,6 +693,15 @@
       "url_or_doi": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol367-socg2026/html/LIPIcs.SoCG.2026.69/LIPIcs.SoCG.2026.69.html",
       "access_grade": "ABSTRACT_INSPECTED",
       "notes": "2026-10-14: primary publisher proceedings page and introduction inspected. Approximate queries in polygonal domain; differs from obligatory two nearest predecessors and crossing-free chronological graph. No original research-priority claim."
+    },
+    {
+      "id": "SRC-0078",
+      "title": "Generating coordinates for N points on the circumference of an ellipse with fixed nearest-neighbor spacing",
+      "author": "Julián Aguirre and discussion contributors, Mathematics Stack Exchange",
+      "date": "2011-10-14",
+      "url_or_doi": "https://math.stackexchange.com/questions/72555/generating-coordinates-for-n-points-on-the-circumference-of-an-ellipse-with-fi",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "2026-10-14 original Math.SE question/answer inspected; notes that on an eccentric ellipse points on the opposite narrow arc may be nearest. This is not about the present two-predecessor chronological plane graph; no claimed equivalence or originality."
     }
   ]
 }

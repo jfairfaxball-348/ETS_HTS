@@ -188,3 +188,10 @@ FAL-0056:Raw nearest-two simple-quadrilateral narrative fails at P=(12,2). FAL-0
 - CND-0128 exact false universal. Convex six-point witness destroys every possible final vertex via hull-ear necessity. No proposal of novelty, open status or minimal size.
 - CAM-0005 **FAILED**: program erroneously included the queried vertex as its own nearest neighbour; the reported four-point no-ear was false and its own DFS returned a valid order. Do not reuse for any result. Frozen prereg/source/raw retained.
 - Two independent proof strategies not needed after decisive kill. Source-native coverage remains UNKNOWN in inaccessible archives. CAM-0003 still FAILED/PARTIAL 37/54.
+
+## S016 — 2026-10-14
+- **CND-0129 KILLED_EASY:** circular angular-gap minimisation identifies recursively removable nearest-two hull ears, solving the school-readable question. Elementary proof, not new open problem.
+- **CND-0130 KILLED_EASY:** all n<=4 plane NG orderable; exact 5-site rational ellipse witness blocks every order. Minimum5 proved, so no unsolved target here.
+- **CND-0131 GENERATED ONLY:** cannot extrapolate ellipse 5:1 obstruction to all eccentricities; cannot transport chord-nearest rule under nonuniform affine stretch. Circle proof and finite screens insufficient for a general classification. Native priority and independent difficulty evidence absent; no hard/open label.
+- **Archival and local-validation blockers:** original CAM8/9 frozen files are a detached downloadable archive, not GitHub; full-checkout test commands NOT_RUN locally because Github DNS failed. Historical CAM-0003/0005 failures retained.
+
