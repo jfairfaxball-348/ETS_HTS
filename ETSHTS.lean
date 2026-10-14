@@ -1,4 +1,4 @@
-import ETSHTS.ThreePredecessors
+import ETSHTS.CyclicGapObstruction
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -61,3 +61,7 @@ import ETSHTS.ThreePredecessors
 #print axioms ETSHTS.exactlyTwoNearest_three_exists
 #print axioms ETSHTS.four_point_order_from_exact_nearest
 #print axioms ETSHTS.four_point_order_of_all_nearest_pairs_plane
+
+#print axioms ETSHTS.s033_cyclic_min_two_gap_average
+#print axioms ETSHTS.s033_distance_reversal
+#print axioms ETSHTS.s033_nonadjacent_strictly_closer

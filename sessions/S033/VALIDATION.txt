@@ -1,0 +1,20 @@
+S033 ENTRY LIVE main=eb0ce2def5cb1d7fa365370aa34f77eb58c12bc5
+S033 ENTRY actual commit tree=64f0f460abb5e84d5c8678c6d7e539398188a445
+S032 authored=8964452be9e537f57e3b1a85f7442a8a34a46395 sole_parent=3920bfd71d2b882068e417d2aef19d82b0a3dda0
+S032 PR #37 merge=eb0ce2def5cb1d7fa365370aa34f77eb58c12bc5 parents=3920bfd71d2b882068e417d2aef19d82b0a3dda0;8964452be9e537f57e3b1a85f7442a8a34a46395
+S032 authored tree=64f0f460abb5e84d5c8678c6d7e539398188a445 equals merged-main tree
+S032 PR Lean 38640426827 job 116114226797 SUCCESS
+S032 PR governance 38640426860 job 116114226865 SUCCESS
+S032 merged-main Lean 38640790743 job 116115455186 SUCCESS
+S032 merged-main governance 38640790781 job 116115460469 SUCCESS
+S032 exactlyTwoNearest_three_exists, four_point_order_from_exact_nearest, four_point_order_of_all_nearest_pairs_plane each axioms=[propext, Classical.choice, Quot.sound]
+S033 local lean=NOT_INSTALLED; lake=NOT_INSTALLED; git remote via DNS=FAILED
+S033 local scripts/check_scaffold.py=NOT_RUN; local tests=NOT_RUN
+S033 local Lean build=NOT_RUN; hosted PR and main Lean evidence REQUIRED
+S033 new Lean arithmetic statements CANDIDATE_PENDING_CI
+S033 exact 5 CLM proofs status only CLM0102 VERIFIED; CLM0096/0099/0107/0108 OPEN
+S033 exact targets file ETSHTS/Targets.lean UNCHANGED
+S033 verdict PARTIAL
+S033 failed first candidate PR #38 commit 39040189f4b810da36e0414da444424f5e738465 CLOSED UNMERGED
+S033 first PR Lean run 38642973840 job 116122811119 SUCCESS, no prohibited tokens, new three theorem axioms standard [propext, Classical.choice, Quot.sound]
+S033 first PR governance run 38642973721 job 116122810178 FAILURE: missing exact owner gate phrase 'new explicit owner invocation' in S034 prompt; corrected in replacement single-commit PR
