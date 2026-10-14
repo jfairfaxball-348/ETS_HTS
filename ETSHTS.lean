@@ -1,6 +1,6 @@
-import ETSHTS.Partial
+import ETSHTS.AnalyticBounds
 
-/- S026: the dependency reports below concern genuine proof declarations only. -/
+/- Only actual theorem declarations, not the five unsolved CLM Prop targets. -/
 #print axioms ETSHTS.sqDist_self
 #print axioms ETSHTS.sqDist_nonneg
 #print axioms ETSHTS.sqDist_symm
@@ -13,8 +13,12 @@ import ETSHTS.Partial
 #print axioms ETSHTS.sqDist_ellipsePoint_expand
 #print axioms ETSHTS.metricEar_of_strict_gap
 #print axioms ETSHTS.clm0108_of_clm0107_and_ratio
+#print axioms ETSHTS.sqDist_ellipse_scale
+#print axioms ETSHTS.sqDist_ellipse_as_circle_plus
+#print axioms ETSHTS.sqDist_ellipse_as_circle_minus
+#print axioms ETSHTS.sqDist_ellipse_between_circular_bounds
 
-/- These remain five UNPROVED propositions, not theorem declarations. -/
+/- Full fixed targets remain *unproved* propositions. -/
 #check ETSHTS.CLM0096
 #check ETSHTS.CLM0099
 #check ETSHTS.CLM0102
