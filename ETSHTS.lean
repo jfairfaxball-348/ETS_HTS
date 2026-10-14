@@ -1,4 +1,4 @@
-import ETSHTS.AnalyticBounds
+import ETSHTS.Derivatives
 
 /- Only actual theorem declarations, not the five unsolved CLM Prop targets. -/
 #print axioms ETSHTS.sqDist_self
@@ -17,6 +17,12 @@ import ETSHTS.AnalyticBounds
 #print axioms ETSHTS.sqDist_ellipse_as_circle_plus
 #print axioms ETSHTS.sqDist_ellipse_as_circle_minus
 #print axioms ETSHTS.sqDist_ellipse_between_circular_bounds
+
+#print axioms ETSHTS.hasDerivAt_sqDist_ellipse_right
+#print axioms ETSHTS.hasDerivAt_sqDist_ellipse_left
+#print axioms ETSHTS.deriv_sqDist_ellipse_right
+#print axioms ETSHTS.deriv_sqDist_ellipse_left
+#print axioms ETSHTS.sqDist_unit_circle_cos_sub
 
 /- Full fixed targets remain *unproved* propositions. -/
 #check ETSHTS.CLM0096

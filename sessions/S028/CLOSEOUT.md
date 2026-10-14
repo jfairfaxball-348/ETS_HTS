@@ -1,0 +1,7 @@
+# S028 closeout — PARTIAL / FIVE EXACT CLM TARGETS STILL OPEN
+
+Authorised by a fresh owner invocation on 2026-10-14. Entry main `a164b4bb30de23d10ff231b63b399e3f054e1c2c`, tree `de00aabdb64528463a5c1a7d49ca525f116eadbe`. S027 PR#32 has exact two-parent merge, same authored/merge tree and independently successful merged-main Lean and governance checks. No competing S028 work found at entry.
+
+Added five substantial source-level Lean proof candidates in `ETSHTS/Derivatives.lean`: independent HasDerivAt proofs and exact derivatives at both outward chord endpoints, and the unit circle squared-chord cosine formula. All are about the exact Cartesian Euclidean distance, not an abstract surrogate. All are imported and included in `#print axioms`. Their verification remains contingent on S028 hosted Lean CI. The key strict sign, endpoint extension and full CLM0102 are NOT proved; CLM0096/0099/0107/0108 also stay OPEN. No change to target quantifiers.
+
+Local Lean/lake, GitHub checkout and checkout Python checks unavailable (NOT_RUN), no local PASS inferred. Hosted CI and PR status must be independently inspected; only clean Lean and governance permits merging. If build fails, do not merge until corrected. Source/registry archive counts CND131 killed131, SRC87 CLM108 CAM10 unchanged. S024 novelty conclusion conditional, no further novelty rounds; no Palomar/paper/arXiv/outreach. S029 FUTURE/UNEXECUTED awaits new owner authority.

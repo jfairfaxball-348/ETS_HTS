@@ -1,18 +1,20 @@
-# S028 — FUTURE / UNEXECUTED: independent ellipse outward derivatives and four-point completion
+# S029 — FUTURE / UNEXECUTED: strict ellipse chord extension and geometric ear formalisation
 
-**FUTURE / UNEXECUTED. A new explicit owner invocation is REQUIRED.** Canonical repository: https://github.com/jfairfaxball-348/ellipse-theorem ; fixed Lean namespace `ETSHTS`.
+**FUTURE / UNEXECUTED. A new explicit owner invocation is REQUIRED.** Canonical repository: https://github.com/jfairfaxball-348/ellipse-theorem ; namespace `ETSHTS`.
 
 ## Mandatory entry
-Freshly fetch live main SHA/tree, STATE, AGENTS, START_HERE, SESSION_PROTOCOL, S027 authored/PR/merge/CI evidence and new PRs. Check actual S027 Lean *and* governance jobs separately. If new `ETSHTS/AnalyticBounds.lean` fails to compile or has unacceptable theorem axioms, prioritise an honest, minimal correction before expanding. Confirm exact Lean 4.15.0 and mathlib `9837ca9d65d9de6fad1ef4381750ca688774e608`; no green CI of partial terms proves the headline.
+Independently fetch fresh live main SHA/tree, STATE, AGENTS, START_HERE, SESSION_PROTOCOL, S028 records and authored commit / ordinary PR / exact merge parents and trees. Inspect independently the hosted **Lean** and **governance** jobs for S028, and the printed axioms for each new declaration. If S028 source did not compile, fix Lean first and do not assume source candidates are kernel checked. Verify pinned Lean 4.15.0 and mathlib `9837ca9d65d9de6fad1ef4381750ca688774e608`.
 
-## Unchanged non-negotiable five theorem targets
-1. CLM0096 all n=3/4 general-position sites, including interior point and strictly convex quadrilateral.
-2. CLM0099 strictly convex exact retained nearest-two **iff full recursive** metric-ear certificate; exact outerplanar edge count and reversal.
-3. CLM0102 **both independent** outward ellipse chord endpoint derivatives with strict sign for any unwrapped arc length <`Λ=4 atan(b/a)`, and full strict extension statement.
-4. CLM0107 all finite n≥3 on any ellipse `a≥b>0`, `a/b≤R=sqrt(2/sin(2π/5)−1)` INCLUDING equality R, n=5 and arbitrarily close sites: exact Euclidean nearest two predecessor edges, Cartesian lex ties, retained edges, no proper crossings. Eligible gap, shortest *metric* skip chord, forward/backward/central cases, full ear recursion and insertion.
-5. CLM0108 exact all-n nonround `101/100` corollary, unconditional exact ratio comparison.
+## Exact five immutable target statements
+1. CLM0096: all 3/4 distinct general-position points, including interior and convex quadrilateral.
+2. CLM0099: exact full recursive metric-ear certificate IFF plane retained-nearest-two order on all finite strict convex sets, including outerplanar edge bound and reversal.
+3. CLM0102: BOTH genuinely independent strictly positive outward derivatives for all short real-lift arcs `0 < φ-θ < Λ=4 atan(b/a)`; strict four-parameter endpoint-extension inequality.
+4. CLM0107: all n≥3, every ellipse a≥b>0 with a/b≤ closed R=sqrt(2/sin(2π/5)−1), including equality, n=5, near-coincident sites, lex ties, retained edges and no proper crossings. Eligible two-gap witness, shortest *metric* skip chord, separate forward/central/backward estimates and entire recursive metric-ear sequence.
+5. CLM0108: exact all-n nonround 101/100 corollary, unconditional ratio bound.
 
 ## Execution priority
-Work aggressively on actual proof terms, not new definitions-only. Build complete CLM0102 derivatives using genuine mathlib calculus lemmas: first prove derivative identities separately, then strict positivity from <Λ, then endpoint-extension inequality. Also pursue a **complete CLM0096 four-point proof**, including interior and strictly convex positions, and if feasible concrete CLM0099 ear construction and full closed-R CLM0107. Exploit S027's dilation/anisotropy/chord sandwich as a real step in the central floor, not as a theorem surrogate. Run compiler, `lake build`, `lake env lean ETSHTS.lean`, individual `#print axioms`, exact target signature audit and hosted CI. Never use sorry/admit/project axioms/native_decide or hidden assumptions; do not weaken any quantifier or replace full proof with conditional lemma.
+Start with the genuine two derivative identities (subject to S028 Lean CI). Establish the **factorised trigonometric forms** using `sin ((φ−θ)/2)`, `cos ((φ−θ)/2)`, the anisotropy M,D, and prove the real trigonometric threshold `cos ((φ−θ)/2) > D/M` from `φ−θ < 4 atan(b/a)`. Deduce both strict derivative signs, then prove full strict two-endpoint extension by a standard calculus monotonicity theorem, with no hidden extra hypotheses. Work concurrently on the **full four-point proof** with interior/strict convex configurations, then CLM0099 ear equivalence and CLM0107. The circle chord identity and dilation/sandwich lemmas are prerequisites, not solutions. Keep aggressive emphasis on actual proof terms, not restatements or conditional results.
 
-Exactly ONE S028 session, isolated branch, one authored commit/ordinary PR/two-parent merge if clean and allowed. Record corrected exceptions honestly. Update S028 records/STATE and FUTURE S029 prompt. Keep historical CND131 all killed, SRC87 CLM108 CAM10, S016 detached material, S024 final conditional novelty. No novelty rounds, ratio optimization, Palomar, manuscript, arXiv, submission, journal or outreach. **PASS iff the five exact original CLM statements all receive unconditional, semantically faithful kernel-checked proofs.** Otherwise PARTIAL/OPEN.
+Run pinned `lake build`, `lake env lean ETSHTS.lean`, individual `#print axioms`, semantic audit for all five signatures, hosted Lean job and separate governance tests. Never use sorry/admit/project axioms/native_decide or weaken an original quantified statement. **PASS iff all five exact original CLM statements have unconditional, kernel-checked proofs.** Otherwise PARTIAL / OPEN.
+
+Exactly ONE S029 session, isolated branch, one authored atomic commit, ordinary PR and two-parent merge only if checks succeed. Record failures and CI repairs honestly. Update S029, STATE, and FUTURE S030. Preserve historical CND131 all killed / SRC87 CLM108 CAM10, detached S016 and S024 conditional final novelty. No novelty audits, ratio optimisation, Palomar, manuscript, arXiv, journal or outreach.
