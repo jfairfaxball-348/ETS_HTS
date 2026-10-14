@@ -1,0 +1,17 @@
+S030 authored-time validation — 2026-10-14
+repo jfairfaxball-348/ellipse-theorem
+entry main 6e17e6711f460981f8773c267aa14692d2d2f7e5
+entry tree 1aa4e1a87064647b826969b86736cdc7c8a7c2d9
+S029 PR 34 merged true, ordinary two-parent merge 6e17e67
+S029 corrected authored SHA 94ab7ed1c972836a816c8e581a4906c272aa2dbb
+S029 hosted Lean run 38621919036 job 116051320973 SUCCESS
+S029 hosted governance run 38621918825 job 116051319561 SUCCESS
+S029 Lean standard dependencies propext Classical.choice Quot.sound
+S030 local lake NOT_INSTALLED
+S030 local lean NOT_INSTALLED
+S030 local git clone BLOCKED_DNS
+S030 local test/scaffold NOT_RUN
+S030 new Lean source candidate AWAIT_HOSTED_CI
+S030 exact original CLM0102 proof attempted; kernel status AWAIT_HOSTED_CI
+S030 full CLM0096 0099 0107 0108 OPEN
+S030 all-five PASS gate NOT_MET
