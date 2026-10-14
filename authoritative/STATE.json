@@ -3,13 +3,13 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S017: recursive metric ears and angular-gap ellipse stability; global classification unresolved",
-  "last_completed_session": "S017",
-  "next_session": "S018",
+  "phase_name": "S018: gap-free short-arc theorem and non-effective fixed-n near-circle stability; global ellipse classification unresolved",
+  "last_completed_session": "S018",
+  "next_session": "S019",
   "next_session_authorised": false,
   "candidate_count": 131,
   "source_count": 78,
-  "claim_count": 101,
+  "claim_count": 104,
   "campaign_count": 10,
   "gate_status": {
     "0": "CLOSED_ADMINISTRATIVE",
@@ -23,7 +23,7 @@
   "surviving_count": 0,
   "triaged_count": 0,
   "kill_count": 130,
-  "remote_sha_policy": "S018 reconstruct S017 atomic authored parent/tree, PR and ordered two-parent merge; no outgoing SHA backfilled.",
-  "note": "CND131:130 KILLED,1 GENERATED (CND-0131),0 TRIAGED/SURVIVING. CLM99 exact recursive-ear equivalence; CLM100 quantitative minimum-angular-gap near-circle stability. CAM10 completed floating-point exploration with near-collision false positives, NOT proof. SRC78 CLM101 CAM10. S016 frozen CAM8/9 detached GitHub archival exception still OPEN.",
+  "remote_sha_policy": "S019 must reconstruct S018 authored sole-parent commit, PR, hosted checks and ordered two-parent nonforce merge from LIVE remote; never backfill outgoing hashes.",
+  "note": "CND131:130 killed,1 GENERATED,0 TRIAGED/SURVIVING. CLM102 short-arc extension theorem; CLM103 for every fixed n there is an ellipse aspect neighbourhood of 1 with no bad n-site sets; CLM104 bounded counterexamples cannot persist as r→1. SRC78 CAM10 unchanged; no S018 numerical CAM. Classification, full native novelty and independent difficulty unresolved; S016 original CAM8/9 detached archive not hosted.",
   "generated_count": 1
 }

@@ -1,0 +1,6 @@
+S018 validation record — 2026-10-14
+ENTRY: live main 10f719397c39af94fbc4bd506d422fd22ad807af, tree 01f72ef9a1f16f73f8a3691b43c608cb8620ee73; S017 authored head one parent/identical tree, ordinary PR#19 and ordered two-parent main verified. S017 hosted PR head record-validation SUCCESS id115834723038; main SUCCESS id115835020010. Commit combined status [] independent of check-runs; rulesets []; branch protection403 UNKNOWN. No competing S018 branch/PR before creation.
+MATHEMATICS: handwritten analytic differentiation, minimum-three-span ear argument and compactness/clustering proof CLM-0102..0104. Not peer-reviewed. No new CAM, no near-circle exact witness.
+TRUE CHECKOUT: `git ls-remote https://github.com/jfairfaxball-348/ETS_HTS.git` ERROR Could not resolve host github.com. Therefore mandatory `python scripts/check_scaffold.py` and `python -m unittest discover -s tests -v` NOT_RUN locally on actual checkout; do not claim local PASS. Changes to checker/tests must be exercised by hosted Actions on PR and observed there; format-only PASS cannot certify mathematics.
+OLD ARCHIVE: S016 CAM8/9 original files not available/hosted, immutable archive hashes untouched.
+EXIT: one atomic authored commit and ordinary PR/merge must be observed subsequently in GitHub; no outgoing SHA invented in authored files.

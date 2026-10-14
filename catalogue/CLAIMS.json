@@ -1368,6 +1368,42 @@
       ],
       "justification": "Deterministic seed 2026101417; source SHA256 76345978... prereg archived before running; raw numbers and code in campaigns. Floating double and optimiser can collapse distinct angle positions, causing spurious no-ear values, so all near-circle positive signs disqualified. No exact rational validation performed for these trials.",
       "limitations": "Numerical screening only; not an exhaustive test; no certified near-circle counterexample, no mathematical classification and no novelty evidence."
+    },
+    {
+      "id": "CLM-0102",
+      "statement": "For ellipse P(theta)=(a cos(theta),b sin(theta)), a>=b>0, every finite set of distinct boundary points contained in an angular parameter arc of width strictly below Lambda=4 arctan(b/a) admits a plane retained nearest-two predecessor order, with no positive minimum-gap assumption.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0131"
+      ],
+      "cam_ids": [],
+      "justification": "Compute the derivative of squared chord distance under outward endpoint extension: for Delta=phi-theta in (0,Lambda), 4 sin(Delta/2)[M cos(Delta/2)-D cos((theta+3phi)/2)]>0, with M=(a²+b²)/2, D=(a²-b²)/2. Hence moving either chord endpoint outward inside the arc strictly increases chord length. For any k>=4 ordered sites, choose interior i minimizing the chord span d(P_(i-1),P_(i+1)); every nonneighbor is farther from P_i than BOTH immediate neighbors by the minimum-span inequality and chord-extension strictness. Delete that metric ear; same arc hypothesis survives. Reverse deletions via CLM-0099. Complete proof in S018/MATHEMATICS.md.",
+      "limitations": "Strictly angular arc, not circumference or Euclidean arc length. Endpoints must fit width <Lambda (not <=). Does not assert global universal ellipse property nor novelty or priority."
+    },
+    {
+      "id": "CLM-0103",
+      "statement": "For each fixed integer n>=3, there exists epsilon_n>0 such that every n-site set of distinct points on any ellipse with 1<=a/b<1+epsilon_n admits a crossing-free retained two-nearest-predecessor order, with no site separation hypothesis.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0131"
+      ],
+      "cam_ids": [],
+      "justification": "Proof by compactness/contradiction from bad n-site configurations with ratios tending to 1. Choose subsequence of angular n-tuples converging to a multiset of circle positions. For one support cluster all points lie eventually on a short arc (CLM-0102). For two support clusters, any cluster with >=3 sites has a metric ear selected by minimal local triple chord span, with exterior points at positive distance; peel until at most two sites per cluster and invoke four-site theorem CLM-0096. For >=3 supports, peel clusters of size >=3 similarly; at any double cluster, its mutual close pair has an eligible metric ear: the nearest external sites are among its two cyclic flanking clusters (on the limiting circle), with angular separation <pi; within a flanking cluster the immediately adjacent representative wins by chord-extension. If one flank is strictly closer, the near twin on that side is an ear. In case of equal limiting flank distances at angles +/-alpha, 0<alpha<pi, the squared-distance difference H(theta)=d²(P(theta),L)-d²(P(theta),R) has derivative tending to 4sin(alpha)>0 across the twin pair, precluding both twins from being ineligible. Remove one and repeat to leave one site per distinct limit angle. Those are uniformly separated, so CLM-0100 gives a recursive NG order for ratios sufficiently close to 1. This contradicts failure. Full boundary/tie proof in S018/MATHEMATICS.md.",
+      "limitations": "Existence epsilon_n is NON-EFFECTIVE; depends on n, may tend to zero. It does NOT prove a common safe eccentricity neighbourhood for all n; no exact counterexample and no prior-art priority claim."
+    },
+    {
+      "id": "CLM-0104",
+      "statement": "For any sequence of ellipses with axis ratios r_j>1 tending to 1, if each carries a finite set admitting no crossing-free retained nearest-two predecessor order, then the cardinalities of those bad sets tend to infinity (equivalently the least obstruction size, where defined, diverges as r approaches 1).",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0131"
+      ],
+      "cam_ids": [],
+      "justification": "If infinitely many cardinalities were <=N, one fixed n in {5,...,N} occurs along a subsequence; CLM-0103 supplies epsilon_n>0 excluding those bad sets once r_j-1<epsilon_n. Contradiction. n<=4 impossible by CLM-0096. This logical corollary is conditional on the existence of bad sets at those ratios; it does not claim all noncircles fail.",
+      "limitations": "No quantitative growth lower bound for obstruction size and no claim that bad configurations actually exist for r arbitrarily near 1."
     }
   ]
 }
