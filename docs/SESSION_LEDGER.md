@@ -43,3 +43,7 @@ New explicit owner invocation required. No selection or external dissemination a
 ## S014 — 2026-10-14
 
 Owner explicitly invoked S014;completed four geometric questions,three kills and CND-0128 GENERATED only. CND128/127kills,0TRIAGED/SURVIVING,SRC74 CLM91 CAM4. CAM-0004 preregistered258/258 inputs feasible,198 independent checks;CAM-0003 frozen. Actual checkout local checks available. Entry main19627e378b94a76b0ccac16bf5fef909cc7f1156. Outgoing single authored commit/ordinary PR/two-parent merge independently verify in GitHub history. S015 FUTURE/UNEXECUTED.
+
+## S015 — 2026-10-14
+
+Owner explicitly reran S015 from live URL with higher reasoning. Entry main 6b92f00b8d40cd69c5373778993b66986f9a800a, S014 authored dee07f7a1cbabf3822041cf0e841924c0e012273 (sole parent 19627e378b94a76b0ccac16bf5fef909cc7f1156, tree 35bb29b07461d69553075ba2cf1e3a71c67e275b), PR#16 ordinary non-draft merged via two-parent main 6b92f00b8d40cd69c5373778993b66986f9a800a with identical tree. No pre-existing S015 branch/PR; new session/S015-convex-nearest-two-counterexample branched at pinned main. S015 CND-0128 counterexample, CAM-0005 invalid preserved, CAM-0006/7 exact, 128 kills SRC77 CLM94 CAM7; no survivors. Outgoing PR/merge reconstruct at next entry. S016 FUTURE/UNEXECUTED.

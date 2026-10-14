@@ -1,0 +1,127 @@
+{
+  "points": [
+    [
+      -40,
+      400
+    ],
+    [
+      -22,
+      121
+    ],
+    [
+      -20,
+      100
+    ],
+    [
+      -4,
+      4
+    ],
+    [
+      24,
+      144
+    ],
+    [
+      28,
+      196
+    ]
+  ],
+  "cyclic_hull_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "strict_convex_orientations": [
+    180,
+    144,
+    4928,
+    896,
+    4352,
+    15300
+  ],
+  "squared_distance_matrix": [
+    [
+      0,
+      78165,
+      90400,
+      158112,
+      69632,
+      46240
+    ],
+    [
+      78165,
+      0,
+      445,
+      14013,
+      2645,
+      8125
+    ],
+    [
+      90400,
+      445,
+      0,
+      9472,
+      3872,
+      11520
+    ],
+    [
+      158112,
+      14013,
+      9472,
+      0,
+      20384,
+      37888
+    ],
+    [
+      69632,
+      2645,
+      3872,
+      20384,
+      0,
+      2720
+    ],
+    [
+      46240,
+      8125,
+      11520,
+      37888,
+      2720,
+      0
+    ]
+  ],
+  "nearest_two_all_others": {
+    "0": [
+      5,
+      4
+    ],
+    "1": [
+      2,
+      4
+    ],
+    "2": [
+      1,
+      4
+    ],
+    "3": [
+      2,
+      1
+    ],
+    "4": [
+      1,
+      5
+    ],
+    "5": [
+      4,
+      1
+    ]
+  },
+  "eligible_last_ears": [],
+  "permutations_checked": 720,
+  "orders_with_at_least_one_proper_crossing": 720,
+  "orders_crossing_free": 0,
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "proof_scope": "Direct exact orientation/distance arithmetic plus independent 720-permutation full graph check; finite concrete counterexample. General principle of hull ear necessity proved separately."
+}

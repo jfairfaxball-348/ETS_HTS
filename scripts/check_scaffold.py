@@ -54,6 +54,12 @@ REQUIRED = (
     "sessions/S014/INPUT.md", "sessions/S014/PLAN.md", "sessions/S014/MATHEMATICS.md",
     "sessions/S014/NOVELTY_QUERIES.md", "sessions/S014/DISCOVERY_REPORT.md", "sessions/S014/CLOSEOUT.md",
     "campaigns/CAM-0004_preregistration.json", "campaigns/CAM-0004_raw.json", "campaigns/nearest_two_order.py",
+    "sessions/S015/INPUT.md", "sessions/S015/PLAN.md", "sessions/S015/MATHEMATICS.md",
+    "sessions/S015/NOVELTY_QUERIES.md", "sessions/S015/DISCOVERY_REPORT.md",
+    "sessions/S015/CLOSEOUT.md", "sessions/S015/VALIDATION.txt",
+    "campaigns/CAM-0005_preregistration.json", "campaigns/CAM-0005_raw.json", "campaigns/nearest_two_adversarial.py",
+    "campaigns/CAM-0006_preregistration.json", "campaigns/CAM-0006_raw.json", "campaigns/nearest_two_adversarial_fixed.py",
+    "campaigns/CAM-0007_preregistration.json", "campaigns/CAM-0007_raw.json", "campaigns/nearest_two_certificate.py",
     "scripts/check_scaffold.py", "tests/test_scaffold.py",
     ".github/workflows/governance.yml",
 )
@@ -169,12 +175,12 @@ def validate(root: Path) -> list[str]:
     if state_file.is_file():
         try:
             s = json.loads(state_file.read_text(encoding="utf-8"))
-            if s.get("next_session") != "S015" or s.get("next_session_authorised") is not False:
-                errors.append("STATE: S015 must be next and explicitly unauthorised")
-            if s.get("last_completed_session") != "S014":
-                errors.append("STATE: S014 must be last completed")
+            if s.get("next_session") != "S016" or s.get("next_session_authorised") is not False:
+                errors.append("STATE: S016 must be next and explicitly unauthorised")
+            if s.get("last_completed_session") != "S015":
+                errors.append("STATE: S015 must be last completed")
             if s.get("phase") != 1:
-                errors.append("STATE: S014 must remain in generation/triage phase one")
+                errors.append("STATE: S015 must remain in generation/triage phase one")
             statuses = [x.get("status") for x in parsed.get("candidates", []) if isinstance(x, dict)]
             if s.get("kill_count") != sum(str(x).startswith("KILLED_") for x in statuses):
                 errors.append("STATE: kill_count mismatch registry")
@@ -193,8 +199,8 @@ def validate(root: Path) -> list[str]:
     prompt = root / "authoritative/NEXT_SESSION_PROMPT.md"
     if prompt.is_file():
         body = prompt.read_text(encoding="utf-8")
-        if not body.startswith("# S015") or "FUTURE" not in body or "UNEXECUTED" not in body:
-            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED S015")
+        if not body.startswith("# S016") or "FUTURE" not in body or "UNEXECUTED" not in body:
+            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED S016")
         if "new explicit owner invocation" not in body:
             errors.append("NEXT_SESSION_PROMPT lacks fresh owner gate")
     return errors

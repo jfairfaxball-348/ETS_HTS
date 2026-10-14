@@ -182,3 +182,9 @@ Total 115/115 killed.
 ## S014 — 2026-10-14
 
 FAL-0056:Raw nearest-two simple-quadrilateral narrative fails at P=(12,2). FAL-0057:Interior convexity does not imply adjacency (0125). FAL-0058:Exact safe-region existence is easy (0126). FAL-0059:Linear total crossings fails;Θ(n²) bad-order construction (0127). FAL-0060:Lex sweep and arbitrary extreme reinsertion do not settle0128;native priority and independent hardness still absent. No survivor declared.
+
+## S015 — 2026-10-14
+
+- CND-0128 exact false universal. Convex six-point witness destroys every possible final vertex via hull-ear necessity. No proposal of novelty, open status or minimal size.
+- CAM-0005 **FAILED**: program erroneously included the queried vertex as its own nearest neighbour; the reported four-point no-ear was false and its own DFS returned a valid order. Do not reuse for any result. Frozen prereg/source/raw retained.
+- Two independent proof strategies not needed after decisive kill. Source-native coverage remains UNKNOWN in inaccessible archives. CAM-0003 still FAILED/PARTIAL 37/54.

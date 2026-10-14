@@ -1,0 +1,55 @@
+{
+  "seed": 150128,
+  "trials_per_size_cap": 500,
+  "n_range": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "generated": 1,
+  "convex_general": 1,
+  "convex_no_ear": 1,
+  "exact_solver_calls": 1,
+  "witness": {
+    "points": [
+      [
+        -120,
+        1440743
+      ],
+      [
+        -75,
+        563461
+      ],
+      [
+        -32,
+        102740
+      ],
+      [
+        194,
+        3763100
+      ]
+    ],
+    "ear_set": [],
+    "order": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "nodes": 4,
+    "n": 4,
+    "is_convex": true,
+    "checked": false
+  },
+  "illustrations": [],
+  "elapsed_s": 0.000230553000051259,
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "note": "No-ear convex witness directly disproves all-arrival-order possibility if correct; solver is corroboration. Finite no-witness does not prove universal."
+}

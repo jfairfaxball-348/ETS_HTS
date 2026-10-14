@@ -3,14 +3,14 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S014: nearest-two geometric growth calibrated; three questions killed, order-existence question GENERATED only",
-  "last_completed_session": "S014",
-  "next_session": "S015",
+  "phase_name": "S015: CND-0128 disproved by a six-point strictly convex nearest-two obstruction; no survivors",
+  "last_completed_session": "S015",
+  "next_session": "S016",
   "next_session_authorised": false,
   "candidate_count": 128,
-  "source_count": 74,
-  "claim_count": 91,
-  "campaign_count": 4,
+  "source_count": 77,
+  "claim_count": 94,
+  "campaign_count": 7,
   "gate_status": {
     "0": "CLOSED_ADMINISTRATIVE",
     "1": "OPEN_REGENERATION_ZERO_SURVIVORS",
@@ -22,8 +22,8 @@
   },
   "surviving_count": 0,
   "triaged_count": 0,
-  "kill_count": 127,
-  "remote_sha_policy": "S015 independently reconstruct S014 sole-parent atomic authored commit, non-draft ordinary PR and ordered two-parent merge; outgoing SHAs are not backfilled into precommit closeout.",
-  "note": "CND128:127 killed, CND-0128 GENERATED only. SRC74 CLM91 CAM4. CAM-0004 preregistered,258 finite inputs feasible; no hardness/novelty clearance. CAM-0003 frozen FAILED/PARTIAL37/54. Actual local checkout checker/unittest available; hosted CI is format-only. S015 future/unexecuted.",
-  "generated_count": 1
+  "kill_count": 128,
+  "remote_sha_policy": "S016 independently reconstruct S015 authored sole-parent commit, normal PR and ordered two-parent merge; outgoing SHAs not backfilled into immutable closeout.",
+  "note": "CND128 KILLED128; SRC77 CLM94 CAM7. CLM-0092/0093 elementary exact six-point counterexample kills CND-0128; CAM-0005 FAILED due self-neighbour bug, CAM-0006/7 COMPLETED, CAM-0004 old finite positive preserved, CAM-0003 FAILED/PARTIAL37/54. No hard/new open question or selected proof project; S016 FUTURE.",
+  "generated_count": 0
 }

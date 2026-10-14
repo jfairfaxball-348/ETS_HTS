@@ -666,6 +666,33 @@
       "url_or_doi": "https://arxiv.org/pdf/2607.25040",
       "access_grade": "ABSTRACT_INSPECTED",
       "notes": "Read original PDF title/authors and abstract constructing sparse spanners with crossing bounds. Spanner edges are optimised for stretch; not mandatory chronological nearest-two edges. arXiv abstract endpoint failed; PDF succeeded. Full proof not read."
+    },
+    {
+      "id": "SRC-0075",
+      "title": "Maximizing the Maximum Degree in Ordered Nearest Neighbor Graphs",
+      "author": "Péter Ágoston; Adrian Dumitrescu; Arsenii Sagdeev; Karamjeet Singh; Ji Zeng",
+      "date": "arXiv 2024-06-13; journal 2026",
+      "url_or_doi": "https://arxiv.org/abs/2406.08913",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "2026-10-14: original arXiv author text and proposition proof inspected. Ordered graph joins each point to ONE closest predecessor; studies order-dependent maximum degree, not nearest TWO nor geometric crossing-free existence. A one-neighbour path ordering does not imply two-neighbour planarity."
+    },
+    {
+      "id": "SRC-0076",
+      "title": "Incremental Planar Nearest Neighbor Queries with Optimal Query Time",
+      "author": "John Iacono; Yakov Nekrich",
+      "date": "2025",
+      "url_or_doi": "https://doi.org/10.4230/LIPIcs.SoCG.2025.59",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "2026-10-14: original Dagstuhl SoCG source and abstract inspected. Maintains a data structure for nearest-site queries under insertions; does not constrain new straight-line graph edges to form a plane graph."
+    },
+    {
+      "id": "SRC-0077",
+      "title": "Approximate Dynamic Nearest Neighbor Searching in a Polygonal Domain",
+      "author": "SoCG 2026 proceedings (individual paper author metadata not independently transcribed)",
+      "date": "2026",
+      "url_or_doi": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol367-socg2026/html/LIPIcs.SoCG.2026.69/LIPIcs.SoCG.2026.69.html",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "2026-10-14: primary publisher proceedings page and introduction inspected. Approximate queries in polygonal domain; differs from obligatory two nearest predecessors and crossing-free chronological graph. No original research-priority claim."
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "id": "CAM-0005",
+  "candidate_ids": [
+    "CND-0128"
+  ],
+  "claim_ids": [],
+  "purpose": "Try to falsify universal crossing-free nearest-two arrival order using a necessary geometric ear condition on strictly convex point sets; run exhaustive arrival-order solver only on no-ear witness candidates.",
+  "bounds": "Fixed seed 150128; n=4..12; at most 500 generated integer candidate sets per n (three predefined convex-seeking generators); requires distinct sites, no collinear triples, and every point an extreme vertex; stop at first verified no-ear convex set or 75 elapsed seconds after a checked iteration.",
+  "code_version": "campaigns/nearest_two_adversarial.py frozen before first execution",
+  "code_hash": "sha256:6737ade5cb7bca7d481332a0ade39885ca679b52805b5c4ff31240e9fca11c4f",
+  "input_hash": "sha256:6737ade5cb7bca7d481332a0ade39885ca679b52805b5c4ff31240e9fca11c4f (parameters in frozen source)",
+  "environment": "Linux container CPython 3.13.5, Python stdlib only",
+  "stopping_rule": "First convex point set with no nearest-two hull ear (negative answer if independently verified); else all planned candidate sets; else elapsed-time cap checked per iteration; no posthoc increase. DFS capped at 300000 nodes if invoked.",
+  "output_paths": [
+    "campaigns/CAM-0005_preregistration.json",
+    "campaigns/CAM-0005_raw.json",
+    "campaigns/nearest_two_adversarial.py"
+  ],
+  "status": "REGISTERED",
+  "preregistered_at_utc": "2026-10-14 (before first code execution; precise wall clock timestamp unavailable from clock source)"
+}
