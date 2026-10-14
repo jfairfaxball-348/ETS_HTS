@@ -3,9 +3,9 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S020 all-n nearcircle theorem and disproof of circle-only uniqueness",
-  "last_completed_session": "S020",
-  "next_session": "S021",
+  "phase_name": "S021 hostile theorem audit passed internally; existing ellipse theorem staged for Lean formalisation",
+  "last_completed_session": "S021",
+  "next_session": "S022",
   "next_session_authorised": false,
   "candidate_count": 131,
   "source_count": 79,
@@ -23,7 +23,7 @@
   "surviving_count": 0,
   "triaged_count": 0,
   "kill_count": 131,
-  "remote_sha_policy": "S021 reconstruct S020 sole-parent authored commit, ordinary PR, checks, two-parent nonforce merge and tree from LIVE main.",
-  "note": "CND131 all killed; CND-0131 false by CLM-0107 uniform all-n r<=1.050202 and CLM-0108 noncircle r=1.01. SRC79 CLM108 CAM10. Native novelty unknown; S016 original CAM8/9 detached; preserve CAM3/5 failures and CAM10 floating rejection. Owner administrative steer 2026-10-14: S021 remains FUTURE hostile audit, no mathematical extension. If PASS, stage S022 FUTURE Lean formalisation of CLM0096/0099/0102/0107/0108, not threshold research; no S021/S022 executed by this amendment.",
+  "remote_sha_policy": "S022 must reconstruct S021 authored sole-parent commit, PR/hosted checks, normal two-parent nonforce merge and identical tree from LIVE main; this S021 closeout is pre-integration.",
+  "note": "S021 outcome AUDIT_PASS_CONDITIONAL_FORMALISATION on CLM-0096/0099/0102/0107/0108, no fatal gap found after documented adversarial proof reconstruction. This is NOT Lean verification, outside peer review or originality. CND131 KILLED131, SRC79 CLM108 CAM10 unchanged, TRIAGED0 SURVIVING0. S022 FUTURE Lean formalisation ONLY of existing theorem, no mathematical strengthening. S016 CAM8/9 originals off GitHub, CAM3/5 failed, CAM10 floating pseudo-witnesses rejected; real checkout tests NOT_RUN due GitHub DNS.",
   "generated_count": 0
 }

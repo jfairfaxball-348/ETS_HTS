@@ -139,3 +139,9 @@ DEC-0070: Preregistered and executed CAM-0008/0009 on exact rational finite data
 - DEC-0083: Owner chooses S021 hostile mathematical theorem audit of S020 CLM-0107/0108, followed (only if audit survives) by Lean 4 formalisation of the existing result rather than attempting a stronger ellipse ratio or successor conjecture.
 - DEC-0084: Audit must reconstruct all dependencies, inequalities, endpoints, lex ties, convex-hull ear recursion and the symbolic nonround r=101/100 deduction. Fail-closed statuses: AUDIT_PASS_CONDITIONAL_FORMALISATION, REPAIR_REQUIRED, REFUTED or INCONCLUSIVE. PASS stages complete S022 FUTURE Lean handoff/blueprint; no Lean work in S021. Non-PASS stages proof repair/verification instead.
 - DEC-0085: This is a three-file administrative priority change only; S020 remains last completed and S021 next FUTURE, CND131 all killed, SRC79 CLM108 CAM10 unchanged. External novelty and independent peer review remain unverified. Owner gate for S022 fresh invocation remains intact.
+
+## S021 — 2026-10-14
+- DEC-0086: Declare AUDIT_PASS_CONDITIONAL_FORMALISATION on CLM0096/0099/0102/0107/0108 after independent symbolic adversarial reconstruction; neither Lean check nor external peer review. Preserve statuses and CND-0131 kill, no new claim/candidate/source/CAM.
+- DEC-0087: Resolve strict boundary r=R and k=5 by exact R<cot(pi/5); resolve angular Lambda endpoints with weak central floor and strict nearer neighbours; no floating computation.
+- DEC-0088: Owner-directed S022 FUTURE **Lean 4 formalisation of existing theorem only**, not extending R, prior-art certification or manuscript. Owner gate remains required, later Palomar separately gated.
+- DEC-0089: True-checkout script/tests NOT_RUN due DNS; GitHub hosted checks govern format only; retain S016 archive exception, failed CAM3/5 and rejected CAM10 pseudo-witnesses.
