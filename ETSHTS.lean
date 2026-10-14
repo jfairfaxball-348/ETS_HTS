@@ -1,4 +1,4 @@
-import ETSHTS.Cutoff
+import ETSHTS.FourPoint
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -41,8 +41,12 @@ import ETSHTS.Cutoff
 #print axioms ETSHTS.sqDist_ellipse_strict_left
 #print axioms ETSHTS.sqDist_ellipse_strict_outward
 #print axioms ETSHTS.clm0102_exact
+#print axioms ETSHTS.cos_two_pi_div_five_exact
+#print axioms ETSHTS.sin_two_pi_div_five_lt_49_div_50
+#print axioms ETSHTS.ellipse_ratio_101_le_R
+#print axioms ETSHTS.clm0108_of_clm0107
+#print axioms ETSHTS.four_point_order_from_strict_separation
 
-/- Only CLM0102 has a submitted candidate proof; the other four fixed targets remain open. -/
 #check ETSHTS.CLM0096
 #check ETSHTS.CLM0099
 #check ETSHTS.CLM0102

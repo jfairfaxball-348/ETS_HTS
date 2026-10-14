@@ -1,0 +1,16 @@
+S031 entry observed 2026-10-14 Europe/London
+main=de69530995b13be9a4f32b234cc10f9a00556cae
+main_commit_tree=cca5230c7aacb0177fca02b6fa657f30683c615d
+S030 PR #35 merged TRUE two parents 6e17e6711f460981f8773c267aa14692d2d2f7e5;2e51e93af9eb7051ea255591c847f061d55bb749
+S030 main Lean workflow 38626006276 job 116065208970 SUCCESS
+S030 main governance workflow 38626005962 job 116065208143 SUCCESS
+S030 clm0102_exact #print axioms [propext, Classical.choice, Quot.sound]
+S030 first failed then repaired; preserved PR commits 1c922c and 2e51e93
+S031 local Lean NOT_INSTALLED
+S031 local lake NOT_INSTALLED
+S031 local git clone FAILED DNS github.com
+S031 local scaffold/test NOT_RUN; hosted jobs REQUIRED
+S031 exact CLM0096 0099 0107 0108 OPEN
+S031 target CLM0102 kernel verified on S030 main
+S031 new Lean ratio/witness source AWAIT_HOSTED_CI
+S031 all-five PASS gate NOT_MET
