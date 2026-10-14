@@ -1,0 +1,8 @@
+S023 2026-10-14 BST
+True local git checkout and tests: NOT_RUN (network/DNS unresolved in local container; GitHub connector reads do not produce a real git checkout).
+python scripts/check_scaffold.py: NOT_RUN ON TRUE CHECKOUT.
+python -m unittest discover -s tests -v: NOT_RUN ON TRUE CHECKOUT.
+No claim of mathematical correctness from GitHub record-validation.
+Prior LIVE main (S022 merge) hosted record-validation check 115934079320: success; Actions run 38587722904: success, GOVERNANCE RECORD FORMAT ONLY.
+S023 authored commit/PR/CI/merge evidence: PENDING at author-time, not claimed in this file. Observe GitHub objects independently after upload.
+Counts expected CND131 killed131 / SRC87 / CLM108 / CAM10; S024 FUTURE and fresh owner gated.
