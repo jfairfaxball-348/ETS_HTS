@@ -3,9 +3,9 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S024 FINAL bounded prior-art audit CONDITIONAL_NOVELTY_SUPPORTED; S025 Lean formalisation queued (not authorised)",
-  "last_completed_session": "S024",
-  "next_session": "S025",
+  "phase_name": "S025 Lean formalisation begun; full theorem UNPROVED, S026 continuation queued",
+  "last_completed_session": "S025",
+  "next_session": "S026",
   "next_session_authorised": false,
   "candidate_count": 131,
   "source_count": 87,
@@ -23,10 +23,10 @@
   "surviving_count": 0,
   "triaged_count": 0,
   "kill_count": 131,
-  "remote_sha_policy": "S025 independently reconstruct S024 authored sole-parent commit, PR, ordered two-parent merge/main tree from live GitHub; S024 entry was main 4f154b1a85748ac710e7c833248e54cccddd6e41",
-  "note": "S024 final bounded novelty decision: 2011 Ábrego complete author manuscript inspected at relevant 2-NNG proof pages (SRC0086 upgraded to PROOF_INSPECTED for author's version), NO equivalent or stronger prior result located among inspected sources. 2004 ordered theta and 1992 proceedings full original proofs and native citation/keyword indexes remain UNKNOWN. Conditional only: NO historical first-discovery certificate, NO assertion R sharp or numerically novel. S021 internal proof audit pass retained. Owner explicitly ends repeated novelty sessions and queues FUTURE S025 Lean proof ONLY; separate invocation needed. No CND/CLM/CAM new: CND131 all killed, SRC87 CLM108 CAM10, zero surviving OPEN-PROBLEM candidates; S016 detached CAM8/9, failed CAM3/5 and float CAM10 preserved. No actual Lean/Palomar/manuscript/outreach.",
+  "remote_sha_policy": "At S026 entry reconstruct S025 one-parent authored commit, PR normal two-parent merge/main tree and Lean CI from live GitHub; S025 entry main e784a449a64a9dd2c2e6dd8c7f9aad1b88b54de5",
+  "note": "S025 has explicit owner invocation. Full theorem targets CLM0096, CLM0099, CLM0102, CLM0107, CLM0108 preserved as UNPROVED Prop specifications, no weakened ratio/n/tie conditions. Partial Lean foundation written, compiler not available locally, GitHub-hosted Lean workflow added; outcome needs live inspection. No Lean PASS claimed. FINAL prior-art gate remains S024 conditional for proof engineering only, no priority claim. CND131 killed131 SRC87 CLM108 CAM10 zero surviving open-problem candidates; S016 detached and failed CAMs retained. No paper/Palomar/outreach. S026 FUTURE formalisation repair, fresh owner invocation required.",
   "generated_count": 0,
   "novelty_verdict": "CONDITIONAL_NOVELTY_SUPPORTED",
   "final_novelty_audit": "S024",
-  "formalisation_status": "FUTURE_S025_OWNER_GATED_NOT_STARTED"
+  "formalisation_status": "PARTIAL_SPECIFICATIONS_AND_FOUNDATION_UNCOMPILED"
 }
