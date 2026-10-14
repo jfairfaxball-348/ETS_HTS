@@ -772,8 +772,8 @@
       "author": "Bernardo M. Ábrego; Ruy Fabila-Monroy; Silvia Fernández-Merchant; David Flores-Peñaloza; Ferran Hurtado; Vera Sacristán; Maria Saumell",
       "date": "2011-05",
       "url_or_doi": "https://doi.org/10.1016/j.comgeo.2010.11.003",
-      "access_grade": "ABSTRACT_INSPECTED",
-      "notes": "Original publisher indexed abstract inspected 2026-10-14, Computational Geometry 44(4):216–233. Static k-nearest-neighbour and other proximity graph crossing bounds; full original theorem/proof unavailable; does not visibly imply existence of an insertion order under dynamic 2-nearest rule. Critical source access gap retained."
+      "access_grade": "PROOF_INSPECTED",
+      "notes": "S024 2026-10-14: full author-hosted 27-page original manuscript https://www.csun.edu/~ba70714/publications/Cros_prox_graphs_CGTA_sub.pdf opened and visually inspected pp1–5,15–16, especially §2.2 Theorem 2.2.1 and §3.2 Propositions 3.2.1–3.2.5 proofs. Full journal-final PDF was NOT individually inspected nor equivalence of versions checked. The static full-set k-NNG(P) model defines neighbours against all P, and its planar 2-NNG existence uses chosen perturbed regular n-gon Q; it is not the ∀ellipse subset S ∃ arrival order with mandatory two nearest PREDECESSORS and old edges retained. Therefore no inspected subsumption of CLM0107. Prior S023 ABSTRACT_INSPECTED record remains historical, upgrade now ONLY for available manuscript relevant proofs."
     },
     {
       "id": "SRC-0087",

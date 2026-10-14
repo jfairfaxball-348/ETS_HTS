@@ -129,3 +129,6 @@
 - **SRC-0087 STATEMENT_INSPECTED:** John Iacono; Yakov Nekrich; Martin P. Seybold (2026), Incremental k-Lowest Planes and Planar k-Nearest Neighbor with Optimal Query Time, ICALP 2026, https://doi.org/10.4230/LIPIcs.ICALP.2026.113. Original Dagstuhl proceedings introduction/model inspected; dynamic kNN query data structure does not assert noncrossing retained insertion graph. No full proof grade claimed.
 
 S023 did not upgrade SRC-0085 ordered theta (2004), SRC-0086 static proximity crossings (2011), or register the inaccessible 1992 original as proof-inspected. See sessions/S023/SOURCE_ACCESS_GAPS.md.
+
+## S024 final source upgrade (2026-10-14)
+- **SRC-0086 UPGRADED to PROOF_INSPECTED for relevant author-manuscript proofs only:** full 27-page 2011 Ábrego et al author preprint https://www.csun.edu/~ba70714/publications/Cros_prox_graphs_CGTA_sub.pdf opened and proof sections §2.2/§3.2 pp4–5,15–16 inspected. Static crossing-number 2-NNG(Q) existence for chosen Q (Prop. 3.2.2), unlike uniform ∀S subset of every near-round ellipse ∃ chronological compulsory nearest-two order. Final published journal pagination/text not independently checked. SRC0085 and 1992 Finlayson full proofs still inaccessible, grades NOT silently upgraded. S024 EXACT verdict CONDITIONAL_NOVELTY_SUPPORTED, never certified historical first discovery.
