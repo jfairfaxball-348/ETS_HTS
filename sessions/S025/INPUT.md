@@ -1,0 +1,28 @@
+# S025 — owner invocation and live frozen prompt
+
+Owner explicitly invoked on 2026-10-14 Europe/London:
+
+> run this session [https://github.com/jfairfaxball-348/ETS_HTS/blob/main/authoritative/NEXT_SESSION_PROMPT.md](https://github.com/jfairfaxball-348/ETS_HTS/blob/main/authoritative/NEXT_SESSION_PROMPT.md)
+
+Live prompt source blob 80ad30d0d1a0ed4469bad7c6af50b55dc8556809 at entry main e784a449a64a9dd2c2e6dd8c7f9aad1b88b54de5:
+
+---
+
+# S025 — FUTURE / UNEXECUTED: Lean 4 FORMALISATION of the EXISTING uniform ellipse theorem
+
+**FUTURE / UNEXECUTED — REQUIRES A NEW explicit owner invocation.** S024 is declared the FINAL prior-art audit. Its verdict is `CONDITIONAL_NOVELTY_SUPPORTED` strictly as permission to spend proof-engineering effort, NOT certified first discovery. S021 hostile mathematical review passed conditionally. S025 is NOT another novelty audit and does NOT extend the mathematics. Do NOT execute S025 during S024.
+
+## The fixed target, no weakening
+Formalise CLM-0096 four-point lemma; CLM-0099 exact iff plane retained-nearest-two order ↔ complete metric-ear deletion certificate (strict convex); CLM-0102 BOTH endpoint derivative/strict short directed ellipse chord extension; CLM-0107 every finite n≥3 distinct ellipse-boundary points with a≥b>0 and 1≤a/b≤R=sqrt(2/sin(2π/5)−1) have a crossing-free retained edge graph from SOME start triangle and exactly their TWO nearest predecessor edges at every arrival (lex Cartesian ties); CLM-0108 101/100 nonround all-n corollary. Threshold endpoint r=R INCLUDED, arbitrarily close distinct sites allowed, all n. R is a SUFFICIENT interval, NOT sharpness claim. Use the detailed dependency map and illustrative Lean interfaces in `sessions/S021/LEAN_BLUEPRINT.md`, reconstruct original proof `sessions/S020/MATHEMATICS.md` and hostile audit `sessions/S021/MATHEMATICS.md`.
+
+## Implementation
+1. Read live main/STATE/AGENTS/protocols and S024 final audit, reconcile ordinary merge and hosted checks; isolate S025 branch. Pin Lean toolchain and mathlib via lake manifest with exact versions.
+2. Create actual Lean source files and executable Lake project in this repository, no hidden external repo. Develop definitions first (ellipse boundary, n-point order, exact lex tie rule, proper crossings, cyclic hull neighbors, deletion certificates).
+3. Prove chord derivative both endpoints, eligibility at r=R and n=5, central competitor bound, short-forward/backward comparisons, full recursively existing strict metric ear; derive planarity iff full ear certificate and the 101/100 corollary. Prove finite generality; no replacing ellipse by circle / special n / generic-position assumptions beyond distinct boundary sites.
+4. Run actual `lake build`, no `sorry`, `admit`, private axioms, mathematical `native_decide` trust gap, artificially assumed lemma, or weaker theorem. Print axioms and run a semantic statement audit. Preserve compiler output, versions, module paths and exact all-n quantifiers. Never claim PASS without compiler evidence.
+5. Any discovered gap → record blockers/partial code honestly and stage continued FORMALISATION repair, not another priority audit. Do not change theorem or R without fresh owner authority. If an exact prior theorem unexpectedly turns up in normal engineering, flag it honestly.
+6. Keep mathematical writing, Palomar, arXiv, journal, outreach and threshold optimisation outside S025. Those are separate future owner decisions.
+
+## Governance
+Exactly ONE numbered S025 session per fresh owner invocation. One isolated branch, one atomic authored commit, ordinary non-draft PR, GitHub two-parent merge, independently verify new main SHA/tree and hosted record checks. Actual local checkout checker/unittests and Lean build only count PASS if run. Preserve existing archive and failed CAM records, CND131 KILLED131, SRC87, CLM108, CAM10 with zero surviving **open-problem candidates**. Conditional source novelty review S024 complete; no automatic S026 audit loop.
+

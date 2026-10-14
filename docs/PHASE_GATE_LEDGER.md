@@ -86,3 +86,7 @@ Gate0 CLOSED_ADMINISTRATIVE; phase1 OPEN_REGENERATION_ZERO_SURVIVORS (CND131 all
 
 ## S024 — 2026-10-14 FINAL bounded novelty decision
 Gate0 CLOSED; Gate1 OPEN_REGENERATION_ZERO_SURVIVORS (CND131 killed131); Gate2 structurally NOT_OPEN_NO_SURVIVORS as a **new open-problem selection** gate, but existing CLM0107 theorem's independent historical priority subreview now **CONDITIONAL_NOVELTY_SUPPORTED for Lean ONLY**; Gate3 NOT_OPEN for unsolved candidates; gates4–6 OWNER_GATED. Owner explicitly ends serial audits. S025 FUTURE/UNEXECUTED Lean formalisation queued under fresh owner invocation; external publication gates not open. Source total SRC87 (upgraded proof grade for SRC0086 author manuscript), CLM108 CAM10; original detached S016 CAM8/9 remains off GitHub. No formal build/Palomar and local true-checkout tests NOT_RUN. Unavailable historical sources remain UNKNOWN.
+
+
+## S025 — 2026-10-14 Lean formalisation begun (not certified)
+Gates 0/1/2/3 unchanged: CND131 killed131, zero surviving open-problem candidates; S024 final conditional novelty verdict grants proof-engineering effort but NOT first-discovery. Existing theorem CLM0107 and corollary CLM0108 remain internal programme proofs, currently UNPROVED in Lean. Formalisation source specifies exact propositions; small helper proof scripts are uncompiled locally, hosted Lean evidence to be inspected. Gate4–6 remain OWNER_GATED; publication, Palomar and external contact NOT authorised. S026 FUTURE dedicated FORMALISATION repair/closure under a new explicit invocation.

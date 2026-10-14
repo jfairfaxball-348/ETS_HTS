@@ -1,0 +1,32 @@
+name: Lean formalisation (separate from governance)
+on:
+  push:
+    branches: [main, "session/S025-lean-formalisation-foundations"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean, fetch mathlib cache, build
+        uses: leanprover/lean-action@v1
+        with:
+          build: "true"
+          test: "false"
+          lint: "false"
+          use-mathlib-cache: "true"
+      - name: Versions, statement and axiom evidence
+        run: |
+          lean --version
+          lake --version
+          lake env lean ETSHTS.lean
+      - name: Explicitly reject proof holes and custom axioms in project sources
+        run: |
+          if grep -nRE '(^|[[:space:]])(sorry|admit|axiom|native_decide)([[:space:]]|$)' ETSHTS.lean ETSHTS; then
+            echo "Forbidden token in formalisation sources"
+            exit 1
+          fi
