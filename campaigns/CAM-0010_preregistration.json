@@ -1,0 +1,38 @@
+{
+  "id": "CAM-0010",
+  "timestamp_utc": "2026-10-14T12:39:00Z",
+  "candidate_ids": [
+    "CND-0131"
+  ],
+  "claim_ids": [],
+  "purpose": "Find non-eligible-ear strictly convex configurations on ellipses near circles, finite screening only",
+  "bounds": {
+    "aspect_ratios": [
+      1.01,
+      1.02,
+      1.2,
+      2,
+      5
+    ],
+    "n": [
+      5,
+      6
+    ],
+    "random_trials_each": 20000,
+    "de_per_cell": 2,
+    "de_maxiter": 70,
+    "de_popsize": 10,
+    "total_random_trials": 200000
+  },
+  "code_version": "S017-immutable-v1",
+  "code_hash": "sha256:7634597897a5130aa2eae26d19726b662a58e30d52256124c7aa92174c615dd6",
+  "input_hash": "deterministic constants in script",
+  "environment": "Python 3.13.5, numpy/scipy platform Linux-6.18.44-x86_64-with-glibc2.41",
+  "stopping_rule": "run all 10 specified cells; no adaptive extensions; preserve all margins and positive example angles",
+  "output_paths": [
+    "campaigns/CAM-0010_raw.json"
+  ],
+  "status": "REGISTERED",
+  "seed": 2026101417,
+  "note": "Preregistered locally before first execution. Honest host archival follows only if session commit succeeds."
+}

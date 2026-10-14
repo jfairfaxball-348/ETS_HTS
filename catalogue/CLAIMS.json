@@ -1330,6 +1330,44 @@
       ],
       "justification": "CAM-0009 exact fractions/orientation-sign enumeration of all 120 orderings, minimum proper crossing count 1. CAM-0008 preregistered fixed seed 20261014, 2,000 rational-ellipse samples per (aspect,n) cell; no-ear sets occur for a/b=5 and20 at n5/n6, none in sampled a/b=1,51/50,6/5,2 cells. Frozen SHA256 hashes and full raw in detached owner-downloadable archive, manifest in repo.",
       "limitations": "Finite sampled sets, no extrapolation to all ellipses or n; full native corpus novelty not checked; detached archive not equivalent to full in-repo retention."
+    },
+    {
+      "id": "CLM-0099",
+      "statement": "For any finite set S of at least three points in strictly convex position, a crossing-free retained nearest-two-predecessor order exists if and only if its vertices can be recursively removed, down to three, each removed vertex having its two nearest other surviving sites exactly its two cyclic polygon neighbours (with the fixed tie convention).",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0131"
+      ],
+      "cam_ids": [],
+      "justification": "Necessity: plane NG has 2n-3 distinct edges and all n points exposed, hence all n hull edges. The last vertex has exactly two incident edges from its insertion and must join both hull neighbours, which must be its two selected nearest among preceding sites. Remove it; the induced earlier graph is itself crossing-free. Conversely reverse any valid removal sequence: each insertion connects to the endpoints of a hull boundary edge of the previous polygon; the inserted vertex lies strictly outside that polygon, and the new boundary edges do not cross the earlier triangulation. Induct on n with three-site seed. S017/MATHEMATICS.md.",
+      "limitations": "General position/strict convexity; not a claim for arbitrary nonconvex point sets. This is an exact reformulation and certificate for finite inputs, NOT a global ellipse classification or an independent priority claim."
+    },
+    {
+      "id": "CLM-0100",
+      "statement": "Let S be any finite set of at least three distinct points on ellipse (a cos θ,b sin θ) with a>=b>0 and cyclic consecutive parameter gaps all >=δ>0 radians. If a/b < 1+(δ/2)cos(2π/5), then S admits a crossing-free retained nearest-two order. Consequently any counterexample on aspect ratio r>1 has minimal parameter gap δ <= 2(r-1)/cos(2π/5).",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0131"
+      ],
+      "cam_ids": [],
+      "justification": "For k>=5 choose vertex minimizing s=preceding+following parameter gaps; s<=4π/k<=4π/5. Each of its two adjacent gaps <=s-δ; each non-neighbour has minor angular separation at least s. Circular chord comparison gives gap >= 2[sin(s/2)-sin((s-δ)/2)] >= δ cos(2π/5). Ellipse transform multiplies all chord lengths by factor within [b,a], so its non-neighbour distance minus its longest neighbour distance is >=bδ cos(2π/5)-2(a-b)>0. Thus both nearest sites are hull neighbours, strictly, so delete and repeat (remaining gaps still >=δ); for k=4 use CLM-0096. Apply CLM-0099 in reverse. S017/MATHEMATICS.",
+      "limitations": "Conditional on all parameter gaps >=δ, NOT uniform over arbitrarily close pairs. Strict inequality required. Only ellipse standard angle, not arclength. No external novelty/priority clearance."
+    },
+    {
+      "id": "CLM-0101",
+      "statement": "Preregistered finite double-precision CAM-0010 evaluated 200,000 random configurations (20,000 per 10 aspect/size cells) plus 20 bounded numerical optimisations. Near-circle apparent positive margins are at ~1e-31 or effectively duplicate points and are not valid witnesses; a=5 examples appear numerically positive but add no exact result over S016.",
+      "status": "HEURISTIC",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0131"
+      ],
+      "cam_ids": [
+        "CAM-0010"
+      ],
+      "justification": "Deterministic seed 2026101417; source SHA256 76345978... prereg archived before running; raw numbers and code in campaigns. Floating double and optimiser can collapse distinct angle positions, causing spurious no-ear values, so all near-circle positive signs disqualified. No exact rational validation performed for these trials.",
+      "limitations": "Numerical screening only; not an exhaustive test; no certified near-circle counterexample, no mathematical classification and no novelty evidence."
     }
   ]
 }

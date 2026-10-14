@@ -219,3 +219,6 @@ For every finite point set in general position, can some nearest-two-predecessor
 
 CND-0129 and CND-0130 are killed as *questions seeking unsolved answers*, but their positive and sharp mathematical results are retained. CND-0131 is a genuinely qualitative shape classification, not an eccentricity threshold adjusted to preserve a failing conjecture. Historical originality and full native literature audit remain UNKNOWN. The computational raw/scripts are preserved in a **detached** downloadable archive; see CAM manifest for incompleteness.
 
+
+## S017 — retained CND-0131, no promotion
+- **CND-0131 [GENERATED]**: remains a shape-classification question, not proven open/novel/hard. CLM-0099 gives a finite recursive ear equivalence, CLM-0100 a quantitative near-circle stability theorem with an explicit angular-gap hypothesis, and CAM-0010 is a preregistered but floating-point-inconclusive finite search. The all-nonround ellipse quantifier remains unresolved. Counts still 131 total, 130 killed, 1 generated, none triaged/surviving. S016 detached CAM8/9 archive unresolved.

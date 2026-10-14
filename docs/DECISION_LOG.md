@@ -111,3 +111,8 @@ DEC-0068: CND-0129 killed easy by universal circle constructive argument CLM-009
 DEC-0069: CND-0131 GENERATED only; ellipse 5:1 fails, circle works, noncircle classification unresolved and mandatory native novelty/hardness not certified.
 DEC-0070: Preregistered and executed CAM-0008/0009 on exact rational finite data; original frozen scripts/prereg/raw are presently detached in an owner-downloadable archive, **not integrated in GitHub**; explicit governance exception. Earlier CAMs unchanged; S017 future only.
 
+
+## S017 — 2026-10-14
+- Retain CND-0131 GENERATED, **do not** promote to TRIAGED/SURVIVING: CLM99 finite elimination equivalence and CLM100 quantitative angular-gap theorem do not classify all nonround ellipses; no independent difficulty/native novelty.
+- Preserve CAM10 pre-run hashes and raw; spurious near-circle apparent witnesses at floating precision are not accepted. S016 detached archive no longer available in current environment, remains OPEN. No new SRC claims from snippets.
+- Draft S018 singular perturbation/extremal route only, requires fresh owner invocation. No owner-gated external work.

@@ -58,3 +58,6 @@ Phase1 OPEN_REGENERATION_ZERO_SURVIVORS: 128 candidates all KILLED, no GENERATED
 ## S016 — 2026-10-14
 Gate0 administrative closed. Gate1 OPEN_REGENERATION_ONE_UNTRIAGED: CND-0129/0130 KILLED_EASY, CND-0131 GENERATED only; CND131 total, KILLED130 GENERATED1 TRIAGED0 SURVIVING0 HARD0 SELECTED0. Gate2 NOT_OPEN_NO_SURVIVORS and native literature audit incomplete/UNKNOWN; gate3 NOT_OPEN no independent difficulty certificate; gates4–6 OWNER_GATED. SRC78 CLM98 CAM9; detached CAM8/9 raw/code archival blocker explicitly OPEN. Hosted record CI never mathematical review.
 
+
+## S017 — 2026-10-14
+Gate0 CLOSED. Gate1 OPEN_REGENERATION_ONE_UNTRIAGED (CND131, KILLED130, GENERATED1, TRIAGED0, SURVIVING0). Gate2 NOT_OPEN_NO_SURVIVORS (deep native novelty incomplete), gate3 NOT_OPEN (independent hardness absent), gates4–6 OWNER_GATED. SRC78 CLM101 CAM10. S016 CAM8/9 detached archival exception OPEN, CAM10 floating precision prevents exact status; record CI validates governance only. S018 FUTURE/UNEXECUTED.

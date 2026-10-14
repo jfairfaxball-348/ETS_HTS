@@ -1,0 +1,6 @@
+# S017 discovery report — 2026-10-14
+**Substantial conditional theorem, unresolved central question.** CLM-0099 establishes an exact bidirectional equivalence on any strictly convex finite set: a plane NG order exists iff recursive deletion of two-nearest hull ears reaches a triangle. CLM-0100 proves that on an ellipse with ratio r and smallest standard angular gap δ (radians), r<1+δ cos(2π/5)/2 suffices for an NG order. Thus on ratio1.01 a counterexample requires some angle gap <=~3.71°, but there is no guarantee that such a clustered counterexample exists.
+
+CND-0131 remains GENERATED, not proved or certified difficult/open/novel. CAM-0010 float exploration is inconclusive in the near-circle regime; its near-zero apparent positives use duplicates at machine tolerance, not usable exact witnesses. No new counterexample beyond S016; no circle-only classification. Counts 131 CND (130 killed,1 generated), SRC78 CLM101 CAM10; triaged0 surviving0. Deep source-native novelty unknown.
+
+Historical S016 CAM-0008/9 frozen original six-file archive missing from hosted GitHub; no backfill, no erasure. S016 previous failed campaigns remain unmodified. Local git DNS prevents actual checkout tests; hosted validation can only cover format, not mathematical correctness.
