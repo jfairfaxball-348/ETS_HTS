@@ -1,4 +1,4 @@
-import ETSHTS.FourPoint
+import ETSHTS.ThreePredecessors
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -52,3 +52,12 @@ import ETSHTS.FourPoint
 #check ETSHTS.CLM0102
 #check ETSHTS.CLM0107
 #check ETSHTS.CLM0108
+
+#print axioms ETSHTS.cartLexLT_trans
+#print axioms ETSHTS.cartLexLT_total_of_ne
+#print axioms ETSHTS.priority_trans
+#print axioms ETSHTS.priority_total_of_ne
+#print axioms ETSHTS.exactlyTwoNearest_of_three_rank
+#print axioms ETSHTS.exactlyTwoNearest_three_exists
+#print axioms ETSHTS.four_point_order_from_exact_nearest
+#print axioms ETSHTS.four_point_order_of_all_nearest_pairs_plane
