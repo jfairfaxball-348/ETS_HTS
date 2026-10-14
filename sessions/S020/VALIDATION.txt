@@ -1,0 +1,10 @@
+S020 2026-10-14 BST
+ENTRY main 7a4d5dc0ccff46ae1fadcab7bc35b777d912f59b tree 4e563091cf8d93923b1fbbcbdf17f7896438a053
+S019 authored 98b1aff3c5b9f13146a4bc95549ad13351e38b95 parent e8a0e7a1bcb2014933f00e196e8f3cd141f49a3c tree 4e563091cf8d93923b1fbbcbdf17f7896438a053
+S019 PR#21 merged non-draft; S019 ordered two-parent merge 7a4d5dc0ccff46ae1fadcab7bc35b777d912f59b tree 4e563091cf8d93923b1fbbcbdf17f7896438a053
+S019 PR/main successful record-only check IDs 115855387735 / 115855555034; workflow IDs 38565023427 / 38565072679
+S020 competing branches/PRs not found; rulesets [] ; protection HTTP403 UNKNOWN
+Actual git ls-remote FAILED: Could not resolve host github.com
+Mandatory true-checkout python scripts/check_scaffold.py NOT_RUN (DNS prevents checkout)
+Mandatory true-checkout python -m unittest discover -s tests -v NOT_RUN (DNS prevents checkout)
+No local PASS assertion; hosted record CI governance only, never mathematics.

@@ -1432,6 +1432,30 @@
       "cam_ids": [],
       "justification": "For m=1,2,... apply exact real quantifier elimination to decide whether the CLM-0105 formula for B_n has a solution in t∈[1,(1+1/m)²]. At the first UNSAT result output epsilon_n=1/m. Every step is decidable over rationals. CLM-0103 grants an open n-specific safe aspect neighbourhood, so a sufficiently large m has its full closed interval inside the safe neighbourhood; thus the search halts. See S019/MATHEMATICS.md.",
       "limitations": "The algorithm was NOT executed; no actual numerical epsilon_n, explicit function of n or runtime, no uniform bound across unbounded n and no nearcircle obstruction family."
+    },
+    {
+      "id": "CLM-0107",
+      "statement": "For all n>=3 and all finite n-site subsets of every ellipse 1<=a/b<=sqrt(2/sin(2pi/5)-1), a crossing-free retained nearest-two predecessor order exists, with no minimum gap condition.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0131"
+      ],
+      "cam_ids": [],
+      "justification": "S020/MATHEMATICS: minimum metric two-step chord among eligible short angular triples; chord extension controls short forwards/backwards nonneighbours; central chord floor 4ab²/(a²+b²)>=2a sin(2pi/5) controls others; gives strict ear at each k>=5. Base k<=4 and CLM0099 reversibility.",
+      "limitations": "No independent review, source priority or sharpness; r>R unresolved."
+    },
+    {
+      "id": "CLM-0108",
+      "statement": "CND-0131 circle-only uniqueness is false: ellipse of axis ratio 101/100 is nonround yet has a plane nearest-two insertion order for every finite set of distinct boundary sites.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0131"
+      ],
+      "cam_ids": [],
+      "justification": "101/100 lies strictly between 1 and CLM-0107's all-n safe R≈1.050202. Thus one nonround universal ellipse disproves uniqueness.",
+      "limitations": "Does not settle full good-ratio locus, sharpness or novelty."
     }
   ]
 }

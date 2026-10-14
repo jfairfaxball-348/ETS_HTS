@@ -217,3 +217,9 @@ FAL-0056:Raw nearest-two simple-quadrilateral narrative fails at P=(12,2). FAL-0
 - F-S019-3: Small gaps chain into long clusters; opposite-direction chord comparisons and nearly antipodal two-support groups stop naive gap-free global proof. No exact n(r) family.
 - F-S019-4: Native two-pass and independent difficulty remain UNKNOWN; no originality claim. Original CAM8/9 not hosted, CAM3/5 failures and CAM10 1e-31 numerical pseudo-witness untouched.
 - F-S019-5: Real git clone GitHub DNS failure; local true-checkout checker/unittests NOT_RUN. Hosted validation checks formats only.
+
+## S020 — 2026-10-14
+- F-S020-1 CLOSED: S019 missing uniform all-n interval solved by CLM0107. Earlier records remain true historical descriptions of then-unsolved subgoal.
+- F-S020-2 CND0131 false by nonround r=101/100, not a conjectured open problem. Sharp upper endpoint and classification for r>R UNRESOLVED; independent peer review and historical priority UNKNOWN.
+- F-S020-3 Original S016 CAM8/9 still detached, CAM3/5 failed histories and CAM10 floating artefacts preserved.
+- F-S020-4 GitHub DNS failure actual checkout unavailable; true-checkout checker/unittest NOT_RUN, hosted CI format only. Full native source searches UNKNOWN.

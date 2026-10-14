@@ -129,3 +129,8 @@ DEC-0070: Preregistered and executed CAM-0008/0009 on exact rational finite data
 - DEC-0076: Record CLM105/106 and source SRC79 for prior general quantifier-elimination method; no executed CAD and no CAM11.
 - DEC-0077: S020 future all-n go/no-go assessment, including possible narrative NOT_RESOLVED_RETIRED recommendation. Do not label KILLED absent proof or exact prior art.
 - DEC-0078: Preserve detached S016 CAM8/9 archive, earlier CAM3/5 failures and CAM10 floating artefacts; incomplete deep novelty and local DNS blockage.
+
+## S020 — 2026-10-14
+- DEC-0079: Uniform CLM0107 all-n safe aspect r<=R≈1.050202 and CLM0108 noncircle r=101/100 disprove CND0131 circle-only statement. Move GENERATED to KILLED_FALSE/DEGENERATE with complete mathematical proof, NOT unresolved-retired narrative.
+- DEC-0080: No sharpness or full ratio classification asserted; priority, external review and native two-pass novelty UNKNOWN. Zero TRIAGED/SURVIVING; all 131 candidates killed; selection/Lean/publication/outreach NOT authorised.
+- DEC-0081: No new CAM or SRC. Detached S016 CAM8/9 originals, failed CAM3/5 and rejected CAM10 floats untouched. Stage S021 future hostile theorem audit; DNS blocks checkout.
