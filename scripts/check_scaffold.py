@@ -77,6 +77,10 @@ REQUIRED = (
     "sessions/S020/INPUT.md", "sessions/S020/PLAN.md", "sessions/S020/MATHEMATICS.md",
     "sessions/S020/NOVELTY_QUERIES.md", "sessions/S020/DISCOVERY_REPORT.md",
     "sessions/S020/CLOSEOUT.md", "sessions/S020/VALIDATION.txt",
+    "sessions/S021/INPUT.md", "sessions/S021/PLAN.md", "sessions/S021/MATHEMATICS.md",
+    "sessions/S021/ATTACK_LOG.md", "sessions/S021/LEAN_BLUEPRINT.md",
+    "sessions/S021/NOVELTY_QUERIES.md", "sessions/S021/DISCOVERY_REPORT.md",
+    "sessions/S021/CLOSEOUT.md", "sessions/S021/VALIDATION.txt",
     "campaigns/CAM-0010_preregistration.json", "campaigns/ellipse_cam0010.py",
     "campaigns/CAM-0010_raw.json",
     "scripts/check_scaffold.py", "tests/test_scaffold.py",
@@ -194,12 +198,12 @@ def validate(root: Path) -> list[str]:
     if state_file.is_file():
         try:
             s = json.loads(state_file.read_text(encoding="utf-8"))
-            if s.get("next_session") != "S021" or s.get("next_session_authorised") is not False:
-                errors.append("STATE: S021 must be next and explicitly unauthorised")
-            if s.get("last_completed_session") != "S020":
-                errors.append("STATE: S020 must be last completed")
+            if s.get("next_session") != "S022" or s.get("next_session_authorised") is not False:
+                errors.append("STATE: S022 must be next and explicitly unauthorised")
+            if s.get("last_completed_session") != "S021":
+                errors.append("STATE: S021 must be last completed")
             if s.get("phase") != 1:
-                errors.append("STATE: S020 must remain in generation/triage phase one")
+                errors.append("STATE: S021 must remain in generation/triage phase one")
             statuses = [x.get("status") for x in parsed.get("candidates", []) if isinstance(x, dict)]
             if s.get("kill_count") != sum(str(x).startswith("KILLED_") for x in statuses):
                 errors.append("STATE: kill_count mismatch registry")
@@ -218,8 +222,8 @@ def validate(root: Path) -> list[str]:
     prompt = root / "authoritative/NEXT_SESSION_PROMPT.md"
     if prompt.is_file():
         body = prompt.read_text(encoding="utf-8")
-        if not body.startswith("# S021") or "FUTURE" not in body or "UNEXECUTED" not in body:
-            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED S021")
+        if not body.startswith("# S022") or "FUTURE" not in body or "UNEXECUTED" not in body:
+            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED S022")
         if "new explicit owner invocation" not in body:
             errors.append("NEXT_SESSION_PROMPT lacks fresh owner gate")
     return errors

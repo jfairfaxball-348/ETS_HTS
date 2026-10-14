@@ -71,3 +71,6 @@ Phase1 OPEN_REGENERATION_ONE_UNTRIAGED (CND131, killed130, GENERATED1, TRIAGED0,
 
 ## S020 — 2026-10-14
 Gate0 CLOSED; Phase1 OPEN_REGENERATION_ZERO_SURVIVORS: CND131 KILLED131 GENERATED0 TRIAGED0 SURVIVING0 HARD0 SELECTED0, SRC79 CLM108 CAM10. CLM0107 uniform all-n r<=R safe and CLM0108 disproof of circle-only CND0131; killed, no survivor. Phase2 NOT_OPEN_NO_SURVIVORS (native two-pass sources UNKNOWN), phase3 NOT_OPEN independent hardness absent, gates4–6 OWNER_GATED. No CAM11, original S016 detached archive OPEN; hosted CI only governance. S021 FUTURE.
+
+## S021 — 2026-10-14
+Gate0 CLOSED. Phase1 OPEN_REGENERATION_ZERO_SURVIVORS: CND131/KILLED131, GENERATED0 TRIAGED0 SURVIVING0, SRC79 CLM108 CAM10. CLM0107/0108 passed internal hostile symbolic review (AUDIT_PASS_CONDITIONAL_FORMALISATION) but no Lean or external review. Gates2/3 not open for SURVIVOR or independent novelty/hardness; gates4–6 OWNER_GATED. Owner explicitly directed FUTURE S022 theorem formalisation, not new research hunt; S022 still requires its own fresh invocation. Detached S016 CAM8/9 exception OPEN.

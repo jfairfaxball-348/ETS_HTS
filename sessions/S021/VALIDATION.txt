@@ -1,0 +1,12 @@
+S021 2026-10-14 BST
+ENTRY main a80b8df93252af5d3cfa3b63642333b7874a9177 tree 15c4640fc0e3acc7579ebd122c9d98ff6303a08d
+S020 authored ebc949d8a7788cd390dfd6b4a2923af9509d0956 sole parent 7a4d5dc0ccff46ae1fadcab7bc35b777d912f59b tree 2355c4c1a3a86c1515640edede1e2839a15fd76b
+S020 PR#22 normal non-draft merged c265375c74a2b72f3d6760d3425eebd1b4d78322 parents [7a4d5dc0ccff46ae1fadcab7bc35b777d912f59b, ebc949d8a7788cd390dfd6b4a2923af9509d0956] identical merge tree
+S020 head hosted check run 115883401677 SUCCESS; workflow run 38573182745 SUCCESS; record-only; conventional commit statuses count 0 and status endpoint 'pending' (not proof)
+ENTRY admin #23 merged, no other open PR, no duplicate S021 execution; S021 branch created from pinned main
+Rulesets [] from endpoint; protection 403 UNKNOWN
+git ls-remote attempted: FAILED DNS "Could not resolve host: github.com"
+True-checkout python scripts/check_scaffold.py NOT_RUN (GitHub DNS)
+True-checkout python -m unittest discover -s tests -v NOT_RUN (GitHub DNS)
+No local mathematical verification claim; hosted governance CI record formatting only
+Outcome AUDIT_PASS_CONDITIONAL_FORMALISATION; S022 FUTURE formalisation only

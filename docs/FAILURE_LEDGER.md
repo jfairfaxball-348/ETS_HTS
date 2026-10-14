@@ -223,3 +223,9 @@ FAL-0056:Raw nearest-two simple-quadrilateral narrative fails at P=(12,2). FAL-0
 - F-S020-2 CND0131 false by nonround r=101/100, not a conjectured open problem. Sharp upper endpoint and classification for r>R UNRESOLVED; independent peer review and historical priority UNKNOWN.
 - F-S020-3 Original S016 CAM8/9 still detached, CAM3/5 failed histories and CAM10 floating artefacts preserved.
 - F-S020-4 GitHub DNS failure actual checkout unavailable; true-checkout checker/unittest NOT_RUN, hosted CI format only. Full native source searches UNKNOWN.
+
+## S021 — 2026-10-14
+- F-S021-1: Hostile audit found NO specific fatal mathematical gap, but external peer review and novelty/priority remain UNKNOWN; a Lean proof is not yet compiled. This is conditional INTERNAL PASS, not publication readiness.
+- F-S021-2: Historical sharpness of R and r>R classification UNRESOLVED (OUT OF SCOPE, not blockers to the exact sufficient theorem).
+- F-S021-3: GitHub DNS prevents true git checkout: `git ls-remote` failed; mandatory local checker and unittest are NOT_RUN. Hosted CI is governance only.
+- F-S021-4: Original S016 CAM8/9 detached six-file archive still OFF GitHub; CAM3/5 failed and CAM10 near-duplicate float pseudo-witnesses unchanged. Native source priority UNKNOWN.
