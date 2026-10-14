@@ -195,3 +195,10 @@ FAL-0056:Raw nearest-two simple-quadrilateral narrative fails at P=(12,2). FAL-0
 - **CND-0131 GENERATED ONLY:** cannot extrapolate ellipse 5:1 obstruction to all eccentricities; cannot transport chord-nearest rule under nonuniform affine stretch. Circle proof and finite screens insufficient for a general classification. Native priority and independent difficulty evidence absent; no hard/open label.
 - **Archival and local-validation blockers:** original CAM8/9 frozen files are a detached downloadable archive, not GitHub; full-checkout test commands NOT_RUN locally because Github DNS failed. Historical CAM-0003/0005 failures retained.
 
+
+## S017 — 2026-10-14
+- F-S017-1: Global CND-0131 classification unresolved; the gap-stability CLM100 is nonuniform as δ->0 and cannot imply a universal near-circle eccentricity interval.
+- F-S017-2: CAM-0010 apparent near-round no-ear configurations have duplicate/effectively equal angles and signed margins order10^-31. Do NOT cite as valid counterexamples. Float optimisation cannot replace exact rational geometry.
+- F-S017-3: Original frozen S016 CAM8/9 archive absent from GitHub and not available in this new session; no silent replacements, all six original hashes in manifest unchanged.
+- F-S017-4: git ls-remote DNS unresolved; actual checkout local checker/unittests NOT_RUN. Hosted format checks may pass but are not mathematical validation.
+- F-S017-5: Native novelty two-pass and independent hardness for CND-0131 remain incomplete/UNKNOWN; no claim of open problem.

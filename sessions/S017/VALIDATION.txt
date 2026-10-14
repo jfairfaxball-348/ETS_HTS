@@ -1,0 +1,5 @@
+S017 validation — 2026-10-14
+- Live entry main 05613c5c325803950279ae68d40779769fe993b1, tree 32bd870e47e2ba712eb14bc7c87fdf6073512f34; S016 normal PR #18 merge / one-parent authored commit independently checked; S016 PR and main hosted checks SUCCESS.
+- Source prereg SHA256 955e01369682f14a0d8c6a3bfb852b8e59a244bfbfc18ffd5ead6445b88e78fe; script SHA256 7634597897a5130aa2eae26d19726b662a58e30d52256124c7aa92174c615dd6 frozen BEFORE CAM-0010 execution. 10 fixed cells executed, 200k float sets plus 20 optimisations, raw data archived. No exact near-circle witness.
+- git ls-remote https://github.com/jfairfaxball-348/ETS_HTS.git: fatal: Could not resolve host: github.com. ACTUAL remote checkout unavailable; `python scripts/check_scaffold.py`: NOT_RUN in a true checkout; `python -m unittest discover -s tests -v`: NOT_RUN in a true checkout. No local PASS invented. Hosted CI only governance/format (must be inspected after PR).
+- S016 detached archive unavailable here: still open deviation. No claimed verification of literature novelty, independent hardness, or theorem peer review.

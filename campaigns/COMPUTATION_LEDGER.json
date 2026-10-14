@@ -210,6 +210,30 @@
       ],
       "status": "COMPLETED",
       "result": "All 120 ellipse orders have proper crossings, min1; strict rank2 vs rank3 distances, convex. No zero-ear parabola quintuple found in 100,000 deterministic samples (finite only). Full original run artifacts are detached and downloadable, not in remote main."
+    },
+    {
+      "id": "CAM-0010",
+      "candidate_ids": [
+        "CND-0131"
+      ],
+      "claim_ids": [
+        "CLM-0101"
+      ],
+      "purpose": "Find non-eligible-ear strictly convex configurations on ellipses near circles, finite screening only",
+      "bounds": "Fixed a/b=1.01,1.02,1.2,2,5; n=5,6; 20000 seeded Dirichlet random samples plus two DE optimisations per cell (70 maxiter, popsize10).",
+      "code_version": "campaigns/ellipse_cam0010.py (original local prereg SHA256 before running)",
+      "code_hash": "sha256:7634597897a5130aa2eae26d19726b662a58e30d52256124c7aa92174c615dd6",
+      "input_hash": "sha256:955e01369682f14a0d8c6a3bfb852b8e59a244bfbfc18ffd5ead6445b88e78fe",
+      "environment": "Python 3.13.5, numpy2.3.5 scipy1.17.0 Linux glibc2.41; IEEE floating point, not exact",
+      "stopping_rule": "run all 10 specified cells; no adaptive extensions; preserve all margins and positive example angles",
+      "output_paths": [
+        "campaigns/CAM-0010_preregistration.json",
+        "campaigns/ellipse_cam0010.py",
+        "campaigns/CAM-0010_raw.json",
+        "sessions/S017/COMPUTATION_RESULTS.md"
+      ],
+      "status": "COMPLETED",
+      "result": "All 10 cells evaluated. Apparent no-ear near-circle counts n6 (1,2,2,1) at 1.01,1.02,1.2,2 respectively and n5 1 at aspect2, all best positive margins ~1e-31 with effectively duplicate angles: numerical degeneracy NOT certified. Aspect5 n5 2 and n6 6 raw positives, already S016 exact obstruction. No new rigorous nonround-near-circle counterexample."
     }
   ]
 }

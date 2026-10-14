@@ -131,3 +131,8 @@
 - **CLM-0097 PROGRAMME_PROVED**: Five rational points on ellipse x²/25+y²=1 with m=(-194,3,25,217,257) have no permissible last hull ear, hence no plane NG order. Strict exact pairs and formula in S016/MATHEMATICS.
 - **CLM-0098 COMPUTED_EXACT**: CAM-0009 independently checks all 120/120 orders have a proper crossing (minimum 1); CAM-0008 samples 36,000 finite inputs. Code/raw preserved as detached owner-downloadable archive, not individual in-repo paths.
 
+
+## S017 — exact recursive ears and quantitative ellipse stability
+- **CLM-0099 PROGRAMME_PROVED**: Strictly convex finite retained NG feasibility iff recursive deletion by vertices whose selected two nearest surviving sites are their cyclic hull neighbours. Reverse reinsertion along the former hull side is plane; necessity follows maximal outerplanarity and last vertex's incident hull edges. See S017/MATHEMATICS. Not a solution to shape classification.
+- **CLM-0100 PROGRAMME_PROVED**: On aspect r=a/b >=1, if minimum consecutive standard angular gap δ radians satisfies r<1+(δ/2)cos(2π/5), metric ear deletion works recursively. A counterexample on r>1 must have δ<=2(r-1)/cos(2π/5). Proof and all restrictions in S017/MATHEMATICS; not uniform as δ tends to zero.
+- **CLM-0101 HEURISTIC**: CAM-0010 floating-point bounded search, 200,000 samples and 20 optimisations; near-circle positive deficits ~1e-31 are numerical degeneracies, NOT witnesses. Full array and unmodified code path in campaigns; no exact numerical verification or novelty inference.

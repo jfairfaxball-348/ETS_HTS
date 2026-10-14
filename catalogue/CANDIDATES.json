@@ -8489,6 +8489,21 @@
           "test": "literature",
           "status": "NATIVE_SEARCH_UNKNOWN",
           "detail": "Web-scoped searches only; no two-pass native database or 2025–26 exhaustive audit; do not label surviving, hard, new, or open."
+        },
+        {
+          "test": "S017_structural_equivalence",
+          "status": "PROVED_FINITE_EQUIVALENCE",
+          "detail": "CLM-0099 exact recursive nearest-two metric hull-ear characterization on strictly convex sites. This is a reformulation/decision certificate, not a solution to ellipse universal classification."
+        },
+        {
+          "test": "S017_stability",
+          "status": "PARTIAL_PROVED",
+          "detail": "CLM-0100 quantitative gap separation: all sets on ellipse axis ratio r with minimal parameter-angle gap δ radians and r<1+δ cos(2π/5)/2 have valid arrival order. Necessary clustering bound for any counterexample."
+        },
+        {
+          "test": "S017_finite_floating_screen",
+          "status": "INCONCLUSIVE",
+          "detail": "Preregistered CAM-0010: 200,000 double-precision sampled configurations plus 20 bounded DE optimisations. Apparent positives near circularity have gaps and margins around floating precision (~1e-31), with duplicate/effectively identical angles. No certified near-circular counterexample; even positive aspect5 numerical results are not exact certificates."
         }
       ],
       "kill_record": null,
@@ -8498,11 +8513,15 @@
       ],
       "claim_ids": [
         "CLM-0095",
-        "CLM-0097"
+        "CLM-0097",
+        "CLM-0099",
+        "CLM-0100",
+        "CLM-0101"
       ],
       "cam_ids": [
         "CAM-0008",
-        "CAM-0009"
+        "CAM-0009",
+        "CAM-0010"
       ],
       "scoring": {
         "statement_length": 11,
@@ -8516,7 +8535,7 @@
         "low_degeneracy_risk": 3,
         "total": 60
       },
-      "uncertainty": "UNTRIAGED. Both the exact status in the literature and whether all non-circles fail are UNKNOWN; 5:1 is a counterexample to universal-ellipse property, not to the circle-only classification."
+      "uncertainty": "S017 gives recursive-ear equivalence and a quantitative stability theorem, not the all-eccentricities classification. Near-circle numeric near-collision positives are unusable. Two-pass native novelty, independent hardness and owner selection still absent. S016 frozen CAM8/9 archive not hosted."
     }
   ]
 }

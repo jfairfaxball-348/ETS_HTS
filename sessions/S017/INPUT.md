@@ -1,0 +1,6 @@
+# S017 — owner invocation of live authoritative next-session URL
+2026-10-14 Europe/London (BST). Explicit owner instruction: "run this session [https://github.com/jfairfaxball-348/ETS_HTS/blob/main/authoritative/NEXT_SESSION_PROMPT.md]". The exact live prompt at entry is S017 FUTURE/UNEXECUTED; authorisation is the owner's present explicit invocation, for this session only.
+
+Entry main 05613c5c325803950279ae68d40779769fe993b1; tree 32bd870e47e2ba712eb14bc7c87fdf6073512f34. S016 single authored 9738e7ae0d204831a86429d0aa987c3d875173a2 sole parent 43aabaab232052c66436774a8b2d5c938e994dde. S016 PR #18 merged, ordinary non-draft, main head 05613c5c325803950279ae68d40779769fe993b1 has ordered parents (43aabaab...,9738e7ae...) and matching tree 32bd870e47e2ba712eb14bc7c87fdf6073512f34. Its PR hosted record-validation check success run 38555598087; main check success run 38555696361. No S017 branch/open PR at entry. Rulesets empty, branch protection HTTP403 UNKNOWN, combined statuses [].
+
+Scope: resolve or retire CND-0131 if possible; mathematically sound partial results accepted; no S018 execution, no owner-gated selection, manuscript, external contact, publication, Lean or Palomar. Archival-only correction of detached CAM8/9 requires the ORIGINAL owner archive and is not claimed performed.
