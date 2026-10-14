@@ -1,0 +1,7 @@
+# S027 closeout — PARTIAL / FIVE FULL CLM THEOREMS OPEN
+
+Authorised 2026-10-14; canonical `jfairfaxball-348/ellipse-theorem`. Entry main `b7f816989d8f65371243ee8cd4de30ebd8fe75a5`, entry tree `c20f1fdccc7c0a5c50604d62f3db88602df26ebd`. S026 PR31 merged with two ordered parents and same authored/merge tree; note that its final head commit `8d5a9af2...` had preceding correction parent `99925d3...` rather than the then-entry main, i.e. prior session used CI repair, not a sole S026 commit; historic evidence remains untouched. Both distinct merged-main check runs succeeded.
+
+S027 adds exact ellipse chord scale, anisotropy and unit-circle sandwich proof candidates in `ETSHTS/AnalyticBounds.lean` and prints their Lean axiom dependencies. These are prerequisites to the middle-band/antipodal component of CLM0107, not proofs of any original headline. The five unchanged quantified CLM targets remain OPEN pending exact end-to-end kernel proofs; the S020/S021 paper reasoning remains internally audited, not kernel-checked as a whole. S027 source compilation requires incoming GitHub CI. Local Lean/lake and full repo checkout tests NOT_RUN due unavailable tooling/network; no false local PASS.
+
+CND131 killed131 SRC87 CLM108 CAM10 fixed; final S024 novelty verdict conditional, detached S016 data untouched. No further novelty audit, ratio optimisation, Palomar, manuscript, journal or outreach. S028 FUTURE/UNEXECUTED, fresh explicit owner invocation required.
