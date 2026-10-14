@@ -195,15 +195,19 @@ def validate(root: Path) -> list[str]:
                     if ref not in ids.get(target, set()):
                         errors.append(f"{item.get('id','?')}: dangling {key} reference {ref}")
     state_file = root / "authoritative/STATE.json"
+    expected_next = None
     if state_file.is_file():
         try:
             s = json.loads(state_file.read_text(encoding="utf-8"))
-            if s.get("next_session") != "S022" or s.get("next_session_authorised") is not False:
-                errors.append("STATE: S022 must be next and explicitly unauthorised")
-            if s.get("last_completed_session") != "S021":
-                errors.append("STATE: S021 must be last completed")
+            completed = s.get("last_completed_session")
+            try:
+                expected_next = f"S{int(completed[1:]) + 1:03d}" if isinstance(completed, str) and completed.startswith("S") else None
+            except ValueError:
+                expected_next = None
+            if expected_next is None or s.get("next_session") != expected_next or s.get("next_session_authorised") is not False:
+                errors.append("STATE: next session must follow last completed and be explicitly unauthorised")
             if s.get("phase") != 1:
-                errors.append("STATE: S021 must remain in generation/triage phase one")
+                errors.append("STATE: programme must remain in governed phase one")
             statuses = [x.get("status") for x in parsed.get("candidates", []) if isinstance(x, dict)]
             if s.get("kill_count") != sum(str(x).startswith("KILLED_") for x in statuses):
                 errors.append("STATE: kill_count mismatch registry")
@@ -222,9 +226,9 @@ def validate(root: Path) -> list[str]:
     prompt = root / "authoritative/NEXT_SESSION_PROMPT.md"
     if prompt.is_file():
         body = prompt.read_text(encoding="utf-8")
-        if not body.startswith("# S022") or "FUTURE" not in body or "UNEXECUTED" not in body:
-            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED S022")
-        if "new explicit owner invocation" not in body:
+        if not expected_next or not body.startswith(f"# {expected_next}") or "FUTURE" not in body or "UNEXECUTED" not in body:
+            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED for current next_session")
+        if "new explicit owner invocation" not in body.lower():
             errors.append("NEXT_SESSION_PROMPT lacks fresh owner gate")
     return errors
 

@@ -3,12 +3,12 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S021 theorem audit passed internally; S022 novelty and prior-art gate required BEFORE Lean",
-  "last_completed_session": "S021",
-  "next_session": "S022",
+  "phase_name": "S022 original-source novelty review INCONCLUSIVE; S023 source-gap closure BEFORE Lean",
+  "last_completed_session": "S022",
+  "next_session": "S023",
   "next_session_authorised": false,
   "candidate_count": 131,
-  "source_count": 79,
+  "source_count": 86,
   "claim_count": 108,
   "campaign_count": 10,
   "gate_status": {
@@ -23,7 +23,7 @@
   "surviving_count": 0,
   "triaged_count": 0,
   "kill_count": 131,
-  "remote_sha_policy": "S022 must pin LIVE main and reconstruct both the S021 PR #24 merge and this later novelty-first administrative handoff/CI before starting; prior commits are only historical.",
-  "note": "Owner administrative steer 2026-10-14: S022 FUTURE/UNEXECUTED is comprehensive hostile prior-art/novelty investigation of CLM0099/0102/0107/0108, NOT Lean. Supersedes old S022 Lean prompt. The S021 LEAN_BLUEPRINT is retained for conditional future S023 only if deep primary-source audit yields CONDITIONAL_NOVELTY_SUPPORTED; all other novelty verdicts block Lean. New owner invocation required; this amendment executes no S022. Candidate/source/claim/CAM counts and statuses unchanged: CND131 all killed, SRC79 CLM108 CAM10, 0 TRIAGED/SURVIVING; S016 detached archive CAM8/9 and failed/float CAM3/5/10 preserved. Proof audit PASS does not certify novelty.",
+  "remote_sha_policy": "S023 must independently inspect LIVE main, authored S022 branch/PR/normal two-parent merge and tree equality before acting; all earlier SHAs are historical.",
+  "note": "S022 2026-10-14 EXACT novelty verdict INCONCLUSIVE_ACCESS_OR_COVERAGE. Substantial public index search and seven primary sources SRC0080–0086 inspected with graded access; no inspected exact/stronger theorem, but critical classic/2011 full texts and native citation indexes remain inadequately accessible. NOT novelty-certified; NO Lean. No new CLM/CND/CAM, preserve CND131 killed131, CLM108 CAM10, 0 survivors. S021 internal mathematical audit PASS unaffected, S016 CAM8/9 original archive still off GitHub; CAM3/5 failures, CAM10 float pseudo-witnesses and S019 CAD unexecuted. S023 FUTURE owner-gated focused source access audit.",
   "generated_count": 0
 }

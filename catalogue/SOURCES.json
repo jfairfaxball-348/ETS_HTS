@@ -711,6 +711,69 @@
       "url_or_doi": "https://doi.org/10.1016/j.jsc.2015.11.018",
       "access_grade": "ABSTRACT_INSPECTED",
       "notes": "Publisher article abstract/introduction inspected 2026-10-14. Standard quantifier elimination for polynomial formulas; author does not discuss ellipse NG. No proof inspection or originality credit."
+    },
+    {
+      "id": "SRC-0080",
+      "title": "Maximizing the Maximum Degree in Ordered Nearest Neighbor Graphs (HTML title: Ordered Yao Graphs)",
+      "author": "Péter Ágoston; Adrian Dumitrescu; Arsenii Sagdeev; Karamjeet Singh; Ji Zeng",
+      "date": "2024-06-13 preprint; CALDAM 2025; Computational Geometry 2026",
+      "url_or_doi": "https://arxiv.org/abs/2406.08913",
+      "access_grade": "PROOF_INSPECTED",
+      "notes": "Native arXiv HTML introduction Theorems 1–3 and Proposition 1 proof inspected 2026-10-14. Each arriving point links to ONE nearest predecessor, not exactly two; studied maximal indegree, not planarity or ellipses; original preprint is distinct."
+    },
+    {
+      "id": "SRC-0081",
+      "title": "On the Threshold for Triangulations Inside Convex Polygons",
+      "author": "Brett Kolesnik; Georgii Zakharov; Maksim Zhukovskii",
+      "date": "2026-09-07",
+      "url_or_doi": "https://doi.org/10.1002/rsa.70093",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Open access Wiley original full-text §1 Theorem 1.1 and model inspected 2026-10-14. Random independently permitted diagonals, ear-clipping and probability p_c<1/2, not deterministic Euclidean two-nearest chronological site insertion. Theorem 1.1 is not ellipse r=R."
+    },
+    {
+      "id": "SRC-0082",
+      "title": "Parallelized ear clipping for the triangulation and constrained Delaunay triangulation of polygons",
+      "author": "Günther Eder; Martin Held; Peter Palfrader",
+      "date": "2018-05-07 online; volume 73 (Aug 2018)",
+      "url_or_doi": "https://doi.org/10.1016/j.comgeo.2018.01.004",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Full original published article PDF hosted by coauthor read at https://www.palfrader.org/research/ (article PDF) §1.1 p15: ear means polygon triangle inside polygon; no nearest-neighbour distance constraint. Publisher gate did not prevent lawful author copy access."
+    },
+    {
+      "id": "SRC-0083",
+      "title": "Fast Greedy Triangulation Algorithms",
+      "author": "Matthew T. Dickerson; Robert L. Scot Drysdale; Scott A. McElfresh; Emo Welzl",
+      "date": "1994-05-03 technical report; journal 1997",
+      "url_or_doi": "https://www.math.ucdavis.edu/~deloera/MISC/LA-BIBLIO/trunk/Dickerson/TR94-215.pdf",
+      "access_grade": "PROOF_INSPECTED",
+      "notes": "University-hosted original 17-page report §1.1 p1, §2 p4 Theorem 1 and proof read, 2026-10-14: global increasing-length noncrossing compatible EDGE insertion, not chronological vertex insertion to nearest TWO earlier vertices. Strong technique precedent, no implication of NG theorem."
+    },
+    {
+      "id": "SRC-0084",
+      "title": "On Approximation Behavior of the Greedy Triangulation for Convex Polygons",
+      "author": "Christos Levcopoulos; Andrzej Lingas",
+      "date": "1987",
+      "url_or_doi": "https://www.math.ucdavis.edu/~deloera/MISC/LA-BIBLIO/trunk/Lingas/Lingas3.pdf",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "University-hosted scanned original Algorithmica 2:175–193 first printed abstract was visually inspected 2026-10-14. Global greedy triangulation approximates minimum-weight triangulation, including semicircular discussion. Scanned remainder not fully inspected; does not visibly assert nearest-two predecessor ellipse theorem."
+    },
+    {
+      "id": "SRC-0085",
+      "title": "Ordered theta graphs",
+      "author": "Prosenjit Bose; Joachim Gudmundsson; Pat Morin",
+      "date": "2004-05; preprint 2003-07-22",
+      "url_or_doi": "https://doi.org/10.1016/j.comgeo.2004.01.003",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Original publisher abstract inspected 2026-10-14: insertion-dependent theta graphs using angular cones for geometric spanners, logarithmic degree/diameter; NOT the unrestricted global two-nearest predecessor rule. Full preprint search hit found but direct PDF fetch failed. Revisit proof before positive novelty gate."
+    },
+    {
+      "id": "SRC-0086",
+      "title": "On crossing numbers of geometric proximity graphs",
+      "author": "Bernardo M. Ábrego; Ruy Fabila-Monroy; Silvia Fernández-Merchant; David Flores-Peñaloza; Ferran Hurtado; Vera Sacristán; Maria Saumell",
+      "date": "2011-05",
+      "url_or_doi": "https://doi.org/10.1016/j.comgeo.2010.11.003",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Original publisher indexed abstract inspected 2026-10-14, Computational Geometry 44(4):216–233. Static k-nearest-neighbour and other proximity graph crossing bounds; full original theorem/proof unavailable; does not visibly imply existence of an insertion order under dynamic 2-nearest rule. Critical source access gap retained."
     }
   ]
 }
