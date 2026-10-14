@@ -1,0 +1,28 @@
+S028 authored-time validation 2026-10-14
+repository: jfairfaxball-348/ellipse-theorem (id 1416869836)
+entry main: a164b4bb30de23d10ff231b63b399e3f054e1c2c
+entry tree: de00aabdb64528463a5c1a7d49ca525f116eadbe
+S027 authored SHA: 650b34e76828ad0ecccd8573ed1acfe457b27a37
+S027 authored parent: b7f816989d8f65371243ee8cd4de30ebd8fe75a5
+S027 merge PR: #32
+S027 merge SHA: a164b4bb30de23d10ff231b63b399e3f054e1c2c
+S027 merge parent order: b7f816989d8f65371243ee8cd4de30ebd8fe75a5,650b34e76828ad0ecccd8573ed1acfe457b27a37
+S027 authored tree = merge tree: MATCH de00aabdb64528463a5c1a7d49ca525f116eadbe
+S027 hosted Lean authored CI: SUCCESS
+S027 hosted governance authored CI: SUCCESS (FORMAT only)
+S027 hosted Lean merged-main CI: SUCCESS
+S027 hosted governance merged-main CI: SUCCESS (FORMAT only)
+S028 new Lean source: PENDING_HOSTED_CI (not yet asserted verified)
+S028 local Lean/lake/elan: NOT_INSTALLED
+S028 local checkout: NOT_AVAILABLE (DNS unavailable)
+S028 local lake build: NOT_RUN
+S028 local lake env lean ETSHTS.lean: NOT_RUN
+S028 local scripts/check_scaffold.py: NOT_RUN
+S028 local unittest discover: NOT_RUN
+S028 five full target CLM propositions: ALL_UNPROVED
+S028 protected/ruleset metadata: UNKNOWN / not needed for unprotected branch
+S028 first authored SHA: 1112fe2ed0261fd3b3beea1d374ca0b0fc835bc7
+S028 first Lean job 116011372696: FAILURE (2 reversed equality terms at source lines 34,54)
+S028 first governance job 116011461577: SUCCESS (FORMAT)
+S028 repair: second authored commit follows first, no force push, reason documented
+S028 revised Lean compile: PENDING_REMOTE_CI
