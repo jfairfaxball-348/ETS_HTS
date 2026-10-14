@@ -603,6 +603,69 @@
       "url_or_doi": "https://doi.org/10.17654/MS129020157",
       "access_grade": "ABSTRACT_INSPECTED",
       "notes": "Opened publisher native abstract: every Heronian triangle can be realized as a lattice triangle, citing Yiu (2001). Does not assert integer-incenter requirement of CND-0124; exact new incenter construction independently self-checked and kills existence question. Full publisher PDF NOT INSPECTED."
+    },
+    {
+      "id": "SRC-0068",
+      "title": "Computational Geometry Lecture 1: Convex Hulls",
+      "author": "Jeff Erickson",
+      "date": "2008",
+      "url_or_doi": "https://jeffe.cs.illinois.edu/teaching/compgeom/2008/notes/01-convexhull.pdf",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Read hull definitions and determinant orientation, pp1–2; general position caveat. Standard context, not exact NG question."
+    },
+    {
+      "id": "SRC-0069",
+      "title": "Discrete Mathematics: An Open Introduction, section 4.2 Planar Graphs",
+      "author": "Oscar Levin",
+      "date": "edition 2; accessed 2026-10-14",
+      "url_or_doi": "https://discrete.openmathbooks.org/dmoi2/sec_planar.html",
+      "access_grade": "PROOF_INSPECTED",
+      "notes": "Read connected Euler formula and inductive edge/vertex explanation. Used as standard calibration only; no originality."
+    },
+    {
+      "id": "SRC-0070",
+      "title": "07-voronoi-II lecture slides",
+      "author": "ČVUT CG course; individual slide author not independently resolved",
+      "date": "unknown; accessed 2026-10-14",
+      "url_or_doi": "https://cw.fel.cvut.cz/b201/_media/courses/cg/lectures/07-voronoi-ii.pdf",
+      "access_grade": "METADATA_ONLY",
+      "notes": "49-page PDF retrieved, but order/higher text queries yielded no match and slides not substantively inspected. NOT evidence of an inspected order-2 theorem."
+    },
+    {
+      "id": "SRC-0071",
+      "title": "On Crossings in Geometric Proximity Graphs (short original version)",
+      "author": "Bernardo M. Ábrego; Ruy Fabila-Monroy; Silvia Fernández-Merchant; David Flores-Peñaloza; Ferran Hurtado; Vera Sacristán; Maria Saumell",
+      "date": "2009 preliminary version; exact PDF date not printed",
+      "url_or_doi": "https://www.csun.edu/~sf70713/publications/proximity.pdf",
+      "access_grade": "STATEMENT_INSPECTED",
+      "notes": "Read definitions and Tables 2/4. Static k-NNG uses whole point set; fixed-k worst crossing upper bound k^3 n stated. Its additional nondegeneracy assumptions matter. This is a 6-page preliminary/short paper, NOT full inspection of 2011 journal DOI 10.1016/j.comgeo.2010.11.003 (direct DOI inaccessible)."
+    },
+    {
+      "id": "SRC-0072",
+      "title": "Asymptotic theory for the multidimensional random on-line nearest-neighbour graph",
+      "author": "Andrew R. Wade",
+      "date": "2008-09-10 v2 (2007-02-14 first submission; 2009 journal)",
+      "url_or_doi": "https://arxiv.org/abs/math/0702414",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Read arXiv author abstract defining nearest predecessor and power-weighted length variance/convergence. One neighbour and random model; not exact two-neighbour order existence. Full proof not read."
+    },
+    {
+      "id": "SRC-0073",
+      "title": "Finding the Root in Random Nearest Neighbor Trees",
+      "author": "Anna Brandenberger; Cassandra Marcussen; Elchanan Mossel; Madhu Sudan",
+      "date": "2026-03-24",
+      "url_or_doi": "https://onlinelibrary.wiley.com/doi/10.1002/rsa.70057",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Read publisher abstract on root inference in random sequential nearest-one trees on torus. Contemporary original paper, different model and question; no exact match claimed."
+    },
+    {
+      "id": "SRC-0074",
+      "title": "Geometric (1+ε)-Spanners with Few Crossings",
+      "author": "Kelvin Luu; Csaba D. Tóth",
+      "date": "2026; arXiv 2607.25040",
+      "url_or_doi": "https://arxiv.org/pdf/2607.25040",
+      "access_grade": "ABSTRACT_INSPECTED",
+      "notes": "Read original PDF title/authors and abstract constructing sparse spanners with crossing bounds. Spanner edges are optimised for stretch; not mandatory chronological nearest-two edges. arXiv abstract endpoint failed; PDF succeeded. Full proof not read."
     }
   ]
 }

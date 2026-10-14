@@ -1156,6 +1156,83 @@
       "cam_ids": [],
       "justification": "For every positive solution m^2-3k^2=1 (start (m,k)=(2,1), iterate (m,k)->(2m+3k,m+2k)), take A=(0,0), B=(2m,0), C=(m-2,3k). Direct expansion using 3k^2=m^2-1 gives |AB|=2m, |AC|=2m-1, |BC|=2m+1 and signed doubled area 6mk, so nondegenerate. The incenter weighted by opposite side lengths is ((2m-1)B+(2m)C)/(6m)=(m-1,k), an integer lattice point. Since m strictly increases, triangles are noncongruent. The established general Heronian-to-lattice theorem is related prior art but this stronger incenter construction is recorded as an elementary self-contained result, not a new theorem.",
       "limitations": "S013 source-inspection and/or human symbolic proof only; no independent referee, Lean, Palomar, novelty certification or complete native literature coverage."
+    },
+    {
+      "id": "CLM-0086",
+      "statement": "Mandatory point-growth calibration: nearest-two can cross, interior arrivals differ between NG/SP/CH, exterior arrivals can erase hull vertices; subdivision/extension differ.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0068"
+      ],
+      "candidate_ids": [],
+      "cam_ids": [],
+      "justification": "See sessions/S014/MATHEMATICS.md mandatory calibration with exact squared distances, intersection parameters, convex combination and segment/ray cases.",
+      "limitations": "S014 screening only. Proofs self-audited, not independently refereed or formalised; finite evidence restricted to raw inputs. No novelty or research-hardness certificate."
+    },
+    {
+      "id": "CLM-0087",
+      "statement": "NG has V=3+t,E=3+2t,cycle rank t+1; clean crossing-free drawing has t+1 bounded faces. Generic c-crossing planarisation has t+1+c bounded faces.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0069"
+      ],
+      "candidate_ids": [],
+      "cam_ids": [],
+      "justification": "Connected by induction. Abstract edges distinct because a fresh site is incident. Euler on clean embedding; transverse double-crossing planarisation adds c vertices and 2c edges. Does not count boundary corners. Overlap/concurrency excluded.",
+      "limitations": "S014 screening only. Proofs self-audited, not independently refereed or formalised; finite evidence restricted to raw inputs. No novelty or research-hardness certificate."
+    },
+    {
+      "id": "CLM-0088",
+      "statement": "CND-0125 is false: an interior point of a convex quadrilateral can have opposite vertices as its two nearest neighbours.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0125"
+      ],
+      "cam_ids": [],
+      "justification": "Diamond A=(-10,0),B=(0,-1),C=(10,0),D=(0,1); P=(.1,.1). Distances squared .82,1.22,98.02,102.02 make D,B closest and nonadjacent. See preserved proof.",
+      "limitations": "S014 screening only. Proofs self-audited, not independently refereed or formalised; finite evidence restricted to raw inputs. No novelty or research-hardness certificate."
+    },
+    {
+      "id": "CLM-0089",
+      "statement": "CND-0126 is true and elementary: exact safe SP nearest-pair insertion set is a Boolean combination of affine sign conditions.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0126"
+      ],
+      "cam_ids": [],
+      "justification": "Squared-distance differences are affine, as are orientations involving P. Adjacency is fixed; crossings, overlap, vertex-on-segment and straight-turn exclusions have finite affine sign/interval predicates. Union over adjacent pairs is exact both directions; conservative O(n^2) lines / O(n^4) arrangement cells, no optimality claim.",
+      "limitations": "S014 screening only. Proofs self-audited, not independently refereed or formalised; finite evidence restricted to raw inputs. No novelty or research-hardness certificate."
+    },
+    {
+      "id": "CLM-0090",
+      "statement": "CND-0127 is false: retained NG drawings can have Θ(n²) proper edge-pair crossings and unbounded crossings per edge.",
+      "status": "PROGRAMME_PROVED",
+      "source_ids": [
+        "SRC-0071",
+        "SRC-0072"
+      ],
+      "candidate_ids": [
+        "CND-0127"
+      ],
+      "cam_ids": [],
+      "justification": "For fixed m, collinear template alternately shrinking horizontal and then much smaller vertical points provides m horizontal and m vertical retained nearest-predecessor edges meeting transversely. Strict distance/crossing inequalities persist under generic rational perturbation to a valid noncollinear seed, no collinear triples or ties and distinct crossings. Gives m² pairs on n=2m+4; E=2n-3 gives O(n²) upper bound. Full proof in MATHEMATICS.md; not claimed original.",
+      "limitations": "S014 screening only. Proofs self-audited, not independently refereed or formalised; finite evidence restricted to raw inputs. No novelty or research-hardness certificate."
+    },
+    {
+      "id": "CLM-0091",
+      "statement": "All 258 listed CAM-0004 sets admit some plane NG order; 124 fail lexicographic arrival order, and all 198 sets of size <=6 agree with independent permutation enumeration.",
+      "status": "COMPUTED_EXACT",
+      "source_ids": [],
+      "candidate_ids": [
+        "CND-0128"
+      ],
+      "cam_ids": [
+        "CAM-0004"
+      ],
+      "justification": "Preregistered exact integer predicates and distance ties, DFS and whole-graph permutation validator. All 108 no-three-collinear subsets of 3x3 grid, sizes4..6, and 30 seeded samples each n4..8. Raw CAM-0004 file includes every input and witness; no statement about all plane point sets.",
+      "limitations": "S014 screening only. Proofs self-audited, not independently refereed or formalised; finite evidence restricted to raw inputs. No novelty or research-hardness certificate."
     }
   ]
 }

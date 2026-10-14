@@ -8,3 +8,7 @@ No registered CAM campaigns in S001. The JSON file is the machine-readable partn
 
 ## S009 — interrupted preregistered finite search
 - **CAM-0003 FAILED/PARTIAL:** immutable preregistration UTC 2026-10-13T18:37:19.829521Z before code execution, SHA256 `285038eae3993c1f8ffe3e20273fb68702e71d66b4f3a6b499e389e85d7eeabb`, scipy/HiGHS. Planned 54 solver models m2..5, logged 37 status=optimal (all m2..4, eight m5); container runtime interrupted before the remaining 17 or end-of-run raw creation. Raw JSON transcribed from preserved stdout, never promoted to complete. Finite only. See CAM-0003_preregistration.json and CAM-0003_raw.json.
+
+## CAM-0004 — S014 exact bounded ordering audit
+
+Preregistered 2026-10-14T07:50:52.223324Z; frozen campaigns/nearest_two_order.py SHA256 e1d861c8aaa7f2c44846816056bf9c18caba069158338d7be742466260942634. Bounds: all general-position 3x3-grid subsets n4..6 plus 30 seed140014 samples each n4..8 in [-20,20]²; cap60s. COMPLETED:258/258 sets admit an order;198 independently checked;124 lex-order failures. Raw input and witnesses preserved. CND-0128 / CLM-0091. No universal, hardness or novelty conclusion. CAM-0003 unchanged FAILED/PARTIAL37/54.

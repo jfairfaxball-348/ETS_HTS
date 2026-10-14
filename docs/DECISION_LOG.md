@@ -93,3 +93,8 @@ DEC-0035: No mathematical CAM or external posting; native novelty UNKNOWN where 
 - Preserve original intuitive wording but disambiguate nearest-two straight-line graph, a simple polygon with edge replacement, and the convex hull; do NOT claim all new points yield an added boundary side. Explicit one-step crossing example, ordinary Euler face change and hull counterexamples are low-level pre-kill calibrations, not registered new candidates or priority claims.
 - Installed binding S014 prompt and research/S014_OWNER_STEER_POINT_GROWTH.md with targeted source-led investigations: proximity versus visibility, order-2 Voronoi/planarity, crossing bounds, incremental hull versus polygonization, collinear degeneracy. Underlying programme governance, two proof failures and deep native priority requirements remain intact.
 - STATE retains last_completed_session=S013, next_session=S014, next_session_authorised=false; CND124 KILLED124 SRC67 CLM85 CAM3 untouched. No CAM execution, no owner-gated selection/outreach.
+
+
+## S014 — 2026-10-14
+
+DEC-0059:Preserve owner triangle insight,separate NG/SP/CH and straight-segment/ray cases. DEC-0060:Kill0125 nonadjacent nearest pair,0126 elementary affine arrangement,0127 quadratic retained crossings. DEC-0061:Keep0128 GENERATED only;258 easy finite inputs do not satisfy hardness or priority. DEC-0062:Preregister CAM-0004 before run,preserve CAM-0003. DEC-0063:Native source gaps UNKNOWN;actual checkout checker/tests and hosted CI format-only. S015 future owner-gated.

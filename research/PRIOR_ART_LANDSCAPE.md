@@ -22,3 +22,8 @@
 **Potentially less directly indexed zones (not necessarily less researched):** genuinely coupled constraints on one structure, interactions between elementary processes, exact minimal witnesses with two independent restrictions, and parameter boundaries between dynamics and finite graph invariants. Less searchable is *not* equivalent to unstudied. Exploit alternative languages, citation chaining, thesis/catalogue searches and negative-result records.
 
 All future queries belong to per-candidate search logs, not retrospective recollection; exact result counts cannot be invented. Literature access levels and copyright limitations must be recorded.
+
+
+## S014 — 2026-10-14
+
+S014 geometry:standard hull/Euler,static higher-order proximity graphs,random nearest-one predecessor trees and2026 spanners differ from exact metric-constrained plane arrival-order question0128. Six-page original short proximity paper inspected,not full2011 journal version. All exact/native completeness gaps UNKNOWN;no new-open-problem claim.

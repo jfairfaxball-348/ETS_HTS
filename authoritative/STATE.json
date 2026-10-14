@@ -3,14 +3,14 @@
   "programme": "ETS_HTS",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S013: five coupled-constraint questions killed by parity, Cauchy, known distances, transcendence and Pell construction",
-  "last_completed_session": "S013",
-  "next_session": "S014",
+  "phase_name": "S014: nearest-two geometric growth calibrated; three questions killed, order-existence question GENERATED only",
+  "last_completed_session": "S014",
+  "next_session": "S015",
   "next_session_authorised": false,
-  "candidate_count": 124,
-  "source_count": 67,
-  "claim_count": 85,
-  "campaign_count": 3,
+  "candidate_count": 128,
+  "source_count": 74,
+  "claim_count": 91,
+  "campaign_count": 4,
   "gate_status": {
     "0": "CLOSED_ADMINISTRATIVE",
     "1": "OPEN_REGENERATION_ZERO_SURVIVORS",
@@ -22,7 +22,8 @@
   },
   "surviving_count": 0,
   "triaged_count": 0,
-  "kill_count": 124,
-  "remote_sha_policy": "S014 independently verify S013 one authored sole-parent commit, ordinary non-draft PR and ordered two-parent merge; reconstruct S012 authored and CI-only repair separately",
-  "note": "CND 124 all killed SRC67 CLM85 CAM3; zero survivors. CAM-0003 remains FAILED/PARTIAL 37/54; CAM-0004 NOT registered/run. Exact online precedent for four-point consecutive distances; remaining arguments known or elementary. Protection 403 UNKNOWN; original git checkout DNS blocked; hosted CI is format-only. Administrative 2026-10-14 owner steer retargeted FUTURE S014 toward triangle point-growth and nearest-two planarity/hull/collinearity; no S014 executed and no scientific registry totals changed."
+  "kill_count": 127,
+  "remote_sha_policy": "S015 independently reconstruct S014 sole-parent atomic authored commit, non-draft ordinary PR and ordered two-parent merge; outgoing SHAs are not backfilled into precommit closeout.",
+  "note": "CND128:127 killed, CND-0128 GENERATED only. SRC74 CLM91 CAM4. CAM-0004 preregistered,258 finite inputs feasible; no hardness/novelty clearance. CAM-0003 frozen FAILED/PARTIAL37/54. Actual local checkout checker/unittest available; hosted CI is format-only. S015 future/unexecuted.",
+  "generated_count": 1
 }
