@@ -202,3 +202,10 @@ FAL-0056:Raw nearest-two simple-quadrilateral narrative fails at P=(12,2). FAL-0
 - F-S017-3: Original frozen S016 CAM8/9 archive absent from GitHub and not available in this new session; no silent replacements, all six original hashes in manifest unchanged.
 - F-S017-4: git ls-remote DNS unresolved; actual checkout local checker/unittests NOT_RUN. Hosted format checks may pass but are not mathematical validation.
 - F-S017-5: Native novelty two-pass and independent hardness for CND-0131 remain incomplete/UNKNOWN; no claim of open problem.
+
+## S018 — 2026-10-14
+- F-S018-1: Global CND-0131 still **NOT RESOLVED**; CLM-0103 quantifies `forall n exists epsilon_n`, not `exists epsilon forall n`. No global universal interval or circle-only theorem asserted.
+- F-S018-2: Short-arc theorem CLM-0102 has strict width <4 arctan(b/a), no claim threshold sharp and no assertion for wraparound full ellipse point sets.
+- F-S018-3: No explicit constructive epsilon_n or lower bound for minimum counterexample size as a function of r; existence of a bad set at every noncircular r not shown. Fixed five/six witness family approaching r=1 precluded by CLM-0103.
+- F-S018-4: Native external priority and independent research-hardness still incomplete/UNKNOWN; zero TRIAGED/SURVIVING; old false/failed CAM not rehabilitated.
+- F-S018-5: S016 CAM8/9 original six-file archive remains detached/unhosted; true local Git checkout and checker/tests NOT_RUN due DNS. Hosted CI if observed is record-format only.

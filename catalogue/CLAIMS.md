@@ -136,3 +136,9 @@
 - **CLM-0099 PROGRAMME_PROVED**: Strictly convex finite retained NG feasibility iff recursive deletion by vertices whose selected two nearest surviving sites are their cyclic hull neighbours. Reverse reinsertion along the former hull side is plane; necessity follows maximal outerplanarity and last vertex's incident hull edges. See S017/MATHEMATICS. Not a solution to shape classification.
 - **CLM-0100 PROGRAMME_PROVED**: On aspect r=a/b >=1, if minimum consecutive standard angular gap δ radians satisfies r<1+(δ/2)cos(2π/5), metric ear deletion works recursively. A counterexample on r>1 must have δ<=2(r-1)/cos(2π/5). Proof and all restrictions in S017/MATHEMATICS; not uniform as δ tends to zero.
 - **CLM-0101 HEURISTIC**: CAM-0010 floating-point bounded search, 200,000 samples and 20 optimisations; near-circle positive deficits ~1e-31 are numerical degeneracies, NOT witnesses. Full array and unmodified code path in campaigns; no exact numerical verification or novelty inference.
+
+## S018 — CLM-0102..0104 (programme-proved, self-audited)
+- **CLM-0102 PROGRAMME_PROVED**: strict angular arc width < 4 arctan(b/a) guarantees a full recursive nearest-two metric-ear order; no minimum gap, no numerical CAM.
+- **CLM-0103 PROGRAMME_PROVED**: for each fixed n there exists non-effective epsilon_n>0 such that all n-site configurations on ellipses of ratio <1+epsilon_n admit NG orders, even with near-coalescence. Compactness, cluster peeling, flanking-pair derivative, and S017 stability; full hypotheses/proof in sessions/S018/MATHEMATICS.md.
+- **CLM-0104 PROGRAMME_PROVED**: every putative counterexample sequence with r down to 1 has unbounded cardinality n, conditional on such sequences existing. Neither a uniform eccentricity interval nor circle-only classification follows.
+External review and originality are NOT established. SRC78 and CAM10 unchanged; CND-0131 remains GENERATED.

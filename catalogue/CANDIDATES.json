@@ -8504,6 +8504,21 @@
           "test": "S017_finite_floating_screen",
           "status": "INCONCLUSIVE",
           "detail": "Preregistered CAM-0010: 200,000 double-precision sampled configurations plus 20 bounded DE optimisations. Apparent positives near circularity have gaps and margins around floating precision (~1e-31), with duplicate/effectively identical angles. No certified near-circular counterexample; even positive aspect5 numerical results are not exact certificates."
+        },
+        {
+          "test": "S018_short_arc",
+          "status": "PROGRAMME_PROVED_NONUNIFORM",
+          "detail": "CLM-0102: every finite set within an ellipse parameter arc of width <4 arctan(b/a) admits a recursive metric-ear order, regardless of minimum gap."
+        },
+        {
+          "test": "S018_coalescence",
+          "status": "PROGRAMME_PROVED_NON_EFFECTIVE",
+          "detail": "CLM-0103: for each fixed n exists epsilon_n>0 so all n distinct ellipse sites with a/b<1+epsilon_n admit crossing-free NG orders; includes arbitrarily concentrated points. CLM-0104: any counterexample family r->1 must have unbounded n; not a uniform epsilon across all n."
+        },
+        {
+          "test": "S018_global_classification",
+          "status": "UNRESOLVED",
+          "detail": "No global r>1 exact counterexample family, no explicit epsilon_n, no universal fixed interval of safe ellipses, no native two-pass novelty/independent hardness evidence."
         }
       ],
       "kill_record": null,
@@ -8516,7 +8531,10 @@
         "CLM-0097",
         "CLM-0099",
         "CLM-0100",
-        "CLM-0101"
+        "CLM-0101",
+        "CLM-0102",
+        "CLM-0103",
+        "CLM-0104"
       ],
       "cam_ids": [
         "CAM-0008",
@@ -8535,7 +8553,7 @@
         "low_degeneracy_risk": 3,
         "total": 60
       },
-      "uncertainty": "S017 gives recursive-ear equivalence and a quantitative stability theorem, not the all-eccentricities classification. Near-circle numeric near-collision positives are unusable. Two-pass native novelty, independent hardness and owner selection still absent. S016 frozen CAM8/9 archive not hosted."
+      "uncertainty": "S018 proves gap-free short-arc NG sufficiency and non-effective safe eccentricity for each fixed cardinality n, but does NOT resolve all-cardinality circle-only classification. If obstructions persist as r approaches 1, their n must grow. No exact near-circle negative certificate, quantitative epsilon_n, external review, native deep novelty or independent research-hardness; S016 CAM8/9 originals still detached."
     }
   ]
 }

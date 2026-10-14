@@ -68,6 +68,9 @@ REQUIRED = (
     "sessions/S017/COMPUTATION_RESULTS.md", "sessions/S017/NOVELTY_QUERIES.md",
     "sessions/S017/DISCOVERY_REPORT.md", "sessions/S017/CLOSEOUT.md",
     "sessions/S017/VALIDATION.txt",
+    "sessions/S018/INPUT.md", "sessions/S018/PLAN.md", "sessions/S018/MATHEMATICS.md",
+    "sessions/S018/NOVELTY_QUERIES.md", "sessions/S018/DISCOVERY_REPORT.md",
+    "sessions/S018/CLOSEOUT.md", "sessions/S018/VALIDATION.txt",
     "campaigns/CAM-0010_preregistration.json", "campaigns/ellipse_cam0010.py",
     "campaigns/CAM-0010_raw.json",
     "scripts/check_scaffold.py", "tests/test_scaffold.py",
@@ -185,12 +188,12 @@ def validate(root: Path) -> list[str]:
     if state_file.is_file():
         try:
             s = json.loads(state_file.read_text(encoding="utf-8"))
-            if s.get("next_session") != "S018" or s.get("next_session_authorised") is not False:
-                errors.append("STATE: S018 must be next and explicitly unauthorised")
-            if s.get("last_completed_session") != "S017":
-                errors.append("STATE: S017 must be last completed")
+            if s.get("next_session") != "S019" or s.get("next_session_authorised") is not False:
+                errors.append("STATE: S019 must be next and explicitly unauthorised")
+            if s.get("last_completed_session") != "S018":
+                errors.append("STATE: S018 must be last completed")
             if s.get("phase") != 1:
-                errors.append("STATE: S017 must remain in generation/triage phase one")
+                errors.append("STATE: S018 must remain in generation/triage phase one")
             statuses = [x.get("status") for x in parsed.get("candidates", []) if isinstance(x, dict)]
             if s.get("kill_count") != sum(str(x).startswith("KILLED_") for x in statuses):
                 errors.append("STATE: kill_count mismatch registry")
@@ -209,8 +212,8 @@ def validate(root: Path) -> list[str]:
     prompt = root / "authoritative/NEXT_SESSION_PROMPT.md"
     if prompt.is_file():
         body = prompt.read_text(encoding="utf-8")
-        if not body.startswith("# S018") or "FUTURE" not in body or "UNEXECUTED" not in body:
-            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED S018")
+        if not body.startswith("# S019") or "FUTURE" not in body or "UNEXECUTED" not in body:
+            errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED S019")
         if "new explicit owner invocation" not in body:
             errors.append("NEXT_SESSION_PROMPT lacks fresh owner gate")
     return errors

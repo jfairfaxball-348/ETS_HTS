@@ -116,3 +116,9 @@ DEC-0070: Preregistered and executed CAM-0008/0009 on exact rational finite data
 - Retain CND-0131 GENERATED, **do not** promote to TRIAGED/SURVIVING: CLM99 finite elimination equivalence and CLM100 quantitative angular-gap theorem do not classify all nonround ellipses; no independent difficulty/native novelty.
 - Preserve CAM10 pre-run hashes and raw; spurious near-circle apparent witnesses at floating precision are not accepted. S016 detached archive no longer available in current environment, remains OPEN. No new SRC claims from snippets.
 - Draft S018 singular perturbation/extremal route only, requires fresh owner invocation. No owner-gated external work.
+
+## S018 — 2026-10-14
+- DEC-0071: Keep CND-0131 GENERATED. A fixed-n near-circle theorem is not a uniform all-n ellipse characterisation; no global proof, KILLED status, or SURVIVING promotion.
+- DEC-0072: Record CLM-0102/0103/0104 as self-audited symbolic PROGRAMME_PROVED with explicit strict arc width and non-effective epsilon_n; do not substitute floating CAM10 near-coincidence for rational obstruction.
+- DEC-0073: No CAM-0011 necessary or executed. SRC78 unchanged, native two-pass audit incomplete/UNKNOWN; no false literature novelty or HARD claim.
+- DEC-0074: Preserve original CAM8/9 detached archived exception, CAM3/5 failed histories, phase one, and future S019 owner gate. GitHub checkout DNS blocked, no false local validation pass.

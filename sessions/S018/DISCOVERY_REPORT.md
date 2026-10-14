@@ -1,0 +1,6 @@
+# S018 — discovery report (programme self-audit)
+**Substantial positive theorems, central CND-0131 unresolved.** CLM-0102 establishes a gap-free recursive metric-ear theorem for any finite ellipse site set contained in a parameter interval of width <4 arctan(b/a). CLM-0103 proves via compactness and coalescing-cluster peeling that each fixed cardinality n has some non-effective safe eccentricity neighbourhood of the circle, covering all degenerate-limit configurations. CLM-0104 forces n->infinity in any hypothetical counterexample family whose ellipse ratios tend to 1.
+
+Neither a single near-circle safe neighbourhood for every cardinality nor the circle-only classification has been proved. No exact witness for r near1, no bounded n(r), no independent proof review, no complete native novelty/hardness. CND-0131 remains GENERATED with 130 other KILLED, 0 TRIAGED/SURVIVING; SRC78 CLM104 CAM10, no new numerical campaign. S016 CAM8/9 original archive still detached; old failures and CAM10 near-duplicate pseudo-witnesses preserved exactly.
+
+S019 FUTURE/UNEXECUTED proposes quantitative epsilon_n bounds or rigorous n(r)-scale obstructions, not automatic owner selection/publication.
