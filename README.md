@@ -1,13 +1,13 @@
 # Ellipse theorem — retained exact nearest-two insertion
 
-Canonical repository https://github.com/jfairfaxball-348/ellipse-theorem, renamed from ETS_HTS (same ID 1416869836), Lean namespace `ETSHTS`.
+Canonical repository https://github.com/jfairfaxball-348/ellipse-theorem (former ETS_HTS; ID 1416869836). Lean namespace `ETSHTS`.
 
-## Exact headline
-`R=sqrt(2/sin(2π/5)−1)`. **CLM0107:** every finite n≥3 set of distinct sites on an ellipse with `a≥b>0`, `a/b≤R` including equality, admits triangle-first retained insertion of precisely the two compulsory Euclidean-nearest predecessors, Cartesian lex ties and no proper crossings, with no n bound or separation hypothesis. **CLM0108:** same for nonround `a/b=101/100`, all n. **CLM0096:** all 3/4-point general-position sets. **CLM0099:** full metric-ear recursive iff on strictly convex finite sets. **CLM0102:** both strict outward derivatives and full real-lift four-endpoint extension.
+## Exact fixed theorem programme
+Closed threshold `R=sqrt(2/sin(2π/5)−1)`. **CLM0107:** all n≥3 finite distinct ellipse boundary sites, `a≥b>0`, `a/b≤R` including equality, exactly two compulsory nearest Euclidean predecessor edges with Cartesian-lex ties, all old edges retained and no proper crossing. **CLM0108:** all n for nonround `a/b=101/100`. **CLM0096:** all three- and four-point sets in general position. **CLM0099:** full metric-ear certificate iff for strictly convex finite sets. **CLM0102:** both outward derivatives and full real-lift strict short-arc chord extension.
 
-## Progress through S030
-S028 independent derivative identities and S029 exact half-angle factorisations with conditional signs were verified by hosted Lean 4.15.0, including standard axiom checks.
-S030 adds [Cutoff](ETSHTS/Cutoff.lean), with a candidate Lean proof of exact `clm0102_exact : CLM0102` using `Real.arctan` identities, strict short-arc cutoff and endpoint monotonicity. **This requires new independent hosted Lean verification.** `Targets.lean` is unchanged. CLM0096, CLM0099, CLM0107 and CLM0108 remain unproved, so full-project PASS is still OPEN.
+## Verified and open
+**CLM0102 verified on S030 merged main** `de695309`, pinned Lean 4.15.0/mathlib `9837ca9`, Lean run [38626006276](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38626006276), governance run [38626005962](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38626005962). Printed dependencies `[propext, Classical.choice, Quot.sound]`.
 
-See [S030 formalisation](sessions/S030/FORMALISATION.md), [STATE](authoritative/STATE.json) and [S031 future prompt](authoritative/NEXT_SESSION_PROMPT.md). Pinned Lean 4.15.0, mathlib `9837ca9d65d9de6fad1ef4381750ca688774e608`.
-Historical counts CND131 all killed, SRC87, CLM108, CAM10; final S024 novelty conditional, not external confirmation. Paper/Palomar/outreach owner-gated.
+S031 [research](sessions/S031/MATHEMATICS.md) provides four-point mathematical construction; source `ETSHTS/FourPoint.lean` formalises the mandatory insertion **given explicitly exposed geometric witnesses**, and `ETSHTS/RationalBound.lean` attempts exact proof of `101/100 ≤ R`. New S031 Lean declarations remain **candidates until their own hosted CI and axiom prints**; ratio plus `CLM0107` gives `CLM0108`, not CLM0108 outright. All four other exact CLMs remain OPEN.
+
+Read [authoritative state](authoritative/STATE.json), [S031 closeout](sessions/S031/CLOSEOUT.md) and [S032 future prompt](authoritative/NEXT_SESSION_PROMPT.md). Historical counts CND131 killed/SRC87/CLM108/CAM10; S024 novelty conditional. Palomar/paper/outreach owner gated.
