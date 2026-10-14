@@ -47,11 +47,14 @@ theorem ellipse_short_arc_half_bounds (a b θ φ : ℝ)
   have hx : 0 < b / a := div_pos hb ha
   have hxle : b / a ≤ (1 : ℝ) :=
     (div_le_one ha).2 hab
-  have hp : 0 < Real.arctan (b / a) := Real.arctan_pos.mpr hx
+  have hp : 0 < Real.arctan (b / a) := by
+    calc
+      (0 : ℝ) = Real.arctan 0 := by simp
+      _ < Real.arctan (b / a) := Real.arctan_lt_arctan hx
   have hple : Real.arctan (b / a) ≤ Real.pi / 4 := by
     calc
       Real.arctan (b / a) ≤ Real.arctan 1 :=
-        Real.arctan_mono hxle
+        Real.arctan_le_arctan hxle
       _ = Real.pi / 4 := Real.arctan_one
   have htpos : 0 < (φ - θ) / 2 := by linarith
   have htcut : (φ - θ) / 2 < 2 * Real.arctan (b / a) := by
