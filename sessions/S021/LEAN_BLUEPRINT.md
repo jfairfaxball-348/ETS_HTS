@@ -1,5 +1,8 @@
 # S021 handoff: Lean 4 formalisation of EXISTING S020 theorem only
 
+> **SUPERSEDING OWNER INSTRUCTION — 2026-10-14 (administrative; NOT S022):** Before formalisation the next session MUST perform a comprehensive hostile historical prior-art/novelty audit. S022 is now NOVELTY ONLY. References below to “S022” refer to the formerly queued Lean plan and do NOT authorise Lean at S022. Preserve this technical blueprint for potential FUTURE S023 only if S022 concludes CONDITIONAL_NOVELTY_SUPPORTED; a fresh owner invocation is still required. Otherwise Lean remains blocked by novelty/owner decision.
+
+
 **Conditional target.** S021 hostile mathematical audit PASSED internally. FUTURE S022, requiring a fresh owner invocation, is formalisation only. No Lean file, mathlib environment, Palomar job, manuscript, contact or external certification was created during S021. No stronger ellipse threshold or new candidate is permitted.
 
 ## Representation and definitions (avoid ambiguous informal geometry)

@@ -74,3 +74,6 @@ Gate0 CLOSED; Phase1 OPEN_REGENERATION_ZERO_SURVIVORS: CND131 KILLED131 GENERATE
 
 ## S021 — 2026-10-14
 Gate0 CLOSED. Phase1 OPEN_REGENERATION_ZERO_SURVIVORS: CND131/KILLED131, GENERATED0 TRIAGED0 SURVIVING0, SRC79 CLM108 CAM10. CLM0107/0108 passed internal hostile symbolic review (AUDIT_PASS_CONDITIONAL_FORMALISATION) but no Lean or external review. Gates2/3 not open for SURVIVOR or independent novelty/hardness; gates4–6 OWNER_GATED. Owner explicitly directed FUTURE S022 theorem formalisation, not new research hunt; S022 still requires its own fresh invocation. Detached S016 CAM8/9 exception OPEN.
+
+## Administrative novelty-first order — 2026-10-14 (S022 FUTURE)
+S021 internal theorem audit is *not* a historical novelty certificate. Owner requires substantive S022 primary-literature prior-art gate BEFORE formalisation. Exactly S022 remains FUTURE/UNEXECUTED, historical priority UNKNOWN; only the positive, carefully limited CONDITIONAL_NOVELTY_SUPPORTED verdict could stage FUTURE S023 Lean (not autoexecute). No candidate selection, Palomar, publication, outside contact, new claims/campaigns or status changes; CND131 killed131 SRC79 CLM108 CAM10 unchanged.

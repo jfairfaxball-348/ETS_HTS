@@ -145,3 +145,8 @@ DEC-0070: Preregistered and executed CAM-0008/0009 on exact rational finite data
 - DEC-0087: Resolve strict boundary r=R and k=5 by exact R<cot(pi/5); resolve angular Lambda endpoints with weak central floor and strict nearer neighbours; no floating computation.
 - DEC-0088: Owner-directed S022 FUTURE **Lean 4 formalisation of existing theorem only**, not extending R, prior-art certification or manuscript. Owner gate remains required, later Palomar separately gated.
 - DEC-0089: True-checkout script/tests NOT_RUN due DNS; GitHub hosted checks govern format only; retain S016 archive exception, failed CAM3/5 and rejected CAM10 pseudo-witnesses.
+
+## Administrative S022 owner priority change — 2026-10-14 (not S022 execution)
+- DEC-0090: Owner explicitly directs comprehensive, hostile, primary-source novelty/prior-art work BEFORE Lean. Supersede queued S022 formalisation with FUTURE S022 source investigation of CLM0099/0102/0107/0108, including exact modelling, earlier near-circle safety theorems, quantitative bounds, method and circle-only disproof.
+- DEC-0091: No unsupported novelty claims; require original inspected sources, dated literal search log, backward/forward bibliography, full bidirectional equivalence checks, ranked closest-work matrix and fail-closed category.
+- DEC-0092: Only CONDITIONAL_NOVELTY_SUPPORTED permits staging FUTURE S023 Lean with separate explicit owner invocation. Known/limited/inconclusive categories block automatic Lean. Preserve all CND/SRC/CLM/CAM counts/statuses and S021 internal mathematical PASS; no external outreach or publication authorised.
