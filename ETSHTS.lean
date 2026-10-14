@@ -1,6 +1,6 @@
-import ETSHTS.HalfAngle
+import ETSHTS.Cutoff
 
-/- Kernel dependency exposure of all actual theorem declarations, not CLM specifications. -/
+/- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
 #print axioms ETSHTS.sqDist_nonneg
 #print axioms ETSHTS.sqDist_symm
@@ -33,8 +33,16 @@ import ETSHTS.HalfAngle
 #print axioms ETSHTS.positive_MD_bracket
 #print axioms ETSHTS.deriv_sqDist_ellipse_right_pos_of_cutoff
 #print axioms ETSHTS.neg_deriv_sqDist_ellipse_left_pos_of_cutoff
+#print axioms ETSHTS.cos_two_arctan_rational
+#print axioms ETSHTS.ellipse_anisotropy_cos_cutoff
+#print axioms ETSHTS.ellipse_short_arc_half_bounds
+#print axioms ETSHTS.ellipse_short_arc_both_derivatives
+#print axioms ETSHTS.sqDist_ellipse_strict_right
+#print axioms ETSHTS.sqDist_ellipse_strict_left
+#print axioms ETSHTS.sqDist_ellipse_strict_outward
+#print axioms ETSHTS.clm0102_exact
 
-/- All five fixed headline propositions are STILL unproved: #check is not proof. -/
+/- Only CLM0102 has a submitted candidate proof; the other four fixed targets remain open. -/
 #check ETSHTS.CLM0096
 #check ETSHTS.CLM0099
 #check ETSHTS.CLM0102
