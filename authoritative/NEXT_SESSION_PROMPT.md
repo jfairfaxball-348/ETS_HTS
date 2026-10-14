@@ -1,32 +1,20 @@
-# S026 — FUTURE / UNEXECUTED: complete exact Lean 4 ellipse theorem in ellipse-theorem
+# S027 — FUTURE / UNEXECUTED: complete exact Lean ellipse theorem, continue from S026
 
-**FUTURE / UNEXECUTED. A new explicit owner invocation is REQUIRED.** This handover rewrite is administrative: it does NOT run S026. The canonical active repository is **https://github.com/jfairfaxball-348/ellipse-theorem** (renamed from `jfairfaxball-348/ETS_HTS`, **same repo ID 1416869836**). Work in that repository, not a new repo or an independent copy. Preserve history and all S001–S025 records.
+**FUTURE / UNEXECUTED. A new explicit owner invocation is REQUIRED.** Canonical working repository: https://github.com/jfairfaxball-348/ellipse-theorem (same historical repo ID 1416869836; legacy Lean namespace `ETSHTS` remains).
 
-## Verified entry provenance to independently recheck
+## Authority and entry
+Independently re-fetch live `main` and tree, `authoritative/STATE.json`, `AGENTS.md`, `authoritative/START_HERE.md`, `docs/SESSION_PROTOCOL.md`, all S026 authored/merge/CI evidence, and new PRs. Confirm S026 integration, verify exact pinned Lean 4.15.0 and mathlib commit `9837ca9d65d9de6fad1ef4381750ca688774e608`, and separately inspect the *actual* Lean versus governance jobs. S026 added partial theorem declarations in `ETSHTS/Partial.lean`; inspect their statements and `#print axioms` output before relying on them. Do not confuse a successful build of partial lemmas with proof of any full CLM.
 
-S025 ordinary PR [#29](https://github.com/jfairfaxball-348/ellipse-theorem/pull/29) merged. Authored commit `e44abef10e4dbe842ba7a87bb6ffaa57164d151c` had sole parent `e784a449a64a9dd2c2e6dd8c7f9aad1b88b54de5`. Merge commit `018b55dfb052bd47c3081b4e96b2a77d8de7a5bc` has those two ordered parents, tree `53df8c3499e0e8cb933f606916e74b815ed0bac6`, identical to authored tree. The renamed repo's main was observed at that merge; **re-fetch live main/tree before starting S026**.
+## Fixed five target statements — no weakening
+1. CLM0096: complete 3/4-point general-position base, including interior point and strictly convex quadrilateral.
+2. CLM0099: iff for every strictly convex finite set between plane retained-exact-nearest-two orders and a *full recursive* metric-ear certificate; prove outerplanar `2m−3` necessity and reversal.
+3. CLM0102: BOTH independent directed outward ellipse chord endpoint derivatives, strict extension for all unwrapped arcs shorter than `Λ=4 atan(b/a)`.
+4. CLM0107: ALL finite n≥3 distinct sites on EVERY ellipse `a≥b>0` with `1≤a/b≤R=sqrt(2/sin(2π/5)−1)`, including `a/b=R`, n=5, almost coincident sites; SOME initial triangle then EXACT two Euclidean-nearest *predecessors* with Cartesian-lex tie breaks, old edges retained, no proper crossings. Use cyclic pair-gap averaging, strictly eligible witness at closed R, MINIMUM METRIC skip chord among eligible indices, forward, backward and central chord comparisons with independent floor, and recursive deletion/induction.
+5. CLM0108: exact `101/100` nonround corollary for ALL finite n, with exact rational/trigonometric inequality.
 
-Lean 4.15.0 / pinned mathlib `9837ca9d65d9de6fad1ef4381750ca688774e608`; the actual [head Lean run 38596176639](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38596176639), [PR Lean run 38596222605](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38596222605), and [post-merge main Lean run 38596618699](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38596618699) all **PASSED**; governance separately checks FORMAT. S025 compiled `ETSHTS.Definitions`, `Foundation`, `Targets`, `ETSHTS` and **five small helper proofs** with only standard `propext`, `Classical.choice`, `Quot.sound` reported. **The five CLM targets below are `Prop` DEFINITIONS and remain UNPROVED.** Do not waste the next session merely re-establishing known green CI, but verify pinned version and semantic statements on fresh checkout.
+## Execution
+Prove as much of the actual unproved geometry/analysis as possible, prioritising genuine complete CLM0096, then CLM0099 and CLM0102; proceed aggressively to closed-threshold CLM0107/0108. Do not stop merely after an auxiliary lemma. Retain and extend the existing Lean proof terms, never use `sorry`, `admit`, project axioms, mathematical `native_decide` or hidden assumptions. Run actual `lake build`, `lake env lean ETSHTS.lean`, `#print axioms` on proved theorems, pinned dependency check, exact statement audit; collect compiler and GitHub Actions evidence honestly. If proof remains incomplete report proven lemmas and blockers **PARTIAL/OPEN**, not success.
 
-Core materials: `sessions/S020/MATHEMATICS.md`, `sessions/S021/MATHEMATICS.md`, `sessions/S021/LEAN_BLUEPRINT.md`, `sessions/S025/FORMALISATION.md`, `docs/FORMALISATION_HANDOVER.md`. S024 was the FINAL prior-art audit: `CONDITIONAL_NOVELTY_SUPPORTED` as permission for formalisation, NOT historical priority certification.
+Exactly ONE S027 numbered session, single isolated branch and one atomic authored commit/ordinary PR/two-parent merge if permitted. Update S027 records/STATE/next FUTURE S028 prompt. Preserve all research archive and registry counts **CND131 killed131, SRC87 CLM108 CAM10**, detached S016 material, S024 final conditional novelty verdict. No further novelty audit, ratio optimisation, Palomar, paper, preprint, journal, outreach or automatic S028 authorisation.
 
-## Immutable proof targets — no weakening
-
-1. **CLM0096** universal three/four-point plane base, including the strictly convex quadrilateral.
-2. **CLM0099** plane mandatory retained two-nearest-predecessor order ↔ **complete** recursive metric-ear deletion certificate for every strictly convex finite set, using the outerplanar `2m−3` edge saturation for necessity and certificate reversal for sufficiency.
-3. **CLM0102** BOTH directed outward endpoint chord derivatives and strict extension along short ellipse angular arcs `< Λ = 4 atan(b/a)`; no illicit swap of forward/backward derivatives.
-4. **CLM0107** EVERY finite `n≥3` distinct sites on EVERY ellipse with `a≥b>0`, `1≤a/b≤R=sqrt(2/sin(2π/5)−1)`, INCLUDING `a/b=R`, the circle, `n=5`, and arbitrarily close sites. Start from SOME triangle, attach each later site to EXACTLY its two Euclidean-nearest PREDECESSORS with Cartesian lex tie-breaking, KEEP all earlier edges, forbid proper crossings. Prove angular pair-gap averaging and strict eligible span at closed endpoint; choose the MINIMUM **METRIC** skip chord among eligible sites, strict shorter neighbours, short FORWARD and short BACKWARD comparisons, independent central/antipodal chord floor, then recursively remove a strict metric ear down to four.
-5. **CLM0108** exact `101/100` nonround all-`n` corollary via exact trigonometric/radical bounds, no floating rounding.
-
-`R` is only sufficient. Do NOT replace the ellipse with a circle, cap n, assume fixed separation, change the mandatory two edges/tie rule, drop the equality endpoint or assert sharpness.
-
-## Execution obligations for ONE S026 session
-
-- Reconcile LIVE canonical main/STATE/AGENTS/protocol/PRs/checks; create one isolated S026 branch. Do not start a parallel repository, novelty audit or new mathematical target.
-- Use actual pinned `lake build`/Lean checkout, inspect elaborated definitions for precise semantics and validate Lake's dependency manifest (S025 manually transcribed upstream lock). Retain the compiled legacy `ETSHTS` namespace unless a proven-equivalent tested refactor is essential.
-- **Prove the five claims** with kernel-checked theorem declarations, rather than only naming proposition definitions. Prioritise four-point geometry, metric-ear iff, BOTH derivative calculations, closed-threshold gap bounds and skip-chord minimisation, forward/central/backward cases and full induction, then rational `101/100` corollary. This session may make extensive proof progress; do not artificially stop after one helper object.
-- Preserve actual compiler logs, Lean/mathlib hashes, `#print axioms` on genuine proved declarations, and independent statement audit of all-`n`, closed-R, tie and retained-edge semantics. **No `sorry`, `admit`, custom axioms, mathematical `native_decide` trust gap, hidden extra hypotheses or weaker theorem.** A green build of `def CLM... : Prop` is *not* an all-`n` theorem PASS.
-- If the full kernel proof remains open, record EXACT proved lemmas and blockers and queue continued **FORMALISATION** for a separately owner-authorised next session. Do not revisit novelty, optimise R, begin Palomar, write a paper, submit to arXiv/journals or contact researchers.
-- Exactly ONE numbered S026 session, one atomic authored commit, normal non-draft PR, two-parent merge if permitted; independently verify old/new main tree, checks and record failures. Preserve historical **CND131 killed131, SRC87 CLM108 CAM10**, all failed CAMs and detached S016 archive. No automatic S027 authorisation.
-
-**PASS condition:** actual kernel-checked proofs of exact CLM0096/0099/0102/0107/0108 with semantic statement fidelity and no trust gap. Otherwise accurately report PARTIAL/OPEN.
+**PASS only when exact CLM0096/0099/0102/0107/0108 all have kernel-checked proofs under the original quantified definitions, with axiom and semantic fidelity.**
