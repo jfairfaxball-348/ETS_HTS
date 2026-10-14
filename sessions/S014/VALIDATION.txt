@@ -1,0 +1,24 @@
+S014 actual-checkout validation at 2026-10-14T08:04:38.520127+00:00
+CPython 3.12.14; record format/governance only, not mathematical truth or novelty.
+$ python scripts/check_scaffold.py
+Governance record validation PASS (records only; not mathematics or novelty)
+
+exit_code=0
+$ python -m unittest discover -s tests -v
+test_clean_s014 (test_scaffold.ScaffoldTest.test_clean_s014) ... ok
+test_dangling_source_and_bad_status (test_scaffold.ScaffoldTest.test_dangling_source_and_bad_status) ... ok
+test_duplicate_ids (test_scaffold.ScaffoldTest.test_duplicate_ids) ... ok
+test_kill_requires_reason (test_scaffold.ScaffoldTest.test_kill_requires_reason) ... ok
+test_missing_file (test_scaffold.ScaffoldTest.test_missing_file) ... ok
+test_state_count_mismatch (test_scaffold.ScaffoldTest.test_state_count_mismatch) ... ok
+test_wrong_next_prompt (test_scaffold.ScaffoldTest.test_wrong_next_prompt) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.107s
+
+OK
+
+exit_code=0
+$ git diff --check
+
+exit_code=0

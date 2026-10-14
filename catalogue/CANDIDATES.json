@@ -8025,6 +8025,297 @@
       },
       "screened_as_top_ten": false,
       "uncertainty": "KILLED; no two genuinely failed dissimilar elementary attacks, no independent evidence of an unresolved research problem. External theorem/answer not fully re-proved."
+    },
+    {
+      "id": "CND-0125",
+      "exact_statement": "For every strictly convex simple polygon Q with at least four vertices and every point P strictly inside Q and off every line through two vertices, are the two nearest vertices (distance ties lexicographic) adjacent on the boundary?",
+      "plain_language_statement": "Inside a convex shape, are the two nearest corners always next to one another?",
+      "domain": "Euclidean computational geometry / chronological proximity / boundary topology",
+      "origin_mechanism": "S014 owner triangle insertion steer: metric versus boundary adjacency",
+      "attribution": "John Fairfax-Ball, 2026-10-14 evolving triangle idea; standard proximity and hull literature attributed separately.",
+      "quantifiers": "For every strictly convex simple polygon Q with at least four vertices and every point P strictly inside Q and off every line through two vertices, are the two nearest vertices (distance ties lexicographic) adjacent on the boundary?",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "KNOWN_VARIANT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "Symbolic kill before numeric experiment; no finite candidate-specific CAM."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Diamond counterexample: opposite short-axis endpoints closest to P=(.1,.1)."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Diamond counterexample: opposite short-axis endpoints closest to P=(.1,.1)."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_ESTABLISHED",
+          "detail": "Seeded integer samples are no calibrated random-plane model; no hardness credit."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Diamond counterexample: opposite short-axis endpoints closest to P=(.1,.1)."
+        },
+        {
+          "test": "literature",
+          "status": "TWO_PASS_INCOMPLETE",
+          "detail": "Nearby original sources inspected; source-native database/book gaps UNKNOWN; no exact priority clearance. See S014 NOVELTY_QUERIES.md."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-14",
+        "session": "S014",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "Diamond counterexample: opposite short-axis endpoints closest to P=(.1,.1).",
+        "verified_scope": "Elementary symbolic screening; self-audited, not claimed original",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0068",
+        "SRC-0070"
+      ],
+      "claim_ids": [
+        "CLM-0088"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 10,
+        "prerequisites": 10,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 1,
+        "connections": 8,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 6,
+        "total": 57
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KNOWN_VARIANT records nearby standard context, not an exact historical match. Decisive elementary kill suffices; no originality asserted."
+    },
+    {
+      "id": "CND-0126",
+      "exact_statement": "For every fixed simple polygon Q, can the set of fresh point locations P for which replacing the edge between the two nearest vertices by the two P-segments produces a simple polygon with one additional strict corner be expressed by a finite Boolean combination of affine inequalities and equalities in P? Distance ties are lexicographic; nonadjacent nearest pairs are inadmissible.",
+      "plain_language_statement": "For a fixed shape, can all safe places for a new nearest-two corner be marked using finitely many straight lines?",
+      "domain": "Euclidean computational geometry / chronological proximity / boundary topology",
+      "origin_mechanism": "S014 owner triangle insertion steer: metric versus visibility region descriptions",
+      "attribution": "John Fairfax-Ball, 2026-10-14 evolving triangle idea; standard proximity and hull literature attributed separately.",
+      "quantifiers": "For every fixed simple polygon Q, can the set of fresh point locations P for which replacing the edge between the two nearest vertices by the two P-segments produces a simple polygon with one additional strict corner be expressed by a finite Boolean combination of affine inequalities and equalities in P? Distance ties are lexicographic; nonadjacent nearest pairs are inadmissible.",
+      "status": "KILLED_EASY",
+      "novelty_grade": "KNOWN_VARIANT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "Symbolic kill before numeric experiment; no finite candidate-specific CAM."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Exact affine distance/orientation/interval predicates give the finite arrangement description."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Exact affine distance/orientation/interval predicates give the finite arrangement description."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_ESTABLISHED",
+          "detail": "Seeded integer samples are no calibrated random-plane model; no hardness credit."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Exact affine distance/orientation/interval predicates give the finite arrangement description."
+        },
+        {
+          "test": "literature",
+          "status": "TWO_PASS_INCOMPLETE",
+          "detail": "Nearby original sources inspected; source-native database/book gaps UNKNOWN; no exact priority clearance. See S014 NOVELTY_QUERIES.md."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-14",
+        "session": "S014",
+        "kind": "KILLED_EASY",
+        "reason": "Exact affine distance/orientation/interval predicates give the finite arrangement description.",
+        "verified_scope": "Elementary symbolic screening; self-audited, not claimed original",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0068",
+        "SRC-0070"
+      ],
+      "claim_ids": [
+        "CLM-0089"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 10,
+        "prerequisites": 10,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 1,
+        "connections": 8,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 6,
+        "total": 57
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KNOWN_VARIANT records nearby standard context, not an exact historical match. Decisive elementary kill suffices; no originality asserted."
+    },
+    {
+      "id": "CND-0127",
+      "exact_statement": "Does an absolute constant C exist such that every NG drawing on n>=3 distinct sites with no three collinear has at most Cn proper edge-pair crossings, for every arrival order and noncollinear initial triangle, with lexicographic coordinate tie breaking?",
+      "plain_language_statement": "Can the nearest-two growing network always have only a fixed multiple of its number of dots in crossings?",
+      "domain": "Euclidean computational geometry / chronological proximity / boundary topology",
+      "origin_mechanism": "S014 owner triangle insertion steer: retained chronology versus extremal crossing counts",
+      "attribution": "John Fairfax-Ball, 2026-10-14 evolving triangle idea; standard proximity and hull literature attributed separately.",
+      "quantifiers": "Does an absolute constant C exist such that every NG drawing on n>=3 distinct sites with no three collinear has at most Cn proper edge-pair crossings, for every arrival order and noncollinear initial triangle, with lexicographic coordinate tie breaking?",
+      "status": "KILLED_FALSE/DEGENERATE",
+      "novelty_grade": "KNOWN_VARIANT",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "NOT_RUN",
+          "detail": "Symbolic kill before numeric experiment; no finite candidate-specific CAM."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "RESOLVED",
+          "detail": "Strict-scale two-phase construction and generic perturbation gives m² crossings on 2m+4 sites; hence Θ(n²) worst case."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "RESOLVED",
+          "detail": "Strict-scale two-phase construction and generic perturbation gives m² crossings on 2m+4 sites; hence Θ(n²) worst case."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_ESTABLISHED",
+          "detail": "Seeded integer samples are no calibrated random-plane model; no hardness credit."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "RESOLVED",
+          "detail": "Strict-scale two-phase construction and generic perturbation gives m² crossings on 2m+4 sites; hence Θ(n²) worst case."
+        },
+        {
+          "test": "literature",
+          "status": "TWO_PASS_INCOMPLETE",
+          "detail": "Nearby original sources inspected; source-native database/book gaps UNKNOWN; no exact priority clearance. See S014 NOVELTY_QUERIES.md."
+        }
+      ],
+      "kill_record": {
+        "date": "2026-10-14",
+        "session": "S014",
+        "kind": "KILLED_FALSE/DEGENERATE",
+        "reason": "Strict-scale two-phase construction and generic perturbation gives m² crossings on 2m+4 sites; hence Θ(n²) worst case.",
+        "verified_scope": "Elementary symbolic screening; self-audited, not claimed original",
+        "reviewer": "session self-audit"
+      },
+      "source_ids": [
+        "SRC-0071",
+        "SRC-0072",
+        "SRC-0073",
+        "SRC-0074"
+      ],
+      "claim_ids": [
+        "CLM-0090"
+      ],
+      "cam_ids": [],
+      "scoring": {
+        "statement_length": 10,
+        "prerequisites": 10,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 0,
+        "novelty_audit": 1,
+        "connections": 8,
+        "computational_testability": 0,
+        "low_degeneracy_risk": 6,
+        "total": 57
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "KNOWN_VARIANT records nearby standard context, not an exact historical match. Decisive elementary kill suffices; no originality asserted."
+    },
+    {
+      "id": "CND-0128",
+      "exact_statement": "For every n>=3 and every set S of n distinct points in the Euclidean plane with no three collinear, does there exist a permutation such that starting with the triangle on the first three sites and joining every later site to its nearest two previous sites, retaining all old edges, yields no proper crossings? All sites remain fixed, and ties are broken by lexicographic coordinates.",
+      "plain_language_statement": "Can every collection of dots, with no three in a line, be added in some order so that joining each new dot to the nearest two earlier dots never crosses an old line?",
+      "domain": "Euclidean computational geometry / chronological proximity / boundary topology",
+      "origin_mechanism": "S014 owner triangle insertion steer: optimised arrival order versus obligatory metric edges",
+      "attribution": "John Fairfax-Ball, 2026-10-14 evolving triangle idea; standard proximity and hull literature attributed separately.",
+      "quantifiers": "For every n>=3 and every set S of n distinct points in the Euclidean plane with no three collinear, does there exist a permutation such that starting with the triangle on the first three sites and joining every later site to its nearest two previous sites, retaining all old edges, yields no proper crossings? All sites remain fixed, and ties are broken by lexicographic coordinates.",
+      "status": "GENERATED",
+      "novelty_grade": "NOT_SEARCHED",
+      "difficulty_evidence": [
+        {
+          "test": "finite_bruteforce",
+          "status": "FINITE_ONLY",
+          "detail": "CAM-0004: 258 listed sets all feasible; 198 checked independently. No universal exhaustion."
+        },
+        {
+          "test": "invariant_or_counting",
+          "status": "INCONCLUSIVE",
+          "detail": "E=2n-3 compatible with plane graphs but does not construct a permitted ordering."
+        },
+        {
+          "test": "direct_theorem",
+          "status": "UNKNOWN",
+          "detail": "Static proximity bounds and arbitrary Henneberg constructions do not preserve the predecessor metric restriction; no valid reduction completed."
+        },
+        {
+          "test": "probabilistic_heuristic",
+          "status": "NOT_ESTABLISHED",
+          "detail": "Seeded integer samples are no calibrated random-plane model; no hardness credit."
+        },
+        {
+          "test": "olympiad_day",
+          "status": "FAILED_SPECIFIC_STRATEGIES",
+          "detail": "Lexicographic insertion fails on an explicit grid4 example; arbitrary extreme-point reinsertion fails on calibration triangle. Neither failure settles existential order choice."
+        },
+        {
+          "test": "literature",
+          "status": "TWO_PASS_INCOMPLETE",
+          "detail": "Nearby original sources inspected; source-native database/book gaps UNKNOWN; no exact priority clearance. See S014 NOVELTY_QUERIES.md."
+        }
+      ],
+      "kill_record": null,
+      "source_ids": [
+        "SRC-0071",
+        "SRC-0072",
+        "SRC-0073",
+        "SRC-0074"
+      ],
+      "claim_ids": [
+        "CLM-0091"
+      ],
+      "cam_ids": [
+        "CAM-0004"
+      ],
+      "scoring": {
+        "statement_length": 10,
+        "prerequisites": 10,
+        "naturalness": 12,
+        "sharpness": 10,
+        "difficulty_evidence": 1,
+        "novelty_audit": 1,
+        "connections": 8,
+        "computational_testability": 7,
+        "low_degeneracy_risk": 6,
+        "total": 65
+      },
+      "screened_as_top_ten": false,
+      "uncertainty": "NOT_SEARCHED means exact source-native priority not cleared; broad searches and nearby source inspection are logged. GENERATED is neither TRIAGED/SURVIVING nor certified open/hard/novel."
     }
   ]
 }

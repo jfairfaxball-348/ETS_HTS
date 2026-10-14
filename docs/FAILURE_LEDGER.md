@@ -177,3 +177,8 @@ Total 115/115 killed.
 - CND-0123: positive integer arc and chord on integer-radius circle forbidden by classical Lindemann theorem, though independent theorem proof not inspected.
 - CND-0124: explicit infinite Pell construction places consecutive-sided triangles AND incentres on integer lattice; prior source covers general Heronian lattice embedding, exact incenter novelty not cleared.
 - No candidate passes hardness/novelty gates. No numeric search; CAM-0004 absent. Checkout DNS unresolved; real local test commands NOT_RUN. Protection 403 UNKNOWN, status checks zero means ABSENT_NOT_PASS; Actions CI is record-format only.
+
+
+## S014 — 2026-10-14
+
+FAL-0056:Raw nearest-two simple-quadrilateral narrative fails at P=(12,2). FAL-0057:Interior convexity does not imply adjacency (0125). FAL-0058:Exact safe-region existence is easy (0126). FAL-0059:Linear total crossings fails;Θ(n²) bad-order construction (0127). FAL-0060:Lex sweep and arbitrary extreme reinsertion do not settle0128;native priority and independent hardness still absent. No survivor declared.

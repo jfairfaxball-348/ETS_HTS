@@ -72,6 +72,30 @@
       "status": "FAILED",
       "preregistered_at_utc": "2026-10-13T18:37:19.829521+00:00",
       "result": "37 solver-optimal positions m2..4 complete + m5 first eight, 17 m5 positions NOT run; partial stdout recovered. Script end-of-run JSON was never written; script may also contain a NumPy int serialization defect. Never misreport 54 completed."
+    },
+    {
+      "id": "CAM-0004",
+      "candidate_ids": [
+        "CND-0128"
+      ],
+      "claim_ids": [
+        "CLM-0091"
+      ],
+      "purpose": "Test existence of some crossing-free NG arrival order on bounded exact point sets; no universal or hardness claim.",
+      "bounds": "All no-three-collinear subsets of the 3x3 grid of sizes 4..6, plus 30 seeded integer samples each of sizes 4..8 in [-20,20]^2, seed 140014; 1000 generation attempts/sample; lexicographic distance tie break.",
+      "code_version": "campaigns/nearest_two_order.py frozen before execution",
+      "code_hash": "sha256:e1d861c8aaa7f2c44846816056bf9c18caba069158338d7be742466260942634",
+      "input_hash": "sha256:e1d861c8aaa7f2c44846816056bf9c18caba069158338d7be742466260942634 (parameters are embedded in frozen source)",
+      "environment": "Linux-6.18.44-x86_64-with-glibc2.39 CPython 3.12.14 stdlib only",
+      "stopping_rule": "First set lacking an order, all planned sets completed, or 60 seconds checked after each set; a set uses exhaustive DFS with crossing pruning. Independent permutation enumeration for n<=6.",
+      "output_paths": [
+        "campaigns/CAM-0004_preregistration.json",
+        "campaigns/CAM-0004_raw.json",
+        "campaigns/nearest_two_order.py"
+      ],
+      "status": "COMPLETED",
+      "preregistered_at_utc": "2026-10-14T07:50:52.223324+00:00",
+      "result": "258/258 listed sets feasible;198 independently checked;124 lex-order failures; finite only"
     }
   ]
 }

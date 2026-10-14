@@ -178,3 +178,37 @@ Total 115/115 killed, none surviving or triaged. No CAM-0004.
 | CND-0124 | Are there infinitely many different triangles whose sides are three consecutive whole numbers and whose corners and incentre all lie on grid points? | KILLED_EASY | explicit Pell family supplies infinitely many triangles. |
 
 124/124 KILLED; no TRIAGED/SURVIVING. CAM-0003 remains FAILED/PARTIAL 37/54; CAM-0004 never registered.
+
+## S014 candidates — owner triangle idea
+
+### CND-0125 — KILLED_FALSE/DEGENERATE
+
+For every strictly convex simple polygon Q with at least four vertices and every point P strictly inside Q and off every line through two vertices, are the two nearest vertices (distance ties lexicographic) adjacent on the boundary?
+
+Plain: Inside a convex shape, are the two nearest corners always next to one another?
+
+Evidence: Diamond counterexample: opposite short-axis endpoints closest to P=(.1,.1). Novelty grade: KNOWN_VARIANT. Claim: CLM-0088. Scope: KNOWN_VARIANT records nearby standard context, not an exact historical match. Decisive elementary kill suffices; no originality asserted.
+
+### CND-0126 — KILLED_EASY
+
+For every fixed simple polygon Q, can the set of fresh point locations P for which replacing the edge between the two nearest vertices by the two P-segments produces a simple polygon with one additional strict corner be expressed by a finite Boolean combination of affine inequalities and equalities in P? Distance ties are lexicographic; nonadjacent nearest pairs are inadmissible.
+
+Plain: For a fixed shape, can all safe places for a new nearest-two corner be marked using finitely many straight lines?
+
+Evidence: Exact affine distance/orientation/interval predicates give the finite arrangement description. Novelty grade: KNOWN_VARIANT. Claim: CLM-0089. Scope: KNOWN_VARIANT records nearby standard context, not an exact historical match. Decisive elementary kill suffices; no originality asserted.
+
+### CND-0127 — KILLED_FALSE/DEGENERATE
+
+Does an absolute constant C exist such that every NG drawing on n>=3 distinct sites with no three collinear has at most Cn proper edge-pair crossings, for every arrival order and noncollinear initial triangle, with lexicographic coordinate tie breaking?
+
+Plain: Can the nearest-two growing network always have only a fixed multiple of its number of dots in crossings?
+
+Evidence: Strict-scale two-phase construction and generic perturbation gives m² crossings on 2m+4 sites; hence Θ(n²) worst case. Novelty grade: KNOWN_VARIANT. Claim: CLM-0090. Scope: KNOWN_VARIANT records nearby standard context, not an exact historical match. Decisive elementary kill suffices; no originality asserted.
+
+### CND-0128 — GENERATED
+
+For every n>=3 and every set S of n distinct points in the Euclidean plane with no three collinear, does there exist a permutation such that starting with the triangle on the first three sites and joining every later site to its nearest two previous sites, retaining all old edges, yields no proper crossings? All sites remain fixed, and ties are broken by lexicographic coordinates.
+
+Plain: Can every collection of dots, with no three in a line, be added in some order so that joining each new dot to the nearest two earlier dots never crosses an old line?
+
+Evidence: Unresolved, GENERATED only; CAM-0004 covers selected finite inputs. Priority and hardness gates incomplete. Novelty grade: NOT_SEARCHED. Claim: CLM-0091. Scope: NOT_SEARCHED means exact source-native priority not cleared; broad searches and nearby source inspection are logged. GENERATED is neither TRIAGED/SURVIVING nor certified open/hard/novel.

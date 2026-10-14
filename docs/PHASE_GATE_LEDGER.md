@@ -45,3 +45,8 @@ Phase 1 OPEN_REGENERATION_ZERO_SURVIVORS: 119 CND all KILLED, GENERATED0 TRIAGED
 - Gate 1: OPEN_REGENERATION_ZERO_SURVIVORS; CND-0120..0124 all KILLED, cumulative 124/124. No independent external difficulty evidence for an unsolved coupled question.
 - Gate 2: NOT_OPEN_NO_SURVIVORS. Gate 3: NOT_OPEN. Gates 4–6: OWNER_GATED (no selection, formalisation or publication).
 - Source/claim/campaign counts: SRC67 CLM85 CAM3 (CAM-0003 FAILED/PARTIAL 37/54); future S014 unexecuted. Local checkout NOT_RUN due DNS.
+
+
+## S014 — 2026-10-14
+
+Phase1 generation/triage remains open.128candidates,127killed,1GENERATED,0TRIAGED/SURVIVING. Gate2 NOT_OPEN_NO_SURVIVORS;selection/publication/formalisation/outreach owner-gated. S014 executed by explicit URL invocation;S015 FUTURE/UNEXECUTED requires fresh invocation.
