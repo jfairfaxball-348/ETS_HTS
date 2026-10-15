@@ -1,5 +1,5 @@
 import ETSHTS.ConvexFourClassification
-import ETSHTS.LastArrival
+import ETSHTS.LastOrder
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -203,3 +203,7 @@ import ETSHTS.LastArrival
 #print axioms ETSHTS.s043_grow_extract_last
 #print axioms ETSHTS.s043_grow_last_prefix_planar
 #print axioms ETSHTS.s043_grow_last_incident_edges
+
+#print axioms ETSHTS.s043_order_peel_explicit_last
+#print axioms ETSHTS.s043_nonempty_list_has_last
+#print axioms ETSHTS.s043_planeOrder_has_last_ranked_predecessors
