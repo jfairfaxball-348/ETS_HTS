@@ -86,14 +86,31 @@ theorem s046_original_ellipse_cyclic_gaps
         (s046_clamped_phase θ (k + 1) -
          s046_clamped_phase θ k)) +
         (2 * Real.pi - θ (Fin.last n) + θ 0) = 2 * Real.pi := by
-  have hindexed :
-      ∃ θ : Fin (n + 1) ↪o ℝ,
-        (∀ i : Fin (n + 1), 0 ≤ θ i ∧ θ i < 2 * Real.pi) ∧
-        ((Finset.univ : Finset (Fin (n + 1))).image
-          (fun i => ellipsePoint a b (θ i)) = S) := by
-    simpa only [hcard] using
-      (s045_finite_ellipse_ordered_index a b S hboundary)
-  obtain ⟨θ, hb, hS⟩ := hindexed
+  classical
+  obtain ⟨T, hTcard, hbounds, himage⟩ :=
+    s045_finite_ellipse_phase_cover a b S hboundary
+  have hsize : T.card = n + 1 := hTcard.trans hcard
+  let θ : Fin (n + 1) ↪o ℝ := T.orderEmbOfFin hsize
+  have hb : ∀ i : Fin (n + 1), 0 ≤ θ i ∧ θ i < 2 * Real.pi := by
+    intro i
+    exact hbounds (θ i) (by
+      simpa [θ] using (Finset.orderEmbOfFin_mem T hsize i))
+  have hindex :
+      (Finset.univ : Finset (Fin (n + 1))).image (fun i => θ i) = T := by
+    apply Finset.coe_injective
+    simpa [θ] using (Finset.range_orderEmbOfFin T hsize)
+  have hS :
+      (Finset.univ : Finset (Fin (n + 1))).image
+        (fun i => ellipsePoint a b (θ i)) = S := by
+    calc
+      (Finset.univ : Finset (Fin (n + 1))).image
+          (fun i => ellipsePoint a b (θ i)) =
+          ((Finset.univ : Finset (Fin (n + 1))).image
+            (fun i => θ i)).image (ellipsePoint a b) := by
+        rw [Finset.image_image]
+        congr 1
+      _ = T.image (ellipsePoint a b) := by rw [hindex]
+      _ = S := himage
   refine ⟨θ, hb, hS, ?_, ?_, ?_⟩
   · intro k hk
     exact s046_clamped_adjacent_gap_pos θ k hk
