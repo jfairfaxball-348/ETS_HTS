@@ -84,7 +84,7 @@ theorem s042_interior_triangle_all_spokes_plane
     rcases he₂ with (h₂ | h₂ | h₂) | (h₂ | h₂ | h₂)
   all_goals
     first
-    | (subst e₁; subst e₂; simp [edge, Finset.disjoint_left] at hdisj; done)
+    | (rw [h₁, h₂] at hdisj; simp [edge, Finset.disjoint_left] at hdisj; done)
     | exact s042_noCross_edge_transport hqr hvp hs₁'
         (heq₁.symm.trans h₁) (heq₂.symm.trans h₂)
     | exact s042_noCross_edge_transport hvp hqr hs₁
