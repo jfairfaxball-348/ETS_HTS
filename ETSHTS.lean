@@ -1,4 +1,4 @@
-import ETSHTS.ConvexFourBarycentric
+import ETSHTS.ConvexFourClassification
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -192,3 +192,5 @@ import ETSHTS.ConvexFourBarycentric
 #print axioms ETSHTS.s042_one_negative_barycentric_cross
 
 #print axioms ETSHTS.s042_two_negative_barycentric_interior
+
+#print axioms ETSHTS.s042_four_order_positive_first
