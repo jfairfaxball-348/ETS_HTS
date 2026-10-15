@@ -13,6 +13,7 @@ import ETSHTS.CentralChordBand
 import ETSHTS.CentralCutoffIdentity
 import ETSHTS.CentralOriginalSites
 import ETSHTS.ShortArcLifts
+import ETSHTS.CompetitorPhaseIndex
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -301,3 +302,8 @@ import ETSHTS.ShortArcLifts
 
 #print axioms ETSHTS.s048_forward_actual_two_successor_floor
 #print axioms ETSHTS.s048_backward_actual_two_predecessor_floor
+
+#print axioms ETSHTS.s048_original_site_unique_index
+#print axioms ETSHTS.s048_forward_competitor_lift_site
+#print axioms ETSHTS.s048_forward_lift_strict_turn
+#print axioms ETSHTS.s048_original_competitor_index_and_lift
