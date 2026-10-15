@@ -63,13 +63,16 @@ theorem s042_planeOrder_extend_metricEar
     exact (Finset.not_mem_erase v S) hvrest
   have hnodup' : ([p, q, r] ++ (rest ++ [v])).Nodup := by
     have hn : (([p, q, r] ++ rest) ++ [v]).Nodup := by
-      simp [List.nodup_append, hnodup, hnot]
+      simp only [List.nodup_append]
+      refine ⟨hnodup, by simp, ?_⟩
+      simpa [List.disjoint_singleton] using hnot
     simpa [List.append_assoc] using hn
   have hcover' : ([p, q, r] ++ (rest ++ [v])).toFinset = S := by
     calc
       ([p, q, r] ++ (rest ++ [v])).toFinset =
           insert v (([p, q, r] ++ rest).toFinset) := by
-            simp [List.append_assoc, Finset.insert_eq]
+            simp [List.append_assoc, Finset.insert_eq, Finset.union_comm,
+              Finset.union_left_comm, Finset.union_assoc]
       _ = insert v (S.erase v) := by rw [hcover]
       _ = S := Finset.insert_erase hv
   have hnear' : exactlyTwoNearest ([p, q, r] ++ rest).toFinset v u w := by
@@ -109,7 +112,7 @@ theorem s042_fullEarCertificate_implies_planeNearestTwoOrder
       intro hT
       exact s042_planeOrder_extend_metricEar
         (ih (s041_strictConvexPosition_erase hT v))
-        (s041_strictConvexPosition_noThreeCollinear hT)
+        (s041_strictConvexPosition_noThreeCollinear T hT)
         hear
 
 end ETSHTS
