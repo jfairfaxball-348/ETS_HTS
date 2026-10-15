@@ -26,16 +26,26 @@ theorem s046_cyclic_gap_pos {n : ℕ} (θ : Fin (n + 1) ↪o ℝ)
   classical
   by_cases hi : i = Fin.last n
   · subst i
-    dsimp [s046_cyclic_gap]
-    simp only [finRotate_last, if_pos rfl]
     have hwrap := s046_wrap_gap_pos θ hb
-    linarith
-  · have hinc : i < (finRotate (n + 1)) i :=
-      (lt_finRotate_iff_ne_last i).2 hi
+    simpa [s046_cyclic_gap, finRotate_last, sub_eq_add_neg,
+      add_comm, add_left_comm, add_assoc] using hwrap
+  · have hiBound : i.val < n := by
+      have hlimit := i.isLt
+      by_contra hnot
+      have hlast : i = Fin.last n := by
+        apply Fin.ext
+        change i.val = n
+        omega
+      exact hi hlast
+    have hrot : (finRotate (n + 1)) i =
+        ⟨i.val + 1, by omega⟩ := by
+      simpa using (finRotate_of_lt hiBound)
+    have hinc : i < (finRotate (n + 1)) i := by
+      rw [hrot]
+      change i.val < i.val + 1
+      omega
     have hlt := θ.strictMono hinc
-    dsimp [s046_cyclic_gap]
-    rw [if_neg hi]
-    linarith
+    simpa [s046_cyclic_gap, hi] using (sub_pos.mpr hlt)
 
 /-- The sum over every genuine cyclic successor is precisely one turn.
 This includes the final successor returning from last to first. -/
