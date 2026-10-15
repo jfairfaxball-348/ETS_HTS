@@ -41,7 +41,7 @@ theorem s045_boundary_has_normalized_angle (a b : ℝ) (p : Point)
   obtain ⟨θ, rfl⟩ := hp
   exact s045_ellipsePoint_normalized a b θ
 
-/-- Arbitrarily many distinct original boundary sites admit a *finite*
+/-- Arbitrarily many distinct original boundary sites possess a *finite*
 normalised phase set with exactly the same cardinality and no duplicated
 angular representatives. The equality of images and cardinalities prevents
 collisions of ellipse points on the selected phases. This works at the
