@@ -1,6 +1,6 @@
 # S041 — FUTURE / UNEXECUTED: sustained end-to-end Lean attack on the frozen ellipse theorem
 
-**Execution authority:** The owner's next explicit instruction to run S041 or “run the next session” authorises **exactly S041 immediately**, without another confirmation. This file is a future handover, NOT execution of S041. A session may contain many proof modules, many compiler/repair passes and attempts at all remaining headline theorems. S042 is not authorised or executed here.
+**Execution authority:** A **new explicit owner invocation** to run S041 or “run the next session” authorises **exactly S041 immediately**, without another confirmation. This file is a future handover, NOT execution of S041. A session may contain many proof modules, many compiler/repair passes and attempts at all remaining headline theorems. S042 is not authorised or executed here.
 
 Repository: https://github.com/jfairfaxball-348/ellipse-theorem
 Lean namespace: `ETSHTS`
