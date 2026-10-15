@@ -117,8 +117,8 @@ theorem s042_crossing_diagonals_choose_strict_ear
      s042_chordLength d a < s042_chordLength d b) := by
   obtain ⟨h₁,h₂⟩ := s042_crossing_opposite_path_strict a b c d o
     hcrossAC hcrossBD
-    (hno a ha c hc b hb hac hab.symm hbc.symm)
-    (hno c hc a ha d hd hac.symm hcd.symm had.symm)
+    (hno a ha c hc b hb hac hab hbc.symm)
+    (hno c hc a ha d hd hac.symm hcd had)
     (hno b hb d hd c hc hbd hbc hcd.symm)
     (hno d hd b hb a ha hbd.symm had.symm hab.symm)
   have hsel := s042_crossing_selector
