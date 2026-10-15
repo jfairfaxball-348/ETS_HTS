@@ -1,3 +1,4 @@
+import ETSHTS.ConvexFourClassification
 import ETSHTS.LastArrival
 
 /- Kernel dependency exposure of actual theorem declarations. -/
