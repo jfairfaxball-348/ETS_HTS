@@ -121,9 +121,8 @@ theorem s046_actual_sites_closed_ratio_skip_min
           s046_squared_skip_chord a b θ i ≤
             s046_squared_skip_chord a b θ j) := by
   obtain ⟨n, hcard⟩ : ∃ n : ℕ, S.card = n + 1 := by
-    cases hc : S.card with
-    | zero => omega
-    | succ n => exact ⟨n, hc⟩
+    refine ⟨S.card - 1, ?_⟩
+    omega
   obtain ⟨θ, hbounds, hsites, _, _, _⟩ :=
     s046_original_ellipse_cyclic_gaps a b S n hcard hboundary
   refine ⟨n, θ, hcard, hbounds, hsites, ?_, ?_, ?_⟩
