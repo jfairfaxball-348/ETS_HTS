@@ -101,7 +101,7 @@ theorem s042_crossing_four_has_metricEar
   · exact ⟨a, s042_metricEar_of_crossing_A a b c d o hno
       hab hac had hbc hbd hcd hcrossAC hcrossBD h.1 h.2⟩
   · have hn : noThreeCollinear ({c, d, a, b} : Finset Point) := by
-      simpa [Finset.insert_comm, Finset.insert_left_comm, Finset.insert_assoc] using hno
+      simpa [Finset.insert_comm] using hno
     have hear := s042_metricEar_of_crossing_A c d a b o hn
       hcd hac.symm hbc.symm had.symm hbd.symm hab
       (s042_openSegment_reverse hcrossAC)
@@ -111,15 +111,15 @@ theorem s042_crossing_four_has_metricEar
     exact ⟨c, by simpa [Finset.insert_comm,
       Finset.insert_left_comm, Finset.insert_assoc] using hear⟩
   · have hn : noThreeCollinear ({b, c, d, a} : Finset Point) := by
-      simpa [Finset.insert_comm, Finset.insert_left_comm, Finset.insert_assoc] using hno
+      simpa [Finset.insert_comm] using hno
     have hear := s042_metricEar_of_crossing_A b c d a o hn
-      hbc hbd hab.symm hcd had.symm hac.symm
+      hbc hbd hab.symm hcd hac.symm had.symm
       hcrossBD (s042_openSegment_reverse hcrossAC)
       h.2 (by simpa [s042_chordLength_symm] using h.1)
     exact ⟨b, by simpa [Finset.insert_comm,
       Finset.insert_left_comm, Finset.insert_assoc] using hear⟩
   · have hn : noThreeCollinear ({d, a, b, c} : Finset Point) := by
-      simpa [Finset.insert_comm, Finset.insert_left_comm, Finset.insert_assoc] using hno
+      simpa [Finset.insert_comm] using hno
     have hear := s042_metricEar_of_crossing_A d a b c o hn
       had.symm hbd.symm hcd.symm hab hac hbc
       (s042_openSegment_reverse hcrossBD) hcrossAC
