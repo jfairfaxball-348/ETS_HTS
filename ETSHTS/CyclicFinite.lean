@@ -21,13 +21,13 @@ theorem s042_sum_permuted_gap (n : ℕ) (next : Fin n ≃ Fin n)
   apply Finset.sum_bij (fun i _ => next i)
   · intro i hi
     simp
-  · intro i hi
-    rfl
   · intro i j hi hj hij
     exact next.injective hij
   · intro j hj
     refine ⟨next.symm j, by simp, ?_⟩
     simp
+  · intro i hi
+    rfl
 
 /-- The fundamental two-gap cyclic identity is algebraic, including
 cyclic wraparound: any bijective successor index is counted once. -/
