@@ -82,4 +82,45 @@ theorem s045_finite_ellipse_phase_cover (a b : ℝ) (S : Finset Point)
       · simpa [Finset.image_insert, hθp] using
           congrArg (insert p) himage
 
+
+/-- A genuine *strictly increasing* Fin n angular parametrisation exists
+for every original finite ellipse-boundary site set, with n = |S| exactly.
+The image is all and only the original sites. No presumed cyclic indexing,
+angle separation or replacement ellipse predicate is used. -/
+theorem s045_finite_ellipse_ordered_index (a b : ℝ) (S : Finset Point)
+    (hboundary : ∀ p ∈ S, ellipseBoundary a b p) :
+    ∃ θ : Fin S.card ↪o ℝ,
+      (∀ i : Fin S.card, 0 ≤ θ i ∧ θ i < 2 * Real.pi) ∧
+      (Finset.univ : Finset (Fin S.card)).image
+        (fun i => ellipsePoint a b (θ i)) = S := by
+  classical
+  obtain ⟨T, hcard, hbounds, himage⟩ :=
+    s045_finite_ellipse_phase_cover a b S hboundary
+  let θ : Fin S.card ↪o ℝ := T.orderEmbOfFin hcard
+  refine ⟨θ, ?_, ?_⟩
+  · intro i
+    exact hbounds (θ i) (by
+      simpa [θ] using (Finset.orderEmbOfFin_mem T hcard i))
+  · have hindex :
+        (Finset.univ : Finset (Fin S.card)).image (fun i => θ i) = T := by
+      simpa [θ] using (Finset.image_orderEmbOfFin_univ T hcard)
+    calc
+      (Finset.univ : Finset (Fin S.card)).image
+          (fun i => ellipsePoint a b (θ i)) =
+          ((Finset.univ : Finset (Fin S.card)).image (fun i => θ i)).image
+            (ellipsePoint a b) := by simp only [Finset.image_image, Function.comp_apply]
+      _ = T.image (ellipsePoint a b) := by rw [hindex]
+      _ = S := himage
+
+/-- Consecutive indexed phases have strictly positive gaps, even when
+the sites are arbitrarily close together. -/
+theorem s045_ordered_index_adjacent_gap_pos
+    {n : ℕ} (θ : Fin n ↪o ℝ)
+    (i : Fin n) (hi : i.val + 1 < n) :
+    0 < θ ⟨i.val + 1, hi⟩ - θ i := by
+  apply sub_pos.mpr
+  exact θ.strictMono (by
+    change i.val < i.val + 1
+    omega)
+
 end ETSHTS

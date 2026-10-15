@@ -223,3 +223,6 @@ import ETSHTS.FiniteEllipsePhase
 #print axioms ETSHTS.s045_ellipsePoint_normalized
 #print axioms ETSHTS.s045_boundary_has_normalized_angle
 #print axioms ETSHTS.s045_finite_ellipse_phase_cover
+
+#print axioms ETSHTS.s045_finite_ellipse_ordered_index
+#print axioms ETSHTS.s045_ordered_index_adjacent_gap_pos
