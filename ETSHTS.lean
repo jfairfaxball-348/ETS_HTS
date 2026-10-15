@@ -7,6 +7,7 @@ import ETSHTS.CyclicEllipseHull
 import ETSHTS.CyclicEllipseIncident
 import ETSHTS.CyclicEllipseOrientation
 import ETSHTS.CyclicEllipseHullSides
+import ETSHTS.CyclicEllipseNeighbourBridge
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -270,3 +271,6 @@ import ETSHTS.CyclicEllipseHullSides
 
 #print axioms ETSHTS.s047_original_consecutive_hullSide
 #print axioms ETSHTS.s047_original_wrap_hullSide
+
+#print axioms ETSHTS.s047_original_cyclic_hullSide
+#print axioms ETSHTS.s047_eligible_true_neighbours_and_strict_incidents
