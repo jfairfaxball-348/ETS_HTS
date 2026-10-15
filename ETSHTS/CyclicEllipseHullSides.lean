@@ -42,10 +42,10 @@ theorem s047_original_consecutive_hullSide {n : ℕ}
   obtain ⟨k, _, rfl⟩ := Finset.mem_image.mp hx
   by_cases hki : k = i
   · subst k
-    simp [orientation]
+    simp [orientation] <;> nlinarith
   by_cases hkj : k = j
   · subst k
-    simp [orientation]
+    simp [orientation] <;> nlinarith
   by_cases hpre : k.val < i.val
   · have hik : θ k < θ i :=
       θ.strictMono (by change k.val < i.val; omega)
@@ -103,10 +103,10 @@ theorem s047_original_wrap_hullSide {n : ℕ}
   obtain ⟨k, _, rfl⟩ := Finset.mem_image.mp hx
   by_cases hkl : k = Fin.last n
   · subst k
-    simp [orientation]
+    simp [orientation] <;> nlinarith
   by_cases hk0 : k = 0
   · subst k
-    simp [orientation]
+    simp [orientation] <;> nlinarith
   · have hfirstk : θ 0 < θ k :=
       θ.strictMono (by
         change 0 < k.val
