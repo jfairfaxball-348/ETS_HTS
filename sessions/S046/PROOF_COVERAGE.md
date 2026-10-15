@@ -39,3 +39,11 @@ The code-head before archival (`7ab1a46ae88e50f4e1b764d3eca9f44375c404d9`) [Lean
 **B3 strict incident and complete all-competitor:** the eligible skip from i to i+2 centres the candidate ear at i+1. Lift its real angles across wrap, prove both genuine incident `sqDist` strictly below skip via `s035_eligible_skip_exceeds_both_neighbours`; then every original other site must have distance ≥ skip via the forward short, central **closed** band (both equality endpoints), backward short case. The true floor/witness geometry under closed R must be formalised and fed to `s035_metric_ear_of_skip_chord_floor`.
 
 **B4:** only after a uniform true `metricEar` at every eligible finite original set ≥5 is proved, apply `clm0096_exact` and `s042_clm0107_of_clm0096_and_ge5_ears` to compile the literal unchanged `clm0107_exact : CLM0107`. No four-site ear premise and no CLM0099 requirement. Full direct theorem **not compiled** in S046.
+
+## Additional original-site uniqueness bridge
+
+`ETSHTS/CyclicEllipseMembership.lean` is root-imported and prints:
+- `s046_indexed_ellipse_site_mem`: every phase-indexed ellipse site is an **actual member** of the unchanged original finite `S`.
+- `s046_indexed_ellipse_sites_injective`: if the indexed image is all of the original `S` and `S.card = n+1`, distinct `Fin (n+1)` indices yield distinct ellipse sites. It derives this using `Finset.card_image_iff`, not an unsupported claim of global injectivity of trigonometric periodic coordinates.
+
+The S046 original arbitrary-site composition previously failed at an dependent `Fin`/cardinality witness in CI; repaired using the actual `5 ≤ S.card` hypothesis and natural-number arithmetic, so `s046_actual_sites_closed_ratio_skip_min` is included in hosted compilation. All new statements require successful latest PR-head Lean and standard-only axiom prints; prior failures are retained as evidence rather than silently erased.

@@ -7,3 +7,5 @@
 5. Host all code on fresh branch `session/S046-clm0107-cyclic-gap-bridge`, PR #57, repair compiler failures, root imports and axiom prints, archive accurate proof coverage, and integrate only after final PR-head CI SUCCESS.
 
 Implemented B1 phase arithmetic, cyclic rotation/true full turn, B2 genuine skip minimum with original-site composition. Hosted diagnostic/repair history included dependent-Fin cardinality type mismatch, mathlib rotation API and wrap simplification; fixed with direct `orderEmbOfFin` phase cover and explicit index rotations. B3 original hull-side / all non-neighbour distance comparisons are **not** claimed. No CLM0108/CLM0099 work, no new mathematics.
+
+6. After repairing the direct arbitrary-site witness, formalise membership and injectivity of the original indexed site map using exact finite-set cardinal equality. This is stronger than merely having some phase image: it rules out indexed site collisions without unjustified global periodic-angle injectivity.
