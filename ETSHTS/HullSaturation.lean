@@ -15,7 +15,7 @@ namespace ETSHTS
 
 /-- A supported planar graph attaining an upper edge bound must contain
 all genuine supporting hull sides. The exact premise is an upper bound
-on EVERY supported planar graph; no hidden maximisation axiom is used. -/
+on EVERY supported planar graph; no hidden maximisation assumption is used. -/
 theorem s042_hullSide_present_of_planar_cap
     {S : Finset Point} (hno : noThreeCollinear S)
     (hcap : ∀ H : Finset Edge,
