@@ -1,4 +1,4 @@
-import ETSHTS.EarSufficiency
+import ETSHTS.FourTailBridge
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -146,3 +146,7 @@ import ETSHTS.EarSufficiency
 #print axioms ETSHTS.s042_grow_append_last
 #print axioms ETSHTS.s042_planeOrder_extend_metricEar
 #print axioms ETSHTS.s042_fullEarCertificate_implies_planeNearestTwoOrder
+
+#print axioms ETSHTS.s042_planeOrder_of_four_tail_and_ge5_ears
+#print axioms ETSHTS.s042_clm0107_of_clm0096_and_ge5_ears
+#print axioms ETSHTS.s042_clm0108_of_clm0096_and_ge5_ears
