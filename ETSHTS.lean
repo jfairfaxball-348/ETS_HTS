@@ -1,4 +1,4 @@
-import ETSHTS.FourTailBridge
+import ETSHTS.HullSaturation
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -150,3 +150,6 @@ import ETSHTS.FourTailBridge
 #print axioms ETSHTS.s042_planeOrder_of_four_tail_and_ge5_ears
 #print axioms ETSHTS.s042_clm0107_of_clm0096_and_ge5_ears
 #print axioms ETSHTS.s042_clm0108_of_clm0096_and_ge5_ears
+
+#print axioms ETSHTS.s042_hullSide_present_of_planar_cap
+#print axioms ETSHTS.s042_order_saturates_all_hullSides_of_cap
