@@ -5,7 +5,7 @@ import ETSHTS.GrowCounting
 
 Consequences of the original retained-nearest-two Grow relation. The counting
 formula is for the ORIGINAL planeNearestTwoOrder proposition, not a surrogate.
-No unproved geometric premise, modified priority, or new axiom is used.
+No unproved geometric premise, modified priority or new assumptions are used.
 -/
 
 noncomputable section
