@@ -27,8 +27,9 @@ private theorem s048_two_gap_lift_pos {n : ℕ}
     θ j < s047_right_lift θ j := by
   have hg := s046_cyclic_gap_pos θ hphase j
   have hg' := s046_cyclic_gap_pos θ hphase ((finRotate (n + 1)) j)
-  rw [s048_two_gap_lift_span θ j] 
-  at *
+  have htotal : 0 < s047_right_lift θ j - θ j := by
+    rw [s048_two_gap_lift_span θ j]
+    linarith
   linarith
 
 /-- Forward short band for original squared-chord metric minimum:
@@ -103,8 +104,12 @@ theorem s048_backward_actual_two_predecessor_floor {n : ℕ}
     exact hmetric
   rcases eq_or_lt_of_le hbefore with heq | hstrict
   · rw [heq]
-    exact hmetriclift.trans_eq
-      (sqDist_symm _ _)
+    calc
+      s046_squared_skip_chord a b θ i ≤
+          sqDist (ellipsePoint a b (θ j))
+            (ellipsePoint a b (s047_right_lift θ j)) := hmetriclift
+      _ = sqDist (ellipsePoint a b (s047_right_lift θ j))
+            (ellipsePoint a b (θ j)) := sqDist_symm _ _
   · exact le_of_lt (s035_backward_short_arc_competitor
       a b competitor (θ j) (s047_right_lift θ j)
       (s046_squared_skip_chord a b θ i) hb hab
