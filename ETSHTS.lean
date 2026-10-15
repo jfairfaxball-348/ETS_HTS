@@ -1,4 +1,4 @@
-import ETSHTS.HullShield
+import ETSHTS.HullInsertion
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -134,3 +134,11 @@ import ETSHTS.HullShield
 #print axioms ETSHTS.s042_orientation_openSegment_zero
 #print axioms ETSHTS.s042_no_properCross_of_same_strict_side
 #print axioms ETSHTS.s042_hullSide_safe_against_disjoint_chord
+
+#print axioms ETSHTS.s042_orientation_swap
+#print axioms ETSHTS.s042_properCross_swap
+#print axioms ETSHTS.s042_hullSide_swap
+#print axioms ETSHTS.s042_edge_eq_pair_or_swap
+#print axioms ETSHTS.s042_hullSide_edge_transport
+#print axioms ETSHTS.s042_planeEdges_insert_hullSide
+#print axioms ETSHTS.s042_planeEdges_insert_both_hullSides
