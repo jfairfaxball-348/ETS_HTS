@@ -97,4 +97,40 @@ theorem s046_original_closed_ratio_skip_min
     (s046_cyclic_gap θ) (s046_squared_skip_chord a b θ)
     (s046_cyclic_gap_full_turn θ)
 
+/-- The original arbitrary finite ellipse site set itself admits a complete
+positive full-turn cyclic indexing AND a minimum of genuine Euclidean squared
+skip chords. No cyclic list, spacing bound, or ear is assumed as input.
+This is the B1/B2 bridge; hull-side and three-band comparisons still follow. -/
+theorem s046_actual_sites_closed_ratio_skip_min
+    (a b : ℝ) (hb : 0 < b) (hab : b ≤ a) (hr : a / b ≤ R)
+    (S : Finset Point) (h5 : 5 ≤ S.card)
+    (hboundary : ∀ p ∈ S, ellipseBoundary a b p) :
+    ∃ (n : ℕ) (θ : Fin (n + 1) ↪o ℝ),
+      S.card = n + 1 ∧
+      (∀ i : Fin (n + 1), 0 ≤ θ i ∧ θ i < 2 * Real.pi) ∧
+      ((Finset.univ : Finset (Fin (n + 1))).image
+        (fun i => ellipsePoint a b (θ i)) = S) ∧
+      (∀ i : Fin (n + 1), 0 < s046_cyclic_gap θ i) ∧
+      (∑ i : Fin (n + 1), s046_cyclic_gap θ i) = 2 * Real.pi ∧
+      (∃ i : Fin (n + 1),
+        s046_cyclic_gap θ i +
+          s046_cyclic_gap θ ((finRotate (n + 1)) i) < lambda a b ∧
+        ∀ j : Fin (n + 1),
+          s046_cyclic_gap θ j +
+            s046_cyclic_gap θ ((finRotate (n + 1)) j) < lambda a b →
+          s046_squared_skip_chord a b θ i ≤
+            s046_squared_skip_chord a b θ j) := by
+  obtain ⟨n, hcard⟩ : ∃ n : ℕ, S.card = n + 1 := by
+    cases hc : S.card with
+    | zero => omega
+    | succ n => exact ⟨n, hc⟩
+  obtain ⟨θ, hbounds, hsites, _, _, _⟩ :=
+    s046_original_ellipse_cyclic_gaps a b S n hcard hboundary
+  refine ⟨n, θ, hcard, hbounds, hsites, ?_, ?_, ?_⟩
+  · intro i
+    exact s046_cyclic_gap_pos θ hbounds i
+  · exact s046_cyclic_gap_full_turn θ
+  · exact s046_original_closed_ratio_skip_min a b hb hab hr n
+      (by omega) θ
+
 end ETSHTS
