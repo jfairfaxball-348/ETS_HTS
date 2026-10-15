@@ -1,4 +1,4 @@
-import ETSHTS.ConvexFourSelector
+import ETSHTS.EuclideanChord
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -168,3 +168,6 @@ import ETSHTS.ConvexFourSelector
 
 #print axioms ETSHTS.s042_crossing_selector_AC_long
 #print axioms ETSHTS.s042_crossing_selector
+
+#print axioms ETSHTS.s042_chordLength_sq
+#print axioms ETSHTS.s042_strict_chord_triangle
