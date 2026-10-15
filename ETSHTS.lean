@@ -1,4 +1,4 @@
-import ETSHTS.EarFramework
+import ETSHTS.EarCounting
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -95,3 +95,6 @@ import ETSHTS.EarFramework
 #print axioms ETSHTS.s038_planeEdges_of_subset
 #print axioms ETSHTS.s038_grow_planar_initial_edges
 #print axioms ETSHTS.s038_card_three_plane_iff_fullEarCertificate
+
+#print axioms ETSHTS.s039_insert_edges_supported
+#print axioms ETSHTS.s039_fresh_insert_two_edges

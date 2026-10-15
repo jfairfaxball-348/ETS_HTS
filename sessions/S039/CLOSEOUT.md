@@ -1,0 +1,9 @@
+# S039 — PARTIAL / strict frozen-theorem Lean formalisation
+
+Owner invocation of the LIVE S039 handover authorises exactly S039. S040 remains FUTURE / UNEXECUTED. Entry main `7106c05809c96da19a038b92b145f53cbf754f04`, tree `26c268989e03bb1841a67ee97d6108d8eaa16557`. S038 authored `9f63ca17c6b26e48af306399dcf4ee95e89c26f6` parent `46af6a2793280f3c39935bfcf9721fec28345d67`, ordinary PR #46 merge `7106c05809c96da19a038b92b145f53cbf754f04` with exactly the two expected parents and tree matching S038 authored. No open PR at entry. Rulesets [] and branch protection 403 = UNKNOWN.
+
+S038 independent merged-main [Lean](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38713005011) and [governance](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38713005047) both SUCCESS; read actual job logs, standard Lean axioms only, checks and seven tests PASS. S038 PR runs 38712603563/38712603646 SUCCESS. Governance is administrative, not mathematical verification.
+
+S039 source partials: `ETSHTS/EarCounting.lean` proves candidate exact fresh-insertion two-edge count and inherited endpoints support with the original unchanged nearest-two rule, without changing `Targets.lean`. These remain SOURCE_PENDING_CI until hosted independent Lean actions verify their compilation. No local `lake build`, `lake env lean ETSHTS.lean`, scaffold or tests (NOT_RUN). Four exact target propositions (0096,0099,0107,0108) remain OPEN. `clm0102_exact` was previously verified. S040 full prompt is archived under `authoritative/NEXT_SESSION_PROMPT.md`.
+
+One authored atomic session commit, an ordinary non-draft PR and separate GitHub Lean/governance checks are required for integration. This closeout is committed before any PR or CI exists and does NOT claim their success. Remote integration facts must be checked live after the commit.

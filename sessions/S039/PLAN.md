@@ -1,0 +1,5 @@
+# S039 — strict frozen-formalisation plan
+
+Entry pinned to main `7106c05809c96da19a038b92b145f53cbf754f04`, tree `26c268989e03bb1841a67ee97d6108d8eaa16557`, no open PRs, no accessible rulesets, branch protection 403/UNKNOWN. S038 ordinary PR #46 and authored commit reconciled. S038 independent merged-main Lean [38713005011](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38713005011) and governance [38713005047](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38713005047) SUCCESS; actual Lean job logs print standard axioms [propext, Classical.choice, Quot.sound]; governance logs show 7 tests PASS.
+
+Priority A full four-site CLM0096 and orientation/betweenness remains open; mathematical strategy frozen. Priority B full ear equivalence CLM0099 remains open; extract a useful support and exact two-new-edge count lemma under fresh insertion and original `exactlyTwoNearest` without weakening. Priority C global CLM0107 and derivative/corollary reuse remains open. The partial source is subject to new CI, not assumed verified. No local Lean or Python checkout commands were executed (NOT_RUN).
