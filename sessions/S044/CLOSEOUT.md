@@ -1,0 +1,11 @@
+# S044 closeout — PARTIAL; five new hosted kernel-verified theorems
+
+Owner invoked exactly S044 on 2026-10-15, entry `main` `da2e0065077d6ab56a32aacf5e7fa6dc9871b565`, tree `8981d793ae8a9c91c107a882616341c554ed03af`. Prior PR #53 final-head PR Lean/governance and independent merged-main Lean/governance all SUCCESS; prior normal two-parent merge verified. No entry open PRs; rulesets empty and protection 403 UNKNOWN. Fresh branch `session/S044-exact-cutoff-cyclic` and ordinary [PR #54](https://github.com/jfairfaxball-348/ellipse-theorem/pull/54).
+
+**Verified:** five new theorems across `AngularCutoff.lean`, `NecessityInduction.lean`, `HullLastBridge.lean`. Chief new unconditional fact: **strict `4*pi/5 < lambda a b` throughout the original closed `R` interval**, including endpoint. Exact metric skip selector now applies without a separate cutoff premise whenever the true full-turn cyclic gap representation is available. The complete original `CLM0099` necessity strong induction, hull-side/incidence classifications and cyclic identification bridge compile with their genuine remaining geometric hypotheses **explicitly displayed**, not assumed as direct theorem facts.
+
+Code-head [Lean 38753860585](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38753860585) and [governance 38753860641](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38753860641) SUCCESS at `728b14954840e2556b4cc517a3c0fc4448f3a076`; all five new root axiom prints are standard only. No holes/custom axioms. Local Lean/lake unavailable: NOT_RUN. Final documentation PR-head and merged-main checks **must be checked separately** before stronger integration claims.
+
+**Final mathematical proof status:** `CLM0096` and `CLM0102` VERIFIED; `CLM0099`, `CLM0107`, `CLM0108` OPEN (**2/5 direct targets**). S044 did not establish a universal planar cap, the hull-neighbour existence/last actual forcing theorem, a finite arbitrary ellipse cyclic lift or complete three-band metric-ear proof. It did not change/falsify/extend locked mathematics or initiate a novelty audit, Palomar, arXiv or correspondence.
+
+[S045 handover](../../authoritative/NEXT_SESSION_PROMPT.md) is explicitly **FUTURE / UNEXECUTED**; fresh owner instruction executes that session only. Preserve all certified proof modules.
