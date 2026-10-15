@@ -1,5 +1,5 @@
 import ETSHTS.ConvexFourClassification
-import ETSHTS.HullLastBridge
+import ETSHTS.FiniteEllipsePhase
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -219,3 +219,7 @@ import ETSHTS.HullLastBridge
 
 #print axioms ETSHTS.s044_forced_last_hull_side
 #print axioms ETSHTS.s044_cyclic_last_of_saturation_and_two_sides
+
+#print axioms ETSHTS.s045_ellipsePoint_normalized
+#print axioms ETSHTS.s045_boundary_has_normalized_angle
+#print axioms ETSHTS.s045_finite_ellipse_phase_cover
