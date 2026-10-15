@@ -4,6 +4,7 @@ import ETSHTS.CyclicEllipsePhase
 import ETSHTS.CyclicEllipseSkip
 import ETSHTS.CyclicEllipseMembership
 import ETSHTS.CyclicEllipseHull
+import ETSHTS.CyclicEllipseIncident
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -253,3 +254,10 @@ import ETSHTS.CyclicEllipseHull
 #print axioms ETSHTS.s047_hullSide_at_most_two
 #print axioms ETSHTS.s047_cyclicNeighbours_of_two_hullSides
 #print axioms ETSHTS.s047_hullSide_second_mem_erase
+
+#print axioms ETSHTS.s047_ellipsePoint_add_two_pi
+#print axioms ETSHTS.s047_mid_lift_gap
+#print axioms ETSHTS.s047_right_lift_gap
+#print axioms ETSHTS.s047_mid_lift_site
+#print axioms ETSHTS.s047_right_lift_site
+#print axioms ETSHTS.s047_eligible_cyclic_incident_lt_skip
