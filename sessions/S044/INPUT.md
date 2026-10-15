@@ -1,0 +1,7 @@
+# S044 — owner-authorised session input (2026-10-15)
+
+Owner instructed **“Run next session”** within the ellipse-theorem project. The live `authoritative/NEXT_SESSION_PROMPT.md` authorised exactly **S044**, with S045 excluded.
+
+Entry `main` commit: `da2e0065077d6ab56a32aacf5e7fa6dc9871b565`; actual Git tree `8981d793ae8a9c91c107a882616341c554ed03af`. S043 [PR #53](https://github.com/jfairfaxball-348/ellipse-theorem/pull/53) is merged normally, merge commit `da2e006...` with parents `1f0a64bb...` and `4158cf5b...`. Final PR-head Lean [38746165546](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38746165546), governance [38746165553](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38746165553), merged-main Lean [38746491052](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38746491052) and governance [38746490996](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38746490996) all SUCCESS. No entry open PR; rulesets `[]`; branch protection 403 UNKNOWN; historic branches remain. Fresh branch `session/S044-exact-cutoff-cyclic`, normal [PR #54](https://github.com/jfairfaxball-348/ellipse-theorem/pull/54).
+
+Immutable mathematics: [S020](../S020/MATHEMATICS.md) / [S021](../S021/MATHEMATICS.md); `ETSHTS/Targets.lean` SHA `e12f117589b1852e06aa669a405a6dc3ee652549`, `ETSHTS/Definitions.lean` SHA `f5e71b625bdbf40f6c84551dd93f9ce375154519`. All theorem statements and the closed R endpoint preserved, with original exact nearest-two Cartesian-lex rule.
