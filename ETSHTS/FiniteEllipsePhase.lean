@@ -103,12 +103,13 @@ theorem s045_finite_ellipse_ordered_index (a b : ℝ) (S : Finset Point)
       simpa [θ] using (Finset.orderEmbOfFin_mem T hcard i))
   · have hindex :
         (Finset.univ : Finset (Fin S.card)).image (fun i => θ i) = T := by
-      simpa [θ] using (Finset.image_orderEmbOfFin_univ T hcard)
+      apply Finset.coe_injective
+      simpa [θ] using (Finset.range_orderEmbOfFin T hcard)
     calc
       (Finset.univ : Finset (Fin S.card)).image
           (fun i => ellipsePoint a b (θ i)) =
           ((Finset.univ : Finset (Fin S.card)).image (fun i => θ i)).image
-            (ellipsePoint a b) := by simp only [Finset.image_image, Function.comp_apply]
+            (ellipsePoint a b) := by rfl
       _ = T.image (ellipsePoint a b) := by rw [hindex]
       _ = S := himage
 
