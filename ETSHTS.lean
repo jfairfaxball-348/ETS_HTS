@@ -1,4 +1,4 @@
-import ETSHTS.TriangleInteriorExact
+import ETSHTS.ConvexFourSelector
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -165,3 +165,6 @@ import ETSHTS.TriangleInteriorExact
 #print axioms ETSHTS.s042_interior_triangle_all_spokes_plane
 
 #print axioms ETSHTS.s042_exact_interior_four_order
+
+#print axioms ETSHTS.s042_crossing_selector_AC_long
+#print axioms ETSHTS.s042_crossing_selector
