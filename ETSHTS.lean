@@ -1,4 +1,4 @@
-import ETSHTS.TriangleInteriorOrder
+import ETSHTS.TriangleInteriorExact
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -163,3 +163,5 @@ import ETSHTS.TriangleInteriorOrder
 #print axioms ETSHTS.s042_properCross_reverse_second
 #print axioms ETSHTS.s042_noCross_edge_transport
 #print axioms ETSHTS.s042_interior_triangle_all_spokes_plane
+
+#print axioms ETSHTS.s042_exact_interior_four_order
