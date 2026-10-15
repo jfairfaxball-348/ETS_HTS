@@ -196,3 +196,5 @@ import ETSHTS.ConvexFourClassification
 #print axioms ETSHTS.s042_four_order_positive_first
 
 #print axioms ETSHTS.s042_four_points_exact_from_noncollinear
+
+#print axioms ETSHTS.clm0096_exact
