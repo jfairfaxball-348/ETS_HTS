@@ -63,7 +63,7 @@ theorem s047_original_consecutive_hullSide {n : ℕ}
       have hval2 : k.val ≠ j.val := by
         intro he
         exact hkj (Fin.ext he)
-      change j.val = i.val + 1
+      change i.val + 1 < k.val
       omega
     have hjk : θ j < θ k :=
       θ.strictMono (by change j.val < k.val; omega)
