@@ -1,4 +1,4 @@
-import ETSHTS.RationalChord
+import ETSHTS.EligibleSkip
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -70,3 +70,10 @@ import ETSHTS.RationalChord
 #print axioms ETSHTS.s034_chord_horizontal_numerator
 #print axioms ETSHTS.s034_chord_vertical_numerator
 #print axioms ETSHTS.s034_homogeneous_chord_square
+
+#print axioms ETSHTS.s035_eligible_exists_from_average
+#print axioms ETSHTS.s035_eligible_metric_min_exists
+#print axioms ETSHTS.s035_eligible_skip_exceeds_both_neighbours
+#print axioms ETSHTS.s035_forward_short_arc_competitor
+#print axioms ETSHTS.s035_backward_short_arc_competitor
+#print axioms ETSHTS.s035_metric_ear_of_skip_chord_floor

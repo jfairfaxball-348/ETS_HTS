@@ -1,0 +1,18 @@
+S035 ENTRY main=44fd957c2a455e5528251a183afa919a117313d1
+S035 ENTRY actual_tree=c3684a46e17ba1547e13d0a50f766c6443aa3ff1
+S034 authored=5ad8c1f37859c03432c05da2272ceae7ec670634 sole_parent=67e93fc2fc0c3f08228bcddf39c5cfd838e9e0d3
+S034 PR=https://github.com/jfairfaxball-348/ellipse-theorem/pull/40 non_draft=TRUE one_commit=TRUE
+S034 ordinary_merge=44fd957c2a455e5528251a183afa919a117313d1 parents=67e93fc2fc0c3f08228bcddf39c5cfd838e9e0d3;5ad8c1f37859c03432c05da2272ceae7ec670634
+S034 authored_tree=c3684a46e17ba1547e13d0a50f766c6443aa3ff1 equals_merged_tree=TRUE
+S034 PR Lean run=38695408407 job=116290695372 SUCCESS actual logs read
+S034 PR governance run=38695408389 job=116290695364 SUCCESS actual logs read
+S034 merged main Lean run=38695709045 job=116291677536 SUCCESS actual logs read
+S034 merged main governance run=38695709190 job=116291678076 SUCCESS actual logs read
+S034 Lean logs: lake build, lake env lean ETSHTS.lean, exact S034 axiom prints [propext,Classical.choice,Quot.sound], hole scanner SUCCESS
+S034 governance: scaffold PASS, 7 unittest PASS
+S035 entry open PRs=NONE rulesets=[] branch protection=403 UNKNOWN
+S035 local lean/lake=NOT_INSTALLED; local lake build=NOT_RUN; local lake env lean ETSHTS.lean=NOT_RUN
+S035 local python scaffold/unit=NOT_RUN; repository inaccessible by local git/DNS
+S035 new six source proof terms=PENDING_HOSTED_PR_CHECK at authoring; host result must be checked independently before any certification
+S035 exact targets unchanged: CLM0102 verified; CLM0096 CLM0099 CLM0107 CLM0108 open
+S035 verdict=PARTIAL

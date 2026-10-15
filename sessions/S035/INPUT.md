@@ -1,0 +1,3 @@
+# S035 owner invocation
+
+The owner explicitly invoked **S035 — STRICT LEAN FORMALISATION OF THE LOCKED ELLIPSE THEOREM**, pasted in the conversation on 15 October 2026. This S035 invocation itself supplies full authority; S036 is not authorised. Binding terms: S020/S021 mathematics frozen; five exact Targets.lean types immutable; eligible two-gap span < lambda; choose minimal actual Euclidean skip chord among eligible vertices; pursue Lean without alternative-selector research or novel mathematical investigations. The full owner-supplied prompt remains the authoritative session input in the invoking conversation.
