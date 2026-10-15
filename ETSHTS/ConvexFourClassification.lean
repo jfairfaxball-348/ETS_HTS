@@ -169,4 +169,17 @@ theorem s042_four_points_exact_from_noncollinear
     rw [hperm] at horder
     exact horder
 
+/-- Exact unmodified CLM0096: all noncollinear three- and four-site sets,
+with the compulsory two-nearest selection including Cartesian distance ties. -/
+theorem clm0096_exact : CLM0096 := by
+  intro S hthree hfour hno
+  by_cases hcard3 : S.card = 3
+  · exact clm0096_card_three S hcard3
+  · have hcard4 : S.card = 4 := by omega
+    obtain ⟨p, q, r, v, hpq, hpr, hpv, hqr, hqv, hrv, hset⟩ :=
+      Finset.card_eq_four.mp hcard4
+    rw [hset] at hno ⊢
+    exact s042_four_points_exact_from_noncollinear p q r v
+      hno hpq hpr hqr hpv.symm hqv.symm hrv.symm
+
 end ETSHTS
