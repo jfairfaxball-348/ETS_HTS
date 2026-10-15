@@ -1,4 +1,4 @@
-import ETSHTS.HereditaryGeometry
+import ETSHTS.CertificateCases
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -120,3 +120,7 @@ import ETSHTS.HereditaryGeometry
 #print axioms ETSHTS.s041_noThreeCollinear_of_subset
 #print axioms ETSHTS.s041_hullSide_of_subset
 #print axioms ETSHTS.s041_strictConvexPosition_erase
+
+#print axioms ETSHTS.s041_fullEarCertificate_card_ge_three
+#print axioms ETSHTS.s041_fullEarCertificate_iff_ear_deletion
+#print axioms ETSHTS.s041_certificate_four_has_three_site_remainder
