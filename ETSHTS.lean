@@ -12,6 +12,7 @@ import ETSHTS.QuantitativeSkip
 import ETSHTS.CentralChordBand
 import ETSHTS.CentralCutoffIdentity
 import ETSHTS.CentralOriginalSites
+import ETSHTS.ShortArcLifts
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -297,3 +298,6 @@ import ETSHTS.CentralOriginalSites
 #print axioms ETSHTS.s048_selected_skip_le_central_actual_competitor
 
 #print axioms ETSHTS.s048_original_sites_selected_central_band
+
+#print axioms ETSHTS.s048_forward_actual_two_successor_floor
+#print axioms ETSHTS.s048_backward_actual_two_predecessor_floor
