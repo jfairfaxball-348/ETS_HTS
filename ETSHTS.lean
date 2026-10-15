@@ -2,6 +2,7 @@ import ETSHTS.ConvexFourClassification
 import ETSHTS.FiniteEllipsePhase
 import ETSHTS.CyclicEllipsePhase
 import ETSHTS.CyclicEllipseSkip
+import ETSHTS.CyclicEllipseMembership
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -243,3 +244,6 @@ import ETSHTS.CyclicEllipseSkip
 #print axioms ETSHTS.s046_original_closed_ratio_skip_min
 
 #print axioms ETSHTS.s046_actual_sites_closed_ratio_skip_min
+
+#print axioms ETSHTS.s046_indexed_ellipse_site_mem
+#print axioms ETSHTS.s046_indexed_ellipse_sites_injective
