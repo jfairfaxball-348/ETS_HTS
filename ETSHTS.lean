@@ -1,4 +1,4 @@
-import ETSHTS.CertificateCases
+import ETSHTS.CyclicFinite
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -124,3 +124,8 @@ import ETSHTS.CertificateCases
 #print axioms ETSHTS.s041_fullEarCertificate_card_ge_three
 #print axioms ETSHTS.s041_fullEarCertificate_iff_ear_deletion
 #print axioms ETSHTS.s041_certificate_four_has_three_site_remainder
+
+#print axioms ETSHTS.s042_sum_permuted_gap
+#print axioms ETSHTS.s042_two_gap_sum
+#print axioms ETSHTS.s042_two_gap_sum_full_turn
+#print axioms ETSHTS.s042_eligible_metric_min_from_full_turn
