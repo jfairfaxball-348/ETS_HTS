@@ -6,7 +6,7 @@ import ETSHTS.GlobalCount
 These are honest conditional reductions for the ORIGINAL inductive
 FullEarCertificate, CLM0099, CLM0107 and CLM0108. The required uniform
 metric-ear theorem and CLM0099 equivalence remain open; this module does
-not assume either as an axiom or claim a headline theorem is proved.
+not establish either premise or claim a headline theorem is proved.
 -/
 
 noncomputable section
