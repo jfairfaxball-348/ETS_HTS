@@ -18,7 +18,7 @@ theorem s047_ellipsePoint_add_two_pi (a b t : ℝ) :
     ellipsePoint a b (t + 2 * Real.pi) = ellipsePoint a b t := by
   simp [ellipsePoint, Real.cos_add_two_pi, Real.sin_add_two_pi]
 
-theorem s047_ellipsePoint_add_if_two_pi (a b t : ℝ) (P : Prop) :
+theorem s047_ellipsePoint_add_if_two_pi (a b t : ℝ) (P : Prop) [Decidable P] :
     ellipsePoint a b (t + (if P then 2 * Real.pi else 0)) =
       ellipsePoint a b t := by
   classical
