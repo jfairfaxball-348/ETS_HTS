@@ -1,4 +1,4 @@
-import ETSHTS.HullSaturation
+import ETSHTS.TriangleInterior
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -153,3 +153,7 @@ import ETSHTS.HullSaturation
 
 #print axioms ETSHTS.s042_hullSide_present_of_planar_cap
 #print axioms ETSHTS.s042_order_saturates_all_hullSides_of_cap
+
+#print axioms ETSHTS.s042_barycentric_orientation
+#print axioms ETSHTS.s042_barycentric_spoke_no_cross
+#print axioms ETSHTS.s042_barycentric_three_spokes_safe
