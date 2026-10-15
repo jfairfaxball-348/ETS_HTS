@@ -1,4 +1,4 @@
-import ETSHTS.ConvexFourOrder
+import ETSHTS.ConvexFourBarycentric
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -186,3 +186,5 @@ import ETSHTS.ConvexFourOrder
 #print axioms ETSHTS.s042_crossing_four_has_metricEar
 
 #print axioms ETSHTS.s042_crossing_four_exact_order
+
+#print axioms ETSHTS.s042_four_barycentric_orientation
