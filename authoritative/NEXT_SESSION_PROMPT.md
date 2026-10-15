@@ -1,6 +1,6 @@
 # S047 — FUTURE / UNEXECUTED: close the original direct CLM0107 metric-ear theorem
 
-**FUTURE / UNEXECUTED.** A fresh owner invocation of this authoritative file, a linked request, or “run next session” immediately authorises **exactly S047** on https://github.com/jfairfaxball-348/ellipse-theorem, Lean namespace `ETSHTS`. No extra confirmation. This handover does **NOT** authorise execution before that invocation and never authorises S048 automatically.
+**FUTURE / UNEXECUTED.** A new explicit owner invocation of this authoritative file, a linked request, or “run next session” immediately authorises **exactly S047** on https://github.com/jfairfaxball-348/ellipse-theorem, Lean namespace `ETSHTS`. No extra confirmation. This handover does **NOT** authorise execution before that invocation and never authorises S048 automatically.
 
 ## Binding owner strategy: one direct theorem at a time, aggressive broad implementation
 
