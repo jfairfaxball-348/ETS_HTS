@@ -1,0 +1,14 @@
+S036 ENTRY live_main=b866fab9cc79ce1c9c9eb2e98ee6567c8fb4deb1
+S036 ENTRY tree=5f44a8d7581469e10492d351781ec65aaba1ea06
+S035 authored=b88f59feea39a18ae1a210496d0245495a27c47c parent=44fd957c2a455e5528251a183afa919a117313d1 tree=5f44a8d7581469e10492d351781ec65aaba1ea06
+S035 PR=#42 non_draft=TRUE merged=TRUE two_parent_merge=b866fab9cc79ce1c9c9eb2e98ee6567c8fb4deb1 parent1=44fd957c2a455e5528251a183afa919a117313d1 parent2=b88f59feea39a18ae1a210496d0245495a27c47c equal_trees=TRUE
+S035 PR Lean run=38699119802 job=116302736161 SUCCESS logs inspected six axiom prints standard axioms
+S035 PR governance run=38699120088 job=116302737011 SUCCESS logs inspected 7 tests
+S035 merged main Lean run=38699450920 job=116303805097 SUCCESS lake build and lake env lean; six axiom prints [propext,Classical.choice,Quot.sound] hole scan passes
+S035 merged main governance run=38699450956 job=116303808661 SUCCESS scaffold 7 tests
+S036 entry open_prs=NONE rulesets=[] branch_protection=403 UNKNOWN
+S036 local Lean/lake=NOT_INSTALLED; local Git network=UNAVAILABLE; local Lean build=NOT_RUN
+S036 local scaffold/tests=NOT_RUN
+S036 authored central-ratio source=NOT_YET_HOSTED_VALIDATED at creation; must independently check PR and main before upgrading
+S036 exact targets frozen CLM0102 VERIFIED; CLM0096 CLM0099 CLM0107 CLM0108 OPEN
+S036 verdict=PARTIAL

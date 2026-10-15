@@ -1,4 +1,4 @@
-import ETSHTS.EligibleSkip
+import ETSHTS.CentralRatio
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -77,3 +77,9 @@ import ETSHTS.EligibleSkip
 #print axioms ETSHTS.s035_forward_short_arc_competitor
 #print axioms ETSHTS.s035_backward_short_arc_competitor
 #print axioms ETSHTS.s035_metric_ear_of_skip_chord_floor
+
+#print axioms ETSHTS.s036_sin_two_pi_div_five_pos
+#print axioms ETSHTS.s036_closed_ratio_square
+#print axioms ETSHTS.s036_closed_ratio_central_product
+#print axioms ETSHTS.s036_closed_ratio_central_floor
+#print axioms ETSHTS.s036_skip_witness_le_central_floor
