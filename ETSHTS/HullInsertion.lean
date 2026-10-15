@@ -78,8 +78,8 @@ theorem s042_planeEdges_insert_hullSide
   · rcases Finset.mem_insert.mp he₂ with hnew₂ | hold₂
     · have hd : Disjoint (edge p q) (edge p q) := by
         simpa only [hnew₁, hnew₂] using hdisj
-      exact False.elim
-        ((Finset.disjoint_left.mp hd) (by simp [edge]) (by simp [edge]))
+      have hp : p ∈ edge p q := by simp [edge]
+      exact False.elim ((Finset.disjoint_left.mp hd) hp hp)
     · have hside' : hullSide S a b :=
         s042_hullSide_edge_transport hside (heq₁.symm.trans hnew₁)
       have hc : c ∈ S := (hsupport e₂ hold₂) (by rw [heq₂]; simp [edge])
