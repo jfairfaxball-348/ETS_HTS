@@ -6,6 +6,7 @@ import ETSHTS.CyclicEllipseMembership
 import ETSHTS.CyclicEllipseHull
 import ETSHTS.CyclicEllipseIncident
 import ETSHTS.CyclicEllipseOrientation
+import ETSHTS.CyclicEllipseHullSides
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -266,3 +267,6 @@ import ETSHTS.CyclicEllipseOrientation
 #print axioms ETSHTS.s047_orientation_ellipse_sine_identity
 #print axioms ETSHTS.s047_sine_triangle_factor
 #print axioms ETSHTS.s047_ellipse_ordered_orientation_pos
+
+#print axioms ETSHTS.s047_original_consecutive_hullSide
+#print axioms ETSHTS.s047_original_wrap_hullSide
