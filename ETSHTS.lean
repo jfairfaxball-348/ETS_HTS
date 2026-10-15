@@ -1,4 +1,4 @@
-import ETSHTS.EarCounting
+import ETSHTS.GrowCounting
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -98,3 +98,5 @@ import ETSHTS.EarCounting
 
 #print axioms ETSHTS.s039_insert_edges_supported
 #print axioms ETSHTS.s039_fresh_insert_two_edges
+
+#print axioms ETSHTS.s040_grow_support_and_exact_count
