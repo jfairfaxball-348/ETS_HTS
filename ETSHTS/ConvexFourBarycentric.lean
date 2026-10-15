@@ -53,4 +53,49 @@ theorem s042_four_barycentric_orientation
   · change C / D * D = C
     field_simp [hD0]
 
+/-- With exactly one negative barycentric coefficient in this orientation,
+the opposite original seed edge and the new opposite segment cross
+PROPERLY. The witness is explicit, with both parameters strictly inside. -/
+theorem s042_one_negative_barycentric_cross
+    (p q r v : Point) (α β γ : ℝ)
+    (hα : 0 < α) (hβ : 0 < β) (hγ : γ < 0)
+    (hsum : α + β + γ = 1)
+    (hv : v = (α * p.1 + β * q.1 + γ * r.1,
+               α * p.2 + β * q.2 + γ * r.2)) :
+    properCross p q r v := by
+  let den : ℝ := α + β
+  have hden : 1 < den := by
+    dsimp [den]
+    linarith
+  have hdenpos : 0 < den := by linarith
+  have hdenne : den ≠ 0 := ne_of_gt hdenpos
+  have hγ' : γ = 1 - α - β := by linarith
+  have ht0 : 0 < β / den := div_pos hβ hdenpos
+  have ht1 : β / den < 1 :=
+    (div_lt_one hdenpos).2 (by dsimp [den]; linarith)
+  have hs0 : 0 < (1 : ℝ) / den := div_pos (by norm_num) hdenpos
+  have hs1 : (1 : ℝ) / den < 1 := (div_lt_one hdenpos).2 hden
+  let o : Point :=
+    ((1 - β / den) * p.1 + (β / den) * q.1,
+     (1 - β / den) * p.2 + (β / den) * q.2)
+  refine ⟨o, ⟨β / den, ht0, ht1, rfl⟩,
+    ⟨(1 : ℝ) / den, hs0, hs1, ?_⟩⟩
+  apply Prod.ext
+  · change (1 - β / den) * p.1 + β / den * q.1 =
+      (1 - 1 / den) * r.1 + 1 / den * v.1
+    rw [hv]
+    simp only [Prod.fst]
+    rw [hγ']
+    field_simp [hdenne]
+    dsimp [den]
+    ring
+  · change (1 - β / den) * p.2 + β / den * q.2 =
+      (1 - 1 / den) * r.2 + 1 / den * v.2
+    rw [hv]
+    simp only [Prod.snd]
+    rw [hγ']
+    field_simp [hdenne]
+    dsimp [den]
+    ring
+
 end ETSHTS
