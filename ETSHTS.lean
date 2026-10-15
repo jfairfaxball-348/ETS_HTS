@@ -1,5 +1,5 @@
 import ETSHTS.ConvexFourClassification
-import ETSHTS.AngularCutoff
+import ETSHTS.NecessityInduction
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -214,3 +214,5 @@ import ETSHTS.AngularCutoff
 
 #print axioms ETSHTS.s044_closed_ratio_cutoff_exceeds_four_pi_div_five
 #print axioms ETSHTS.s044_closed_ratio_metric_min_from_full_turn
+
+#print axioms ETSHTS.s044_clm0099_of_last_pair_cyclic_forcing
