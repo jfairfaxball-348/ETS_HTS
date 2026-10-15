@@ -86,9 +86,9 @@ theorem s046_original_ellipse_cyclic_gaps
         (s046_clamped_phase θ (k + 1) -
          s046_clamped_phase θ k)) +
         (2 * Real.pi - θ (Fin.last n) + θ 0) = 2 * Real.pi := by
+  cases hcard
   obtain ⟨θ, hb, hS⟩ :=
     s045_finite_ellipse_ordered_index a b S hboundary
-  rw [hcard] at θ hb hS
   refine ⟨θ, hb, hS, ?_, ?_, ?_⟩
   · intro k hk
     exact s046_clamped_adjacent_gap_pos θ k hk
