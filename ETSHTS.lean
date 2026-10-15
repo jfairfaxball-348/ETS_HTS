@@ -3,6 +3,7 @@ import ETSHTS.FiniteEllipsePhase
 import ETSHTS.CyclicEllipsePhase
 import ETSHTS.CyclicEllipseSkip
 import ETSHTS.CyclicEllipseMembership
+import ETSHTS.CyclicEllipseHull
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -247,3 +248,8 @@ import ETSHTS.CyclicEllipseMembership
 
 #print axioms ETSHTS.s046_indexed_ellipse_site_mem
 #print axioms ETSHTS.s046_indexed_ellipse_sites_injective
+
+#print axioms ETSHTS.s047_orientation_reverse_last
+#print axioms ETSHTS.s047_hullSide_at_most_two
+#print axioms ETSHTS.s047_cyclicNeighbours_of_two_hullSides
+#print axioms ETSHTS.s047_hullSide_second_mem_erase
