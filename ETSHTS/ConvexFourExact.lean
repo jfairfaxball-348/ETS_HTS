@@ -100,31 +100,52 @@ theorem s042_crossing_four_has_metricEar
   rcases hchoose with h | h | h | h
   · exact ⟨a, s042_metricEar_of_crossing_A a b c d o hno
       hab hac had hbc hbd hcd hcrossAC hcrossBD h.1 h.2⟩
-  · have hn : noThreeCollinear ({c, d, a, b} : Finset Point) := by
-      simpa [Finset.insert_comm] using hno
+  · have hperm : ({c, d, a, b} : Finset Point) = {a, b, c, d} := by
+      ext x
+      simp only [Finset.mem_insert, Finset.mem_singleton]
+      tauto
+    have hn : noThreeCollinear ({c, d, a, b} : Finset Point) := by
+      rw [hperm]
+      exact hno
     have hear := s042_metricEar_of_crossing_A c d a b o hn
       hcd hac.symm hbc.symm had.symm hbd.symm hab
       (s042_openSegment_reverse hcrossAC)
       (s042_openSegment_reverse hcrossBD)
       (by simpa [s042_chordLength_symm] using h.2)
       (by simpa [s042_chordLength_symm] using h.1)
-    exact ⟨c, by simpa [Finset.insert_comm,
-      Finset.insert_left_comm, Finset.insert_assoc] using hear⟩
-  · have hn : noThreeCollinear ({b, c, d, a} : Finset Point) := by
-      simpa [Finset.insert_comm] using hno
+    have hfinal : metricEar ({a, b, c, d} : Finset Point) c := by
+      rw [← hperm]
+      exact hear
+    exact ⟨c, hfinal⟩
+  · have hperm : ({b, c, d, a} : Finset Point) = {a, b, c, d} := by
+      ext x
+      simp only [Finset.mem_insert, Finset.mem_singleton]
+      tauto
+    have hn : noThreeCollinear ({b, c, d, a} : Finset Point) := by
+      rw [hperm]
+      exact hno
     have hear := s042_metricEar_of_crossing_A b c d a o hn
       hbc hbd hab.symm hcd hac.symm had.symm
       hcrossBD (s042_openSegment_reverse hcrossAC)
       h.2 (by simpa [s042_chordLength_symm] using h.1)
-    exact ⟨b, by simpa [Finset.insert_comm,
-      Finset.insert_left_comm, Finset.insert_assoc] using hear⟩
-  · have hn : noThreeCollinear ({d, a, b, c} : Finset Point) := by
-      simpa [Finset.insert_comm] using hno
+    have hfinal : metricEar ({a, b, c, d} : Finset Point) b := by
+      rw [← hperm]
+      exact hear
+    exact ⟨b, hfinal⟩
+  · have hperm : ({d, a, b, c} : Finset Point) = {a, b, c, d} := by
+      ext x
+      simp only [Finset.mem_insert, Finset.mem_singleton]
+      tauto
+    have hn : noThreeCollinear ({d, a, b, c} : Finset Point) := by
+      rw [hperm]
+      exact hno
     have hear := s042_metricEar_of_crossing_A d a b c o hn
       had.symm hbd.symm hcd.symm hab hac hbc
       (s042_openSegment_reverse hcrossBD) hcrossAC
       h.2 (by simpa [s042_chordLength_symm] using h.1)
-    exact ⟨d, by simpa [Finset.insert_comm,
-      Finset.insert_left_comm, Finset.insert_assoc] using hear⟩
+    have hfinal : metricEar ({a, b, c, d} : Finset Point) d := by
+      rw [← hperm]
+      exact hear
+    exact ⟨d, hfinal⟩
 
 end ETSHTS
