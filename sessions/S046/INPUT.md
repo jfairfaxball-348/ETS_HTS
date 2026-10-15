@@ -1,0 +1,5 @@
+# S046 input — 2026-10-15
+
+Owner explicit “run next session” immediately authorised exactly S046 under the live [authoritative S046 handover](../../authoritative/NEXT_SESSION_PROMPT.md) present at entry. Its single direct target was the original `theorem clm0107_exact : CLM0107`. The owner required **one direct theorem at a time**, broad substantive Lean formalisation, and did not authorise S047.
+
+Pinned entry main `9d7137d7c489e37f71605110a61a021ede840a96`, Git tree `73cf2af23032906d588cebd44b735058c47e2a1e`; S045 original finite phase code and proof coverage, S020 mathematics and S021 hostile reconstruction read. S045 PR #55 genuine two-parent merge and independent final-head/merged-main Lean/governance SUCCESS. Intervening governance PR #56 ordinary two-parent merge, new entry main independently checked. No open PRs at entry, rulesets empty, protection 403 UNKNOWN. Frozen target blob `e12f117589b1852e06aa669a405a6dc3ee652549`; frozen definitions blob `f5e71b625bdbf40f6c84551dd93f9ce375154519`.
