@@ -176,10 +176,41 @@ theorem clm0096_exact : CLM0096 := by
   by_cases hcard3 : S.card = 3
   · exact clm0096_card_three S hcard3
   · have hcard4 : S.card = 4 := by omega
-    obtain ⟨p, q, r, v, hpq, hpr, hpv, hqr, hqv, hrv, hset⟩ :=
-      Finset.card_eq_four.mp hcard4
+    have hnonempty : S.Nonempty := Finset.card_pos.mp (by omega)
+    obtain ⟨v, hv⟩ := hnonempty
+    have hrest3 : (S.erase v).card = 3 := by
+      rw [Finset.card_erase_of_mem hv]
+      omega
+    obtain ⟨p, q, r, hpq, hpr, hqr, hrest⟩ :=
+      Finset.card_eq_three.mp hrest3
+    have hvp : v ≠ p := by
+      intro he
+      have hbad : v ∈ S.erase v := by
+        rw [hrest]
+        simp [he]
+      exact (Finset.not_mem_erase v S) hbad
+    have hvq : v ≠ q := by
+      intro he
+      have hbad : v ∈ S.erase v := by
+        rw [hrest]
+        simp [he]
+      exact (Finset.not_mem_erase v S) hbad
+    have hvr : v ≠ r := by
+      intro he
+      have hbad : v ∈ S.erase v := by
+        rw [hrest]
+        simp [he]
+      exact (Finset.not_mem_erase v S) hbad
+    have hset : S = ({p, q, r, v} : Finset Point) := by
+      calc
+        S = insert v (S.erase v) := (Finset.insert_erase hv).symm
+        _ = insert v ({p, q, r} : Finset Point) := by rw [hrest]
+        _ = ({p, q, r, v} : Finset Point) := by
+          ext x
+          simp only [Finset.mem_insert, Finset.mem_singleton]
+          tauto
     rw [hset] at hno ⊢
     exact s042_four_points_exact_from_noncollinear p q r v
-      hno hpq hpr hqr hpv.symm hqv.symm hrv.symm
+      hno hpq hpr hqr hvp hvq hvr
 
 end ETSHTS
