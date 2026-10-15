@@ -44,7 +44,7 @@ theorem s041_triangleEdges_supported (p q r : Point) :
     ∀ e ∈ triangleEdges p q r, e ⊆ ([p, q, r] : List Point).toFinset := by
   intro e he x hx
   simp only [triangleEdges, Finset.mem_insert, Finset.mem_singleton] at he
-  rcases he with rfl | rfl | rfl <;> simp_all [edge]
+  rcases he with rfl | rfl | rfl <;> simp [edge] at hx ⊢ <;> tauto
 
 /-- Any exact retained-nearest-two planar order on n sites has exactly 2n-3
 edges, and EVERY final edge joins vertices of the original site set.
@@ -67,6 +67,7 @@ theorem s041_planeNearestTwoOrder_exact_edge_count
     rw [← hcover]
     rw [List.toFinset_card_of_nodup hnodup]
     simp
+    omega
   refine ⟨final, hplane, ?_, ?_⟩
   · intro e he
     rw [← hcover]
