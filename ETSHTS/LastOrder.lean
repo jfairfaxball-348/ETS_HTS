@@ -39,7 +39,7 @@ theorem s043_order_peel_explicit_last
 /-- Elementary last-element decomposition, independent of a generic
 list API naming convention; used for arbitrary nontrivial order tails. -/
 theorem s043_nonempty_list_has_last (xs : List Point) (hne : xs ≠ []) :
-    ∃ (prefix : List Point) (v : Point), xs = prefix ++ [v] := by
+    ∃ (pref : List Point) (v : Point), xs = pref ++ [v] := by
   induction xs with
   | nil =>
       exact (hne rfl).elim
