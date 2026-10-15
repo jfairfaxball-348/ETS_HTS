@@ -1,4 +1,4 @@
-import ETSHTS.CertificateCases
+import ETSHTS.TriangleInteriorExact
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -124,3 +124,44 @@ import ETSHTS.CertificateCases
 #print axioms ETSHTS.s041_fullEarCertificate_card_ge_three
 #print axioms ETSHTS.s041_fullEarCertificate_iff_ear_deletion
 #print axioms ETSHTS.s041_certificate_four_has_three_site_remainder
+
+#print axioms ETSHTS.s042_sum_permuted_gap
+#print axioms ETSHTS.s042_two_gap_sum
+#print axioms ETSHTS.s042_two_gap_sum_full_turn
+#print axioms ETSHTS.s042_eligible_metric_min_from_full_turn
+
+#print axioms ETSHTS.s042_orientation_affine_segment
+#print axioms ETSHTS.s042_orientation_openSegment_zero
+#print axioms ETSHTS.s042_no_properCross_of_same_strict_side
+#print axioms ETSHTS.s042_hullSide_safe_against_disjoint_chord
+
+#print axioms ETSHTS.s042_orientation_swap
+#print axioms ETSHTS.s042_properCross_swap
+#print axioms ETSHTS.s042_hullSide_swap
+#print axioms ETSHTS.s042_edge_eq_pair_or_swap
+#print axioms ETSHTS.s042_hullSide_edge_transport
+#print axioms ETSHTS.s042_planeEdges_insert_hullSide
+#print axioms ETSHTS.s042_planeEdges_insert_both_hullSides
+
+#print axioms ETSHTS.s042_grow_append_last
+#print axioms ETSHTS.s042_planeOrder_extend_metricEar
+#print axioms ETSHTS.s042_fullEarCertificate_implies_planeNearestTwoOrder
+
+#print axioms ETSHTS.s042_planeOrder_of_four_tail_and_ge5_ears
+#print axioms ETSHTS.s042_clm0107_of_clm0096_and_ge5_ears
+#print axioms ETSHTS.s042_clm0108_of_clm0096_and_ge5_ears
+
+#print axioms ETSHTS.s042_hullSide_present_of_planar_cap
+#print axioms ETSHTS.s042_order_saturates_all_hullSides_of_cap
+
+#print axioms ETSHTS.s042_barycentric_orientation
+#print axioms ETSHTS.s042_barycentric_spoke_no_cross
+#print axioms ETSHTS.s042_barycentric_three_spokes_safe
+
+#print axioms ETSHTS.s042_openSegment_reverse
+#print axioms ETSHTS.s042_properCross_reverse_first
+#print axioms ETSHTS.s042_properCross_reverse_second
+#print axioms ETSHTS.s042_noCross_edge_transport
+#print axioms ETSHTS.s042_interior_triangle_all_spokes_plane
+
+#print axioms ETSHTS.s042_exact_interior_four_order
