@@ -1,0 +1,3 @@
+# S041 — PLAN
+
+Dependency map: CLM0096 needs four-site interior/convex planar insertion geometry (triple proved). CLM0099 needs global 2n−3 count, hull saturation and metric-ear last-removal, followed by converse reinsertion (three-site iff proved). CLM0107 needs finite circular parameterization, eligibility and central competitor bounds, recursive ears and CLM0099. CLM0108 follows CLM0107 through proved 101/100 ratio. CLM0102 is already fully verified. First establish precise global counting/support; then close ellipse noncollinearity or another exact geometric bridge; work multiple passes if CI reveals errors. Preserve targets unchanged; no new mathematical research.

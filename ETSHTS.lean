@@ -1,4 +1,4 @@
-import ETSHTS.GrowCounting
+import ETSHTS.CertificateCases
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -100,3 +100,27 @@ import ETSHTS.GrowCounting
 #print axioms ETSHTS.s039_fresh_insert_two_edges
 
 #print axioms ETSHTS.s040_grow_support_and_exact_count
+
+#print axioms ETSHTS.s041_triangleEdges_card
+#print axioms ETSHTS.s041_triangleEdges_supported
+#print axioms ETSHTS.s041_planeNearestTwoOrder_exact_edge_count
+
+#print axioms ETSHTS.s041_uniform_metricEar_gives_certificate
+#print axioms ETSHTS.s041_ellipse_full_certificate_of_uniform_ears
+#print axioms ETSHTS.s041_clm0107_of_clm0099_and_uniform_ears
+#print axioms ETSHTS.s041_clm0108_of_clm0099_and_uniform_ears
+
+#print axioms ETSHTS.s041_orientation_zero_affine
+#print axioms ETSHTS.s041_affine_parameter_distinct
+#print axioms ETSHTS.s041_no_three_exposed_on_affine_line
+#print axioms ETSHTS.s041_strictConvexPosition_noThreeCollinear
+#print axioms ETSHTS.s041_ellipse_noThreeCollinear
+
+#print axioms ETSHTS.s041_strictConvexPosition_of_subset
+#print axioms ETSHTS.s041_noThreeCollinear_of_subset
+#print axioms ETSHTS.s041_hullSide_of_subset
+#print axioms ETSHTS.s041_strictConvexPosition_erase
+
+#print axioms ETSHTS.s041_fullEarCertificate_card_ge_three
+#print axioms ETSHTS.s041_fullEarCertificate_iff_ear_deletion
+#print axioms ETSHTS.s041_certificate_four_has_three_site_remainder
