@@ -1,4 +1,4 @@
-import ETSHTS.EarInduction
+import ETSHTS.NoThreeCollinear
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -109,3 +109,9 @@ import ETSHTS.EarInduction
 #print axioms ETSHTS.s041_ellipse_full_certificate_of_uniform_ears
 #print axioms ETSHTS.s041_clm0107_of_clm0099_and_uniform_ears
 #print axioms ETSHTS.s041_clm0108_of_clm0099_and_uniform_ears
+
+#print axioms ETSHTS.s041_orientation_zero_affine
+#print axioms ETSHTS.s041_affine_parameter_distinct
+#print axioms ETSHTS.s041_no_three_exposed_on_affine_line
+#print axioms ETSHTS.s041_strictConvexPosition_noThreeCollinear
+#print axioms ETSHTS.s041_ellipse_noThreeCollinear
