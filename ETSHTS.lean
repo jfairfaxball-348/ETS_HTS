@@ -1,4 +1,4 @@
-import ETSHTS.EllipseConvex
+import ETSHTS.EarFramework
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -88,3 +88,10 @@ import ETSHTS.EllipseConvex
 #print axioms ETSHTS.s037_weighted_sqDist_pos
 #print axioms ETSHTS.s037_ellipse_strict_support
 #print axioms ETSHTS.s037_ellipse_strictConvexPosition
+
+#print axioms ETSHTS.s038_strictConvexPosition_no_openSegment
+#print axioms ETSHTS.s038_ellipse_no_boundary_strictly_between
+#print axioms ETSHTS.s038_grow_retains_initial_edges
+#print axioms ETSHTS.s038_planeEdges_of_subset
+#print axioms ETSHTS.s038_grow_planar_initial_edges
+#print axioms ETSHTS.s038_card_three_plane_iff_fullEarCertificate

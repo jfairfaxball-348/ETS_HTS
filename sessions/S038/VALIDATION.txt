@@ -1,0 +1,1 @@
+S038 preauthoring environment: lean NOT_INSTALLED; lake NOT_INSTALLED; local Lean compilation NOT_RUN; local Python governance from checkout NOT_RUN (no repo checkout/network). S037 PR and merged-main CI SUCCESS as independently inspected. S038 new source requires independent hosted PR checks; this note does not pre-certify it.
