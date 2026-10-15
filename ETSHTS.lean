@@ -1,4 +1,4 @@
-import ETSHTS.TriangleInterior
+import ETSHTS.TriangleInteriorOrder
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -157,3 +157,9 @@ import ETSHTS.TriangleInterior
 #print axioms ETSHTS.s042_barycentric_orientation
 #print axioms ETSHTS.s042_barycentric_spoke_no_cross
 #print axioms ETSHTS.s042_barycentric_three_spokes_safe
+
+#print axioms ETSHTS.s042_openSegment_reverse
+#print axioms ETSHTS.s042_properCross_reverse_first
+#print axioms ETSHTS.s042_properCross_reverse_second
+#print axioms ETSHTS.s042_noCross_edge_transport
+#print axioms ETSHTS.s042_interior_triangle_all_spokes_plane
