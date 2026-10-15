@@ -1,4 +1,4 @@
-import ETSHTS.ConvexFourClassification
+import ETSHTS.LastArrival
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -198,3 +198,7 @@ import ETSHTS.ConvexFourClassification
 #print axioms ETSHTS.s042_four_points_exact_from_noncollinear
 
 #print axioms ETSHTS.clm0096_exact
+
+#print axioms ETSHTS.s043_grow_extract_last
+#print axioms ETSHTS.s043_grow_last_prefix_planar
+#print axioms ETSHTS.s043_grow_last_incident_edges
