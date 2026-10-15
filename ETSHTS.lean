@@ -1,4 +1,4 @@
-import ETSHTS.CyclicFinite
+import ETSHTS.HullShield
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -129,3 +129,8 @@ import ETSHTS.CyclicFinite
 #print axioms ETSHTS.s042_two_gap_sum
 #print axioms ETSHTS.s042_two_gap_sum_full_turn
 #print axioms ETSHTS.s042_eligible_metric_min_from_full_turn
+
+#print axioms ETSHTS.s042_orientation_affine_segment
+#print axioms ETSHTS.s042_orientation_openSegment_zero
+#print axioms ETSHTS.s042_no_properCross_of_same_strict_side
+#print axioms ETSHTS.s042_hullSide_safe_against_disjoint_chord
