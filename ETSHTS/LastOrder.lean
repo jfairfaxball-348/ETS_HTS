@@ -89,7 +89,17 @@ theorem s043_planeOrder_has_last_ranked_predecessors
     simp [List.mem_append, or_left_comm, or_comm, or_assoc]
   have hpref : (([p, q, r] ++ xs).toFinset) = S.erase v := by
     rw [hset]
-    exact (Finset.erase_eq_of_not_mem hnot).symm
+    ext x
+    simp only [Finset.mem_erase, Finset.mem_insert]
+    constructor
+    · intro hx
+      refine ⟨?_, Or.inr hx⟩
+      intro he
+      subst x
+      exact hnot hx
+    · rintro ⟨hne, hv | hx⟩
+      · exact (hne hv).elim
+      · exact hx
   have hv : v ∈ S := by
     rw [hset]
     simp
