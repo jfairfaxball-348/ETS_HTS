@@ -1,4 +1,4 @@
-import ETSHTS.GrowCounting
+import ETSHTS.GlobalCount
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -100,3 +100,7 @@ import ETSHTS.GrowCounting
 #print axioms ETSHTS.s039_fresh_insert_two_edges
 
 #print axioms ETSHTS.s040_grow_support_and_exact_count
+
+#print axioms ETSHTS.s041_triangleEdges_card
+#print axioms ETSHTS.s041_triangleEdges_supported
+#print axioms ETSHTS.s041_planeNearestTwoOrder_exact_edge_count
