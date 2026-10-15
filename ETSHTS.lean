@@ -1,4 +1,4 @@
-import ETSHTS.NoThreeCollinear
+import ETSHTS.HereditaryGeometry
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -115,3 +115,8 @@ import ETSHTS.NoThreeCollinear
 #print axioms ETSHTS.s041_no_three_exposed_on_affine_line
 #print axioms ETSHTS.s041_strictConvexPosition_noThreeCollinear
 #print axioms ETSHTS.s041_ellipse_noThreeCollinear
+
+#print axioms ETSHTS.s041_strictConvexPosition_of_subset
+#print axioms ETSHTS.s041_noThreeCollinear_of_subset
+#print axioms ETSHTS.s041_hullSide_of_subset
+#print axioms ETSHTS.s041_strictConvexPosition_erase
