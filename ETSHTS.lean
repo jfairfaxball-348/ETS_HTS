@@ -9,6 +9,7 @@ import ETSHTS.CyclicEllipseOrientation
 import ETSHTS.CyclicEllipseHullSides
 import ETSHTS.CyclicEllipseNeighbourBridge
 import ETSHTS.QuantitativeSkip
+import ETSHTS.CentralChordBand
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -283,3 +284,7 @@ import ETSHTS.QuantitativeSkip
 #print axioms ETSHTS.s048_small_eligible_span
 #print axioms ETSHTS.s048_selected_skip_chord_sq_upper
 #print axioms ETSHTS.s048_selected_skip_below_closed_floor_sq
+
+#print axioms ETSHTS.s048_middle_band_sine_lower
+#print axioms ETSHTS.s048_lambda_mem_zero_pi
+#print axioms ETSHTS.s048_central_actual_sqDist_sin_lower
