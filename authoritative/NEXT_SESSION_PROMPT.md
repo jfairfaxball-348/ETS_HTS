@@ -1,6 +1,6 @@
 # S045 — FUTURE / UNEXECUTED: finish original exact ellipse theorem Lean formalisation
 
-**FUTURE / UNEXECUTED.** An owner instruction “Run next session”, this prompt's link, or this prompt pasted with an execution request **immediately authorises exactly S045**; no second confirmation. Publishing this handover **does not execute S045**, and S045 never silently executes S046. Repository https://github.com/jfairfaxball-348/ellipse-theorem ; namespace `ETSHTS`.
+**FUTURE / UNEXECUTED.** A new explicit owner invocation, including an owner instruction “Run next session”, this prompt's link, or this prompt pasted with an execution request **immediately authorises exactly S045**; no second confirmation. Publishing this handover **does not execute S045**, and S045 never silently executes S046. Repository https://github.com/jfairfaxball-348/ellipse-theorem ; namespace `ETSHTS`.
 
 ## Binding mathematics, no substitutions
 
