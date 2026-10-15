@@ -1,6 +1,6 @@
 # S043 — FUTURE / UNEXECUTED: finish ALL exact ellipse formalisation blockers, with compiler-driven multi-pass proof work
 
-**FUTURE / UNEXECUTED.** A new explicit owner request such as “run next session” or the canonical prompt link authorises S043 immediately; no redundant confirmation. A prompt file's mere existence does not authorise S043, and an S043 invocation does not authorise S044.
+**FUTURE / UNEXECUTED.** A new explicit owner invocation, namely a request such as “run next session” or the canonical prompt link authorises S043 immediately; no redundant confirmation. A prompt file's mere existence does not authorise S043, and an S043 invocation does not authorise S044.
 
 Repository: https://github.com/jfairfaxball-348/ellipse-theorem. Lean namespace: `ETSHTS`.
 
@@ -12,9 +12,9 @@ The mathematics is locked. Read `sessions/S020/MATHEMATICS.md`, `sessions/S021/M
 
 ## Mandatory live entry
 
-Pin fresh main SHA and tree and inspect the real last S042 PR #51 and merge status, authored commits, both separate PR checks, both separate merged-main checks, axiom audit lines, open branches/PRs, rulesets and branch-protection response (403=UNKNOWN). Do not infer success from S042's premerge closeout. Identify exact source versions and imported files. Confirm that `ETSHTS.lean` imports the final S042 modules, including `TriangleInteriorOrder.lean` and `TriangleInteriorExact.lean` if they compile; if last CI rejected them, reconcile exact source and proof coverage before starting. Do not edit `Targets.lean` or `Definitions.lean`.
+Pin fresh main SHA and tree and inspect the real last S042 PR #51 and merge status, authored commits, both separate PR checks, both separate merged-main checks, axiom audit lines, open branches/PRs, rulesets and branch-protection response (403=UNKNOWN). Do not infer success from S042's premerge closeout. Identify exact source versions and imported files. Confirm that `ETSHTS.lean` imports the final S042 modules, including `TriangleInteriorOrder.lean` and `TriangleInteriorExact.lean` which have now compiled successfully; independently reconfirm those live CI results before relying on them. Do not edit `Targets.lean` or `Definitions.lean`.
 
-S042 has delivered (subject to final CI confirmation) actual original `Grow` last insertion, true planar reverse metric-ear insertion, the **full certificate => plane order** direction of CLM0099, exact four-site-tail induction for n≥5 ears, finite two-gap metric minimisation, hull-side crossing exclusion and unconditional addition of supporting hull sides, hull saturation conditional on an independent planar cap, and triangle-interior orientation/spoke safety. Read `sessions/S042/PROOF_COVERAGE.md` and inspect the Lean signatures rather than paraphrasing their assumptions away. S041 supplied exact supported 2n−3 edge count and strict convex/no-three-collinear/hereditary geometry. Earlier CLM0102, strict ellipse short-arc extension, closed ratio central-floor, 101/100 ≤ R already kernel proved.
+S042 has delivered (confirmed by PR Lean 38730552465 / governance 38730552548) actual original `Grow` last insertion, true planar reverse metric-ear insertion, the **full certificate => plane order** direction of CLM0099, exact four-site-tail induction for n≥5 ears, finite two-gap metric minimisation, hull-side crossing exclusion and unconditional addition of supporting hull sides, hull saturation conditional on an independent planar cap, and triangle-interior orientation/spoke safety. Read `sessions/S042/PROOF_COVERAGE.md` and inspect the Lean signatures rather than paraphrasing their assumptions away. S041 supplied exact supported 2n−3 edge count and strict convex/no-three-collinear/hereditary geometry. Earlier CLM0102, strict ellipse short-arc extension, closed ratio central-floor, 101/100 ≤ R already kernel proved.
 
 ## Four integrated proof workstreams; pursue actual closure, not new 'requirements-only' documentation
 

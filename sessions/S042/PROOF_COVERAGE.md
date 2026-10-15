@@ -2,7 +2,7 @@
 
 ## Independent verified compiler evidence
 
-The S042 branch `dfc74d43a156fdaa36f21ba913153a5efbe2b2c9` passed [Lean PR CI 38729502266](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38729502266) and [governance PR CI 38729502281](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38729502281). Root `ETSHTS.lean` imports the actual definitions and prints kernel dependencies. The original `CLM0102` had already passed earlier independent CI; it is unchanged.
+The S042 branch `07b498327be710bc36943c21353aefb14db2c5fa` passed [Lean PR CI 38730552465](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38730552465) and [governance PR CI 38730552548](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38730552548). Root `ETSHTS.lean` imports the actual definitions and prints kernel dependencies. The original `CLM0102` had already passed earlier independent CI; it is unchanged.
 
 Verified S042 through the cited commit:
 
@@ -14,13 +14,13 @@ Verified S042 through the cited commit:
 - `HullSaturation.lean`: `s042_hullSide_present_of_planar_cap`, `s042_order_saturates_all_hullSides_of_cap`. This isolates the universal supported planar graph upper bound (2n−3) still missing for CLM0099 necessity. It does **not** assert that bound without proof.
 - `TriangleInterior.lean`: barycentric signed orientation and all three interior spokes avoiding their respective opposite triangle side for positive coefficients. Valid geometric progress toward the interior case of CLM0096.
 
-`TriangleInteriorOrder.lean` and `TriangleInteriorExact.lean` are an additional attempt to compile the complete six-edge interior wheel and a four-site exact compulsory insertion with lex ties. Their final CI is to be checked after this document's initial drafting. Until independently green, label only SOURCE_PENDING_CI; if necessary repair or remove failing source before the merge. Do not count those claims as verified here.
+**Also kernel verified:** `TriangleInteriorOrder.lean` proves segment endpoint reversal transport and `s042_interior_triangle_all_spokes_plane` for every positive-barycentric strict interior point; `TriangleInteriorExact.lean` proves `s042_exact_interior_four_order` using the genuine compulsory Euclidean-plus-Cartesian-lex nearest pair. [Lean PR CI 38730552465](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38730552465) prints the exact standard dependency list `[propext, Classical.choice, Quot.sound]` for both. This **completes the strictly interior fourth-site geometry subcase** under explicit barycentric coefficients, but does not finish arbitrary CLM0096 until convex quadrilateral classification and the finite-set case split are formalised.
 
 ## Unmodified exact target status
 
 | Name | Final status at this archive's initial drafting | Exact remaining obstruction |
 | --- | --- | --- |
-| CLM0096 | OPEN | Complete all-four classification: convex quadrilateral case and all exact lex tie cases; strict interior case needs final six-edge wheel proof/CI and general finite S case split |
+| CLM0096 | OPEN | Complete all-four classification: convex quadrilateral case and all exact lex tie cases; strict interior positive-barycentric fourth case VERIFIED; convex quadrilateral and exhaustive finite S case split still missing |
 | CLM0099 | OPEN, SUFFICIENCY VERIFIED | Necessity needs every missing hull side saturated by an independent planar outerplanar cap, then force last inserted vertex to have its two cyclic neighbours as exact nearest pair, recurse on original Grow graph |
 | CLM0102 | VERIFIED | None; keep exact declaration unchanged |
 | CLM0107 | OPEN | Construct indexed cyclic ellipse angles/gaps from arbitrary Finset; prove `4π/5<lambda`, eligible skip metric floor and all forward/central/backward competitor inequalities for size≥5, including closed ratio equality; apply exact S042 four-tail using completed CLM0096 |
