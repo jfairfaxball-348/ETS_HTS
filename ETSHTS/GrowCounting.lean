@@ -48,7 +48,11 @@ theorem s040_grow_support_and_exact_count
       have hstep :
           ∀ e ∈ G ∪ {edge v u, edge v w},
             e ⊆ (previous ++ [v]).toFinset := by
-        simpa using (s039_insert_edges_supported hnear hG)
+        intro e he x hx
+        have hx' := s039_insert_edges_supported hnear hG e he hx
+        rcases Finset.mem_insert.mp hx' with hxv | hxprev
+        · simp [hxv]
+        · simp [hxprev]
       obtain ⟨hfinal, hcount⟩ := ih hnrec hstep
       constructor
       · intro e he
