@@ -30,7 +30,9 @@ theorem s041_orientation_zero_affine (p q r : Point)
       dsimp [t]
       field_simp [hd]
       nlinarith [hzero]
-  · have hpeq : p.1 = q.1 := not_ne.mp hx
+  · have hpeq : p.1 = q.1 := by
+      by_contra h
+      exact hx h
     have hy : p.2 ≠ q.2 := by
       intro h
       exact hpq (Prod.ext hpeq h)
