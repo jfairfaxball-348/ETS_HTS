@@ -3,6 +3,11 @@ import ETSHTS.FiniteEllipsePhase
 import ETSHTS.CyclicEllipsePhase
 import ETSHTS.CyclicEllipseSkip
 import ETSHTS.CyclicEllipseMembership
+import ETSHTS.CyclicEllipseHull
+import ETSHTS.CyclicEllipseIncident
+import ETSHTS.CyclicEllipseOrientation
+import ETSHTS.CyclicEllipseHullSides
+import ETSHTS.CyclicEllipseNeighbourBridge
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -247,3 +252,27 @@ import ETSHTS.CyclicEllipseMembership
 
 #print axioms ETSHTS.s046_indexed_ellipse_site_mem
 #print axioms ETSHTS.s046_indexed_ellipse_sites_injective
+
+#print axioms ETSHTS.s047_orientation_reverse_last
+#print axioms ETSHTS.s047_hullSide_at_most_two
+#print axioms ETSHTS.s047_cyclicNeighbours_of_two_hullSides
+#print axioms ETSHTS.s047_hullSide_second_mem_erase
+
+#print axioms ETSHTS.s047_ellipsePoint_add_two_pi
+#print axioms ETSHTS.s047_mid_lift_gap
+#print axioms ETSHTS.s047_right_lift_gap
+#print axioms ETSHTS.s047_mid_lift_site
+#print axioms ETSHTS.s047_right_lift_site
+#print axioms ETSHTS.s047_eligible_cyclic_incident_lt_skip
+
+#print axioms ETSHTS.s047_orientation_ellipse_sine_identity
+#print axioms ETSHTS.s047_sine_triangle_factor
+#print axioms ETSHTS.s047_ellipse_ordered_orientation_pos
+
+#print axioms ETSHTS.s047_original_consecutive_hullSide
+#print axioms ETSHTS.s047_original_wrap_hullSide
+
+#print axioms ETSHTS.s047_original_cyclic_hullSide
+#print axioms ETSHTS.s047_eligible_true_neighbours_and_strict_incidents
+
+#print axioms ETSHTS.s047_actual_sites_min_skip_cyclic_neighbours
