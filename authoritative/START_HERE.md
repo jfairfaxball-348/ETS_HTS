@@ -19,3 +19,7 @@ S032 merged `eb0ce2def5cb1d7fa365370aa34f77eb58c12bc5`, tree `64f0f460abb5e84d5c
 ## S034 mathematical continuation
 
 S033 [PR #39](https://github.com/jfairfaxball-348/ellipse-theorem/pull/39) independently passed PR Lean/governance and merged-main Lean/governance; new S033 exact polynomial distance statements are now certified with standard Lean axioms, not the paper cyclic arctan argument. S034 adds a homogeneous rational ellipse chord formula and second exact rational five-point obstruction to the 'arbitrary endpoint of shortest adjacent edge' selector. The proposed Euclidean minimax selector remains unproved. Review [S034 mathematics](../sessions/S034/MATHEMATICS.md) and [S034 Lean source](../ETSHTS/RationalChord.lean) (new S034 CI pending). CLM0102 remains verified; all other four exact CLMs remain open. [S035 future prompt](NEXT_SESSION_PROMPT.md) requires fresh explicit owner invocation.
+
+## S035 strict frozen-proof correction
+
+Owner's S035 invocation supersedes any S034 handover invitation to investigate a different selector. The S020/S021 proof is locked. S035's [original-selector sublemmas](../ETSHTS/EligibleSkip.lean) and [formalisation report](../sessions/S035/FORMALISATION.md) target the **eligible Euclidean skip-chord minimum**, not angular/minimax/shortest-edge alternatives. Exact CLM0102 was previously certified; four other exact targets are open. New S035 source requires independent hosted CI. [S036 FUTURE](NEXT_SESSION_PROMPT.md) continues strictly the same original proof.

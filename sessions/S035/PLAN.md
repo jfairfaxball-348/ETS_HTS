@@ -1,0 +1,3 @@
+# S035 plan — strict frozen argument
+
+1. Verify live S034 authored/merge tree, refs, PR and both hosted check classes, including actual compiler/axiom output. 2. Preserve S020/S021 proof and exact Targets.lean unchanged. 3. Prove reusable eligible skip-chord selector obligations in a dedicated Lean module; no experiments or alternative selector. 4. Register precise uncovered four-point geometry, full ear iff, cyclic parameterisation, central floor, recursion and corollary dependencies. 5. One commit/PR/ordinary merge only if separate Lean and governance checks pass; verify fresh main and hosted checks. 6. Prepare S036 prompt, no S036 execution.
