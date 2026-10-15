@@ -80,11 +80,11 @@ theorem s042_interior_triangle_all_spokes_plane
   intro e₁ he₁ e₂ he₂ hdisj a b c d heq₁ heq₂
   simp only [triangleEdges, Finset.mem_union,
     Finset.mem_insert, Finset.mem_singleton] at he₁ he₂
-  rcases he₁ with h₁ | h₁ | h₁ | h₁ | h₁ | h₁ <;>
-    rcases he₂ with h₂ | h₂ | h₂ | h₂ | h₂ | h₂
+  rcases he₁ with (h₁ | h₁ | h₁) | (h₁ | h₁ | h₁) <;>
+    rcases he₂ with (h₂ | h₂ | h₂) | (h₂ | h₂ | h₂)
   all_goals
     first
-    | (subst e₁; subst e₂; simp [edge, Finset.disjoint_left] at hdisj)
+    | (subst e₁; subst e₂; simp [edge, Finset.disjoint_left] at hdisj; done)
     | exact s042_noCross_edge_transport hqr hvp hs₁'
         (heq₁.symm.trans h₁) (heq₂.symm.trans h₂)
     | exact s042_noCross_edge_transport hvp hqr hs₁
