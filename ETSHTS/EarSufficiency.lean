@@ -63,7 +63,7 @@ theorem s042_planeOrder_extend_metricEar
     exact (Finset.not_mem_erase v S) hvrest
   have hnodup' : ([p, q, r] ++ (rest ++ [v])).Nodup := by
     have hn : (([p, q, r] ++ rest) ++ [v]).Nodup := by
-      simp only [List.nodup_append]
+      apply (List.nodup_append).2
       refine ⟨hnodup, by simp, ?_⟩
       simpa [List.disjoint_singleton] using hnot
     simpa [List.append_assoc] using hn
