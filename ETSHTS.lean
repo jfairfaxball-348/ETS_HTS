@@ -1,4 +1,4 @@
-import ETSHTS.TriangleInteriorExact
+import ETSHTS.ConvexFourClassification
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -165,3 +165,36 @@ import ETSHTS.TriangleInteriorExact
 #print axioms ETSHTS.s042_interior_triangle_all_spokes_plane
 
 #print axioms ETSHTS.s042_exact_interior_four_order
+
+#print axioms ETSHTS.s042_crossing_selector_AC_long
+#print axioms ETSHTS.s042_crossing_selector
+
+#print axioms ETSHTS.s042_chordLength_sq
+#print axioms ETSHTS.s042_strict_chord_triangle
+
+#print axioms ETSHTS.s042_chord_segment_add
+#print axioms ETSHTS.s042_orientation_second_segment_ne
+#print axioms ETSHTS.s042_crossing_opposite_path_strict
+#print axioms ETSHTS.s042_crossing_diagonals_choose_strict_ear
+
+#print axioms ETSHTS.s042_hullSide_first_of_crossing
+#print axioms ETSHTS.s042_four_hullSides_of_crossing
+
+#print axioms ETSHTS.s042_crossing_diagonal_not_hullSide
+#print axioms ETSHTS.s042_chordLength_lt_sqDist
+#print axioms ETSHTS.s042_metricEar_of_crossing_A
+#print axioms ETSHTS.s042_crossing_four_has_metricEar
+
+#print axioms ETSHTS.s042_crossing_four_exact_order
+
+#print axioms ETSHTS.s042_four_barycentric_orientation
+
+#print axioms ETSHTS.s042_one_negative_barycentric_cross
+
+#print axioms ETSHTS.s042_two_negative_barycentric_interior
+
+#print axioms ETSHTS.s042_four_order_positive_first
+
+#print axioms ETSHTS.s042_four_points_exact_from_noncollinear
+
+#print axioms ETSHTS.clm0096_exact
