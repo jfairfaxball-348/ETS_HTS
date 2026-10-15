@@ -1,0 +1,88 @@
+import ETSHTS.ConvexFourBarycentric
+
+/-!
+# S042 continuation: four-point sign-pattern classification
+
+These cases use the exact signed-area barycentric representation, positive
+interior spoke order, and strictly crossing-diagonal metric-ear order.
+All nearest-two choices are the original compulsory priority choices.
+-/
+
+noncomputable section
+namespace ETSHTS
+
+/-- All four sign patterns with the first barycentric weight positive
+give an original noncrossing order, including exact nearest-distance ties.
+Two negative weights produce an interior *old* site; one negative weight
+produces a proper crossing of the opposite diagonal pair. -/
+theorem s042_four_order_positive_first
+    (p q r v : Point) (α β γ : ℝ)
+    (hno : noThreeCollinear ({p, q, r, v} : Finset Point))
+    (hpq : p ≠ q) (hpr : p ≠ r) (hqr : q ≠ r)
+    (hvp : v ≠ p) (hvq : v ≠ q) (hvr : v ≠ r)
+    (hα : 0 < α) (hβne : β ≠ 0) (hγne : γ ≠ 0)
+    (hsum : α + β + γ = 1)
+    (hv : v = (α * p.1 + β * q.1 + γ * r.1,
+               α * p.2 + β * q.2 + γ * r.2)) :
+    planeNearestTwoOrder ({p, q, r, v} : Finset Point) := by
+  rcases lt_trichotomy β 0 with hβneg | hβzero | hβpos
+  · rcases lt_trichotomy γ 0 with hγneg | hγzero | hγpos
+    · obtain ⟨x, y, z, hx, hy, hz, hxyz, hp⟩ :=
+        s042_two_negative_barycentric_interior p q r v
+          α β γ hα hβneg hγneg hsum hv
+      have horder : planeNearestTwoOrder ({q, r, v, p} : Finset Point) :=
+        s042_exact_interior_four_order q r v p x y z
+          hqr hvr.symm hvq hpq hpr hvp.symm
+          hx hy hz hxyz hp
+          (hno r (by simp) v (by simp) q (by simp)
+            hvr.symm hqr.symm hvq)
+          (hno v (by simp) q (by simp) r (by simp)
+            hvq hvr hqr)
+          (hno q (by simp) r (by simp) v (by simp)
+            hqr hvq.symm hvr.symm)
+      have hperm : ({q, r, v, p} : Finset Point) = {p, q, r, v} := by
+        ext w
+        simp only [Finset.mem_insert, Finset.mem_singleton]
+        tauto
+      rw [hperm] at horder
+      exact horder
+    · exact (hγne hγzero).elim
+    · have hsum' : α + γ + β = 1 := by linarith
+      have hv' : v = (α * p.1 + γ * r.1 + β * q.1,
+                      α * p.2 + γ * r.2 + β * q.2) := by
+        rw [hv]
+        apply Prod.ext <;> dsimp <;> ring
+      obtain ⟨o, hprcross, hqvcross⟩ :=
+        s042_one_negative_barycentric_cross p r q v α γ β
+          hα hγpos hβneg hsum' hv'
+      exact s042_crossing_four_exact_order p q r v o hno
+        hpq hpr hvp.symm hqr hvq.symm hvr.symm
+        hprcross hqvcross
+  · exact (hβne hβzero).elim
+  · rcases lt_trichotomy γ 0 with hγneg | hγzero | hγpos
+    · obtain ⟨o, hpqcross, hrvcross⟩ :=
+        s042_one_negative_barycentric_cross p q r v α β γ
+          hα hβpos hγneg hsum hv
+      have hperm : ({p, r, q, v} : Finset Point) = {p, q, r, v} := by
+        ext w
+        simp only [Finset.mem_insert, Finset.mem_singleton]
+        tauto
+      have hn : noThreeCollinear ({p, r, q, v} : Finset Point) := by
+        rw [hperm]
+        exact hno
+      have horder := s042_crossing_four_exact_order p r q v o hn
+        hpr hpq hvp.symm hqr.symm hvr.symm hvq.symm
+        hpqcross hrvcross
+      rw [hperm] at horder
+      exact horder
+    · exact (hγne hγzero).elim
+    · exact s042_exact_interior_four_order p q r v α β γ
+        hpq hqr hpr.symm hvp hvq hvr hα hβpos hγpos hsum hv
+        (hno q (by simp) r (by simp) p (by simp)
+          hqr hpq.symm hpr.symm)
+        (hno r (by simp) p (by simp) q (by simp)
+          hpr.symm hqr.symm hpq)
+        (hno p (by simp) q (by simp) r (by simp)
+          hpq hpr hqr)
+
+end ETSHTS
