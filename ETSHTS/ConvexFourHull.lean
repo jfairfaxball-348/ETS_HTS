@@ -24,7 +24,9 @@ theorem s042_hullSide_first_of_crossing
     simpa [orientation] using hh
   have hdo : orientation a b o = u * orientation a b d := by
     have hh := s042_orientation_affine_segment a b b d o u hu
-    simpa [orientation] using hh
+    have hzero : orientation a b b = 0 := by unfold orientation; ring
+    rw [hzero] at hh
+    simpa using hh
   have hnon : orientation a b c ≠ 0 :=
     hno a (by simp) b (by simp) c (by simp) hab hac hbc
   have hsign :
@@ -52,16 +54,16 @@ theorem s042_hullSide_first_of_crossing
     intro x hx
     simp only [Finset.mem_insert, Finset.mem_singleton] at hx
     rcases hx with rfl | rfl | rfl | rfl
-    · simp [orientation]
-    · simp [orientation]
+    · unfold orientation; nlinarith
+    · unfold orientation; nlinarith
     · exact le_of_lt hpos.1
     · exact le_of_lt hpos.2
   · right
     intro x hx
     simp only [Finset.mem_insert, Finset.mem_singleton] at hx
     rcases hx with rfl | rfl | rfl | rfl
-    · simp [orientation]
-    · simp [orientation]
+    · unfold orientation; nlinarith
+    · unfold orientation; nlinarith
     · exact le_of_lt hneg.1
     · exact le_of_lt hneg.2
 
@@ -82,20 +84,38 @@ theorem s042_four_hullSides_of_crossing
   have hrBD : openSegment d b o := s042_openSegment_reverse hcrossBD
   refine ⟨s042_hullSide_first_of_crossing a b c d o hno
       hab hac hbc hcrossAC hcrossBD, ?_, ?_, ?_⟩
-  · have hn : noThreeCollinear ({b, c, d, a} : Finset Point) := by
-      simpa [Finset.insert_comm, Finset.insert_left_comm, Finset.insert_assoc] using hno
-    have hs := s042_hullSide_first_of_crossing b c d a o hn
+  · have hs : ({b, c, d, a} : Finset Point) =
+        ({a, b, c, d} : Finset Point) := by
+      ext z
+      simp only [Finset.mem_insert, Finset.mem_singleton]
+      tauto
+    have hn : noThreeCollinear ({b, c, d, a} : Finset Point) := by
+      rw [hs]
+      exact hno
+    have hside := s042_hullSide_first_of_crossing b c d a o hn
       hbc hbd hcd hcrossBD hrAC
-    simpa [Finset.insert_comm, Finset.insert_left_comm, Finset.insert_assoc] using hs
-  · have hn : noThreeCollinear ({c, d, a, b} : Finset Point) := by
-      simpa [Finset.insert_comm, Finset.insert_left_comm, Finset.insert_assoc] using hno
-    have hs := s042_hullSide_first_of_crossing c d a b o hn
+    rwa [hs] at hside
+  · have hs : ({c, d, a, b} : Finset Point) =
+        ({a, b, c, d} : Finset Point) := by
+      ext z
+      simp only [Finset.mem_insert, Finset.mem_singleton]
+      tauto
+    have hn : noThreeCollinear ({c, d, a, b} : Finset Point) := by
+      rw [hs]
+      exact hno
+    have hside := s042_hullSide_first_of_crossing c d a b o hn
       hcd hac.symm had.symm hrAC hrBD
-    simpa [Finset.insert_comm, Finset.insert_left_comm, Finset.insert_assoc] using hs
-  · have hn : noThreeCollinear ({d, a, b, c} : Finset Point) := by
-      simpa [Finset.insert_comm, Finset.insert_left_comm, Finset.insert_assoc] using hno
-    have hs := s042_hullSide_first_of_crossing d a b c o hn
-      had.symm hbd.symm hab hcrossBD hcrossAC
-    simpa [Finset.insert_comm, Finset.insert_left_comm, Finset.insert_assoc] using hs
+    rwa [hs] at hside
+  · have hs : ({d, a, b, c} : Finset Point) =
+        ({a, b, c, d} : Finset Point) := by
+      ext z
+      simp only [Finset.mem_insert, Finset.mem_singleton]
+      tauto
+    have hn : noThreeCollinear ({d, a, b, c} : Finset Point) := by
+      rw [hs]
+      exact hno
+    have hside := s042_hullSide_first_of_crossing d a b c o hn
+      had.symm hbd.symm hab hrBD hcrossAC
+    rwa [hs] at hside
 
 end ETSHTS
