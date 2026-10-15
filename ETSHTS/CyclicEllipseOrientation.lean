@@ -45,7 +45,7 @@ theorem s047_sine_triangle_factor (α β γ : ℝ) :
   have hz2 :
       (Real.sin y ^ 2 + Real.cos y ^ 2 - 1) *
         (2 * Real.sin x * Real.cos x) = 0 := by rw [sub_eq_zero.mpr hunity]; ring
-  rw [hx, hy, hxy, hmid]
+  rw [hmid, hx, hy, hxy]
   rw [Real.sin_two_mul, Real.sin_two_mul, Real.sin_two_mul]
   rw [Real.sin_add, Real.cos_add]
   nlinarith [hz1, hz2]
