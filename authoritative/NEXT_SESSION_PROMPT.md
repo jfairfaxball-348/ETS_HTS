@@ -1,6 +1,6 @@
 # S046 — FUTURE / UNEXECUTED: finish all three original exact Lean targets
 
-**FUTURE / UNEXECUTED.** The owner's new explicit instruction “Run next session”, a linked execution instruction or direct paste **immediately authorises exactly S046** on https://github.com/jfairfaxball-348/ellipse-theorem, namespace `ETSHTS`. No second confirmation is required. This handover does **not** execute S046 and never silently executes S047.
+**FUTURE / UNEXECUTED.** A new explicit owner invocation, including the owner's instruction “Run next session”, a linked execution instruction or direct paste **immediately authorises exactly S046** on https://github.com/jfairfaxball-348/ellipse-theorem, namespace `ETSHTS`. No second confirmation is required. This handover does **not** execute S046 and never silently executes S047.
 
 ## Binding frozen mathematics and real success criterion
 
