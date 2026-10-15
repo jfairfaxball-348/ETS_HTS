@@ -194,3 +194,5 @@ import ETSHTS.ConvexFourClassification
 #print axioms ETSHTS.s042_two_negative_barycentric_interior
 
 #print axioms ETSHTS.s042_four_order_positive_first
+
+#print axioms ETSHTS.s042_four_points_exact_from_noncollinear
