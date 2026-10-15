@@ -85,4 +85,88 @@ theorem s042_four_order_positive_first
         (hno p (by simp) q (by simp) r (by simp)
           hpq hpr hqr)
 
+/-- An arbitrary fourth point with every distinct triple noncollinear
+admits a true nearest-two noncrossing order. Barycentric coordinates
+must have at least one positive weight; cyclically rotate the seed so
+the first weight is positive and invoke all four verified sign cases. -/
+theorem s042_four_points_exact_from_noncollinear
+    (p q r v : Point)
+    (hno : noThreeCollinear ({p, q, r, v} : Finset Point))
+    (hpq : p ≠ q) (hpr : p ≠ r) (hqr : q ≠ r)
+    (hvp : v ≠ p) (hvq : v ≠ q) (hvr : v ≠ r) :
+    planeNearestTwoOrder ({p, q, r, v} : Finset Point) := by
+  have hD : orientation p q r ≠ 0 :=
+    hno p (by simp) q (by simp) r (by simp) hpq hpr hqr
+  obtain ⟨α, β, γ, hsum, hv, hαD, hβD, hγD⟩ :=
+    s042_four_barycentric_orientation p q r v hD
+  have hαval : orientation q r v ≠ 0 :=
+    hno q (by simp) r (by simp) v (by simp)
+      hqr hvq.symm hvr.symm
+  have hβval : orientation r p v ≠ 0 :=
+    hno r (by simp) p (by simp) v (by simp)
+      hpr.symm hvr.symm hvp.symm
+  have hγval : orientation p q v ≠ 0 :=
+    hno p (by simp) q (by simp) v (by simp)
+      hpq hvp.symm hvq.symm
+  have hαne : α ≠ 0 := by
+    intro he
+    apply hαval
+    calc
+      orientation q r v = α * orientation p q r := hαD.symm
+      _ = 0 := by simp [he]
+  have hβne : β ≠ 0 := by
+    intro he
+    apply hβval
+    calc
+      orientation r p v = β * orientation p q r := hβD.symm
+      _ = 0 := by simp [he]
+  have hγne : γ ≠ 0 := by
+    intro he
+    apply hγval
+    calc
+      orientation p q v = γ * orientation p q r := hγD.symm
+      _ = 0 := by simp [he]
+  have hpositive : 0 < α ∨ 0 < β ∨ 0 < γ := by
+    by_contra h
+    push_neg at h
+    rcases h with ⟨ha, hb, hc⟩
+    linarith
+  rcases hpositive with hα | hβ | hγ
+  · exact s042_four_order_positive_first p q r v α β γ
+      hno hpq hpr hqr hvp hvq hvr hα hβne hγne hsum hv
+  · have hperm : ({q, r, p, v} : Finset Point) = {p, q, r, v} := by
+      ext x
+      simp only [Finset.mem_insert, Finset.mem_singleton]
+      tauto
+    have hn : noThreeCollinear ({q, r, p, v} : Finset Point) := by
+      rw [hperm]
+      exact hno
+    have hsum' : β + γ + α = 1 := by linarith
+    have hv' : v = (β * q.1 + γ * r.1 + α * p.1,
+                    β * q.2 + γ * r.2 + α * p.2) := by
+      rw [hv]
+      apply Prod.ext <;> dsimp <;> ring
+    have horder := s042_four_order_positive_first q r p v β γ α
+      hn hqr hpq.symm hpr.symm hvq hvr hvp
+      hβ hγne hαne hsum' hv'
+    rw [hperm] at horder
+    exact horder
+  · have hperm : ({r, p, q, v} : Finset Point) = {p, q, r, v} := by
+      ext x
+      simp only [Finset.mem_insert, Finset.mem_singleton]
+      tauto
+    have hn : noThreeCollinear ({r, p, q, v} : Finset Point) := by
+      rw [hperm]
+      exact hno
+    have hsum' : γ + α + β = 1 := by linarith
+    have hv' : v = (γ * r.1 + α * p.1 + β * q.1,
+                    γ * r.2 + α * p.2 + β * q.2) := by
+      rw [hv]
+      apply Prod.ext <;> dsimp <;> ring
+    have horder := s042_four_order_positive_first r p q v γ α β
+      hn hpr.symm hqr.symm hpq hvr hvp hvq
+      hγ hαne hβne hsum' hv'
+    rw [hperm] at horder
+    exact horder
+
 end ETSHTS
