@@ -1,0 +1,17 @@
+S034 ENTRY main=67e93fc2fc0c3f08228bcddf39c5cfd838e9e0d3
+S034 ENTRY commit_tree=52dc1578e6c48c30e491ad9ca4ee10f7b3567051
+S033 authored=23b4294e0a416a8b6c9e3d24903a5d320c8988da sole_parent=eb0ce2def5cb1d7fa365370aa34f77eb58c12bc5
+S033 PR #39 non_draft=TRUE merge=67e93fc2fc0c3f08228bcddf39c5cfd838e9e0d3 merge_parents=eb0ce2def5cb1d7fa365370aa34f77eb58c12bc5;23b4294e0a416a8b6c9e3d24903a5d320c8988da
+S033 authored_tree=52dc1578e6c48c30e491ad9ca4ee10f7b3567051 equals_merged_tree=TRUE
+S033 PR Lean run=38643322853 job=116123989641 SUCCESS logs inspected
+S033 PR governance run=38643323024 job=116123991048 SUCCESS logs inspected
+S033 merged-main Lean run=38643600876 job=116124919462 SUCCESS logs inspected
+S033 merged-main governance run=38643601278 job=116124922107 SUCCESS logs inspected
+S033 logs include lake build; lake env lean ETSHTS.lean; s033 axiom list [propext,Classical.choice,Quot.sound]; forbidden-token grep; scaffold PASS; seven unittest PASS
+S034 local lean=NOT_INSTALLED; lake=NOT_INSTALLED; git remote DNS=FAILED
+S034 local lake build=NOT_RUN; local lean CLI=NOT_RUN; local scripts/check_scaffold.py=NOT_RUN; local tests=NOT_RUN
+S034 new Lean polynomial statements=SOURCE_PENDING_S034_HOSTED_CI
+S034 PR and merged-main new CI=REQUIRED
+S034 exact CLM0102=INHERITED_VERIFIED; CLM0096/0099/0107/0108=OPEN
+S034 exact Targets.lean=UNCHANGED
+S034 verdict=PARTIAL

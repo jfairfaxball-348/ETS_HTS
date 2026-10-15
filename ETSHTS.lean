@@ -1,4 +1,4 @@
-import ETSHTS.CyclicGapObstruction
+import ETSHTS.RationalChord
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -65,3 +65,8 @@ import ETSHTS.CyclicGapObstruction
 #print axioms ETSHTS.s033_cyclic_min_two_gap_average
 #print axioms ETSHTS.s033_distance_reversal
 #print axioms ETSHTS.s033_nonadjacent_strictly_closer
+
+#print axioms ETSHTS.s034_rational_denominator_positive
+#print axioms ETSHTS.s034_chord_horizontal_numerator
+#print axioms ETSHTS.s034_chord_vertical_numerator
+#print axioms ETSHTS.s034_homogeneous_chord_square

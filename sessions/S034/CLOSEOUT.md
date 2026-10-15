@@ -1,0 +1,9 @@
+# S034 closeout — PARTIAL
+
+S034 was explicitly invoked by the owner and performed on isolated branch `session/S034-rational-chord-minimax` from pinned LIVE main `67e93fc2fc0c3f08228bcddf39c5cfd838e9e0d3`, actual tree `52dc1578e6c48c30e491ad9ca4ee10f7b3567051`. S033 is authenticated as an ordinary merged single-authored-parent PR #39, with all independent PR and merged-main Lean/governance jobs SUCCESS (details in [mathematics](MATHEMATICS.md) and [validation](VALIDATION.txt)).
+
+Mathematical progress: exact rational half-angle **homogeneous chord polynomial formula** valid for arbitrary semiaxes, separate from trigonometric ranking. A second rational five-site obstruction at ratio 101/100 refutes choosing an **arbitrary endpoint of the shortest boundary edge** as a guaranteed metric ear. A Euclidean minimax adjacent squared-distance selector is proposed for aggressive hostile testing, not asserted. This leaves a plausible new geometric path without overstating numerical experiments.
+
+Added `ETSHTS/RationalChord.lean` with 4 algebraic/denominator Lean proof declarations and their axiom-print requests via `ETSHTS.lean`. **These are SOURCE PROOFS PENDING NEW S034 HOSTED CI**, not certified merely by this commit. S033 certified facts may be used. `ETSHTS/Targets.lean` left untouched. Local Lean/lake unavailable, local `lake build`, Lean CLI and scaffold/unit suite NOT_RUN; use independent PR and merged-main jobs. The exact theorem proofs: CLM0102 PROVED (inherited), CLM0096 (4 point), CLM0099, CLM0107 and CLM0108 remain OPEN. S034 overall **PARTIAL**. No publication, Palomar, S035 execution or hidden substitution of conditional lemmas.
+
+[Full S035 future handover](../../authoritative/NEXT_SESSION_PROMPT.md). Do not interpret a queued handover as authorisation to run it; the next owner's explicit invocation authorises S035.
