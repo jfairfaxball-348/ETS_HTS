@@ -1,4 +1,4 @@
-import ETSHTS.HullInsertion
+import ETSHTS.EarSufficiency
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -142,3 +142,7 @@ import ETSHTS.HullInsertion
 #print axioms ETSHTS.s042_hullSide_edge_transport
 #print axioms ETSHTS.s042_planeEdges_insert_hullSide
 #print axioms ETSHTS.s042_planeEdges_insert_both_hullSides
+
+#print axioms ETSHTS.s042_grow_append_last
+#print axioms ETSHTS.s042_planeOrder_extend_metricEar
+#print axioms ETSHTS.s042_fullEarCertificate_implies_planeNearestTwoOrder
