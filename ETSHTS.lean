@@ -1,4 +1,4 @@
-import ETSHTS.ConvexFourHull
+import ETSHTS.ConvexFourExact
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -179,3 +179,8 @@ import ETSHTS.ConvexFourHull
 
 #print axioms ETSHTS.s042_hullSide_first_of_crossing
 #print axioms ETSHTS.s042_four_hullSides_of_crossing
+
+#print axioms ETSHTS.s042_crossing_diagonal_not_hullSide
+#print axioms ETSHTS.s042_chordLength_lt_sqDist
+#print axioms ETSHTS.s042_metricEar_of_crossing_A
+#print axioms ETSHTS.s042_crossing_four_has_metricEar
