@@ -3,7 +3,7 @@ import ETSHTS.CyclicEllipseMembership
 /-!
 # S047 — hull-side exhaustiveness for original convex ellipse sites
 
-The original hullSide predicate cannot admit a third distinct supporting
+The original hullSide predicate cannot contain a third distinct supporting
 edge at the same vertex when the finite site set has no collinear triple.
 The positive-side existence of both adjacent edges remains to be derived
 from the S046 original angular indexing.
