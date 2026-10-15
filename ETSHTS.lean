@@ -1,4 +1,4 @@
-import ETSHTS.CentralRatio
+import ETSHTS.EllipseConvex
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -83,3 +83,8 @@ import ETSHTS.CentralRatio
 #print axioms ETSHTS.s036_closed_ratio_central_product
 #print axioms ETSHTS.s036_closed_ratio_central_floor
 #print axioms ETSHTS.s036_skip_witness_le_central_floor
+
+#print axioms ETSHTS.s037_ellipse_boundary_weighted_norm
+#print axioms ETSHTS.s037_weighted_sqDist_pos
+#print axioms ETSHTS.s037_ellipse_strict_support
+#print axioms ETSHTS.s037_ellipse_strictConvexPosition
