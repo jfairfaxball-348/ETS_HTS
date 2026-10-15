@@ -1,6 +1,7 @@
 import ETSHTS.ConvexFourClassification
 import ETSHTS.FiniteEllipsePhase
 import ETSHTS.CyclicEllipsePhase
+import ETSHTS.CyclicEllipseSkip
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -234,3 +235,9 @@ import ETSHTS.CyclicEllipsePhase
 #print axioms ETSHTS.s046_wrap_gap_pos
 #print axioms ETSHTS.s046_true_full_turn
 #print axioms ETSHTS.s046_original_ellipse_cyclic_gaps
+
+#print axioms ETSHTS.s046_cyclic_gap
+#print axioms ETSHTS.s046_cyclic_gap_pos
+#print axioms ETSHTS.s046_cyclic_gap_full_turn
+#print axioms ETSHTS.s046_squared_skip_chord
+#print axioms ETSHTS.s046_original_closed_ratio_skip_min
