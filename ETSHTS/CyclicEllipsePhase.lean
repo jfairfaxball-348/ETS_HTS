@@ -86,9 +86,14 @@ theorem s046_original_ellipse_cyclic_gaps
         (s046_clamped_phase θ (k + 1) -
          s046_clamped_phase θ k)) +
         (2 * Real.pi - θ (Fin.last n) + θ 0) = 2 * Real.pi := by
-  cases hcard
-  obtain ⟨θ, hb, hS⟩ :=
-    s045_finite_ellipse_ordered_index a b S hboundary
+  have hindexed :
+      ∃ θ : Fin (n + 1) ↪o ℝ,
+        (∀ i : Fin (n + 1), 0 ≤ θ i ∧ θ i < 2 * Real.pi) ∧
+        ((Finset.univ : Finset (Fin (n + 1))).image
+          (fun i => ellipsePoint a b (θ i)) = S) := by
+    simpa only [hcard] using
+      (s045_finite_ellipse_ordered_index a b S hboundary)
+  obtain ⟨θ, hb, hS⟩ := hindexed
   refine ⟨θ, hb, hS, ?_, ?_, ?_⟩
   · intro k hk
     exact s046_clamped_adjacent_gap_pos θ k hk
