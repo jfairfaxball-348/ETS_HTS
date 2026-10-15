@@ -110,7 +110,7 @@ theorem s045_finite_ellipse_ordered_index (a b : ℝ) (S : Finset Point)
           (fun i => ellipsePoint a b (θ i)) =
           ((Finset.univ : Finset (Fin S.card)).image (fun i => θ i)).image
             (ellipsePoint a b) := by
-        rw [Finset.image_image]
+        simp only [Finset.image_image, Function.comp_apply]
       _ = T.image (ellipsePoint a b) := by rw [hindex]
       _ = S := himage
 
