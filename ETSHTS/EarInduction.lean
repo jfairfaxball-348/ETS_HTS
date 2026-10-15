@@ -27,19 +27,18 @@ theorem s041_uniform_metricEar_gives_certificate
   suffices h : ∀ T : Finset Point, P T → 3 ≤ T.card →
       FullEarCertificate T from h S hP h3
   intro T
-  induction T using Finset.strongInductionOn with
-  | h T ih =>
-      intro hPT hT
-      by_cases h4 : 4 ≤ T.card
-      · obtain ⟨v, hear⟩ := exists_ear T hPT h4
-        have hv : v ∈ T := hear.1
-        have hsmall : 3 ≤ (T.erase v).card := by
-          rw [Finset.card_erase_of_mem hv]
-          omega
-        exact FullEarCertificate.remove T v h4 hv hear
-          (ih (T.erase v) (Finset.erase_ssubset hv)
-            (hereditary T v hPT hv hear) hsmall)
-      · exact FullEarCertificate.base T (by omega)
+  refine Finset.strongInductionOn T ?_
+  intro U ih hPU hU
+  by_cases h4 : 4 ≤ U.card
+  · obtain ⟨v, hear⟩ := exists_ear U hPU h4
+    have hv : v ∈ U := hear.1
+    have hsmall : 3 ≤ (U.erase v).card := by
+      rw [Finset.card_erase_of_mem hv]
+      omega
+    exact FullEarCertificate.remove U v h4 hv hear
+      (ih (U.erase v) (Finset.erase_ssubset hv)
+        (hereditary U v hPU hv hear) hsmall)
+  · exact FullEarCertificate.base U (by omega)
 
 /-- Closing under vertex deletion is automatic for ellipse-boundary sets.
 An actual uniform metric-ear result therefore yields a complete certificate
