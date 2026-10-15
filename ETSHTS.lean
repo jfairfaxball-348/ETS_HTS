@@ -1,5 +1,5 @@
 import ETSHTS.ConvexFourClassification
-import ETSHTS.NecessityInduction
+import ETSHTS.HullLastBridge
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -216,3 +216,6 @@ import ETSHTS.NecessityInduction
 #print axioms ETSHTS.s044_closed_ratio_metric_min_from_full_turn
 
 #print axioms ETSHTS.s044_clm0099_of_last_pair_cyclic_forcing
+
+#print axioms ETSHTS.s044_forced_last_hull_side
+#print axioms ETSHTS.s044_cyclic_last_of_saturation_and_two_sides
