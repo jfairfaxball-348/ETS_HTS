@@ -98,4 +98,39 @@ theorem s042_one_negative_barycentric_cross
     dsimp [den]
     ring
 
+/-- If two coefficients are negative, the corresponding original triangle
+vertex is strictly inside the triangle of the other two old sites and
+the fourth site. Explicit positive coefficients make the case reversible. -/
+theorem s042_two_negative_barycentric_interior
+    (p q r v : Point) (α β γ : ℝ)
+    (hα : 0 < α) (hβ : β < 0) (hγ : γ < 0)
+    (hsum : α + β + γ = 1)
+    (hv : v = (α * p.1 + β * q.1 + γ * r.1,
+               α * p.2 + β * q.2 + γ * r.2)) :
+    ∃ x y z : ℝ,
+      0 < x ∧ 0 < y ∧ 0 < z ∧
+      x + y + z = 1 ∧
+      p = (x * q.1 + y * r.1 + z * v.1,
+           x * q.2 + y * r.2 + z * v.2) := by
+  have hαne : α ≠ 0 := ne_of_gt hα
+  refine ⟨-β / α, -γ / α, 1 / α, ?_, ?_, ?_, ?_, ?_⟩
+  · exact div_pos (by linarith) hα
+  · exact div_pos (by linarith) hα
+  · exact div_pos (by norm_num) hα
+  · field_simp [hαne]
+    linarith
+  · apply Prod.ext
+    · change p.1 = (-β / α) * q.1 + (-γ / α) * r.1 +
+        (1 / α) * v.1
+      rw [hv]
+      simp only [Prod.fst]
+      field_simp [hαne]
+      ring
+    · change p.2 = (-β / α) * q.2 + (-γ / α) * r.2 +
+        (1 / α) * v.2
+      rw [hv]
+      simp only [Prod.snd]
+      field_simp [hαne]
+      ring
+
 end ETSHTS
