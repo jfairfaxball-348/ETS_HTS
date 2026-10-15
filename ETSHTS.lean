@@ -8,6 +8,12 @@ import ETSHTS.CyclicEllipseIncident
 import ETSHTS.CyclicEllipseOrientation
 import ETSHTS.CyclicEllipseHullSides
 import ETSHTS.CyclicEllipseNeighbourBridge
+import ETSHTS.QuantitativeSkip
+import ETSHTS.CentralChordBand
+import ETSHTS.CentralCutoffIdentity
+import ETSHTS.CentralOriginalSites
+import ETSHTS.ShortArcLifts
+import ETSHTS.CompetitorPhaseIndex
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -276,3 +282,28 @@ import ETSHTS.CyclicEllipseNeighbourBridge
 #print axioms ETSHTS.s047_eligible_true_neighbours_and_strict_incidents
 
 #print axioms ETSHTS.s047_actual_sites_min_skip_cyclic_neighbours
+
+#print axioms ETSHTS.s048_unit_circle_chord_sq
+#print axioms ETSHTS.s048_short_span_chord_sq_le
+#print axioms ETSHTS.s048_small_eligible_span
+#print axioms ETSHTS.s048_selected_skip_chord_sq_upper
+#print axioms ETSHTS.s048_selected_skip_below_closed_floor_sq
+
+#print axioms ETSHTS.s048_middle_band_sine_lower
+#print axioms ETSHTS.s048_lambda_mem_zero_pi
+#print axioms ETSHTS.s048_central_actual_sqDist_sin_lower
+
+#print axioms ETSHTS.s048_sin_two_arctan_rational
+#print axioms ETSHTS.s048_exact_lambda_sine_length
+#print axioms ETSHTS.s048_central_actual_sqDist_closed_floor
+#print axioms ETSHTS.s048_selected_skip_le_central_actual_competitor
+
+#print axioms ETSHTS.s048_original_sites_selected_central_band
+
+#print axioms ETSHTS.s048_forward_actual_two_successor_floor
+#print axioms ETSHTS.s048_backward_actual_two_predecessor_floor
+
+#print axioms ETSHTS.s048_original_site_unique_index
+#print axioms ETSHTS.s048_forward_competitor_lift_site
+#print axioms ETSHTS.s048_forward_lift_strict_turn
+#print axioms ETSHTS.s048_original_competitor_index_and_lift

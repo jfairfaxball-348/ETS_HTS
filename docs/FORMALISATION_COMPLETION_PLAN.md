@@ -58,3 +58,10 @@ A clean possible route to the cap: cyclic order of S, bound a noncrossing set of
 - When CLM0107 genuinely compiles, switch next explicitly authorised session to CLM0108, then to CLM0099. Do not infer completion from a PR being merged.
 - Verify PR-head Lean + governance before an ordinary merge, verify **independent merged-main** Lean + governance afterwards, and audit `#print axioms` standard-only. Original `ETSHTS/Definitions.lean` and `ETSHTS/Targets.lean` blobs remain unchanged. Frozen mathematics S020/S021. No new mathematical theorem substituted or paper/release claim.
 - If the frozen mathematical argument contains a real gap, identify the exact failed inequality / case in the original S020 proof and ask the owner to decide whether to reopen mathematics. Never fabricate a Lean proof or silently alter the target.
+
+
+## S048 update — exact proofs that now exist
+
+A2 is proved in `QuantitativeSkip.lean`: selected original squared Euclidean skip ≤ [2a sin(2π/5)]² ≤ [4ab²/(a²+b²)]² from a **true** 4π/5 cyclic averaging witness, not merely eligible-min existence. Analytic A3 is proved in `CentralChordBand.lean` and `CentralCutoffIdentity.lean`, with the exact λ sine formula and correct sine monotonicity on both half-bands; `CentralOriginalSites.lean` attaches this to arbitrary original S≥5. Conditional real-lift forward/back short A4 estimates, including exact second-neighbour equality, are compiled in `ShortArcLifts.lean`. Genuine original x unique indexing and seam-aware δ∈(0,2π) are in `CompetitorPhaseIndex.lean`.
+
+**Only critical CLM0107 gap after S048:** actual Fin rotation order and true lifted-angle position of *each* original non-neighbour x relative to the correct second successor and second predecessor, so every x can be put into one of the now-proved three metric inequalities. Close `∀x` skip floor → uniform original `metricEar` → literal `clm0107_exact`; do not pivot to deferred CLM0108 or CLM0099. Read [S049 handover](../authoritative/NEXT_SESSION_PROMPT.md).
