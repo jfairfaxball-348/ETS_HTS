@@ -171,7 +171,8 @@ theorem s048_selected_skip_below_closed_floor_sq {n : ℕ}
   have hden : 0 < a ^ 2 + b ^ 2 := by
     nlinarith [sq_pos_of_pos hb, sq_nonneg a]
   have hleft : 0 ≤ 2 * a * Real.sin (2 * Real.pi / 5) := by
-    positivity
+    exact le_of_lt (mul_pos (mul_pos (by norm_num) ha)
+      s036_sin_two_pi_div_five_pos)
   have hright : 0 ≤ 4 * a * b ^ 2 / (a ^ 2 + b ^ 2) := by
     positivity
   have hsq :
