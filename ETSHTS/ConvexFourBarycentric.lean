@@ -117,8 +117,12 @@ theorem s042_two_negative_barycentric_interior
   · exact div_pos (by linarith) hα
   · exact div_pos (by linarith) hα
   · exact div_pos (by norm_num) hα
-  · field_simp [hαne]
-    linarith
+  · calc
+      -β / α + -γ / α + 1 / α = (-β - γ + 1) / α := by ring
+      _ = α / α := by
+        congr 1
+        linarith
+      _ = 1 := div_self hαne
   · apply Prod.ext
     · change p.1 = (-β / α) * q.1 + (-γ / α) * r.1 +
         (1 / α) * v.1
