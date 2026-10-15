@@ -107,4 +107,44 @@ theorem s047_eligible_true_neighbours_and_strict_incidents {n : ℕ}
   exact ⟨hcyclic, s047_hullSide_second_mem_erase hsideL,
     s047_hullSide_second_mem_erase hsideR, hmetric.1, hmetric.2⟩
 
+
+/-- Uniform original-site C1+C2 candidate: the actual minimum metric
+skip chosen from every finite ellipse site set of size at least five has
+two genuine original hull neighbours, both strictly closer than its
+original Euclidean skip chord. The C3 comparison against all other
+original sites is still required to conclude metricEar. -/
+theorem s047_actual_sites_min_skip_cyclic_neighbours
+    (a b : ℝ) (hb : 0 < b) (hab : b ≤ a) (hr : a / b ≤ R)
+    (S : Finset Point) (h5 : 5 ≤ S.card)
+    (hboundary : ∀ p ∈ S, ellipseBoundary a b p) :
+    ∃ (n : ℕ) (θ : Fin (n + 1) ↪o ℝ) (i : Fin (n + 1)),
+      S.card = n + 1 ∧
+      (∀ k : Fin (n + 1), 0 ≤ θ k ∧ θ k < 2 * Real.pi) ∧
+      ((Finset.univ : Finset (Fin (n + 1))).image
+        (fun k => ellipsePoint a b (θ k)) = S) ∧
+      (s046_cyclic_gap θ i +
+        s046_cyclic_gap θ ((finRotate (n + 1)) i) < lambda a b) ∧
+      (∀ j : Fin (n + 1),
+        s046_cyclic_gap θ j +
+          s046_cyclic_gap θ ((finRotate (n + 1)) j) < lambda a b →
+        s046_squared_skip_chord a b θ i ≤
+          s046_squared_skip_chord a b θ j) ∧
+      (let v := ellipsePoint a b (θ ((finRotate (n + 1)) i))
+       let u := ellipsePoint a b (θ i)
+       let w := ellipsePoint a b
+         (θ ((finRotate (n + 1)) ((finRotate (n + 1)) i)))
+       cyclicNeighbours S v u w ∧ u ∈ S.erase v ∧
+         w ∈ S.erase v ∧
+         sqDist v u < s046_squared_skip_chord a b θ i ∧
+         sqDist v w < s046_squared_skip_chord a b θ i) := by
+  obtain ⟨n, θ, hcard, hphase, himage, _, _,
+      ⟨i, heligible, hmin⟩⟩ :=
+    s046_actual_sites_closed_ratio_skip_min a b hb hab hr
+      S h5 hboundary
+  have hn : 4 ≤ n := by omega
+  refine ⟨n, θ, i, hcard, hphase, himage,
+    heligible, hmin, ?_⟩
+  exact s047_eligible_true_neighbours_and_strict_incidents
+    a b hb hab S hcard θ hphase himage hn i heligible
+
 end ETSHTS

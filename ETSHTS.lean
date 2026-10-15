@@ -274,3 +274,5 @@ import ETSHTS.CyclicEllipseNeighbourBridge
 
 #print axioms ETSHTS.s047_original_cyclic_hullSide
 #print axioms ETSHTS.s047_eligible_true_neighbours_and_strict_incidents
+
+#print axioms ETSHTS.s047_actual_sites_min_skip_cyclic_neighbours
