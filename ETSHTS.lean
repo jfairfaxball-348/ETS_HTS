@@ -1,4 +1,4 @@
-import ETSHTS.GlobalCount
+import ETSHTS.EarInduction
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -104,3 +104,8 @@ import ETSHTS.GlobalCount
 #print axioms ETSHTS.s041_triangleEdges_card
 #print axioms ETSHTS.s041_triangleEdges_supported
 #print axioms ETSHTS.s041_planeNearestTwoOrder_exact_edge_count
+
+#print axioms ETSHTS.s041_uniform_metricEar_gives_certificate
+#print axioms ETSHTS.s041_ellipse_full_certificate_of_uniform_ears
+#print axioms ETSHTS.s041_clm0107_of_clm0099_and_uniform_ears
+#print axioms ETSHTS.s041_clm0108_of_clm0099_and_uniform_ears
