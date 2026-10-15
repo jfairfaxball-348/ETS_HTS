@@ -131,7 +131,8 @@ theorem s042_crossing_diagonals_choose_strict_ear
   · exact Or.inr (Or.inl ⟨by simpa [s042_chordLength_symm] using h.1,
       by simpa [s042_chordLength_symm] using h.2⟩)
   · exact Or.inr (Or.inr (Or.inl
-      ⟨by simpa [s042_chordLength_symm] using h.1, h.2⟩))
+      ⟨by simpa [s042_chordLength_symm] using h.1,
+        by simpa [s042_chordLength_symm] using h.2⟩))
   · exact Or.inr (Or.inr (Or.inr
       ⟨by simpa [s042_chordLength_symm] using h.1, h.2⟩))
 
