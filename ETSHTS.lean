@@ -188,3 +188,5 @@ import ETSHTS.ConvexFourBarycentric
 #print axioms ETSHTS.s042_crossing_four_exact_order
 
 #print axioms ETSHTS.s042_four_barycentric_orientation
+
+#print axioms ETSHTS.s042_one_negative_barycentric_cross
