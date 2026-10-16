@@ -2,6 +2,9 @@
 
 ## Most recent finished session (16 October 2026)
 
+**S057 NOW OWNER-INSTALLED AS FUTURE / UNEXECUTED (16 Oct 2026).** Owner selects Palomar preparation aiming for a published immutable 40-char repository commit with supported modern Lean, compliant Challenge/Solution/Comparator and complete full-mode predictive Palomar mechanical verification, for the owner to submit later. The next task is installed, NOT executed; S056 remains last completed. Requires a new explicit owner invocation. No actual Palomar submission/registration authorised. See authoritative/NEXT_SESSION_PROMPT.md. Earlier S057-not-installed lines below are historical and superseded by this paragraph.
+
+
 **Current S056 complete:** source-verified Palomar registry/reusable preflight and paper-title/theorem presentation recon in sessions/S056/. Existing v4.15 below Palomar minimum v4.35.0-rc2 and current repository lacks packaging and modern modules. No external Palomar action. **S057 TARGET NOT INSTALLED**; any paragraph below describing S056 future is an older snapshot only.
 
 

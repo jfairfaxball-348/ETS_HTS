@@ -2,6 +2,9 @@
 
 ## Latest dated state after binding policy was adopted
 
+**Current 16 October 2026:** S056 last completed, S057 now independently owner-installed as FUTURE/UNEXECUTED Palomar submission-ready technical preparation. Installation does not run S057 or preauthorise actual Palomar submission/registration. A separate fresh invocation is required. The earlier “S057 target not installed” note below is a historical snapshot.
+
+
 **Current:** S056 complete 16 October 2026; S057 FUTURE/UNEXECUTED target not installed. See ../sessions/S056/CLOSEOUT.md. Earlier S055/S056 status text below is historical.
 
 

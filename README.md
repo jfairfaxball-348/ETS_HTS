@@ -1,5 +1,10 @@
 # Ellipse theorem — retained exact nearest-two insertion
 
+## S057 — owner-installed Palomar preparation target (16 October 2026)
+
+**FUTURE / UNEXECUTED, not a completed build.** The owner selected [S057](authoritative/NEXT_SESSION_PROMPT.md) to aim for a *public immutable commit ready for the owner's own Palomar submission*. S057 must port the original exact five-theorem project to a current Palomar-compatible Lean/module system, build an independently auditable Challenge/Solution/Comparator plus truthful metadata and licence, and obtain a **full-mode official predictive Palomar mechanical verification PASS on the eventual submission SHA**, if achievable. No actual Palomar submission/registration is authorised. S056 remains last completed. A **new explicit owner invocation** is required to run S057; do not auto-install S058. Existing proofs and current novelty verdict unchanged.
+
+
 ## S056 Palomar research completed (16 October 2026)
 
 See [S056 closeout](sessions/S056/CLOSEOUT.md), [preflight runbook](sessions/S056/PREFLIGHT_CL_RUNBOOK.md), [public-record forensics](sessions/S056/PUBLIC_RECORD_FORENSICS.md), [mechanical blockers](sessions/S056/CURRENT_REPO_READINESS.md), and [paper-title/theorem crosswalk](sessions/S056/PAPER_REGISTRY_ALIGNMENT.md). Current Palomar minimum Lean v4.35.0-rc2 exceeds pinned Lean v4.15.0; root licence, metadata, independent Challenge/Solution/Comparator and module headers are absent. NO Palomar preflight, submission or registration was executed. All five theorem proofs unchanged. S055 priority verdict INDETERMINATE_ACCESS_GAP. **S057 TARGET NOT INSTALLED; owner chooses.**
