@@ -117,9 +117,14 @@ theorem s049_non_neighbour_after_real_second {n : ℕ} (hn : 4 ≤ n)
           ((finRotate (n + 1)) ((finRotate (n + 1))
             ((finRotate (n + 1)) i))) <
           s049_forward_rank ((finRotate (n + 1)) i) k := by
-        exact lt_of_le_of_ne hle (Ne.symm
-          (fun hh => heq ((s049_forward_rank_injective
-            ((finRotate (n + 1)) i) _ _ hh.symm))))
+        have hneq_rank : s049_forward_rank ((finRotate (n + 1)) i)
+            ((finRotate (n + 1)) ((finRotate (n + 1))
+              ((finRotate (n + 1)) i))) ≠
+            s049_forward_rank ((finRotate (n + 1)) i) k := by
+          intro hh
+          exact heq (s049_forward_rank_injective
+            ((finRotate (n + 1)) i) _ _ hh)
+        exact lt_of_le_of_ne hle hneq_rank
       exact le_of_lt (s049_forward_rank_strictMono_lift
         θ hphase _ _ _ hlt)
   rw [s049_right_lift_eq_forward_second (by omega : 2 ≤ n)]
