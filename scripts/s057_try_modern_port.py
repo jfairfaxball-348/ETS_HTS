@@ -8,6 +8,11 @@ files = sorted([*ROOT.glob("ETSHTS.lean"), *ROOT.glob("ETSHTS/**/*.lean")])
 assert len(files) == 77, f"Refuse source count drift: {len(files)}"
 for p in files:
     old = p.read_text(encoding="utf-8")
+    if p.as_posix() == "ETSHTS/Cutoff.lean":
+        # Mathlib API renames only; preserve the literal CLM0102 proposition.
+        assert "Real.arctan_lt_arctan" in old and "Real.arctan_le_arctan" in old
+        old = old.replace("Real.arctan_lt_arctan", "Real.arctan_strictMono")
+        old = old.replace("Real.arctan_le_arctan", "Real.arctan_mono")
     if old.lstrip().startswith("module"):
         raise SystemExit(f"Already migrated; do not rewrite {p}")
     lines = old.splitlines(keepends=True)
