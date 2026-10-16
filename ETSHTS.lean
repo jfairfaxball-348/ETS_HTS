@@ -21,6 +21,7 @@ import ETSHTS.CyclicCompetitorBackwardIndex
 import ETSHTS.CyclicCompetitorReverseBand
 import ETSHTS.CyclicCompetitorExact
 import ETSHTS.ExactNonround
+import ETSHTS.GenuineEdges
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -318,3 +319,8 @@ import ETSHTS.ExactNonround
 #print axioms ETSHTS.s049_original_ellipse_ge5_metricEar
 #print axioms ETSHTS.clm0107_exact
 #print axioms ETSHTS.clm0108_exact
+
+#print axioms ETSHTS.s051_grow_edges_genuine
+#print axioms ETSHTS.s051_planeNearestTwoOrder_edges_genuine
+#print axioms ETSHTS.s051_hullSide_present_of_genuine_cap
+#print axioms ETSHTS.s051_order_saturates_all_hullSides_of_genuine_cap
