@@ -25,7 +25,10 @@ for p in files:
         old = old.replace("exact (Finset.not_mem_erase v S) hvrest",
                           "exact (by simp : v ∉ S.erase v) hvrest")
         old = old.replace("simpa [List.disjoint_singleton] using hnot",
-                          "simpa [List.disjoint_singleton, eq_comm] using hnot")
+                          """intro x hx hxv
+      have heq : x = v := by simpa using hxv
+      subst x
+      exact hnot hx""")
         old = old.replace("""            simp [List.append_assoc, Finset.insert_eq, Finset.union_comm,
               Finset.union_left_comm, Finset.union_assoc]""",
                           """            ext x
