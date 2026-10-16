@@ -1,0 +1,17 @@
+Governance record validation PASS (records only; not mathematics or novelty)
+test_clean_live_state (test_scaffold.ScaffoldTest.test_clean_live_state) ... ok
+test_dangling_source_and_bad_status (test_scaffold.ScaffoldTest.test_dangling_source_and_bad_status) ... ok
+test_duplicate_ids (test_scaffold.ScaffoldTest.test_duplicate_ids) ... ok
+test_kill_requires_reason (test_scaffold.ScaffoldTest.test_kill_requires_reason) ... ok
+test_missing_file (test_scaffold.ScaffoldTest.test_missing_file) ... ok
+test_state_count_mismatch (test_scaffold.ScaffoldTest.test_state_count_mismatch) ... ok
+test_wrong_next_prompt (test_scaffold.ScaffoldTest.test_wrong_next_prompt) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.283s
+
+OK
+Project source forbidden-token scan: PASS
+ETSHTS/Definitions.lean blob f5e71b625bdbf40f6c84551dd93f9ce375154519
+ETSHTS/Targets.lean blob e12f117589b1852e06aa669a405a6dc3ee652549
+Local Lean NOT_RUN (toolchain unavailable); pinned hosted code-head Lean38888429613 and governance38888429581 SUCCESS, standard-only exact theorem axioms.
