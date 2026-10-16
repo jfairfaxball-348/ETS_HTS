@@ -224,4 +224,69 @@ theorem s049_rank_second_successor {n : ℕ} (hn : 2 ≤ n)
       simp only [s049_forward_rank, if_neg hnot]
       change n + 1 + 0 - centre.val = 2
       omega
+
+/-- The immediate predecessor of the original centre (the left endpoint
+of the selected skip) has the final positive cyclic rank. -/
+theorem s049_rank_predecessor {n : ℕ} (hn : 1 ≤ n)
+    (i : Fin (n + 1)) :
+    s049_forward_rank ((finRotate (n + 1)) i) i = n := by
+  classical
+  by_cases hlast : i = Fin.last n
+  · subst i
+    rw [finRotate_last]
+    have hle : (0 : Fin (n + 1)) ≤ Fin.last n := bot_le
+    simp only [s049_forward_rank, if_pos hle]
+    change n - 0 = n
+    omega
+  · have hlt : i.val < n := by
+      have hibd := i.isLt
+      have hne : i.val ≠ n := by
+        intro he
+        apply hlast
+        apply Fin.ext
+        exact he
+      omega
+    have hrot : (finRotate (n + 1)) i =
+        ⟨i.val + 1, by omega⟩ := by
+      simpa using (finRotate_of_lt hlt)
+    rw [hrot]
+    have hnot : ¬ (⟨i.val + 1, by omega⟩ : Fin (n + 1)) ≤ i := by
+      intro hh
+      have hv : i.val + 1 ≤ i.val := Fin.le_def.mp hh
+      omega
+    simp only [s049_forward_rank, if_neg hnot]
+    change n + 1 + i.val - (i.val + 1) = n
+    omega
+
+/-- Crucial original-index classification: any actual non-neighbour x
+different from the selected ear centre and its two original hull neighbours
+has cyclic rank between the SECOND successor and SECOND predecessor
+(inclusively).  This is an exact finite classification, valid at the seam. -/
+theorem s049_non_neighbour_rank_interval {n : ℕ} (hn : 4 ≤ n)
+    (i k : Fin (n + 1))
+    (hcentre : k ≠ (finRotate (n + 1)) i)
+    (hleft : k ≠ i)
+    (hright : k ≠ (finRotate (n + 1))
+      ((finRotate (n + 1)) i)) :
+    2 ≤ s049_forward_rank ((finRotate (n + 1)) i) k ∧
+      s049_forward_rank ((finRotate (n + 1)) i) k ≤ n - 1 := by
+  let c : Fin (n + 1) := (finRotate (n + 1)) i
+  have hz : s049_forward_rank c k ≠ 0 := by
+    intro hh
+    exact hcentre ((s049_forward_rank_eq_zero c k).mp hh)
+  have hfirst : s049_forward_rank c k ≠ 1 := by
+    intro hh
+    have hone := s049_rank_first_successor (by omega : 1 ≤ n) c
+    have heq : k = (finRotate (n + 1)) c :=
+      s049_forward_rank_injective c k
+        ((finRotate (n + 1)) c) (hh.trans hone.symm)
+    exact hright heq
+  have hlast : s049_forward_rank c k ≠ n := by
+    intro hh
+    have hnrank := s049_rank_predecessor (by omega : 1 ≤ n) i
+    have heq : k = i := s049_forward_rank_injective c k i
+      (hh.trans hnrank.symm)
+    exact hleft heq
+  have hbound := s049_forward_rank_le c k
+  constructor <;> omega
 end ETSHTS
