@@ -32,6 +32,26 @@ for p in files:
               Finset.union_left_comm, Finset.union_assoc]""",
                           """            ext x
             simp [List.mem_append, or_left_comm, or_assoc]""")
+    if p.as_posix() == "ETSHTS/LastArrival.lean":
+        # Lean 4.35 nodup_append now returns a pairwise inequality proof.
+        old_block = """  have hnot : v ∉ (previous ++ rest).toFinset := by
+    have hdisj : (previous ++ rest).Disjoint [v] :=
+      (List.nodup_append.mp hn).2.2
+    intro hv
+    have hv' : v ∈ previous ++ rest := by simpa using hv
+    exact (List.disjoint_singleton.mp hdisj) hv'"""
+        new_block = """  have hnot : v ∉ (previous ++ rest).toFinset := by
+    intro hv
+    have hv' : v ∈ previous ++ rest := by simpa using hv
+    have hne := (List.nodup_append.mp hn).2.2 v hv' v (by simp)
+    exact hne rfl"""
+        assert old_block in old
+        old = old.replace(old_block, new_block)
+    if p.as_posix() == "ETSHTS/ConvexFourClassification.lean":
+        # Removal of Finset.not_mem_erase in newer Mathlib.
+        assert old.count("exact (Finset.not_mem_erase v S) hbad") == 3
+        old = old.replace("exact (Finset.not_mem_erase v S) hbad",
+                          "exact (by simp : v ∉ S.erase v) hbad")
     if p.as_posix() == "ETSHTS/RationalChord.lean":
         # Same public theorem signature issue for three homogeneous coordinate helpers.
         for name in ("s034_X", "s034_Y", "s034_D"):
