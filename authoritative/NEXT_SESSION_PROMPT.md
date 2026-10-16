@@ -1,6 +1,6 @@
 # S052 — FUTURE / UNEXECUTED: prove two finite geometry inputs and literal CLM0099
 
-**FUTURE / UNEXECUTED. A fresh explicit owner invocation (e.g. “run next session”) authorises S052 only.** No automatic S052 or S053 work.
+**FUTURE / UNEXECUTED. A new explicit owner invocation (e.g. “run next session”) authorises S052 only.** No automatic S052 or S053 work.
 
 Repository jfairfaxball-348/ellipse-theorem. Namespace ETSHTS. Freeze S020/S021 mathematics and immutable `ETSHTS/Definitions.lean` SHA `f5e71b625bdbf40f6c84551dd93f9ce375154519`, `ETSHTS/Targets.lean` SHA `e12f117589b1852e06aa669a405a6dc3ee652549`. Maintain Euclidean ranked nearest-two, Cartesian lex ties, proper crossing, edge retention, all original strict-convex sets. No new mathematics, surrogate graph, axiom, sorry, paper or novelty campaign.
 
