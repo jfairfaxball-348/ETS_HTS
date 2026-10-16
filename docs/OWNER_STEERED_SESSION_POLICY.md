@@ -15,6 +15,6 @@ Set `last_completed_session` to the completed session and `next_session` to the 
 
 ## Current snapshot
 
-S054 passed the five original exact Lean proof/semantic/axiom gates and was integrated via ordinary PR #66 / merge `259bbfd6c83703c9783bb670e34b81b583972a37`. The next identifier is S055, but its **target is not installed**. The former S055 independent verification/publication readiness text was **superseded without being executed**; it does not carry authorisation, and it must not be silently restored.
+S054 passed the five original exact Lean proof/semantic/axiom gates and was integrated via ordinary PR #66 / merge `259bbfd6c83703c9783bb670e34b81b583972a37`. The owner has explicitly selected and **installed S055: a prior-art/novelty audit**. S055 is **FUTURE / UNEXECUTED**, and a new explicit invocation is required before performing that audit. The former provisional S055 independent verification/publication readiness text was **superseded without being executed** and is not to be restored.
 
 All frozen original theorems and source files remain unchanged. Paper, Palomar, arXiv, outreach and external verification each require owner direction. This policy governs future sessions regardless of whether the selected target is Lean, documentation, external verification or another subject.

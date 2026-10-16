@@ -7,7 +7,7 @@ Closed threshold `R=sqrt(2/sin(2π/5)−1)`. **CLM0107:** all n≥3 finite disti
 
 ## Owner-directed sessions — active process (16 October 2026)
 
-The owner now chooses each session target individually. At session close, report verified results, blockers and CI/merge outcomes **without suggesting or installing a next-session target**. The next numbered session stays `FUTURE / UNEXECUTED — TARGET NOT INSTALLED` until the owner explicitly specifies what to install; installation is administrative and execution requires a later explicit invocation. **S055 has no installed target.** See [session policy](docs/OWNER_STEERED_SESSION_POLICY.md) and [pending session placeholder](authoritative/NEXT_SESSION_PROMPT.md).
+The owner now chooses each session target individually. At session close, report verified results, blockers and CI/merge outcomes **without suggesting or installing a next-session target**. The next numbered session stays `FUTURE / UNEXECUTED — TARGET NOT INSTALLED` until the owner explicitly specifies what to install; installation is administrative and execution requires a later explicit invocation. **S055 now has an owner-installed target: comprehensive hostile prior-art and novelty audit of the five completed exact claims.** It is still **FUTURE / UNEXECUTED**, requiring a separate explicit execution invocation. See [session policy](docs/OWNER_STEERED_SESSION_POLICY.md) and [installed S055 brief](authoritative/NEXT_SESSION_PROMPT.md).
 
 ## Final reproducibility and semantic audit — S054 (16 October 2026)
 
