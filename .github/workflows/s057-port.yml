@@ -1,0 +1,50 @@
+name: S057 modern Lean port probe
+on:
+  push:
+    branches:
+      - session/S057-palomar-module-migration
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Migrate every substantive project Lean module in disposable CI checkout
+        run: python3 scripts/s057_try_modern_port.py
+      - name: Install Lean 4.35 toolchain (not a claim of proof success)
+        uses: leanprover/lean-action@v1
+        with:
+          build: "false"
+          test: "false"
+          lint: "false"
+          use-mathlib-cache: "false"
+      - name: Update manifest to genuine dependency revisions
+        run: lake update
+      - name: Fetch exact Mathlib cache
+        run: lake exe cache get
+      - name: Compile entire imported 78-file original theorem project
+        run: lake build
+      - name: Recheck all five literal theorem axiom signatures
+        run: |
+          set -euo pipefail
+          lake env lean ETSHTS.lean | tee s057-axioms.txt
+          for theorem in clm0096_exact clm0099_exact clm0102_exact clm0107_exact clm0108_exact; do
+            grep -F "'ETSHTS.${theorem}' depends on axioms: [propext, Classical.choice, Quot.sound]" s057-axioms.txt
+          done
+          if grep -nRE '(^|[[:space:]])(sorry|admit|axiom|native_decide)([[:space:]]|$)' ETSHTS.lean ETSHTS; then
+            exit 1
+          fi
+      - name: Push source-preserving port only after successful compiler and axiom checks
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -f s057-axioms.txt
+          git add ETSHTS.lean ETSHTS lean-toolchain lakefile.lean lake-manifest.json
+          git commit -m "S057: checked module migration on pinned Lean and Mathlib 4.35.0"
+          git push origin HEAD:session/S057-palomar-module-migration
