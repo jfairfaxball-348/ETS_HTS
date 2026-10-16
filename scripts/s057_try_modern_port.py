@@ -19,6 +19,17 @@ for p in files:
         for name in ("s033_v", "s033_u", "s033_x"):
             assert f"private def {name} " in old
             old = old.replace(f"private def {name} ", f"def {name} ")
+    if p.as_posix() == "ETSHTS/EarSufficiency.lean":
+        # API and simplifier migration; retains original explicit planarity argument.
+        assert "Finset.not_mem_erase v S" in old
+        old = old.replace("exact (Finset.not_mem_erase v S) hvrest",
+                          "exact (by simp : v ∉ S.erase v) hvrest")
+        old = old.replace("simpa [List.disjoint_singleton] using hnot",
+                          "simpa [List.disjoint_singleton, eq_comm] using hnot")
+        old = old.replace("""            simp [List.append_assoc, Finset.insert_eq, Finset.union_comm,
+              Finset.union_left_comm, Finset.union_assoc]""",
+                          """            ext x
+            simp [List.mem_append, or_left_comm, or_assoc]""")
     if p.as_posix() == "ETSHTS/RationalChord.lean":
         # Same public theorem signature issue for three homogeneous coordinate helpers.
         for name in ("s034_X", "s034_Y", "s034_D"):
