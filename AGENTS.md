@@ -1,5 +1,9 @@
 # Ellipse theorem — binding agent instructions
 
+## S059 completed, S060 pending owner target (16 October 2026)
+
+Root Apache-2.0 LICENSE and Palomar v0.4 metadata installed for owner's original work; all five original exact Lean statements unmodified. Official full-mode predictive final main-SHA machine report must be fetched live; no unobserved PASS is claimed. See sessions/S059/CLOSEOUT.md. The owner chooses any S060 target; none installed. S055 novelty verdict remains INDETERMINATE_ACCESS_GAP. Historical sections below are earlier snapshots.
+
 ## Current administrative state: S059 owner-installed, not executed (16 October 2026)
 
 The owner has expressly approved using **Apache-2.0** for the repository's owner-controlled original work and installed the S059 technical target: install a truthful root licence and v0.4 metadata, preserve all five exact Lean proofs, and seek official pinned Palomar `mode: full` predictive PASS on the exact final main SHA. This is **only a future prompt installation**; `last_completed_session=S058`, `next_session_authorised=false` and current Palomar readiness remains `NOT_READY`. A later separate "Run next session" invokes S059. No Palomar submission/registration authorised. Refer to `authoritative/NEXT_SESSION_PROMPT.md` and `authoritative/STATE.json` before older dated snapshots below.
