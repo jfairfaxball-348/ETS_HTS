@@ -13,6 +13,12 @@ for p in files:
         assert "Real.arctan_lt_arctan" in old and "Real.arctan_le_arctan" in old
         old = old.replace("Real.arctan_lt_arctan", "Real.arctan_strictMono")
         old = old.replace("Real.arctan_le_arctan", "Real.arctan_mono")
+    if p.as_posix() == "ETSHTS/CyclicGapObstruction.lean":
+        # New module system forbids private defs in exported theorem types.
+        # Change visibility, not data or mathematical content.
+        for name in ("s033_v", "s033_u", "s033_x"):
+            assert f"private def {name} " in old
+            old = old.replace(f"private def {name} ", f"def {name} ")
     if old.lstrip().startswith("module"):
         raise SystemExit(f"Already migrated; do not rewrite {p}")
     lines = old.splitlines(keepends=True)
