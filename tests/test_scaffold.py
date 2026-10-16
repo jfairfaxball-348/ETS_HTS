@@ -26,6 +26,35 @@ class ScaffoldTest(unittest.TestCase):
     def test_clean_live_state(self):
         self.assertEqual([], validate(self.root))
 
+    def test_pending_owner_target_must_be_null(self):
+        p = "authoritative/STATE.json"
+        j = self.load(p)
+        j["next_session_target"] = "Unapproved proposed goal"
+        self.save(p, j)
+        self.assertTrue(any("pending owner target must be null" in x for x in validate(self.root)))
+
+    def test_pending_prompt_cannot_install_task(self):
+        p = self.root / "authoritative/NEXT_SESSION_PROMPT.md"
+        p.write_text(
+            "# S055 — FUTURE / UNEXECUTED\\nnew explicit owner invocation\\n"
+            "Unapproved substantive next goal", encoding="utf-8")
+        self.assertTrue(any("non-executable placeholder" in x for x in validate(self.root)))
+
+    def test_installed_target_requires_owner_marker(self):
+        p = "authoritative/STATE.json"
+        j = self.load(p)
+        j["next_session_target_status"] = "OWNER_TARGET_INSTALLED"
+        j["next_session_target"] = "Owner-specified task"
+        self.save(p, j)
+        self.assertTrue(any("owner-installation marker" in x for x in validate(self.root)))
+
+    def test_invalid_session_steering_mode(self):
+        p = "authoritative/STATE.json"
+        j = self.load(p)
+        j["session_steering_mode"] = "AUTOMATIC"
+        self.save(p, j)
+        self.assertTrue(any("session_steering_mode" in x for x in validate(self.root)))
+
     def test_state_count_mismatch(self):
         p = "authoritative/STATE.json"
         j = self.load(p)

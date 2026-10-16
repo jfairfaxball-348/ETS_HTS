@@ -2,9 +2,13 @@
 
 Canonical https://github.com/jfairfaxball-348/ellipse-theorem (renamed from ETS_HTS; same repository ID). Lean namespace remains `ETSHTS`.
 
+## Active owner-steered process (16 October 2026)
+
+The owner chooses each next numbered session target. Perform the normal evidence-based closeout and merge, but **do not suggest, choose or install the subsequent target**. Leave only a neutral pending placeholder until the owner explicitly supplies an S055 target; installation alone never executes the session. **S055 target is NOT INSTALLED.** Read [binding policy](../docs/OWNER_STEERED_SESSION_POLICY.md), [pending placeholder](NEXT_SESSION_PROMPT.md) and `STATE.json`.
+
 ## Final audit — S054 (16 October 2026)
 
-**5/5 literal original Lean theorem targets complete.** [S054 semantic audit](../sessions/S054/SEMANTIC_AUDIT.md), [reproducibility manifest](../sessions/S054/REPRODUCIBILITY.md) and [five-target coverage](../sessions/S054/PROOF_COVERAGE.md) supersede interim OPEN counts in the historical checkpoints below. S054 does not modify theorem sources and adds a hosted axiom regression gate. Final PR-head and separate merged-main CI still require direct inspection in the PR history. S055 is FUTURE/UNEXECUTED and owner-gated; no external publication.
+**5/5 literal original Lean theorem targets complete.** [S054 semantic audit](../sessions/S054/SEMANTIC_AUDIT.md), [reproducibility manifest](../sessions/S054/REPRODUCIBILITY.md) and [five-target coverage](../sessions/S054/PROOF_COVERAGE.md) supersede interim OPEN counts in the historical checkpoints below. S054 does not modify theorem sources and adds a hosted axiom regression gate. S054 PR-head Lean38890838704/governance38890838867 and independent merged-main Lean38891216890/governance38891217017 all succeeded; final ordinary merge is `259bbfd6c83703c9783bb670e34b81b583972a37`. S055 is FUTURE/UNEXECUTED and owner-gated; no external publication.
 
 ## Historical completed status — S053 (16 October 2026)
 
