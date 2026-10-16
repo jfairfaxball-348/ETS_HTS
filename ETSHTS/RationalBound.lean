@@ -1,4 +1,8 @@
-import ETSHTS.Cutoff
+module
+public import ETSHTS.Cutoff
+
+@[expose] public section
+
 
 /-!
 # S031: an unconditional explicit nonround parameter bound

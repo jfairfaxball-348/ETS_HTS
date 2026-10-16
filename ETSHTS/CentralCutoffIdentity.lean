@@ -1,4 +1,8 @@
-import ETSHTS.CentralChordBand
+module
+public import ETSHTS.CentralChordBand
+
+@[expose] public section
+
 
 /-!
 # S048 — exact closed cutoff equality and selected central competitor

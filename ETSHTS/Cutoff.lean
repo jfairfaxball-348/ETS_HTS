@@ -1,4 +1,8 @@
-import ETSHTS.HalfAngle
+module
+public import ETSHTS.HalfAngle
+
+@[expose] public section
+
 
 /-!
 # S030: real arctangent cutoff and exact short-arc extension
@@ -50,11 +54,11 @@ theorem ellipse_short_arc_half_bounds (a b θ φ : ℝ)
   have hp : 0 < Real.arctan (b / a) := by
     calc
       (0 : ℝ) = Real.arctan 0 := by simp
-      _ < Real.arctan (b / a) := Real.arctan_lt_arctan hx
+      _ < Real.arctan (b / a) := Real.arctan_strictMono hx
   have hple : Real.arctan (b / a) ≤ Real.pi / 4 := by
     calc
       Real.arctan (b / a) ≤ Real.arctan 1 :=
-        Real.arctan_le_arctan hxle
+        Real.arctan_mono hxle
       _ = Real.pi / 4 := Real.arctan_one
   have htpos : 0 < (φ - θ) / 2 := by linarith
   have htcut : (φ - θ) / 2 < 2 * Real.arctan (b / a) := by

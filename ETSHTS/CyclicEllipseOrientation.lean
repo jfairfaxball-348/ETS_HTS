@@ -1,4 +1,8 @@
-import ETSHTS.CyclicEllipseIncident
+module
+public import ETSHTS.CyclicEllipseIncident
+
+@[expose] public section
+
 
 /-!
 # S047 — positive orientation of true short-of-one-turn ordered ellipse arcs

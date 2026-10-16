@@ -1,4 +1,8 @@
-import ETSHTS.HullShield
+module
+public import ETSHTS.HullShield
+
+@[expose] public section
+
 
 /-!
 # S042: planar insertion of exact convex-hull ears

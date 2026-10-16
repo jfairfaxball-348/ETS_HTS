@@ -1,33 +1,37 @@
-import ETSHTS.ConvexFourClassification
-import ETSHTS.FiniteEllipsePhase
-import ETSHTS.CyclicEllipsePhase
-import ETSHTS.CyclicEllipseSkip
-import ETSHTS.CyclicEllipseMembership
-import ETSHTS.CyclicEllipseHull
-import ETSHTS.CyclicEllipseIncident
-import ETSHTS.CyclicEllipseOrientation
-import ETSHTS.CyclicEllipseHullSides
-import ETSHTS.CyclicEllipseNeighbourBridge
-import ETSHTS.QuantitativeSkip
-import ETSHTS.CentralChordBand
-import ETSHTS.CentralCutoffIdentity
-import ETSHTS.CentralOriginalSites
-import ETSHTS.ShortArcLifts
-import ETSHTS.CompetitorPhaseIndex
-import ETSHTS.CyclicCompetitorRank
-import ETSHTS.CyclicCompetitorLifts
-import ETSHTS.CyclicCompetitorBands
-import ETSHTS.CyclicCompetitorBackwardIndex
-import ETSHTS.CyclicCompetitorReverseBand
-import ETSHTS.CyclicCompetitorExact
-import ETSHTS.ExactNonround
-import ETSHTS.GenuineEdges
-import ETSHTS.ActualLastNecessity
-import ETSHTS.FiniteHullNeighbours
-import ETSHTS.OuterplanarSplit
-import ETSHTS.ConvexChordSeparation
-import ETSHTS.OuterplanarEdgeSplit
-import ETSHTS.GenuineOuterplanarCap
+module
+public import ETSHTS.ConvexFourClassification
+public import ETSHTS.FiniteEllipsePhase
+public import ETSHTS.CyclicEllipsePhase
+public import ETSHTS.CyclicEllipseSkip
+public import ETSHTS.CyclicEllipseMembership
+public import ETSHTS.CyclicEllipseHull
+public import ETSHTS.CyclicEllipseIncident
+public import ETSHTS.CyclicEllipseOrientation
+public import ETSHTS.CyclicEllipseHullSides
+public import ETSHTS.CyclicEllipseNeighbourBridge
+public import ETSHTS.QuantitativeSkip
+public import ETSHTS.CentralChordBand
+public import ETSHTS.CentralCutoffIdentity
+public import ETSHTS.CentralOriginalSites
+public import ETSHTS.ShortArcLifts
+public import ETSHTS.CompetitorPhaseIndex
+public import ETSHTS.CyclicCompetitorRank
+public import ETSHTS.CyclicCompetitorLifts
+public import ETSHTS.CyclicCompetitorBands
+public import ETSHTS.CyclicCompetitorBackwardIndex
+public import ETSHTS.CyclicCompetitorReverseBand
+public import ETSHTS.CyclicCompetitorExact
+public import ETSHTS.ExactNonround
+public import ETSHTS.GenuineEdges
+public import ETSHTS.ActualLastNecessity
+public import ETSHTS.FiniteHullNeighbours
+public import ETSHTS.OuterplanarSplit
+public import ETSHTS.ConvexChordSeparation
+public import ETSHTS.OuterplanarEdgeSplit
+public import ETSHTS.GenuineOuterplanarCap
+
+@[expose] public section
+
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self

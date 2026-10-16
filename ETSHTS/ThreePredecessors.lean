@@ -1,4 +1,8 @@
-import ETSHTS.FourPoint
+module
+public import ETSHTS.FourPoint
+
+@[expose] public section
+
 
 /-!
 # S032: exact three-predecessor selection, including Cartesian lex ties

@@ -1,4 +1,8 @@
-import ETSHTS.CyclicGapObstruction
+module
+public import ETSHTS.CyclicGapObstruction
+
+@[expose] public section
+
 
 /-!
 # S034 — homogeneous rational half-angle ellipse chord formula
@@ -13,9 +17,9 @@ It is algebra, NOT CLM0096/0099/0107/0108.
 noncomputable section
 namespace ETSHTS
 
-private def s034_X (a t : ℝ) : ℝ := a * (1 - t ^ 2)
-private def s034_Y (b t : ℝ) : ℝ := 2 * b * t
-private def s034_D (t : ℝ) : ℝ := 1 + t ^ 2
+def s034_X (a t : ℝ) : ℝ := a * (1 - t ^ 2)
+def s034_Y (b t : ℝ) : ℝ := 2 * b * t
+def s034_D (t : ℝ) : ℝ := 1 + t ^ 2
 
 /-- Strictly positive denominator for every finite real half-angle parameter. -/
 theorem s034_rational_denominator_positive (t : ℝ) : 0 < s034_D t := by

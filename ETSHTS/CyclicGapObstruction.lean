@@ -1,4 +1,8 @@
-import ETSHTS.ThreePredecessors
+module
+public import ETSHTS.ThreePredecessors
+
+@[expose] public section
+
 
 /-!
 # S033: arithmetic guardrail for the cyclic minimum-two-gap approach
@@ -29,9 +33,9 @@ theorem s033_cyclic_min_two_gap_average (n : ℕ) (hn : 0 < n)
   apply (le_div_iff₀ hnreal).2
   nlinarith [hs]
 
-private def s033_v : Point := (-(1313 : ℝ) / 1940, (72 : ℝ) / 97)
-private def s033_u : Point := ((101 : ℝ) / 125, (3 : ℝ) / 5)
-private def s033_x : Point := (-(1313 : ℝ) / 1940, -(72 : ℝ) / 97)
+def s033_v : Point := (-(1313 : ℝ) / 1940, (72 : ℝ) / 97)
+def s033_u : Point := ((101 : ℝ) / 125, (3 : ℝ) / 5)
+def s033_x : Point := (-(1313 : ℝ) / 1940, -(72 : ℝ) / 97)
 
 /-- Exact squared-distance reversal for rational sites P(9/4),
 P(1/3), P(-9/4) on the ellipse of semiaxes 101/100 and 1. -/

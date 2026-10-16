@@ -1,4 +1,8 @@
-import ETSHTS.ConvexFourSelector
+module
+public import ETSHTS.ConvexFourSelector
+
+@[expose] public section
+
 
 /-!
 # S042 continued — strict Euclidean triangle inequalities

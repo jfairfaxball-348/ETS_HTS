@@ -1,4 +1,8 @@
-import ETSHTS.CyclicEllipseHull
+module
+public import ETSHTS.CyclicEllipseHull
+
+@[expose] public section
+
 
 /-!
 # S047 — strict actual indexed ellipse incident chords

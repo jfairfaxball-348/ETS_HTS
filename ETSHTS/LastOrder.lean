@@ -1,4 +1,8 @@
-import ETSHTS.LastArrival
+module
+public import ETSHTS.LastArrival
+
+@[expose] public section
+
 
 /-!
 # S043: extracting the preceding planar order from a complete order
@@ -78,11 +82,11 @@ theorem s043_planeOrder_has_last_ranked_predecessors
   subst tail
   have hn : (([p, q, r] ++ xs) ++ [v]).Nodup := by
     simpa [List.append_assoc] using hnodup
-  have hdisj : ([p, q, r] ++ xs).Disjoint [v] :=
-    (List.nodup_append.mp hn).2.2
   have hnot : v ∉ ([p, q, r] ++ xs).toFinset := by
     intro hv
-    exact (List.disjoint_singleton.mp hdisj) (by simpa using hv)
+    have hv' : v ∈ [p, q, r] ++ xs := by simpa using hv
+    have hne := (List.nodup_append.mp hn).2.2 v hv' v (by simp)
+    exact hne rfl
   have hset : S = insert v (([p, q, r] ++ xs).toFinset) := by
     rw [← hcover]
     ext x

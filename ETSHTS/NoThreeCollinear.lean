@@ -1,4 +1,8 @@
-import ETSHTS.EarInduction
+module
+public import ETSHTS.EarInduction
+
+@[expose] public section
+
 
 /-!
 # S041 — orientation-zero affine geometry and ellipse noncollinearity

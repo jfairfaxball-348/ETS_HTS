@@ -1,4 +1,8 @@
-import ETSHTS.CyclicCompetitorRank
+module
+public import ETSHTS.CyclicCompetitorRank
+
+@[expose] public section
+
 
 /-!
 # S049 — identify the exact second-successor real lift

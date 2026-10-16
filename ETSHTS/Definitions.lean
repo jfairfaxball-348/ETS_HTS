@@ -1,4 +1,8 @@
-import Mathlib
+module
+public import Mathlib
+
+@[expose] public section
+
 
 /-!
 # Formal definitions for ETS_HTS S025

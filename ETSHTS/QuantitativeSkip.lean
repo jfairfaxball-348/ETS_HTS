@@ -1,4 +1,8 @@
-import ETSHTS.CyclicEllipseNeighbourBridge
+module
+public import ETSHTS.CyclicEllipseNeighbourBridge
+
+@[expose] public section
+
 
 /-!
 # S048 — quantitative bound for the actual minimum original ellipse skip

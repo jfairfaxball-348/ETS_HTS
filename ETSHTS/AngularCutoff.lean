@@ -1,5 +1,9 @@
-import ETSHTS.RatioWindow
-import ETSHTS.CyclicFinite
+module
+public import ETSHTS.RatioWindow
+public import ETSHTS.CyclicFinite
+
+@[expose] public section
+
 
 /-!
 # S044 — the original closed ratio permits the exact two-gap cutoff
@@ -42,7 +46,7 @@ theorem s044_closed_ratio_cutoff_exceeds_four_pi_div_five
     linarith
   have hpos : 0 ≤ 2 * Real.arctan (b / a) := by
     have har : Real.arctan 0 < Real.arctan (b / a) :=
-      Real.arctan_lt_arctan hxpos
+      Real.arctan_strictMono hxpos
     simp only [Real.arctan_zero] at har
     linarith
   have hpi : 2 * Real.pi / 5 ≤ Real.pi / 2 := by

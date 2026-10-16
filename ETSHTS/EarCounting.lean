@@ -1,4 +1,8 @@
-import ETSHTS.EarFramework
+module
+public import ETSHTS.EarFramework
+
+@[expose] public section
+
 
 /-!
 # S039 — exact fresh-edge counting under the original mandatory insertion

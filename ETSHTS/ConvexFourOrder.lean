@@ -1,4 +1,8 @@
-import ETSHTS.ConvexFourExact
+module
+public import ETSHTS.ConvexFourExact
+
+@[expose] public section
+
 
 /-!
 # S042 continued — exact compulsory planar order for crossed quadrilaterals

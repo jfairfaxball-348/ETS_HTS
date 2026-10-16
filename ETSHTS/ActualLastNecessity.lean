@@ -1,4 +1,8 @@
-import ETSHTS.GenuineEdges
+module
+public import ETSHTS.GenuineEdges
+
+@[expose] public section
+
 
 /-!
 # S051 — necessity using the TRUE chronological last arrival
@@ -43,11 +47,11 @@ theorem s051_actual_last_metricEar_of_saturation
     simpa [List.append_assoc] using hnodup
   have hpreN : ([p, q, r] ++ rest).Nodup :=
     (List.nodup_append.mp hn).1
-  have hdisj : ([p, q, r] ++ rest).Disjoint [v] :=
-    (List.nodup_append.mp hn).2.2
   have hnot : v ∉ ([p, q, r] ++ rest).toFinset := by
     intro hv
-    exact (List.disjoint_singleton.mp hdisj) (by simpa using hv)
+    have hv' : v ∈ [p, q, r] ++ rest := by simpa using hv
+    have hne := (List.nodup_append.mp hn).2.2 v hv' v (by simp)
+    exact hne rfl
   have hset : S = insert v (([p, q, r] ++ rest).toFinset) := by
     rw [← hcover]
     ext x

@@ -1,4 +1,8 @@
-import ETSHTS.NecessityInduction
+module
+public import ETSHTS.NecessityInduction
+
+@[expose] public section
+
 
 /-!
 # S044 — genuinely saturated hull sides force the exact last ranked pair

@@ -1,4 +1,8 @@
-import ETSHTS.EarSufficiency
+module
+public import ETSHTS.EarSufficiency
+
+@[expose] public section
+
 
 /-!
 # S042: a correct recursion ending at four sites

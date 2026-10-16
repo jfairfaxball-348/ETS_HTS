@@ -1,4 +1,8 @@
-import ETSHTS.ShortArcLifts
+module
+public import ETSHTS.ShortArcLifts
+
+@[expose] public section
+
 
 /-!
 # S048 — each original competitor has a unique genuine cyclic phase index

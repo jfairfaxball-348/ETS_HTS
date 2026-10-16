@@ -1,4 +1,8 @@
-import ETSHTS.CyclicEllipseMembership
+module
+public import ETSHTS.CyclicEllipseMembership
+
+@[expose] public section
+
 
 /-!
 # S047 — hull-side exhaustiveness for original convex ellipse sites

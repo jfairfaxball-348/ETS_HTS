@@ -1,0 +1,111 @@
+# S058 prospective Palomar v0.4 metadata — DRAFT ONLY
+
+**Not a valid root `formalization.yaml` and NOT approved for submission.** A repository-wide licence grant and matching SPDX identifier must first be explicitly chosen by the copyright holder. The owner has authorised preparation, not licensing or registry submission.
+
+The following metadata is a *candidate*, deliberately retained only in the session archive rather than installing a misleadingly valid-looking submission manifest:
+
+```yaml
+version: "v0.4"
+
+project:
+  name: "Noncrossing Two-Nearest-Predecessor Orders on Nearly Circular Ellipses"
+  description: >-
+    We prove that every finite set of at least three distinct points on an
+    ellipse with semiaxes a >= b > 0 and
+    a/b <= sqrt(2/sin(2*pi/5) - 1) admits a noncrossing retained
+    insertion order with exactly its two Euclidean nearest earlier
+    neighbours joined at every insertion after an initial triangle.
+    Every old edge is retained, and equal-distance predecessor ties
+    are decided by Cartesian lexicographic order. The sufficient bound
+    includes equality and places no upper bound on the number of sites
+    or lower bound on the separation of distinct sites. In particular,
+    the nonround ellipse with semiaxes 101/100 and 1 satisfies the
+    conclusion for all finite site sets of size at least three.
+    We also prove the complete three- and four-site cases, a necessary
+    and sufficient recursive metric-ear certificate for strictly
+    convex-position sets, and exact short-arc ellipse-chord derivative
+    and extension inequalities. We do not claim the aspect-ratio
+    constant is sharp or that historical priority has been established.
+  authors:
+    - "John Fairfax-Ball"
+  license: "OWNER_SPDX_CHOICE_REQUIRED" # INVALID, not a licence grant.
+  responsible_maintainers:
+    - "John Fairfax-Ball"
+
+classification:
+  arxiv: ["math.CO"]
+  msc2020: []
+
+sources:
+  - title: "S020: A uniform all-cardinality near-circle theorem"
+    authors: ["John Fairfax-Ball"]
+    type: original-proof
+    relationship: other
+    location: "https://github.com/jfairfaxball-348/ellipse-theorem/blob/main/sessions/S020/MATHEMATICS.md"
+    note: >-
+      Original mathematical development within this repository; S055
+      assessed external priority as INDETERMINATE_ACCESS_GAP and did
+      not certify novelty or independent peer review.
+
+related_formalizations: []
+
+status:
+  scope: >-
+    Five exact source theorem targets CLM0096, CLM0099, CLM0102,
+    CLM0107 and CLM0108, in the proved substantive ETSHTS source
+    development; independent Palomar comparison requires separate
+    successful evidence.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: []
+
+automation:
+  methods:
+    - method: agent
+      models: []
+      framework: "ChatGPT with GitHub-hosted Lean verification"
+      tool_setup: "Owner-steered, AI-assisted theorem formalisation, Lean tactics and GitHub Actions checks; model inventory not comprehensively logged."
+      cost:
+        wall_time: "not tracked"
+        spend_usd: "not tracked"
+        hardware: "GitHub-hosted runners"
+      prompting_notes: "Each numbered session targets the owner's chosen objective; kernel proofs and source identity are audited."
+  spend_usd: "not tracked"
+  notes: "Human-directed mathematics; AI-assisted formalisation and CI-guided proof-preserving upgrades."
+
+fidelity:
+  divergences: "No known change to the five frozen direct theorem statements; final independent Palomar comparison not yet certified."
+
+review:
+  status: "self-assessed"
+  reviewers: []
+  notes: "Internal hostile theorem/semantic audits and S055 incomplete-prior-art audit; no external peer review and no historical priority certification."
+
+alignment:
+  namespace: "ETSHTS"
+  statements:
+    - source: "S020 / CLM0107"
+      lean: "ETSHTS.clm0107_exact"
+      module: "ETSHTS.CyclicCompetitorExact"
+      status: proved
+    - source: "S020 / CLM0108"
+      lean: "ETSHTS.clm0108_exact"
+      module: "ETSHTS.ExactNonround"
+      status: proved
+    - source: "CLM0099"
+      lean: "ETSHTS.clm0099_exact"
+      module: "ETSHTS.GenuineOuterplanarCap"
+      status: proved
+    - source: "CLM0096"
+      lean: "ETSHTS.clm0096_exact"
+      module: "ETSHTS.ConvexFourClassification"
+      status: proved
+    - source: "CLM0102"
+      lean: "ETSHTS.clm0102_exact"
+      module: "ETSHTS.Cutoff"
+      status: proved
+
+acknowledgements: "Mathlib and the Lean community; owner-directed AI-assisted formalisation."
+```
+
+Owner review still controls the eventual paper title, licensing, personal relationship assertion, credits, and any public metadata. The draft's claims about Comparator are intentionally qualified; nothing here creates a Palomar registration or a full-mode PASS.

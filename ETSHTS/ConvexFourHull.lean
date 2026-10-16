@@ -1,4 +1,8 @@
-import ETSHTS.ConvexFourGeometry
+module
+public import ETSHTS.ConvexFourGeometry
+
+@[expose] public section
+
 
 /-!
 # S042 continued — four true supporting sides from crossing diagonals

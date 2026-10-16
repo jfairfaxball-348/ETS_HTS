@@ -1,5 +1,9 @@
-import ETSHTS.CyclicCompetitorReverseBand
-import ETSHTS.ConvexFourClassification
+module
+public import ETSHTS.CyclicCompetitorReverseBand
+public import ETSHTS.ConvexFourClassification
+
+@[expose] public section
+
 
 /-!
 # S049 — all actual original competitors and the direct all-n theorem

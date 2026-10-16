@@ -1,4 +1,8 @@
-import ETSHTS.FiniteEllipsePhase
+module
+public import ETSHTS.FiniteEllipsePhase
+
+@[expose] public section
+
 
 /-!
 # S046 — true cyclic phase gaps from the original finite ellipse sites

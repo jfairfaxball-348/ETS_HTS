@@ -1,4 +1,8 @@
-import ETSHTS.Targets
+module
+public import ETSHTS.Targets
+
+@[expose] public section
+
 
 /-!
 # S026 verified-proof candidates

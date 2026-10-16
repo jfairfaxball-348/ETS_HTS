@@ -1,4 +1,8 @@
-import ETSHTS.CyclicCompetitorBands
+module
+public import ETSHTS.CyclicCompetitorBands
+
+@[expose] public section
+
 
 /-!
 # S049 — the actual second predecessor at the reverse short arc

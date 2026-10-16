@@ -1,4 +1,8 @@
-import ETSHTS.EarCounting
+module
+public import ETSHTS.EarCounting
+
+@[expose] public section
+
 
 /-!
 # S040 — full-history edge support and exact two-edge counting

@@ -1,4 +1,8 @@
-import ETSHTS.Derivatives
+module
+public import ETSHTS.Derivatives
+
+@[expose] public section
+
 
 /-!
 # S029: two independent half-angle derivative factorisations

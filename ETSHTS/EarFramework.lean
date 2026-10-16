@@ -1,4 +1,8 @@
-import ETSHTS.EllipseConvex
+module
+public import ETSHTS.EllipseConvex
+
+@[expose] public section
+
 
 /-!
 # S038 — exact exposed-segment and retained-edge prerequisites

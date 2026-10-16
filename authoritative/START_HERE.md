@@ -1,5 +1,9 @@
 # Start here — ellipse theorem formalisation
 
+## S058 completed — successful modern kernel/comparator audit; Palomar NOT_READY (16 October 2026)
+
+**Current owner-directed state:** S058 executed and closed; all FIVE original exact theorem roots compile under pinned Lean v4.35.0 and Mathlib, with unchanged frozen propositions and the three standard axioms only. The independently sandboxed `lake comparator` selected all five exact theorems and confirmed proofs through con-ron, NanoDa and Lean kernels ([CI 38922156993](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38922156993)). This is **NOT** an official Palomar `mode: full` predictive PASS. Missing owner-authorised repository-root SPDX licence, approved production `formalization.yaml`, and official successful full-mode check on the exact final main SHA. **NOT_READY for Palomar submission.** See [S058 closeout](../sessions/S058/CLOSEOUT.md) and [owner handoff](../sessions/S058/OWNER_SUBMISSION_HANDOFF.md). S059 is FUTURE/UNEXECUTED, TARGET NOT INSTALLED; owner alone steers subsequent target. Older below-current "S058 FUTURE" text is historical.
+
 ## S058 installed by owner — FUTURE / UNEXECUTED (16 October 2026)
 
 The owner has explicitly selected the next session's target as **100% Palomar submission readiness** for all five original exact ellipse theorem roots. Read [installed S058 prompt](NEXT_SESSION_PROMPT.md). This administrative action does NOT run S058, confer a licence grant, or authorise a Palomar submission. S057 is the most recent executed session, with last audited readiness **NOT_READY**. Only a separate **new explicit owner invocation** runs S058. Historic below-current uninstalled descriptions are superseded.

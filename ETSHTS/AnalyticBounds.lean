@@ -1,4 +1,8 @@
-import ETSHTS.Partial
+module
+public import ETSHTS.Partial
+
+@[expose] public section
+
 
 /-!
 # S027: exact ellipse chord algebra and anisotropic distance bounds

@@ -1,4 +1,8 @@
-import ETSHTS.ActualLastNecessity
+module
+public import ETSHTS.ActualLastNecessity
+
+@[expose] public section
+
 
 /-!
 S052: the original generic strict-convex finite-geometry neighbour obligation.

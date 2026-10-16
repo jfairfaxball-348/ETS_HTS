@@ -1,4 +1,8 @@
-import ETSHTS.CyclicCompetitorLifts
+module
+public import ETSHTS.CyclicCompetitorLifts
+
+@[expose] public section
+
 
 /-!
 # S049 — true competitor floor in the forward and central angle bands

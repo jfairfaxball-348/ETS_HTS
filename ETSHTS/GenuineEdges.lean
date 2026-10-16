@@ -1,4 +1,8 @@
-import ETSHTS.HullLastBridge
+module
+public import ETSHTS.HullLastBridge
+
+@[expose] public section
+
 
 /-!
 # S051 — genuine original retained edges and the corrected saturation interface

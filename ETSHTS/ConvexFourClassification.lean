@@ -1,4 +1,8 @@
-import ETSHTS.ConvexFourBarycentric
+module
+public import ETSHTS.ConvexFourBarycentric
+
+@[expose] public section
+
 
 /-!
 # S042 continuation: four-point sign-pattern classification
@@ -188,19 +192,19 @@ theorem clm0096_exact : CLM0096 := by
       have hbad : v ∈ S.erase v := by
         rw [hrest]
         simp [he]
-      exact (Finset.not_mem_erase v S) hbad
+      exact (by simp : v ∉ S.erase v) hbad
     have hvq : v ≠ q := by
       intro he
       have hbad : v ∈ S.erase v := by
         rw [hrest]
         simp [he]
-      exact (Finset.not_mem_erase v S) hbad
+      exact (by simp : v ∉ S.erase v) hbad
     have hvr : v ≠ r := by
       intro he
       have hbad : v ∈ S.erase v := by
         rw [hrest]
         simp [he]
-      exact (Finset.not_mem_erase v S) hbad
+      exact (by simp : v ∉ S.erase v) hbad
     have hset : S = ({p, q, r, v} : Finset Point) := by
       calc
         S = insert v (S.erase v) := (Finset.insert_erase hv).symm

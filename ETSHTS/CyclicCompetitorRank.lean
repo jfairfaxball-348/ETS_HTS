@@ -1,4 +1,8 @@
-import ETSHTS.CompetitorPhaseIndex
+module
+public import ETSHTS.CompetitorPhaseIndex
+
+@[expose] public section
+
 
 /-!
 # S049 — arithmetic rank of the original forward cyclic site index
