@@ -23,6 +23,8 @@ import ETSHTS.CyclicCompetitorExact
 import ETSHTS.ExactNonround
 import ETSHTS.GenuineEdges
 import ETSHTS.ActualLastNecessity
+import ETSHTS.FiniteHullNeighbours
+import ETSHTS.OuterplanarSplit
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -330,3 +332,13 @@ import ETSHTS.ActualLastNecessity
 #print axioms ETSHTS.s051_actual_history_saturates_of_genuine_cap
 #print axioms ETSHTS.s051_order_has_actual_last_metricEar_of_cap
 #print axioms ETSHTS.s051_clm0099_of_genuine_outerplanar_cap_and_two_sides
+
+#print axioms ETSHTS.s052_two_hull_sides
+
+#print axioms ETSHTS.s052_halves_union
+#print axioms ETSHTS.s052_halves_intersection
+#print axioms ETSHTS.s052_halves_card
+#print axioms ETSHTS.s052_nonhull_witnesses
+#print axioms ETSHTS.s052_nonhull_halves_proper
+
+#print axioms ETSHTS.s052_clm0099_of_genuine_outerplanar_cap
