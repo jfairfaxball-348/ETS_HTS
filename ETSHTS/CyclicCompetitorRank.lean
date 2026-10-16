@@ -288,5 +288,7 @@ theorem s049_non_neighbour_rank_interval {n : ℕ} (hn : 4 ≤ n)
       (hh.trans hnrank.symm)
     exact hleft heq
   have hbound := s049_forward_rank_le c k
+  change 2 ≤ s049_forward_rank c k ∧
+    s049_forward_rank c k ≤ n - 1
   constructor <;> omega
 end ETSHTS
