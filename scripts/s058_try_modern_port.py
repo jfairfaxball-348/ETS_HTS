@@ -50,6 +50,19 @@ for p in files:
     exact hne rfl"""
         assert old_block in old
         old = old.replace(old_block, new_block)
+    if p.as_posix() == "ETSHTS/ActualLastNecessity.lean":
+        old_block = """  have hdisj : ([p, q, r] ++ rest).Disjoint [v] :=
+    (List.nodup_append.mp hn).2.2
+  have hnot : v ∉ ([p, q, r] ++ rest).toFinset := by
+    intro hv
+    exact (List.disjoint_singleton.mp hdisj) (by simpa using hv)"""
+        new_block = """  have hnot : v ∉ ([p, q, r] ++ rest).toFinset := by
+    intro hv
+    have hv' : v ∈ [p, q, r] ++ rest := by simpa using hv
+    have hne := (List.nodup_append.mp hn).2.2 v hv' v (by simp)
+    exact hne rfl"""
+        assert old_block in old
+        old = old.replace(old_block, new_block)
     if p.as_posix() == "ETSHTS/LastOrder.lean":
         old_block = """  have hdisj : ([p, q, r] ++ xs).Disjoint [v] :=
     (List.nodup_append.mp hn).2.2
@@ -73,6 +86,9 @@ for p in files:
         for name in ("s034_X", "s034_Y", "s034_D"):
             assert f"private def {name} " in old
             old = old.replace(f"private def {name} ", f"def {name} ")
+    # Full source-wide mechanical rename of retired Mathlib arctan comparison APIs.
+    old = old.replace("Real.arctan_lt_arctan", "Real.arctan_strictMono")
+    old = old.replace("Real.arctan_le_arctan", "Real.arctan_mono")
     if old.lstrip().startswith("module"):
         raise SystemExit(f"Already migrated; do not rewrite {p}")
     lines = old.splitlines(keepends=True)
