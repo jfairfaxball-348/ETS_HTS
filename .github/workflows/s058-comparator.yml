@@ -1,7 +1,9 @@
-name: S058 independent Palomar comparator probe
+name: Independent exact Palomar comparator (not official full verification)
 on:
   push:
-    branches: ['session/S058-palomar-readiness']
+    branches: [main, 'session/**']
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
