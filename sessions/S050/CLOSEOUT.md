@@ -1,0 +1,7 @@
+# S050 closeout — direct original CLM0108 kernel proved, 4/5
+
+Owner-authorised S050 on 16 October 2026 after normal S049 PR #61 merge `e251111bf8901ae828944acdd1bb6a82f07cb010` (two parents, tree `1b3faa18a873f26a1d9a9947d990fda2a507bb78`). Independently passed prior merged-main Lean `38874870953` and governance `38874870864`; prior final PR-head Lean `38873876959` and governance `38873876912` all SUCCESS.
+
+New `ETSHTS/ExactNonround.lean` proves literal `clm0108_exact : CLM0108` as `clm0108_of_clm0107 clm0107_exact` using exact already proven ratio and strict nonround bridge. New root `ETSHTS.lean` import/axiom line. Hosted code-head Lean run [38878900054](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38878900054) SUCCESS on `aa9ee54f764ec7d9cd2c310b5349dc3e30eec2cf`. Actual root log prints `ETSHTS.clm0108_exact` axioms only `[propext, Classical.choice, Quot.sound]`; forbidden-token scan passed. No `sorry`, `admit`, custom `axiom`, `native_decide`, alternate metrics/graph or modified original `Definitions`/`Targets` (verified exact original blob SHAs).
+
+S050 normal [PR #62](https://github.com/jfairfaxball-348/ellipse-theorem/pull/62) includes the source and archival records; final PR-head and independent merged-main Lean/governance checks require exact verification at integration. Direct original 4/5: CLM0096, CLM0102, CLM0107, CLM0108 kernel proved; CLM0099 iff remains OPEN. S051 handover FUTURE / UNEXECUTED; no S051 formalisation, novelty, paper, release or Palomar activity.
