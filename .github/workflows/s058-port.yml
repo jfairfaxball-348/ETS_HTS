@@ -28,6 +28,8 @@ jobs:
         run: lake exe cache get
       - name: Full original theorem source build
         run: lake build
+      - name: Compile independent Palomar Challenge and full Solution
+        run: lake build Challenge Solution
       - name: Five exact theorem kernel axiom audits
         run: |
           set -euo pipefail

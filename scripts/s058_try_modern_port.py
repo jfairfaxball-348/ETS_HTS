@@ -86,6 +86,11 @@ for p in files:
         for name in ("s034_X", "s034_Y", "s034_D"):
             assert f"private def {name} " in old
             old = old.replace(f"private def {name} ", f"def {name} ")
+    if p.as_posix() == "ETSHTS/ConvexChordSeparation.lean":
+        # Lean 4.35 'rw [he]' has already unfolded the product projections.
+        assert "    rw [he]\n    dsimp\n    ring" in old
+        old = old.replace("    rw [he]\n    dsimp\n    ring",
+                          "    rw [he]\n    ring")
     # Full source-wide mechanical rename of retired Mathlib arctan comparison APIs.
     old = old.replace("Real.arctan_lt_arctan", "Real.arctan_strictMono")
     old = old.replace("Real.arctan_le_arctan", "Real.arctan_mono")
