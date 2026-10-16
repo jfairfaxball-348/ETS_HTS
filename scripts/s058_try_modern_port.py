@@ -47,6 +47,19 @@ for p in files:
     exact hne rfl"""
         assert old_block in old
         old = old.replace(old_block, new_block)
+    if p.as_posix() == "ETSHTS/LastOrder.lean":
+        old_block = """  have hdisj : ([p, q, r] ++ xs).Disjoint [v] :=
+    (List.nodup_append.mp hn).2.2
+  have hnot : v ∉ ([p, q, r] ++ xs).toFinset := by
+    intro hv
+    exact (List.disjoint_singleton.mp hdisj) (by simpa using hv)"""
+        new_block = """  have hnot : v ∉ ([p, q, r] ++ xs).toFinset := by
+    intro hv
+    have hv' : v ∈ [p, q, r] ++ xs := by simpa using hv
+    have hne := (List.nodup_append.mp hn).2.2 v hv' v (by simp)
+    exact hne rfl"""
+        assert old_block in old
+        old = old.replace(old_block, new_block)
     if p.as_posix() == "ETSHTS/ConvexFourClassification.lean":
         # Removal of Finset.not_mem_erase in newer Mathlib.
         assert old.count("exact (Finset.not_mem_erase v S) hbad") == 3
