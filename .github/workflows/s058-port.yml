@@ -1,0 +1,52 @@
+name: S058 modern Lean full-port probe
+on:
+  push:
+    branches: ['session/S058-palomar-readiness']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Migrate all original project sources with recorded proof-preserving repairs
+        run: python3 scripts/s058_try_modern_port.py
+      - name: Install supported pinned modern Lean
+        uses: leanprover/lean-action@v1
+        with:
+          build: "false"
+          test: "false"
+          lint: "false"
+          use-mathlib-cache: "false"
+      - name: Generate exact Mathlib dependency manifest
+        run: lake update
+      - name: Load matching Mathlib cache
+        run: lake exe cache get
+      - name: Full original theorem source build
+        run: lake build
+      - name: Five exact theorem kernel axiom audits
+        run: |
+          set -euo pipefail
+          lake env lean ETSHTS.lean | tee s058-axioms.txt
+          for theorem in clm0096_exact clm0099_exact clm0102_exact clm0107_exact clm0108_exact; do
+            grep -F "'ETSHTS.${theorem}' depends on axioms: [propext, Classical.choice, Quot.sound]" s058-axioms.txt
+          done
+          if grep -nRE '(^|[[:space:]])(sorry|admit|axiom|native_decide)([[:space:]]|$)' ETSHTS.lean ETSHTS; then
+            echo "Unapproved proof hole or axiom"
+            exit 1
+          fi
+      - name: Commit source migration only when build and axiom checks PASS
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -f s058-axioms.txt
+          git add ETSHTS.lean ETSHTS lean-toolchain lakefile.lean lake-manifest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "S058: compiled module port of five exact theorem roots"
+            git push origin HEAD:session/S058-palomar-readiness
+          fi
