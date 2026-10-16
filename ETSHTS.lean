@@ -340,3 +340,5 @@ import ETSHTS.OuterplanarSplit
 #print axioms ETSHTS.s052_halves_card
 #print axioms ETSHTS.s052_nonhull_witnesses
 #print axioms ETSHTS.s052_nonhull_halves_proper
+
+#print axioms ETSHTS.s052_clm0099_of_genuine_outerplanar_cap

@@ -62,12 +62,12 @@ theorem s052_halves_intersection
     by_cases hzq : z = q
     · exact Or.inr hzq
     exact False.elim
-      ((hno p hp q hq z hz hpq hzp.symm hzq.symm) hzero)
+      ((hno p hp q hq z hz hpq (by intro h; exact hzp h.symm) (by intro h; exact hzq h.symm)) hzero)
   · rintro (rfl | rfl)
-    · exact ⟨⟨hp, by rw [hpp] ; exact le_refl 0⟩,
-        ⟨hp, by rw [hpp] ; exact le_refl 0⟩⟩
-    · exact ⟨⟨hq, by rw [hqq] ; exact le_refl 0⟩,
-        ⟨hq, by rw [hqq] ; exact le_refl 0⟩⟩
+    · exact ⟨⟨hp, by simp [hpp]⟩,
+        ⟨hp, by simp [hpp]⟩⟩
+    · exact ⟨⟨hq, by simp [hqq]⟩,
+        ⟨hq, by simp [hqq]⟩⟩
 
 /-- The exact cardinality identity for either chord-induced partition. -/
 theorem s052_halves_card
@@ -133,5 +133,20 @@ theorem s052_nonhull_halves_proper
     simp only [s052_negativeHalf, Finset.mem_filter, not_and]
     intro _
     exact not_le.mpr hspos
+
+/-- Only the TRUE universal simple-edge convex outerplanar bound remains
+between the compiled S051 necessity induction and the literal CLM0099.
+The second formerly missing finite geometric premise is discharged by
+s052_two_hull_sides in the UNCHANGED original predicates. -/
+theorem s052_clm0099_of_genuine_outerplanar_cap
+    (hcap : ∀ T : Finset Point, 4 ≤ T.card →
+      strictConvexPosition T →
+      ∀ H : Finset Edge, planeEdges H →
+        (∀ e ∈ H, e ⊆ T) →
+        (∀ e ∈ H, ∃ a b : Point, a ≠ b ∧ e = edge a b) →
+        H.card ≤ 2 * T.card - 3) : CLM0099 := by
+  apply s051_clm0099_of_genuine_outerplanar_cap_and_two_sides hcap
+  intro T h4 hconv v hv
+  exact s052_two_hull_sides T h4 hconv v hv
 
 end ETSHTS
