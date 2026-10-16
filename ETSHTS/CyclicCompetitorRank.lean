@@ -96,4 +96,39 @@ theorem s049_forward_rank_strictMono_lift {n : ℕ}
       simpa [s048_forward_competitor_lift, hjlt, hklt] using
         (add_lt_add_right hθ (2 * Real.pi))
 
+
+/-- The actual index is uniquely determined by its cyclic rank.  This
+complements S048 unique phase indexing with a combinatorial cycle coordinate. -/
+theorem s049_forward_rank_injective {n : ℕ}
+    (centre : Fin (n + 1)) (j k : Fin (n + 1))
+    (heq : s049_forward_rank centre j = s049_forward_rank centre k) :
+    j = k := by
+  classical
+  by_cases hj : centre ≤ j
+  · by_cases hk : centre ≤ k
+    · simp only [s049_forward_rank, if_pos hj, if_pos hk] at heq
+      apply Fin.ext
+      have hvj : centre.val ≤ j.val := Fin.le_def.mp hj
+      have hvk : centre.val ≤ k.val := Fin.le_def.mp hk
+      omega
+    · simp only [s049_forward_rank, if_pos hj, if_neg hk] at heq
+      have hvj : centre.val ≤ j.val := Fin.le_def.mp hj
+      have hvk : k.val < centre.val := Fin.lt_def.mp (lt_of_not_ge hk)
+      have hjbd := j.isLt
+      have hcbd := centre.isLt
+      omega
+  · by_cases hk : centre ≤ k
+    · simp only [s049_forward_rank, if_neg hj, if_pos hk] at heq
+      have hvj : j.val < centre.val := Fin.lt_def.mp (lt_of_not_ge hj)
+      have hvk : centre.val ≤ k.val := Fin.le_def.mp hk
+      have hkbd := k.isLt
+      have hcbd := centre.isLt
+      omega
+    · simp only [s049_forward_rank, if_neg hj, if_neg hk] at heq
+      apply Fin.ext
+      have hvj : j.val < centre.val := Fin.lt_def.mp (lt_of_not_ge hj)
+      have hvk : k.val < centre.val := Fin.lt_def.mp (lt_of_not_ge hk)
+      have hcbd := centre.isLt
+      omega
+
 end ETSHTS
