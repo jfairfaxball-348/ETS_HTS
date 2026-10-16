@@ -1,4 +1,5 @@
 import ETSHTS.OuterplanarEdgeSplit
+import ETSHTS.CyclicEllipseHull
 
 noncomputable section
 namespace ETSHTS
@@ -37,11 +38,13 @@ theorem s053_hull_incident_card {T : Finset Point}
     obtain ⟨he,hve⟩ := Finset.mem_filter.mp he
     obtain ⟨a,b,hab,rfl⟩ := hg e he
     have hcase : v = a ∨ v = b := by simpa [edge] using hve
-    rcases hcase with rfl | rfl
-    · have hside := hhull a b he hab
+    rcases hcase with h | h
+    · subst a
+      have hside := hhull v b he hab
       rcases s047_hullSide_at_most_two hn hu hw hside huw with rfl | rfl <;> simp
-    · have he' : edge b a ∈ H := by simpa [edge, Finset.pair_comm] using he
-      have hside := hhull b a he' hab.symm
+    · subst b
+      have he' : edge v a ∈ H := by simpa [edge, Finset.pair_comm] using he
+      have hside := hhull v a he' hab.symm
       rcases s047_hullSide_at_most_two hn hu hw hside huw with rfl | rfl <;>
         simp [edge, Finset.pair_comm]
   apply le_trans (Finset.card_le_card hsub)
