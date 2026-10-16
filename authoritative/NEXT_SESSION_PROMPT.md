@@ -1,11 +1,15 @@
-# S055 — FUTURE / UNEXECUTED: independent verification and release-readiness decision
+# S055 — FUTURE / UNEXECUTED — TARGET NOT INSTALLED
 
-**FUTURE / UNEXECUTED. A new explicit owner invocation is required to run S055.** The S054 invocation does not authorise S055, submission, release or outreach.
+**TARGET STATUS: NOT INSTALLED. NO EXECUTION AUTHORITY.**
 
-Repository: https://github.com/jfairfaxball-348/ellipse-theorem; Lean namespace `ETSHTS`.
+The owner has reserved session number **S055** but has **not yet specified its target**. There is deliberately no research, Lean formalisation, independent verification, publication, or other task installed for S055.
 
-Preflight fresh live main/head/tree, S054 authored single-parent chain and ordinary PR/two-parent merge, exact tree equality and separately successful S054 final PR-head and merged-main Lean/governance. Capture standard-only five exact theorem `#print axioms`; mark any absent check UNKNOWN, not PASS. Compare S054 immutable Definitions/Targets blobs and audited dependency manifest.
+This file is a neutral governance placeholder, not an executable session brief. Do not infer a target from S054 closeout, incomplete historical plans, assistant suggestions, or the previous provisional S055 brief (now superseded). A generic `run next session` **must not execute S055** while this target is uninstalled.
 
-Scope S055: **independent verification readiness**, not more theorem hunting. Design a narrowly scoped independent proof-replay package and, where owner-authorised and technically available, submit the existing completed Lean project for third-party/Palomar verification; record exact submission reference, reviewer/verifier response and limitations. If submission needs separate permission or a tool is missing, prepare a self-contained reproducibility dossier and leave the external action unexecuted. Assess journal/arXiv manuscript readiness and exact novelty qualifications without claiming priority or creating a manuscript/publication automatically. Any external public posting or release requires explicit owner approval.
+**Owner-driven sequence:** the owner will explicitly say what to **install as the S055 target**. That instruction authorises only an administrative update of this file and `authoritative/STATE.json` to `OWNER_TARGET_INSTALLED`, not the execution of S055. Thereafter, a **new explicit owner invocation** is required to run exactly S055.
 
-Freeze S020/S021 mathematics, exact CLM0096/0099/0102/0107/0108 statements, and Lean theorem sources. No new mathematics, optimised R, extra theorems, or rerun of completed novelty campaign. On failure, name the precise verification blocker; on success, propose the next owner-gated release stage. Archive S055 session records; ordinary PR and independent CI. Do not execute S056 in S055.
+Until installation, preserve `last_completed_session=S054`, `next_session=S055`, `next_session_target_status=AWAITING_OWNER_TARGET`, `next_session_target=null` and `next_session_authorised=false`.
+
+The preceding S054 formalisation audit is complete: all five exact Lean targets passed pinned PR-head and independent merged-main CI; the original Definitions/Targets and S020/S021 mathematics remain frozen. No new mathematical or external-release authority is implied by this placeholder.
+
+**Binding closeout convention going forward:** after a numbered session, finish its normal evidence-based closeout and integration, record unfinished obligations honestly as facts, and stop. Do not propose, preselect, or generate a substantive next-session agenda. Install only a neutral placeholder and let the owner choose the next target.

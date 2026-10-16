@@ -10,7 +10,7 @@ from pathlib import Path
 REQUIRED = (
     "AGENTS.md", "README.md", "authoritative/START_HERE.md",
     "authoritative/STATE.json", "authoritative/NEXT_SESSION_PROMPT.md",
-    "docs/SESSION_PROTOCOL.md", "docs/DECISION_LOG.md",
+    "docs/SESSION_PROTOCOL.md", "docs/OWNER_STEERED_SESSION_POLICY.md", "docs/DECISION_LOG.md",
     "docs/FAILURE_LEDGER.md", "docs/SESSION_LEDGER.md",
     "docs/PHASE_GATE_LEDGER.md", "docs/NOVELTY_PROTOCOL.md",
     "docs/DIFFICULTY_PROTOCOL.md", "docs/INTEGRITY_CHECKLIST.md",
@@ -196,6 +196,7 @@ def validate(root: Path) -> list[str]:
                         errors.append(f"{item.get('id','?')}: dangling {key} reference {ref}")
     state_file = root / "authoritative/STATE.json"
     expected_next = None
+    next_target_status = None
     if state_file.is_file():
         try:
             s = json.loads(state_file.read_text(encoding="utf-8"))
@@ -208,6 +209,18 @@ def validate(root: Path) -> list[str]:
                 errors.append("STATE: next session must follow last completed and be explicitly unauthorised")
             if s.get("phase") != 1:
                 errors.append("STATE: programme must remain in governed phase one")
+            if s.get("session_steering_mode") != "OWNER_DIRECTED":
+                errors.append("STATE: session_steering_mode must be OWNER_DIRECTED")
+            next_target_status = s.get("next_session_target_status")
+            if next_target_status not in {"AWAITING_OWNER_TARGET", "OWNER_TARGET_INSTALLED"}:
+                errors.append("STATE: invalid or missing next_session_target_status")
+            target = s.get("next_session_target")
+            if next_target_status == "AWAITING_OWNER_TARGET" and target is not None:
+                errors.append("STATE: pending owner target must be null")
+            if next_target_status == "OWNER_TARGET_INSTALLED" and (
+                not isinstance(target, str) or not target.strip()
+            ):
+                errors.append("STATE: installed owner target must be nonempty")
             statuses = [x.get("status") for x in parsed.get("candidates", []) if isinstance(x, dict)]
             if s.get("kill_count") != sum(str(x).startswith("KILLED_") for x in statuses):
                 errors.append("STATE: kill_count mismatch registry")
@@ -230,6 +243,12 @@ def validate(root: Path) -> list[str]:
             errors.append("NEXT_SESSION_PROMPT must be explicitly FUTURE UNEXECUTED for current next_session")
         if "new explicit owner invocation" not in body.lower():
             errors.append("NEXT_SESSION_PROMPT lacks fresh owner gate")
+        if next_target_status == "AWAITING_OWNER_TARGET":
+            if "TARGET STATUS: NOT INSTALLED" not in body or "NO EXECUTION AUTHORITY" not in body:
+                errors.append("NEXT_SESSION_PROMPT: pending owner target must be non-executable placeholder")
+        if next_target_status == "OWNER_TARGET_INSTALLED":
+            if "TARGET STATUS: INSTALLED BY OWNER" not in body or "TARGET STATUS: NOT INSTALLED" in body:
+                errors.append("NEXT_SESSION_PROMPT: installed target must have owner-installation marker")
     return errors
 
 
