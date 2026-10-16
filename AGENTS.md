@@ -1,5 +1,10 @@
 # Ellipse theorem — binding agent instructions
 
+## Most recent completed session — S057 (16 October 2026)
+
+**S057 executed and closed NOT_READY.** Its immutable baseline was main 69d4ee9d24c37fb62c65b4c53e1a30af75ebdcb2. Seven hosted CI probes attempted a real Lean 4.35 module migration of every original substantive source, with genuine pinned Mathlib/cache/build; modern proof port still fails EarSufficiency. Old five kernel-verified original theorem claims remain unchanged on main. Palomar's root SPDX licence and independent Challenge/Solution/Comparator/formalization.yaml were absent; no official full predictive preflight, submission or registration occurred. See sessions/S057/{CLOSEOUT,PREFLIGHT_EVIDENCE,OWNER_SUBMISSION_HANDOFF}.md. Next S058 is an **uninstalled**, unauthorised neutral placeholder; the owner alone chooses its substantive target. Historical S057-installed text below is superseded.
+
+
 ## Most recent finished session (16 October 2026)
 
 **S057 NOW OWNER-INSTALLED AS FUTURE / UNEXECUTED (16 Oct 2026).** Owner selects Palomar preparation aiming for a published immutable 40-char repository commit with supported modern Lean, compliant Challenge/Solution/Comparator and complete full-mode predictive Palomar mechanical verification, for the owner to submit later. The next task is installed, NOT executed; S056 remains last completed. Requires a new explicit owner invocation. No actual Palomar submission/registration authorised. See authoritative/NEXT_SESSION_PROMPT.md. Earlier S057-not-installed lines below are historical and superseded by this paragraph.

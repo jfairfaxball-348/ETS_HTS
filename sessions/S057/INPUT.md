@@ -1,0 +1,3 @@
+# S057 — input and authority
+
+Executed under the owner's 16 October 2026 instruction to prepare a Palomar-registerable immutable commit, followed by a new explicit invocation "run next session". Source of truth is the installed authoritative S057 prompt at main 69d4ee9d24c37fb62c65b4c53e1a30af75ebdcb2. Last completed at entry: S056. S057 execution authorised research, repo commits, non-submitting public predictive GitHub Actions verification, but absolutely no Palomar submission, human registration, OAuth, tag/gist challenge, review or publishing. Preserve five mathematically frozen theorem types and previous standard-axiom kernel proof evidence. Do not execute S058.

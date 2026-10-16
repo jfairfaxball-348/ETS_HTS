@@ -1,5 +1,10 @@
 # Ellipse theorem — retained exact nearest-two insertion
 
+## S057 completed: Palomar NOT_READY (16 October 2026)
+
+**S057 was executed**, and the complete attempt is recorded in [sessions/S057/CLOSEOUT.md](sessions/S057/CLOSEOUT.md) and [OWNER_SUBMISSION_HANDOFF.md](sessions/S057/OWNER_SUBMISSION_HANDOFF.md). Seven public CI probes of a Lean 4.35 module migration exercised real source transformation, Mathlib pinned update/cache and compiler repair; last full build failed in the still-unmigrated EarSufficiency disjointness proof. The proved original **five direct Lean 4.15 targets remain untouched**. No compliant Challenge/Solution/Comparator, approved SPDX root licence, metadata or Palomar full predictive result exists. **NOT_READY FOR SUBMISSION**; no Palomar submission/registration. The owner directs any future target: S058 is FUTURE / UNEXECUTED — TARGET NOT INSTALLED. Earlier “S057 FUTURE” sections below are historical.
+
+
 ## S057 — owner-installed Palomar preparation target (16 October 2026)
 
 **FUTURE / UNEXECUTED, not a completed build.** The owner selected [S057](authoritative/NEXT_SESSION_PROMPT.md) to aim for a *public immutable commit ready for the owner's own Palomar submission*. S057 must port the original exact five-theorem project to a current Palomar-compatible Lean/module system, build an independently auditable Challenge/Solution/Comparator plus truthful metadata and licence, and obtain a **full-mode official predictive Palomar mechanical verification PASS on the eventual submission SHA**, if achievable. No actual Palomar submission/registration is authorised. S056 remains last completed. A **new explicit owner invocation** is required to run S057; do not auto-install S058. Existing proofs and current novelty verdict unchanged.

@@ -1,0 +1,13 @@
+# S057 — pinned baseline and official policy
+
+- Canonical public repo: https://github.com/jfairfaxball-348/ellipse-theorem, identical renamed GitHub repository ID 1416869836.
+- Entry main SHA: 69d4ee9d24c37fb62c65b4c53e1a30af75ebdcb2, tree 426fba74ae98b0595e61f1f16168367885195a00. This is separate from owner-installed S057 target in PR #73.
+- Prior S056 ordinary merged source: a455e00f7f1b49876e17e8d1dec4bb15eabea5fc, tree cd84c1fb1dae28f274dac5f7c84c087e58737552. Its distinct merged-main Lean run 38902835721 and governance 38902835760 were SUCCESS, old toolchain only. Baseline main independent old-Lean run 38907772899 also SUCCESS.
+- Last completed S056, S055 novelty INDETERMINATE_ACCESS_GAP, 5 original claim proofs historically kernel checked with [propext, Classical.choice, Quot.sound].
+- Original Lean pin v4.15.0, original Mathlib 9837ca9d65d9de6fad1ef4381750ca688774e608, old manifest v1.1.0. Original source count: 77 project theorem .lean files plus lakefile.lean = 78 Lean files.
+- Official PalomarSubmission main revision d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44; PalomarPolicy 96b034cc31a72a63d4f4041911dce337a85c9a04; formalization.yaml upstream 99c678e569c7c4c0772db297c5ddd5e4c9b6322e, confirmed on 16 October 2026.
+- Palomar toolchains.json floor v4.35.0-rc2; profile verification-profile.json id palomar-standard-v1, GitHub ubuntu-24.04; one full predictive run (not preliminary mode) is required for mechanical readiness.
+- Experiment pinned stable Lean v4.35.0 and exact compatible Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679 (mathlib v4.35.0 tag). CI generated genuine pinned manifest via lake update in disposable checkout; without successful source build, that generated manifest was never merged into main.
+- Source how-to: https://palomar-registry.org/how-to-submit; developer docs https://palomar-registry.org/llms.txt and https://submit.palomar-registry.org/llms.txt (read-only). Source policy https://github.com/PalomarRegistry/PalomarPolicy; tool pipeline https://github.com/PalomarRegistry/PalomarSubmission; starter https://github.com/PalomarRegistry/PalomarTemplate.
+- All submitted Lean sources need a compiled module header and <=10,000 physical lines; Challenge <=1,000 lines / 100 KiB; Challenge imports must be independently allowlisted Mathlib/Lean, not ETSHTS. Same named theorem types and independent proof kernel rechecks mandatory. Root valid SPDX licence and consistent metadata required.
+- No root SPDX licence or final metadata/Challenge/Solution/comparator at entry; no authority in repository to grant a new licence. Original user's sample Palomar public record DOM could not be directly verified in S056; no TeX-rendering claims.
