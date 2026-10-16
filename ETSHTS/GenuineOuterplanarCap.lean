@@ -90,7 +90,7 @@ theorem s053_genuine_outerplanar_cap (T : Finset Point) :
       have h2 := Finset.card_le_card hPpq
       have hnot : s ∉ ({p,q} : Finset Point) := by
         simp only [Finset.mem_insert, Finset.mem_singleton, not_or]
-        constructor <;> intro he <;> subst s <;> simp [orientation] at hspos
+        constructor <;> intro he <;> subst s <;> unfold orientation at hspos <;> nlinarith only [hspos]
       have hsub : insert s ({p,q} : Finset Point) ⊆ P := by
         intro x hx
         rcases Finset.mem_insert.mp hx with rfl | hx
@@ -101,7 +101,7 @@ theorem s053_genuine_outerplanar_cap (T : Finset Point) :
     have hN3 : 3 ≤ N.card := by
       have hnot : r ∉ ({p,q} : Finset Point) := by
         simp only [Finset.mem_insert, Finset.mem_singleton, not_or]
-        constructor <;> intro he <;> subst r <;> simp [orientation] at hrneg
+        constructor <;> intro he <;> subst r <;> unfold orientation at hrneg <;> nlinarith only [hrneg]
       have hsub : insert r ({p,q} : Finset Point) ⊆ N := by
         intro x hx
         rcases Finset.mem_insert.mp hx with rfl | hx
