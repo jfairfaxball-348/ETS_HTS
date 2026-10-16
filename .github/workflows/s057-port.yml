@@ -1,8 +1,5 @@
 name: S057 modern Lean port probe
 on:
-  push:
-    branches:
-      - session/S057-palomar-module-migration
   workflow_dispatch:
 permissions:
   contents: write
