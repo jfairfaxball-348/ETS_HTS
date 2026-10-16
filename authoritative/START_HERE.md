@@ -4,7 +4,7 @@ Canonical https://github.com/jfairfaxball-348/ellipse-theorem (renamed from ETS_
 
 ## Active owner-steered process (16 October 2026)
 
-The owner chooses each next numbered session target. Perform the normal evidence-based closeout and merge, but **do not suggest, choose or install the subsequent target**. Leave only a neutral pending placeholder until the owner explicitly supplies an S055 target; installation alone never executes the session. **S055 target is NOT INSTALLED.** Read [binding policy](../docs/OWNER_STEERED_SESSION_POLICY.md), [pending placeholder](NEXT_SESSION_PROMPT.md) and `STATE.json`.
+The owner chooses each next numbered session target. Perform the normal evidence-based closeout and merge, but **do not suggest, choose or install the subsequent target**. Leave only a neutral pending placeholder **until the owner explicitly supplies a target**; installation alone never executes the session. **S055 now has an owner-installed prior-art/novelty audit target and remains FUTURE / UNEXECUTED.** Read [binding policy](../docs/OWNER_STEERED_SESSION_POLICY.md), [S055 handover](NEXT_SESSION_PROMPT.md) and `STATE.json`.
 
 ## Final audit — S054 (16 October 2026)
 
