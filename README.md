@@ -1,5 +1,10 @@
 # Ellipse theorem — retained exact nearest-two insertion
 
+## S056 Palomar research completed (16 October 2026)
+
+See [S056 closeout](sessions/S056/CLOSEOUT.md), [preflight runbook](sessions/S056/PREFLIGHT_CL_RUNBOOK.md), [public-record forensics](sessions/S056/PUBLIC_RECORD_FORENSICS.md), [mechanical blockers](sessions/S056/CURRENT_REPO_READINESS.md), and [paper-title/theorem crosswalk](sessions/S056/PAPER_REGISTRY_ALIGNMENT.md). Current Palomar minimum Lean v4.35.0-rc2 exceeds pinned Lean v4.15.0; root licence, metadata, independent Challenge/Solution/Comparator and module headers are absent. NO Palomar preflight, submission or registration was executed. All five theorem proofs unchanged. S055 priority verdict INDETERMINATE_ACCESS_GAP. **S057 TARGET NOT INSTALLED; owner chooses.**
+
+
 ## Current S055 novelty-audit conclusion (16 October 2026)
 
 [S055 hostile prior-art audit](sessions/S055/CLOSEOUT.md) completed against the exact 5/5 Lean-proved statements. **Current priority verdict: INDETERMINATE_ACCESS_GAP.** No exact/equivalent/stronger earlier theorem was located *in the logged public searches*, but native indices, original 1992 convex greedy-triangulation proof and final journal-version comparisons remain incomplete. See [hostile findings](sessions/S055/HOSTILE_FINDINGS.md), [source dossier](sessions/S055/SOURCE_DOSSIER.md), and [dated query log](sessions/S055/NOVELTY_QUERIES.md). S024 conditional judgement is historical and did not certify priority. Mathematics/proofs unchanged; external publication not authorised. **S056 now has the owner-installed Palomar recon/preflight CLI and paper–registry alignment target. It is FUTURE / UNEXECUTED, and requires a new owner invocation.**
