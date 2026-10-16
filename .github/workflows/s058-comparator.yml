@@ -1,0 +1,30 @@
+name: S058 independent Palomar comparator probe
+on:
+  push:
+    branches: ['session/S058-palomar-readiness']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  comparator:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check exact source-level statement fidelity
+        run: python3 scripts/s058_check_challenge_fidelity.py
+      - name: Prepare comparator sandbox
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq bubblewrap
+      - name: Build pinned modern project, Challenge and Solution
+        uses: leanprover/lean-action@v1
+        with:
+          build: 'true'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Explicit comparator source build
+        run: lake build Challenge Solution
+      - name: Toolchain bundled independent kernel replay
+        run: bash scripts/s058_verify_comparator.sh
