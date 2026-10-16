@@ -27,6 +27,7 @@ import ETSHTS.FiniteHullNeighbours
 import ETSHTS.OuterplanarSplit
 import ETSHTS.ConvexChordSeparation
 import ETSHTS.OuterplanarEdgeSplit
+import ETSHTS.GenuineOuterplanarCap
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -350,3 +351,8 @@ import ETSHTS.OuterplanarEdgeSplit
 
 #print axioms ETSHTS.s053_edge_in_one_half
 #print axioms ETSHTS.s053_restriction_split
+
+#print axioms ETSHTS.s053_three_site_cap
+#print axioms ETSHTS.s053_hull_incident_card
+#print axioms ETSHTS.s053_genuine_outerplanar_cap
+#print axioms ETSHTS.clm0099_exact
