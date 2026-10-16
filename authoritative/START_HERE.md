@@ -2,13 +2,13 @@
 
 ## Current S055 literature/novelty outcome (16 October 2026)
 
-**S055 completed** (see [closeout](../sessions/S055/CLOSEOUT.md), [hostile findings](../sessions/S055/HOSTILE_FINDINGS.md), and [source dossier](../sessions/S055/SOURCE_DOSSIER.md)). Current priority verdict **INDETERMINATE_ACCESS_GAP**; no exact match in logged searches, significant missing-source/index coverage. Five original exact Lean proofs remain completed with no Lean edits. **S056 target is NOT INSTALLED**; owner chooses. S024 verdict is historical only.
+**S055 completed** (see [closeout](../sessions/S055/CLOSEOUT.md), [hostile findings](../sessions/S055/HOSTILE_FINDINGS.md), and [source dossier](../sessions/S055/SOURCE_DOSSIER.md)). Current priority verdict **INDETERMINATE_ACCESS_GAP**; no exact match in logged searches, significant missing-source/index coverage. Five original exact Lean proofs remain completed with no Lean edits. **S056 target now owner-installed:** Palomar public-record / preflight CLI / future-paper wording reconnaissance, FUTURE / UNEXECUTED and requires a new invocation. S024 verdict is historical only.
 
 Canonical https://github.com/jfairfaxball-348/ellipse-theorem (renamed from ETS_HTS; same repository ID). Lean namespace remains `ETSHTS`.
 
 ## Active owner-steered process (16 October 2026)
 
-The owner chooses each next numbered session target. Perform the normal evidence-based closeout and merge, but **do not suggest, choose or install the subsequent target**. Leave only a neutral pending placeholder **until the owner explicitly supplies a target**; installation alone never executes the session. **S055 now has an owner-installed prior-art/novelty audit target and remains FUTURE / UNEXECUTED.** Read [binding policy](../docs/OWNER_STEERED_SESSION_POLICY.md), [S055 handover](NEXT_SESSION_PROMPT.md) and `STATE.json`.
+The owner chooses each next numbered session target. Perform the normal evidence-based closeout and merge, but **do not suggest, choose or install the subsequent target**. Leave only a neutral pending placeholder **until the owner explicitly supplies a target**; installation alone never executes the session. **Historical post-S054 snapshot:** S055's novelty target was then installed and subsequently completed. S056 is now the owner-installed future session. Read [binding policy](../docs/OWNER_STEERED_SESSION_POLICY.md), [S056 handover](NEXT_SESSION_PROMPT.md) and `STATE.json`.
 
 ## Final audit — S054 (16 October 2026)
 

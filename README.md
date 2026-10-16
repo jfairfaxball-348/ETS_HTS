@@ -2,7 +2,7 @@
 
 ## Current S055 novelty-audit conclusion (16 October 2026)
 
-[S055 hostile prior-art audit](sessions/S055/CLOSEOUT.md) completed against the exact 5/5 Lean-proved statements. **Current priority verdict: INDETERMINATE_ACCESS_GAP.** No exact/equivalent/stronger earlier theorem was located *in the logged public searches*, but native indices, original 1992 convex greedy-triangulation proof and final journal-version comparisons remain incomplete. See [hostile findings](sessions/S055/HOSTILE_FINDINGS.md), [source dossier](sessions/S055/SOURCE_DOSSIER.md), and [dated query log](sessions/S055/NOVELTY_QUERIES.md). S024 conditional judgement is historical and did not certify priority. Mathematics/proofs unchanged; external publication not authorised. **S056 is FUTURE / UNEXECUTED — TARGET NOT INSTALLED; owner chooses its target.**
+[S055 hostile prior-art audit](sessions/S055/CLOSEOUT.md) completed against the exact 5/5 Lean-proved statements. **Current priority verdict: INDETERMINATE_ACCESS_GAP.** No exact/equivalent/stronger earlier theorem was located *in the logged public searches*, but native indices, original 1992 convex greedy-triangulation proof and final journal-version comparisons remain incomplete. See [hostile findings](sessions/S055/HOSTILE_FINDINGS.md), [source dossier](sessions/S055/SOURCE_DOSSIER.md), and [dated query log](sessions/S055/NOVELTY_QUERIES.md). S024 conditional judgement is historical and did not certify priority. Mathematics/proofs unchanged; external publication not authorised. **S056 now has the owner-installed Palomar recon/preflight CLI and paper–registry alignment target. It is FUTURE / UNEXECUTED, and requires a new owner invocation.**
 
 Canonical repository https://github.com/jfairfaxball-348/ellipse-theorem (former ETS_HTS; ID 1416869836). Lean namespace `ETSHTS`.
 
@@ -11,7 +11,7 @@ Closed threshold `R=sqrt(2/sin(2π/5)−1)`. **CLM0107:** all n≥3 finite disti
 
 ## Owner-directed sessions — active process (16 October 2026)
 
-The owner now chooses each session target individually. At session close, report verified results, blockers and CI/merge outcomes **without suggesting or installing a next-session target**. The next numbered session stays `FUTURE / UNEXECUTED — TARGET NOT INSTALLED` until the owner explicitly specifies what to install; installation is administrative and execution requires a later explicit invocation. **Owner-installed S055 target: hostile prior-art/novelty audit of the exact ellipse theorem; FUTURE / UNEXECUTED.** Installing it did not run the audit or alter the historical S024 conditional novelty verdict. See [session policy](docs/OWNER_STEERED_SESSION_POLICY.md) and [S055 handover](authoritative/NEXT_SESSION_PROMPT.md).
+The owner now chooses each session target individually. At session close, report verified results, blockers and CI/merge outcomes **without suggesting or installing a next-session target**. The next numbered session stays `FUTURE / UNEXECUTED — TARGET NOT INSTALLED` until the owner explicitly specifies what to install; installation is administrative and execution requires a later explicit invocation. **Historical post-S054 snapshot:** S055's prior-art/novelty target was installed, then executed and closed; see the current S056 handover. Installing it did not run the audit or alter the historical S024 conditional novelty verdict. See [session policy](docs/OWNER_STEERED_SESSION_POLICY.md) and [S055 handover](authoritative/NEXT_SESSION_PROMPT.md).
 
 ## Final reproducibility and semantic audit — S054 (16 October 2026)
 
