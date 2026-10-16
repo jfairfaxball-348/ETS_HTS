@@ -1,5 +1,9 @@
 # Ellipse theorem — binding agent instructions
 
+## Most recent finished session (16 October 2026)
+
+Owner-invoked **S055** completed a hostile source-level novelty audit, with active verdict `INDETERMINATE_ACCESS_GAP`. See `sessions/S055/HOSTILE_FINDINGS.md`, `SOURCE_DOSSIER.md`, and `CLOSEOUT.md`. All five exact Lean theorems remain proved. The next bookkeeping session S056 has no installed target and requires explicit owner target installation and a **later separate invocation**. References below to S055 as future are historical description of the owner process before its execution.
+
 ## Identity and authority
 
 Canonical repository: `https://github.com/jfairfaxball-348/ellipse-theorem`. This is a **rename** of `jfairfaxball-348/ETS_HTS` (same GitHub repo ID 1416869836), not a second repository. Preserve its old session history and `ETSHTS` Lean module names unless a separately justified, compiler-tested refactor is authorised.

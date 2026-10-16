@@ -1,5 +1,9 @@
 # Ellipse theorem — retained exact nearest-two insertion
 
+## Current S055 novelty-audit conclusion (16 October 2026)
+
+[S055 hostile prior-art audit](sessions/S055/CLOSEOUT.md) completed against the exact 5/5 Lean-proved statements. **Current priority verdict: INDETERMINATE_ACCESS_GAP.** No exact/equivalent/stronger earlier theorem was located *in the logged public searches*, but native indices, original 1992 convex greedy-triangulation proof and final journal-version comparisons remain incomplete. See [hostile findings](sessions/S055/HOSTILE_FINDINGS.md), [source dossier](sessions/S055/SOURCE_DOSSIER.md), and [dated query log](sessions/S055/NOVELTY_QUERIES.md). S024 conditional judgement is historical and did not certify priority. Mathematics/proofs unchanged; external publication not authorised. **S056 is FUTURE / UNEXECUTED — TARGET NOT INSTALLED; owner chooses its target.**
+
 Canonical repository https://github.com/jfairfaxball-348/ellipse-theorem (former ETS_HTS; ID 1416869836). Lean namespace `ETSHTS`.
 
 ## Exact fixed theorem programme
