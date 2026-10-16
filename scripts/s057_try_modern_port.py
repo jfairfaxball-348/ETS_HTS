@@ -5,7 +5,7 @@ import re
 
 ROOT = pathlib.Path(".")
 files = sorted([*ROOT.glob("ETSHTS.lean"), *ROOT.glob("ETSHTS/**/*.lean")])
-assert len(files) == 78, f"Refuse source count drift: {len(files)}"
+assert len(files) == 77, f"Refuse source count drift: {len(files)}"
 for p in files:
     old = p.read_text(encoding="utf-8")
     if old.lstrip().startswith("module"):
