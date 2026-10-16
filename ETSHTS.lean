@@ -14,6 +14,12 @@ import ETSHTS.CentralCutoffIdentity
 import ETSHTS.CentralOriginalSites
 import ETSHTS.ShortArcLifts
 import ETSHTS.CompetitorPhaseIndex
+import ETSHTS.CyclicCompetitorRank
+import ETSHTS.CyclicCompetitorLifts
+import ETSHTS.CyclicCompetitorBands
+import ETSHTS.CyclicCompetitorBackwardIndex
+import ETSHTS.CyclicCompetitorReverseBand
+import ETSHTS.CyclicCompetitorExact
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -307,3 +313,6 @@ import ETSHTS.CompetitorPhaseIndex
 #print axioms ETSHTS.s048_forward_competitor_lift_site
 #print axioms ETSHTS.s048_forward_lift_strict_turn
 #print axioms ETSHTS.s048_original_competitor_index_and_lift
+
+#print axioms ETSHTS.s049_original_ellipse_ge5_metricEar
+#print axioms ETSHTS.clm0107_exact
