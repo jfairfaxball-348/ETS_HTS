@@ -1,0 +1,149 @@
+{
+  "entry_main": "20c3719407e4e3f5534b045837276b518c436677",
+  "entry_tree": "d2ec48dcffc7c44be0c5f20d5985cbffe8a84e42",
+  "merge_parents": [
+    "e4e10c8ba8da366101a48084017ebe5a45b36728",
+    "4b75e1306a486eaf5432b49d1b4088b63bc469b3"
+  ],
+  "previous_pr": 64,
+  "previous_head": "4b75e1306a486eaf5432b49d1b4088b63bc469b3",
+  "previous_head_tree": "d2ec48dcffc7c44be0c5f20d5985cbffe8a84e42",
+  "source_chain": [
+    {
+      "sha": "56f89684545183a8e677addc1ce01fd3c004b9ae",
+      "parents": [
+        "e4e10c8ba8da366101a48084017ebe5a45b36728"
+      ]
+    },
+    {
+      "sha": "e5ad8a309d1f37404b30bb71a4293b1fcdb421c7",
+      "parents": [
+        "56f89684545183a8e677addc1ce01fd3c004b9ae"
+      ]
+    },
+    {
+      "sha": "6d51068c0778826bbfd8129c3188994df1231e11",
+      "parents": [
+        "e5ad8a309d1f37404b30bb71a4293b1fcdb421c7"
+      ]
+    },
+    {
+      "sha": "4b75e1306a486eaf5432b49d1b4088b63bc469b3",
+      "parents": [
+        "6d51068c0778826bbfd8129c3188994df1231e11"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "run": 38886364326,
+      "jobs": [
+        {
+          "id": 116924965879,
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run": 38886364302,
+      "jobs": [
+        {
+          "id": 116924966238,
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run": 38886726717,
+      "jobs": [
+        {
+          "id": 116926159499,
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run": 38886726810,
+      "jobs": [
+        {
+          "id": 116926160212,
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "open_prs_at_entry": [],
+  "branches": [
+    "admin/S007-owner-steer-foundations-time-infinity",
+    "admin/S014-point-insertion-steer",
+    "admin/S021-hostile-audit-formalisation-steer",
+    "admin/S022-prior-art-before-Lean",
+    "admin/S041-ambitious-multi-pass-formalisation",
+    "admin/ellipse-theorem-formalisation-handover",
+    "governance/S046-single-direct-goal-clm0107",
+    "governance/formalisation-completion-critical-path",
+    "main",
+    "session/S001-bootstrap",
+    "session/S002-multimechanism-triage",
+    "session/S003-kill-battery-and-source-audit",
+    "session/S004-distinct-mechanisms-proof-first",
+    "session/S005-independent-structural-mechanisms",
+    "session/S006-mechanism-kills",
+    "session/S007-foundations-six-lanes",
+    "session/S008-nonuniform-grid-dynamics",
+    "session/S009-single-defect-math-triage",
+    "session/S010-odd-interior-grid-closed",
+    "session/S011-distinct-foundations-priority-kills",
+    "session/S012-four-mechanisms-priority-screen",
+    "session/S013-coupled-constraints-symbolic-kills",
+    "session/S014-nearest-two-geometry",
+    "session/S015-convex-nearest-two-counterexample",
+    "session/S016-five-site-ellipse-circle-theorem",
+    "session/S017-ellipse-stability-reverse-ears",
+    "session/S018-near-circle-coalescence-compactness",
+    "session/S019-effective-ellipse-thresholds",
+    "session/S020-uniform-ellipse-ear-theorem",
+    "session/S021-hostile-theorem-audit",
+    "session/S022-hostile-prior-art-novelty-audit",
+    "session/S023-prior-art-source-gap-closure",
+    "session/S024-final-novelty-decision",
+    "session/S025-lean-formalisation-foundations",
+    "session/S026-exact-lean-proof-progress",
+    "session/S027-chord-geometry-lean-progress",
+    "session/S028-independent-chord-derivatives",
+    "session/S029-halfangle-derivative-factors",
+    "session/S030-strict-real-cutoff-clm0102",
+    "session/S031-fourpoint-geometry-ratio",
+    "session/S032-exact-tie-three-rank",
+    "session/S033-cyclic-gap-obstruction",
+    "session/S033-cyclic-gap-obstruction-validated",
+    "session/S034-rational-chord-minimax",
+    "session/S035-frozen-proof-eligible-skip",
+    "session/S035-frozen-proof-eligible-skip-integrated",
+    "session/S036-frozen-central-ratio",
+    "session/S037-ellipse-strict-convexity",
+    "session/S037-ellipse-strict-convexity-final",
+    "session/S038-exposed-segment-grow-retention",
+    "session/S039-fresh-two-edge-count",
+    "session/S040-grow-global-edge-count",
+    "session/S041-global-count-and-convex-bridges",
+    "session/S042-continued-convex-fourpoint",
+    "session/S042-full-ellipse-formalisation-push",
+    "session/S043-peel-last-necessity",
+    "session/S044-exact-cutoff-cyclic",
+    "session/S045-finite-ellipse-phase-lift",
+    "session/S046-clm0107-cyclic-gap-bridge",
+    "session/S047-clm0107-original-metric-ear",
+    "session/S048-clm0107-quantitative-skip",
+    "session/S049-cyclic-competitor-classification",
+    "session/S050-clm0108-exact-nonround",
+    "session/S051-exact-necessity",
+    "session/S052-finite-geometry"
+  ],
+  "rulesets": [],
+  "branch_protection": "UNKNOWN_HTTP_403",
+  "immutable_blobs": {
+    "Definitions": "f5e71b625bdbf40f6c84551dd93f9ce375154519",
+    "Targets": "e12f117589b1852e06aa669a405a6dc3ee652549"
+  }
+}

@@ -5,7 +5,23 @@ Canonical repository https://github.com/jfairfaxball-348/ellipse-theorem (former
 ## Exact fixed theorem programme
 Closed threshold `R=sqrt(2/sin(2π/5)−1)`. **CLM0107:** all n≥3 finite distinct ellipse boundary sites, `a≥b>0`, `a/b≤R` including equality, exactly two compulsory nearest Euclidean predecessor edges with Cartesian-lex ties, all old edges retained and no proper crossing. **CLM0108:** all n for nonround `a/b=101/100`. **CLM0096:** all three- and four-point sets in general position. **CLM0099:** full metric-ear certificate iff for strictly convex finite sets. **CLM0102:** both outward derivatives and full real-lift strict short-arc chord extension.
 
-## Verified and open
+## Current status — S053 (16 October 2026)
+
+**All five original exact targets are Lean proved (5/5).** Pinned Lean 4.15.0/mathlib `9837ca9d65d9de6fad1ef4381750ca688774e608`; original Definitions/Targets unchanged. Each direct theorem prints only `[propext, Classical.choice, Quot.sound]`.
+
+| Original target | Exact declaration | Proof module |
+| --- | --- | --- |
+| CLM0096 | `clm0096_exact` | `ConvexFourClassification.lean` |
+| CLM0099 | `clm0099_exact` | `GenuineOuterplanarCap.lean` |
+| CLM0102 | `clm0102_exact` | `Cutoff.lean` |
+| CLM0107 | `clm0107_exact` | `CyclicCompetitorExact.lean` |
+| CLM0108 | `clm0108_exact` | `ExactNonround.lean` |
+
+S053 closes the last genuine outerplanar cap and full original metric-ear certificate iff. [Code-head Lean 38888429613](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38888429613) SUCCESS; [coverage](sessions/S053/PROOF_COVERAGE.md), [semantic audit](sessions/S053/SEMANTIC_AUDIT.md), [PR #65](https://github.com/jfairfaxball-348/ellipse-theorem/pull/65). Final documentary PR-head and independent main checks are recorded separately in GitHub history. [S054](authoritative/NEXT_SESSION_PROMPT.md) is FUTURE / UNEXECUTED and requires a fresh owner invocation. No publication or historical priority certification.
+
+The session notes below are historical checkpoints and their open/closed counts describe those earlier dates.
+
+## Historical S030–S031 checkpoint
 **CLM0102 verified on S030 merged main** `de695309`, pinned Lean 4.15.0/mathlib `9837ca9`, Lean run [38626006276](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38626006276), governance run [38626005962](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38626005962). Printed dependencies `[propext, Classical.choice, Quot.sound]`.
 
 S031 [research](sessions/S031/MATHEMATICS.md) provides four-point mathematical construction; source `ETSHTS/FourPoint.lean` formalises the mandatory insertion **given explicitly exposed geometric witnesses**, and `ETSHTS/RationalBound.lean` attempts exact proof of `101/100 ≤ R`. New S031 Lean declarations remain **candidates until their own hosted CI and axiom prints**; ratio plus `CLM0107` gives `CLM0108`, not CLM0108 outright. All four other exact CLMs remain OPEN.
