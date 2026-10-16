@@ -1,5 +1,7 @@
 # Binding owner-steered numbered session process (effective 16 October 2026)
 
+**Latest administrative update, 16 October 2026:** S057 completed; the owner **installed S058** to target full Palomar submission readiness. This is NOT execution, NOT readiness achieved, and NOT registration authorisation. A distinct new explicit owner invocation runs S058. S057 evidence remains NOT_READY. See ../authoritative/NEXT_SESSION_PROMPT.md. Older dated snapshots below are historical.
+
 ## Latest dated state after binding policy was adopted
 
 **Current 16 October 2026:** S056 last completed, S057 now independently owner-installed as FUTURE/UNEXECUTED Palomar submission-ready technical preparation. Installation does not run S057 or preauthorise actual Palomar submission/registration. A separate fresh invocation is required. The earlier “S057 target not installed” note below is a historical snapshot.

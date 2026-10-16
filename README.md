@@ -1,5 +1,9 @@
 # Ellipse theorem — retained exact nearest-two insertion
 
+## S058 target installed by owner — FUTURE / UNEXECUTED (16 October 2026)
+
+**Administrative installation only; S057 is still the last completed session.** The owner now targets an **100% Palomar-submission-ready final merged-main commit**: all five frozen exact theorems independently checked on supported modern Lean, faithful Challenge/Solution/Comparator, chosen SPDX licence and v0.4 metadata, paper-aligned theorem/title, and official predictive **full-mode PASS on the final exact SHA**. No actual Palomar registration authorised and no readiness claimed now (S057 remained **NOT_READY**). A **new explicit owner invocation** is required to execute S058. The owner chooses the target for S059 after S058 closeout. See [S058 installed prompt](authoritative/NEXT_SESSION_PROMPT.md). Older dated uninstalled S058 statements below are historical and superseded.
+
 ## S057 completed: Palomar NOT_READY (16 October 2026)
 
 **S057 was executed**, and the complete attempt is recorded in [sessions/S057/CLOSEOUT.md](sessions/S057/CLOSEOUT.md) and [OWNER_SUBMISSION_HANDOFF.md](sessions/S057/OWNER_SUBMISSION_HANDOFF.md). Seven public CI probes of a Lean 4.35 module migration exercised real source transformation, Mathlib pinned update/cache and compiler repair; last full build failed in the still-unmigrated EarSufficiency disjointness proof. The proved original **five direct Lean 4.15 targets remain untouched**. No compliant Challenge/Solution/Comparator, approved SPDX root licence, metadata or Palomar full predictive result exists. **NOT_READY FOR SUBMISSION**; no Palomar submission/registration. The owner directs any future target: S058 is FUTURE / UNEXECUTED — TARGET NOT INSTALLED. Earlier “S057 FUTURE” sections below are historical.
