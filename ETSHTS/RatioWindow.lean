@@ -1,4 +1,8 @@
-import ETSHTS.LastOrder
+module
+public import ETSHTS.LastOrder
+
+@[expose] public section
+
 
 /-!
 # S043: rational aspect-ratio window for the exact locked threshold

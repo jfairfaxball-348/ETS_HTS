@@ -1,4 +1,8 @@
-import ETSHTS.EligibleSkip
+module
+public import ETSHTS.EligibleSkip
+
+@[expose] public section
+
 
 /-!
 # S036 — the original S020 central-band closed-ratio algebra

@@ -1,4 +1,8 @@
-import ETSHTS.HullSaturation
+module
+public import ETSHTS.HullSaturation
+
+@[expose] public section
+
 
 /-!
 # S043: recover the actual final compulsory insertion
@@ -83,11 +87,10 @@ theorem s043_grow_last_incident_edges
   have hnpre : (previous ++ rest).Nodup :=
     (List.nodup_append.mp hn).1
   have hnot : v ∉ (previous ++ rest).toFinset := by
-    have hdisj : (previous ++ rest).Disjoint [v] :=
-      (List.nodup_append.mp hn).2.2
     intro hv
     have hv' : v ∈ previous ++ rest := by simpa using hv
-    exact (List.disjoint_singleton.mp hdisj) hv'
+    have hne := (List.nodup_append.mp hn).2.2 v hv' v (by simp)
+    exact hne rfl
   have hsupport : ∀ e ∈ H, e ⊆ (previous ++ rest).toFinset :=
     (s040_grow_support_and_exact_count hprefix hnpre hseed).1
   refine ⟨H, u, w, hprefix, hnear, hfinal, ?_⟩

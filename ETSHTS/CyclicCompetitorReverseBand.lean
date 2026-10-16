@@ -1,4 +1,8 @@
-import ETSHTS.CyclicCompetitorBackwardIndex
+module
+public import ETSHTS.CyclicCompetitorBackwardIndex
+
+@[expose] public section
+
 
 /-!
 # S049 — exact original reverse-short Euclidean competitor bound

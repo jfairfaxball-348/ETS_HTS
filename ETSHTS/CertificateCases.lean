@@ -1,4 +1,8 @@
-import ETSHTS.HereditaryGeometry
+module
+public import ETSHTS.HereditaryGeometry
+
+@[expose] public section
+
 
 /-!
 # S041 — the exact recursive certificate's higher-cardinality case

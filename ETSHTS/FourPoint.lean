@@ -1,4 +1,8 @@
-import ETSHTS.RationalBound
+module
+public import ETSHTS.RationalBound
+
+@[expose] public section
+
 
 /-!
 # S031: the exact fourth-insertion certificate interface

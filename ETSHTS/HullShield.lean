@@ -1,4 +1,8 @@
-import ETSHTS.CyclicFinite
+module
+public import ETSHTS.CyclicFinite
+
+@[expose] public section
+
 
 /-!
 # S042: exact orientation control for planar hull-side protection

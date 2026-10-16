@@ -1,4 +1,8 @@
-import ETSHTS.TriangleInteriorExact
+module
+public import ETSHTS.TriangleInteriorExact
+
+@[expose] public section
+
 
 /-!
 # S042 continued — four-site crossing inequalities

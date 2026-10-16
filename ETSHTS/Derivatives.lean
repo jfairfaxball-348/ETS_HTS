@@ -1,4 +1,8 @@
-import ETSHTS.AnalyticBounds
+module
+public import ETSHTS.AnalyticBounds
+
+@[expose] public section
+
 
 /-!
 # S028 — independently differentiated ellipse chords

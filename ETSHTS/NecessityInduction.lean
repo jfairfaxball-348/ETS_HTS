@@ -1,4 +1,8 @@
-import ETSHTS.AngularCutoff
+module
+public import ETSHTS.AngularCutoff
+
+@[expose] public section
+
 
 /-!
 # S044 — complete necessity induction for the original CLM0099

@@ -1,4 +1,8 @@
-import ETSHTS.FiniteHullNeighbours
+module
+public import ETSHTS.FiniteHullNeighbours
+
+@[expose] public section
+
 
 /-!
 S052: exact signed half-plane split for the unrestricted finite

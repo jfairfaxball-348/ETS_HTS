@@ -1,4 +1,8 @@
-import ETSHTS.CentralCutoffIdentity
+module
+public import ETSHTS.CentralCutoffIdentity
+
+@[expose] public section
+
 
 /-!
 # S048 — attach the C3 central band to arbitrary original finite sites

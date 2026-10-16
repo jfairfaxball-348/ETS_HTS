@@ -1,4 +1,8 @@
-import ETSHTS.ConvexFourOrder
+module
+public import ETSHTS.ConvexFourOrder
+
+@[expose] public section
+
 
 /-!
 # S042 continuation — exact affine barycentric bridge for four-site classification

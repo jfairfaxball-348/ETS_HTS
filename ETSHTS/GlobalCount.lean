@@ -1,4 +1,8 @@
-import ETSHTS.GrowCounting
+module
+public import ETSHTS.GrowCounting
+
+@[expose] public section
+
 
 /-!
 # S041 — exact global edge count and endpoint support

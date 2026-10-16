@@ -1,4 +1,8 @@
-import ETSHTS.CyclicEllipseHullSides
+module
+public import ETSHTS.CyclicEllipseHullSides
+
+@[expose] public section
+
 
 /-!
 # S047 — original cyclicNeighbours and incident metric gap for eligible skip

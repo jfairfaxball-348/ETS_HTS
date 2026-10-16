@@ -1,5 +1,9 @@
-import ETSHTS.OuterplanarSplit
-import ETSHTS.ConvexFourBarycentric
+module
+public import ETSHTS.OuterplanarSplit
+public import ETSHTS.ConvexFourBarycentric
+
+@[expose] public section
+
 
 noncomputable section
 namespace ETSHTS
@@ -20,13 +24,11 @@ theorem s053_not_positive_barycentre {T : Finset Point}
   have hf : nx*v.1 + ny*v.2 =
       α*(nx*p.1+ny*p.2) + β*(nx*q.1+ny*q.2) + γ*(nx*r.1+ny*r.2) := by
     rw [he]
-    dsimp
     ring
   have h1' := mul_pos ha (sub_pos.mpr h1)
   have h2' := mul_pos hb (sub_pos.mpr h2)
   have h3' := mul_pos hg (sub_pos.mpr h3)
   have hs' := congrArg (fun t : ℝ => t * (nx*v.1+ny*v.2)) hs
-  dsimp only at hs'
   have hz : α*(nx*v.1+ny*v.2-(nx*p.1+ny*p.2)) +
       β*(nx*v.1+ny*v.2-(nx*q.1+ny*q.2)) +
       γ*(nx*v.1+ny*v.2-(nx*r.1+ny*r.2)) = 0 := by

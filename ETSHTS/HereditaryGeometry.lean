@@ -1,4 +1,8 @@
-import ETSHTS.NoThreeCollinear
+module
+public import ETSHTS.NoThreeCollinear
+
+@[expose] public section
+
 
 /-!
 # S041 — hereditary finite strict geometry for ear removal

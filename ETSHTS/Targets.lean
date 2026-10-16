@@ -1,4 +1,8 @@
-import ETSHTS.Foundation
+module
+public import ETSHTS.Foundation
+
+@[expose] public section
+
 
 /-!
 # Fixed full theorem obligations: CLM-0096 / 0099 / 0102 / 0107 / 0108

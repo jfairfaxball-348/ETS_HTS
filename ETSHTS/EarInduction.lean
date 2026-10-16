@@ -1,4 +1,8 @@
-import ETSHTS.GlobalCount
+module
+public import ETSHTS.GlobalCount
+
+@[expose] public section
+
 
 /-!
 # S041 — uniform metric-ear existence implies a full recursive certificate

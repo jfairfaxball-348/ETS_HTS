@@ -1,4 +1,8 @@
-import ETSHTS.CentralOriginalSites
+module
+public import ETSHTS.CentralOriginalSites
+
+@[expose] public section
+
 
 /-!
 # S048 — two actual cyclic skip endpoint comparisons for short bands

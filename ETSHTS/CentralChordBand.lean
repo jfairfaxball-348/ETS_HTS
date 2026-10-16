@@ -1,4 +1,8 @@
-import ETSHTS.QuantitativeSkip
+module
+public import ETSHTS.QuantitativeSkip
+
+@[expose] public section
+
 
 /-!
 # S048 — original ellipse central closed-band comparison
@@ -37,12 +41,12 @@ theorem s048_lambda_mem_zero_pi (a b : ℝ)
   have hx : 0 < b / a := div_pos hb ha
   have hxle : b / a ≤ (1 : ℝ) := (div_le_one ha).2 hab
   have harpos : 0 ≤ Real.arctan (b / a) := by
-    have h := Real.arctan_lt_arctan hx
+    have h := Real.arctan_strictMono hx
     simpa only [Real.arctan_zero] using (le_of_lt h)
   have harupper : Real.arctan (b / a) ≤ Real.pi / 4 := by
     calc
       Real.arctan (b / a) ≤ Real.arctan 1 :=
-        Real.arctan_le_arctan hxle
+        Real.arctan_mono hxle
       _ = Real.pi / 4 := Real.arctan_one
   unfold lambda
   constructor <;> linarith

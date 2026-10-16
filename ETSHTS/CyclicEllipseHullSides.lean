@@ -1,4 +1,8 @@
-import ETSHTS.CyclicEllipseOrientation
+module
+public import ETSHTS.CyclicEllipseOrientation
+
+@[expose] public section
+
 
 /-!
 # S047 — exact hull sides of original finite ordered ellipse sites

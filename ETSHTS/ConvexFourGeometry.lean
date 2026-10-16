@@ -1,4 +1,8 @@
-import ETSHTS.EuclideanChord
+module
+public import ETSHTS.EuclideanChord
+
+@[expose] public section
+
 
 /-!
 # S042 continued — strict opposite-side lengths for crossing diagonals

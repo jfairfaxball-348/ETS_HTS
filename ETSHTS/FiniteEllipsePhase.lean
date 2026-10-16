@@ -1,4 +1,8 @@
-import ETSHTS.HullLastBridge
+module
+public import ETSHTS.HullLastBridge
+
+@[expose] public section
+
 
 /-!
 # S045 — finite-site normalised angular lifting (original ellipse)

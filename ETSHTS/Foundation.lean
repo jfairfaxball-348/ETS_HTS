@@ -1,4 +1,8 @@
-import ETSHTS.Definitions
+module
+public import ETSHTS.Definitions
+
+@[expose] public section
+
 
 /-!
 # First low-level theorems

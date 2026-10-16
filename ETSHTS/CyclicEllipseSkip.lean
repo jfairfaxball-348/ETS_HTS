@@ -1,4 +1,8 @@
-import ETSHTS.CyclicEllipsePhase
+module
+public import ETSHTS.CyclicEllipsePhase
+
+@[expose] public section
+
 
 /-!
 # S046 — actual cyclic successor, Euclidean skip chords, closed-R selection

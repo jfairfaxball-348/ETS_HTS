@@ -1,4 +1,8 @@
-import ETSHTS.TriangleInteriorOrder
+module
+public import ETSHTS.TriangleInteriorOrder
+
+@[expose] public section
+
 
 /-!
 # S042: the exact compulsory four-site order for a strict interior site

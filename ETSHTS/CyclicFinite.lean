@@ -1,4 +1,8 @@
-import ETSHTS.CertificateCases
+module
+public import ETSHTS.CertificateCases
+
+@[expose] public section
+
 
 /-!
 # S042: finite cyclic-index arithmetic for the exact metric-skip selector

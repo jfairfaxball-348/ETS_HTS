@@ -1,4 +1,8 @@
-import ETSHTS.ConvexChordSeparation
+module
+public import ETSHTS.ConvexChordSeparation
+
+@[expose] public section
+
 
 noncomputable section
 namespace ETSHTS

@@ -1,4 +1,8 @@
-import ETSHTS.HullInsertion
+module
+public import ETSHTS.HullInsertion
+
+@[expose] public section
+
 
 /-!
 # S042: exact reverse-ear insertion and the sufficiency half of CLM0099
@@ -60,19 +64,21 @@ theorem s042_planeOrder_extend_metricEar
     have hvrest : v ∈ S.erase v := by
       rw [← hcover]
       simpa using h
-    exact (Finset.not_mem_erase v S) hvrest
+    exact (by simp : v ∉ S.erase v) hvrest
   have hnodup' : ([p, q, r] ++ (rest ++ [v])).Nodup := by
     have hn : (([p, q, r] ++ rest) ++ [v]).Nodup := by
       apply (List.nodup_append).2
       refine ⟨hnodup, by simp, ?_⟩
-      simpa [List.disjoint_singleton] using hnot
+      intro x hx y hy hxy
+      have hy' : y = v := by simpa using hy
+      exact hnot (by simpa [hxy, hy'] using hx)
     simpa [List.append_assoc] using hn
   have hcover' : ([p, q, r] ++ (rest ++ [v])).toFinset = S := by
     calc
       ([p, q, r] ++ (rest ++ [v])).toFinset =
           insert v (([p, q, r] ++ rest).toFinset) := by
-            simp [List.append_assoc, Finset.insert_eq, Finset.union_comm,
-              Finset.union_left_comm, Finset.union_assoc]
+            ext x
+            simp [List.mem_append, or_left_comm, or_assoc]
       _ = insert v (S.erase v) := by rw [hcover]
       _ = S := Finset.insert_erase hv
   have hnear' : exactlyTwoNearest ([p, q, r] ++ rest).toFinset v u w := by

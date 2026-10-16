@@ -1,4 +1,8 @@
-import ETSHTS.HullSaturation
+module
+public import ETSHTS.HullSaturation
+
+@[expose] public section
+
 
 /-!
 # S042: strict triangle interior cannot cross an opposite side

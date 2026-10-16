@@ -1,4 +1,8 @@
-import ETSHTS.FourTailBridge
+module
+public import ETSHTS.FourTailBridge
+
+@[expose] public section
+
 
 /-!
 # S042: hull-edge saturation from a planar edge-count cap

@@ -1,4 +1,8 @@
-import ETSHTS.TriangleInterior
+module
+public import ETSHTS.TriangleInterior
+
+@[expose] public section
+
 
 /-!
 # S042: endpoint reversal invariance and interior four-site planarity

@@ -1,4 +1,8 @@
-import ETSHTS.CentralRatio
+module
+public import ETSHTS.CentralRatio
+
+@[expose] public section
+
 
 /-!
 # S037 — strict convexity of arbitrary finite ellipse-boundary sets

@@ -1,5 +1,9 @@
-import ETSHTS.OuterplanarEdgeSplit
-import ETSHTS.CyclicEllipseHull
+module
+public import ETSHTS.OuterplanarEdgeSplit
+public import ETSHTS.CyclicEllipseHull
+
+@[expose] public section
+
 
 noncomputable section
 namespace ETSHTS

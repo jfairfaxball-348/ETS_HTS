@@ -1,4 +1,8 @@
-import ETSHTS.RationalChord
+module
+public import ETSHTS.RationalChord
+
+@[expose] public section
+
 
 /-!
 # S035 — frozen S020 eligible skip-chord selector: verified substeps

@@ -1,4 +1,8 @@
-import ETSHTS.ConvexFourHull
+module
+public import ETSHTS.ConvexFourHull
+
+@[expose] public section
+
 
 /-!
 # S042 continued — exact compulsory insertion for crossing diagonals

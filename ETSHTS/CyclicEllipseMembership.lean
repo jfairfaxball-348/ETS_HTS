@@ -1,4 +1,8 @@
-import ETSHTS.CyclicEllipseSkip
+module
+public import ETSHTS.CyclicEllipseSkip
+
+@[expose] public section
+
 
 /-!
 # S046 — original finite indexed sites are genuinely distinct

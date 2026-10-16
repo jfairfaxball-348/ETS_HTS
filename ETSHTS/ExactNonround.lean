@@ -1,5 +1,9 @@
-import ETSHTS.CyclicCompetitorExact
-import ETSHTS.RationalBound
+module
+public import ETSHTS.CyclicCompetitorExact
+public import ETSHTS.RationalBound
+
+@[expose] public section
+
 
 /-!
 # S050 — exact specific noncircular ellipse, CLM0108
