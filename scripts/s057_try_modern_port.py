@@ -19,6 +19,11 @@ for p in files:
         for name in ("s033_v", "s033_u", "s033_x"):
             assert f"private def {name} " in old
             old = old.replace(f"private def {name} ", f"def {name} ")
+    if p.as_posix() == "ETSHTS/RationalChord.lean":
+        # Same public theorem signature issue for three homogeneous coordinate helpers.
+        for name in ("s034_X", "s034_Y", "s034_D"):
+            assert f"private def {name} " in old
+            old = old.replace(f"private def {name} ", f"def {name} ")
     if old.lstrip().startswith("module"):
         raise SystemExit(f"Already migrated; do not rewrite {p}")
     lines = old.splitlines(keepends=True)
