@@ -15,6 +15,7 @@ import ETSHTS.CentralOriginalSites
 import ETSHTS.ShortArcLifts
 import ETSHTS.CompetitorPhaseIndex
 import ETSHTS.CyclicCompetitorRank
+import ETSHTS.CyclicCompetitorLifts
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
