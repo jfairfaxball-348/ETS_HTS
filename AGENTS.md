@@ -2,7 +2,7 @@
 
 ## Most recent finished session (16 October 2026)
 
-Owner-invoked **S055** completed a hostile source-level novelty audit, with active verdict `INDETERMINATE_ACCESS_GAP`. See `sessions/S055/HOSTILE_FINDINGS.md`, `SOURCE_DOSSIER.md`, and `CLOSEOUT.md`. All five exact Lean theorems remain proved. The next bookkeeping session S056 has no installed target and requires explicit owner target installation and a **later separate invocation**. References below to S055 as future are historical description of the owner process before its execution.
+Owner-invoked **S055** completed a hostile source-level novelty audit, with active verdict `INDETERMINATE_ACCESS_GAP`. See `sessions/S055/HOSTILE_FINDINGS.md`, `SOURCE_DOSSIER.md`, and `CLOSEOUT.md`. All five exact Lean theorems remain proved. The owner has now separately installed **S056** as Palomar registration/public-entry/preflight CLI and paper–registry presentation reconnaissance. S056 is FUTURE / UNEXECUTED and requires a **new explicit owner invocation**. No submission, publication or S057 target is authorised. References below to S055 as future are historical description of the owner process before its execution.
 
 ## Identity and authority
 
