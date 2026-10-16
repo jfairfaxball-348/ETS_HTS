@@ -24,6 +24,7 @@ import ETSHTS.ExactNonround
 import ETSHTS.GenuineEdges
 import ETSHTS.ActualLastNecessity
 import ETSHTS.FiniteHullNeighbours
+import ETSHTS.OuterplanarSplit
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -333,3 +334,9 @@ import ETSHTS.FiniteHullNeighbours
 #print axioms ETSHTS.s051_clm0099_of_genuine_outerplanar_cap_and_two_sides
 
 #print axioms ETSHTS.s052_two_hull_sides
+
+#print axioms ETSHTS.s052_halves_union
+#print axioms ETSHTS.s052_halves_intersection
+#print axioms ETSHTS.s052_halves_card
+#print axioms ETSHTS.s052_nonhull_witnesses
+#print axioms ETSHTS.s052_nonhull_halves_proper
