@@ -1,0 +1,8 @@
+# S053 FINAL MERGED-MAIN Lean output, independently retrieved in S054
+# Main: 210e2c0b43c9f9bad2ec9b3b277f4e36024afc25; run 38889373048; job 116934859031; conclusion SUCCESS
+# Compiler: Lean 4.15.0, mathlib 9837ca9d65d9de6fad1ef4381750ca688774e608
+2026-10-16T10:51:15.6080735Z 'ETSHTS.clm0102_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-16T10:51:33.5314155Z 'ETSHTS.clm0096_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-16T10:51:53.6840201Z 'ETSHTS.clm0107_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-16T10:51:53.6840547Z 'ETSHTS.clm0108_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-16T10:51:54.7155619Z 'ETSHTS.clm0099_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
