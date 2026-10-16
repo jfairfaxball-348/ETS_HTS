@@ -9,3 +9,7 @@
 - A push-to-main full predictive caller is installed using official reusable workflow `PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44`, matching `pipeline_commit`, public repo, automatic **exact `github.sha`** source commit, five-root config, and `mode: full`. It is a credential-free prediction, not registration. The submission relationship string is a public assertion by the owner/maintainer and is **not** authenticated by the workflow; the owner must confirm it when actually submitting.
 - **FINAL-SHA RUN / BOUNDED REPORT: NOT YET OBSERVED** in this pre-merge archive. After merging inspect the actual SHA, push job, report artifact, declared roots, approved profile id and digest. A run trigger or workflow status alone is insufficient to change verdict.
 - No registry `/api/submit`, `/register`, actual human authentication, AI review or paper upload performed. Novelty verdict stays `INDETERMINATE_ACCESS_GAP`.
+
+## Contract hardening on S059 branch
+
+Official pinned `scripts/submission_contract.py` requires the `request_id` to match `^[0-9a-z]{12}$`. An initial caller using a hyphenated run identifier was caught before merge and repaired to the fixed compliant `s059pfull001`; verification run isolation still uses the hosted run ID in the upstream concurrency group. This is static source-contract inspection, **not** an official run PASS.
