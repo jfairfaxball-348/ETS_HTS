@@ -76,3 +76,8 @@ The **sole next direct original theorem** is CLM0108, which is already reduced t
 ## S050 proof completion update
 
 The precise nonround original CLM0108 theorem is now a root-imported direct compiled proof `clm0108_exact` using S049 `clm0107_exact` and the already proved rational aspect bridge. Code-head Lean run [38878900054](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38878900054) SUCCESS, `#print axioms ETSHTS.clm0108_exact` standard-only. Direct original coverage is **4/5**; CLM0099 necessity is the sole remaining original statement. S051 is separately owner-gated and should replace the false unrestricted `planeEdges` edge cap by an actual genuine-two-vertex noncrossing outerplanar cap and reason about the actual final chronological insertion.
+
+
+## S051 — 16 October 2026
+
+Owner authorised S051 from main `10500aec53f3024a2a88509e6e867df2c1157716` after S050 PR #62 final PR Lean 38879662680/governance 38879662603 and independent merged-main Lean 38879982293/governance 38879982337 SUCCESS. New genuine-edge Lean invariant, restricted truthful saturation and complete **actual chronological** last-arrival necessity induction **conditional on two geometric inputs** compile. Source Lean [38882163342](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38882163342) SUCCESS; eight root S051 axiom prints all standard-only. The two outstanding generic strict-convex results are genuine supported planar `2n−3` upper cap and two hull-side neighbours. `clm0099_exact` STILL OPEN (4/5 direct theorem score); `Definitions.lean` and `Targets.lean` unchanged. See [S051 coverage](sessions/S051/PROOF_COVERAGE.md) and [owner-gated S052](authoritative/NEXT_SESSION_PROMPT.md). No mathematical expansion/paper/release.
