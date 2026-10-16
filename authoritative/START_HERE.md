@@ -1,5 +1,9 @@
 # Start here — ellipse theorem formalisation
 
+## S059 closed — production packaging; external full-mode final-SHA verification pending (16 October 2026)
+
+Root Apache-2.0 LICENSE, schema-shaped Palomar formalization.yaml, shared paper/registry title and exact 5-root Comparator preserved; no frozen maths changed. The pinned Palomar reusable workflow will check the exact merge commit upon push to main. An official bounded mechanical report, with PASS and profile digest, is mandatory before the owner may rely on submission readiness. S059 closeout is prospective, not fictitious post-merge evidence. S060 has no installed target; owner steers. See [S059](../sessions/S059/CLOSEOUT.md). Historical descriptions below are snapshots only.
+
 ## Current: S059 installed, awaiting separate invocation (16 October 2026)
 
 The owner explicitly selected Apache-2.0 and installed S059 to complete the remaining technical Palomar packaging and official exact-final-SHA full predictive verification. **No S059 work has executed, no root licence or metadata has been installed by this administrative change, and no Palomar submission has been authorised.** S058 remains last completed and Palomar readiness remains NOT_READY. Follow [installed S059 prompt](NEXT_SESSION_PROMPT.md) and [state](STATE.json). Older uninstalled-target snapshots below are historical.

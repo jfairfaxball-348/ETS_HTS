@@ -1,4 +1,11 @@
-# Ellipse theorem — retained exact nearest-two insertion
+# Noncrossing Two-Nearest-Predecessor Orders on Nearly Circular Ellipses
+
+## S059 — licensing and Palomar packaging complete; full predictive verdict awaits live machine report (16 October 2026)
+
+The owner invoked S059 and authorised Apache-2.0 for original owner-controlled project work. The root `LICENSE` contains the unmodified standard Apache 2.0 terms; `formalization.yaml` v0.4 carries the same SPDX id and the five-target public theorem abstract. A credential-free caller at `.github/workflows/palomar-full-predictive.yml` requests the pinned official `mode: full` verifier against the **exact push-to-main SHA**. Its machine report, not this document, decides readiness. A successful independent S058 `lake comparator` check is inherited evidence only. No registry submission, paper, or priority claim was made. S055 novelty: `INDETERMINATE_ACCESS_GAP`. S060 remains owner-steered with no substantive target.
+
+The working shared future paper and registry title is **Noncrossing Two-Nearest-Predecessor Orders on Nearly Circular Ellipses**, and the closed sufficient bound is `R = sqrt(2/sin(2*pi/5) - 1)`; equality is included.
+
 
 ## Current: S059 owner-installed, NOT YET RUN (16 October 2026)
 
