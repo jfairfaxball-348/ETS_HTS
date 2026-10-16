@@ -44,8 +44,8 @@ theorem s049_right_lift_eq_forward_second {n : ℕ} (hn : 2 ≤ n)
       rw [hrot, hrot2]
       change ¬ (c.val + 2 < c.val)
       omega
-    simp [s047_right_lift, s048_forward_competitor_lift,
-      hnlast, hnlast1, hnot]
+    simp only [s047_right_lift, s048_forward_competitor_lift,
+      if_neg hnlast, if_neg hnlast1, if_neg hnot, add_zero]
   · by_cases hlast : c.val = n
     · have hc : c = Fin.last n := Fin.ext hlast
       subst c
