@@ -1,5 +1,9 @@
 # Start here — ellipse theorem formalisation
 
+## Current S055 literature/novelty outcome (16 October 2026)
+
+**S055 completed** (see [closeout](../sessions/S055/CLOSEOUT.md), [hostile findings](../sessions/S055/HOSTILE_FINDINGS.md), and [source dossier](../sessions/S055/SOURCE_DOSSIER.md)). Current priority verdict **INDETERMINATE_ACCESS_GAP**; no exact match in logged searches, significant missing-source/index coverage. Five original exact Lean proofs remain completed with no Lean edits. **S056 target is NOT INSTALLED**; owner chooses. S024 verdict is historical only.
+
 Canonical https://github.com/jfairfaxball-348/ellipse-theorem (renamed from ETS_HTS; same repository ID). Lean namespace remains `ETSHTS`.
 
 ## Active owner-steered process (16 October 2026)
