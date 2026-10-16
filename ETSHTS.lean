@@ -356,3 +356,5 @@ import ETSHTS.GenuineOuterplanarCap
 #print axioms ETSHTS.s053_hull_incident_card
 #print axioms ETSHTS.s053_genuine_outerplanar_cap
 #print axioms ETSHTS.clm0099_exact
+
+#print axioms ETSHTS.s053_hull_only_card

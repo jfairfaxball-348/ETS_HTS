@@ -50,6 +50,47 @@ theorem s053_hull_incident_card {T : Finset Point}
   apply le_trans (Finset.card_le_card hsub)
   by_cases h : edge v u = edge v w <;> simp [h]
 
+/-- Explicit global incidence count: a graph consisting only of original
+hull sides has at most as many genuine edges as original sites. -/
+theorem s053_hull_only_card {T : Finset Point}
+    (h4 : 4 ≤ T.card) (hc : strictConvexPosition T)
+    {H : Finset Edge} (hs : ∀ e ∈ H, e ⊆ T)
+    (hg : ∀ e ∈ H, ∃ a b : Point, a ≠ b ∧ e = edge a b)
+    (hhull : ∀ a b : Point, edge a b ∈ H → a ≠ b → hullSide T a b) :
+    H.card ≤ T.card := by
+  classical
+  have hdouble : (∑ v ∈ T, (H.filter (fun e => v ∈ e)).card) = 2 * H.card := by
+    calc
+      (∑ v ∈ T, (H.filter (fun e => v ∈ e)).card) =
+          ∑ v ∈ T, ∑ e ∈ H, if v ∈ e then (1 : ℕ) else 0 := by
+        apply Finset.sum_congr rfl
+        intro v hv
+        rw [Finset.card_eq_sum_ones, Finset.sum_filter]
+      _ = ∑ e ∈ H, ∑ v ∈ T, if v ∈ e then (1 : ℕ) else 0 := Finset.sum_comm
+      _ = ∑ e ∈ H, e.card := by
+        apply Finset.sum_congr rfl
+        intro e he
+        have hf : T.filter (fun v => v ∈ e) = e := by
+          ext v
+          simp only [Finset.mem_filter]
+          exact ⟨fun h => h.2, fun h => ⟨hs e he h,h⟩⟩
+        rw [← Finset.sum_filter, hf]
+        simp
+      _ = ∑ _e ∈ H, (2 : ℕ) := by
+        apply Finset.sum_congr rfl
+        intro e he
+        obtain ⟨a,b,hab,rfl⟩ := hg e he
+        simp [edge,hab]
+      _ = 2 * H.card := by simp [Nat.mul_comm]
+  have hbound : (∑ v ∈ T, (H.filter (fun e => v ∈ e)).card) ≤ 2 * T.card := by
+    calc
+      _ ≤ ∑ _v ∈ T, (2 : ℕ) := by
+        apply Finset.sum_le_sum
+        intro v hv
+        exact s053_hull_incident_card h4 hc hv hg hhull
+      _ = 2 * T.card := by simp [Nat.mul_comm]
+  omega
+
 /-- Original genuine supported noncrossing edges on any finite exposed
 set of at least three sites satisfy the exact outerplanar cap. -/
 theorem s053_genuine_outerplanar_cap (T : Finset Point) :
@@ -135,38 +176,7 @@ theorem s053_genuine_outerplanar_cap (T : Finset Point) :
       intro a b he hab
       by_contra h
       exact hchord ⟨a,b,hab,he,h⟩
-    obtain ⟨v,hv⟩ := Finset.card_pos.mp (show 0 < U.card by omega)
-    let H0 := s053_restrict H (U.erase v)
-    let HI := H.filter (fun e => v ∈ e)
-    have hH0 : H0 ⊆ H := by intro e he; exact (Finset.mem_filter.mp he).1
-    have h0support : ∀ e ∈ H0, e ⊆ U.erase v := by
-      intro e he; exact (Finset.mem_filter.mp he).2
-    have h0cap := ih (U.erase v) (Finset.erase_ssubset hv)
-      (by rw [Finset.card_erase_of_mem hv]; omega)
-      (s041_strictConvexPosition_erase hc v) H0
-      (s038_planeEdges_of_subset hH0 hp) h0support
-      (fun e he => hg e (hH0 he))
-    have hIcap := s053_hull_incident_card h4 hc hv hg hhull
-    have hu : H0 ∪ HI = H := by
-      ext e
-      simp only [H0, HI, s053_restrict, Finset.mem_union, Finset.mem_filter]
-      constructor
-      · rintro (⟨he,_⟩ | ⟨he,_⟩) <;> exact he
-      · intro he
-        by_cases hve : v ∈ e
-        · exact Or.inr ⟨he,hve⟩
-        · exact Or.inl ⟨he, fun x hx => Finset.mem_erase.mpr
-            ⟨by intro h; exact hve (h ▸ hx), hs e he hx⟩⟩
-    have hd : H0 ∩ HI = ∅ := by
-      apply Finset.eq_empty_iff_forall_not_mem.mpr
-      intro e he
-      obtain ⟨he0,heI⟩ := Finset.mem_inter.mp he
-      have hve := (Finset.mem_filter.mp heI).2
-      exact Finset.not_mem_erase v U (h0support e he0 hve)
-    have hcount := Finset.card_union_add_card_inter H0 HI
-    rw [hu,hd] at hcount
-    have hsize := Finset.card_erase_of_mem hv
-    change HI.card ≤ 2 at hIcap
+    have hbound := s053_hull_only_card h4 hc hs hg hhull
     omega
 
 theorem clm0099_exact : CLM0099 := by
