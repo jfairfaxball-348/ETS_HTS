@@ -1,5 +1,10 @@
 # Start here — ellipse theorem formalisation
 
+## S056 Palomar research completed (16 October 2026)
+
+See [S056 closeout](../sessions/S056/CLOSEOUT.md), [preflight runbook](../sessions/S056/PREFLIGHT_CL_RUNBOOK.md), [public-record forensics](../sessions/S056/PUBLIC_RECORD_FORENSICS.md), [mechanical blockers](../sessions/S056/CURRENT_REPO_READINESS.md), and [paper-title/theorem crosswalk](../sessions/S056/PAPER_REGISTRY_ALIGNMENT.md). Current Palomar minimum Lean v4.35.0-rc2 exceeds pinned Lean v4.15.0; root licence, metadata, independent Challenge/Solution/Comparator and module headers are absent. NO Palomar preflight, submission or registration was executed. All five theorem proofs unchanged. S055 priority verdict INDETERMINATE_ACCESS_GAP. **S057 TARGET NOT INSTALLED; owner chooses.**
+
+
 ## Current S055 literature/novelty outcome (16 October 2026)
 
 **S055 completed** (see [closeout](../sessions/S055/CLOSEOUT.md), [hostile findings](../sessions/S055/HOSTILE_FINDINGS.md), and [source dossier](../sessions/S055/SOURCE_DOSSIER.md)). Current priority verdict **INDETERMINATE_ACCESS_GAP**; no exact match in logged searches, significant missing-source/index coverage. Five original exact Lean proofs remain completed with no Lean edits. **S056 target now owner-installed:** Palomar public-record / preflight CLI / future-paper wording reconnaissance, FUTURE / UNEXECUTED and requires a new invocation. S024 verdict is historical only.
