@@ -26,7 +26,8 @@ theorem s053_not_positive_barycentre {T : Finset Point}
   have h2' := mul_pos hb (sub_pos.mpr h2)
   have h3' := mul_pos hg (sub_pos.mpr h3)
   have hs' := congrArg (fun t : ℝ => t * (nx*v.1+ny*v.2)) hs
-  nlinarith [hs']
+  dsimp only at hs'
+  nlinarith only [hf, h1', h2', h3', hs']
 
 /-- Opposite strict sides in an exposed four-set force the ORIGINAL
 open segments to intersect. The exposure hypotheses exclude the two

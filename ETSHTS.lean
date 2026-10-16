@@ -26,6 +26,7 @@ import ETSHTS.ActualLastNecessity
 import ETSHTS.FiniteHullNeighbours
 import ETSHTS.OuterplanarSplit
 import ETSHTS.ConvexChordSeparation
+import ETSHTS.OuterplanarEdgeSplit
 
 /- Kernel dependency exposure of actual theorem declarations. -/
 #print axioms ETSHTS.sqDist_self
@@ -346,3 +347,6 @@ import ETSHTS.ConvexChordSeparation
 
 #print axioms ETSHTS.s053_not_positive_barycentre
 #print axioms ETSHTS.s053_opposite_sides_cross
+
+#print axioms ETSHTS.s053_edge_in_one_half
+#print axioms ETSHTS.s053_restriction_split
