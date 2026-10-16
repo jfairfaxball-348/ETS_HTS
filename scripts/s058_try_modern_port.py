@@ -93,8 +93,8 @@ for p in files:
                           "    rw [he]\n    ring")
     if p.as_posix() == "ETSHTS/ConvexChordSeparation.lean":
         # The current simplifier has already normalised hs' after congrArg.
-        assert "  dsimp only at hs'\\n" in old
-        old = old.replace("  dsimp only at hs'\\n", "")
+        assert "  dsimp only at hs'\n" in old
+        old = old.replace("  dsimp only at hs'\n", "")
     # Full source-wide mechanical rename of retired Mathlib arctan comparison APIs.
     old = old.replace("Real.arctan_lt_arctan", "Real.arctan_strictMono")
     old = old.replace("Real.arctan_le_arctan", "Real.arctan_mono")
