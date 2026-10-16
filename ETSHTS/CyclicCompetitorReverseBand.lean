@@ -79,13 +79,11 @@ theorem s049_backward_band_actual_competitor {n : ℕ}
       simp only [s048_forward_competitor_lift, if_neg hnot,
         add_zero]
       simp only [shift, if_pos hjlt]
-      ring
     · have hclt : c < j :=
         lt_of_le_of_ne (le_of_not_gt hjlt) (Ne.symm hjne)
       rw [hright0]
       simp only [s048_forward_competitor_lift, if_pos hclt]
       simp only [shift, if_neg hjlt, add_zero]
-      ring
   have hliftj : s048_forward_competitor_lift θ c j =
       θ j + shift := rfl
   have hbefore : φ ≤ θ j := by
