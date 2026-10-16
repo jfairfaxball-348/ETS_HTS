@@ -29,11 +29,16 @@ class ScaffoldTest(unittest.TestCase):
     def test_pending_owner_target_must_be_null(self):
         p = "authoritative/STATE.json"
         j = self.load(p)
+        j["next_session_target_status"] = "AWAITING_OWNER_TARGET"
         j["next_session_target"] = "Unapproved proposed goal"
         self.save(p, j)
         self.assertTrue(any("pending owner target must be null" in x for x in validate(self.root)))
 
     def test_pending_prompt_cannot_install_task(self):
+        state = self.load("authoritative/STATE.json")
+        state["next_session_target_status"] = "AWAITING_OWNER_TARGET"
+        state["next_session_target"] = None
+        self.save("authoritative/STATE.json", state)
         p = self.root / "authoritative/NEXT_SESSION_PROMPT.md"
         p.write_text(
             "# S055 — FUTURE / UNEXECUTED\\nnew explicit owner invocation\\n"
@@ -46,6 +51,8 @@ class ScaffoldTest(unittest.TestCase):
         j["next_session_target_status"] = "OWNER_TARGET_INSTALLED"
         j["next_session_target"] = "Owner-specified task"
         self.save(p, j)
+        q = self.root / "authoritative/NEXT_SESSION_PROMPT.md"
+        q.write_text(q.read_text(encoding="utf-8").replace("TARGET STATUS: INSTALLED BY OWNER", "TARGET STATUS: MISSING"), encoding="utf-8")
         self.assertTrue(any("owner-installation marker" in x for x in validate(self.root)))
 
     def test_invalid_session_steering_mode(self):
