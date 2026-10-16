@@ -1,0 +1,9 @@
+# S052 PROOF_COVERAGE — one major geometric premise closed, one open
+
+**Already compiler verified:** `ETSHTS/FiniteHullNeighbours.lean` theorem `s052_two_hull_sides` proves exactly the original S051 premise B: for every finite T with at least four original Euclidean points in `strictConvexPosition`, every v∈T has distinct x,y with original `hullSide T v x` and `hullSide T v y`. No ellipse-only parametrisation, extra assumptions or substituted predicates. Source-head hosted Lean [38885231074](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38885231074) SUCCESS, root axiom line exactly `[propext, Classical.choice, Quot.sound]`.
+
+`ETSHTS/OuterplanarSplit.lean` develops the orientation-half partition needed for cap A: `s052_positiveHalf`, `s052_negativeHalf`, `s052_halves_union`, `s052_halves_intersection` (overlap is precisely {p,q}), `s052_halves_card` (sizes sum to T.card+2), `s052_nonhull_witnesses` (both strict sides populated for a non-hull chord) and `s052_nonhull_halves_proper`. It also proposes `s052_clm0099_of_genuine_outerplanar_cap : [exact A] → CLM0099`, discharging B via the proved theorem. Check latest PR-head Lean run before calling these later declarations verified.
+
+**Still OPEN:** A is the full all-n supported/genuine noncrossing outerplanar `2*T.card−3` bound, with actual `planeEdges`/crossing geometry. The cross-chord separation and induced H-edge partition/counting induction have NOT been proved by S052. `clm0099_exact : CLM0099` does NOT exist, and scoreboard remains **4/5**. All existing literal CLM0096, CLM0102, CLM0107 and CLM0108 proofs remain intact.
+
+S053 exclusively targets the one true remaining premise A and then the literal direct theorem. No false unrestricted S042 cap, no sorry, no custom axiom, no mathematical novelty or release claim.
