@@ -13,10 +13,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check exact source-level statement fidelity
         run: python3 scripts/s058_check_challenge_fidelity.py
-      - name: Prepare comparator sandbox
+      - name: Checkout official pinned Palomar sandbox installer
+        uses: actions/checkout@v4
+        with:
+          repository: PalomarRegistry/PalomarSubmission
+          ref: d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44
+          path: .palomar-official
+          persist-credentials: false
+      - name: Build official pinned bubblewrap and scoped AppArmor profile
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq bubblewrap
+          sudo apt-get install -y -qq meson ninja-build libcap-dev pkg-config apparmor-utils
+          bash .palomar-official/scripts/install_bwrap.sh "$RUNNER_TEMP/palomar-bwrap"
+          echo "$RUNNER_TEMP/palomar-bwrap" >> "$GITHUB_PATH"
       - name: Build pinned modern project, Challenge and Solution
         uses: leanprover/lean-action@v1
         with:
