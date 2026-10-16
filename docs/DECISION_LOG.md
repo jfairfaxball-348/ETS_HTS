@@ -170,3 +170,7 @@ DEC-0070: Preregistered and executed CAM-0008/0009 on exact rational finite data
 ## Administrative owner decision — 16 October 2026 (not S055 execution)
 
 Effective immediately, the owner controls **each future session's substantive target**. Normal session closeout and code/CI/merge archiving remain mandatory, but no assistant-generated next goal, future agenda or next-step suggestion is permitted. The owner will separately specify what to install as S055; target installation is administrative and must be followed by a distinct explicit execution invocation. Former provisional S055 independent verification text is superseded and was not executed. Status: `AWAITING_OWNER_TARGET`. See `docs/OWNER_STEERED_SESSION_POLICY.md`.
+
+## Administrative owner target installation — 16 October 2026 (S055 NOT executed)
+
+The owner explicitly selected **"prior art/novelty audit"** as the S055 target and separately directed its installation. The installed S055 prompt requires a contemporary hostile search for exact/stronger/equivalent precedents to CLM0107/0108, CLM0099/0096/0102 with full source grades and audited query log, reconsideration of S024 conditional novelty, and no change to the completed mathematical formalisation. `next_session_target_status=OWNER_TARGET_INSTALLED`, `next_session_authorised=false`. This decision is **administrative installation only**; the literature audit, S055 session records, public release and S056 are not authorised by this message. Subsequent user invocation is required to execute S055.
