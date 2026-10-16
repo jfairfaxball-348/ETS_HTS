@@ -1,5 +1,9 @@
 # Ellipse theorem — binding agent instructions
 
+## Current administrative state: S059 owner-installed, not executed (16 October 2026)
+
+The owner has expressly approved using **Apache-2.0** for the repository's owner-controlled original work and installed the S059 technical target: install a truthful root licence and v0.4 metadata, preserve all five exact Lean proofs, and seek official pinned Palomar `mode: full` predictive PASS on the exact final main SHA. This is **only a future prompt installation**; `last_completed_session=S058`, `next_session_authorised=false` and current Palomar readiness remains `NOT_READY`. A later separate "Run next session" invokes S059. No Palomar submission/registration authorised. Refer to `authoritative/NEXT_SESSION_PROMPT.md` and `authoritative/STATE.json` before older dated snapshots below.
+
 ## S058 completed — successful modern kernel/comparator audit; Palomar NOT_READY (16 October 2026)
 
 **Current owner-directed state:** S058 executed and closed; all FIVE original exact theorem roots compile under pinned Lean v4.35.0 and Mathlib, with unchanged frozen propositions and the three standard axioms only. The independently sandboxed `lake comparator` selected all five exact theorems and confirmed proofs through con-ron, NanoDa and Lean kernels ([CI 38922156993](https://github.com/jfairfaxball-348/ellipse-theorem/actions/runs/38922156993)). This is **NOT** an official Palomar `mode: full` predictive PASS. Missing owner-authorised repository-root SPDX licence, approved production `formalization.yaml`, and official successful full-mode check on the exact final main SHA. **NOT_READY for Palomar submission.** See [S058 closeout](sessions/S058/CLOSEOUT.md) and [owner handoff](sessions/S058/OWNER_SUBMISSION_HANDOFF.md). S059 is FUTURE/UNEXECUTED, TARGET NOT INSTALLED; owner alone steers subsequent target. Older below-current "S058 FUTURE" text is historical.
