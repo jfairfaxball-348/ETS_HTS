@@ -131,4 +131,97 @@ theorem s049_forward_rank_injective {n : ℕ}
       have hcbd := centre.isLt
       omega
 
+
+/-- The immediate successor in the original finite rotation has rank one. -/
+theorem s049_rank_first_successor {n : ℕ} (hn : 1 ≤ n)
+    (centre : Fin (n + 1)) :
+    s049_forward_rank centre ((finRotate (n + 1)) centre) = 1 := by
+  classical
+  by_cases hlast : centre = Fin.last n
+  · subst centre
+    rw [finRotate_last]
+    have hnot : ¬ (Fin.last n : Fin (n + 1)) ≤ 0 := by
+      intro hh
+      change n ≤ 0 at hh
+      omega
+    simp only [s049_forward_rank, if_neg hnot]
+    change n + 1 + 0 - n = 1
+    omega
+  · have hlt : centre.val < n := by
+      have hcbd := centre.isLt
+      have hne : centre.val ≠ n := by
+        intro he
+        apply hlast
+        apply Fin.ext
+        exact he
+      omega
+    have hrot : (finRotate (n + 1)) centre =
+        ⟨centre.val + 1, by omega⟩ := by
+      simpa using (finRotate_of_lt hlt)
+    rw [hrot]
+    have hle : centre ≤ (⟨centre.val + 1, by omega⟩ : Fin (n + 1)) := by
+      change centre.val ≤ centre.val + 1
+      omega
+    simp only [s049_forward_rank, if_pos hle]
+    change centre.val + 1 - centre.val = 1
+    omega
+
+/-- The genuine second successor is exactly rank two, including when
+either of its two steps traverses the end-to-start seam. -/
+theorem s049_rank_second_successor {n : ℕ} (hn : 2 ≤ n)
+    (centre : Fin (n + 1)) :
+    s049_forward_rank centre
+      ((finRotate (n + 1)) ((finRotate (n + 1)) centre)) = 2 := by
+  classical
+  by_cases hplain : centre.val + 2 ≤ n
+  · have hrot : (finRotate (n + 1)) centre =
+        ⟨centre.val + 1, by omega⟩ := by
+      simpa using (finRotate_of_lt (show centre.val < n by omega))
+    have hrot2 : (finRotate (n + 1))
+        (⟨centre.val + 1, by omega⟩ : Fin (n + 1)) =
+        ⟨centre.val + 2, by omega⟩ := by
+      simpa using (finRotate_of_lt
+        (show centre.val + 1 < n by omega))
+    rw [hrot, hrot2]
+    have hle : centre ≤ (⟨centre.val + 2, by omega⟩ : Fin (n + 1)) := by
+      change centre.val ≤ centre.val + 2
+      omega
+    simp only [s049_forward_rank, if_pos hle]
+    change centre.val + 2 - centre.val = 2
+    omega
+  · by_cases hlast : centre.val = n
+    · have hcentre : centre = Fin.last n := Fin.ext hlast
+      subst centre
+      rw [finRotate_last]
+      have hrot0 : (finRotate (n + 1)) (0 : Fin (n + 1)) =
+          ⟨1, by omega⟩ := by
+        simpa using (finRotate_of_lt (show (0 : Fin (n + 1)).val < n by
+          simp; omega))
+      rw [hrot0]
+      have hnot : ¬ (Fin.last n : Fin (n + 1)) ≤
+          (⟨1, by omega⟩ : Fin (n + 1)) := by
+        intro hh
+        change n ≤ 1 at hh
+        omega
+      simp only [s049_forward_rank, if_neg hnot]
+      change n + 1 + 1 - n = 2
+      omega
+    · have hpenultimate : centre.val + 1 = n := by
+        have hcbd := centre.isLt
+        omega
+      have hrot : (finRotate (n + 1)) centre = Fin.last n := by
+        calc
+          (finRotate (n + 1)) centre =
+              ⟨centre.val + 1, by omega⟩ := by
+                simpa using (finRotate_of_lt
+                  (show centre.val < n by omega))
+          _ = Fin.last n := Fin.ext hpenultimate
+      rw [hrot, finRotate_last]
+      have hnot : ¬ centre ≤ (0 : Fin (n + 1)) := by
+        intro hh
+        have hz : centre.val ≤ 0 := Fin.le_def.mp hh
+        omega
+      simp only [s049_forward_rank, if_neg hnot]
+      change n + 1 + 0 - centre.val = 2
+      omega
 end ETSHTS
