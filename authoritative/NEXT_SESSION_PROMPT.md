@@ -1,6 +1,6 @@
 # S050 — FUTURE / UNEXECUTED: finish literal CLM0108 for the specific nonround ellipse
 
-**FUTURE / UNEXECUTED. Explicit NEW owner invocation of this file, its link, or "run next session" authorises exactly S050.** This S049 handover alone does NOT authorise S050. No S051 execution.
+**FUTURE / UNEXECUTED. A new explicit owner invocation of this file, its link, or "run next session" authorises exactly S050.** This S049 handover alone does NOT authorise S050. No S051 execution.
 
 Repository `jfairfaxball-348/ellipse-theorem`, Lean namespace `ETSHTS`. Mathematical phase FROZEN S020/S021. Immutable `Definitions.lean` blob `f5e71b625bdbf40f6c84551dd93f9ce375154519`, `Targets.lean` blob `e12f117589b1852e06aa669a405a6dc3ee652549`. One direct original theorem at a time. S049 proved **literal `theorem clm0107_exact : CLM0107`**, kernel verified source run 38872864840 and standard-only axioms. Original 3/5 direct coverage: CLM0096, CLM0102 and CLM0107 verified; CLM0108/CLM0099 OPEN.
 
