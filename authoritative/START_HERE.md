@@ -1,5 +1,10 @@
 # Start here — ellipse theorem formalisation
 
+## S057 completed, readiness verdict NOT_READY — 16 October 2026
+
+S057 is archived in [sessions/S057](../sessions/S057/CLOSEOUT.md). Seven hosted Lean 4.35 migration probes attempted the 77 project source files plus lakefile, repaired source API and theorem visibility issues, and stopped at a genuine outstanding EarSufficiency list-disjointness proof compiler failure. No silently accepted migrated proof; the original exact five Lean 4.15 proved claims remain unchanged. A new authorised SPDX root licence, independent Challenge/Solution/Comparator, v0.4 metadata and successful final-SHA full Palomar predictive mode are still missing. The owner did **not** authorise Palomar submission. S058 is deliberately TARGET NOT INSTALLED; normal owner-steering policy applies. Subsequent older S057/FUTURE sections are historical.
+
+
 ## S057 — owner-installed Palomar preparation target (16 October 2026)
 
 **FUTURE / UNEXECUTED, not a completed build.** The owner selected [S057](NEXT_SESSION_PROMPT.md) to aim for a *public immutable commit ready for the owner's own Palomar submission*. S057 must port the original exact five-theorem project to a current Palomar-compatible Lean/module system, build an independently auditable Challenge/Solution/Comparator plus truthful metadata and licence, and obtain a **full-mode official predictive Palomar mechanical verification PASS on the eventual submission SHA**, if achievable. No actual Palomar submission/registration is authorised. S056 remains last completed. A **new explicit owner invocation** is required to run S057; do not auto-install S058. Existing proofs and current novelty verdict unchanged.

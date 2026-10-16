@@ -3,9 +3,9 @@
   "programme": "ellipse-theorem",
   "authority": "live_remote_main",
   "phase": 1,
-  "phase_name": "S056 source-verified Palomar registry/preflight and paper-alignment reconnaissance",
-  "last_completed_session": "S056",
-  "next_session": "S057",
+  "phase_name": "S057 Palomar technical migration attempted; official mechanical readiness NOT_READY",
+  "last_completed_session": "S057",
+  "next_session": "S058",
   "next_session_authorised": false,
   "candidate_count": 131,
   "source_count": 87,
@@ -25,7 +25,7 @@
   "kill_count": 131,
   "generated_count": 0,
   "remote_sha_policy": "S054 entry main 210e2c0b43c9f9bad2ec9b3b277f4e36024afc25/tree42cec857ea5af3ef5dec8d638f6b8448a5ec78e5. S053 PR65 final head ecca8be3c39768f1357ff5654c3e13fb4d755684, 7 single-parent source commits; merge two parents [20c3719407e4e3f5534b045837276b518c436677,ecca8be3c39768f1357ff5654c3e13fb4d755684], identical tree. Final PR Lean38889081938/governance38889081706 and independent merged-main Lean38889373048/job116934859031/governance38889372818 SUCCESS with standard-only five theorem axioms. S054 final PR/main CI must be separately verified from GitHub after commit; not preclaimed. Protection403 UNKNOWN, rulesets empty. S054 PR66 final head c0c4b8a99f1a729a592380ba3f5dcc658eeabf18; ordinary two-parent merge 259bbfd6c83703c9783bb670e34b81b583972a37, identical tree 2affc57f4cf52dbd8b0feba20e77a4fbcf2f97b1. PR Lean38890838704/governance38890838867 and independent merged-main Lean38891216890/job116940910011/governance38891217017 all SUCCESS with five standard-only theorem axiom lines. 16 Oct administrative owner-steer change leaves last_completed_session=S054; S055 target pending owner's installation. S055 entry live main 5403b314efa2ba76dfca473e62b4cc5d8ce5b1ac/tree5d0fe5eda81e3d885490262aa2862507559f4c1e, admin PR69 merged with two parents, merged-main Lean38893941755 and governance38893941693 SUCCESS. S055 PR and merge CI are not preclaimed here; consult live GitHub.",
-  "note": "S056 remains last completed; 16 Oct 2026 the owner separately installed S057 FUTURE/UNEXECUTED aiming for a Palomar-registry-submittable full-40-char commit. S057 execution requires separate explicit invocation. No toolchain migration, public preflight, Palomar submission or registration happened during installation. Mathematics five exact historic Lean proofs unchanged; S055 novelty INDETERMINATE_ACCESS_GAP.",
+  "note": "S057 actually executed on isolated branch; 7 public hosted migration probes (first count and six compiler attempts). Modern Lean 4.35 migration failed exact EarSufficiency list-disjointness proof. Original historical 5/5 Lean 4.15 standard-axiom formalisation preserved unchanged. Missing authorised root SPDX licence, compliant independent Challenge/Solution/Comparator and v0.4 metadata. Full Palomar predictive verification NOT_RUN; no submission or registration. S058 substantive target uninstalled; only owner can install it.",
   "novelty_verdict": "INDETERMINATE_ACCESS_GAP",
   "final_novelty_audit": "S055",
   "formalisation_status": "ALL_FIVE_ORIGINAL_EXACT_TARGETS_KERNEL_VERIFIED__STANDARD_AXIOMS_ONLY",
@@ -33,6 +33,9 @@
   "canonical_repository": "jfairfaxball-348/ellipse-theorem",
   "github_repository_id": 1416869836,
   "session_steering_mode": "OWNER_DIRECTED",
-  "next_session_target_status": "OWNER_TARGET_INSTALLED",
-  "next_session_target": "S057 — Palomar submission-ready preparation: migrate frozen exact ellipse theorem to currently supported Lean/module system, build independent Challenge/Solution/Comparator and truthful public metadata, and deliver a publicly pushed immutable full-verified commit for owner's own Palomar submission, without submitting or registering"
+  "next_session_target_status": "AWAITING_OWNER_TARGET",
+  "next_session_target": null,
+  "palomar_readiness": "NOT_READY",
+  "palomar_modern_migration_build": "FAILED__EAR_SUFFICIENCY_LEAN_4_35_COMPILER",
+  "palomar_full_predictive_run": "NOT_RUN"
 }
