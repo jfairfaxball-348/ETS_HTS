@@ -1,3 +1,5 @@
+> **Historical S025 handover; no longer current.** All five original exact targets are proved in S053 and audited in S054. See [S054 coverage](../sessions/S054/PROOF_COVERAGE.md) and [reproducibility](../sessions/S054/REPRODUCIBILITY.md). Statements in this document saying the theorems remain open describe only S025.
+
 # Canonical repository handover: ETS_HTS → ellipse-theorem
 
 Owner-directed **administrative** rename/handover update, 2026-10-14. This is NOT S026 execution. Canonical repo: **https://github.com/jfairfaxball-348/ellipse-theorem** (former path `jfairfaxball-348/ETS_HTS`), unchanged GitHub repository ID **1416869836**, history, Lean code and research registries. The old `ETSHTS` Lean package/module names intentionally remain compiled-compatible.

@@ -2,7 +2,11 @@
 
 Canonical https://github.com/jfairfaxball-348/ellipse-theorem (renamed from ETS_HTS; same repository ID). Lean namespace remains `ETSHTS`.
 
-## Current status — S053 (16 October 2026)
+## Final audit — S054 (16 October 2026)
+
+**5/5 literal original Lean theorem targets complete.** [S054 semantic audit](../sessions/S054/SEMANTIC_AUDIT.md), [reproducibility manifest](../sessions/S054/REPRODUCIBILITY.md) and [five-target coverage](../sessions/S054/PROOF_COVERAGE.md) supersede interim OPEN counts in the historical checkpoints below. S054 does not modify theorem sources and adds a hosted axiom regression gate. Final PR-head and separate merged-main CI still require direct inspection in the PR history. S055 is FUTURE/UNEXECUTED and owner-gated; no external publication.
+
+## Historical completed status — S053 (16 October 2026)
 
 **All five original exact targets are Lean proved (5/5).** Pinned Lean 4.15.0/mathlib `9837ca9d65d9de6fad1ef4381750ca688774e608`; original Definitions/Targets unchanged. Each direct theorem prints only `[propext, Classical.choice, Quot.sound]`.
 

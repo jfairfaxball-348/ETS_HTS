@@ -1,3 +1,5 @@
+> **Superseded as a live plan by S054 (16 October 2026): all five exact targets were completed in S053 and final-audited in S054.** This is preserved as the historical S047 critical path. See [S054 proof coverage](../sessions/S054/PROOF_COVERAGE.md). No open direct Lean theorem work remains.
+
 # Complete the exact ellipse theorem formalisation — critical path after S047
 
 **Planning and handover document only; no S048 execution or advance authorisation.** Owner decision: freeze S020/S021 mathematics and the exact original definitions/targets; formalise **one direct original theorem at a time**, doing many dependencies per authorised session. Never replace CLM0107 by a simpler variant. A successful helper theorem or Lean build is not headline closure.

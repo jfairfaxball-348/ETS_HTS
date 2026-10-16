@@ -23,7 +23,16 @@ jobs:
         run: |
           lean --version
           lake --version
-          lake env lean ETSHTS.lean
+          set -o pipefail
+          lake env lean ETSHTS.lean | tee /tmp/etshts-exact-axioms.txt
+          # Guard literal theorem dependencies, not merely the success of a module build.
+          for theorem in clm0096_exact clm0099_exact clm0102_exact clm0107_exact clm0108_exact; do
+            expected="'ETSHTS.${theorem}' depends on axioms: [propext, Classical.choice, Quot.sound]"
+            if ! grep -Fq "$expected" /tmp/etshts-exact-axioms.txt; then
+              echo "Missing or changed original exact theorem axiom signature: $theorem"
+              exit 1
+            fi
+          done
       - name: Explicitly reject proof holes and custom axioms in project sources
         run: |
           if grep -nRE '(^|[[:space:]])(sorry|admit|axiom|native_decide)([[:space:]]|$)' ETSHTS.lean ETSHTS; then

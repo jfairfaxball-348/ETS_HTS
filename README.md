@@ -5,7 +5,11 @@ Canonical repository https://github.com/jfairfaxball-348/ellipse-theorem (former
 ## Exact fixed theorem programme
 Closed threshold `R=sqrt(2/sin(2π/5)−1)`. **CLM0107:** all n≥3 finite distinct ellipse boundary sites, `a≥b>0`, `a/b≤R` including equality, exactly two compulsory nearest Euclidean predecessor edges with Cartesian-lex ties, all old edges retained and no proper crossing. **CLM0108:** all n for nonround `a/b=101/100`. **CLM0096:** all three- and four-point sets in general position. **CLM0099:** full metric-ear certificate iff for strictly convex finite sets. **CLM0102:** both outward derivatives and full real-lift strict short-arc chord extension.
 
-## Current status — S053 (16 October 2026)
+## Final reproducibility and semantic audit — S054 (16 October 2026)
+
+**Complete: 5/5 original exact theorems.** S054 audited the [original statement meanings](sessions/S054/SEMANTIC_AUDIT.md) and [pinned reproduction/dependency evidence](sessions/S054/REPRODUCIBILITY.md) without editing any mathematical Lean proof or frozen definition. Both historical final S053 PR and merged-main runs had passed; S054 adds a CI regression gate requiring standard-only axioms for every exact theorem. The final S054 PR and merged-main checks must each independently succeed before calling its integration verified. [Audit package](sessions/S054/PROOF_COVERAGE.md). [S055](authoritative/NEXT_SESSION_PROMPT.md) is future and owner-gated; external verification/publication is **not** automatic.
+
+## Historical completed status — S053 (16 October 2026)
 
 **All five original exact targets are Lean proved (5/5).** Pinned Lean 4.15.0/mathlib `9837ca9d65d9de6fad1ef4381750ca688774e608`; original Definitions/Targets unchanged. Each direct theorem prints only `[propext, Classical.choice, Quot.sound]`.
 
