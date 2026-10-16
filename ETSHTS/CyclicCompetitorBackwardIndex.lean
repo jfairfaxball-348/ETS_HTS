@@ -27,18 +27,15 @@ theorem s049_rotate_previous {n : ℕ} (i : Fin (n + 1)) :
       simp [s049_previous, hz]
     rw [hprev]
     have hval : i.val - 1 < n := by have hi := i.isLt; omega
-    have hs := (finRotate_of_lt hval)
-    apply Fin.ext
-    have hv := congrArg Fin.val hs
-    change ((finRotate (n + 1))
-      (⟨i.val - 1, by have hi := i.isLt; omega⟩ : Fin (n + 1))).val =
-      i.val
-    simpa only [Fin.val_mk] using (show
-      ((finRotate (n + 1))
-        (⟨i.val - 1, by have hi := i.isLt; omega⟩ : Fin (n + 1))).val =
-        i.val from by
-          rw [hs]
-          omega)
+    calc
+      (finRotate (n + 1))
+          (⟨i.val - 1, by have hi := i.isLt; omega⟩ : Fin (n + 1)) =
+          ⟨i.val - 1 + 1, by omega⟩ := by
+            simpa using (finRotate_of_lt hval)
+      _ = i := by
+        apply Fin.ext
+        change i.val - 1 + 1 = i.val
+        omega
 
 /-- The selected centre is the second actual successor of the
 predecessor of the selected left skip endpoint. -/
